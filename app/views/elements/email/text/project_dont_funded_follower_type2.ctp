@@ -1,0 +1,1 @@
+El proyecto "<?=Project::getName($emailData)?>" que patrocinaste no ha alcanzado los fondos requeridos por lo que no será financiado. Tu aporte a este proyecto será reintegrado en los próximos días a la cuenta de PayPal desde la que se recibieron los fondos.

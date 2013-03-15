@@ -1,0 +1,1 @@
+Tu propuesta de proyecto "<?=Project::getName($emailData)?>" será evaluada por nuestro staff de moderadores. En los próximos días recibirás un e-mail comunicándote los pasos a seguir.

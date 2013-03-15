@@ -1,0 +1,36 @@
+.site-icon{ display: inline-block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+.site-icon.small  { width: 10px; height: 10px; background-image: url(/img/assets/icons_small.png);}
+.site-icon.medium { width: 16px; height: 16px; background-image: url(/img/assets/icons_medium.png); }
+.site-icon.social-icon { width: 16px; height: 16px; background-image: url(/img/assets/icons_medium.png); }
+.site-icon.misc-icon { width: 16px; height: 16px;  }
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+.icon-privacy { background-position: -40px top  ; }
+.icon-tag     { background-position: -20px top  ; }
+.icon-advice  { background-position: -60px top  ; }
+
+.icon-alert  { background-position: -60px top  ; }
+
+.icon-edit    { background-position: -339px top ; }
+.icon-report    { background-position: -287px top ; }
+.icon-message   { background-position: -182px top ; }
+
+.icon-help    { background-position: -121px top ; }
+
+.site-icon.small.privacy {  background-position: -39px top ; } 
+
+
+
+.site-icon.small.icon-tip    { background-image: url(/img/assets/tip.png); background-position: -4px center ;}
+.social-icon.facebook {background-position: -130px top ;}
+.social-icon.twitter {background-position: -104px top ;}
+
+.misc-icon.about-us {background :url(/img/assets/home.png);}
+.misc-icon.contact { background : url(/img/assets/mail.png);}
+
+a .site-icon.medium { position: relative ; top : 2px ; left: 0px ; }
+/* -------------------------------------------------------------------------------------------------------- */
+
+.about_to_finish .auto-icon {background-position: -52px top ;  } 
+.finished .auto-icon {background-position: -52px top ;  } 

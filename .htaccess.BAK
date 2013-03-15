@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+   RewriteEngine on
+
+   RewriteCond %{REQUEST_URI} ^/(blog)/
+   RewriteRule . - [S=2] #skip the next 3 rules if the RewriteCond match
+
+   RewriteRule    ^$ app/webroot/    [L]
+   RewriteRule    (.*) app/webroot/$1 [L]
+</IfModule>

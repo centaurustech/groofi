@@ -1,0 +1,1 @@
+Tu proyecto "<?=Project::getName($emailData)?>" finalizará en <?=DAYS_TO_BE_FINISHING?> días. Recuerda que si no alcanzas a recaudar los fondos requeridos en el tiempo restante, tu proyecto no será financiado.

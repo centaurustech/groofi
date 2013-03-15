@@ -1,0 +1,74 @@
+
+
+ 
+.tree { font-size:1.5em; }
+.tree,.tree ul,.tree li { list-style:none; margin:0; padding:0; zoom: 1; }
+.tree ul { margin-left:8px; }
+.tree li a { color:#555; padding:.1em 7px .1em 27px; display:block; text-decoration:none; border:1px dashed #fff; background:url(../img/assets/icon-file.gif) 5px 50% no-repeat; }
+.tree li a.tree-parent { background:url(../img/assets/icon-folder-open.gif) 5px 50% no-repeat; }
+.tree li a.tree-parent-collapsed { background:url(../img/assets/icon-folder.gif) 5px 50% no-repeat; }
+.tree li a:hover,.tree li a.tree-parent:hover,.tree li a:focus,.tree li a.tree-parent:focus,.tree li a.tree-item-active { color:#000; border:1px solid#eee; background-color:#fafafa; -moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; }
+.tree li a:focus,.tree li a.tree-parent:focus,.tree li a.tree-item-active { border:1px solid #e2f3fb; background-color:#f2fafd; }
+.tree ul.tree-group-collapsed { display:none; }
+
+
+
+/*custom upload elements*/
+.customfile {
+    position: relative ;
+    width: 200px;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+
+.customfile-input {
+    position: absolute;  cursor: pointer; top:0px ; left : 0px ;  border: 0;  background: transparent;opacity: 0; -moz-opacity: 0; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); z-index: 999;
+}
+
+/*.customfile-input {
+
+}*/
+
+.customfile-disabled { opacity: .5; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); cursor: default;  }
+
+
+.customfile-feedback { 
+    display: block ; margin: 0px; font-size: 11px; color: #666666 ;   padding: 5px 0px 10px 0px ; /* not file selected ...*/
+}
+
+.customfile-button {
+    border: 0px none ;
+    background: #000000 ;
+    color: #FFFFFF;
+    overflow: hidden  ;
+    padding: 7px ;
+    text-align: center;
+    text-decoration: none;
+    font-size: 11px;
+    display: inline-block  ;
+    clear : both ;
+}
+
+
+.customfile-button:hover , .customfile-button.hover {
+    background-color: #0099FF ;
+}
+
+/* .customfile-feedback-populated { color: #fff; font-style: normal; font-weight: bold; padding-left: 20px; background: url(../img/assets/icon-generic.gif) left 4px no-repeat; } */
+
+/*
+
+
+
+
+.customfile-hover .customfile-button, .customfile-focus .customfile-button  { color:#111; background: #aaa url(../img/assets/bg-btn.png) bottom repeat-x; border-color:#aaa;  padding: .3em .6em;  }
+
+.customfile-focus .customfile-button { outline: 1px dotted #ccc;  }
+/*file type icons*/
+/*
+.customfile-ext-jpg, .customfile-ext-gif, .customfile-ext-png, .customfile-ext-jpeg, .customfile-ext-bmp { background-image: url(../img/assets/icon-image.gif);}
+.customfile-ext-mp3, .customfile-ext-mp4, .customfile-ext-mov, .customfile-ext-swf, .customfile-ext-wav, .customfile-ext-m4v { background-image: url(../img/assets/icon-media.gif);}
+.customfile-ext-zip, .customfile-ext-tar, .customfile-ext-sit { background-image: url(../img/assets/icon-zip.gif);}
+*/

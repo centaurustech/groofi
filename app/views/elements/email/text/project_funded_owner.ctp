@@ -1,0 +1,1 @@
+Tu proyecto "<?=Project::getName($emailData)?>" ha alcanzado los fondos requeridos y será financiado con el monto recaudado. En caso de que la suma no supere los 10.000 dólares, los fondos se acreditarán en la cuenta de PayPal asociada al proyecto. En caso contrario, nos pondremos en contacto nuevamente para comunicarte los pasos a seguir.

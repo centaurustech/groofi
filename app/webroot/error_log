@@ -1,0 +1,829 @@
+[12-Mar-2012 12:36:19 UTC] PHP Warning:  include(cake/bootstrap.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/groofies/public_html/app/webroot/index.php on line 76
+[12-Mar-2012 12:36:19 UTC] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'cake/bootstrap.php' for inclusion (include_path='/home/groofies/public_html:/home/groofies/public_html/app/:.:/usr/lib/php:/usr/local/lib/php') in /home/groofies/public_html/app/webroot/index.php on line 76
+[12-Mar-2012 12:36:19 UTC] PHP Fatal error:  CakePHP core could not be found.  Check the value of CAKE_CORE_INCLUDE_PATH in APP/webroot/index.php.  It should point to the directory containing your /cake core directory and your /vendors root directory. in /home/groofies/public_html/app/webroot/index.php on line 77
+[12-Mar-2012 12:36:19 UTC] PHP Warning:  include(cake/bootstrap.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/groofies/public_html/app/webroot/index.php on line 76
+[12-Mar-2012 12:36:19 UTC] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'cake/bootstrap.php' for inclusion (include_path='/home/groofies/public_html:/home/groofies/public_html/app/:.:/usr/lib/php:/usr/local/lib/php') in /home/groofies/public_html/app/webroot/index.php on line 76
+[12-Mar-2012 12:36:19 UTC] PHP Fatal error:  CakePHP core could not be found.  Check the value of CAKE_CORE_INCLUDE_PATH in APP/webroot/index.php.  It should point to the directory containing your /cake core directory and your /vendors root directory. in /home/groofies/public_html/app/webroot/index.php on line 77
+[12-Mar-2012 12:36:44 UTC] PHP Warning:  include(cake/bootstrap.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/groofies/public_html/app/webroot/index.php on line 76
+[12-Mar-2012 12:36:44 UTC] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening 'cake/bootstrap.php' for inclusion (include_path='/home/groofies/public_html:/home/groofies/public_html/app/:.:/usr/lib/php:/usr/local/lib/php') in /home/groofies/public_html/app/webroot/index.php on line 76
+[12-Mar-2012 12:36:44 UTC] PHP Fatal error:  CakePHP core could not be found.  Check the value of CAKE_CORE_INCLUDE_PATH in APP/webroot/index.php.  It should point to the directory containing your /cake core directory and your /vendors root directory. in /home/groofies/public_html/app/webroot/index.php on line 77
+[12-Mar-2012 17:31:35 UTC] PHP Fatal error:  Class 'Configure' not found in /home/groofies/public_html/app/webroot/index.php on line 25
+[12-Mar-2012 17:31:35 UTC] PHP Fatal error:  Class 'Configure' not found in /home/groofies/public_html/app/webroot/index.php on line 25
+[12-Mar-2012 17:40:02 UTC] PHP Fatal error:  Class 'Dispatcher' not found in /home/groofies/public_html/app/webroot/index.php on line 82
+[12-Mar-2012 17:42:33 UTC] PHP Fatal error:  Call to undefined method stdClass::constructClasses() in /home/groofies/public_html/cake/dispatcher.php on line 160
+[12-Mar-2012 17:43:07 UTC] PHP Fatal error:  Class 'Dispatcher' not found in /home/groofies/public_html/app/webroot/index.php on line 82
+[12-Mar-2012 17:47:18 UTC] PHP Notice:  Use of undefined constant LIBS - assumed 'LIBS' in /home/groofies/public_html/cake/bootstrap.php on line 33
+[12-Mar-2012 17:47:18 UTC] PHP Warning:  require(LIBSobject.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/groofies/public_html/cake/bootstrap.php on line 33
+[12-Mar-2012 17:47:18 UTC] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'LIBSobject.php' (include_path='/home/groofies/public_html:/home/groofies/public_html/app/:.:/usr/lib/php:/usr/local/lib/php') in /home/groofies/public_html/cake/bootstrap.php on line 33
+[12-Mar-2012 17:47:18 UTC] PHP Notice:  Use of undefined constant LIBS - assumed 'LIBS' in /home/groofies/public_html/cake/bootstrap.php on line 33
+[12-Mar-2012 17:47:18 UTC] PHP Warning:  require(LIBSobject.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/groofies/public_html/cake/bootstrap.php on line 33
+[12-Mar-2012 17:47:18 UTC] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'LIBSobject.php' (include_path='/home/groofies/public_html:/home/groofies/public_html/app/:.:/usr/lib/php:/usr/local/lib/php') in /home/groofies/public_html/cake/bootstrap.php on line 33
+[12-Mar-2012 17:53:47 UTC] PHP Notice:  Constant WEBROOT_DIR already defined in /home/groofies/public_html/cake/config/paths.php on line 35
+[12-Mar-2012 17:53:48 UTC] PHP Notice:  Constant WEBROOT_DIR already defined in /home/groofies/public_html/cake/config/paths.php on line 35
+[12-Mar-2012 17:53:53 UTC] PHP Notice:  Constant WEBROOT_DIR already defined in /home/groofies/public_html/cake/config/paths.php on line 35
+[12-Mar-2012 17:54:26 UTC] PHP Notice:  Constant WEBROOT_DIR already defined in /home/groofies/public_html/cake/config/paths.php on line 32
+[12-Mar-2012 17:54:26 UTC] PHP Notice:  Constant WEBROOT_DIR already defined in /home/groofies/public_html/cake/config/paths.php on line 32
+[12-Mar-2012 17:54:30 UTC] PHP Notice:  Constant WEBROOT_DIR already defined in /home/groofies/public_html/cake/config/paths.php on line 32
+[12-Mar-2012 17:56:08 UTC] PHP Notice:  Use of undefined constant LIBS - assumed 'LIBS' in /home/groofies/public_html/cake/bootstrap.php on line 33
+[12-Mar-2012 17:56:08 UTC] PHP Warning:  require(LIBSobject.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/groofies/public_html/cake/bootstrap.php on line 33
+[12-Mar-2012 17:56:08 UTC] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'LIBSobject.php' (include_path='/home/groofies/public_html:/home/groofies/public_html/app/:.:/usr/lib/php:/usr/local/lib/php') in /home/groofies/public_html/cake/bootstrap.php on line 33
+[12-Mar-2012 17:56:09 UTC] PHP Notice:  Use of undefined constant LIBS - assumed 'LIBS' in /home/groofies/public_html/cake/bootstrap.php on line 33
+[12-Mar-2012 17:56:09 UTC] PHP Warning:  require(LIBSobject.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/groofies/public_html/cake/bootstrap.php on line 33
+[12-Mar-2012 17:56:09 UTC] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'LIBSobject.php' (include_path='/home/groofies/public_html:/home/groofies/public_html/app/:.:/usr/lib/php:/usr/local/lib/php') in /home/groofies/public_html/cake/bootstrap.php on line 33
+[12-Mar-2012 17:58:15 UTC] PHP Fatal error:  Class 'AppModel' not found in /home/groofies/public_html/app/models/staticpage.php on line 3
+[12-Mar-2012 17:58:17 UTC] PHP Fatal error:  Class 'AppModel' not found in /home/groofies/public_html/app/models/staticpage.php on line 3
+[12-Mar-2012 17:58:42 UTC] PHP Fatal error:  Class 'AppController' not found in /home/groofies/public_html/app/controllers/staticpages_controller.php on line 3
+[12-Mar-2012 17:58:44 UTC] PHP Fatal error:  Class 'AppController' not found in /home/groofies/public_html/app/controllers/staticpages_controller.php on line 3
+[12-Mar-2012 17:59:07 UTC] PHP Fatal error:  Class 'AppController' not found in /home/groofies/public_html/app/controllers/staticpages_controller.php on line 3
+[12-Mar-2012 18:03:56 UTC] PHP Fatal error:  Class 'Staticpage' not found in /home/groofies/public_html/cake/libs/class_registry.php on line 141
+[12-Mar-2012 18:03:58 UTC] PHP Fatal error:  Class 'Staticpage' not found in /home/groofies/public_html/cake/libs/class_registry.php on line 141
+[13-Mar-2012 01:23:28 UTC] PHP Notice:  Use of undefined constant LOG_ERROR - assumed 'LOG_ERROR' in /home/groofies/public_html/cake/libs/cake_log.php on line 266
+[13-Mar-2012 01:26:13 UTC] PHP Notice:  Use of undefined constant LOG_ERROR - assumed 'LOG_ERROR' in /home/groofies/public_html/cake/libs/cake_log.php on line 266
+[22-Mar-2012 03:21:05 UTC] PHP Warning:  include(/home/groofies/public_html/app/config/core.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/groofies/public_html/cake/libs/configure.php on line 392
+[22-Mar-2012 03:21:05 UTC] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '/home/groofies/public_html/app/config/core.php' for inclusion (include_path='/home/groofies/public_html:/home/groofies/public_html/app/:.:/usr/lib/php:/usr/local/lib/php') in /home/groofies/public_html/cake/libs/configure.php on line 392
+[22-Mar-2012 03:21:05 UTC] PHP Fatal error:  Can't find application core file. Please create /home/groofies/public_html/app/config/core.php, and make sure it is readable by PHP. in /home/groofies/public_html/cake/libs/configure.php on line 393
+[22-Mar-2012 03:21:06 UTC] PHP Warning:  include(/home/groofies/public_html/app/config/core.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/groofies/public_html/cake/libs/configure.php on line 392
+[22-Mar-2012 03:21:06 UTC] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '/home/groofies/public_html/app/config/core.php' for inclusion (include_path='/home/groofies/public_html:/home/groofies/public_html/app/:.:/usr/lib/php:/usr/local/lib/php') in /home/groofies/public_html/cake/libs/configure.php on line 392
+[22-Mar-2012 03:21:06 UTC] PHP Fatal error:  Can't find application core file. Please create /home/groofies/public_html/app/config/core.php, and make sure it is readable by PHP. in /home/groofies/public_html/cake/libs/configure.php on line 393
+[22-Mar-2012 03:24:06 UTC] PHP Parse error:  syntax error, unexpected T_ECHO, expecting T_FUNCTION in /home/groofies/public_html/app/config/site/groofi__database.php on line 87
+[22-Mar-2012 03:24:08 UTC] PHP Parse error:  syntax error, unexpected T_ECHO, expecting T_FUNCTION in /home/groofies/public_html/app/config/site/groofi__database.php on line 87
+[22-Mar-2012 09:39:00 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/groofies/public_html/app/config/routes.php on line 114
+[22-Mar-2012 10:00:54 UTC] PHP Parse error:  syntax error, unexpected T_DOUBLE_ARROW in /home/groofies/public_html/app/controllers/users_controller.php on line 331
+[22-Mar-2012 10:06:51 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/groofies/public_html/app/controllers/users_controller.php on line 333
+[22-Mar-2012 10:51:03 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 10:52:53 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 10:52:53 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 10:53:50 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 10:55:21 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 10:56:48 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 10:56:56 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 10:57:05 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 10:57:50 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:00:46 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:00:48 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:01:01 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:03:33 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:03:41 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:04:00 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:04:20 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:04:42 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:04:58 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:05:21 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:05:48 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:06:12 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:06:45 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:07:06 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:07:32 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:08:55 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:08:55 UTC] PHP Fatal error:  Class 'Search' not found in /home/groofies/public_html/cake/libs/class_registry.php on line 141
+[22-Mar-2012 11:10:28 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:10:39 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:10:52 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:12:00 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:12:23 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:14:34 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:14:35 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:15:18 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:15:34 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:17:22 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:18:33 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:19:29 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:19:49 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:19:55 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:19:55 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:20:13 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:23:04 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:25:55 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:31:23 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:33:13 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:35:57 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:37:33 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:37:46 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:37:46 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:38:17 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:38:17 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:38:25 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:38:43 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:38:45 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:38:58 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:39:04 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:39:31 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:39:34 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:39:38 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:40:42 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:40:42 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:40:56 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:41:03 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:41:17 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:41:29 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:41:30 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:41:30 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:41:33 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:42:18 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:42:23 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:42:25 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:42:29 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:44:01 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:44:04 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:44:13 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:44:13 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:44:16 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:44:20 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:47:38 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:47:54 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:48:02 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:48:07 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:48:12 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:48:44 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:48:50 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:48:54 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:49:02 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:49:06 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:49:10 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:50:39 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:51:04 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:51:25 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:52:14 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:52:15 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:52:19 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:52:35 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:53:36 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:53:36 UTC] PHP Fatal error:  Call to undefined function imageCreateFromString() in /home/groofies/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[22-Mar-2012 11:53:42 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:53:46 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:53:49 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:54:00 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:54:03 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:54:08 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:54:10 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:54:13 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:54:16 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:54:28 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:54:30 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:54:39 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:54:40 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:54:44 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:54:45 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:54:57 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:55:20 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:55:22 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:55:24 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:55:28 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:56:07 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:56:18 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:58:52 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 11:59:55 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:02:17 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:05:42 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:11:02 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:11:15 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:11:25 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:11:29 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:11:34 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:11:41 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:11:49 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:12:01 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:12:07 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:13:23 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:16:13 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:20:16 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:24:24 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:26:19 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:26:46 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:28:32 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:29:30 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:30:49 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:32:53 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:35:02 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:37:10 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:39:20 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:41:29 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:43:38 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:45:48 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:47:57 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:50:55 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:50:56 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:54:55 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 12:59:03 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 13:03:12 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 13:07:21 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 13:11:09 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 13:11:10 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 13:11:11 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 13:15:13 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 13:19:33 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 13:23:54 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 13:28:15 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 13:28:56 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 13:31:16 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 13:34:14 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 13:36:11 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 13:36:50 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 13:36:54 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 13:37:14 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 13:37:28 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 13:37:31 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 13:37:44 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 13:37:45 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 13:40:13 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 13:43:13 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 13:46:06 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 13:48:40 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 13:51:24 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 13:54:08 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 13:56:53 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 13:59:37 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 14:02:22 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 14:13:41 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 14:15:58 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 14:19:02 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 14:22:09 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 14:25:16 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 14:28:23 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 14:38:54 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 14:39:27 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 14:40:52 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 14:42:41 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 14:44:30 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 14:46:20 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 14:48:09 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 14:49:58 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 14:51:48 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 15:05:25 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 15:11:26 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 15:28:42 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 15:28:42 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 15:28:43 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 15:40:04 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 15:47:57 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 15:51:55 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 15:52:10 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 16:00:58 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 16:04:23 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 16:07:48 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 16:11:14 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 16:13:52 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 16:16:25 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 16:19:01 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 16:21:38 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 16:24:14 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 16:26:50 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 16:29:26 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 16:32:02 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 16:48:10 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 17:07:41 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 17:14:54 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 17:28:45 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 17:31:07 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 17:33:30 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 17:35:53 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 17:38:25 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 17:40:38 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 17:43:01 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 17:46:20 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 17:48:17 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 17:51:01 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 17:53:46 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 17:56:30 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 17:59:15 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 18:02:00 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 18:04:45 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 18:07:24 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 18:09:46 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 18:12:17 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 18:15:10 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 18:17:18 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 18:19:49 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 18:22:21 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 18:24:53 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 18:27:26 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 18:35:56 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 18:38:35 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 18:41:55 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 18:45:17 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 18:48:39 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 18:52:01 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 18:55:25 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 19:01:02 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 19:03:11 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 19:05:29 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 19:07:47 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 19:10:05 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 19:12:23 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 19:14:41 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 19:16:44 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 19:18:44 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 19:20:45 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 19:22:46 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 19:24:48 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 19:26:49 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 19:28:50 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 19:30:52 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 19:32:55 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 19:34:54 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 19:36:55 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 19:38:57 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 19:42:23 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 19:45:48 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 19:50:01 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 19:54:15 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 19:58:33 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 20:02:37 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 20:04:01 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 20:06:40 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 20:09:28 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 20:12:15 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 20:15:02 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 20:17:50 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 20:23:15 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 20:25:23 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 20:27:47 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 20:30:11 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 20:32:35 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 20:34:59 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 20:37:20 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 20:39:39 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 20:41:58 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 20:44:18 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 20:46:37 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 20:48:57 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 20:51:17 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 20:53:37 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 20:55:57 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 20:57:51 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 21:00:57 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 21:04:40 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 21:08:25 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 21:12:11 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 21:24:06 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 21:25:26 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 21:27:49 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 21:30:12 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 21:32:36 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 21:35:00 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 21:37:23 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 21:39:47 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 21:45:29 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 21:45:30 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 21:45:30 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 21:47:42 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 21:50:51 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 21:54:02 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 21:57:13 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 22:00:23 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 22:03:34 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 22:07:41 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 22:10:06 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 22:13:14 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 22:16:22 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 22:19:31 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 22:22:40 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 22:25:49 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 22:26:26 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 22:26:27 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 22:26:29 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 22:26:30 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 22:26:31 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 22:31:38 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 22:37:30 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 22:43:05 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 22:53:59 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 22:54:00 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 23:23:37 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 23:24:54 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 23:26:10 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 23:27:26 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 23:52:08 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 23:55:10 UTC] OAuthException: An active access token must be used to query information about the current user.
+[22-Mar-2012 23:58:13 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 00:01:16 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 00:04:19 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 00:07:22 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 00:10:26 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 00:30:04 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 00:32:12 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 00:34:45 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 00:37:18 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 00:39:56 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 00:42:25 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 00:44:58 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 00:47:32 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 00:50:05 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 00:52:39 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 00:55:12 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 01:00:42 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 01:02:50 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 01:05:19 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 01:07:51 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 01:10:15 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 01:12:44 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 01:15:12 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 01:17:41 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 01:20:10 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 01:22:38 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 01:25:07 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 01:27:33 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 01:34:42 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 01:37:06 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 01:39:30 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 01:41:55 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 01:44:18 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 01:46:42 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 01:49:03 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 01:51:24 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 01:53:45 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 01:58:27 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 02:00:48 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 02:03:09 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 02:05:30 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 02:07:51 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 02:10:12 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 02:12:33 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 02:16:19 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 02:19:23 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 02:22:49 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 02:26:16 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 02:29:42 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 02:38:42 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 02:48:43 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 02:50:26 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 02:50:27 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 04:46:08 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 04:53:24 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:06:56 UTC] PHP Fatal error:  Cannot access empty property in /home/groofies/public_html/cake/libs/configure.php on line 90
+[23-Mar-2012 05:06:56 UTC] PHP Fatal error:  Cannot access empty property in /home/groofies/public_html/cake/libs/configure.php on line 90
+[23-Mar-2012 05:08:26 UTC] PHP Fatal error:  Cannot access empty property in /home/groofies/public_html/cake/libs/configure.php on line 90
+[23-Mar-2012 05:08:27 UTC] PHP Fatal error:  Cannot access empty property in /home/groofies/public_html/cake/libs/configure.php on line 90
+[23-Mar-2012 05:08:34 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:09:40 UTC] PHP Fatal error:  Cannot access empty property in /home/groofies/public_html/cake/libs/configure.php on line 90
+[23-Mar-2012 05:09:40 UTC] PHP Fatal error:  Cannot access empty property in /home/groofies/public_html/cake/libs/configure.php on line 90
+[23-Mar-2012 05:09:47 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:15:25 UTC] PHP Fatal error:  Class 'Facebook' not found in /home/groofies/public_html/app/plugins/facebook/libs/f_b.php on line 21
+[23-Mar-2012 05:15:33 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:16:14 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:16:21 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:17:18 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:17:30 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:17:50 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:18:07 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:18:51 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:19:12 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:19:39 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:19:45 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:19:45 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:20:23 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:20:23 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:20:23 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:20:27 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:26:22 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:26:22 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:26:32 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:26:33 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:26:33 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:26:36 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:26:41 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:26:41 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:28:08 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:28:08 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:28:59 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:28:59 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:30:58 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:30:58 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:31:15 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:31:15 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:31:48 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:31:49 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:32:07 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:32:07 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:32:27 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:32:27 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:34:44 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 05:34:44 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:13:24 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:13:50 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:13:50 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:13:55 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:13:55 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:14:00 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:14:00 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:14:13 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:16:53 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:19:15 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:19:26 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:20:32 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:21:14 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:21:28 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:23:44 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:23:47 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:23:56 UTC] OAuthException: Invalid OAuth access token signature.
+[23-Mar-2012 06:23:57 UTC] OAuthException: Invalid OAuth access token signature.
+[23-Mar-2012 06:24:38 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:24:50 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:25:01 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:25:03 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:25:13 UTC] PHP Fatal error:  Cannot access empty property in /home/groofies/public_html/cake/libs/configure.php on line 90
+[23-Mar-2012 06:25:13 UTC] PHP Fatal error:  Cannot access empty property in /home/groofies/public_html/cake/libs/configure.php on line 90
+[23-Mar-2012 06:25:38 UTC] PHP Fatal error:  Cannot access empty property in /home/groofies/public_html/cake/libs/configure.php on line 90
+[23-Mar-2012 06:25:38 UTC] PHP Fatal error:  Cannot access empty property in /home/groofies/public_html/cake/libs/configure.php on line 90
+[23-Mar-2012 06:25:53 UTC] OAuthException: Invalid OAuth access token signature.
+[23-Mar-2012 06:25:54 UTC] OAuthException: Invalid OAuth access token signature.
+[23-Mar-2012 06:27:05 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:27:55 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:28:08 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:31:03 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:33:10 UTC] PHP Warning:  include(/home/groofies/public_html/app/configcore.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/groofies/public_html/cake/libs/configure.php on line 392
+[23-Mar-2012 06:33:10 UTC] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '/home/groofies/public_html/app/configcore.php' for inclusion (include_path='/home/groofies/public_html:/home/groofies/public_html/app/:.:/usr/lib/php:/usr/local/lib/php') in /home/groofies/public_html/cake/libs/configure.php on line 392
+[23-Mar-2012 06:33:10 UTC] PHP Fatal error:  Can't find application core file. Please create /home/groofies/public_html/app/configcore.php, and make sure it is readable by PHP. in /home/groofies/public_html/cake/libs/configure.php on line 393
+[23-Mar-2012 06:33:10 UTC] PHP Warning:  include(/home/groofies/public_html/app/configcore.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/groofies/public_html/cake/libs/configure.php on line 392
+[23-Mar-2012 06:33:10 UTC] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '/home/groofies/public_html/app/configcore.php' for inclusion (include_path='/home/groofies/public_html:/home/groofies/public_html/app/:.:/usr/lib/php:/usr/local/lib/php') in /home/groofies/public_html/cake/libs/configure.php on line 392
+[23-Mar-2012 06:33:10 UTC] PHP Fatal error:  Can't find application core file. Please create /home/groofies/public_html/app/configcore.php, and make sure it is readable by PHP. in /home/groofies/public_html/cake/libs/configure.php on line 393
+[23-Mar-2012 06:33:32 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:34:04 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:34:49 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:34:59 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:35:09 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:35:29 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:35:44 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:36:38 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:37:02 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:37:04 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:37:04 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:37:18 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:37:33 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:37:42 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:38:44 UTC] PHP Fatal error:  Cannot access empty property in /home/groofies/public_html/cake/libs/configure.php on line 90
+[23-Mar-2012 06:38:45 UTC] PHP Fatal error:  Cannot access empty property in /home/groofies/public_html/cake/libs/configure.php on line 90
+[23-Mar-2012 06:39:25 UTC] PHP Fatal error:  Cannot access empty property in /home/groofies/public_html/cake/libs/configure.php on line 90
+[23-Mar-2012 06:39:26 UTC] PHP Fatal error:  Cannot access empty property in /home/groofies/public_html/cake/libs/configure.php on line 90
+[23-Mar-2012 06:39:53 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:40:12 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:40:40 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:44:22 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:44:31 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:44:50 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:44:58 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:45:41 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:47:29 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:49:18 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 06:51:39 UTC] PHP Fatal error:  Cannot access empty property in /home/groofies/public_html/cake/libs/configure.php on line 90
+[23-Mar-2012 06:51:40 UTC] PHP Fatal error:  Cannot access empty property in /home/groofies/public_html/cake/libs/configure.php on line 90
+[23-Mar-2012 06:53:39 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 07:00:58 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 07:01:11 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 07:01:35 UTC] OAuthException: Invalid OAuth access token signature.
+[23-Mar-2012 07:01:53 UTC] OAuthException: Invalid OAuth access token signature.
+[23-Mar-2012 07:02:06 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 07:02:29 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 07:02:40 UTC] PHP Fatal error:  Cannot access empty property in /home/groofies/public_html/cake/libs/configure.php on line 90
+[23-Mar-2012 07:02:41 UTC] PHP Fatal error:  Cannot access empty property in /home/groofies/public_html/cake/libs/configure.php on line 90
+[23-Mar-2012 07:03:26 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 07:03:27 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 07:03:37 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 07:03:38 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 07:03:50 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 07:03:55 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 07:03:56 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 07:03:56 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 07:04:04 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 07:04:05 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 07:04:10 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 07:04:11 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 07:04:11 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 07:04:26 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 07:04:27 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 07:04:27 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 07:04:30 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 08:46:05 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 10:59:54 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 11:40:20 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 11:40:32 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 11:40:39 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 11:40:51 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 11:59:51 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 12:26:24 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 12:30:03 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 12:39:08 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 12:43:42 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 12:48:16 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 12:54:35 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 12:54:36 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 12:54:36 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 12:57:16 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:00:07 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:02:59 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:05:51 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:08:42 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:11:37 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:14:25 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:17:17 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:21:34 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:27:38 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:28:29 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:29:42 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:30:55 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:33:21 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:34:34 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:35:47 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:37:00 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:38:20 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:39:26 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:40:39 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:41:52 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:43:05 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:44:18 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:45:32 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:46:45 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:47:58 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:48:54 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:50:25 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:52:38 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:54:59 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:57:20 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 13:59:40 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 14:02:01 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 14:04:22 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 14:06:42 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 14:11:38 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 14:15:11 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 14:19:27 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 14:23:45 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 14:28:47 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 14:31:47 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 14:35:49 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 14:40:13 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 14:44:04 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 14:48:12 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 14:52:23 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 16:18:04 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 16:18:26 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 16:18:26 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 16:18:47 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 16:18:48 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 18:11:02 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 19:27:35 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 19:27:37 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 19:30:42 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 19:52:42 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 19:54:46 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 19:56:57 UTC] OAuthException: An active access token must be used to query information about the current user.
+[23-Mar-2012 22:19:32 UTC] OAuthException: An active access token must be used to query information about the current user.
+[24-Mar-2012 00:32:01 UTC] OAuthException: An active access token must be used to query information about the current user.
+[24-Mar-2012 01:17:22 UTC] OAuthException: An active access token must be used to query information about the current user.
+[24-Mar-2012 03:06:41 UTC] OAuthException: An active access token must be used to query information about the current user.
+[24-Mar-2012 05:48:17 UTC] OAuthException: An active access token must be used to query information about the current user.
+[24-Mar-2012 05:49:55 UTC] OAuthException: An active access token must be used to query information about the current user.
+[24-Mar-2012 05:52:17 UTC] OAuthException: An active access token must be used to query information about the current user.
+[24-Mar-2012 05:54:29 UTC] OAuthException: An active access token must be used to query information about the current user.
+[24-Mar-2012 05:57:09 UTC] OAuthException: An active access token must be used to query information about the current user.
+[24-Mar-2012 08:19:05 UTC] OAuthException: An active access token must be used to query information about the current user.
+[24-Mar-2012 10:37:58 UTC] OAuthException: An active access token must be used to query information about the current user.
+[24-Mar-2012 13:04:19 UTC] OAuthException: An active access token must be used to query information about the current user.
+[24-Mar-2012 15:20:42 UTC] OAuthException: An active access token must be used to query information about the current user.
+[24-Mar-2012 17:39:43 UTC] OAuthException: An active access token must be used to query information about the current user.
+[24-Mar-2012 17:53:12 UTC] OAuthException: An active access token must be used to query information about the current user.
+[24-Mar-2012 20:08:47 UTC] OAuthException: An active access token must be used to query information about the current user.
+[24-Mar-2012 20:32:26 UTC] OAuthException: An active access token must be used to query information about the current user.
+[24-Mar-2012 20:34:28 UTC] OAuthException: An active access token must be used to query information about the current user.
+[24-Mar-2012 20:36:36 UTC] OAuthException: An active access token must be used to query information about the current user.
+[24-Mar-2012 20:38:47 UTC] OAuthException: An active access token must be used to query information about the current user.
+[24-Mar-2012 20:41:17 UTC] OAuthException: An active access token must be used to query information about the current user.
+[24-Mar-2012 23:12:00 UTC] OAuthException: An active access token must be used to query information about the current user.
+[24-Mar-2012 23:13:46 UTC] OAuthException: An active access token must be used to query information about the current user.
+[24-Mar-2012 23:16:04 UTC] OAuthException: An active access token must be used to query information about the current user.
+[24-Mar-2012 23:18:15 UTC] OAuthException: An active access token must be used to query information about the current user.
+[24-Mar-2012 23:20:53 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 01:39:02 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 01:39:03 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 01:41:14 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 01:44:24 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 01:47:26 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 04:03:27 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 04:45:35 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 05:09:47 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 07:01:11 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 07:33:28 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 07:35:11 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 07:37:31 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 07:37:32 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 07:37:32 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 07:39:42 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 07:42:22 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:18:28 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:22:26 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:22:26 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:22:59 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:22:59 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:23:07 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:23:08 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:23:11 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:23:11 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:23:41 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:23:41 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:23:59 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:23:59 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:24:24 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:24:24 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:25:47 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:25:47 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:25:59 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:25:59 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:26:10 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:26:10 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:26:21 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:26:21 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:26:32 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:26:32 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:26:42 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:26:42 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:28:00 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:28:00 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:28:14 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:28:14 UTC] OAuthException: An active access token must be used to query information about the current user.
+[25-Mar-2012 08:31:08 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/groofies/public_html/app/views/users/add.ctp on line 148
+[25-Mar-2012 11:36:55 UTC] PHP Parse error:  syntax error, unexpected T_STRING, expecting ')' in /home/groofies/public_html/app/views/projects/add.ctp on line 29
+[25-Mar-2012 11:36:57 UTC] PHP Parse error:  syntax error, unexpected T_STRING, expecting ')' in /home/groofies/public_html/app/views/projects/add.ctp on line 29
+[25-Mar-2012 11:38:04 UTC] PHP Parse error:  syntax error, unexpected T_STRING, expecting ')' in /home/groofies/public_html/app/views/projects/add.ctp on line 29
+[25-Mar-2012 11:38:19 UTC] PHP Parse error:  syntax error, unexpected T_STRING, expecting ')' in /home/groofies/public_html/app/views/projects/add.ctp on line 29
+[25-Mar-2012 11:41:46 UTC] PHP Parse error:  syntax error, unexpected T_DOUBLE_ARROW in /home/groofies/public_html/app/views/projects/add.ctp on line 29
+[25-Mar-2012 11:41:53 UTC] PHP Parse error:  syntax error, unexpected T_DOUBLE_ARROW in /home/groofies/public_html/app/views/projects/add.ctp on line 29
+[25-Mar-2012 11:59:04 UTC] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/groofies/public_html/app/views/projects/add.ctp on line 41
+[05-Apr-2012 01:34:01 UTC] PHP Fatal error:  Call to undefined function imageCreateFromString() in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[09-Apr-2012 21:01:04 UTC] PHP Fatal error:  Call to undefined function imageCreateFromString() in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[15-Apr-2012 11:18:24 UTC] PHP Fatal error:  Call to a member function api() on a non-object in /home/groofius/public_html/app/controllers/users_controller.php on line 315
+[15-Apr-2012 11:18:26 UTC] PHP Fatal error:  Call to a member function api() on a non-object in /home/groofius/public_html/app/controllers/users_controller.php on line 315
+[15-Apr-2012 11:18:26 UTC] PHP Fatal error:  Call to a member function api() on a non-object in /home/groofius/public_html/app/controllers/users_controller.php on line 315
+[15-Apr-2012 11:18:44 UTC] PHP Fatal error:  Call to a member function api() on a non-object in /home/groofius/public_html/app/controllers/users_controller.php on line 315
+[15-Apr-2012 11:23:57 UTC] PHP Fatal error:  Call to undefined method ConnectComponent::registrationData() in /home/groofius/public_html/app/controllers/users_controller.php on line 315
+[15-Apr-2012 11:23:59 UTC] PHP Fatal error:  Call to undefined method ConnectComponent::registrationData() in /home/groofius/public_html/app/controllers/users_controller.php on line 315
+[15-Apr-2012 11:36:16 UTC] PHP Fatal error:  Class 'User' not found in /home/groofius/public_html/cake/libs/class_registry.php on line 141
+[15-Apr-2012 11:36:17 UTC] PHP Fatal error:  Class 'User' not found in /home/groofius/public_html/cake/libs/class_registry.php on line 141
+[15-Apr-2012 11:50:58 UTC] PHP Parse error:  syntax error, unexpected T_ECHO in /home/groofius/public_html/app/controllers/users_controller.php on line 316
+[18-Apr-2012 06:43:40 UTC] PHP Fatal error:  Call to undefined method ConnectComponent::registrationData() in /home/groofius/public_html/app/app_controller.php on line 114
+[18-Apr-2012 06:43:41 UTC] PHP Fatal error:  Call to undefined method ConnectComponent::registrationData() in /home/groofius/public_html/app/app_controller.php on line 114
+[18-Apr-2012 06:43:42 UTC] PHP Fatal error:  Call to undefined method ConnectComponent::registrationData() in /home/groofius/public_html/app/app_controller.php on line 114
+[18-Apr-2012 06:43:43 UTC] PHP Fatal error:  Call to undefined method ConnectComponent::registrationData() in /home/groofius/public_html/app/app_controller.php on line 114
+[18-Apr-2012 06:47:41 UTC] PHP Fatal error:  Call to a member function registrationData() on a non-object in /home/groofius/public_html/app/app_controller.php on line 114
+[18-Apr-2012 06:47:42 UTC] PHP Fatal error:  Call to a member function registrationData() on a non-object in /home/groofius/public_html/app/app_controller.php on line 114
+[18-Apr-2012 08:08:41 UTC] PHP Fatal error:  Call to a member function registrationData() on a non-object in /home/groofius/public_html/app/app_controller.php on line 114
+[18-Apr-2012 08:08:44 UTC] PHP Fatal error:  Call to a member function registrationData() on a non-object in /home/groofius/public_html/app/app_controller.php on line 114
+[18-Apr-2012 08:08:45 UTC] PHP Fatal error:  Call to a member function registrationData() on a non-object in /home/groofius/public_html/app/app_controller.php on line 114
+[18-Apr-2012 08:09:16 UTC] PHP Fatal error:  Call to a member function registrationData() on a non-object in /home/groofius/public_html/app/app_controller.php on line 113
+[18-Apr-2012 08:21:05 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/groofius/public_html/app/views/users/add.ctp on line 134
+[18-Apr-2012 08:26:50 UTC] PHP Fatal error:  Class 'AppModel' not found in /home/groofius/public_html/app/app_model.php on line 5
+[18-Apr-2012 09:30:47 UTC] PHP Fatal error:  Call to undefined function imageCreateFromString() in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[18-Apr-2012 09:31:01 UTC] PHP Fatal error:  Call to undefined function imageCreateFromString() in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[18-Apr-2012 09:31:20 UTC] PHP Fatal error:  Call to undefined function imageCreateFromString() in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[18-Apr-2012 09:31:49 UTC] PHP Fatal error:  Call to undefined function imageCreateFromString() in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[18-Apr-2012 09:31:58 UTC] PHP Fatal error:  Call to undefined function imageCreateFromString() in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[18-Apr-2012 09:32:00 UTC] PHP Fatal error:  Call to undefined function imageCreateFromString() in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[18-Apr-2012 09:37:41 UTC] PHP Fatal error:  Call to undefined function gd_info() in /home/groofius/public_html/app/config/core.php on line 2
+[18-Apr-2012 09:37:41 UTC] PHP Fatal error:  Call to undefined function gd_info() in /home/groofius/public_html/app/config/core.php on line 2
+[18-Apr-2012 09:41:39 UTC] PHP Fatal error:  Call to undefined function imageCreateFromString() in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[18-Apr-2012 09:41:48 UTC] PHP Fatal error:  Call to undefined function gd_info() in /home/groofius/public_html/app/config/core.php on line 2
+[18-Apr-2012 09:41:48 UTC] PHP Fatal error:  Call to undefined function gd_info() in /home/groofius/public_html/app/config/core.php on line 2
+[01-May-2012 20:04:30 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 17200 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[01-May-2012 20:06:52 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 17200 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[01-May-2012 20:08:34 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 4300 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[07-May-2012 23:38:24 UTC] PHP Fatal error:  Class 'Search' not found in /home/groofius/public_html/cake/libs/class_registry.php on line 141
+[27-May-2012 20:22:22 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 3543 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[16-Aug-2012 21:42:02 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8192 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[16-Aug-2012 21:42:43 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8192 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[16-Aug-2012 21:52:19 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8192 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[16-Aug-2012 21:59:45 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 2048 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[17-Aug-2012 21:33:49 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 2048 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[13-Oct-2012 19:27:55 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8192 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[13-Oct-2012 19:28:13 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8192 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[13-Oct-2012 19:28:29 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8192 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[14-Oct-2012 20:38:16 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8960 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[14-Oct-2012 20:41:10 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 2240 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[14-Oct-2012 20:43:16 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8960 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[15-Oct-2012 04:16:09 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 8960 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[12-Nov-2012 22:04:27 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 2272 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[12-Nov-2012 22:13:48 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 2272 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[12-Nov-2012 22:13:53 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 9088 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[12-Nov-2012 22:13:55 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 9088 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[12-Nov-2012 22:13:57 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 2272 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[12-Nov-2012 22:13:58 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 9088 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[12-Nov-2012 22:18:58 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 2272 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[12-Nov-2012 22:19:29 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 2272 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[12-Nov-2012 22:20:34 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/groofius/public_html/app/webroot/comodo.php:11) in /home/groofius/public_html/app/webroot/comodo.php on line 14
+[12-Nov-2012 22:24:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/groofius/public_html/app/webroot/comodo.php:11) in /home/groofius/public_html/app/webroot/comodo.php on line 14
+[12-Nov-2012 22:24:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/groofius/public_html/app/webroot/comodo.php:11) in /home/groofius/public_html/app/webroot/comodo.php on line 14
+[12-Nov-2012 22:25:05 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/groofius/public_html/app/webroot/comodo.php:11) in /home/groofius/public_html/app/webroot/comodo.php on line 14
+[12-Nov-2012 22:26:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/groofius/public_html/app/webroot/comodo.php:11) in /home/groofius/public_html/app/webroot/comodo.php on line 14
+[13-Nov-2012 12:43:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/groofius/public_html/app/webroot/comodo.php:11) in /home/groofius/public_html/app/webroot/comodo.php on line 14
+[13-Nov-2012 15:53:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/groofius/public_html/app/webroot/comodo.php:11) in /home/groofius/public_html/app/webroot/comodo.php on line 14
+[12-Jan-2013 21:50:03 UTC] PHP Warning:  getimagesize() [<a href='function.getimagesize'>function.getimagesize</a>]: Filename cannot be empty in /home/groofius/public_html/app/webroot/crop_120.php on line 14
+[16-Jan-2013 04:28:48 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 7168 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[16-Jan-2013 13:54:25 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 7168 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[16-Jan-2013 22:04:10 UTC] PHP Warning:  getimagesize(media/filter/l560/project/47/img/46686521d9e508f7edbd8ae23677b7fc_2.png) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/groofius/public_html/app/webroot/comodo_284_179.php on line 9
+[16-Jan-2013 22:04:10 UTC] PHP Warning:  file_get_contents(media/filter/l560/project/47/img/46686521d9e508f7edbd8ae23677b7fc_2.png) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/groofius/public_html/app/webroot/comodo_284_179.php on line 11
+[16-Jan-2013 22:04:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/groofius/public_html/app/webroot/comodo_284_179.php:9) in /home/groofius/public_html/app/webroot/comodo_284_179.php on line 14
+[18-Jan-2013 04:15:26 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 7168 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[18-Jan-2013 04:15:49 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 7168 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[18-Jan-2013 14:18:01 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 7168 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[28-Jan-2013 21:39:31 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 16000 bytes) in /home/groofius/public_html/app/plugins/media/libs/mm/src/Media/Process/Adapter/Gd.php on line 50
+[12-Feb-2013 07:06:30 UTC] PHP Warning:  getimagesize(media/filter/l560/project/47/img/46686521d9e508f7edbd8ae23677b7fc_2.png) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory in /home/groofius/public_html/app/webroot/comodo_284_179.php on line 9
+[12-Feb-2013 07:06:30 UTC] PHP Warning:  file_get_contents(media/filter/l560/project/47/img/46686521d9e508f7edbd8ae23677b7fc_2.png) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory in /home/groofius/public_html/app/webroot/comodo_284_179.php on line 11
+[12-Feb-2013 07:06:30 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/groofius/public_html/app/webroot/comodo_284_179.php:9) in /home/groofius/public_html/app/webroot/comodo_284_179.php on line 14
+[16-Feb-2013 00:21:14 UTC] PHP Warning:  getimagesize() [<a href='function.getimagesize'>function.getimagesize</a>]: Filename cannot be empty in /home/groofius/public_html/app/webroot/crop_120.php on line 14

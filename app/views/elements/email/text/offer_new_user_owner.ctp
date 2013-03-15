@@ -1,0 +1,1 @@
+El usuario <?=User::getName($emailData)?> se ha unido a tu ofrecimiento "<?=Offer::getName($emailData)?>". Esto significa que él también recibirá notificaciones acerca de los proyectos creados en base a tu ofrecimiento y podrá patrocinarlos si lo desea.

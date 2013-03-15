@@ -1,0 +1,1 @@
+Tu proyecto "<?=Project::getName($emailData)?>" no ha alcanzado los fondos requeridos por lo que no será financiado. Los aportes de tus patrocinadores serán reintegrados en su totalidad a sus cuentas. Esperamos contar próximamente con un nuevo proyecto tuyo.

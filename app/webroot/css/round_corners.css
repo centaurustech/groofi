@@ -1,0 +1,45 @@
+.round , .round.all { border-radius: 10px;  }
+
+.round.topAll {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius : 0px ;
+}
+
+.round.bottomAll {
+    border-top-right-radius: 0px;
+    border-top-left-radius : 0px ;
+}
+
+.round.leftAll {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.round.leftTop {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.round.leftBottom {
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.round.rightAll {
+    border-top-left-radius : 0px ;
+    border-bottom-left-radius : 0px ;
+}
+
+.round.rightBottom {
+    border-top-right-radius : 0px ;
+    border-top-left-radius : 0px ;
+    border-bottom-left-radius : 0px ;
+}
+
+.round.rightTop {
+    border-top-left-radius : 0px ;
+    border-bottom-right-radius : 0px ;
+    border-bottom-left-radius : 0px ;
+}

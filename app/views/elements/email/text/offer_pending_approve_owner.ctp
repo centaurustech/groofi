@@ -1,0 +1,1 @@
+Tu propuesta de ofrecimiento "<?=Offer::getName($emailData);?>" será evaluada por nuestro staff de moderadores. En los próximos días recibirás un e-mail comunicándote los pasos a seguir.

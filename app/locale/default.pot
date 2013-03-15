@@ -1,0 +1,3465 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2013-02-27 15:20-0300\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: app_controller.php:104
+msgid "GENDER_MALE"
+msgstr ""
+
+#: app_controller.php:105
+msgid "GENDER_FEMALE"
+msgstr ""
+
+#: app_controller.php:189
+msgid "EDIT_ACCOUNT"
+msgstr ""
+
+#: app_controller.php:190;322
+msgid "ADMIN_LOGOUT"
+msgstr ""
+
+#: app_controller.php:214
+#: views\offers\index.ctp:21
+#: views\projects\--index.ctp:17
+msgid "PROJECTS"
+msgstr ""
+
+#: app_controller.php:216
+msgid "ADMIN_PROJECTS_MENU_ALL"
+msgstr ""
+
+#: app_controller.php:217
+msgid "ADMIN_PROJECTS_MENU_PROPOSALS"
+msgstr ""
+
+#: app_controller.php:218
+msgid "ADMIN_PROJECTS_MENU_REJECTED"
+msgstr ""
+
+#: app_controller.php:219
+msgid "ADMIN_PROJECTS_MENU_APPROVED"
+msgstr ""
+
+#: app_controller.php:220
+msgid "ADMIN_PROJECTS_MENU_PUBLISHED"
+msgstr ""
+
+#: app_controller.php:221
+msgid "ADMIN_PROJECTS_MENU_ABOUT_TO_FINISH"
+msgstr ""
+
+#: app_controller.php:222
+msgid "ADMIN_PROJECTS_MENU_FUNDED"
+msgstr ""
+
+#: app_controller.php:223
+msgid "ADMIN_PROJECTS_MENU_NOT-FUNDED"
+msgstr ""
+
+#: app_controller.php:224
+msgid "ADMIN_PROJECTS_MENU_FINISHED"
+msgstr ""
+
+#: app_controller.php:225
+msgid "ADMIN_PROJECTS_MENU_OUTSTANDING"
+msgstr ""
+
+#: app_controller.php:226
+msgid "ADMIN_PROJECTS_MENU_LEADING"
+msgstr ""
+
+#: app_controller.php:227
+msgid "ADMIN_PROJECTS_MENU_WEEK"
+msgstr ""
+
+#: app_controller.php:255
+msgid "USERS"
+msgstr ""
+
+#: app_controller.php:257
+msgid "ADMIN_USER_ALL"
+msgstr ""
+
+#: app_controller.php:258
+msgid "ADMIN_USER_REPORTED_USERS"
+msgstr ""
+
+#: app_controller.php:259
+msgid "ADMIN_USER_ALL_ACTIVE_USERS"
+msgstr ""
+
+#: app_controller.php:260
+msgid "ADMIN_USER_ALL_INACTIVE_USERS"
+msgstr ""
+
+#: app_controller.php:261
+msgid "ADMIN_USER_ALL_FUNCTIONAL_USERS"
+msgstr ""
+
+#: app_controller.php:263
+msgid "ADMIN_USER_ALL_ADMIN_USERS"
+msgstr ""
+
+#: app_controller.php:264
+msgid "ADMIN_USER_ALL_ADMIN_USERS_ACTIVE"
+msgstr ""
+
+#: app_controller.php:265
+msgid "ADMIN_USER_ALL_ADMIN_USERS_INACTIVE"
+msgstr ""
+
+#: app_controller.php:267
+msgid "ADMIN_CREATE_ADMIN"
+msgstr ""
+
+#: app_controller.php:277
+msgid "PAYMENTS"
+msgstr ""
+
+#: app_controller.php:279
+msgid "ADMIN_PAYMENTS_ALL"
+msgstr ""
+
+#: app_controller.php:280
+msgid "ADMIN_PAYMENTS_COMPLETED"
+msgstr ""
+
+#: app_controller.php:281
+msgid "ADMIN_PAYMENTS_NOT_COMPLETED"
+msgstr ""
+
+#: app_controller.php:282
+msgid "ADMIN_PAYMENTS_ALL_MP"
+msgstr ""
+
+#: config\site\groofi__extra-config.php:43
+#: config\site\generic\extra.php:44
+msgid "ALL SUPPORTED "
+msgstr ""
+
+#: config\site\groofi__extra-config.php:51
+#: config\site\generic\extra.php:52
+msgid "ALL SUPPORTED FORMATS"
+msgstr ""
+
+#: controllers\messages_controller.php:51;58
+msgid "THIS_MESSAGE_CANT_NOT_BE_SENT"
+msgstr ""
+
+#: controllers\notificationtypes_controller.php:13;39;54
+msgid "Invalid notificationtype"
+msgstr ""
+
+#: controllers\notificationtypes_controller.php:22
+msgid "Notificationtype saved."
+msgstr ""
+
+#: controllers\notificationtypes_controller.php:43
+msgid "The notificationtype has been saved."
+msgstr ""
+
+#: controllers\notificationtypes_controller.php:57
+msgid "Notificationtype deleted"
+msgstr ""
+
+#: controllers\notificationtypes_controller.php:59
+msgid "Notificationtype was not deleted"
+msgstr ""
+
+#: controllers\offers_controller.php:20
+#: controllers\projects_controller.php:36
+msgid "LESS_THAN_1000"
+msgstr ""
+
+#: controllers\offers_controller.php:21
+#: controllers\projects_controller.php:37
+msgid "FROM_1000_TO_5000"
+msgstr ""
+
+#: controllers\offers_controller.php:22
+#: controllers\projects_controller.php:38
+msgid "FROM_5000_TO_10000"
+msgstr ""
+
+#: controllers\offers_controller.php:23
+#: controllers\projects_controller.php:39
+msgid "FROM_10000_TO_20000"
+msgstr ""
+
+#: controllers\offers_controller.php:24
+#: controllers\projects_controller.php:40
+msgid "20000_OR_MORE"
+msgstr ""
+
+#: controllers\offers_controller.php:29
+#: controllers\predefinidos_controller.php:32;83
+#: controllers\projects_controller.php:82
+#: controllers\staticpages_controller.php:159
+#: views\categories\admin_index.ctp:22
+msgid "CATEGORY_"
+msgstr ""
+
+#: controllers\offers_controller.php:98
+msgid "Invalid offer"
+msgstr ""
+
+#: controllers\offers_controller.php:213
+#: controllers\projects_controller.php:355
+msgid "AT_LEAST_ONE_LINK"
+msgstr ""
+
+#: controllers\offers_controller.php:291
+#: controllers\projects_controller.php:965
+#: controllers\searches_controller.php:29
+#: models\project.php:636
+msgid "MOST_POPULAR"
+msgstr ""
+
+#: controllers\offers_controller.php:292
+#: controllers\projects_controller.php:966
+#: controllers\searches_controller.php:30
+#: models\project.php:637
+msgid "MOST_RECENT"
+msgstr ""
+
+#: controllers\offers_controller.php:293
+#: controllers\projects_controller.php:967
+#: controllers\searches_controller.php:31
+#: models\project.php:638
+msgid "BY_END"
+msgstr ""
+
+#: controllers\offers_controller.php:294
+#: controllers\projects_controller.php:968
+#: controllers\searches_controller.php:32
+#: models\project.php:639
+msgid "FINISHED"
+msgstr ""
+
+#: controllers\posts_controller.php:47;201;260;280
+msgid "Invalid post"
+msgstr ""
+
+#: controllers\posts_controller.php:158;231;273;288
+msgid "The post could not be saved. Please, try again."
+msgstr ""
+
+#: controllers\posts_controller.php:207;270;285
+msgid "The post has been saved"
+msgstr ""
+
+#: controllers\posts_controller.php:242;298
+msgid "Invalid id for post"
+msgstr ""
+
+#: controllers\posts_controller.php:246;302
+msgid "Post deleted"
+msgstr ""
+
+#: controllers\posts_controller.php:249;305
+msgid "Post was not deleted"
+msgstr ""
+
+#: controllers\projects_controller.php:173
+msgid "Invalid project"
+msgstr ""
+
+#: controllers\projects_controller.php:351;875
+#: models\project.php:612
+msgid "AT_LEAST_ONE_PRIZE"
+msgstr ""
+
+#: controllers\projects_controller.php:635
+msgid "USER_PAYPAY_ACCOUNT_INFORMATION_INCOMPLETE"
+msgstr ""
+
+#: controllers\sponsorships_controller.php:310
+msgid "PLEASE_SELECT_ONE_PRIZE"
+msgstr ""
+
+#: controllers\sponsorships_controller.php:348
+msgid "SELECTED_PRIZE %s"
+msgstr ""
+
+#: controllers\sponsorships_controller.php:348
+msgid "YOU_ONLY_WANT_TO_HELP"
+msgstr ""
+
+#: controllers\sponsorships_controller.php:361
+msgid "PROJECT_SPONSORSHIP %s"
+msgstr ""
+
+#: controllers\staticpages_controller.php:45;77;105;124
+msgid "Invalid staticpage"
+msgstr ""
+
+#: controllers\staticpages_controller.php:90
+msgid "Staticpage saved."
+msgstr ""
+
+#: controllers\staticpages_controller.php:127
+msgid "Staticpage deleted"
+msgstr ""
+
+#: controllers\staticpages_controller.php:129
+msgid "Staticpage was not deleted"
+msgstr ""
+
+#: controllers\users_controller.php:346
+msgid "FORGOT_PASSWORD_EMAIL_ERROR"
+msgstr ""
+
+#: controllers\users_controller.php:549
+msgid "YOUR_INFO_HAS_BEEN_UPDATED"
+msgstr ""
+
+#: controllers\users_controller.php:672
+msgid "USER_HAS_BEEN_CREATED"
+msgstr ""
+
+#: controllers\users_controller.php:687
+msgid "USER_INFO_HAS_BEEN_UPDATED"
+msgstr ""
+
+#: models\sponsorship.php:325;339
+msgid "PAYMENT_FROM_GROOFI"
+msgstr ""
+
+#: plugins\media\vendors\shells\media.php:94
+msgid "What would you like to do?"
+msgstr ""
+
+#: plugins\media\views\elements\attachments.ctp:77
+#: views\elements\media\attachment_element.ctp:90
+#: views\elements\media\attachments.ctp:92
+#: views\helpers\time_i18n.php:182;216
+#: views\offers\index.ctp:4
+#: views\projects\--index.ctp:4
+#: views\projects\-index-A.ctp:4
+#: views\projects\index.ctp:4
+msgid "%s"
+msgstr ""
+
+#: plugins\media\views\elements\attachments.ctp:92
+#: views\elements\media\attachment_element.ctp:101
+#: views\elements\media\attachments.ctp:105
+msgid "File"
+msgstr ""
+
+#: plugins\media\views\elements\attachments.ctp:95
+#: views\elements\media\attachment_element.ctp:105
+#: views\elements\media\attachments.ctp:108
+msgid "AN_ERROR_OCCURED_WHILE_TRANSFERRING_THE_FILE"
+msgstr ""
+
+#: plugins\media\views\elements\attachments.ctp:96
+#: views\elements\media\attachment_element.ctp:106
+#: views\elements\media\attachments.ctp:109
+msgid "THE_FILE_IS_INVALID"
+msgstr ""
+
+#: plugins\media\views\elements\attachments.ctp:97
+#: views\elements\media\attachment_element.ctp:107
+#: views\elements\media\attachments.ctp:110
+msgid "THE_FILE_CANNOT_BE_PROCESSED"
+msgstr ""
+
+#: plugins\media\views\elements\attachments.ctp:98
+#: views\elements\media\attachment_element.ctp:108
+#: views\elements\media\attachments.ctp:111
+msgid "THE_FILE_CANNOT_BE_TRANSFERRED_FROM_OR_TO_LOCATION"
+msgstr ""
+
+#: plugins\media\views\elements\attachments.ctp:99
+#: views\elements\media\attachment_element.ctp:109
+#: views\elements\media\attachments.ctp:112
+msgid "EXECUTABLE_FILES_CANNOT_BE_UPLOADED"
+msgstr ""
+
+#: plugins\media\views\elements\attachments.ctp:100;101
+#: views\elements\media\attachment_element.ctp:110;111
+#: views\elements\media\attachments.ctp:113;114
+msgid "THE_FILE_IS_TOO_LARGE"
+msgstr ""
+
+#: plugins\media\views\elements\attachments.ctp:102
+#: views\elements\media\attachment_element.ctp:112
+#: views\elements\media\attachments.ctp:115
+msgid "THE_FILE_HAS_THE_WRONG_EXTENSION"
+msgstr ""
+
+#: plugins\media\views\elements\attachments.ctp:103
+#: views\elements\media\attachment_element.ctp:113
+#: views\elements\media\attachments.ctp:116
+msgid "THE_FILE_HAS_THE_WRONG_MIME_TYPE"
+msgstr ""
+
+#: plugins\media\views\elements\attachments.ctp:106
+#: views\elements\media\attachment_element.ctp:118
+#: views\elements\media\attachments.ctp:121
+msgid "TEXTUAL_REPLACEMENT"
+msgstr ""
+
+#: plugins\media\views\elements\attachments.ctp:108
+#: views\elements\media\attachment_element.ctp:121
+#: views\elements\media\attachments.ctp:123
+msgid "A_TEXTUAL_REPLACEMENT_MUST_BE_PROVIDED"
+msgstr ""
+
+#: plugins\media\views\elements\attachments.ctp:161
+#: views\categories\admin_index.ctp:20
+#: views\elements\media\attachments.ctp:176
+#: views\elements\messages\message.ctp:19
+#: views\elements\offers\profile_offer.ctp:59
+#: views\elements\offers\project_offer.ctp:41
+#: views\elements\projects\offer_project.ctp:101
+#: views\elements\projects\profile_project.ctp:118
+msgid "DELETE"
+msgstr ""
+
+#: views\add.ctp:14
+#: views\projects\--add.ctp:13
+msgid "IN_RENSPONSE_OF %s FROM %s"
+msgstr ""
+
+#: views\add.ctp:26
+#: views\projects\--add.ctp:25
+msgid "PROJECT_ADD_FIRST_BLOCK_TITLE"
+msgstr ""
+
+#: views\add.ctp:26
+#: views\projects\--add.ctp:25
+msgid "PROJECT_ADD_FIRST_BLOCK_SUBTITLE"
+msgstr ""
+
+#: views\add.ctp:39
+#: views\offers\add.ctp:18
+#: views\projects\--add.ctp:51
+msgid "GIVE_US_SOME_LINKS"
+msgstr ""
+
+#: views\add.ctp:43
+#: views\projects\--add.ctp:55
+msgid "PROJECT_ADD_SECOND_BLOCK_TITLE"
+msgstr ""
+
+#: views\add.ctp:43
+#: views\projects\--add.ctp:55
+msgid "PROJECT_ADD_SECOND_BLOCK_SUBTITLE"
+msgstr ""
+
+#: views\add.ctp:47
+#: views\projects\--add.ctp:59
+msgid "PROJECT__FILE__HELP_MESSAGE_TEXT"
+msgstr ""
+
+#: views\add.ctp:47
+#: views\projects\--add.ctp:59
+msgid "PROJECT__FILE__TIP_MESSAGE_TEXT"
+msgstr ""
+
+#: views\add.ctp:54
+#: views\projects\--add.ctp:66
+msgid "PROJECT_ADD_THIRD_BLOCK_TITLE"
+msgstr ""
+
+#: views\add.ctp:54
+#: views\projects\--add.ctp:66
+msgid "PROJECT_ADD_THIRD_BLOCK_SUBTITLE"
+msgstr ""
+
+#: views\add.ctp:63
+#: views\projects\--add.ctp:75
+#: views\projects\--edit.ctp:80
+msgid "GIVE_US_SOME_PrizeS"
+msgstr ""
+
+#: views\add.ctp:65
+#: views\projects\--add.ctp:77
+msgid "SUBMIT_PROJECT_PROPOSAL"
+msgstr ""
+
+#: views\categories\admin_index.ctp:8
+msgid "ADD_CATEGORY"
+msgstr ""
+
+#: views\categories\admin_index.ctp:14
+#: views\elements\offers\profile_offer.ctp:34;63
+#: views\elements\offers\project_offer.ctp:45
+#: views\elements\projects\offer_project.ctp:93;105
+#: views\elements\projects\profile_project.ctp:110;122
+#: views\users\admin_index.ctp:79
+msgid "EDIT"
+msgstr ""
+
+#: views\categories\admin_index.ctp:16
+msgid "MOVE_UP"
+msgstr ""
+
+#: views\categories\admin_index.ctp:18
+msgid "MOVE_DOWN"
+msgstr ""
+
+#: views\comments\---project_comments.ctp:28
+#: views\comments\offer_comments.ctp:22
+#: views\offers\index.ctp:82;82
+#: views\projects\--index.ctp:75;75
+#: views\projects\-index-A.ctp:182;182
+#: views\projects\index.ctp:182;182
+msgid "PREV_PAGE"
+msgstr ""
+
+#: views\comments\---project_comments.ctp:29
+#: views\comments\offer_comments.ctp:23
+#: views\offers\index.ctp:89;89
+#: views\projects\--index.ctp:82;82
+#: views\projects\-index-A.ctp:189;189
+#: views\projects\index.ctp:189;189
+msgid "NEXT_PAGE"
+msgstr ""
+
+#: views\comments\project_comments.ctp:57
+#: views\elements\projects\view_menu.ctp:23
+#: views\posts\view_post.ctp:59
+#: views\posts\view_posts.ctp:58
+#: views\predefinidos\view.ctp:43
+#: views\projects\-view-A.ctp:54
+#: views\projects\view.ctp:54
+#: views\sponsorships\project_sponsorships.ctp:55
+msgid "THE_PROJECT"
+msgstr ""
+
+#: views\comments\project_comments.ctp:59
+#: views\elements\projects\view_menu.ctp:25
+#: views\posts\view_post.ctp:61
+#: views\posts\view_posts.ctp:60
+#: views\projects\-view-A.ctp:56
+#: views\projects\view.ctp:56
+#: views\sponsorships\project_sponsorships.ctp:57
+msgid "PROJECT_SPONSORS"
+msgstr ""
+
+#: views\comments\project_comments.ctp:60
+#: views\elements\offers\view_menu.ctp:22
+#: views\elements\projects\view_menu.ctp:26
+#: views\posts\view_post.ctp:62
+#: views\posts\view_posts.ctp:61
+#: views\projects\-view-A.ctp:57
+#: views\projects\view.ctp:57
+#: views\sponsorships\project_sponsorships.ctp:58
+msgid "COMMENTS"
+msgstr ""
+
+#: views\comments\project_comments.ctp:62
+#: views\elements\projects\view_menu.ctp:28
+#: views\posts\view_post.ctp:64
+#: views\posts\view_posts.ctp:63
+#: views\projects\-view-A.ctp:59
+#: views\projects\view.ctp:59
+#: views\sponsorships\project_sponsorships.ctp:60
+msgid "UPDATES"
+msgstr ""
+
+#: views\comments\project_comments.ctp:170
+#: views\posts\view_post.ctp:198
+#: views\posts\view_posts.ctp:197
+#: views\projects\-view-A.ctp:148
+#: views\projects\view.ctp:168
+#: views\sponsorships\project_sponsorships.ctp:164
+msgid "PROJECT_IMPORTANT_ADVICE %s %s %s"
+msgstr ""
+
+#: views\comments\project_comments.ctp:170;170
+#: views\elements\email\text\project_new_backer_express_payment_user.ctp:3;3
+#: views\elements\email\text\project_new_backer_pre_approval_owner.ctp:3;3
+#: views\elements\email\text\project_new_backer_pre_approval_user.ctp:3;3
+#: views\elements\notifications\user_feed\comments\offer_commented.ctp:14;14
+#: views\elements\notifications\user_feed\comments\post_commented.ctp:14;14
+#: views\elements\notifications\user_feed\comments\project_commented.ctp:14;14
+#: views\elements\notifications\user_feed\follows\offer_new_user.ctp:14;14
+#: views\elements\notifications\user_feed\offers\offer_about_to_finish.ctp:14;14
+#: views\elements\notifications\user_feed\offers\offer_created.ctp:14;14
+#: views\elements\notifications\user_feed\offers\offer_finished.ctp:14;14
+#: views\elements\notifications\user_feed\posts\offer_new_update.ctp:14;14
+#: views\elements\notifications\user_feed\posts\project_new_update.ctp:14;14
+#: views\elements\notifications\user_feed\projects\offer_new_project.ctp:18;18;24;24
+#: views\elements\notifications\user_feed\projects\project_about_to_finish.ctp:18;18;24;24
+#: views\elements\notifications\user_feed\projects\project_created.ctp:18;18;24;24
+#: views\elements\notifications\user_feed\sponsorships\project_new_backer.ctp:17;17
+#: views\elements\offers\profile_offer.ctp:32;32
+#: views\elements\offers\admin\offer_info.ctp:14;14
+#: views\elements\posts\offer_post.ctp:24;24
+#: views\elements\posts\project_post.ctp:23;23
+#: views\elements\posts\view_post.ctp:29;29
+#: views\elements\projects\offer_project.ctp:91;91
+#: views\elements\projects\profile_project.ctp:108;108
+#: views\elements\projects\view_info.ctp:45;45
+#: views\elements\projects\admin\project_info.ctp:15;15
+#: views\elements\projects\admin\project_info2.ctp:16;16
+#: views\elements\users\admin\user_info.ctp:13;13
+#: views\offers\admin_view.ctp:84;84
+#: views\posts\view_post.ctp:83;83;198;198
+#: views\posts\view_posts.ctp:82;82;197;197
+#: views\projects\-view-A.ctp:148;148
+#: views\projects\admin_view.ctp:138;138
+#: views\projects\view.ctp:168;168
+#: views\sponsorships\project_sponsorships.ctp:164;164
+#: views\users\view.ctp:116;116;117;117;119;119;122;122;125;125;128;128;131;131
+msgid "OF"
+msgstr ""
+
+#: views\elements\url.ctp:39
+#: views\elements\form\url.ctp:54
+msgid "THE_URL_IS_NOT_VALID"
+msgstr ""
+
+#: views\elements\url.ctp:40
+#: views\elements\form\url.ctp:55
+msgid "THE_FIELD_IS_REQUIRED"
+msgstr ""
+
+#: views\elements\comments\add.ctp:12
+#: views\elements\messages\message.ctp:39
+#: views\elements\users\mini_info.ctp:28
+#: views\elements\users\profile.ctp:51
+msgid "SEND"
+msgstr ""
+
+#: views\elements\common\scripts\lang.ctp:6
+msgid "UPLOAD_BROWSE"
+msgstr ""
+
+#: views\elements\common\scripts\lang.ctp:7
+msgid "UPLOAD_NO_FILE_SELECTED"
+msgstr ""
+
+#: views\elements\common\scripts\lang.ctp:8
+msgid "CHANGE"
+msgstr ""
+
+#: views\elements\common\scripts\lang.ctp:13
+msgid "::value:: DAYS"
+msgstr ""
+
+#: views\elements\common\scripts\lang.ctp:14
+msgid "::value:: DAY"
+msgstr ""
+
+#: views\elements\common\scripts\lang.ctp:19;26
+#: views\layouts\error.ctp:123;129
+msgid "OK"
+msgstr ""
+
+#: views\elements\common\scripts\lang.ctp:20
+#: views\elements\messages\message.ctp:39
+#: views\layouts\error.ctp:124
+#: views\users\--add.ctp:72
+msgid "CANCEL"
+msgstr ""
+
+#: views\elements\common\scripts\lang.ctp:21
+#: views\layouts\error.ctp:125
+msgid "CONFIRM_TITLE"
+msgstr ""
+
+#: views\elements\common\scripts\lang.ctp:22
+#: views\layouts\error.ctp:126
+msgid "ARE_YOU_SURE_DO_THIS_ACTION"
+msgstr ""
+
+#: views\elements\common\scripts\lang.ctp:27
+#: views\layouts\error.ctp:130
+msgid "ALERT_TITLE"
+msgstr ""
+
+#: views\elements\common\scripts\lang.ctp:31
+#: views\layouts\error.ctp:133
+msgid "MEDIA_IMAGE"
+msgstr ""
+
+#: views\elements\common\scripts\lang.ctp:32
+#: views\layouts\error.ctp:134
+msgid "MEDIA_VIDEO"
+msgstr ""
+
+#: views\elements\common\scripts\lang.ctp:33
+#: views\layouts\error.ctp:135
+msgid "MEDIA_AUDIO"
+msgstr ""
+
+#: views\elements\form\prizes.ctp:56
+msgid "Prize_VALUE"
+msgstr ""
+
+#: views\elements\form\prizes.ctp:57
+msgid "Prize_TEXT"
+msgstr ""
+
+#: views\elements\messages\message.ctp:4
+msgid "TO %s"
+msgstr ""
+
+#: views\elements\messages\message.ctp:4
+msgid "FROM %s"
+msgstr ""
+
+#: views\elements\messages\message.ctp:13
+msgid "SENT %s"
+msgstr ""
+
+#: views\elements\messages\message.ctp:21
+msgid "READ"
+msgstr ""
+
+#: views\elements\messages\message.ctp:24
+msgid "REPLY"
+msgstr ""
+
+#: views\elements\notifications\list.ctp:20
+#: views\users\view.ctp:158
+msgid "THIS_USER_HAS_NOT_ANY_ACTIVITY_YET"
+msgstr ""
+
+#: views\elements\notifications\user_feed\comments\offer_commented.ctp:12
+msgid "COMMENT_THE_OFFER %s %s"
+msgstr ""
+
+#: views\elements\notifications\user_feed\comments\post_commented.ctp:12
+msgid "COMMENT_THE_POST %s %s"
+msgstr ""
+
+#: views\elements\notifications\user_feed\comments\project_commented.ctp:12
+msgid "COMMENT_THE_PROJECT %s %s"
+msgstr ""
+
+#: views\elements\notifications\user_feed\follows\offer_new_user.ctp:12
+msgid "HAS_JOINED_TO_THE_OFFER %s %s"
+msgstr ""
+
+#: views\elements\notifications\user_feed\offers\offer_about_to_finish.ctp:12
+msgid "THE_OFFER_IS_ABOUT_TO_FINISH %s %s"
+msgstr ""
+
+#: views\elements\notifications\user_feed\offers\offer_created.ctp:12
+msgid "HAS_CREATED_THE_OFFER %s %s"
+msgstr ""
+
+#: views\elements\notifications\user_feed\offers\offer_finished.ctp:12
+msgid "THE_OFFER_HAS_FINISHED %s %s"
+msgstr ""
+
+#: views\elements\notifications\user_feed\posts\offer_new_update.ctp:12
+msgid "HAS_UPDATED_THE_OFFER %s %s"
+msgstr ""
+
+#: views\elements\notifications\user_feed\posts\offer_new_update.ctp:20
+#: views\elements\notifications\user_feed\posts\project_new_update.ctp:21
+#: views\users\view.ctp:143
+msgid "VIEW_UPDATE"
+msgstr ""
+
+#: views\elements\notifications\user_feed\posts\project_new_update.ctp:14
+msgid "HAS_UPDATED_THE_PROJECT %s %s"
+msgstr ""
+
+#: views\elements\notifications\user_feed\projects\offer_new_project.ctp:15
+#: views\elements\notifications\user_feed\projects\project_created.ctp:15
+msgid "HAS_CREATED_THE_PROJECT %s IN RESPONSE OF %s %s"
+msgstr ""
+
+#: views\elements\notifications\user_feed\projects\offer_new_project.ctp:22
+#: views\elements\notifications\user_feed\projects\project_created.ctp:22
+msgid "HAS_CREATED_THE_PROJECT %s %s"
+msgstr ""
+
+#: views\elements\notifications\user_feed\projects\project_about_to_finish.ctp:15
+msgid "THE_PROJECT_IS ABOUT_TO_FINISH %s IN RESPONSE OF %s %s"
+msgstr ""
+
+#: views\elements\notifications\user_feed\projects\project_about_to_finish.ctp:22
+msgid "THE_PROJECT_IS ABOUT_TO_FINISH %s %s"
+msgstr ""
+
+#: views\elements\notifications\user_feed\sponsorships\project_new_backer.ctp:15
+msgid "IS_SPONSORING_THE_PROJECT %s %s"
+msgstr ""
+
+#: views\elements\offers\discover_offer.ctp:14
+#: views\elements\offers\project_offer.ctp:11
+#: views\elements\projects\discover_project.ctp:17
+#: views\elements\projects\offer_project.ctp:24
+#: views\elements\projects\profile_project.ctp:29
+msgid "BY %s"
+msgstr ""
+
+#: views\elements\offers\follow_info.ctp:7
+msgid "HAVE_JOINED_TO_THIS_OFFER"
+msgstr ""
+
+#: views\elements\offers\follow_info.ctp:7
+#: views\elements\offers\project_info.ctp:7
+msgid "%s MEMBERS"
+msgstr ""
+
+#: views\elements\offers\profile_offer.ctp:32
+#: views\elements\projects\offer_project.ctp:91
+#: views\elements\projects\profile_project.ctp:108
+msgid "CREATED_ON %s"
+msgstr ""
+
+#: views\elements\offers\profile_offer.ctp:61
+#: views\elements\offers\project_offer.ctp:43
+msgid "OFFER_PENDING_PUBLISH"
+msgstr ""
+
+#: views\elements\offers\profile_offer.ctp:62
+#: views\elements\offers\project_offer.ctp:44
+#: views\elements\projects\offer_project.ctp:104
+#: views\elements\projects\profile_project.ctp:121
+msgid "PREVIEW"
+msgstr ""
+
+#: views\elements\offers\profile_offer.ctp:65
+#: views\elements\offers\project_offer.ctp:47
+msgid "OFFER_PENDING_APPROVAL"
+msgstr ""
+
+#: views\elements\offers\profile_offer.ctp:68
+#: views\elements\offers\project_offer.ctp:50
+#: views\elements\projects\offer_project.ctp:110
+#: views\elements\projects\profile_project.ctp:127
+#: views\offers\admin_index.ctp:105
+#: views\users\admin_index.ctp:75
+msgid "VIEW"
+msgstr ""
+
+#: views\elements\offers\profile_offer.ctp:69
+#: views\elements\offers\project_offer.ctp:51
+#: views\elements\offers\view_menu.ctp:37
+#: views\elements\projects\offer_project.ctp:111
+#: views\elements\projects\profile_project.ctp:128
+#: views\elements\projects\view_menu.ctp:36
+msgid "CREATE_UPDATE"
+msgstr ""
+
+#: views\elements\offers\profile_offer.ctp:73
+msgid "OFFER_UPDATES %s"
+msgstr ""
+
+#: views\elements\offers\project_info.ctp:7
+msgid "WHANT_TO_DO_THIS"
+msgstr ""
+
+#: views\elements\offers\view_info.ctp:9
+msgid "OFFERS_FINISHED_STATUS"
+msgstr ""
+
+#: views\elements\offers\view_info.ctp:10
+msgid "OFFERS_FINISHED_STATUS_FINISHED"
+msgstr ""
+
+#: views\elements\offers\view_info.ctp:17
+msgid "PEOPLE_WHO_ACCEPT_OFFER"
+msgstr ""
+
+#: views\elements\offers\view_info.ctp:22
+msgid "AVAILABLE_FOUNDS_FOR_EACH_PROJECT"
+msgstr ""
+
+#: views\elements\offers\view_info.ctp:29
+msgid "OFFER_IMPORTANT_ADVICE_TITLE"
+msgstr ""
+
+#: views\elements\offers\view_info.ctp:30
+msgid "OFFER_IMPORTANT_ADVICE %s"
+msgstr ""
+
+#: views\elements\offers\view_info.ctp:34
+msgid "I_WANT_TO_DO_IT_HEADLINE"
+msgstr ""
+
+#: views\elements\offers\view_info.ctp:36
+msgid "I_WANT_TO_DO_IT"
+msgstr ""
+
+#: views\elements\offers\view_info.ctp:44
+msgid "I_WANT_TO_BE_PART_HEADLINE"
+msgstr ""
+
+#: views\elements\offers\view_info.ctp:46
+msgid "I_WANT_TO_BE_PART"
+msgstr ""
+
+#: views\elements\offers\view_info.ctp:52
+msgid "I_WANT_NOT_TO_BE_PART_HEADLINE"
+msgstr ""
+
+#: views\elements\offers\view_info.ctp:54
+msgid "I_WANT_NOT_TO_BE_PART"
+msgstr ""
+
+#: views\elements\offers\view_info.ctp:62
+msgid "SHARE_THIS_OFFER_TITLE"
+msgstr ""
+
+#: views\elements\offers\view_info.ctp:64
+msgid "SHARE_THIS_OFFER_SUBTITLE"
+msgstr ""
+
+#: views\elements\offers\view_menu.ctp:5
+msgid "OFFER_BY %s IN CATEGORY %s"
+msgstr ""
+
+#: views\elements\offers\view_menu.ctp:19
+msgid "THE_OFFER"
+msgstr ""
+
+#: views\elements\offers\view_menu.ctp:24
+msgid "COMMENTS %s"
+msgstr ""
+
+#: views\elements\offers\view_menu.ctp:28
+msgid "UPDATES %s"
+msgstr ""
+
+#: views\elements\offers\view_menu.ctp:32
+msgid "RELATED_PROJECTS %s"
+msgstr ""
+
+#: views\elements\offers\view_menu.ctp:41
+msgid "EDIT_THIS_OFFER"
+msgstr ""
+
+#: views\elements\offers\view_menu.ctp:42
+msgid "PUBLISH_THIS_OFFER"
+msgstr ""
+
+#: views\elements\offers\admin\offer_info.ctp:11
+#: views\elements\projects\admin\project_info.ctp:12
+#: views\elements\projects\admin\project_info2.ctp:13
+msgid "FROM"
+msgstr ""
+
+#: views\elements\offers\admin\offer_status.ctp:5
+#: views\offers\admin_view.ctp:65
+msgid "PROPOSAL_OFFER_STATUS"
+msgstr ""
+
+#: views\elements\offers\admin\offer_status.ctp:8
+#: views\offers\admin_view.ctp:68
+msgid "APPROVED_OFFER_STATUS"
+msgstr ""
+
+#: views\elements\offers\admin\offer_status.ctp:11
+#: views\offers\admin_view.ctp:71
+msgid "REJECTED_OFFER_STATUS"
+msgstr ""
+
+#: views\elements\offers\admin\offer_status.ctp:14
+#: views\offers\admin_view.ctp:74
+msgid "PUBLISHED_OFFER_STATUS"
+msgstr ""
+
+#: views\elements\offers\admin\offer_status.ctp:17
+#: views\offers\admin_view.ctp:77
+msgid "UNKNOWN_OFFER_STATUS"
+msgstr ""
+
+#: views\elements\offers\admin\offer_status.ctp:25
+msgid "THE_OFFER_HAS_FINISHED %s"
+msgstr ""
+
+#: views\elements\offers\admin\offer_status.ctp:28;31
+#: views\projects\admin_view.ctp:65;68
+msgid "FROM %s TO %s %s days"
+msgstr ""
+
+#: views\elements\paginator\common.ctp:19
+#: views\notificationtypes\admin_index.ctp:45
+#: views\notificationtypes\index.ctp:41
+#: views\posts\admin_index.ctp:61
+#: views\staticpages\index.ctp:41
+msgid "Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%"
+msgstr ""
+
+#: views\elements\paginator\common.ctp:26
+#: views\notificationtypes\admin_index.ctp:50
+#: views\notificationtypes\index.ctp:46
+#: views\posts\admin_index.ctp:66
+#: views\staticpages\index.ctp:46
+msgid "previous"
+msgstr ""
+
+#: views\elements\paginator\common.ctp:28
+#: views\notificationtypes\admin_index.ctp:53
+#: views\notificationtypes\index.ctp:49
+#: views\posts\admin_index.ctp:69
+#: views\staticpages\index.ctp:49
+msgid "next"
+msgstr ""
+
+#: views\elements\paginator\filters.ctp:72
+msgid "SEARCH_INPUT"
+msgstr ""
+
+#: views\elements\paginator\filters.ctp:73
+msgid "SEARCH"
+msgstr ""
+
+#: views\elements\paginator\filters.ctp:74
+msgid "OPTIONS"
+msgstr ""
+
+#: views\elements\posts\offer_post.ctp:24
+#: views\elements\posts\project_post.ctp:23
+#: views\elements\posts\view_post.ctp:29
+#: views\posts\view_post.ctp:83
+#: views\posts\view_posts.ctp:82
+msgid "UPDATED ON %s"
+msgstr ""
+
+#: views\elements\posts\project_post.ctp:70
+msgid "VIEW_ALL_COMMENTS"
+msgstr ""
+
+#: views\elements\posts\project_post.ctp:84
+msgid "VIEW_COMMENTS"
+msgstr ""
+
+#: views\elements\posts\project_post.ctp:86
+msgid "ADD_A_COMMENT"
+msgstr ""
+
+#: views\elements\prizes\project_prize.ctp:7
+msgid "HELP_WITH"
+msgstr ""
+
+#: views\elements\prizes\project_prize.ctp:11
+msgid "%s BAKERS"
+msgstr ""
+
+#: views\elements\projects\discover_project.ctp:32
+#: views\elements\projects\offer_project.ctp:67
+#: views\elements\projects\profile_project.ctp:77
+msgid "FUNDED"
+msgstr ""
+
+#: views\elements\projects\discover_project.ctp:33
+#: views\elements\projects\offer_project.ctp:69
+#: views\elements\projects\profile_project.ctp:79
+msgid "PLEDGED"
+msgstr ""
+
+#: views\elements\projects\discover_project.ctp:34
+#: views\elements\projects\offer_project.ctp:71
+#: views\elements\projects\profile_project.ctp:81
+msgid "SPONSORSHIPS"
+msgstr ""
+
+#: views\elements\projects\discover_project.ctp:36
+#: views\elements\projects\offer_project.ctp:74
+#: views\elements\projects\profile_project.ctp:84
+#: views\elements\projects\view_info.ctp:14
+msgid "DAYS_LEFT"
+msgstr ""
+
+#: views\elements\projects\offer_project.ctp:12
+#: views\elements\projects\profile_project.ctp:17
+msgid "BY %s FROM %s"
+msgstr ""
+
+#: views\elements\projects\offer_project.ctp:94
+#: views\elements\projects\profile_project.ctp:111
+msgid "PUBLISHED"
+msgstr ""
+
+#: views\elements\projects\offer_project.ctp:94
+#: views\elements\projects\profile_project.ctp:111
+msgid "UN_PUBLISHED"
+msgstr ""
+
+#: views\elements\projects\offer_project.ctp:103
+#: views\elements\projects\profile_project.ctp:120
+msgid "PROJECT_PENDING_PUBLISH"
+msgstr ""
+
+#: views\elements\projects\offer_project.ctp:107
+#: views\elements\projects\profile_project.ctp:124
+msgid "PROJECT_PENDING_APPROVAL"
+msgstr ""
+
+#: views\elements\projects\offer_project.ctp:113
+#: views\elements\projects\profile_project.ctp:135
+msgid "PROJECT_UPDATES %s"
+msgstr ""
+
+#: views\elements\projects\profile_project.ctp:87
+#: views\elements\projects\view_info.ctp:20
+msgid "PROJECT_FUNDED_INFO"
+msgstr ""
+
+#: views\elements\projects\profile_project.ctp:89
+#: views\elements\projects\view_info.ctp:25
+msgid "PROJECT_NOT_FUNDED_INFO"
+msgstr ""
+
+#: views\elements\projects\profile_project.ctp:131
+msgid "VIEW_SPONSORS"
+msgstr ""
+
+#: views\elements\projects\view_info.ctp:8
+msgid "SPONSORS"
+msgstr ""
+
+#: views\elements\projects\view_info.ctp:19;24
+msgid "STATUS_OF_PROJECT"
+msgstr ""
+
+#: views\elements\projects\view_info.ctp:36
+msgid "AVAILABLE_FOUNDS_FROM %s"
+msgstr ""
+
+#: views\elements\projects\view_info.ctp:44
+msgid "PROJECT_IMPORTANT_ADVICE_TITLE"
+msgstr ""
+
+#: views\elements\projects\view_info.ctp:45
+msgid "PROJECT_IMPORTANT_ADVICE %s %s"
+msgstr ""
+
+#: views\elements\projects\view_info.ctp:49
+msgid "SUPPORT_THIS_PROJECT"
+msgstr ""
+
+#: views\elements\projects\view_info.ctp:51
+msgid "SUPPORT_THIS_PROJECT_SUBLINE"
+msgstr ""
+
+#: views\elements\projects\view_info.ctp:60
+msgid "SHARE_THIS_PROJECT_TITLE"
+msgstr ""
+
+#: views\elements\projects\view_info.ctp:62
+msgid "SHARE_THIS_PROJECT_SUBTITLE"
+msgstr ""
+
+#: views\elements\projects\view_menu.ctp:6
+#: views\projects\sponsors.ctp:10
+#: views\sponsorships\---add.ctp:12
+#: views\sponsorships\add_step_2.ctp:9
+msgid "PROJECT_BY %s IN CATEGORY %s"
+msgstr ""
+
+#: views\elements\projects\view_menu.ctp:13
+#: views\projects\sponsors.ctp:17
+#: views\sponsorships\---add.ctp:18
+#: views\sponsorships\add_step_2.ctp:16
+msgid "PROJECT_BY %s IN CATEGORY %s IN RESPONSE OF %s"
+msgstr ""
+
+#: views\elements\projects\view_menu.ctp:33
+msgid "EDIT_THIS_PROJECT"
+msgstr ""
+
+#: views\elements\projects\view_menu.ctp:34
+msgid "PUBLISH_THIS_PROJECT"
+msgstr ""
+
+#: views\elements\projects\view_menu.ctp:39
+msgid "UNFOLLOW_THIS_PROJECT"
+msgstr ""
+
+#: views\elements\projects\view_menu.ctp:40
+msgid "FOLLOW_THIS_PROJECT"
+msgstr ""
+
+#: views\elements\projects\admin\project_status.ctp:5
+#: views\projects\admin_view.ctp:7
+msgid "PROPOSAL_PROJECT_STATUS"
+msgstr ""
+
+#: views\elements\projects\admin\project_status.ctp:8
+#: views\projects\admin_view.ctp:10
+msgid "APPROVED_PROJECT_STATUS"
+msgstr ""
+
+#: views\elements\projects\admin\project_status.ctp:11
+#: views\projects\admin_view.ctp:13
+msgid "REJECTED_PROJECT_STATUS"
+msgstr ""
+
+#: views\elements\projects\admin\project_status.ctp:14
+#: views\projects\admin_view.ctp:16
+msgid "PUBLISHED_PROJECT_STATUS"
+msgstr ""
+
+#: views\elements\projects\admin\project_status.ctp:17
+#: views\projects\admin_view.ctp:19
+msgid "UNKNOWN_PROJECT_STATUS"
+msgstr ""
+
+#: views\elements\projects\admin\project_status.ctp:24
+#: views\projects\admin_view.ctp:62
+msgid "THE_PROJECT_HAS_FINISHED %s"
+msgstr ""
+
+#: views\elements\projects\admin\project_status.ctp:27;30
+msgid "FINISH IN %s days"
+msgstr ""
+
+#: views\elements\projects\admin\project_status.ctp:45
+msgid "%s%% ( USD %s of USD %s )"
+msgstr ""
+
+#: views\elements\projects\admin\project_status.ctp:60
+#: views\projects\admin_view.ctp:99
+msgid "OFFER_RESPONSE"
+msgstr ""
+
+#: views\elements\users\mini_info.ctp:22
+#: views\elements\users\profile.ctp:44
+msgid "SEND_MESSAGE"
+msgstr ""
+
+#: views\elements\users\mini_info.ctp:52
+#: views\elements\users\profile.ctp:66
+msgid "MESSAGE_SENT"
+msgstr ""
+
+#: views\elements\users\profile.ctp:19
+msgid "EDIT_PROFILE"
+msgstr ""
+
+#: views\elements\users\profile.ctp:36
+msgid "VOTE"
+msgstr ""
+
+#: views\elements\users\profile.ctp:87
+msgid "REPORT_USER"
+msgstr ""
+
+#: views\elements\users\profile.ctp:97;107
+msgid "USER_BIO"
+msgstr ""
+
+#: views\elements\users\profile_menu.ctp:17
+#: views\layouts\--default.ctp:160
+msgid "ACTIVITY"
+msgstr ""
+
+#: views\elements\users\profile_menu.ctp:21
+msgid "USER_ACTIVITY"
+msgstr ""
+
+#: views\elements\users\profile_menu.ctp:31
+msgid "USER_PROJECTS %s"
+msgstr ""
+
+#: views\elements\users\profile_menu.ctp:33
+msgid "CREATE_A_PROJECT"
+msgstr ""
+
+#: views\elements\users\profile_menu.ctp:40
+msgid "USER_OFFERS %s"
+msgstr ""
+
+#: views\elements\users\profile_menu.ctp:42
+msgid "CREATE_AN_OFFER"
+msgstr ""
+
+#: views\elements\users\profile_menu.ctp:51
+msgid "USER_SPONSORSHIPS %s"
+msgstr ""
+
+#: views\elements\users\profile_menu.ctp:58
+msgid "USER_FOLLOWS %s"
+msgstr ""
+
+#: views\elements\users\admin\user_info.ctp:26
+msgid "%s REPORTS"
+msgstr ""
+
+#: views\errors\error404.ctp:21
+msgid "PAGE_ERROR_"
+msgstr ""
+
+#: views\errors\error404.ctp:31
+msgid "BACK_TO_HOME_PAGE"
+msgstr ""
+
+#: views\errors\error404.ctp:32
+msgid "GO_BACK_TO_THE_PREVIOUS_PAGE"
+msgstr ""
+
+#: views\errors\error404.ctp:36
+msgid "DO_CLICK_HERE"
+msgstr ""
+
+#: views\errors\error500.ctp:22
+#: views\errors\missing_action.ctp:22;26
+#: views\errors\missing_behavior_class.ctp:22;26
+#: views\errors\missing_behavior_file.ctp:22;26
+#: views\errors\missing_component_class.ctp:22;26
+#: views\errors\missing_component_file.ctp:22;26
+#: views\errors\missing_connection.ctp:22;26
+#: views\errors\missing_controller.ctp:22;26
+#: views\errors\missing_helper_class.ctp:22;26
+#: views\errors\missing_helper_file.ctp:22;26
+#: views\errors\missing_layout.ctp:22;26
+#: views\errors\missing_model.ctp:22;26
+#: views\errors\missing_scaffolddb.ctp:22;26
+#: views\errors\missing_table.ctp:22
+#: views\errors\missing_view.ctp:22;26
+#: views\errors\private_action.ctp:22
+#: views\errors\scaffold_error.ctp:22
+msgid "Error"
+msgstr ""
+
+#: views\errors\error500.ctp:23
+msgid "An Internal Error Has Occurred."
+msgstr ""
+
+#: views\errors\missing_action.ctp:20
+msgid "Missing Method in %s"
+msgstr ""
+
+#: views\errors\missing_action.ctp:23
+msgid "The action %1$s is not defined in controller %2$s"
+msgstr ""
+
+#: views\errors\missing_action.ctp:27
+msgid "Create %1$s%2$s in file: %3$s."
+msgstr ""
+
+#: views\errors\missing_action.ctp:44
+#: views\errors\missing_behavior_class.ctp:37
+#: views\errors\missing_behavior_file.ctp:37
+#: views\errors\missing_component_class.ctp:37
+#: views\errors\missing_component_file.ctp:37
+#: views\errors\missing_connection.ctp:30
+#: views\errors\missing_controller.ctp:38
+#: views\errors\missing_helper_class.ctp:37
+#: views\errors\missing_helper_file.ctp:37
+#: views\errors\missing_layout.ctp:30
+#: views\errors\missing_model.ctp:39
+#: views\errors\missing_scaffolddb.ctp:30
+#: views\errors\missing_table.ctp:26
+#: views\errors\missing_view.ctp:30
+#: views\errors\private_action.ctp:26
+#: views\errors\scaffold_error.ctp:26
+msgid "Notice"
+msgstr ""
+
+#: views\errors\missing_action.ctp:45
+#: views\errors\missing_behavior_class.ctp:38
+#: views\errors\missing_behavior_file.ctp:38
+#: views\errors\missing_component_class.ctp:38
+#: views\errors\missing_component_file.ctp:38
+#: views\errors\missing_controller.ctp:39
+#: views\errors\missing_helper_class.ctp:38
+#: views\errors\missing_helper_file.ctp:38
+#: views\errors\missing_layout.ctp:31
+#: views\errors\missing_model.ctp:40
+#: views\errors\missing_scaffolddb.ctp:31
+#: views\errors\missing_table.ctp:27
+#: views\errors\missing_view.ctp:31
+#: views\errors\private_action.ctp:27
+#: views\errors\scaffold_error.ctp:27
+msgid "If you want to customize this error message, create %s"
+msgstr ""
+
+#: views\errors\missing_behavior_class.ctp:20
+msgid "Missing Behavior Class"
+msgstr ""
+
+#: views\errors\missing_behavior_class.ctp:23
+msgid "The behavior class <em>%s</em> can not be found or does not exist."
+msgstr ""
+
+#: views\errors\missing_behavior_class.ctp:27
+#: views\errors\missing_behavior_file.ctp:27
+#: views\errors\missing_helper_class.ctp:27
+#: views\errors\missing_helper_file.ctp:27
+msgid "Create the class below in file: %s"
+msgstr ""
+
+#: views\errors\missing_behavior_file.ctp:20
+msgid "Missing Behavior File"
+msgstr ""
+
+#: views\errors\missing_behavior_file.ctp:23
+msgid "The Behavior file %s can not be found or does not exist."
+msgstr ""
+
+#: views\errors\missing_component_class.ctp:20
+msgid "Missing Component Class"
+msgstr ""
+
+#: views\errors\missing_component_class.ctp:23
+msgid "Component class %1$s in %2$s was not found."
+msgstr ""
+
+#: views\errors\missing_component_class.ctp:27
+#: views\errors\missing_component_file.ctp:27
+#: views\errors\missing_model.ctp:27
+msgid "Create the class %s in file: %s"
+msgstr ""
+
+#: views\errors\missing_component_file.ctp:20
+msgid "Missing Component File"
+msgstr ""
+
+#: views\errors\missing_component_file.ctp:23
+msgid "The component file was not found."
+msgstr ""
+
+#: views\errors\missing_connection.ctp:20
+#: views\errors\missing_scaffolddb.ctp:20
+msgid "Missing Database Connection"
+msgstr ""
+
+#: views\errors\missing_connection.ctp:23
+msgid "%s requires a database connection"
+msgstr ""
+
+#: views\errors\missing_connection.ctp:27
+msgid "Confirm you have created the file : %s."
+msgstr ""
+
+#: views\errors\missing_connection.ctp:31
+msgid "If you want to customize this error message, create %s."
+msgstr ""
+
+#: views\errors\missing_controller.ctp:20
+msgid "Missing Controller"
+msgstr ""
+
+#: views\errors\missing_controller.ctp:23
+msgid "%s could not be found."
+msgstr ""
+
+#: views\errors\missing_controller.ctp:27
+msgid "Create the class %s below in file: %s"
+msgstr ""
+
+#: views\errors\missing_helper_class.ctp:20
+msgid "Missing Helper Class"
+msgstr ""
+
+#: views\errors\missing_helper_class.ctp:23
+msgid "The helper class <em>%s</em> can not be found or does not exist."
+msgstr ""
+
+#: views\errors\missing_helper_file.ctp:20
+msgid "Missing Helper File"
+msgstr ""
+
+#: views\errors\missing_helper_file.ctp:23
+msgid "The helper file %s can not be found or does not exist."
+msgstr ""
+
+#: views\errors\missing_layout.ctp:20
+msgid "Missing Layout"
+msgstr ""
+
+#: views\errors\missing_layout.ctp:23
+msgid "The layout file %s can not be found or does not exist."
+msgstr ""
+
+#: views\errors\missing_layout.ctp:27
+#: views\errors\missing_scaffolddb.ctp:27
+#: views\errors\missing_view.ctp:27
+msgid "Confirm you have created the file: %s"
+msgstr ""
+
+#: views\errors\missing_model.ctp:20
+msgid "Missing Model"
+msgstr ""
+
+#: views\errors\missing_model.ctp:23
+msgid "<em>%s</em> could not be found."
+msgstr ""
+
+#: views\errors\missing_scaffolddb.ctp:23
+msgid "Scaffold requires a database connection"
+msgstr ""
+
+#: views\errors\missing_table.ctp:20
+msgid "Missing Database Table"
+msgstr ""
+
+#: views\errors\missing_table.ctp:23
+msgid "Database table %1$s for model %2$s was not found."
+msgstr ""
+
+#: views\errors\missing_view.ctp:20
+msgid "Missing View"
+msgstr ""
+
+#: views\errors\missing_view.ctp:23
+msgid "The view for %1$s%2$s was not found."
+msgstr ""
+
+#: views\errors\private_action.ctp:20
+msgid "Private Method in %s"
+msgstr ""
+
+#: views\errors\private_action.ctp:23
+msgid "%s%s cannot be accessed directly."
+msgstr ""
+
+#: views\errors\scaffold_error.ctp:20
+msgid "Scaffold Error"
+msgstr ""
+
+#: views\errors\scaffold_error.ctp:23
+msgid "Method _scaffoldError in was not found in the controller"
+msgstr ""
+
+#: views\helpers\app_form.php:360
+msgid "NOT_EMPTY_GENERIC_ERROR"
+msgstr ""
+
+#: views\helpers\app_form.php:361
+msgid "MIN_LENGHT_GENERIC_ERROR"
+msgstr ""
+
+#: views\helpers\app_form.php:362
+msgid "MIN_LENGHT_3_ERROR"
+msgstr ""
+
+#: views\helpers\app_form.php:363
+msgid "MAX_LENGTH_GENERIC_ERROR"
+msgstr ""
+
+#: views\helpers\app_form.php:364
+msgid "MAX_LENGTH_50_ERROR"
+msgstr ""
+
+#: views\helpers\app_form.php:365
+msgid "URL_GENERIC_ERROR"
+msgstr ""
+
+#: views\helpers\app_form.php:366
+msgid "EMAIL_GENERIC_ERROR"
+msgstr ""
+
+#: views\helpers\app_form.php:367
+msgid "THIS_VIDEO_SITE_URL_IT_IS_NOT_VALID"
+msgstr ""
+
+#: views\helpers\lang.php:648
+msgid "Country"
+msgstr ""
+
+#: views\helpers\lang.php:683
+msgid "Language"
+msgstr ""
+
+#: views\helpers\modules.php:237
+msgid "Delete media"
+msgstr ""
+
+#: views\helpers\time_i18n.php:14
+msgid "j of F of Y, H:i"
+msgstr ""
+
+#: views\helpers\time_i18n.php:33;241
+msgid "TODAY"
+msgstr ""
+
+#: views\helpers\time_i18n.php:35;244
+msgid "YESTERDAY"
+msgstr ""
+
+#: views\helpers\time_i18n.php:60
+msgid "ElementCreatedOn"
+msgstr ""
+
+#: views\helpers\time_i18n.php:78
+msgid "j/n/y"
+msgstr ""
+
+#: views\helpers\time_i18n.php:182
+msgid "on"
+msgstr ""
+
+#: views\helpers\time_i18n.php:216
+msgid "ago"
+msgstr ""
+
+#: views\helpers\time_i18n.php:248
+msgid ", h:m"
+msgstr ""
+
+#: views\helpers\time_i18n.php:186
+msgid "year"
+msgid_plural "years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: views\helpers\time_i18n.php:187;192
+msgid "month"
+msgid_plural "months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: views\helpers\time_i18n.php:188;193;197
+msgid "week"
+msgid_plural "weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: views\helpers\time_i18n.php:189;194;198;201
+msgid "day"
+msgid_plural "days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: views\helpers\time_i18n.php:202;205
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: views\helpers\time_i18n.php:206;209
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: views\helpers\time_i18n.php:212
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: views\layouts\--default.ctp:5
+#: views\layouts\default.ctp:5
+#: views\layouts\error.ctp:39
+msgid "DEFAULT_SITE_SHORT_DESCRIPTION"
+msgstr ""
+
+#: views\layouts\--default.ctp:8
+#: views\layouts\default.ctp:8
+#: views\layouts\error.ctp:43
+msgid "DEFAULT_SITE_DESCRIPTION"
+msgstr ""
+
+#: views\layouts\--default.ctp:11
+#: views\layouts\default.ctp:11
+#: views\layouts\error.ctp:47
+msgid "DEFAULT_SITE_AUTHOR"
+msgstr ""
+
+#: views\layouts\--default.ctp:121
+msgid "CREATE"
+msgstr ""
+
+#: views\layouts\--default.ctp:123;132
+msgid "PROJECT"
+msgstr ""
+
+#: views\layouts\--default.ctp:124;133
+msgid "OFFER"
+msgstr ""
+
+#: views\layouts\--default.ctp:130
+msgid "DISCOVER"
+msgstr ""
+
+#: views\layouts\--default.ctp:161
+msgid "MESSAGES"
+msgstr ""
+
+#: views\layouts\--default.ctp:162;212
+msgid "FAQ"
+msgstr ""
+
+#: views\layouts\--default.ctp:181
+msgid "USER_PROFILE"
+msgstr ""
+
+#: views\layouts\--default.ctp:182
+msgid "USER_PROJECTS"
+msgstr ""
+
+#: views\layouts\--default.ctp:183
+msgid "USER_OFFERS"
+msgstr ""
+
+#: views\layouts\--default.ctp:184
+msgid "USER_BAKES"
+msgstr ""
+
+#: views\layouts\--default.ctp:185
+msgid "USER_SETTINGS"
+msgstr ""
+
+#: views\layouts\--default.ctp:193;196
+msgid "USER_LOGOUT"
+msgstr ""
+
+#: views\layouts\--default.ctp:210
+msgid "REGISTER"
+msgstr ""
+
+#: views\layouts\--default.ctp:211
+#: views\staticpages\--home.ctp:124
+#: views\users\--add.ctp:34
+#: views\users\admin_login.ctp:9
+#: views\users\login.ctp:32
+msgid "LOGIN"
+msgstr ""
+
+#: views\layouts\--default.ctp:223;499
+msgid "SEARCH_SOMETHING"
+msgstr ""
+
+#: views\layouts\--default.ctp:309
+#: views\layouts\default.ctp:146
+msgid "SEARCH_BY_CATEGORY"
+msgstr ""
+
+#: views\layouts\--default.ctp:329
+msgid "CONNECT_WITH_US"
+msgstr ""
+
+#: views\layouts\--default.ctp:330
+msgid "ABOUT_US_LINK"
+msgstr ""
+
+#: views\layouts\--default.ctp:331
+msgid "CONTACT_US_LINK"
+msgstr ""
+
+#: views\layouts\--default.ctp:344
+#: views\layouts\default.ctp:191
+msgid "TERMS"
+msgstr ""
+
+#: views\layouts\--default.ctp:345
+msgid "PRIVACY"
+msgstr ""
+
+#: views\layouts\--default.ctp:346
+#: views\layouts\default.ctp:193
+msgid "CONTACT"
+msgstr ""
+
+#: views\layouts\--default.ctp:350
+#: views\layouts\default.ctp:197
+msgid "SITE_COPYRIGHT"
+msgstr ""
+
+#: views\layouts\--default.ctp:374
+#: views\projects\--edit.ctp:159
+msgid "DO_U_WANT_TO_PUBLISH_THIS_PROJECT_TITLE"
+msgstr ""
+
+#: views\layouts\--default.ctp:375
+#: views\projects\--edit.ctp:160
+msgid "DO_U_WANT_TO_PUBLISH_THIS_PROJECT_BODY"
+msgstr ""
+
+#: views\layouts\--default.ctp:381
+msgid "DO_U_WANT_TO_PUBLISH_THIS_PROJECT_YES"
+msgstr ""
+
+#: views\layouts\--default.ctp:385
+msgid "DO_U_WANT_TO_PUBLISH_THIS_PROJECT_NO"
+msgstr ""
+
+#: views\layouts\--default.ctp:394
+msgid "DO_U_WANT_TO_PUBLISH_THIS_OFFER_TITLE"
+msgstr ""
+
+#: views\layouts\--default.ctp:395
+msgid "DO_U_WANT_TO_PUBLISH_THIS_OFFER_BODY"
+msgstr ""
+
+#: views\layouts\--default.ctp:402
+msgid "DO_U_WANT_TO_PUBLISH_THIS_OFFER_YES"
+msgstr ""
+
+#: views\layouts\--default.ctp:406
+msgid "DO_U_WANT_TO_PUBLISH_THIS_OFFER_NO"
+msgstr ""
+
+#: views\layouts\--default.ctp:417
+msgid "DO_U_WANT_TO_DELETE_THIS_PROJECT_TITLE"
+msgstr ""
+
+#: views\layouts\--default.ctp:418
+msgid "DO_U_WANT_TO_DELETE_THIS_PROJECT_BODY"
+msgstr ""
+
+#: views\layouts\--default.ctp:425
+msgid "DO_U_WANT_TO_DELETE_THIS_PROJECT_YES"
+msgstr ""
+
+#: views\layouts\--default.ctp:429
+msgid "DO_U_WANT_TO_DELETE_THIS_PROJECT_NO"
+msgstr ""
+
+#: views\layouts\--default.ctp:437
+msgid "DO_U_WANT_TO_DELETE_THIS_OFFER_TITLE"
+msgstr ""
+
+#: views\layouts\--default.ctp:438
+msgid "DO_U_WANT_TO_DELETE_THIS_OFFER_BODY"
+msgstr ""
+
+#: views\layouts\--default.ctp:445
+msgid "DO_U_WANT_TO_DELETE_THIS_OFFER_YES"
+msgstr ""
+
+#: views\layouts\--default.ctp:449
+msgid "DO_U_WANT_TO_DELETE_THIS_OFFER_NO"
+msgstr ""
+
+#: views\layouts\admin_default.ctp:195
+msgid "ARE_YOU_SURE_THIS_CAN_NO_BE_UNDONE"
+msgstr ""
+
+#: views\layouts\flash.ctp:17
+msgid "Click here if not automatically forwarded in"
+msgstr ""
+
+#: views\layouts\flash.ctp:19
+msgid "seconds"
+msgstr ""
+
+#: views\messages\---index.ctp:4
+msgid "UNREAD_MESSAGES"
+msgstr ""
+
+#: views\messages\---index.ctp:5
+msgid "READ_MESSAGES"
+msgstr ""
+
+#: views\messages\---index.ctp:6
+msgid "ALL_MESSAGES"
+msgstr ""
+
+#: views\messages\---index.ctp:7
+msgid "SENT_MESSAGES"
+msgstr ""
+
+#: views\messages\---index.ctp:26
+#: views\messages\index.ctp:67
+msgid "NO_MESSAGES_TO_SHOW"
+msgstr ""
+
+#: views\notificationtypes\add.ctp:4
+msgid "Add Notificationtype"
+msgstr ""
+
+#: views\notificationtypes\add.ctp:14
+#: views\notificationtypes\admin_add.ctp:20
+#: views\notificationtypes\admin_edit.ctp:15
+#: views\notificationtypes\edit.ctp:15
+#: views\posts\admin_add.ctp:21
+#: views\posts\admin_edit.ctp:22
+#: views\staticpages\add.ctp:14
+#: views\staticpages\admin_add.ctp:16
+#: views\staticpages\admin_edit.ctp:13
+#: views\staticpages\edit.ctp:15
+msgid "Submit"
+msgstr ""
+
+#: views\notificationtypes\add.ctp:17
+#: views\notificationtypes\admin_add.ctp:23
+#: views\notificationtypes\admin_edit.ctp:18
+#: views\notificationtypes\admin_index.ctp:12;57
+#: views\notificationtypes\admin_view.ctp:42;67
+#: views\notificationtypes\edit.ctp:18
+#: views\notificationtypes\index.ctp:12;53
+#: views\notificationtypes\view.ctp:42;67
+#: views\offers\admin_index.ctp:23;62
+#: views\posts\admin_add.ctp:24
+#: views\posts\admin_edit.ctp:25
+#: views\posts\admin_index.ctp:21;73
+#: views\posts\admin_view.ctp:87
+#: views\projects\admin_index.ctp:38
+#: views\sponsorships\admin_index.ctp:24
+#: views\staticpages\add.ctp:17
+#: views\staticpages\admin_index.ctp:19
+#: views\staticpages\admin_view.ctp:42;64
+#: views\staticpages\edit.ctp:18
+#: views\staticpages\index.ctp:12;53
+#: views\users\admin_index.ctp:31
+msgid "Actions"
+msgstr ""
+
+#: views\notificationtypes\add.ctp:20
+#: views\notificationtypes\admin_add.ctp:26
+#: views\notificationtypes\admin_edit.ctp:22
+#: views\notificationtypes\admin_view.ctp:46
+#: views\notificationtypes\edit.ctp:22
+#: views\notificationtypes\view.ctp:46
+msgid "List Notificationtypes"
+msgstr ""
+
+#: views\notificationtypes\add.ctp:21
+#: views\notificationtypes\admin_add.ctp:27
+#: views\notificationtypes\admin_edit.ctp:23
+#: views\notificationtypes\admin_index.ctp:60
+#: views\notificationtypes\admin_view.ctp:48
+#: views\notificationtypes\edit.ctp:23
+#: views\notificationtypes\index.ctp:56
+#: views\notificationtypes\view.ctp:48
+msgid "List Notifications"
+msgstr ""
+
+#: views\notificationtypes\add.ctp:22
+#: views\notificationtypes\admin_add.ctp:28
+#: views\notificationtypes\admin_edit.ctp:24
+#: views\notificationtypes\admin_index.ctp:61
+#: views\notificationtypes\admin_view.ctp:49;100
+#: views\notificationtypes\edit.ctp:24
+#: views\notificationtypes\index.ctp:57
+#: views\notificationtypes\view.ctp:49;100
+msgid "New Notification"
+msgstr ""
+
+#: views\notificationtypes\admin_add.ctp:4
+msgid "Admin Add Notificationtype"
+msgstr ""
+
+#: views\notificationtypes\admin_add.ctp:13
+msgid "SHOW_AS_OWN_ACTIVITY"
+msgstr ""
+
+#: views\notificationtypes\admin_add.ctp:14
+msgid "SHOW_AS_USER_ACTIVITY"
+msgstr ""
+
+#: views\notificationtypes\admin_add.ctp:15
+msgid "SHOW_AS_MESSAGE"
+msgstr ""
+
+#: views\notificationtypes\admin_add.ctp:16
+msgid "SEND_AN_EMAIL"
+msgstr ""
+
+#: views\notificationtypes\admin_add.ctp:17
+msgid "CAN_BE_DISABLED?"
+msgstr ""
+
+#: views\notificationtypes\admin_edit.ctp:4
+msgid "Admin Edit Notificationtype"
+msgstr ""
+
+#: views\notificationtypes\admin_edit.ctp:21
+#: views\notificationtypes\admin_index.ctp:37
+#: views\notificationtypes\admin_view.ctp:91
+#: views\notificationtypes\edit.ctp:21
+#: views\notificationtypes\index.ctp:33
+#: views\notificationtypes\view.ctp:91
+#: views\posts\admin_edit.ctp:28
+#: views\posts\admin_index.ctp:53
+#: views\staticpages\admin_view.ctp:85
+#: views\staticpages\edit.ctp:21
+#: views\staticpages\index.ctp:33
+msgid "Delete"
+msgstr ""
+
+#: views\notificationtypes\admin_edit.ctp:21
+#: views\notificationtypes\admin_index.ctp:37
+#: views\notificationtypes\admin_view.ctp:45;91
+#: views\notificationtypes\edit.ctp:21
+#: views\notificationtypes\index.ctp:33
+#: views\notificationtypes\view.ctp:45;91
+#: views\posts\admin_edit.ctp:28
+#: views\posts\admin_index.ctp:53
+#: views\posts\admin_view.ctp:90
+#: views\staticpages\admin_view.ctp:45;85
+#: views\staticpages\edit.ctp:21
+#: views\staticpages\index.ctp:33
+msgid "Are you sure you want to delete # %s?"
+msgstr ""
+
+#: views\notificationtypes\admin_index.ctp:2
+#: views\notificationtypes\index.ctp:2
+msgid "Notificationtypes"
+msgstr ""
+
+#: views\notificationtypes\admin_index.ctp:35
+#: views\notificationtypes\admin_view.ctp:89
+#: views\notificationtypes\index.ctp:31
+#: views\notificationtypes\view.ctp:89
+#: views\posts\admin_index.ctp:51
+#: views\staticpages\admin_view.ctp:83
+#: views\staticpages\index.ctp:31
+msgid "View"
+msgstr ""
+
+#: views\notificationtypes\admin_index.ctp:36
+#: views\notificationtypes\admin_view.ctp:90
+#: views\notificationtypes\index.ctp:32
+#: views\notificationtypes\view.ctp:90
+#: views\posts\admin_index.ctp:52
+#: views\staticpages\admin_index.ctp:38
+#: views\staticpages\admin_view.ctp:84
+#: views\staticpages\index.ctp:32
+msgid "Edit"
+msgstr ""
+
+#: views\notificationtypes\admin_index.ctp:59
+#: views\notificationtypes\admin_view.ctp:47
+#: views\notificationtypes\index.ctp:55
+#: views\notificationtypes\view.ctp:47
+msgid "New Notificationtype"
+msgstr ""
+
+#: views\notificationtypes\admin_view.ctp:2
+#: views\notificationtypes\view.ctp:2
+msgid "Notificationtype"
+msgstr ""
+
+#: views\notificationtypes\admin_view.ctp:4;57
+#: views\notificationtypes\view.ctp:4;57
+#: views\posts\admin_view.ctp:4
+#: views\staticpages\admin_view.ctp:4;57
+msgid "Id"
+msgstr ""
+
+#: views\notificationtypes\admin_view.ctp:9;61
+#: views\notificationtypes\view.ctp:9;61
+#: views\staticpages\admin_view.ctp:58
+msgid "Model"
+msgstr ""
+
+#: views\notificationtypes\admin_view.ctp:14
+#: views\notificationtypes\view.ctp:14
+msgid "Name"
+msgstr ""
+
+#: views\notificationtypes\admin_view.ctp:19
+#: views\notificationtypes\view.ctp:19
+#: views\posts\admin_view.ctp:39
+#: views\staticpages\admin_view.ctp:62
+msgid "Description"
+msgstr ""
+
+#: views\notificationtypes\admin_view.ctp:24
+#: views\notificationtypes\view.ctp:24
+msgid "Notification"
+msgstr ""
+
+#: views\notificationtypes\admin_view.ctp:29
+#: views\notificationtypes\view.ctp:29
+msgid "Email"
+msgstr ""
+
+#: views\notificationtypes\admin_view.ctp:34
+#: views\notificationtypes\view.ctp:34
+msgid "Disableable"
+msgstr ""
+
+#: views\notificationtypes\admin_view.ctp:44
+#: views\notificationtypes\edit.ctp:4
+#: views\notificationtypes\view.ctp:44
+msgid "Edit Notificationtype"
+msgstr ""
+
+#: views\notificationtypes\admin_view.ctp:45
+#: views\notificationtypes\view.ctp:45
+msgid "Delete Notificationtype"
+msgstr ""
+
+#: views\notificationtypes\admin_view.ctp:53
+#: views\notificationtypes\view.ctp:53
+msgid "Related Notifications"
+msgstr ""
+
+#: views\notificationtypes\admin_view.ctp:58
+#: views\notificationtypes\view.ctp:58
+#: views\posts\admin_view.ctp:9
+msgid "Created"
+msgstr ""
+
+#: views\notificationtypes\admin_view.ctp:59
+#: views\notificationtypes\view.ctp:59
+#: views\posts\admin_view.ctp:14
+msgid "Modified"
+msgstr ""
+
+#: views\notificationtypes\admin_view.ctp:60
+#: views\notificationtypes\view.ctp:60
+msgid "Notificationtype Id"
+msgstr ""
+
+#: views\notificationtypes\admin_view.ctp:62
+#: views\notificationtypes\view.ctp:62
+#: views\staticpages\admin_view.ctp:59
+msgid "Model Id"
+msgstr ""
+
+#: views\notificationtypes\admin_view.ctp:63
+#: views\notificationtypes\view.ctp:63
+msgid "Text"
+msgstr ""
+
+#: views\notificationtypes\admin_view.ctp:64
+#: views\notificationtypes\view.ctp:64
+#: views\staticpages\admin_view.ctp:34
+msgid "Template"
+msgstr ""
+
+#: views\notificationtypes\admin_view.ctp:65
+#: views\notificationtypes\view.ctp:65
+msgid "Data"
+msgstr ""
+
+#: views\notificationtypes\admin_view.ctp:66
+#: views\notificationtypes\view.ctp:66
+msgid "User Id"
+msgstr ""
+
+#: views\offers\add.ctp:11
+msgid "OFFER_ADD_FIRST_BLOCK_TITLE"
+msgstr ""
+
+#: views\offers\add.ctp:11
+msgid "OFFER_ADD_FIRST_BLOCK_SUBTITLE"
+msgstr ""
+
+#: views\offers\add.ctp:20
+msgid "OFFER_ADD_SECOND_BLOCK_TITLE"
+msgstr ""
+
+#: views\offers\add.ctp:20
+msgid "OFFER_ADD_SECOND_BLOCK_SUBTITLE"
+msgstr ""
+
+#: views\offers\add.ctp:22
+msgid "OFFER__FILE__HELP_MESSAGE_TEXT"
+msgstr ""
+
+#: views\offers\add.ctp:22
+msgid "OFFER__FILE__TIP_MESSAGE_TEXT"
+msgstr ""
+
+#: views\offers\add.ctp:25
+msgid "OFFER_ADD_THIRD_BLOCK_TITLE"
+msgstr ""
+
+#: views\offers\add.ctp:25
+msgid "OFFER_ADD_THIRD_BLOCK_SUBTITLE"
+msgstr ""
+
+#: views\offers\add.ctp:35
+msgid "SUBMIT_OFFER"
+msgstr ""
+
+#: views\offers\admin_index.ctp:25
+#: views\posts\admin_add.ctp:33
+#: views\posts\admin_edit.ctp:35
+#: views\posts\admin_index.ctp:81
+#: views\posts\admin_view.ctp:98
+msgid "New Offer"
+msgstr ""
+
+#: views\offers\admin_index.ctp:26
+#: views\posts\admin_add.ctp:32
+#: views\posts\admin_edit.ctp:34
+#: views\posts\admin_index.ctp:80
+#: views\posts\admin_view.ctp:97
+msgid "List Offers"
+msgstr ""
+
+#: views\offers\admin_index.ctp:27
+#: views\posts\admin_add.ctp:29
+#: views\posts\admin_edit.ctp:31
+#: views\posts\admin_index.ctp:77
+#: views\posts\admin_view.ctp:94
+msgid "New User"
+msgstr ""
+
+#: views\offers\admin_index.ctp:28
+msgid "List Categories"
+msgstr ""
+
+#: views\offers\admin_index.ctp:29
+msgid "New Category"
+msgstr ""
+
+#: views\offers\admin_index.ctp:30
+#: views\staticpages\add.ctp:21
+#: views\staticpages\admin_view.ctp:48
+#: views\staticpages\edit.ctp:23
+#: views\staticpages\index.ctp:56
+msgid "List Links"
+msgstr ""
+
+#: views\offers\admin_index.ctp:31
+msgid "New Links"
+msgstr ""
+
+#: views\offers\admin_index.ctp:32
+#: views\posts\admin_add.ctp:27
+#: views\posts\admin_edit.ctp:29
+#: views\posts\admin_view.ctp:91
+msgid "List Posts"
+msgstr ""
+
+#: views\offers\admin_index.ctp:33
+#: views\posts\admin_index.ctp:75
+#: views\posts\admin_view.ctp:92
+msgid "New Post"
+msgstr ""
+
+#: views\offers\admin_index.ctp:55
+msgid "short description"
+msgstr ""
+
+#: views\offers\admin_index.ctp:61
+msgid "Offer.flags"
+msgstr ""
+
+#: views\offers\admin_index.ctp:119
+#: views\projects\admin_index.ctp:120
+#: views\sponsorships\admin_index.ctp:99
+#: views\sponsorships\admin_index_mp.ctp:87
+#: views\staticpages\admin_index.ctp:50
+#: views\users\admin_index.ctp:95
+msgid "NO_RESULTS_FOUND"
+msgstr ""
+
+#: views\offers\admin_view.ctp:6
+msgid "OFFER %s FROM %s IN THE CATEGORY %s"
+msgstr ""
+
+#: views\offers\admin_view.ctp:8
+#: views\projects\admin_view.ctp:32
+msgid "SHORT_DESCRIPTION"
+msgstr ""
+
+#: views\offers\admin_view.ctp:16
+msgid "OFFER_MAIN_POST"
+msgstr ""
+
+#: views\offers\admin_view.ctp:25
+msgid "APPROVE_PROPOSAL"
+msgstr ""
+
+#: views\offers\admin_view.ctp:26
+#: views\projects\admin_view.ctp:78
+msgid "REJECT_PROPOSAL"
+msgstr ""
+
+#: views\offers\admin_view.ctp:27
+msgid "DELETE_PROPOSAL"
+msgstr ""
+
+#: views\offers\admin_view.ctp:28
+msgid "UNPUBLISH_PROPOSAL"
+msgstr ""
+
+#: views\offers\admin_view.ctp:43
+msgid "OFFER_VIDEO"
+msgstr ""
+
+#: views\offers\admin_view.ctp:47
+msgid "OFFER_IMAGE"
+msgstr ""
+
+#: views\offers\admin_view.ctp:81
+msgid "OFFER_STATUS"
+msgstr ""
+
+#: views\offers\admin_view.ctp:83
+msgid "OFFER_DURATION"
+msgstr ""
+
+#: views\offers\admin_view.ctp:84
+msgid "OFFER_CREATED"
+msgstr ""
+
+#: views\offers\admin_view.ctp:87
+msgid "OFFER_PUBLISH_DATE"
+msgstr ""
+
+#: views\offers\admin_view.ctp:91
+msgid "OFFER_UPDATES"
+msgstr ""
+
+#: views\offers\admin_view.ctp:92
+msgid "OFFER_COMMENTS"
+msgstr ""
+
+#: views\offers\admin_view.ctp:93
+msgid "OFFER_FOLLOWS"
+msgstr ""
+
+#: views\offers\admin_view.ctp:94
+msgid "OFFER_PROJECTS"
+msgstr ""
+
+#: views\offers\admin_view.ctp:107
+#: views\projects\admin_view.ctp:179
+#: views\staticpages\admin_view.ctp:53
+msgid "Related Links"
+msgstr ""
+
+#: views\offers\admin_view.ctp:125
+#: views\projects\admin_view.ctp:197
+msgid "Related Prizes"
+msgstr ""
+
+#: views\offers\edit.ctp:12
+msgid "OFFER_EDIT_FIRST_BLOCK_TITLE"
+msgstr ""
+
+#: views\offers\edit.ctp:12
+msgid "OFFER_EDIT_FIRST_BLOCK_SUBTITLE"
+msgstr ""
+
+#: views\offers\edit.ctp:22
+msgid "OFFER__TITLE_EDIT_HELP_MESSAGE_TEXT"
+msgstr ""
+
+#: views\offers\edit.ctp:23
+msgid "OFFER__CATEGORY_EDIT_HELP_MESSAGE_TEXT"
+msgstr ""
+
+#: views\offers\edit.ctp:24
+msgid "OFFER__SHORT_DESCRIPTION_EDIT_HELP_MESSAGE_TEXT"
+msgstr ""
+
+#: views\offers\edit.ctp:31
+msgid "OFFER_EDIT_SECOND_BLOCK_TITLE"
+msgstr ""
+
+#: views\offers\edit.ctp:31
+msgid "OFFER_EDIT_SECOND_BLOCK_SUBTITLE"
+msgstr ""
+
+#: views\offers\edit.ctp:37
+msgid "OFFER__FILE_EDIT_HELP_MESSAGE_TEXT"
+msgstr ""
+
+#: views\offers\edit.ctp:37
+msgid "OFFER__FILE_EDIT_TIP_MESSAGE_TEXT"
+msgstr ""
+
+#: views\offers\edit.ctp:40
+msgid "OFFER_EDIT_THIRD_BLOCK_TITLE"
+msgstr ""
+
+#: views\offers\edit.ctp:40
+msgid "OFFER_EDIT_THIRD_BLOCK_SUBTITLE"
+msgstr ""
+
+#: views\offers\edit.ctp:50
+msgid "SAVE_OFFER"
+msgstr ""
+
+#: views\offers\edit.ctp:51
+msgid "PUBLISH_OFFER"
+msgstr ""
+
+#: views\offers\edit.ctp:52
+msgid "DELETE_OFFER"
+msgstr ""
+
+#: views\offers\index.ctp:4
+msgid "DISCOVER_ALL_OFFERS"
+msgstr ""
+
+#: views\offers\index.ctp:5
+#: views\projects\--index.ctp:5
+#: views\projects\-index-A.ctp:5
+#: views\projects\index.ctp:5
+msgid "CATEGORY_FROM %s"
+msgstr ""
+
+#: views\offers\index.ctp:6
+#: views\projects\--index.ctp:6
+#: views\projects\-index-A.ctp:6
+#: views\projects\index.ctp:6
+msgid "CITY_IN %s"
+msgstr ""
+
+#: views\offers\index.ctp:18
+msgid "OFFERS_SEARCH_RESULT_FOR %s"
+msgstr ""
+
+#: views\offers\index.ctp:20
+#: views\projects\--index.ctp:16
+msgid "SEARCH_IN"
+msgstr ""
+
+#: views\offers\index.ctp:22
+#: views\projects\--index.ctp:18
+msgid "OFFERS"
+msgstr ""
+
+#: views\offers\index.ctp:31
+#: views\projects\--index.ctp:26
+msgid "ALL_CATEGORIES"
+msgstr ""
+
+#: views\offers\index.ctp:36
+#: views\projects\--index.ctp:31
+msgid "CATEGORIES"
+msgstr ""
+
+#: views\offers\index.ctp:42
+msgid "ALL_OFFERS"
+msgstr ""
+
+#: views\offers\index.ctp:47
+msgid "SHOW_OFFERS"
+msgstr ""
+
+#: views\offers\index.ctp:52
+#: views\projects\--index.ctp:47
+msgid "ALL_COUNTRIES"
+msgstr ""
+
+#: views\offers\index.ctp:57
+#: views\projects\--index.ctp:52
+msgid "LOCATION"
+msgstr ""
+
+#: views\offers\index.ctp:97
+msgid "WE CAN NOT FOUND ANY OFFER IN %s PLEASE TRY AGAIN"
+msgstr ""
+
+#: views\offers\view.ctp:25
+msgid "ABOUT_THIS_OFFER"
+msgstr ""
+
+#: views\posts\add.ctp:20
+#: views\posts\edit.ctp:9
+msgid "SUBMIT"
+msgstr ""
+
+#: views\posts\admin_add.ctp:4
+msgid "Admin Add Post"
+msgstr ""
+
+#: views\posts\admin_add.ctp:28
+#: views\posts\admin_edit.ctp:30
+#: views\posts\admin_index.ctp:76
+#: views\posts\admin_view.ctp:93
+msgid "List Users"
+msgstr ""
+
+#: views\posts\admin_add.ctp:30
+#: views\posts\admin_edit.ctp:32
+#: views\posts\admin_index.ctp:78
+#: views\posts\admin_view.ctp:95
+msgid "List Projects"
+msgstr ""
+
+#: views\posts\admin_add.ctp:31
+#: views\posts\admin_edit.ctp:33
+#: views\posts\admin_index.ctp:79
+#: views\posts\admin_view.ctp:96
+msgid "New Project"
+msgstr ""
+
+#: views\posts\admin_edit.ctp:4
+msgid "Admin Edit Post"
+msgstr ""
+
+#: views\posts\admin_index.ctp:2
+msgid "Posts"
+msgstr ""
+
+#: views\posts\admin_view.ctp:2
+msgid "Post"
+msgstr ""
+
+#: views\posts\admin_view.ctp:19
+msgid "User"
+msgstr ""
+
+#: views\posts\admin_view.ctp:24
+#: views\staticpages\admin_view.ctp:9;61
+msgid "Title"
+msgstr ""
+
+#: views\posts\admin_view.ctp:29
+#: views\staticpages\admin_view.ctp:19
+msgid "Slug"
+msgstr ""
+
+#: views\posts\admin_view.ctp:34
+msgid "Short Description"
+msgstr ""
+
+#: views\posts\admin_view.ctp:44
+msgid "Video Url"
+msgstr ""
+
+#: views\posts\admin_view.ctp:49
+msgid "Old Information"
+msgstr ""
+
+#: views\posts\admin_view.ctp:54
+msgid "Dirname"
+msgstr ""
+
+#: views\posts\admin_view.ctp:59
+msgid "Basename"
+msgstr ""
+
+#: views\posts\admin_view.ctp:64
+msgid "Published"
+msgstr ""
+
+#: views\posts\admin_view.ctp:69
+msgid "Public"
+msgstr ""
+
+#: views\posts\admin_view.ctp:74
+msgid "Enabled"
+msgstr ""
+
+#: views\posts\admin_view.ctp:79
+msgid "Status"
+msgstr ""
+
+#: views\posts\admin_view.ctp:89
+msgid "Edit Post"
+msgstr ""
+
+#: views\posts\admin_view.ctp:90
+msgid "Delete Post"
+msgstr ""
+
+#: views\projects\--add.ctp:32;43
+msgid "PROJECT_COUNT_LEFT"
+msgstr ""
+
+#: views\projects\--edit.ctp:7
+msgid "LEADING_PROJECT_EXAMPLE"
+msgstr ""
+
+#: views\projects\--edit.ctp:8
+msgid "LEADING_PROJECT_EXAMPLE_SUBTITLE"
+msgstr ""
+
+#: views\projects\--edit.ctp:31
+msgid "PROJECT_EDIT_FIRST_BLOCK_TITLE"
+msgstr ""
+
+#: views\projects\--edit.ctp:31
+msgid "PROJECT_EDIT_FIRST_BLOCK_SUBTITLE"
+msgstr ""
+
+#: views\projects\--edit.ctp:34
+msgid "PROJECT__TITLE_EDIT_HELP_MESSAGE_TEXT"
+msgstr ""
+
+#: views\projects\--edit.ctp:36
+msgid "PROJECT__CATEGORY_EDIT_HELP_MESSAGE_TEXT"
+msgstr ""
+
+#: views\projects\--edit.ctp:38
+msgid "PROJECT__SHORT_DESCRIPTION_EDIT_HELP_MESSAGE_TEXT"
+msgstr ""
+
+#: views\projects\--edit.ctp:54
+msgid "PROJECT_EDIT_SECOND_BLOCK_TITLE"
+msgstr ""
+
+#: views\projects\--edit.ctp:54
+msgid "PROJECT_EDIT_SECOND_BLOCK_SUBTITLE"
+msgstr ""
+
+#: views\projects\--edit.ctp:64
+msgid "PROJECT__FILE_EDIT_HELP_MESSAGE_TEXT"
+msgstr ""
+
+#: views\projects\--edit.ctp:64
+msgid "PROJECT__FILE_EDIT_TIP_MESSAGE_TEXT"
+msgstr ""
+
+#: views\projects\--edit.ctp:75
+msgid "PROJECT_EDIT_THIRD_BLOCK_TITLE"
+msgstr ""
+
+#: views\projects\--edit.ctp:75
+msgid "PROJECT_EDIT_THIRD_BLOCK_SUBTITLE"
+msgstr ""
+
+#: views\projects\--edit.ctp:82
+msgid "PROJECT_EDIT_FOURTH"
+msgstr ""
+
+#: views\projects\--edit.ctp:82
+msgid "PROJECT_EDIT_FOURTH_BLOCK_SUBTITLE"
+msgstr ""
+
+#: views\projects\--edit.ctp:85
+msgid "YOUR_PAYPAL_ACCOUNT_IS_ASSOCIATED_WITH_THE_ID %s"
+msgstr ""
+
+#: views\projects\--edit.ctp:87
+msgid "PROJECT_PAYPAL_HELP_TEXT"
+msgstr ""
+
+#: views\projects\--edit.ctp:91
+msgid "ASSOCIATE_WITH_PAYPAL"
+msgstr ""
+
+#: views\projects\--edit.ctp:105
+msgid "ASSOCIATE_WITH_ANOTHER_PAYPAL"
+msgstr ""
+
+#: views\projects\--edit.ctp:143
+msgid "SUBMIT_PROJECT"
+msgstr ""
+
+#: views\projects\--edit.ctp:145
+msgid "PUBLISH_PROJECT"
+msgstr ""
+
+#: views\projects\--edit.ctp:146
+msgid "DELETE_PROJECT"
+msgstr ""
+
+#: views\projects\--index.ctp:4
+#: views\projects\-index-A.ctp:4
+#: views\projects\index.ctp:4
+msgid "DISCOVER_ALL_PROJECTS"
+msgstr ""
+
+#: views\projects\--index.ctp:14
+msgid "PROJECTS_SEARCH_RESULT_FOR %s"
+msgstr ""
+
+#: views\projects\--index.ctp:37
+msgid "ALL_PROJECTS"
+msgstr ""
+
+#: views\projects\--index.ctp:42
+msgid "SHOW_PROJECTS"
+msgstr ""
+
+#: views\projects\--index.ctp:89
+msgid "WE CAN NOT FOUND ANY PROJECT IN %s PLEASE TRY AGAIN"
+msgstr ""
+
+#: views\projects\--view.ctp:26
+msgid "ABOUT_THIS_PROJECT"
+msgstr ""
+
+#: views\projects\--view.ctp:30
+msgid "PROJECT_REASON"
+msgstr ""
+
+#: views\projects\admin_finance_project.ctp:64
+msgid "PAYMENT_INFO"
+msgstr ""
+
+#: views\projects\admin_finance_project.ctp:65
+msgid "PAYMENT_STATUS"
+msgstr ""
+
+#: views\projects\admin_finance_project.ctp:78
+msgid "Payment %s OF %s FOR USD %s OF USD %s TO %s"
+msgstr ""
+
+#: views\projects\admin_index.ctp:37
+msgid "Project.flags"
+msgstr ""
+
+#: views\projects\admin_index.ctp:80
+#: views\projects\admin_view.ctp:88
+msgid "EXPRESSCHECKOUT_PAYMENT"
+msgstr ""
+
+#: views\projects\admin_index.ctp:81
+msgid "PREAPPROVAL_PAYMENT"
+msgstr ""
+
+#: views\projects\admin_index.ctp:83
+#: views\projects\admin_project_balance.ctp:61
+#: views\projects\admin_view.ctp:91
+msgid "PAYMENT_TYPE"
+msgstr ""
+
+#: views\projects\admin_index.ctp:99
+msgid "VIEW_DETAILS"
+msgstr ""
+
+#: views\projects\admin_index.ctp:100
+#: views\projects\admin_view.ctp:82
+msgid "VIEW_PROJECT_PAGE"
+msgstr ""
+
+#: views\projects\admin_index.ctp:103
+#: views\projects\admin_view.ctp:81
+msgid "VIEW_BALANCE"
+msgstr ""
+
+#: views\projects\admin_not_finance_project.ctp:4;47
+msgid "id"
+msgstr ""
+
+#: views\projects\admin_not_finance_project.ctp:5;48
+msgid "contribution"
+msgstr ""
+
+#: views\projects\admin_not_finance_project.ctp:6
+msgid "payer_id"
+msgstr ""
+
+#: views\projects\admin_not_finance_project.ctp:7
+msgid "payer_email"
+msgstr ""
+
+#: views\projects\admin_not_finance_project.ctp:8;11
+msgid "expresscheckout_status"
+msgstr ""
+
+#: views\projects\admin_not_finance_project.ctp:9
+msgid "expresscheckout_transaction_id"
+msgstr ""
+
+#: views\projects\admin_not_finance_project.ctp:10
+msgid "expresscheckout_token"
+msgstr ""
+
+#: views\projects\admin_not_finance_project.ctp:12
+msgid "masspay_masspay_txn_id"
+msgstr ""
+
+#: views\projects\admin_not_finance_project.ctp:13
+msgid "masspay_mc_gross"
+msgstr ""
+
+#: views\projects\admin_not_finance_project.ctp:14
+msgid "masspay_mc_fee"
+msgstr ""
+
+#: views\projects\admin_not_finance_project.ctp:15
+msgid "masspay_status"
+msgstr ""
+
+#: views\projects\admin_not_finance_project.ctp:49
+msgid "preapproval_key"
+msgstr ""
+
+#: views\projects\admin_not_finance_project.ctp:50
+msgid "preapproval_approved"
+msgstr ""
+
+#: views\projects\admin_not_finance_project.ctp:51
+msgid "preapproval_status"
+msgstr ""
+
+#: views\projects\admin_not_finance_project.ctp:52
+msgid "preapproval_curpayments"
+msgstr ""
+
+#: views\projects\admin_not_finance_project.ctp:53
+msgid "preapproval_curpaymentsamount"
+msgstr ""
+
+#: views\projects\admin_not_finance_project.ctp:54
+msgid "preapproval_curperiodattempts"
+msgstr ""
+
+#: views\projects\admin_not_finance_project.ctp:55
+msgid "preapproval_currencycode"
+msgstr ""
+
+#: views\projects\admin_project_balance.ctp:10
+#: views\projects\admin_view.ctp:2;109
+msgid "%s%% ( "
+msgstr ""
+
+#: views\projects\admin_project_balance.ctp:23
+msgid "PROJECT_FINISHED"
+msgstr ""
+
+#: views\projects\admin_project_balance.ctp:27
+msgid "PROJECT_FOUNDS_HAS_BEEN_TRANFERED_TO_PROJECT_OWNER"
+msgstr ""
+
+#: views\projects\admin_project_balance.ctp:32
+msgid "INSUFICIENT_FOUNDS_TO_DO_A_REFOUND"
+msgstr ""
+
+#: views\projects\admin_project_balance.ctp:36
+msgid "INSUFICIENT_FOUNDS_TO_PAY_THIS_PROJECT"
+msgstr ""
+
+#: views\projects\admin_project_balance.ctp:42
+msgid "PROJECT_BALANCE_FOR %s"
+msgstr ""
+
+#: views\projects\admin_project_balance.ctp:44
+msgid "PROJECT_FUNDED_PERCENTAGE"
+msgstr ""
+
+#: views\projects\admin_project_balance.ctp:62
+msgid "RESUMEN_NET"
+msgstr ""
+
+#: views\projects\admin_project_balance.ctp:63;207
+msgid "REFOUND_COST"
+msgstr ""
+
+#: views\projects\admin_project_balance.ctp:64
+msgid "RESUMEN_COMISION"
+msgstr ""
+
+#: views\projects\admin_project_balance.ctp:65
+msgid "RESUMEN_PROJECT_PAYMENT"
+msgstr ""
+
+#: views\projects\admin_project_balance.ctp:69
+msgid "TRANSFER_ALL_FOUNDS"
+msgstr ""
+
+#: views\projects\admin_project_balance.ctp:98
+msgid "CHARGED"
+msgstr ""
+
+#: views\projects\admin_project_balance.ctp:98
+msgid "NOT-CHARGED"
+msgstr ""
+
+#: views\projects\admin_project_balance.ctp:117
+msgid "CHARGE_SPONSORSHIP"
+msgstr ""
+
+#: views\projects\admin_project_balance.ctp:135
+msgid "TOTAL"
+msgstr ""
+
+#: views\projects\admin_project_balance.ctp:166
+msgid "PROJECT_FUNDED_TITLE"
+msgstr ""
+
+#: views\projects\admin_project_balance.ctp:170
+msgid "PAYMENT_NUMBER"
+msgstr ""
+
+#: views\projects\admin_project_balance.ctp:171
+msgid "PAYMENT_AMMOUNT"
+msgstr ""
+
+#: views\projects\admin_project_balance.ctp:186
+msgid "FOUND_THIS_PROJECT"
+msgstr ""
+
+#: views\projects\admin_project_balance.ctp:204
+msgid "FUNDING_GOAL"
+msgstr ""
+
+#: views\projects\admin_project_balance.ctp:205
+msgid "TOTAL_REVENUE"
+msgstr ""
+
+#: views\projects\admin_project_balance.ctp:206
+msgid "DIFFERENCE"
+msgstr ""
+
+#: views\projects\admin_project_balance.ctp:208
+msgid "ACTION"
+msgstr ""
+
+#: views\projects\admin_project_balance.ctp:223
+msgid "SPONSORSHIP_THIS_PROJECT"
+msgstr ""
+
+#: views\projects\admin_project_balance.ctp:228
+msgid "REFOUND_ALL_PAYMENTS_AND_SEND_NOTIFICATIONS"
+msgstr ""
+
+#: views\projects\admin_view.ctp:27
+msgid "PROJECT %s FROM %s IN THE CATEGORY %s"
+msgstr ""
+
+#: views\projects\admin_view.ctp:29
+msgid "PROJECT %s FROM %s  IN THE CATEGORY %s IN RESPONSE OF %s"
+msgstr ""
+
+#: views\projects\admin_view.ctp:38
+msgid "REASON"
+msgstr ""
+
+#: views\projects\admin_view.ctp:44
+msgid "MOTIVATION"
+msgstr ""
+
+#: views\projects\admin_view.ctp:52
+msgid "PROJECT_MAIN_POST"
+msgstr ""
+
+#: views\projects\admin_view.ctp:76
+msgid "APPROVE_PROPOSAL_WITH_EXPRESSCHECKOUT_PAYMENTS"
+msgstr ""
+
+#: views\projects\admin_view.ctp:77
+msgid "APPROVE_PROPOSAL_WITH_PREAPPROVAL_PAYMENTS"
+msgstr ""
+
+#: views\projects\admin_view.ctp:133
+msgid "VIEW_PROFILE"
+msgstr ""
+
+#: views\projects\admin_view.ctp:138
+msgid "PROJECT_CREATED"
+msgstr ""
+
+#: views\projects\admin_view.ctp:139
+msgid "PROJECT_FUNDING_GOAL"
+msgstr ""
+
+#: views\projects\admin_view.ctp:145
+msgid "PROJECT_STATS"
+msgstr ""
+
+#: views\projects\admin_view.ctp:147
+msgid "PROJECT_BAKES"
+msgstr ""
+
+#: views\projects\admin_view.ctp:147
+msgid "%s SPONSORSHIPS"
+msgstr ""
+
+#: views\projects\admin_view.ctp:148
+msgid "PROJECT_UPDATES"
+msgstr ""
+
+#: views\projects\admin_view.ctp:149
+msgid "PROJECT_COMMENTS"
+msgstr ""
+
+#: views\projects\admin_view.ctp:150
+msgid "PROJECT_FOLLOWS"
+msgstr ""
+
+#: views\projects\admin_view.ctp:154
+msgid "RELATED_OFFER"
+msgstr ""
+
+#: views\projects\admin_view.ctp:163
+msgid "PROJECT_VIDEO"
+msgstr ""
+
+#: views\projects\admin_view.ctp:166
+msgid "PROJECT_IMAGE"
+msgstr ""
+
+#: views\projects\sponsors.ctp:54
+msgid "HAS_SUPPORTED_YOU_WITH USD %s AND_SELECTED_THE PRIZE \"%s\""
+msgstr ""
+
+#: views\projects\sponsors.ctp:54
+msgid "HAS_SUPPORTED_YOU_WITH USD %s"
+msgstr ""
+
+#: views\projects\sponsors.ctp:73
+#: views\sponsorships\---project_sponsorships.ctp:42
+#: views\sponsorships\project_sponsorships.ctp:92
+msgid "THIS_PROJECT_WAS_NOT_SUPPORTED_YET %s"
+msgstr ""
+
+#: views\projects\sponsors.ctp:73
+#: views\sponsorships\---project_sponsorships.ctp:42
+#: views\sponsorships\project_sponsorships.ctp:92
+msgid "BE_THE_FIRST"
+msgstr ""
+
+#: views\sponsorships\---add.ctp:38
+msgid "SPONSORSHIP_CREATE_TITLE"
+msgstr ""
+
+#: views\sponsorships\---add.ctp:40
+msgid "SPONSORSHIP_CREATE_SUBTITLE"
+msgstr ""
+
+#: views\sponsorships\---add.ctp:58
+msgid "SPONSORSHIP_CREATE_PRIZES_TITLE"
+msgstr ""
+
+#: views\sponsorships\---add.ctp:59
+msgid "SPONSORSHIP_CREATE_PRIZES_SUBTITLE"
+msgstr ""
+
+#: views\sponsorships\---add.ctp:68
+msgid "SPONSORSHIP_CREATE_SUBMIT"
+msgstr ""
+
+#: views\sponsorships\---project_sponsorships.ctp:26
+#: views\sponsorships\project_sponsorships.ctp:79
+msgid "IT_SUPPORTING %s PROJECTS"
+msgstr ""
+
+#: views\sponsorships\add_step_2.ctp:34
+msgid "SPONSORSHIP_CREATE_2_TITLE"
+msgstr ""
+
+#: views\sponsorships\add_step_2.ctp:36
+msgid "SPONSORSHIP_CREATE_2_SUBTITLE"
+msgstr ""
+
+#: views\sponsorships\add_step_2.ctp:41
+msgid "SPONSORSHIP_CREATE_2_INPUT_LABEL"
+msgstr ""
+
+#: views\sponsorships\add_step_2.ctp:47;53
+msgid "YOUR_BENEFIT"
+msgstr ""
+
+#: views\sponsorships\add_step_2.ctp:54
+msgid "YOU_SELECT_ONLY_HELP"
+msgstr ""
+
+#: views\sponsorships\add_step_2.ctp:70
+msgid "SPONSORSHIP_LAST_STEP_TITLE"
+msgstr ""
+
+#: views\sponsorships\add_step_2.ctp:72
+msgid "SPONSORSHIP_LAST_STEP_SUBTITLE"
+msgstr ""
+
+#: views\sponsorships\add_step_2.ctp:78
+msgid "IMPORTANT_PAYPAL_TITLE"
+msgstr ""
+
+#: views\sponsorships\add_step_2.ctp:79
+msgid "IMPORTANT_PAYPAL_BODY"
+msgstr ""
+
+#: views\sponsorships\add_step_2.ctp:90
+msgid "SPONSORSHIP_CREATE_STEP_2_SUBMIT"
+msgstr ""
+
+#: views\sponsorships\add_step_2.ctp:90
+msgid "SPONSORSHIP_CREATE_STEP_2_BACK"
+msgstr ""
+
+#: views\sponsorships\admin_index.ctp:18
+#: views\sponsorships\admin_index_mp.ctp:19
+msgid "SPONSORSHIP_INFO"
+msgstr ""
+
+#: views\sponsorships\admin_index.ctp:20
+msgid "PAYPAL_INFO"
+msgstr ""
+
+#: views\sponsorships\admin_index.ctp:46
+#: views\sponsorships\admin_index_mp.ctp:48
+msgid "SPONSORSHIP_ID"
+msgstr ""
+
+#: views\sponsorships\admin_index.ctp:47
+#: views\sponsorships\admin_index_mp.ctp:49
+msgid "SPONSORSHIP_VALUE"
+msgstr ""
+
+#: views\sponsorships\admin_index.ctp:48
+#: views\sponsorships\admin_index_mp.ctp:50
+msgid "CREATED"
+msgstr ""
+
+#: views\sponsorships\admin_index.ctp:49
+#: views\sponsorships\admin_index_mp.ctp:51
+msgid "MODIFIED"
+msgstr ""
+
+#: views\sponsorships\admin_index.ctp:64
+msgid "PAYER_ID"
+msgstr ""
+
+#: views\sponsorships\admin_index.ctp:65
+msgid "PAYER_EMAIL"
+msgstr ""
+
+#: views\sponsorships\admin_index.ctp:67
+msgid "EXPRESSCHECKOUT_TXN_ID"
+msgstr ""
+
+#: views\sponsorships\admin_index.ctp:68
+msgid "EXPRESSCHECKOUT_TOKEN"
+msgstr ""
+
+#: views\sponsorships\admin_index.ctp:69
+msgid "EXPRESSCHECKOUT_STATUS"
+msgstr ""
+
+#: views\sponsorships\admin_index.ctp:71
+msgid "PREAPPROVAL_KEY"
+msgstr ""
+
+#: views\sponsorships\admin_index.ctp:72
+msgid "PREAPPROVAL_APPROVED"
+msgstr ""
+
+#: views\sponsorships\admin_index.ctp:72
+msgid "YES"
+msgstr ""
+
+#: views\sponsorships\admin_index.ctp:72
+msgid "NO"
+msgstr ""
+
+#: views\sponsorships\admin_index.ctp:73
+msgid "PREAPPROVAL_STATUS"
+msgstr ""
+
+#: views\sponsorships\admin_index.ctp:77
+msgid "TRANSFERRED"
+msgstr ""
+
+#: views\sponsorships\admin_index.ctp:77
+msgid "NOT_TRANSFERRED"
+msgstr ""
+
+#: views\staticpages\--home.ctp:40
+msgid "HIGHLIGHT_PROJECTS_TITLE"
+msgstr ""
+
+#: views\staticpages\--home.ctp:41
+msgid "HIGHLIGHT_PROJECTS_SUBTITLE"
+msgstr ""
+
+#: views\staticpages\--home.ctp:56;83
+msgid "DISCOVER_MORE"
+msgstr ""
+
+#: views\staticpages\--home.ctp:66
+msgid "HIGHLIGHT_OFFERS_TITLE"
+msgstr ""
+
+#: views\staticpages\--home.ctp:67
+msgid "HIGHLIGHT_OFFERS_SUBTITLE"
+msgstr ""
+
+#: views\staticpages\--home.ctp:99
+#: views\users\--add.ctp:10
+#: views\users\login.ctp:17
+msgid "LOGIN_TITLE"
+msgstr ""
+
+#: views\staticpages\--home.ctp:100
+#: views\users\--add.ctp:11
+#: views\users\login.ctp:18
+msgid "LOGIN_SUBTITLE"
+msgstr ""
+
+#: views\staticpages\--home.ctp:117
+#: views\users\--add.ctp:27
+#: views\users\add.ctp:63
+msgid "INVALID_LOGIN_INFORMATION"
+msgstr ""
+
+#: views\staticpages\--home.ctp:139
+#: views\users\--add.ctp:86
+msgid "REGISTER_TITLE"
+msgstr ""
+
+#: views\staticpages\--home.ctp:140
+#: views\users\--add.ctp:87
+msgid "REGISTER_SUBTITLE"
+msgstr ""
+
+#: views\staticpages\--home.ctp:173
+#: views\users\--add.ctp:118
+msgid "TERMS_OF_USER_BODY %s"
+msgstr ""
+
+#: views\staticpages\--home.ctp:173
+#: views\users\--add.ctp:118
+msgid "TERMS_OF_USE_LINK"
+msgstr ""
+
+#: views\staticpages\--home.ctp:175
+#: views\users\--add.ctp:120
+msgid "REGISTER_ME"
+msgstr ""
+
+#: views\staticpages\--home.ctp:202
+msgid "HIGHLIGHT_USERS_TITLE"
+msgstr ""
+
+#: views\staticpages\--home.ctp:203
+msgid "HIGHLIGHT_USERS_SUBTITLE"
+msgstr ""
+
+#: views\staticpages\--home.ctp:228
+msgid "NEWEST_USERS_TITLE"
+msgstr ""
+
+#: views\staticpages\--home.ctp:229
+msgid "NEWEST_USERS_SUBTITLE"
+msgstr ""
+
+#: views\staticpages\add.ctp:4
+msgid "Add Staticpage"
+msgstr ""
+
+#: views\staticpages\add.ctp:20
+#: views\staticpages\admin_view.ctp:46
+#: views\staticpages\edit.ctp:22
+msgid "List Staticpages"
+msgstr ""
+
+#: views\staticpages\add.ctp:22
+#: views\staticpages\admin_view.ctp:49;94
+#: views\staticpages\edit.ctp:24
+#: views\staticpages\index.ctp:57
+msgid "New Link"
+msgstr ""
+
+#: views\staticpages\admin_add.ctp:4
+msgid "Admin Add Staticpage"
+msgstr ""
+
+#: views\staticpages\admin_view.ctp:2
+msgid "Staticpage"
+msgstr ""
+
+#: views\staticpages\admin_view.ctp:14
+msgid "Section"
+msgstr ""
+
+#: views\staticpages\admin_view.ctp:24
+msgid "Sub Title"
+msgstr ""
+
+#: views\staticpages\admin_view.ctp:29
+msgid "Content"
+msgstr ""
+
+#: views\staticpages\admin_view.ctp:44
+#: views\staticpages\edit.ctp:4
+msgid "Edit Staticpage"
+msgstr ""
+
+#: views\staticpages\admin_view.ctp:45
+msgid "Delete Staticpage"
+msgstr ""
+
+#: views\staticpages\admin_view.ctp:47
+#: views\staticpages\index.ctp:55
+msgid "New Staticpage"
+msgstr ""
+
+#: views\staticpages\admin_view.ctp:60
+msgid "Link"
+msgstr ""
+
+#: views\staticpages\admin_view.ctp:63
+msgid "Media Id"
+msgstr ""
+
+#: views\staticpages\index.ctp:2
+msgid "Staticpages"
+msgstr ""
+
+#: views\users\--add.ctp:35
+msgid "FORGOT_PASSWORD"
+msgstr ""
+
+#: views\users\--add.ctp:49
+msgid "FORGOT_PASSWORD_TITLE"
+msgstr ""
+
+#: views\users\--add.ctp:50
+msgid "FORGOT_PASSWORD_SUBTITLE"
+msgstr ""
+
+#: views\users\--add.ctp:66
+msgid "INVALID_INFORMATION"
+msgstr ""
+
+#: views\users\--add.ctp:72
+msgid "RECOVER_PASSWORD"
+msgstr ""
+
+#: views\users\--add.ctp:129
+msgid "FACEBOOK_LOGIN_TITLE"
+msgstr ""
+
+#: views\users\--add.ctp:130
+msgid "FACEBOOK_LOGIN_SUBTITLE"
+msgstr ""
+
+#: views\users\--add.ctp:141
+#: views\users\login.ctp:45
+msgid "LOGIN_USING_FACEBOOK"
+msgstr ""
+
+#: views\users\--add.ctp:146
+#: views\users\--edit.ctp:171
+#: views\users\login.ctp:50
+msgid "FACEBOOK_MESSAGE_TITLE"
+msgstr ""
+
+#: views\users\--add.ctp:147
+#: views\users\--edit.ctp:172
+#: views\users\login.ctp:51
+msgid "FACEBOOK_MESSAGE_MESSAGE"
+msgstr ""
+
+#: views\users\--edit.ctp:6
+#: views\users\edit.ctp:5
+#: views\users\edit2.ctp:6
+msgid "OF %s"
+msgstr ""
+
+#: views\users\--edit.ctp:10
+msgid "profile"
+msgstr ""
+
+#: views\users\--edit.ctp:11
+msgid "account"
+msgstr ""
+
+#: views\users\--edit.ctp:24
+msgid "MY_PROFILE_EDIT_PROFILE_TITLE"
+msgstr ""
+
+#: views\users\--edit.ctp:25
+msgid "MY_PROFILE_EDIT_PROFILE_SUBTITLE"
+msgstr ""
+
+#: views\users\--edit.ctp:35
+msgid "YOUR_PROFILE_INFO_IS_INCOMPLETE_TITLE"
+msgstr ""
+
+#: views\users\--edit.ctp:37
+msgid "YOUR_PROFILE_INFO_IS_INCOMPLETE_MESSAGE %s"
+msgstr ""
+
+#: views\users\--edit.ctp:38
+msgid "UPDATE_INCOMPLETE_INFO_LINK_TITLE"
+msgstr ""
+
+#: views\users\--edit.ctp:98
+msgid "USER__PROFILE_SAVE"
+msgstr ""
+
+#: views\users\--edit.ctp:110
+msgid "MY_PHOTO_EDIT_PROFILE_TITLE"
+msgstr ""
+
+#: views\users\--edit.ctp:111
+msgid "MY_PHOTO_EDIT_PROFILE_SUBTITLE"
+msgstr ""
+
+#: views\users\--edit.ctp:140
+msgid "NOTIFICATIONS_EDIT_PROFILE_TITLE"
+msgstr ""
+
+#: views\users\--edit.ctp:141
+msgid "NOTIFICATIONS_EDIT_PROFILE_SUBTITLE"
+msgstr ""
+
+#: views\users\--edit.ctp:151;207
+#: views\users\admin_add.ctp:14
+#: views\users\admin_edit.ctp:20
+msgid "SAVE"
+msgstr ""
+
+#: views\users\--edit.ctp:160
+msgid "FACEBOOK_EDIT_PROFILE_TITLE"
+msgstr ""
+
+#: views\users\--edit.ctp:161
+msgid "FACEBOOK_EDIT_PROFILE_SUBTITLE"
+msgstr ""
+
+#: views\users\--edit.ctp:169
+msgid "FACEBOOK_CONNECT_APP"
+msgstr ""
+
+#: views\users\--edit.ctp:177
+msgid "FACEBOOK_CONNECTED_APP %s"
+msgstr ""
+
+#: views\users\--edit.ctp:180
+msgid "FACEBOOK_DISCONNECT_APP"
+msgstr ""
+
+#: views\users\--edit.ctp:181
+msgid "FACEBOOK_DISCONNECT_APP_CONFIRM"
+msgstr ""
+
+#: views\users\--edit.ctp:194
+msgid "UPDATE_PASSWORD_EDIT_PROFILE_TITLE"
+msgstr ""
+
+#: views\users\--edit.ctp:195
+msgid "UPDATE_PASSWORD_EDIT_PROFILE_SUBTITLE"
+msgstr ""
+
+#: views\users\--edit.ctp:209
+msgid "DELETE_GROFFI_ACCOUNT"
+msgstr ""
+
+#: views\users\--edit.ctp:225
+msgid "DELETE_ACCOUNT_EDIT_PROFILE_TITLE"
+msgstr ""
+
+#: views\users\--edit.ctp:226
+msgid "DELETE_ACCOUNT_EDIT_PROFILE_SUBTITLE"
+msgstr ""
+
+#: views\users\--edit.ctp:233
+msgid "DELETE_ACCOUNT_MESSAGE_TITLE"
+msgstr ""
+
+#: views\users\--edit.ctp:234
+msgid "DELETE_ACCOUNT_MESSAGE_MESSAGE"
+msgstr ""
+
+#: views\users\--edit.ctp:241
+msgid "DELETE_ACCOUNT"
+msgstr ""
+
+#: views\users\--view.ctp:41
+msgid "MORE"
+msgstr ""
+
+#: views\users\admin_index.ctp:30
+msgid "User.flags"
+msgstr ""
+
+#: views\users\admin_index.ctp:59
+msgid "RESET_REPORTS"
+msgstr ""
+
+#: views\users\admin_index.ctp:69
+msgid "RESEND_ACTIVATION"
+msgstr ""
+
+#: views\users\admin_login.ctp:4
+#: views\users\login.ctp:26
+msgid "LOGIN_ERROR"
+msgstr ""
+
+#: views\users\admin_login.ctp:7
+msgid "LOGIN_USER__USERNAME"
+msgstr ""
+
+#: webroot\test.php:88
+msgid "Debug setting does not allow access to this url."
+msgstr ""
+

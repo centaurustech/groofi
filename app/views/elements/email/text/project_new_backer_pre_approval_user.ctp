@@ -1,0 +1,3 @@
+¡Ya eres patrocinador del proyecto "<?=Project::getName($emailData)?>"!
+Hemos recibido tu aporte de <?=$emailData['Sponsorship']['contribution']?> dólares. 
+El mismo será debitado de tu cuenta en caso de que este proyecto alcance a recaudar al menos USD <?=number_format($emailData['Project']['funding_goal'], 2, '.', '')?> el día <?=$this->Time->format($emailData['Project']['end_date'], '%A %d  ' . __('OF', true) . ' %B ' . __('OF', true) . ' %Y')?>.

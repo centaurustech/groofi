@@ -1,0 +1,755 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2011-04-15 20:16-0300\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: \config\site\generic\extra.php:44
+msgid "ALL SUPPORTED "
+msgstr ""
+
+#: \config\site\generic\extra.php:52
+msgid "ALL SUPPORTED FORMATS"
+msgstr ""
+
+#: \controllers\offers_controller.php:16
+#: \controllers\projects_controller.php:20
+msgid "LESS_THAN_1000"
+msgstr ""
+
+#: \controllers\offers_controller.php:17
+#: \controllers\projects_controller.php:21
+msgid "FROM_1000_TO_5000"
+msgstr ""
+
+#: \controllers\offers_controller.php:18
+#: \controllers\projects_controller.php:22
+msgid "FROM_5000_TO_10000"
+msgstr ""
+
+#: \controllers\offers_controller.php:19
+#: \controllers\projects_controller.php:23
+msgid "FROM_10000_TO_20000"
+msgstr ""
+
+#: \controllers\offers_controller.php:20
+#: \controllers\projects_controller.php:24
+msgid "20000_OR_MORE"
+msgstr ""
+
+#: \controllers\users_controller.php:105
+msgid "USER_NOT_LOGGEDIN"
+msgstr ""
+
+#: \controllers\users_controller.php:134
+msgid "USER_DOES_NOT_EXIST"
+msgstr ""
+
+#: \plugins\media\vendors\shells\media.php:94
+msgid "What would you like to do?"
+msgstr ""
+
+#: \plugins\media\views\elements\attachments.ctp:77
+#: \views\elements\media\attachment_element.ctp:90
+#: \views\elements\media\attachments.ctp:92
+#: \views\helpers\time_i18n.php:182;216
+msgid "%s"
+msgstr ""
+
+#: \plugins\media\views\elements\attachments.ctp:92
+#: \views\elements\media\attachment_element.ctp:101
+#: \views\elements\media\attachments.ctp:105
+msgid "File"
+msgstr ""
+
+#: \plugins\media\views\elements\attachments.ctp:95
+#: \views\elements\media\attachment_element.ctp:105
+#: \views\elements\media\attachments.ctp:108
+msgid "AN_ERROR_OCCURED_WHILE_TRANSFERRING_THE_FILE"
+msgstr ""
+
+#: \plugins\media\views\elements\attachments.ctp:96
+#: \views\elements\media\attachment_element.ctp:106
+#: \views\elements\media\attachments.ctp:109
+msgid "THE_FILE_IS_INVALID"
+msgstr ""
+
+#: \plugins\media\views\elements\attachments.ctp:97
+#: \views\elements\media\attachment_element.ctp:107
+#: \views\elements\media\attachments.ctp:110
+msgid "THE_FILE_CANNOT_BE_PROCESSED"
+msgstr ""
+
+#: \plugins\media\views\elements\attachments.ctp:98
+#: \views\elements\media\attachment_element.ctp:108
+#: \views\elements\media\attachments.ctp:111
+msgid "THE_FILE_CANNOT_BE_TRANSFERRED_FROM_OR_TO_LOCATION"
+msgstr ""
+
+#: \plugins\media\views\elements\attachments.ctp:99
+#: \views\elements\media\attachment_element.ctp:109
+#: \views\elements\media\attachments.ctp:112
+msgid "EXECUTABLE_FILES_CANNOT_BE_UPLOADED"
+msgstr ""
+
+#: \plugins\media\views\elements\attachments.ctp:100;101
+#: \views\elements\media\attachment_element.ctp:110;111
+#: \views\elements\media\attachments.ctp:113;114
+msgid "THE_FILE_IS_TOO_LARGE"
+msgstr ""
+
+#: \plugins\media\views\elements\attachments.ctp:102
+#: \views\elements\media\attachment_element.ctp:112
+#: \views\elements\media\attachments.ctp:115
+msgid "THE_FILE_HAS_THE_WRONG_EXTENSION"
+msgstr ""
+
+#: \plugins\media\views\elements\attachments.ctp:103
+#: \views\elements\media\attachment_element.ctp:113
+#: \views\elements\media\attachments.ctp:116
+msgid "THE_FILE_HAS_THE_WRONG_MIME_TYPE"
+msgstr ""
+
+#: \plugins\media\views\elements\attachments.ctp:106
+#: \views\elements\media\attachment_element.ctp:118
+#: \views\elements\media\attachments.ctp:121
+msgid "TEXTUAL_REPLACEMENT"
+msgstr ""
+
+#: \plugins\media\views\elements\attachments.ctp:108
+#: \views\elements\media\attachment_element.ctp:121
+#: \views\elements\media\attachments.ctp:123
+msgid "A_TEXTUAL_REPLACEMENT_MUST_BE_PROVIDED"
+msgstr ""
+
+#: \plugins\media\views\elements\attachments.ctp:161
+#: \views\elements\media\attachments.ctp:176
+msgid "DELETE"
+msgstr ""
+
+#: \plugins\seo\controllers\seo_blacklists_controller.php:35;55
+msgid "Invalid seo blacklist"
+msgstr ""
+
+#: \plugins\seo\controllers\seo_blacklists_controller.php:45;60
+msgid "The seo blacklist has been saved"
+msgstr ""
+
+#: \plugins\seo\controllers\seo_blacklists_controller.php:48;63
+msgid "The seo blacklist could not be saved. Please, try again."
+msgstr ""
+
+#: \plugins\seo\controllers\seo_blacklists_controller.php:73
+msgid "Invalid id for seo blacklist"
+msgstr ""
+
+#: \plugins\seo\controllers\seo_blacklists_controller.php:77
+msgid "Seo blacklist deleted"
+msgstr ""
+
+#: \plugins\seo\controllers\seo_blacklists_controller.php:80
+msgid "Seo blacklist was not deleted"
+msgstr ""
+
+#: \plugins\seo\controllers\seo_meta_tags_controller.php:18;39
+msgid "Invalid seo meta tag"
+msgstr ""
+
+#: \plugins\seo\controllers\seo_meta_tags_controller.php:29;44
+msgid "The seo meta tag has been saved"
+msgstr ""
+
+#: \plugins\seo\controllers\seo_meta_tags_controller.php:32;47
+msgid "The seo meta tag could not be saved. Please, try again."
+msgstr ""
+
+#: \plugins\seo\controllers\seo_meta_tags_controller.php:58
+msgid "Invalid id for seo meta tag"
+msgstr ""
+
+#: \plugins\seo\controllers\seo_meta_tags_controller.php:62
+msgid "Seo meta tag deleted"
+msgstr ""
+
+#: \plugins\seo\controllers\seo_meta_tags_controller.php:65
+msgid "Seo meta tag was not deleted"
+msgstr ""
+
+#: \plugins\seo\controllers\seo_redirects_controller.php:18;39
+msgid "Invalid seo redirect"
+msgstr ""
+
+#: \plugins\seo\controllers\seo_redirects_controller.php:29;44
+msgid "The seo redirect has been saved"
+msgstr ""
+
+#: \plugins\seo\controllers\seo_redirects_controller.php:32;47
+msgid "The seo redirect could not be saved. Please, try again."
+msgstr ""
+
+#: \plugins\seo\controllers\seo_redirects_controller.php:58
+msgid "Invalid id for seo redirect"
+msgstr ""
+
+#: \plugins\seo\controllers\seo_redirects_controller.php:62
+msgid "Seo redirect deleted"
+msgstr ""
+
+#: \plugins\seo\controllers\seo_redirects_controller.php:65
+msgid "Seo redirect was not deleted"
+msgstr ""
+
+#: \plugins\seo\controllers\seo_titles_controller.php:17;39
+msgid "Invalid seo title"
+msgstr ""
+
+#: \plugins\seo\controllers\seo_titles_controller.php:27;44
+msgid "The seo title has been saved"
+msgstr ""
+
+#: \plugins\seo\controllers\seo_titles_controller.php:30;47
+msgid "The seo title could not be saved. Please, try again."
+msgstr ""
+
+#: \plugins\seo\controllers\seo_titles_controller.php:59
+msgid "Invalid id for seo title"
+msgstr ""
+
+#: \plugins\seo\controllers\seo_titles_controller.php:63
+msgid "Seo title deleted"
+msgstr ""
+
+#: \plugins\seo\controllers\seo_titles_controller.php:66
+msgid "Seo title was not deleted"
+msgstr ""
+
+#: \plugins\seo\controllers\seo_uris_controller.php:32;54
+msgid "Invalid seo uri"
+msgstr ""
+
+#: \plugins\seo\controllers\seo_uris_controller.php:44;60
+msgid "The seo uri has been saved"
+msgstr ""
+
+#: \plugins\seo\controllers\seo_uris_controller.php:47;63
+msgid "The seo uri could not be saved. Please, try again."
+msgstr ""
+
+#: \plugins\seo\controllers\seo_uris_controller.php:74;87
+msgid "Invalid id for seo uri"
+msgstr ""
+
+#: \plugins\seo\controllers\seo_uris_controller.php:78
+msgid "Seo uri deleted"
+msgstr ""
+
+#: \plugins\seo\controllers\seo_uris_controller.php:81
+msgid "Seo uri was not deleted"
+msgstr ""
+
+#: \plugins\seo\controllers\seo_uris_controller.php:90
+msgid "Seo Uri approved"
+msgstr ""
+
+#: \plugins\seo\views\elements\seo_actions.ctp:2
+#: \plugins\seo\views\elements\seo_nav.ctp:2
+msgid "Navigation"
+msgstr ""
+
+#: \plugins\seo\views\elements\seo_actions.ctp:4
+#: \plugins\seo\views\elements\seo_nav.ctp:6
+#: \plugins\seo\views\seo_redirects\admin_index.ctp:5
+msgid "Seo Redirects"
+msgstr ""
+
+#: \plugins\seo\views\elements\seo_actions.ctp:5
+#: \plugins\seo\views\elements\seo_nav.ctp:7
+#: \plugins\seo\views\seo_meta_tags\admin_index.ctp:5
+msgid "Seo Meta Tags"
+msgstr ""
+
+#: \plugins\seo\views\elements\seo_actions.ctp:6
+#: \plugins\seo\views\elements\seo_nav.ctp:4
+#: \plugins\seo\views\seo_uris\admin_index.ctp:5
+msgid "Seo Uris"
+msgstr ""
+
+#: \plugins\seo\views\elements\seo_nav.ctp:5
+msgid "Seo BlackLists"
+msgstr ""
+
+#: \plugins\seo\views\elements\seo_nav.ctp:8
+#: \plugins\seo\views\seo_titles\admin_index.ctp:5
+msgid "Seo Titles"
+msgstr ""
+
+#: \plugins\seo\views\elements\seo_paging.ctp:4
+msgid "Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%"
+msgstr ""
+
+#: \plugins\seo\views\elements\seo_paging.ctp:12
+msgid "previous"
+msgstr ""
+
+#: \plugins\seo\views\elements\seo_paging.ctp:14
+msgid "next"
+msgstr ""
+
+#: \plugins\seo\views\seo_blacklists\admin_add.ctp:6
+msgid "Admin Add Seo Blacklist"
+msgstr ""
+
+#: \plugins\seo\views\seo_blacklists\admin_add.ctp:14
+msgid "Save BlackList"
+msgstr ""
+
+#: \plugins\seo\views\seo_blacklists\admin_edit.ctp:6
+msgid "Admin Edit Seo Blacklist"
+msgstr ""
+
+#: \plugins\seo\views\seo_blacklists\admin_edit.ctp:15
+#: \plugins\seo\views\seo_meta_tags\admin_add.ctp:14
+#: \plugins\seo\views\seo_meta_tags\admin_edit.ctp:15
+#: \plugins\seo\views\seo_redirects\admin_edit.ctp:16
+#: \plugins\seo\views\seo_titles\admin_add.ctp:12
+#: \plugins\seo\views\seo_titles\admin_edit.ctp:13
+msgid "Submit"
+msgstr ""
+
+#: \plugins\seo\views\seo_blacklists\admin_edit.ctp:16;21
+#: \plugins\seo\views\seo_blacklists\admin_index.ctp:30
+#: \plugins\seo\views\seo_meta_tags\admin_edit.ctp:16;21
+#: \plugins\seo\views\seo_meta_tags\admin_index.ctp:34
+#: \plugins\seo\views\seo_redirects\admin_edit.ctp:21
+#: \plugins\seo\views\seo_redirects\admin_index.ctp:36
+#: \plugins\seo\views\seo_titles\admin_edit.ctp:18
+#: \plugins\seo\views\seo_titles\admin_index.ctp:30
+#: \plugins\seo\views\seo_uris\admin_edit.ctp:48
+#: \plugins\seo\views\seo_uris\admin_index.ctp:28
+#: \plugins\seo\views\seo_uris\admin_view.ctp:121
+msgid "Delete"
+msgstr ""
+
+#: \plugins\seo\views\seo_blacklists\admin_edit.ctp:16;21
+#: \plugins\seo\views\seo_blacklists\admin_index.ctp:30
+#: \plugins\seo\views\seo_blacklists\admin_view.ctp:47
+#: \plugins\seo\views\seo_meta_tags\admin_edit.ctp:16;21
+#: \plugins\seo\views\seo_meta_tags\admin_index.ctp:34
+#: \plugins\seo\views\seo_meta_tags\admin_view.ctp:47
+#: \plugins\seo\views\seo_redirects\admin_edit.ctp:21
+#: \plugins\seo\views\seo_redirects\admin_index.ctp:36
+#: \plugins\seo\views\seo_redirects\admin_view.ctp:52
+#: \plugins\seo\views\seo_titles\admin_edit.ctp:18
+#: \plugins\seo\views\seo_titles\admin_index.ctp:30
+#: \plugins\seo\views\seo_titles\admin_view.ctp:37
+#: \plugins\seo\views\seo_uris\admin_edit.ctp:48
+#: \plugins\seo\views\seo_uris\admin_index.ctp:28
+#: \plugins\seo\views\seo_uris\admin_view.ctp:37;121
+msgid "Are you sure you want to delete # %s?"
+msgstr ""
+
+#: \plugins\seo\views\seo_blacklists\admin_edit.ctp:19
+#: \plugins\seo\views\seo_blacklists\admin_index.ctp:12;38
+#: \plugins\seo\views\seo_blacklists\admin_view.ctp:44
+#: \plugins\seo\views\seo_meta_tags\admin_edit.ctp:19
+#: \plugins\seo\views\seo_meta_tags\admin_index.ctp:13;42
+#: \plugins\seo\views\seo_meta_tags\admin_view.ctp:44
+#: \plugins\seo\views\seo_redirects\admin_edit.ctp:19
+#: \plugins\seo\views\seo_redirects\admin_index.ctp:14;44
+#: \plugins\seo\views\seo_redirects\admin_view.ctp:49
+#: \plugins\seo\views\seo_titles\admin_edit.ctp:16
+#: \plugins\seo\views\seo_titles\admin_index.ctp:11;38
+#: \plugins\seo\views\seo_titles\admin_view.ctp:34
+#: \plugins\seo\views\seo_uris\admin_edit.ctp:46
+#: \plugins\seo\views\seo_uris\admin_index.ctp:11;36
+#: \plugins\seo\views\seo_uris\admin_view.ctp:34;103
+msgid "Actions"
+msgstr ""
+
+#: \plugins\seo\views\seo_blacklists\admin_index.ctp:5
+msgid "Seo Blacklists"
+msgstr ""
+
+#: \plugins\seo\views\seo_blacklists\admin_index.ctp:28
+#: \plugins\seo\views\seo_meta_tags\admin_index.ctp:32
+#: \plugins\seo\views\seo_redirects\admin_index.ctp:34
+#: \plugins\seo\views\seo_titles\admin_index.ctp:28
+#: \plugins\seo\views\seo_uris\admin_index.ctp:26
+#: \plugins\seo\views\seo_uris\admin_view.ctp:119
+msgid "View"
+msgstr ""
+
+#: \plugins\seo\views\seo_blacklists\admin_index.ctp:29
+#: \plugins\seo\views\seo_meta_tags\admin_index.ctp:33
+#: \plugins\seo\views\seo_redirects\admin_index.ctp:35
+#: \plugins\seo\views\seo_titles\admin_index.ctp:29
+#: \plugins\seo\views\seo_uris\admin_index.ctp:27
+#: \plugins\seo\views\seo_uris\admin_view.ctp:120
+msgid "Edit"
+msgstr ""
+
+#: \plugins\seo\views\seo_blacklists\admin_index.ctp:40
+msgid "New Seo Blacklist"
+msgstr ""
+
+#: \plugins\seo\views\seo_blacklists\admin_view.ctp:4
+msgid "Seo Blacklist"
+msgstr ""
+
+#: \plugins\seo\views\seo_blacklists\admin_view.ctp:6
+#: \plugins\seo\views\seo_meta_tags\admin_view.ctp:6
+#: \plugins\seo\views\seo_redirects\admin_view.ctp:6
+#: \plugins\seo\views\seo_titles\admin_view.ctp:6
+#: \plugins\seo\views\seo_uris\admin_view.ctp:6
+msgid "Id"
+msgstr ""
+
+#: \plugins\seo\views\seo_blacklists\admin_view.ctp:11
+msgid "Ip Range Start"
+msgstr ""
+
+#: \plugins\seo\views\seo_blacklists\admin_view.ctp:16
+msgid "Ip Range End"
+msgstr ""
+
+#: \plugins\seo\views\seo_blacklists\admin_view.ctp:21
+msgid "Note"
+msgstr ""
+
+#: \plugins\seo\views\seo_blacklists\admin_view.ctp:26
+#: \plugins\seo\views\seo_redirects\admin_view.ctp:26
+#: \plugins\seo\views\seo_uris\admin_view.ctp:52
+msgid "Is Active"
+msgstr ""
+
+#: \plugins\seo\views\seo_blacklists\admin_view.ctp:31
+#: \plugins\seo\views\seo_meta_tags\admin_view.ctp:31
+#: \plugins\seo\views\seo_redirects\admin_view.ctp:36
+#: \plugins\seo\views\seo_titles\admin_view.ctp:21
+#: \plugins\seo\views\seo_uris\admin_view.ctp:21;60;81;102
+msgid "Created"
+msgstr ""
+
+#: \plugins\seo\views\seo_blacklists\admin_view.ctp:36
+#: \plugins\seo\views\seo_meta_tags\admin_view.ctp:36
+#: \plugins\seo\views\seo_redirects\admin_view.ctp:41
+#: \plugins\seo\views\seo_titles\admin_view.ctp:26
+#: \plugins\seo\views\seo_uris\admin_view.ctp:26
+msgid "Modified"
+msgstr ""
+
+#: \plugins\seo\views\seo_blacklists\admin_view.ctp:46
+msgid "Edit Seo Blacklist"
+msgstr ""
+
+#: \plugins\seo\views\seo_blacklists\admin_view.ctp:47
+msgid "Delete Seo Blacklist"
+msgstr ""
+
+#: \plugins\seo\views\seo_meta_tags\admin_add.ctp:6
+msgid "Admin Add Seo Meta Tag"
+msgstr ""
+
+#: \plugins\seo\views\seo_meta_tags\admin_edit.ctp:6
+msgid "Admin Edit Seo Meta Tag"
+msgstr ""
+
+#: \plugins\seo\views\seo_meta_tags\admin_index.ctp:44
+#: \plugins\seo\views\seo_uris\admin_view.ctp:130
+msgid "New Seo Meta Tag"
+msgstr ""
+
+#: \plugins\seo\views\seo_meta_tags\admin_view.ctp:4
+msgid "Seo Meta Tag"
+msgstr ""
+
+#: \plugins\seo\views\seo_meta_tags\admin_view.ctp:11
+#: \plugins\seo\views\seo_redirects\admin_view.ctp:11
+#: \plugins\seo\views\seo_titles\admin_view.ctp:11
+#: \plugins\seo\views\seo_uris\admin_view.ctp:4
+msgid "Seo Uri"
+msgstr ""
+
+#: \plugins\seo\views\seo_meta_tags\admin_view.ctp:16
+#: \plugins\seo\views\seo_uris\admin_view.ctp:99
+msgid "Name"
+msgstr ""
+
+#: \plugins\seo\views\seo_meta_tags\admin_view.ctp:21
+#: \plugins\seo\views\seo_uris\admin_view.ctp:100
+msgid "Content"
+msgstr ""
+
+#: \plugins\seo\views\seo_meta_tags\admin_view.ctp:26
+#: \plugins\seo\views\seo_uris\admin_view.ctp:101
+msgid "Is Http Equiv"
+msgstr ""
+
+#: \plugins\seo\views\seo_meta_tags\admin_view.ctp:46
+msgid "Edit Seo Meta Tag"
+msgstr ""
+
+#: \plugins\seo\views\seo_meta_tags\admin_view.ctp:47
+msgid "Delete Seo Meta Tag"
+msgstr ""
+
+#: \plugins\seo\views\seo_redirects\admin_add.ctp:6
+msgid "Admin Add Seo Redirect"
+msgstr ""
+
+#: \plugins\seo\views\seo_redirects\admin_add.ctp:15
+msgid "Save Seo Redirect"
+msgstr ""
+
+#: \plugins\seo\views\seo_redirects\admin_edit.ctp:6
+msgid "Admin Edit Seo Redirect"
+msgstr ""
+
+#: \plugins\seo\views\seo_redirects\admin_index.ctp:46
+msgid "New Seo Redirect"
+msgstr ""
+
+#: \plugins\seo\views\seo_redirects\admin_view.ctp:4
+msgid "Seo Redirect"
+msgstr ""
+
+#: \plugins\seo\views\seo_redirects\admin_view.ctp:16
+#: \plugins\seo\views\seo_uris\admin_view.ctp:44
+msgid "Redirect"
+msgstr ""
+
+#: \plugins\seo\views\seo_redirects\admin_view.ctp:21
+#: \plugins\seo\views\seo_uris\admin_view.ctp:48
+msgid "Priority"
+msgstr ""
+
+#: \plugins\seo\views\seo_redirects\admin_view.ctp:31
+#: \plugins\seo\views\seo_uris\admin_view.ctp:56
+msgid "Callback"
+msgstr ""
+
+#: \plugins\seo\views\seo_redirects\admin_view.ctp:51
+#: \plugins\seo\views\seo_uris\admin_view.ctp:68
+msgid "Edit Seo Redirect"
+msgstr ""
+
+#: \plugins\seo\views\seo_redirects\admin_view.ctp:52
+msgid "Delete Seo Redirect"
+msgstr ""
+
+#: \plugins\seo\views\seo_titles\admin_add.ctp:6
+msgid "Admin Add Seo Title"
+msgstr ""
+
+#: \plugins\seo\views\seo_titles\admin_edit.ctp:6
+msgid "Admin Edit Seo Title"
+msgstr ""
+
+#: \plugins\seo\views\seo_titles\admin_index.ctp:40
+msgid "New Seo Title"
+msgstr ""
+
+#: \plugins\seo\views\seo_titles\admin_view.ctp:4
+msgid "Seo Title"
+msgstr ""
+
+#: \plugins\seo\views\seo_titles\admin_view.ctp:16
+#: \plugins\seo\views\seo_uris\admin_view.ctp:77
+msgid "Title"
+msgstr ""
+
+#: \plugins\seo\views\seo_titles\admin_view.ctp:36
+#: \plugins\seo\views\seo_uris\admin_view.ctp:89
+msgid "Edit Seo Title"
+msgstr ""
+
+#: \plugins\seo\views\seo_titles\admin_view.ctp:37
+msgid "Delete Seo Title"
+msgstr ""
+
+#: \plugins\seo\views\seo_uris\admin_add.ctp:6
+#: \plugins\seo\views\seo_uris\admin_edit.ctp:6
+msgid "Admin Add Seo Uri"
+msgstr ""
+
+#: \plugins\seo\views\seo_uris\admin_add.ctp:38
+#: \plugins\seo\views\seo_uris\admin_edit.ctp:43
+msgid "Save All"
+msgstr ""
+
+#: \plugins\seo\views\seo_uris\admin_index.ctp:38
+msgid "New Seo Uri"
+msgstr ""
+
+#: \plugins\seo\views\seo_uris\admin_view.ctp:11
+msgid "Uri"
+msgstr ""
+
+#: \plugins\seo\views\seo_uris\admin_view.ctp:16
+msgid "Is Approved"
+msgstr ""
+
+#: \plugins\seo\views\seo_uris\admin_view.ctp:36
+msgid "Edit Seo Uri"
+msgstr ""
+
+#: \plugins\seo\views\seo_uris\admin_view.ctp:37
+msgid "Delete Seo Uri"
+msgstr ""
+
+#: \plugins\seo\views\seo_uris\admin_view.ctp:41
+msgid "Related Seo Redirects"
+msgstr ""
+
+#: \plugins\seo\views\seo_uris\admin_view.ctp:74
+msgid "Related Seo Titles"
+msgstr ""
+
+#: \plugins\seo\views\seo_uris\admin_view.ctp:95
+msgid "Related Seo Meta Tags"
+msgstr ""
+
+#: \views\helpers\app_form.php:78
+msgid "NOT_EMPTY_GENERIC_ERROR"
+msgstr ""
+
+#: \views\helpers\app_form.php:79
+msgid "MIN_LENGHT_GENERIC_ERROR"
+msgstr ""
+
+#: \views\helpers\app_form.php:80
+msgid "MIN_LENGHT_3_ERROR"
+msgstr ""
+
+#: \views\helpers\app_form.php:81
+msgid "MAX_LENGTH_GENERIC_ERROR"
+msgstr ""
+
+#: \views\helpers\app_form.php:82
+msgid "MAX_LENGTH_50_ERROR"
+msgstr ""
+
+#: \views\helpers\app_form.php:83
+msgid "URL_GENERIC_ERROR"
+msgstr ""
+
+#: \views\helpers\app_form.php:84
+msgid "EMAIL_GENERIC_ERROR"
+msgstr ""
+
+#: \views\helpers\lang.php:648
+msgid "Country"
+msgstr ""
+
+#: \views\helpers\lang.php:683
+msgid "Language"
+msgstr ""
+
+#: \views\helpers\time_i18n.php:14
+msgid "j of F of Y, H:i"
+msgstr ""
+
+#: \views\helpers\time_i18n.php:33;241
+msgid "TODAY"
+msgstr ""
+
+#: \views\helpers\time_i18n.php:35;244
+msgid "YESTERDAY"
+msgstr ""
+
+#: \views\helpers\time_i18n.php:60
+msgid "ElementCreatedOn"
+msgstr ""
+
+#: \views\helpers\time_i18n.php:78
+msgid "j/n/y"
+msgstr ""
+
+#: \views\helpers\time_i18n.php:182
+msgid "on"
+msgstr ""
+
+#: \views\helpers\time_i18n.php:216
+msgid "ago"
+msgstr ""
+
+#: \views\helpers\time_i18n.php:248
+msgid ", h:m"
+msgstr ""
+
+#: \views\helpers\time_i18n.php:186
+msgid "year"
+msgid_plural "years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: \views\helpers\time_i18n.php:187;192
+msgid "month"
+msgid_plural "months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: \views\helpers\time_i18n.php:188;193;197
+msgid "week"
+msgid_plural "weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: \views\helpers\time_i18n.php:189;194;198;201
+msgid "day"
+msgid_plural "days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: \views\helpers\time_i18n.php:202;205
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: \views\helpers\time_i18n.php:206;209
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: \views\helpers\time_i18n.php:212
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: \views\layouts\default.ctp:4
+msgid "DEFAULT_SITE_SHORT_DESCRIPTION"
+msgstr ""
+
+#: \views\layouts\default.ctp:7
+msgid "DEFAULT_SITE_DESCRIPTION"
+msgstr ""
+
+#: \views\layouts\default.ctp:10
+msgid "DEFAULT_SITE_AUTHOR"
+msgstr ""
+
+#: \views\layouts\flash.ctp:59
+msgid "Click here if not automatically forwarded in"
+msgstr ""
+
+#: \views\layouts\flash.ctp:59
+msgid "seconds"
+msgstr ""
+
+#: \webroot\test.php:88
+msgid "Debug setting does not allow access to this url."
+msgstr ""
+

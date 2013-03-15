@@ -1,0 +1,3979 @@
+msgid "ADMIN_PROJECTS_FILTER_SORT_PROJECT.CREATED"
+msgstr "Fecha de creación"
+
+msgid "ADMIN_PROJECTS_FILTER_SORT_PROJECT.ID"
+msgstr "Id"
+
+msgid "ADMIN_PROJECTS_FILTER_SORT_PROJECT.CATEGORY_ID"
+msgstr "Id de categoría"
+
+msgid "ADMIN_PROJECTS_FILTER_SORT_PROJECT.USER_ID"
+msgstr "Id de usuario"
+
+msgid "ADMIN_PROJECTS_FILTER_SORT_PROJECT.ID"
+msgstr "Id"
+
+msgid "ADMIN_PROJECTS_FILTER_FILTER_ABOUT-TO-FINISH"
+msgstr "Por finalizar"
+
+msgid "ADMIN_PROJECTS_FILTER_FILTER_FINISHED"
+msgstr "Finalizados"
+
+msgid "ADMIN_PROJECTS_FILTER_FILTER_FUNDED"
+msgstr "Financiados"
+
+msgid "ADMIN_PROJECTS_FILTER_FILTER_NOT-FUNDED"
+msgstr "No financiados"
+
+msgid "ADMIN_PROJECTS_FILTER_FILTER_DISABLED"
+msgstr "Deshabilitados"
+
+msgid "ADMIN_PROJECTS_FILTER_SORT_PROJECT.TITLE"
+msgstr "Título"
+
+msgid "FILTER_TITLE_SORT"
+msgstr "Ordenar por"
+
+msgid "FILTER_TITLE_FILTER"
+msgstr "Filtrar por"
+
+msgid "FILTER_TITLE_LIMIT"
+msgstr "MOSTRAR"
+
+msgid "SEARCH_INPUT"
+msgstr "Buscar"
+
+msgid "ADMIN"
+msgstr "Administrar"
+
+msgid "ADMIN_PROJECTS"
+msgstr "Proyectos"
+
+msgid "VIEW_ALL_ADMIN_ALL"
+msgstr "Todos"
+
+msgid "VIEW_ALL_ADMIN_INDEX"
+msgstr "Todos"
+
+msgid "VIEW_PUBLISHED_ADMIN_PUBLISHED"
+msgstr "Publicados"
+
+msgid "VIEW_PROPOSALS_ADMIN_PROPOSALS"
+msgstr "Propuestas"
+
+msgid "VIEW_REJECTED_ADMIN_REJECTED"
+msgstr "Rechazados"
+
+msgid "VIEW_APPROVED_ADMIN_APPROVED"
+msgstr "Pendientes de publicación"
+
+msgid "ADMIN_PROJECTS_MENU_ALL"
+msgstr "Ver todos"
+
+msgid "ADMIN_PROJECTS_MENU_PROPOSALS"
+msgstr "Ver propuestas"
+
+msgid "ADMIN_PROJECTS_MENU_REJECTED"
+msgstr "Ver rechazados"
+
+msgid "ADMIN_PROJECTS_MENU_APPROVED"
+msgstr "Ver no publicados"
+
+msgid "ADMIN_PROJECTS_MENU_PUBLISHED"
+msgstr "Ver publicados"
+
+
+msgid "ADMIN_PROJECTS_MENU_OUTSTANDING"
+msgstr "Destacados en Home"
+
+msgid "VIEW_WEEK_ADMIN_INDEX"
+msgstr "Destacados de la semana"
+
+msgid "ADMIN_PROJECTS_MENU_LEADING"
+msgstr "Casos de éxito"
+
+msgid "ADMIN_PROJECTS_MENU_WEEK"
+msgstr "Destacados de la semana"
+
+msgid "ADMIN_PROJECTS_FILTER_FILTER_PROPOSALS"
+msgstr "Propuestas"
+
+msgid "ADMIN_PROJECTS_FILTER_FILTER_REJECTED"
+msgstr "Proyectos rechazados"
+
+msgid "ADMIN_PROJECTS_FILTER_FILTER_APPROVED"
+msgstr "No publicados"
+
+msgid "ADMIN_PROJECTS_FILTER_FILTER_PUBLISHED"
+msgstr "Proyectos publicados"
+
+msgid "ADMIN_PROJECTS_FILTER_FILTER_ALL"
+msgstr "Todos los proyectos"
+
+msgid "Today, %s"
+msgstr "Hoy, %s"
+
+msgid "Yesterday, %s"
+msgstr "Ayer, %s"
+
+msgid "DO_U_WANT_TO_PUBLISH_THIS_PROJECT_TITLE"
+msgstr "Confirmar"
+
+msgid "DO_U_WANT_TO_PUBLISH_THIS_PROJECT_BODY"
+msgstr "¿Quieres lanzar este proyecto?"
+
+msgid "DO_U_WANT_TO_PUBLISH_THIS_PROJECT_YES"
+msgstr "Sí"
+
+msgid "DO_U_WANT_TO_PUBLISH_THIS_PROJECT_NO"
+msgstr "No"
+
+msgid "DO_U_WANT_TO_DELETE_THIS_PROJECT_TITLE"
+msgstr "¿Estás seguro?"
+
+msgid "DO_U_WANT_TO_DELETE_THIS_PROJECT_BODY"
+msgstr "¿Quieres eliminar este proyecto?"
+
+msgid "DO_U_WANT_TO_DELETE_THIS_PROJECT_YES"
+msgstr "Sí"
+
+msgid "DO_U_WANT_TO_DELETE_THIS_PROJECT_NO"
+msgstr "No"
+
+msgid "PAGE_SHARE_TITLE"
+msgstr "¡Comparte tu proyecto con tus conocidos!"
+
+msgid "PAGE_SHARE_BODY"
+msgstr "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a felis non elit porta aliquam non eu lacus. Aliquam feugiat faucibus dui id accumsan. Integer a enim eget lectus tincidunt rutrum. Vestibulum quis odio nisi, eu placerat justo."
+
+msgid "LOGIN_TITLE"
+msgstr "Usuarios"
+
+msgid "LOGIN_SUBTITLE"
+msgstr "Ingresa los datos de tu cuenta"
+
+msgid "USER__PASSWORD"
+msgstr "Contraseña"
+
+msgid "LOGIN"
+msgstr "Ingresar"
+
+msgid "REGISTER_TITLE"
+msgstr "¿No estás registrado?"
+
+msgid "REGISTER_SUBTITLE"
+msgstr "Completa estos datos y crea tu cuenta ahora"
+
+msgid "USER__DISPLAY_NAME"
+msgstr "Nombre completo"
+
+msgid "USER__EMAIL"
+msgstr "E-mail"
+
+msgid "USER__PASSWORD"
+msgstr "Contraseña"
+
+msgid "USER__PASSWORD_CONFIRMATION"
+msgstr "Repetir contraseña"
+
+msgid "REGISTER_ME"
+msgstr "Registrarme"
+
+msgid "FACEBOOK_LOGIN_TITLE"
+msgstr "Ingresar con Facebook"
+
+msgid "FACEBOOK_LOGIN_TITLE_1"
+msgstr "Ingresar con"
+
+msgid "FACEBOOK_LOGIN_SUBTITLE"
+msgstr "Utiliza tu usuario de Facebook para ingresar"
+
+msgid "LOGIN_USING_FACEBOOK"
+msgstr "Ingresar con Facebook"
+
+msgid "FACEBOOK_MESSAGE_TITLE"
+msgstr "Privacidad"
+
+msgid "FACEBOOK_MESSAGE_MESSAGE"
+msgstr "No almacenaremos su nombre de usuario, contraseña u otros datos de su cuenta, ni compartiremos su información de Groofi en Facebook."
+
+
+msgid "WRITE_US"
+msgstr "Escribenos"
+
+
+msgid "DISCOVER"
+msgstr "DESCUBRIR"
+
+msgid "CREATE"
+msgstr " CREAR"
+
+msgid "BLOG"
+msgstr "BLOG"
+
+msgid "PROJECT"
+msgstr "Proyectos"
+
+msgid "OFFER"
+msgstr "Ofrecimientos"
+
+msgid "LOGIN"
+msgstr "Ingresar"
+
+msgid "REGISTER"
+msgstr "Registrarse"
+
+msgid "SEARCH_SOMETHING"
+msgstr "Buscar..."
+
+msgid "ACTIVITY"
+msgstr "Novedades"
+
+msgid "MESSAGES"
+msgstr "Mensajes"
+
+msgid "OFFERS_INDEX_TITLE"
+msgstr "Descubrir ofrecimientos"
+
+msgid "PROJECTS_INDEX_TITLE"
+msgstr "Descubrir proyectos"
+
+msgid "BY %s"
+msgstr "creado por %s"
+
+msgid "PROJECTS_ADD_TITLE"
+msgstr "Propuesta de proyecto"
+
+msgid "PROJECT__TITLE"
+msgstr "Título"
+
+msgid "PROJECT__CATEGORY"
+msgstr "Categoría"
+
+msgid "PROJECT__SHORT_DESCRIPTION"
+msgstr "Descripción breve"
+
+msgid "PROJECT__MOTIVATION"
+msgstr "Cuéntanos tu motivación para realizar este proyecto"
+
+msgid "PROJECT__DESCRIPTION"
+msgstr "Descripción"
+
+msgid "GIVE_US_SOME_LINKS"
+msgstr "Websites"
+
+msgid "FILE"
+msgstr "Imagen"
+
+msgid "Browse"
+msgstr "SUBE UNA IMAGEN"
+
+msgid "PROJECT__VIDEO_URL"
+msgstr "Video (URL)"
+
+msgid "PROJECT__FUNDING_GOAL"
+msgstr "Fondos requeridos"
+
+msgid "PROJECT__PROJECT_DURATION"
+msgstr "Duración del proyecto"
+
+msgid "GIVE_US_SOME_PrizeS"
+msgstr "Beneficios para patrocinadores"
+
+msgid "Prize_VALUE"
+msgstr "Monto mínimo"
+
+msgid "Prize_TEXT"
+msgstr "Descripción"
+
+msgid "SUBMIT_PROJECT_PROPOSAL"
+msgstr "Enviar propuesta"
+
+msgid "OFFERS_ADD_TITLE"
+msgstr "Propuesta de ofrecimiento"
+
+msgid "OFFER__CATEGORY"
+msgstr "Categoría"
+
+msgid "OFFER__SHORT_DESCRIPTION"
+msgstr "Descripción breve"
+
+msgid "OFFER__DESCRIPTION"
+msgstr "Descripción"
+
+msgid "OFFER__VIDEO_URL"
+msgstr "Video (URL)"
+
+msgid "OFFER__FUNDING_SPONSORSHIPS_FOUNDS"
+msgstr "Monto ofrecido por proyecto"
+
+msgid "OFFER__OFFER_SPONSORSHIPS"
+msgstr "Cantidad máxima de proyectos que estás dispuesto a patrocinar"
+
+msgid "OFFER__OFFER_DURATION"
+msgstr "Duración del ofrecimiento"
+
+msgid "OFFER__OFFER_PUBLIC"
+msgstr "Permitir que otros usuarios se unan a este ofrecimiento"
+
+msgid "SUBMIT_OFFER"
+msgstr "ENVIAR PROPUESTA"
+
+msgid "OFFER__TITLE"
+msgstr "Título"
+
+msgid "::value:: DAY"
+msgstr "::value:: día"
+
+msgid "::value:: DAYS"
+msgstr "::value:: día/s"
+
+msgid "UPLOAD_BROWSE"
+msgstr "Examinar..."
+
+msgid "USER_PROFILE"
+msgstr "Mi perfil"
+
+msgid "USER_PROJECTS"
+msgstr "Mis proyectos"
+
+msgid "USER_OFFERS"
+msgstr "Mis ofrecimientos"
+
+msgid "USER_BAKES"
+msgstr "Patrocinando"
+
+msgid "USER_SETTINGS"
+msgstr "Configuraciones"
+
+msgid "USER_LOGOUT"
+msgstr "Cerrar sesión"
+
+msgid "EDIT_PROFILE"
+msgstr "Editar Perfil"
+
+msgid "USER_ACTIVITY"
+msgstr "Actividad"
+
+msgid "CREATE_A_PROJECT"
+msgstr "Crear un proyecto"
+
+msgid "CREATE_AN_OFFER"
+msgstr "Crear un ofrecimiento"
+
+msgid "USER_EDIT_PROFILE"
+msgstr "Configuraciones"
+
+msgid "OF %s"
+msgstr "de "
+
+msgid "USER__BIOGRAPHY"
+msgstr "Bio"
+
+msgid "LINKS_TITLE"
+msgstr "Websites"
+
+msgid "USER__GENDER"
+msgstr "Género"
+
+msgid "USER__TIMEZONE"
+msgstr "Zona horaria"
+
+msgid "USER_LOCATION_LABEL"
+msgstr "UBICACION"
+
+msgid "GENDER_MALE"
+msgstr "Hombre"
+
+msgid "GENDER_FEMALE"
+msgstr "Mujer"
+
+msgid "SAVE"
+msgstr "Guardar"
+
+msgid "USER__BIRTHDAY"
+msgstr "Fecha de nacimiento"
+
+msgid "profile"
+msgstr "Mi perfil"
+
+msgid "account"
+msgstr "Mi cuenta"
+
+msgid "USER_EDIT_ACCOUNT"
+msgstr "Configuraciones"
+
+msgid "USER__USERNAME"
+msgstr "Tu URL"
+
+msgid "USER__PROFILE_SAVE"
+msgstr "Guardar"
+
+msgid "THE_PROJECT"
+msgstr "El proyecto"
+
+msgid "SPONSORS"
+msgstr "patrocinador/es"
+
+msgid "COMMENTS"
+msgstr "Comentarios"
+
+msgid "UPDATES"
+msgstr "Actualizaciones"
+
+msgid "UPDATES %s"
+msgstr "Actualizaciones (%s)"
+
+msgid "COMMENTS %s"
+msgstr "Comentarios (%s)"
+
+
+msgid "DAYS_LEFT"
+msgstr "día(s) para el final"
+
+msgid "AVAILABLE_FOUNDS_FROM %s"
+msgstr "recaudados de "
+
+msgid "PROJECT_IMPORTANT_ADVICE_TITLE"
+msgstr "Importante"
+
+msgid "SUPPORT_THIS_PROJECT"
+msgstr "Si quieres aportar fondos y recibir beneficios..."
+
+msgid "SUPPORT_THIS_PROJECT_SUBLINE"
+msgstr "PATROCINAR ESTE PROYECTO"
+
+msgid "ABOUT_THIS_PROJECT"
+msgstr "Acerca de este proyecto"
+
+msgid "SEND_MESSAGE"
+msgstr "Enviar mensaje"
+
+msgid "PROJECT_IMPORTANT_ADVICE %s %s %s"
+msgstr "Este proyecto será financiado el día %s a las 0:00 hs. si fueron comprometidos %s %s."
+
+msgid "COMMENT__COMMENT"
+msgstr "Escribe tu mensaje"
+
+msgid "SEND"
+msgstr "Enviar"
+
+msgid "NEXT_PAGE"
+msgstr "Siguiente"
+
+msgid "UPLOAD_NO_FILE_SELECTED"
+msgstr "Selecciona un archivo"
+
+msgid "January"
+msgstr "Enero"
+
+msgid "February"
+msgstr "Febrero"
+
+msgid "March"
+msgstr "Marzo"
+
+msgid "April"
+msgstr "Abril"
+
+msgid "May"
+msgstr "Mayo"
+
+msgid "June"
+msgstr "Junio"
+
+msgid "July"
+msgstr "Julio"
+
+msgid "August"
+msgstr "Agosto"
+
+msgid "September"
+msgstr "Septiembre"
+
+msgid "October"
+msgstr "Octubre"
+
+msgid "November"
+msgstr "Noviembre"
+
+msgid "December"
+msgstr "Diciembre"
+
+msgid "PROJECT_BY %s IN CATEGORY %s"
+msgstr "Proyecto de %s, en la categoría %s."
+
+msgid "PROJECT_BY %s IN CATEGORY %s IN RESPONSE OF %s"
+msgstr "Proyecto de %s, en la categoría %s. Creado en base al ofrecimiento %s."
+
+msgid "PROJECT_REASON"
+msgstr "¿Por qué deberían patrocinar este proyecto?"
+
+msgid "OF"
+msgstr "de "
+
+msgid "THE_URL_IS_NOT_VALID"
+msgstr "La URL ingresada no es válida"
+
+msgid "THIS_FIELD_CANNOT_BE_LEFT_BLANK"
+msgstr "Debes completar este campo"
+
+msgid "BOTH_FIELDS_MUST_BE_COMPLETED"
+msgstr "Debes completar ambos campos"
+
+msgid "USER_OFFERS %s"
+msgstr "Ofrecimientos (%s)"
+
+msgid "USER_PROJECTS %s"
+msgstr "Proyectos "
+
+msgid "VIEW"
+msgstr "Ver"
+
+msgid "CREATE_UPDATE"
+msgstr "Agregar actualización"
+
+msgid "PREVIEW"
+msgstr "Ver vista previa"
+
+msgid "EDIT"
+msgstr "Editar"
+
+msgid "DELETE"
+msgstr "Eliminar"
+
+msgid "PROJECT_PENDING_PUBLISH"
+msgstr "Proyecto aún no publicado"
+
+msgid "PROJECT_UPDATES %s"
+msgstr "Actualizaciones (%s)"
+
+msgid "CREATED_ON %s"
+msgstr "Creado el %s"
+
+msgid "BY %s FROM %s"
+msgstr "creado por %s"
+
+msgid "USER_BIO"
+msgstr "Bio"
+
+msgid "USER_WEBSITES"
+msgstr "Website/s"
+
+msgid "OFFER_PENDING_APPROVAL"
+msgstr "Propuesta de ofrecimiento pendiente de aprobación"
+
+msgid "PROJECT_PENDING_APPROVAL"
+msgstr "Propuesta de proyecto pendiente de aprobación"
+
+msgid "POSTS_ADD_TITLE"
+msgstr "Agregar actualización"
+
+msgid "POST__TITLE"
+msgstr "Título"
+
+msgid "POST__DESCRIPTION"
+msgstr "Actualización"
+
+msgid "SUBMIT"
+msgstr "AGREGAR"
+
+msgid "SUBMIT_PROJECT"
+msgstr "GUARDAR / VISTA PREVIA"
+
+msgid "PUBLISH_PROJECT"
+msgstr "LANZAR PROYECTO"
+
+msgid "DELETE_PROJECT"
+msgstr "ELIMINAR PROYECTO"
+
+msgid "PROJECTS_EDIT_TITLE"
+msgstr "Editar proyecto"
+
+msgid "PROJECT__REASON"
+msgstr "¿Por qué deberían patrocinar este proyecto?"
+
+msgid "UPDATED ON %s"
+msgstr "Actualizado el %s"
+
+msgid "on %s"
+msgstr "El %s"
+
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "hora"
+msgstr[1] "horas"
+
+msgid "minute"
+msgid_plural "minutes"
+msgstr[0] "minuto"
+msgstr[1] "minutos"
+
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "segundo"
+msgstr[1] "segundos"
+
+msgid "year"
+msgid_plural "years"
+msgstr[0] "hora"
+msgstr[1] "horas"
+
+msgid "month"
+msgid_plural "months"
+msgstr[0] "mes"
+msgstr[1] "meses"
+
+msgid "week"
+msgid_plural "weeks"
+msgstr[0] "semana"
+msgstr[1] "semanas"
+
+msgid "hour"
+msgid_plural "hours"
+msgstr[0] "hora"
+msgstr[1] "horas"
+
+msgid "day"
+msgid_plural "days"
+msgstr[0] "día"
+msgstr[1] "días"
+
+msgid "%s ago"
+msgstr "%s atrás"
+
+msgid "CATEGORY_ART"
+msgstr "Artes"
+
+msgid "CATEGORY_SOLIDARITY-CAMPAIGNS"
+msgstr "Campañas solidarias"
+
+msgid "CATEGORY_SOLIDARITY_CAMPAIGNS"
+msgstr "Campañas solidarias"
+
+msgid "CATEGORY_THEATER-DANCE"
+msgstr "Teatro & Danza"
+
+msgid "CATEGORY_ -  -  -  - THEATER-DANCE"
+msgstr "Teatro & Danza"
+
+msgid "CATEGORY_INVENTIONS"
+msgstr "Inventos"
+
+msgid "CATEGORY_ENTERTAINMENT-CHALLENGE"
+msgstr "Entretenimiento & Desafios"
+
+msgid "CATEGORY_ -  - ENTERTAINMENT-CHALLENGE"
+msgstr "Entretenimiento & Desafios"
+
+msgid "CATEGORY_COOKING"
+msgstr "Cocina"
+
+msgid "CATEGORY_ -  -  - COOKING"
+msgstr "Cocina"
+
+msgid "CATEGORY_PHOTOGRAPHY"
+msgstr "Fotografía"
+
+msgid "CATEGORY_ - PHOTOGRAPHY"
+msgstr "Fotografía"
+
+msgid "CATEGORY_FASHIONS"
+msgstr "Moda"
+
+msgid "CATEGORY_ -  - FASHIONS"
+msgstr "Moda"
+
+msgid "CATEGORY_TRAVEL"
+msgstr "Viajes"
+
+msgid "CATEGORY_VENTURE"
+msgstr "Emprendimientos"
+
+msgid "CATEGORY_ - VENTURE"
+msgstr "Emprendimientos"
+
+msgid "CATEGORY_FILM-VIDEO"
+msgstr "Cine y video"
+
+msgid "CATEGORY_FILM_VIDEO"
+msgstr "Cine y video"
+
+msgid "CATEGORY_SPORTS"
+msgstr "Desafíos y deportes"
+
+msgid "CATEGORY_CHALLENGES"
+msgstr "Desafíos"
+
+msgid "CATEGORY_ENTERTAINMENT_CHALLENGE"
+msgstr "Entretenimiento"
+
+msgid "CATEGORY_DESIGN"
+msgstr "Diseño & Arquitectura"
+
+msgid "CATEGORY_BOOKS-LITERATURE"
+msgstr "Libros y literatura"
+
+msgid "CATEGORY_BOOKS_LITERATURE"
+msgstr "Libros & Literatura"
+
+msgid "CATEGORY_MUSIC"
+msgstr "Música"
+
+msgid "CATEGORY_TECHNOLOGY"
+msgstr "Tecnología"
+
+msgid "USERS_LOGIN"
+msgstr "Ingresar & Registrarse"
+
+msgid "USERS_ADD"
+msgstr "Ingresar & Registrarse"
+
+msgid "PROJECTS_ADD"
+msgstr "Crear proyecto"
+
+msgid "OFFERS_ADD"
+msgstr "Crear ofrecimiento"
+
+msgid "PROJECTS_INDEX"
+msgstr "Descubrir proyectos"
+
+msgid "OFFERS_INDEX"
+msgstr "Descubrir ofrecimientos"
+
+msgid "PUBLISH_THIS_PROJECT"
+msgstr "Lanzar proyecto"
+
+msgid "EDIT_THIS_PROJECT"
+msgstr "Editar proyecto"
+
+msgid "HELP_WITH"
+msgstr "Aportar"
+
+msgid "%s BAKERS"
+msgstr "%s patrocinador/es"
+
+msgid "SPONSORSHIPS_ADD"
+msgstr "Patrocinar"
+
+msgid "SPONSORSHIP__NO_PRIZE"
+msgstr "No gracias, yo sólo quiero ayudar al proyecto."
+
+msgid "SPONSORSHIP_CREATE_SUBMIT"
+msgstr "CONTINUAR"
+
+msgid "SPONSORSHIP_CREATE_TITLE"
+msgstr "¡Felicitaciones!"
+
+msgid "SPONSORSHIP_CREATE_SUBTITLE"
+msgstr "Estás a un paso de ser patrocinador de este proyecto"
+
+msgid "SPONSORSHIP__CONTRIBUTION"
+msgstr "Introduce el monto de tu aporte"
+
+msgid "POSTS_ADD"
+msgstr "Agregar actualización"
+
+msgid "PROJECTS_LISTING"
+msgstr "Proyectos"
+
+msgid "OFFERS_LISTING"
+msgstr "Ofrecimientos"
+
+msgid "USERS_VIEW"
+msgstr "Actividad de usuario"
+
+msgid "USERS_EDIT"
+msgstr "Configuraciones"
+
+msgid "SPONSORSHIPS_INDEX"
+msgstr "Patrocinadores"
+
+msgid "PROJECTS_EDIT"
+msgstr "Editar proyecto"
+
+msgid "OFFERS_EDIT"
+msgstr "Editar ofrecimiento"
+
+msgid "FOLLOW_THIS_PROJECT"
+msgstr "Seguir este proyecto"
+
+msgid "POSTS_EDIT_TITLE"
+msgstr "Editar actualización"
+
+msgid "The post has been saved"
+msgstr "La actualización ha sido guardada"
+
+msgid "POST__PUBLIC"
+msgstr "Publicar esta actualización"
+
+msgid "FUNDED"
+msgstr "Financiado"
+
+msgid "PLEDGED"
+msgstr "recaudados"
+
+msgid "SPONSORSHIPS"
+msgstr "patrocinador/es"
+
+msgid "THE_OFFER"
+msgstr "El ofrecimiento"
+
+msgid "PEOPLE_WHO_ACCEPT_OFFER"
+msgstr "personas quieren hacer esto"
+
+msgid "AVAILABLE_FOUNDS_FOR_EACH_PROJECT"
+msgstr "ofrecidosFinanciado por proyecto"
+
+msgid "OFFER_IMPORTANT_ADVICE_TITLE"
+msgstr "Importante"
+
+msgid "OFFER_IMPORTANT_ADVICE %s"
+msgstr "El creador de este ofrecimiento avaluará las postulaciones y apoyará hasta %s proyectos con el monto ofrecido si cumplen con los requisitos esperados."
+
+msgid "I_WANT_TO_DO_IT_HEADLINE"
+msgstr "Si quieres crear un proyecto en base a este ofrecimiento..."
+
+msgid "I_WANT_TO_DO_IT"
+msgstr "QUIERO HACER ESTO"
+
+msgid "I_WANT_TO_BE_PART_HEADLINE"
+msgstr "Si también estás buscando gente que haga esto..."
+
+msgid "I_WANT_TO_BE_PART"
+msgstr "QUIERO UNIRME"
+
+msgid "ABOUT_THIS_OFFER"
+msgstr "Acerca de este ofrecimiento"
+
+msgid "OFFER_BY %s IN CATEGORY %s"
+msgstr "Ofrecimiento originalmente creado por %s, en la categoría %s"
+
+msgid "MESSAGE__MESSAGE"
+msgstr "Escribe tu mensaje"
+
+msgid "UNFOLLOW_THIS_PROJECT"
+msgstr "Dejar de seguir este proyecto"
+
+msgid "USER__SLUG"
+msgstr "Elige un nombre amigable para tu usuario, por ej. <i>Si te llamas Juan Perez, puedes elegir <strong>jperez</strong></i>"
+
+msgid "MY_PROFILE_EDIT_PROFILE_TITLE"
+msgstr "Mi perfil"
+
+msgid "MY_PROFILE_EDIT_PROFILE_SUBTITLE"
+msgstr "Completa los siguientes datos"
+
+msgid "MY_PHOTO_EDIT_PROFILE_TITLE"
+msgstr "Mi foto"
+
+msgid "MY_PHOTO_EDIT_PROFILE_SUBTITLE"
+msgstr "Sube una foto para tu perfil"
+
+msgid "NOTIFICATIONS_EDIT_PROFILE_TITLE"
+msgstr "Notificaciones"
+
+msgid "NOTIFICATIONS_EDIT_PROFILE_SUBTITLE"
+msgstr "Configura cómo recibirás tus notificaciones"
+
+msgid "NOTIFICATIONTYPE"
+msgstr "Notifíquenme por mail cuando:"
+
+msgid "FACEBOOK_EDIT_PROFILE_TITLE"
+msgstr "Facebook"
+
+msgid "FACEBOOK_EDIT_PROFILE_SUBTITLE"
+msgstr "Asocia tu cuenta de Facebook con la de Groofi"
+
+msgid "FACEBOOK_CONNECT_APP"
+msgstr "Conectar con Facebook"
+
+msgid "UPDATE_PASSWORD_EDIT_PROFILE_TITLE"
+msgstr "Modificar contraseña"
+
+msgid "UPDATE_PASSWORD_EDIT_PROFILE_SUBTITLE"
+msgstr "Elige tu nueva contraseña de Groofi"
+
+msgid "DELETE_GROFFI_ACCOUNT"
+msgstr "Deseo eliminar mi cuenta"
+
+msgid "DELETE_ACCOUNT_EDIT_PROFILE_TITLE"
+msgstr "Eliminación de cuenta"
+
+msgid "DELETE_ACCOUNT_EDIT_PROFILE_SUBTITLE"
+msgstr "Se borrará tu cuenta en Groofi definitivamente"
+
+msgid "DELETE_ACCOUNT_MESSAGE_TITLE"
+msgstr "Advertencia"
+
+msgid "DELETE_ACCOUNT_MESSAGE_MESSAGE"
+msgstr "Toda la información, actividades y relaciones asociadas a tu cuenta en Groofi serán eliminadas de forma definitiva, sin que puedas recuperarlas o restablecerlas. Por favor, piensa si quieres hacer esto."
+
+msgid "DELETEACCOUNT__PASSWORD"
+msgstr "Ingresa tu contraseña"
+
+msgid "DELETE_ACCOUNT"
+msgstr "ELIMINAR MI CUENTA"
+
+msgid "OFFER_NEW_PROJECT"
+msgstr "Un proyecto sea creado en base a mi ofrecimiento."
+
+msgid "OFFER_NEW_USER"
+msgstr "Un usuario se una a mi ofrecimiento."
+
+msgid "OFFER_UPDATE"
+msgstr "Un ofrecimiento al que me uní sea actualizado."
+
+msgid "PROJECT_NEW_BACKER"
+msgstr "Un proyecto creado por mí tiene un nuevo patrocinador."
+
+msgid "PROJECT_NEW_BACKER_SUBJECT_OWNER"
+msgstr "Nuevo patrocinador"
+
+
+
+
+msgid "PROJECT_NEW_UPDATE"
+msgstr "Un proyecto que sigo o patrocino haya sido actualizado."
+
+msgid "PROJECT_FINISH"
+msgstr "Un proyecto creado por mi haya finalizado."
+
+msgid "PROJECT_FUNDED"
+msgstr "Un proyecto que sigo o patrocino haya recaudado los fondos requeridos."
+
+msgid "PROJECT_DONT_FUNDED"
+msgstr "Un proyecto que sigo o patrocino no haya recaudado los fondos requeridos."
+
+msgid "CHANGE"
+msgstr "CAMBIAR"
+
+msgid "FACEBOOK_CONNECTED_APP %s"
+msgstr "Conectado a Facebook %s"
+
+msgid "FACEBOOK_DISCONNECT_APP"
+msgstr "(desconectarse)"
+
+msgid "YOUR_PROFILE_INFO_IS_INCOMPLETE_TITLE"
+msgstr "Tu perfil no está completo"
+
+msgid "UPDATE_INCOMPLETE_INFO_LINK_TITLE"
+msgstr "o complétalos automáticamente con datos disponibles en Facebook"
+
+msgid "YOUR_PROFILE_INFO_IS_INCOMPLETE_MESSAGE %s"
+msgstr "Ingresa más información en los siguientes campos %s"
+
+msgid "OFFER_UPDATES %s"
+msgstr "Actualizaciones (%s)"
+
+msgid "SPONSORSHIP_CREATE_STEP_2_BACK"
+msgstr "VOLVER"
+
+msgid "SPONSORSHIP_CREATE_STEP_2_SUBMIT"
+msgstr "CONTINUAR"
+
+msgid "PRIZE_"
+msgstr "Beneficio elegido"
+
+msgid "MESSAGES_INDEX"
+msgstr "Mensajes"
+
+msgid "MESSAGES_INDEX_TITLE"
+msgstr "Mis mensajes"
+
+msgid "UNREAD_MESSAGES"
+msgstr "No leídos"
+
+msgid "READ_MESSAGES"
+msgstr "Leídos"
+
+msgid "ALL_MESSAGES"
+msgstr "Todos"
+
+msgid "SENT_MESSAGES"
+msgstr "Enviados"
+
+msgid "NO_MESSAGES_TO_SHOW"
+msgstr "No hay mensajes para mostrar"
+
+msgid "SENT %s"
+msgstr "Enviado %s"
+
+msgid "FROM %s"
+msgstr "De "
+
+msgid "TO %s"
+msgstr "Para %s"
+
+
+msgid "CITY_IN %s"
+msgstr "en %s"
+
+msgid "CATEGORY_FROM %s"
+msgstr "de"
+
+msgid "DISCOVER_ALL_PROJECTS"
+msgstr "Todos los proyectos"
+
+
+msgid "PROJECTS_PUBLISH"
+msgstr "Lanzar proyecto"
+
+msgid "PROJECTS_PUBLISH_TITLE"
+msgstr "Proyecto lanzado"
+
+msgid "IN_RENSPONSE_OF %s FROM %s"
+msgstr "En base al ofrecimiento %s creado por %s"
+
+msgid "MIN_LENGHT_3_ERROR"
+msgstr "Ingresa al menos 3 caracteres"
+
+msgid "EMAIL_GENERIC_ERROR"
+msgstr "Ingresa un E-mail válido"
+
+msgid "MAX_LENGTH_50_ERROR"
+msgstr "Ingresa menos de 50 caracteres"
+
+msgid "match"
+msgstr "Las contraseñas no coinciden"
+
+msgid "USER_FOLLOWS %s"
+msgstr "Siguiendo (%s)"
+
+msgid "integer_value"
+msgstr "Ingresa un número entero"
+
+msgid "THIS_VIDEO_SITE_URL_IT_IS_NOT_VALID"
+msgstr "Ingresa la URL de un video propio subido a YouTube o Vimeo"
+
+msgid "I_WANT_NOT_TO_BE_PART_HEADLINE"
+msgstr "Si ya no estás buscando gente que haga esto..."
+
+msgid "I_WANT_NOT_TO_BE_PART"
+msgstr "YA NO QUIERO UNIRME"
+
+msgid "READ_MORE"
+msgstr "Leer más"
+
+msgid "CATEGORIES"
+msgstr "Categorías"
+
+msgid "ALL_CATEGORIES"
+msgstr "Todas"
+
+msgid "SHOW_PROJECTS"
+msgstr "Mostrar"
+
+msgid "ALL_PROJECTS"
+msgstr "Todos"
+
+msgid "MOST_POPULAR"
+msgstr "Más populares"
+
+msgid "MOST_RECENT"
+msgstr "Más recientes"
+
+msgid "BY_END"
+msgstr "Por finalizar"
+
+msgid "FINISHED"
+msgstr "Finalizados"
+
+msgid "LOCATION"
+msgstr "UBICACIÓN"
+
+msgid "ALL_COUNTRIES"
+msgstr "Todas"
+
+msgid "NEXT"
+msgstr "Siguiente"
+
+msgid "STATICPAGES_HOME"
+msgstr "Home"
+
+msgid "HIGHLIGHT_PROJECTS_TITLE"
+msgstr "Proyectos destacados"
+
+msgid "HIGHLIGHT_PROJECTS_SUBTITLE"
+msgstr "Patrocina los proyectos más interesantes de nuestra comunidad"
+
+msgid "HIGHLIGHT_OFFERS_TITLE"
+msgstr "Ofrecimientos destacados"
+
+msgid "HIGHLIGHT_OFFERS_SUBTITLE"
+msgstr "Acepta los ofrecimientos más atractivos de nuestra comunidad"
+
+msgid "HIGHLIGHT_USERS_TITLE"
+msgstr "Usuarios destacados"
+
+msgid "HIGHLIGHT_USERS_SUBTITLE"
+msgstr "Nuestros miembros más activos"
+
+msgid "NEWEST_USERS_TITLE"
+msgstr "Últimos registrados"
+
+msgid "NEWEST_USERS_SUBTITLE"
+msgstr "Les damos la bienvenida"
+
+msgid "DISCOVER_ALL_OFFERS"
+msgstr "Todos los ofrecimientos"
+
+msgid "SHOW_OFFERS"
+msgstr "Mostrar"
+
+msgid "ALL_OFFERS"
+msgstr "Todas"
+
+msgid "FOLLOWS_LISTING"
+msgstr "Siguiendo"
+
+msgid "FACEBOOK_DISCONNECT_APP_CONFIRM"
+msgstr "¿Estás seguro de que deseas desconectarte de Facebook?"
+
+msgid "THIS_USER_HAS_NOT_OFFERS_YET_TITLE"
+msgstr "Este usuario no ha creado ofrecimientos"
+
+msgid "THIS_USER_HAS_NOT_OFFERS_YET_BODY"
+msgstr "No hay ofrecimientos para mostrar de este usuario"
+
+msgid "OFFER_PENDING_PUBLISH"
+msgstr "Ofrecimiento aún no publicado"
+
+msgid "OFFERS_EDIT_TITLE"
+msgstr "Editar ofrecimiento"
+
+msgid "SAVE_OFFER"
+msgstr "GUARDAR / VISTA PREVIA"
+
+msgid "PUBLISH_OFFER"
+msgstr "LANZAR OFRECIMIENTO"
+
+msgid "DELETE_OFFER"
+msgstr "ELIMINAR OFRECIMIENTO"
+
+msgid "DO_U_WANT_TO_PUBLISH_THIS_OFFER_TITLE"
+msgstr "Confirmar"
+
+msgid "DO_U_WANT_TO_PUBLISH_THIS_OFFER_BODY"
+msgstr "¿Quieres lanzar este ofrecimiento?"
+
+msgid "DO_U_WANT_TO_PUBLISH_THIS_OFFER_YES"
+msgstr "Sí"
+
+msgid "DO_U_WANT_TO_PUBLISH_THIS_OFFER_NO"
+msgstr "No"
+
+msgid "CIUDAD"
+msgstr "Ubicación"
+
+msgid "VOTE"
+msgstr "Votar"
+
+msgid "REPORT_USER"
+msgstr "Reportar usuario"
+
+msgid "USER_SPONSORSHIPS %s"
+msgstr "Patrocinando (%s)"
+
+msgid "SPONSORSHIP_CREATE_PRIZES_TITLE"
+msgstr "Beneficios disponibles"
+
+msgid "SPONSORSHIP_CREATE_PRIZES_SUBTITLE"
+msgstr "Recibirás el beneficio correspondiente al monto de tu aporte"
+
+msgid "SPONSORSHIP_CREATE_2_TITLE"
+msgstr "Resumen"
+
+msgid "SPONSORSHIP_CREATE_2_SUBTITLE"
+msgstr "Verifica tu aporte y beneficio elegido"
+
+msgid "SPONSORSHIP_CREATE_2_INPUT_LABEL"
+msgstr "Tu aporte"
+
+msgid "DO_U_WANT_TO_DELETE_THIS_OFFER_TITLE"
+msgstr "¿Estás seguro?"
+
+msgid "DO_U_WANT_TO_DELETE_THIS_OFFER_BODY"
+msgstr "¿Quieres eliminar este ofrecimiento?"
+
+msgid "DO_U_WANT_TO_DELETE_THIS_OFFER_YES"
+msgstr "Sí"
+
+msgid "DO_U_WANT_TO_DELETE_THIS_OFFER_NO"
+msgstr "No"
+
+msgid "PROJECT_ADD_FIRST_BLOCK_TITLE"
+msgstr "TU PROYECTO"
+
+msgid "PROJECT_ADD_FIRST_BLOCK_SUBTITLE"
+msgstr "Completa la siguiente información"
+
+msgid "PROJECT_ADD_SECOND_BLOCK_TITLE"
+msgstr "Imagen & Video"
+
+msgid "PROJECT_ADD_SECOND_BLOCK_SUBTITLE"
+msgstr "Elige una imagen y un video para el proyecto"
+
+msgid "PROJECT_ADD_THIRD_BLOCK_TITLE"
+msgstr "Recaudación de fondos"
+
+msgid "PROJECT_ADD_THIRD_BLOCK_SUBTITLE"
+msgstr "Completa la siguiente información"
+
+msgid "PROJECT__TITLE__HELP_MESSAGE_TEXT"
+msgstr "Este será el título de tu proyecto. Una vez aprobado, no podrás modificarlo."
+
+msgid "PROJECT__CATEGORY__HELP_MESSAGE_TEXT"
+msgstr "Elige la categoría que mejor describa a tu proyecto. Una vez aprobado, no podrás modificarla."
+
+msgid "PROJECT__SHORT_DESCRIPTION__HELP_MESSAGE_TEXT"
+msgstr "Describe en pocas palabras la idea de tu proyecto. Una vez aprobado, no podrás modificarla."
+
+msgid "PROJECT__DESCRIPTION__HELP_MESSAGE_TEXT"
+msgstr "Describe tu proyecto en extenso. Podrás editar esta descripción una vez aprobado tu proyecto."
+
+msgid "PROJECT__MOTIVATION__HELP_MESSAGE_TEXT"
+msgstr "Esta información nos será útil para evaluar tu propuesta. No la publicaremos."
+
+msgid "PROJECT__URL__HELP_MESSAGE_TEXT"
+msgstr "Ingresa websites en los que podamos encontrar más información sobre tu proyecto. Esto será utilizado para evaluar tu propuesta."
+
+msgid "PROJECT__FILE__HELP_MESSAGE_TEXT"
+msgstr "Elige una imagen para ilustrar tu proyecto (opcional)."
+
+msgid "OFFER__FILE__HELP_MESSAGE_TEXT"
+msgstr "Elige una imagen para ilustrar tu ofrecimiento (opcional)."
+
+msgid "PROJECT__FILE_EDIT_HELP_MESSAGE_TEXT"
+msgstr "Elige una imagen para ilustrar tu proyecto."
+
+msgid "OFFER__FILE_EDIT_HELP_MESSAGE_TEXT"
+msgstr "Elige una imagen para ilustrar tu ofrecimiento"
+
+msgid "PROJECT__VIDEO_URL__HELP_MESSAGE_TEXT"
+msgstr "Ingresa la URL de un video propio sobre tu proyecto que hayas subido a YouTube.com o Vimeo.com (opcional)."
+
+msgid "PROJECT__FUNDING_GOAL__HELP_MESSAGE_TEXT"
+msgstr "Ingresa el monto en dólares que necesitas para realizar tu proyecto. Podrás modificar este importe una vez aprobada tu propuesta."
+
+msgid "PROJECT__PROJECT_DURATION__HELP_MESSAGE_TEXT"
+msgstr "Elige la cantidad de días que deseas que dure la recaudación de fondos de tu proyecto. Podrás modificar la duración del proyecto una vez aprobada tu propuesta."
+
+msgid "PROJECT__PRIZE__HELP_MESSAGE_TEXT"
+msgstr "Ingresa los beneficios que recibirán tus patrocinadores de acuerdo al monto que elijan aportar a tu proyecto. Los beneficios son regalos o premios relacionados con el proyecto, que te comprometes a darles a tus patrocinadores. Podrás modificar esto una vez aprobada tu propuesta."
+
+msgid "OFFER_ADD_FIRST_BLOCK_TITLE"
+msgstr "Tu ofrecimiento"
+
+msgid "OFFER_ADD_FIRST_BLOCK_SUBTITLE"
+msgstr "Completa la siguiente información"
+
+msgid "OFFER_ADD_SECOND_BLOCK_TITLE"
+msgstr "Imagen & Video"
+
+msgid "OFFER_ADD_SECOND_BLOCK_SUBTITLE"
+msgstr "Elige una imagen y un video para el ofrecimiento"
+
+msgid "OFFER_ADD_THIRD_BLOCK_TITLE"
+msgstr "Fondos ofrecidos"
+
+msgid "OFFER_ADD_THIRD_BLOCK_SUBTITLE"
+msgstr "Completa la siguiente información"
+
+msgid "OFFER__TITLE__HELP_MESSAGE_TEXT"
+msgstr "Este será el título de tu ofrecimiento. Una vez aprobado, no podrás modificarlo."
+
+msgid "OFFER__CATEGORY__HELP_MESSAGE_TEXT"
+msgstr "Elige la categoría que mejor describa a tu ofrecimiento. Una vez aprobado, no podrás modificarla."
+
+msgid "OFFER__SHORT_DESCRIPTION__HELP_MESSAGE_TEXT"
+msgstr "Describe en pocas palabras la idea de tu ofrecimiento. Una vez aprobado, no podrás modificarla."
+
+msgid "OFFER__DESCRIPTION__HELP_MESSAGE_TEXT"
+msgstr "Describe tu ofrecimiento en extenso. Podrás editar esta descripción una vez aprobada tu propuesta."
+
+msgid "OFFER__URL__HELP_MESSAGE_TEXT"
+msgstr "Ingresa websites en los que podamos encontrar más información sobre ti. Esto será utilizado para evaluar tu propuesta."
+
+msgid "OFFER__VIDEO_URL__HELP_MESSAGE_TEXT"
+msgstr "Ingresa la URL de un video propio sobre tu ofrecimiento que hayas subido a YouTube.com o Vimeo.com (opcional)."
+
+msgid "OFFER__FUNDING_SPONSORSHIPS_FOUNDS__HELP_MESSAGE_TEXT"
+msgstr "Ingresa el monto en dólares que estás dispuesto a aportar a los proyectos que cumplan con lo pedido por tu ofrecimiento. Podrás modificar esto una vez aprobada tu propuesta."
+
+msgid "OFFER__OFFER_SPONSORSHIPS__HELP_MESSAGE_TEXT"
+msgstr "Escribe el número máximo de proyectos que te comprometes a patrocinar con el monto ingresado arriba. Podrás modificar esto una vez aprobada tu propuesta."
+
+msgid "OFFER__OFFER_DURATION__HELP_MESSAGE_TEXT"
+msgstr "Elige la cantidad de días que durará tu ofrecimiento. Podrás modificarla una vez aprobada tu propuesta."
+
+msgid "OFFER__OFFER_PUBLIC_EDIT_HELP_MESSAGE_TEXT"
+msgstr "Si marcas esta opción, otros usuarios podrán unirse y aportar fondos a los proyectos que se postulen al ofrecimiento creado originalmente por ti."
+
+msgid "OFFER__OFFER_PUBLIC__HELP_MESSAGE_TEXT"
+msgstr "Si marcas esta opción, otros usuarios podrán unirse y aportar fondos a los proyectos que se postulen al ofrecimiento creado originalmente por ti."
+
+msgid "OFFER_EDIT_FIRST_BLOCK_TITLE"
+msgstr "Tu ofrecimiento"
+
+msgid "OFFER_EDIT_FIRST_BLOCK_SUBTITLE"
+msgstr "Completa la siguiente información"
+
+msgid "OFFER_EDIT_SECOND_BLOCK_TITLE"
+msgstr "Imagen & Video"
+
+msgid "OFFER_EDIT_SECOND_BLOCK_SUBTITLE"
+msgstr "Elige una imagen y un video para el ofrecimiento"
+
+msgid "OFFER_EDIT_THIRD_BLOCK_TITLE"
+msgstr "Fondos ofrecidos"
+
+msgid "OFFER_EDIT_THIRD_BLOCK_SUBTITLE"
+msgstr "Completa la siguiente información"
+
+msgid "BETWEEN_50_140_CHARS"
+msgstr "Ingresa entre 50 y 140 caracteres"
+
+msgid "OFFER__TITLE_EDIT_HELP_MESSAGE_TEXT"
+msgstr "Este es el título de tu ofrecimiento. En esta instancia, ya no puedes editarlo."
+
+msgid "OFFER__CATEGORY_EDIT_HELP_MESSAGE_TEXT"
+msgstr "Esta es la categoría que has elegido para tu ofrecimiento. En esta instancia, ya no puedes editarla."
+
+msgid "OFFER__SHORT_DESCRIPTION_EDIT_HELP_MESSAGE_TEXT"
+msgstr "Esta es la descripción breve de tu ofrecimiento. En esta instancia, ya no puedes editarla."
+
+msgid "OFFER__DESCRIPTION_EDIT_HELP_MESSAGE_TEXT"
+msgstr "Describe en qué consiste tu ofrecimiento. Cuanto más completa sea esta descripción, mejor."
+
+msgid "OFFER__VIDEO_URL_EDIT_HELP_MESSAGE_TEXT"
+msgstr "Ingresa la URL de un video propio sobre tu ofrecimiento que hayas subido a YouTube.com o Vimeo.com"
+
+msgid "OFFER__FUNDING_SPONSORSHIPS_FOUNDS_EDIT_HELP_MESSAGE_TEXT"
+msgstr "Ingresa el monto en dólares que estás dispuesto a aportar a los proyectos que cumplan con lo pedido por tu ofrecimiento."
+
+msgid "OFFER__OFFER_SPONSORSHIPS_EDIT_HELP_MESSAGE_TEXT"
+msgstr "Escribe el número máximo de proyectos que te comprometes a patrocinar con el monto ingresado arriba."
+
+msgid "OFFER__OFFER_DURATION_EDIT_HELP_MESSAGE_TEXT"
+msgstr "Elige la cantidad de días que durará tu ofrecimiento. Podrás modificarla una vez aprobada tu propuesta."
+
+msgid "PROJECT_EDIT_FIRST_BLOCK_TITLE"
+msgstr "Tu proyecto"
+
+msgid "PROJECT_EDIT_FIRST_BLOCK_SUBTITLE"
+msgstr "Completa la siguiente información"
+
+msgid "PROJECT_EDIT_SECOND_BLOCK_TITLE"
+msgstr "Imagen & Video"
+
+msgid "PROJECT_EDIT_SECOND_BLOCK_SUBTITLE"
+msgstr "Elige una imagen y un video para el proyecto"
+
+msgid "PROJECT_EDIT_THIRD_BLOCK_TITLE"
+msgstr "Recaudación de fondos"
+
+msgid "PROJECT_EDIT_THIRD_BLOCK_SUBTITLE"
+msgstr "Completa la siguiente información"
+
+msgid "PROJECT__TITLE_EDIT_HELP_MESSAGE_TEXT"
+msgstr "Este es el título de tu proyecto. En esta instancia, ya no puedes editarlo."
+
+msgid "PROJECT__CATEGORY_EDIT_HELP_MESSAGE_TEXT"
+msgstr "Esta es la categoría que has elegido para tu proyecto. En esta instancia, ya no puedes editarla."
+
+msgid "PROJECT__SHORT_DESCRIPTION_EDIT_HELP_MESSAGE_TEXT"
+msgstr "Esta es la descripción breve de tu proyecto. En esta instancia, ya no puedes editarla."
+
+msgid "PROJECT__DESCRIPTION_EDIT_HELP_MESSAGE_TEXT"
+msgstr "Describe en qué consiste tu proyecto. Cuanto más completa sea esta descripción, mejor."
+
+msgid "PROJECT__VIDEO_URL_EDIT_HELP_MESSAGE_TEXT"
+msgstr "Ingresa la URL de un video propio sobre tu proyecto que hayas subido a YouTube.com o Vimeo.com"
+
+msgid "PROJECT__REASON_EDIT_HELP_MESSAGE_TEXT"
+msgstr "Cuéntales a tus posibles patrocinadores por qué deberían aportar fondos para tu proyecto."
+
+msgid "PROJECT__FUNDING_GOAL_EDIT_HELP_MESSAGE_TEXT"
+msgstr "Ingresa el monto en dólares que necesitas para realizar tu proyecto."
+
+msgid "PROJECT__PROJECT_DURATION_EDIT_HELP_MESSAGE_TEXT"
+msgstr "Elige la cantidad de días que deseas que dure la recaudación de fondos de tu proyecto."
+
+msgid "PROJECT__PRIZE_EDIT_HELP_MESSAGE_TEXT"
+msgstr "Ingresa los beneficios que recibirán tus patrocinadores de acuerdo al monto que elijan aportar a tu proyecto. Los beneficios son regalos o premios relacionados con el proyecto, que te comprometes a darles a tus patrocinadores."
+
+msgid "WELCOME-TITLE"
+msgstr "Bienvenidos a "
+
+msgid "WELCOME-CONTENT"
+msgstr "Tu cuenta ha sido confirmada exitosamente y ya eres parte de Groofi. Ingresa a tu cuenta para crear tus propios proyectos y ofrecimientos."
+
+msgid "THANKS-FOR-REGISTERING-TITLE"
+msgstr "¡Gracias por registrarte!"
+
+msgid "THANKS-FOR-REGISTERING-CONTENT"
+msgstr "Ya estás registrado en Groofi. Recibirás un mail para activar tu cuenta. Por favor, chequea tu correo y sigue las instrucciones."
+
+msgid "minLength_140"
+msgstr "Ingresa al menos 140 caracteres."
+
+msgid "THE_PROJECT_COULD_NOT_BE_SAVED_PLEASE_TRY_AGAIN."
+msgstr "El proyecto no pudo ser guardado. Completa todos los campos obligatorios e intenta otra vez."
+
+msgid "THANKS-FOR-BACKING-TITLE"
+msgstr "¡Gracias por patrocinar!"
+
+msgid "THANKS-FOR-BACKING-CONTENT"
+msgstr "Ya eres patrocinador de este proyecto. Te mantendremos informado sobre el estado de tu aporte y la actividad del proyecto."
+
+msgid "IT_SUPPORTING %s PROJECTS"
+msgstr "Está patrocinando %s proyecto/s."
+
+msgid "PROJECTS_SEARCH_RESULT_FOR %s"
+msgstr "Resultados de búsqueda para: %s"
+
+msgid "SEARCH_IN"
+msgstr "Buscar en"
+
+msgid "PROJECTS"
+msgstr "Proyectos"
+
+msgid "OFFERS"
+msgstr "Ofrecimientos"
+
+msgid "SEARCHES_INDEX"
+msgstr "Resultados de búsqueda"
+
+msgid "WE CAN NOT FOUND ANY PROJECT IN %s PLEASE TRY AGAIN"
+msgstr "No se han encontrado resultados para tu búsqueda en: %s. Por favor, intenta con otra búsqueda."
+
+msgid "WE CAN NOT FOUND ANY OFFER IN %s PLEASE TRY AGAIN"
+msgstr "No se han encontrado resultados para tu búsqueda en: %s. Por favor, intenta con otra búsqueda."
+
+msgid "OFFERS_SEARCH_RESULT_FOR %s"
+msgstr "Resultados de búsqueda para: %s"
+
+msgid "LOGIN TO YOUR ACCOUNT OR REGISTER TO CREATE ONE"
+msgstr "Ingresa a tu cuenta o registrate para crear una."
+
+msgid "Login failed. Invalid username or password."
+msgstr "E-mail y/o contraseña incorrecta. Inténtalo otra vez."
+
+msgid "THERE_ARE_NO_ACTIVITY_FOR_THIS_USER"
+msgstr "No hay actividad para mostrar de este usuario."
+
+msgid "THIS_USER_HAS_NOT_ANY_ACTIVITY_YET"
+msgstr "Este usuario no ha tenido actividad todavía."
+
+msgid "SPONSORSHIPS_LISTING"
+msgstr "Patrocinando"
+
+msgid "NOTIFICATIONS_LISTING"
+msgstr "Actividad del usuario"
+
+msgid "IS_SPONSORING_THE_PROJECT %s %s"
+msgstr "está patrocinando el proyecto %s - %s"
+
+msgid "HAS_UPDATED_THE_OFFER %s %s"
+msgstr "agregó una actualización a su ofrecimiento %s - %s"
+
+msgid "HAS_UPDATED_THE_PROJECT %s %s"
+msgstr "agregó una actualización a su proyecto %s - %s"
+
+msgid "COMMENT_THE_POST %s %s"
+msgstr "comentó la actualización %s - %s"
+
+msgid "COMMENT_THE_PROJECT %s %s"
+msgstr "comentó el proyecto %s - %s"
+
+msgid "COMMENT_THE_OFFER %s %s"
+msgstr "comentó el ofrecimiento %s - %s"
+
+msgid "HAS_CREATED_THE_OFFER %s %s"
+msgstr "creó el ofrecimiento %s - %s"
+
+msgid "HAS_CREATED_THE_PROJECT %s %s"
+msgstr "creó el proyecto %s - %s"
+
+msgid "OFFER_COMMENTED"
+msgstr "Un ofrecimiento creado por mí reciba un nuevo comentario."
+
+msgid "PROJECT_COMMENTED"
+msgstr "Un proyecto creado por mi reciba un nuevo comentario."
+
+msgid "PROJECT_ABOUT_TO_FINISH"
+msgstr "Un proyecto creado por mí, que sigo o patrocino esté por finalizar."
+
+msgid "OFFER_NEW_UPDATE"
+msgstr "Un ofrecimiento al que me uní o acepté sea actualizado."
+
+msgid "OFFER_ABOUT_TO_FINISH"
+msgstr "Un ofrecimiento al que me uní o acepté esté por finalizar."
+
+msgid "OFFER_FINISHED"
+msgstr "Un ofrecimiento creado por mí, al que me uní o acepté haya finalizado"
+
+msgid "POST_COMMENTED"
+msgstr "Una actualización agregada por mí reciba un nuevo comentario."
+
+msgid "HAS_JOINED_TO_THE_OFFER %s %s"
+msgstr "se unió al ofrecimiento %s - %s"
+
+msgid "VIEW_UPDATE"
+msgstr "Ver actualización"
+
+msgid "HAS_CREATED_THE_PROJECT %s IN RESPONSE OF %s %s"
+msgstr "creó el proyecto %s en base al ofrecimiento %s - %s"
+
+msgid "NOTIFICATIONS_WALL"
+msgstr "Novedades"
+
+msgid "ORIGINALY_CREATED_BY %s"
+msgstr "originalmente creado por %s"
+
+msgid "SHOW_IN_HOMEPAGE"
+msgstr "Mostrar en homepage"
+
+msgid "STUDY_CASE"
+msgstr "Caso de éxito"
+
+msgid "PROPOSAL_PROJECT_STATUS"
+msgstr "Propuesta"
+
+msgid "APPROVED_PROJECT_STATUS"
+msgstr "Propuestas aceptada"
+
+msgid "APPROVED_IMPORTANT_PROJECT_STATUS"
+msgstr "Propuesta importante aceptada"
+
+msgid "REJECTED_PROJECT_STATUS"
+msgstr "Propuesta rechazada"
+
+msgid "PUBLISHED_PROJECT_STATUS"
+msgstr "Proyecto publicado"
+
+msgid "UNKNOWN_PROJECT_STATUS"
+msgstr "Sin estado"
+
+msgid "ADMIN_PROJECTS_FILTER_SORT_PROJECT.STATUS"
+msgstr "Estado"
+
+msgid "ADMIN_PROJECTS_FILTER_FILTER_IMPORTANT"
+msgstr "Importantes"
+
+msgid "ADMIN_PROJECTS_FILTER_FILTER_OUTSTANDING"
+msgstr "Destacados en Home"
+
+msgid "ADMIN_PROJECTS_FILTER_FILTER_LEADING"
+msgstr "Casos de éxito"
+
+msgid "OFFER_RESPONSE"
+msgstr "En respuesta a un ofrecimiento"
+
+msgid "IMPORTANT_PROJECT"
+msgstr "Proyecto importante"
+
+msgid "APPROVE_PROPOSAL"
+msgstr "Aprobar propuesta"
+
+msgid "APPROVE_PROPOSAL_AS_IMPORTANT"
+msgstr "Aprobar propuesta y marcar como importante"
+
+msgid "REJECT_PROPOSAL"
+msgstr "Rechazar propuesta"
+
+msgid "DELETE_PROPOSAL"
+msgstr "Borrar propuesta"
+
+msgid "BLOCK_PROJECT"
+msgstr "Deshabilitar proyecto"
+
+msgid "UN-BLOCK_PROJECT"
+msgstr "Habilitar proyecto"
+
+msgid "ENABLED_PROJECT"
+msgstr "Proyecto habilitado"
+
+msgid "PROJECTS_ADMIN_INDEX"
+msgstr "Proyectos"
+
+msgid "NO_RESULTS_FOUND"
+msgstr "No se han encontrado resultados para su consulta"
+
+msgid "STATICPAGES"
+msgstr "Páginas estáticas"
+
+msgid "ADMIN_STATICPAGES"
+msgstr "Páginas estáticas"
+
+msgid "ADMIN_STATICPAGES_ALL"
+msgstr "Listado"
+
+msgid "ADMIN_INDEX"
+msgstr "Listado"
+
+msgid "Project.status"
+msgstr "Estado"
+
+msgid "Project.id"
+msgstr "ID"
+
+msgid "Project.user"
+msgstr "Usuario"
+
+msgid "Project.category"
+msgstr "Categoría"
+
+msgid "Project.title"
+msgstr "Título"
+
+msgid "Project.created"
+msgstr "Fecha de creación"
+
+msgid "Project.flags"
+msgstr "Opciones"
+
+msgid "Actions"
+msgstr "Acciones"
+
+msgid "FROM %s TO %s %s days"
+msgstr "Del %s al %s - %s día/s"
+
+msgid "FROM"
+msgstr "de"
+
+msgid "previous"
+msgstr "Anterior"
+
+msgid "next"
+msgstr "Siguiente"
+
+msgid "SEARCH"
+msgstr "Buscar"
+
+msgid "EDIT_ACCOUNT"
+msgstr "Editar cuenta"
+
+msgid "ADMIN_LOGOUT"
+msgstr "Cerrar sesión"
+
+msgid "ADMIN_OFFERS_ALL"
+msgstr "Ver todos"
+
+msgid "Paginas estaticas"
+msgstr "Página estáticas"
+
+msgid "Casos de exito"
+msgstr "Casos de éxito"
+
+msgid "OFFERS_ADMIN_INDEX"
+msgstr "Administrar ofrecimientos"
+
+msgid "ADMIN_OFFERS"
+msgstr "Ofrecimientos"
+
+msgid "VIEW_PROPOSALS_ADMIN_INDEX"
+msgstr "Ver propuestas"
+
+msgid "VIEW_REJECTED_ADMIN_INDEX"
+msgstr "Rechazados"
+
+msgid "VIEW_APPROVED_ADMIN_INDEX"
+msgstr "No publicados"
+
+msgid "VIEW_PUBLISHED_ADMIN_INDEX"
+msgstr "Publicados"
+
+msgid "VIEW_IMPORTANT_ADMIN_INDEX"
+msgstr "Importantes"
+
+msgid "VIEW_OUTSTANDING_ADMIN_INDEX"
+msgstr "Destacados en Home"
+
+msgid "VIEW_LEADING_ADMIN_INDEX"
+msgstr "Casos de éxito"
+
+msgid "VIEW_ABOUT-TO-FINISH_ADMIN_INDEX"
+msgstr "Por finalizar"
+
+msgid "VIEW_DISABLED_ADMIN_INDEX"
+msgstr "Deshabilitados"
+
+msgid "VIEW_FINISHED_ADMIN_INDEX"
+msgstr "Finalizados"
+
+msgid "VIEW_FUNDED_ADMIN_INDEX"
+msgstr "Financiados"
+
+msgid "VIEW_NOT-FUNDED_ADMIN_INDEX"
+msgstr "No financiados"
+
+msgid "STATICPAGES_ADMIN_INDEX"
+msgstr "Administrar páginas estáticas"
+
+msgid "edit"
+msgstr "Editar"
+
+msgid "Subtitle"
+msgstr "Subtítulo"
+
+msgid "Section"
+msgstr "Sección"
+
+msgid "Title"
+msgstr "Título"
+
+msgid "Offer.id"
+msgstr "ID"
+
+msgid "Offer.user"
+msgstr "Usuario"
+
+msgid "Offer.category"
+msgstr "Categoría"
+
+msgid "Offer.title"
+msgstr "Título"
+
+msgid "short description"
+msgstr "Descripción breve"
+
+msgid "Offer.created"
+msgstr "Fecha de creación"
+
+msgid "ADMIN_OFFERS_FILTER_FILTER_PROPOSALS"
+msgstr "Propuestas"
+
+msgid "ADMIN_OFFERS_FILTER_FILTER_REJECTED"
+msgstr "Propuestas rechazadas"
+
+msgid "ADMIN_OFFERS_FILTER_FILTER_APPROVED"
+msgstr "Propuestas aceptadas"
+
+msgid "ADMIN_OFFERS_FILTER_FILTER_PUBLISHED"
+msgstr "Publicados"
+
+msgid "ADMIN_OFFERS_FILTER_FILTER_ALL"
+msgstr "Todos los ofrecimientos"
+
+msgid "ADMIN_OFFERS_FILTER_SORT_OFFER.ID"
+msgstr "ID"
+
+msgid "ADMIN_OFFERS_FILTER_SORT_OFFER.CREATED"
+msgstr "Fecha de creación"
+
+msgid "ADMIN_OFFERS_FILTER_SORT_OFFER.USER_ID"
+msgstr "ID de usuario"
+
+msgid "ADMIN_OFFERS_FILTER_SORT_OFFER.CATEGORY_ID"
+msgstr "Id de categoría"
+
+msgid "ADMIN_OFFERS_FILTER_SORT_OFFER.TITLE"
+msgstr "Título"
+
+msgid "Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%"
+msgstr "Página %page% de %pages%, mostrando %current% elementos de %count%"
+
+msgid "PROJECT %s FROM %s  IN THE CATEGORY %s IN RESPONSE OF %s"
+msgstr "Proyecto %s de %s, en la categoría %s, basado en un ofrecimiento de %s"
+
+msgid "PROJECT %s FROM %s IN THE CATEGORY %s"
+msgstr "Proyecto %s de %s, en la categoría %s"
+
+msgid "ADMIN_VIEW"
+msgstr "Ver"
+
+msgid "PROJECTS_ADMIN_VIEW"
+msgstr "Ver proyecto"
+
+msgid "SHORT_DESCRIPTION"
+msgstr "Descripción breve"
+
+msgid "REASON"
+msgstr "Razones por las que deberían patrocinar este proyecto"
+
+msgid "MOTIVATION"
+msgstr "Motivación para crear el proyecto"
+
+msgid "PROJECT_MAIN_POST"
+msgstr "Descripción"
+
+msgid "USER_INFO"
+msgstr "Creado por "
+
+msgid "PROJECT_IMAGE"
+msgstr "Imagen"
+
+msgid "PROJECT_STATUS"
+msgstr "Estado"
+
+msgid "Related Prizes"
+msgstr "Beneficios"
+
+msgid "Related Links"
+msgstr "Links"
+
+msgid "PROJECT_FUNDING_GOAL"
+msgstr "Fondos requeridos"
+
+msgid "PROJECT_DURATION"
+msgstr "Duración"
+
+msgid "PROJECT_CREATED"
+msgstr "Fecha de creación"
+
+msgid "PROJECT_PUBLISH_DATE"
+msgstr "Fecha de publicación"
+
+msgid "PROJECT_TIME_LEFT"
+msgstr "Tiempo restante"
+
+msgid "PROJECT_ELAPSED_TIME"
+msgstr "Tiempo transcurrido"
+
+msgid "PROJECT_TOTAL_TIME"
+msgstr "Tiempo total"
+
+msgid "PROJECT_UPDATES"
+msgstr "Actualizaciones"
+
+msgid "PROJECT_COMMENTS"
+msgstr "Comentarios"
+
+msgid "PROJECT_FOLLOWS"
+msgstr "Seguidores"
+
+msgid "PROJECT_BAKES"
+msgstr "Aportes"
+
+msgid "RELATED_OFFER"
+msgstr "Basado en el ofrecimiento"
+
+msgid "OFFER %s FROM %s IN THE CATEGORY %s"
+msgstr "Ofrecimiento %s de %s, en la categoría %s"
+
+msgid "OFFER_MAIN_POST"
+msgstr "Descripción"
+
+msgid "OFFER_IMAGE"
+msgstr "Imagen"
+
+msgid "OFFER_STATUS"
+msgstr "Estado:"
+
+msgid "OFFER_DURATION"
+msgstr "Duración:"
+
+msgid "OFFER_CREATED"
+msgstr "Fecha de creación:"
+
+msgid "PROPOSAL_OFFER_STATUS"
+msgstr "Propuesta de ofrecimiento"
+
+msgid "OFFERS_ADMIN_VIEW"
+msgstr "Ver ofrecimiento"
+
+msgid "PUBLISHED_OFFER_STATUS"
+msgstr "Ofrecimiento publicado"
+
+msgid "OFFER_PUBLISH_DATE"
+msgstr "Fecha de publicación:"
+
+msgid "OFFER_UPDATES"
+msgstr "Actualizaciones:"
+
+msgid "OFFER_COMMENTS"
+msgstr "Comentarios:"
+
+msgid "OFFER_FOLLOWS"
+msgstr "Usuarios que se unieron:"
+
+msgid "OFFER_PROJECTS"
+msgstr "Proyectos creados en base al ofrecimiento:"
+
+msgid "PROJECT_EDIT_FOURTH"
+msgstr "Configuración de pagos"
+
+msgid "PROJECT_EDIT_FOURTH_BLOCK_SUBTITLE"
+msgstr "Asocia este proyecto a una cuenta de PayPal"
+
+msgid "PROJECT_EDIT_FIFTH"
+msgstr "Tu perfil"
+
+msgid "PROJECT_EDIT_FIFTH_BLOCK_SUBTITLE"
+msgstr "Completa la siguiente información"
+
+msgid "USER_LOCATION_HELP_MESSAGE_TEXT"
+msgstr "Escribe la provincia o estado dentro de tu país y elige alguna de las opciones sugeridas."
+
+msgid "USER__URL__HELP_MESSAGE_TEXT"
+msgstr "Ingresa la URL de tu website."
+
+msgid "USER__BIOGRAPHY__HELP_MESSAGE_TEXT"
+msgstr "Cuentanos sobre ti. Esta bio aparecerá tanto en tu perfil como en el proyecto."
+
+msgid "ASSOCIATE_WITH_PAYPAL"
+msgstr "Asociar con mi cuenta de PayPal"
+
+msgid "YOUR_PAYPAL_ACCOUNT_IS_ASSOCIATED_WITH_THE_ID %s"
+msgstr "Tu proyeto está asociado al siguiente ID de PayPal: %s"
+
+msgid "ASSOCIATE_WITH_ANOTHER_PAYPAL"
+msgstr "Asociar con otra cuenta de PayPal"
+
+msgid "LEADING_PROJECT_EXAMPLE"
+msgstr "¿Necesitas inspiración?"
+
+msgid "LEADING_PROJECT_EXAMPLE_SUBTITLE"
+msgstr "Conoce un proyecto exitoso"
+
+msgid "SHARE_THIS_OFFER_TITLE"
+msgstr "Si quieres compartir esto en Facebook, Twitter, etc..."
+
+msgid "SHARE_THIS_OFFER_SUBTITLE"
+msgstr "DIFUNDIR ESTE OFRECIMIENTO"
+
+msgid "SHARE_THIS_PROJECT_TITLE"
+msgstr "Si quieres compartir esto en Facebook, Twitter, etc..."
+
+msgid "SHARE_THIS_PROJECT_SUBTITLE"
+msgstr "DIFUNDIR ESTE PROYECTO"
+
+msgid "THE_PROJECT_IS_NOT_VALID_WE_CAN_NOT_PUPBISH_IT"
+msgstr "Verifica haber completado todos los campos correctamente."
+
+msgid "THIS_FORM_HAS_CHANGED_PLEASE_SAVE_IT_BEFORE_PUBLISHING"
+msgstr "Por favor, guarda tu proyecto antes de lanzarlo."
+
+msgid "YOU_MUST_UPLOAD_AN_IMAGE"
+msgstr "Debes subir una imagen"
+
+msgid "THIS_PROJECT_IS_NOT_VALID_IT_CAN_NOT_BE_PUBLISHED"
+msgstr "Verifica haber completado todos los campos correctamente."
+
+msgid "THIS_PROJECT_IS_NOW_PUBLISHED"
+msgstr "El proyecto ha sido lanzado exitosamente."
+
+msgid "USERS"
+msgstr "Usuarios"
+
+msgid "USERS_ADMIN_INDEX"
+msgstr "Administrar usuarios"
+
+msgid "ADMIN_USER_ALL"
+msgstr "Ver todos los usuarios"
+
+msgid "ADMIN_USERS"
+msgstr "Usuarios"
+
+msgid "ADMIN_USERS_FILTER_FILTER_ALL"
+msgstr "Todos los usuarios"
+
+msgid "ADMIN_USERS_FILTER_FILTER_REPORTED_USERS"
+msgstr "Usuarios denunciados"
+
+msgid "ADMIN_USERS_FILTER_SORT_USER.ID"
+msgstr "ID de usuario"
+
+msgid "ADMIN_USERS_FILTER_SORT_USER.CREATED"
+msgstr "Fecha de registro"
+
+msgid "ADMIN_USERS_FILTER_SORT_USER.DISPLAY_NAME"
+msgstr "Nombre a mostrar"
+
+msgid "ADMIN_USERS_FILTER_SORT_USER.EMAIL"
+msgstr "E-mail"
+
+msgid "ENABLED_USER"
+msgstr "Habilitar usuario"
+
+msgid "RESEND_ACTIVATION"
+msgstr "Re-enviar mail de activación"
+
+msgid "%s REPORTS"
+msgstr "%s denuncias"
+
+msgid "RESET_REPORTS"
+msgstr "Descartar denuncias"
+
+msgid "User.id"
+msgstr "ID"
+
+msgid "User.display Name"
+msgstr "Nombre a mostrar"
+
+msgid "User.email"
+msgstr "E-mail"
+
+msgid "User.created"
+msgstr "Fecha de registro"
+
+msgid "User.score"
+msgstr "Puntuación"
+
+msgid "User.report Count"
+msgstr "Denuncias"
+
+msgid "User.flags"
+msgstr "Opciones"
+
+msgid "TU APORTE"
+msgstr "Mi aporte"
+
+msgid "PROJECT__SHORT_DESCRIPTION__TIP_MESSAGE_TEXT"
+msgstr "Tienes que escribir entre 50 y 140 caracteres para vender tu proyecto. Concentrate en lo más relevante."
+
+msgid "PROJECT_COUNT_LEFT"
+msgstr "Espacio restante"
+
+msgid "PROJECT__DESCRIPTION__TIP_MESSAGE_TEXT"
+msgstr "Cuanta más información pongas y más claro seas en esta descripción, más confiable resultará tu proyecto para los patrocinadores."
+
+msgid "PROJECT__VIDEO_URL__TIP_MESSAGE_TEXT"
+msgstr "El video es tu carta de presentación. Demuestra la calidad de tu proyecto con un video de calidad. Tu proyecto se volverá mucho más confiable si les hablas a tus futuros patrocinadores y les demuestras tu capacidad y compromiso."
+
+msgid "PROJECT_-PRIZE__TIP_MESSAGE_TEXT"
+msgstr "Ten en mente que muchos patrocinadores sólo están interesados en los beneficios. Ofrece recompensas atractivas y acorde al monto del aporte."
+
+msgid "PROJECT_VIDEO"
+msgstr "Video"
+
+msgid "PROJECT__DESCRIPTION_EDIT_TIP_MESSAGE_TEXT"
+msgstr "Puedes utilizar la barra de herramientas superior para darle formato a tu texto."
+
+msgid "PROJECT__VIDEO_URL_EDIT_TIP_MESSAGE_TEXT"
+msgstr "El video es tu carta de presentación. Demuestra la calidad de tu proyecto con un video de calidad. Tu proyecto se volverá mucho más confiable si les hablas a tus futuros patrocinadores y les demuestras tu capacidad y compromiso."
+
+msgid "PROJECT_-PRIZE_EDIT_TIP_MESSAGE_TEXT"
+msgstr "Ten en mente que muchos patrocinadores sólo están interesados en los beneficios. Ofrece recompensas atractivas y acorde al monto del aporte."
+
+msgid "PROJECT__FILE_EDIT_TIP_MESSAGE_TEXT"
+msgstr "La imagen no es todo, pero es muy importante. Sube una imagen de buena calidad, con un aspecto de 4:3 y un máximo de 560 x 430 pixeles aproximadamente."
+
+msgid "PROJECT__FILE__TIP_MESSAGE_TEXT"
+msgstr "La imagen no es todo, pero es muy importante. Sube una imagen de buena calidad, con un aspecto de 4:3 y un máximo de 560 x 430 pixeles aproximadamente."
+
+msgid "OFFER__SHORT_DESCRIPTION__TIP_MESSAGE_TEXT"
+msgstr "Tienes 140 caracteres para comunicar tu ofrecimiento. Concentrate en lo más relevante. "
+
+msgid "OFFER__DESCRIPTION__TIP_MESSAGE_TEXT"
+msgstr "Cuanta más información pongas y más claro seas en esta descripción, mayores serán las posibilidades de que otros usuarios creen proyectos que cumplan con tus expectativas."
+
+msgid "OFFER__FILE__TIP_MESSAGE_TEXT"
+msgstr "La imagen no es todo, pero es muy importante. Sube una imagen de buena calidad, con un aspecto de 4:3 y un máximo de 560 x 430 pixeles aproximadamente."
+
+msgid "OFFER__VIDEO_URL__TIP_MESSAGE_TEXT"
+msgstr "El video es tu carta de presentación. Demuestra la calidad de tu ofrecimiento con un video de calidad. Tu ofrecimiento se volverá mucho más confiable si le cuentas a los usuarios lo que buscas y por qué quieres patrocinarlos."
+
+msgid "OFFER__DESCRIPTION_EDIT_TIP_MESSAGE_TEXT"
+msgstr "Puedes utilizar la barra de herramientas superior para darle formato a tu texto."
+
+msgid "OFFER__VIDEO_URL_EDIT_TIP_MESSAGE_TEXT"
+msgstr "El video es tu carta de presentación. Demuestra la calidad de tu ofrecimiento con un video de calidad. Tu ofrecimiento se volverá mucho más confiable si le cuentas a los usuarios lo que buscas y por qué quieres patrocinarlos."
+
+msgid "PROJECT__FUNDING_GOAL__TIP_MESSAGE_TEXT"
+msgstr "Recuerda que si al cabo del tiempo elegido a continuación tu proyecto no recauda este monto, no será financiado. Piensa en una suma que estés en condiciones de recaudar en el tiempo previsto. "
+
+msgid "PROJECT__PROJECT_DURATION__TIP_MESSAGE_TEXT"
+msgstr "Cuanto más dure el proyecto, más posible será que alcances a recaudar los fondos necesarios."
+
+msgid "PROJECT__FUNDING_GOAL_EDIT_TIP_MESSAGE_TEXT"
+msgstr "Recuerda que si al cabo del tiempo elegido a continuación tu proyecto no recauda este monto, no será financiado. Piensa en una suma que estés en condiciones de recaudar en el tiempo previsto."
+
+msgid "PROJECT__PROJECT_DURATION_EDIT_TIP_MESSAGE_TEXT"
+msgstr "Cuanto más dure el proyecto, más posible será que alcances a recaudar los fondos necesarios."
+
+msgid "PAYMENT_TYPE"
+msgstr "Tipo de pago"
+
+msgid "RESUMEN_NET"
+msgstr "Neto"
+
+msgid "RESUMEN_COMISION"
+msgstr "Comisión para Groofi"
+
+msgid "RESUMEN_PROJECT_PAYMENT"
+msgstr "Pago para dueño del proyecto"
+
+msgid "REFOUND_COST"
+msgstr "Costo de devolución"
+
+msgid "PROJECT_BALANCE_FOR %s"
+msgstr "Balance para el proyecto \"%s\""
+
+msgid "EXPRESSCHECKOUT_PAYMENT_TOTAL"
+msgstr "Total para pagos \"Express Checkout\""
+
+
+msgid "PREAPPROVAL_PAYMENT_TOTAL"
+msgstr "Total para pagos \"Pre-aprobados\""
+
+msgid "TOTAL"
+msgstr "Total"
+
+msgid "REFOUND_MONEY_TO_ALL"
+msgstr "Devolver dinero de todas las donaciones"
+
+msgid "FOUND_PROJECT_BUT_NOT_PAY"
+msgstr "Financiar proyecto pero no transferir donaciones"
+
+msgid "FOUND_PROJECT_AND_PAY_WITH_PAYPAL"
+msgstr "Financiar pryecto y transferir donaciones"
+
+msgid "ADMIN_PROJECTBALANCE"
+msgstr "Balance"
+
+msgid "INSUFICIENT_FOUNDS_TO_DO_A_REFOUND"
+msgstr "Los fondos disponibles en Paypal no son suficientes para realizar la devolucion de fondos."
+
+msgid "INSUFICIENT_FOUNDS_TO_PAY_THIS_PROJECT"
+msgstr "Los fondos disponibles en Paypal no son suficientes para realizar el pago del proyecto."
+
+msgid "OFFER__FILE_EDIT_TIP_MESSAGE_TEXT"
+msgstr "La imagen no es todo, pero es muy importante. Sube una imagen de buena calidad, con un aspecto de 4:3 y un máximo de 560 x 430 pixeles aproximadamente."
+
+msgid "THE_PROJECT_HAS_FINISHED %s"
+msgstr "Proyecto finalizado el %s"
+
+msgid "VIEW_BALANCE"
+msgstr "Ver balance"
+
+msgid "EXPRESSCHECKOUT_PAYMENT"
+msgstr "Pago Express Checkout"
+
+msgid "PREAPPROVAL_PAYMENT"
+msgstr "Pago Pre-aprobado"
+
+msgid "OF %s days"
+msgstr "De %s día/s"
+
+msgid "%s SPONSORSHIPS"
+msgstr "Patrocinadores"
+
+msgid "%s%% ( USD %s of USD %s )"
+msgstr "%s%% ( USD %s de USD %s )"
+
+msgid "PROJECTS_ADMIN_PROJECTBALANCE"
+msgstr "Balance del proyecto"
+
+msgid "APPROVE_PROPOSAL_WITH_EXPRESSCHECKOUT_PAYMENTS"
+msgstr "Aceptar propuesta (Pago Express Checkout)"
+
+msgid "APPROVE_PROPOSAL_WITH_PREAPPROVAL_PAYMENTS"
+msgstr "Aceptar propuesta (Pago Pre-aprobado)"
+
+msgid "RANGE_PRIZEVALUE_2000"
+msgstr "Introduce un monto válido para el beneficio seleccionado."
+
+msgid "RANGE_10_2000"
+msgstr "El aporte mínimo es de USD 10 y el máximo de USD 2000"
+
+msgid "YOUR_BENEFIT"
+msgstr "Beneficio elegido"
+
+msgid "YOU_SELECT_ONLY_HELP"
+msgstr "No deseo recibir ningún beneficio."
+
+msgid "SPONSORSHIP_LAST_STEP_TITLE"
+msgstr "Último paso"
+
+msgid "SPONSORSHIP_LAST_STEP_SUBTITLE"
+msgstr "Continúa el proceso en PayPal"
+
+msgid "IMPORTANT_PAYPAL_TITLE"
+msgstr "Importante"
+
+
+msgid "PROJECT_PAYPAL_HELP_TEXT"
+msgstr "Haciendo clic en \"ASOCIAR CON MI CUENTA DE PAYPAL\", dejarás de estar navegando Groofi y serás dirigido al sitio oficial de PayPal para asociar la cuenta en la que recibirás los aportes. Si no tienes una, deberás crearla."
+
+msgid "IMPORTANT_PAYPAL_BODY"
+msgstr "Haciendo clic en Continuar, dejarás de estar navegando Groofi y serás dirigido al sitio oficial de PayPal para realizar tu aporte desde tu cuenta de ese servicio. Si no tienes una, deberás crearla."
+
+msgid "PLEASE_SELECT_ONE_PRIZE"
+msgstr "Por favor, selecciona alguna de estas opciones"
+
+msgid "AT_LEAST_ONE_PRIZE"
+msgstr "Ingresa al menos un beneficio"
+
+msgid "AT_LEAST_ONE_LINK"
+msgstr "Ingresa al menos un website"
+
+msgid "THE_OFFER_COULD_NOT_BE_SAVED_PLEASE_TRY_AGAIN"
+msgstr "El ofrecimiento no pudo ser guardado. Verifique que los campos hayan sido completados correctamente."
+
+msgid "YOU_MUST_UPLOAD_AN_IMAGE"
+msgstr "Debes subir una imagen"
+
+msgid "integer_value_10_2000"
+msgstr "Ingresa un número entero entre 10 y 2000"
+
+msgid "PUBLISH_THIS_OFFER"
+msgstr "Lanzar ofrecimiento"
+
+msgid "EDIT_THIS_OFFER"
+msgstr "Editar ofrecimiento"
+
+msgid "BETWEEN_3_50_CHARS"
+msgstr "Escribe un título de menos de 50 caracteres"
+
+msgid "THIS_OFFER_IS_NOT_VALID_IT_CAN_NOT_BE_PUBLISHED"
+msgstr "El ofrecimiento no pudo ser lanzado. Verifique que los campos hayan sido completados correctamente."
+
+msgid "THE_OFFER_IS_NOT_VALID_WE_CAN_NOT_PUPBISH_IT"
+msgstr "El ofrecimiento no pudo ser lanzado. Verifique que los campos hayan sido completados correctamente."
+
+msgid "THE_OFFER_COULD_NOT_BE_SAVED_PLEASE_TRY_AGAIN."
+msgstr "El ofrecimiento no pudo ser guardado. Verifique que los campos hayan sido completados correctamente."
+
+msgid "greater_than_0"
+msgstr "Ingresa un monto válido"
+
+msgid "SPONSORSHIPS_PROCESS"
+msgstr "Proceso finalizado"
+
+msgid "PAYMENT_COMPLETE_TITLE"
+msgstr "&iexcl;Felicitaciones!"
+
+msgid "PAYMENT_COMPLETE_BODY"
+msgstr "El proceso se ha realizado correctamente. No bien sea verificado el aporte que has realizado nos pondremos en contacto.<br />&iexcl;Muchas gracias!"
+
+msgid "PAYMENT_CANCELED_TITLE"
+msgstr "El pago ha sido cancelado"
+
+msgid "PAYMENT_CANCELED_BODY"
+msgstr "El proceso de pago no ha podido completarse."
+
+msgid "THIS_PROJECT_WAS_NOT_SUPPORTED_YET %s"
+msgstr "Este proyecto no tiene patrocinadores todavía %s"
+
+msgid "BE_THE_FIRST"
+msgstr "¡Sé el primero en patrocinar!"
+
+msgid "SEARCH_BY_CATEGORY"
+msgstr "DESCUBRIR POR CATEGORIAS"
+
+msgid "CONNECT_WITH_US"
+msgstr "Conéctate con Groofi"
+
+msgid "TERMS"
+msgstr "Términos de uso"
+
+msgid "PRIVACY"
+msgstr "Política de privacidad"
+
+msgid "CONTACT"
+msgstr "Contacto"
+
+msgid "OUR_OFFICE"
+msgstr "Nuestras Oficinas"
+
+msgid "SITE_COPYRIGHT"
+msgstr "©2011 Todos los derechos reservados"
+
+msgid "PAYMENTS"
+msgstr "Patrocinadores"
+
+msgid "ADMIN_PAYMENTS_ALL"
+msgstr "Paypal: ver todos"
+
+msgid "ADMIN_PAYMENTS_COMPLETED"
+msgstr "Paypal: ver pagos completados"
+
+msgid "ADMIN_PAYMENTS_NOT_COMPLETED"
+msgstr "Paypal: ver pagos no completados"
+
+msgid "ADMIN_PAYMENTS_ALL_MP"
+msgstr "Mercado Pago"
+
+msgid "ADMIN_CREATE_ADMIN"
+msgstr "Crear usuario administrador"
+
+msgid "ADMIN_USERS_FILTER_FILTER_ACTIVE_USERS"
+msgstr "Usuarios habilitados"
+
+msgid "ADMIN_USERS_FILTER_FILTER_INACTIVE_USERS"
+msgstr "Usuarios inhabilitados"
+
+msgid "ADMIN_USERS_FILTER_FILTER_FUNCTIONAL_USERS"
+msgstr "Usuarios confirmados"
+
+msgid "ADMIN_USERS_FILTER_FILTER_ALL_ADMINS"
+msgstr "Administradores"
+
+msgid "ADMIN_USERS_FILTER_FILTER_ACTIVE_ADMINS"
+msgstr "Administradores habilitados"
+
+msgid "ADMIN_USERS_FILTER_FILTER_INACTIVE_ADMINS"
+msgstr "Administradores inhabilitados"
+
+msgid "ADMIN_ADD"
+msgstr "Crear administrador"
+
+msgid "USERS_ADMIN_ADD"
+msgstr "Crear administrador"
+
+msgid "USER_HAS_BEEN_CREATED"
+msgstr "El usuario ha sido creado"
+
+msgid "ADMIN_ADMINS"
+msgstr "Administradores"
+
+msgid "ADMIN_SPONSORSHIPS"
+msgstr "Patrocinadores"
+
+msgid "SPONSORSHIPS_ADMIN_INDEX"
+msgstr "Patrocinadores"
+
+msgid "ADMIN_SPONSORSHIPS_FILTER_FILTER_INCOMPLETE"
+msgstr "Pagos no completados"
+
+msgid "ADMIN_SPONSORSHIPS_FILTER_FILTER_COMPLETE"
+msgstr "Pagos completados"
+
+msgid "ADMIN_SPONSORSHIPS_FILTER_FILTER_ALL"
+msgstr "Todos"
+
+msgid "ADMIN_SPONSORSHIPS_FILTER_SORT_SPONSORSHIP.ID"
+msgstr "ID de patrocinador"
+
+msgid "ADMIN_SPONSORSHIPS_FILTER_SORT_SPONSORSHIP.CREATED"
+msgstr "Fecha de creación"
+
+msgid "ADMIN_SPONSORSHIPS_FILTER_SORT_SPONSORSHIP.PROJECT_ID"
+msgstr "ID de proyecto"
+
+msgid "ADMIN_SPONSORSHIPS_FILTER_SORT_SPONSORSHIP.USER_ID"
+msgstr "ID de usuario"
+
+msgid "ADMIN_SPONSORSHIPS_FILTER_SORT_SPONSORSHIP.STATUS"
+msgstr "Estado"
+
+msgid "sponsorship"
+msgstr "Patrocinador"
+
+msgid "user"
+msgstr "Usuario"
+
+msgid "project"
+msgstr "Proyecto"
+
+msgid "PAYPAL_INFO"
+msgstr "Información de PayPal"
+
+msgid "EXPRESSCHECKOUT_PAYMENY_TYPE"
+msgstr "Pago Express Checkout"
+
+msgid "PREAPPROVAL_PAYMENY_TYPE"
+msgstr "Pago pre-aprobado"
+
+msgid "COMPLETE"
+msgstr "Completado"
+
+msgid "CREATED"
+msgstr "Creado el"
+
+msgid "MODIFIED"
+msgstr "Modificado el"
+
+msgid "COMPLETED"
+msgstr "Completado"
+
+msgid "ACTIVE"
+msgstr "Activo"
+
+msgid "MESSAGE_SENT"
+msgstr "Tu mensaje fue enviado"
+
+msgid "ENABLED_OFFER"
+msgstr "Habilitar ofrecimiento"
+
+msgid "THE_OFFER_HAS_FINISHED %s"
+msgstr "Ofrecimiento finalizado el %s"
+
+msgid "THIS_OFFER_IS_NOT_EDITABLE_ANY_MORE"
+msgstr "Ya no puedes editar este ofrecimiento"
+
+msgid "APPROVED_OFFER_STATUS"
+msgstr "Ofrecimiento aprobado"
+
+msgid "SPONSORSHIP_ID"
+msgstr "ID de patrocinador:"
+
+msgid "SPONSORSHIP_VALUE"
+msgstr "Monto aportado:"
+
+msgid "PAYER_ID"
+msgstr "ID PayPay del patrocinador:"
+
+msgid "PAYER_EMAIL"
+msgstr "E-mail PayPal del patrocinador:"
+
+msgid "EXPRESSCHECKOUT_PROFILEID"
+msgstr "Profile ID:"
+
+msgid "EXPRESSCHECKOUT_TXN_ID"
+msgstr "ID transacción PayPal:"
+
+msgid "EXPRESSCHECKOUT_TOKEN"
+msgstr "Token de la operación:"
+
+msgid "EXPRESSCHECKOUT_STATUS"
+msgstr "Estado del pago:"
+
+msgid "PREAPPROVAL_KEY"
+msgstr "Profile ID:"
+
+msgid "PREAPPROVAL_APPROVED"
+msgstr "Operación activa:"
+
+msgid "PREAPPROVAL_STATUS"
+msgstr "Estado operación:"
+
+msgid "YOUR_INFO_HAS_BEEN_UPDATED"
+msgstr "Tu información de cuenta ha sido actualizada."
+
+msgid "YES"
+msgstr "Si"
+
+msgid "NO"
+msgstr "No"
+
+msgid "INCOMPLETE"
+msgstr "No completado"
+
+msgid "ADMIN_LOGIN"
+msgstr "Ingresar"
+
+msgid "USERS_ADMIN_LOGIN"
+msgstr "Ingresar"
+
+msgid "WHANT_TO_DO_THIS"
+msgstr "Quieren hacer esto"
+
+msgid "%s MEMBERS"
+msgstr "PERSONAS"
+
+msgid "HAVE_JOINED_TO_THIS_OFFER"
+msgstr "Se unieron a este ofrecimiento"
+
+msgid "RELATED_PROJECTS"
+msgstr "Proyectos asociados"
+
+msgid "RELATED_PROJECTS %s"
+msgstr "Proyectos asociados "
+
+
+msgid "LOGIN_USER__USERNAME"
+msgstr "E-mail"
+
+msgid "ARE_YOU_SURE_THIS_CAN_NO_BE_UNDONE"
+msgstr "¿Estás seguro? Esta acción no podrá ser revertida"
+
+msgid "ADMIN_ADMIN_DEFAULT_HOME"
+msgstr "Principal"
+
+msgid "Offer.flags"
+msgstr "Opciones"
+
+msgid "USERS_ADMIN_EDIT"
+msgstr "Editar usuario administrador"
+
+msgid "ADMIN_EDIT"
+msgstr "Editar administrador"
+
+msgid "USER__ENABLED"
+msgstr "Usuario habilitado"
+
+msgid "USER_INFO_HAS_BEEN_UPDATED"
+msgstr "La información de cuenta ha sido actualizada"
+
+msgid "REJECTED_OFFER_STATUS"
+msgstr "Ofrecimiento rechazado"
+
+msgid "STATICPAGES_ADMIN_EDIT"
+msgstr "Editar páginas estáticas"
+
+msgid "STATICPAGE__TITLE"
+msgstr "Título"
+
+msgid "STATICPAGE__SECTION"
+msgstr "Sección"
+
+msgid "STATICPAGE__SUBTITLE"
+msgstr "Subtítulo"
+
+msgid "STATICPAGE__CONTENT"
+msgstr "Contenido"
+
+msgid "submit"
+msgstr "Guardar"
+
+msgid "ADMIN_STATICPAGES_FILTER_SORT_STATICPAGE.ID"
+msgstr "ID de página"
+
+msgid "ADMIN_STATICPAGES_FILTER_SORT_STATICPAGE.TITLE"
+msgstr "Título"
+
+msgid "FORGOT_PASSWORD"
+msgstr "Olvidé mi contraseña"
+
+msgid "FORGOT_PASSWORD_TITLE"
+msgstr "¿Olvidaste tu contraseña?"
+
+msgid "FORGOT_PASSWORD_SUBTITLE"
+msgstr "Ingresa tu E-mail para restablecerla"
+
+msgid "RECOVER_PASSWORD"
+msgstr "Recuperar"
+
+msgid "RECOVER_PASSWORD_1"
+msgstr "Recuperar Contraseña"
+
+msgid "CANCEL"
+msgstr "Cancelar"
+
+msgid "RESTORE"
+msgstr "Restablecer"
+
+msgid "RECOVER-LINK-TITLE"
+msgstr "Restablecer contraseña"
+
+msgid "RECOVER-LINK-CONTENT"
+msgstr "Hemos enviado un mensaje a tu cuenta de e-mail con las instrucciones para que restablezcas tu contraseña."
+
+msgid "PREV_PAGE"
+msgstr "Anterior"
+
+msgid "USER_EDIT_"
+msgstr "Configuraciones"
+
+msgid "PUBLISHED"
+msgstr "Publicada"
+
+msgid "MAIL-MUST-BE-UNIQUE"
+msgstr "Este e-mail ya está siendo utilizado."
+
+msgid "OFFER_COMMENTED_SUBJECT_OWNER"
+msgstr "Has recibido un nuevo comentario"
+
+msgid "OFFER_PENDING_APPROVE_SUBJECT_OWNER"
+msgstr "Hemos recibido tu propuesta"
+
+msgid "OFFER_APPROVED_SUBJECT_OWNER"
+msgstr "¡Felicitaciones! Tu propuesta ha sido aprobada"
+
+msgid "OFFER_REJECTED_SUBJECT_OWNER"
+msgstr "Tu propuesta no ha sido aprobada"
+
+msgid "OFFER_NEW_UPDATE_SUBJECT_FOLLOWER"
+msgstr "Nueva actualización en un ofrecimiento"
+
+msgid "OFFER_NEW_UPDATE_SUBJECT_FOLLOWER_TYPE2"
+msgstr "Nueva actualización en un ofrecimiento"
+
+msgid "OFFER_NEW_PROJECT_SUBJECT_OWNER"
+msgstr "Se ha creado un proyecto para tu ofrecimiento"
+
+msgid "OFFER_NEW_USER_SUBJECT_OWNER"
+msgstr "Un nuevo usuario se unió a tu ofrecimiento"
+
+msgid "OFFER_ABOUT_TO_FINISH_SUBJECT_OWNER"
+msgstr "Tu ofrecimiento está por finalizar"
+
+msgid "OFFER_ABOUT_TO_FINISH_SUBJECT_FOLLOWER"
+msgstr "El ofrecimiento al que te uniste está por finalizar"
+
+msgid "OFFER_ABOUT_TO_FINISH_SUBJECT_FOLLOWER_TYPE2"
+msgstr "El ofrecimiento por el que creaste tu proyecto está por finalizar"
+
+msgid "OFFER_FINISHED_SUBJECT_OWNER"
+msgstr "Tu ofrecimiento ha finalizado"
+
+msgid "OFFER_FINISHED_SUBJECT_FOLLOWER"
+msgstr "El ofrecimiento al que te uniste ha finalizado"
+
+msgid "OFFER_FINISHED_SUBJECT_FOLLOWER_TYPE2"
+msgstr "El ofrecimiento por el que creaste tu proyecto ha finalizado"
+
+msgid "POST_COMMENTED_SUBJECT_OWNER"
+msgstr "Has recibido un nuevo comentario"
+
+msgid "PROJECT_COMMENTED_SUBJECT_OWNER"
+msgstr "Has recibido un nuevo comentario"
+
+msgid "PROJECT_PENDING_APPROVE_SUBJECT_OWNER"
+msgstr "Hemos recibido tu propuesta"
+
+msgid "PROJECT_APPROVED_SUBJECT_OWNER"
+msgstr "¡Felicitaciones! Tu propuesta ha sido aprobada"
+
+msgid "PROJECT_REJECTED_SUBJECT_OWNER"
+msgstr "Tu propuesta no ha sido aprobada"
+
+msgid "PROJECT_NEW_BACKERPROJECT_ABOUT_TO_FINISH    "
+msgstr "Tu proyecto tiene un nuevo patrocinador"
+
+msgid "PROJECT_NEW_UPDATE_SUBJECT_FOLLOWER"
+msgstr "Nueva actualización en un proyecto"
+
+msgid "PROJECT_NEW_UPDATE_SUBJECT_FOLLOWER_TYPE2"
+msgstr "Nueva actualización en un proyecto"
+
+msgid "PROJECT_ABOUT_TO_FINISH_SUBJECT_OWNER"
+msgstr "Tu proyecto está por finalizar"
+
+msgid "PROJECT_ABOUT_TO_FINISH_SUBJECT_FOLLOWER"
+msgstr "Un proyecto que sigues está por finalizar"
+
+msgid "PROJECT_ABOUT_TO_FINISH_SUBJECT_FOLLOWER_TYPE2"
+msgstr "Un proyecto que patrocinas está por finalizar"
+
+msgid "PROJECT_FINISH_SUBJECT_OWNER"
+msgstr "Tu proyecto ha finalizado"
+
+msgid "PROJECT_FUNDED_SUBJECT_OWNER"
+msgstr "¡Felicitaciones! Tu proyecto ha sido financiado"
+
+msgid "PROJECT_FUNDED_SUBJECT_FOLLOWER"
+msgstr "Un proyecto que sigues ha sido financiado"
+
+msgid "PROJECT_FUNDED_SUBJECT_FOLLOWER_TYPE2"
+msgstr "Un proyecto que patrocinas ha sido financiado"
+
+msgid "PROJECT_DONT_FUNDED_SUBJECT_OWNER"
+msgstr "Tu proyecto no ha sido financiado"
+
+msgid "PROJECT_DONT_FUNDED_SUBJECT_FOLLOWER"
+msgstr "Un proyecto que sigues no ha sido financiado"
+
+msgid "PROJECT_DONT_FUNDED_SUBJECT_FOLLOWER_TYPE2"
+msgstr "Un proyecto que patrocinas no ha sido financiado"
+
+msgid "USER_WELCOME_MAIL_SUBJECT_OWNER"
+msgstr "¡Bienvenido a Groofi! Confirma tu cuenta"
+
+msgid "PASSWORD_RECOVERY_SUBJECT_OWNER"
+msgstr "Restablecer contraseña"
+
+msgid "PROJECT_NEW_BACKER_PRE_APPROVAL_SUBJECT_OWNER"
+msgstr "¡Muchas gracias! Hemos recibido tu aporte"
+
+msgid "PROJECT_NEW_BACKER_EXPRESS_PAYMENT_SUBJECT_OWNER"
+msgstr "¡Muchas gracias! Hemos recibido tu aporte"
+
+msgid "TERMS_OF_USER_BODY %s"
+msgstr "Registrándote estás aceptando los "
+
+msgid "TERMS_OF_USE_LINK"
+msgstr "Términos de uso de Groofi"
+
+msgid "DISCOVER_MORE"
+msgstr "VER MÁS"
+
+msgid "LOGIN_ERROR"
+msgstr "E-mail y/o contraseña incorrecta."
+
+msgid "COMMENTS_ADD"
+msgstr "Comentarios"
+
+msgid "maxLength_500"
+msgstr "Escribe menos de 500 caracteres."
+
+msgid "ADD_A_COMMENT"
+msgstr "Comentar"
+
+msgid "VIEW_COMMENTS"
+msgstr "Ver comentarios"
+
+msgid "VIEW_ALL_COMMENTS"
+msgstr "Ver todos los comentarios"
+
+msgid "UN_PUBLISHED"
+msgstr "Aún no publicada"
+
+msgid "POSTS_EDIT"
+msgstr "Editar actualización"
+
+msgid "OFFER_IS_NOT_VISIBLE"
+msgstr "¡Disculpa! La página a la que intentas acceder no está disponible"
+
+msgid "PROJECT_DOES_NOT_EXIST"
+msgstr "¡Disculpa! La página a la que intentas acceder no existe"
+
+msgid "GENERIC_PAGE_ERROR_403"
+msgstr "¡Disculpa!"
+
+msgid "GENERIC_PAGE_ERROR_403_BODY"
+msgstr "No se pudo encontrar la página solicitada. Puede que hayas hecho clic en un enlace caduco o que la dirección esté mal escrita. En algunas direcciones web se distingue entre mayúsculas y minúsculas."
+
+msgid "GENERIC_PAGE_ERROR_404"
+msgstr "¡Disculpa!"
+
+msgid "GENERIC_PAGE_ERROR_404_BODY"
+msgstr "No se pudo encontrar la página solicitada. Puede que hayas hecho clic en un enlace caduco o que la dirección esté mal escrita. En algunas direcciones web se distingue entre mayúsculas y minúsculas."
+
+msgid "OFFER_DOES_NOT_EXIST"
+msgstr "¡Disculpa! La página a la que intentas acceder no existe"
+
+msgid "PROJECT_IS_NOT_VISIBLE"
+msgstr "¡Disculpa! La página a la que intentas acceder no está disponible"
+
+msgid "PROJECT_FUNDED_STATUS"
+msgstr "Finalizado"
+
+msgid "PROJECT_FUNDED_STATUS_NOT_FUNDED"
+msgstr "Proyecto no financiado"
+
+msgid "PROJECT_FUNDED_STATUS_FUNDED"
+msgstr "Proyecto financiado"
+
+msgid "PROJECT_FUNDED_INFO"
+msgstr "Financiado!"
+
+msgid "PROJECT_NOT_FUNDED_INFO"
+msgstr "No financiado"
+
+
+msgid "PROJECT_SPONSORS"
+msgstr "Patrocinadores"
+
+msgid "INVALID_LOGIN_INFORMATION"
+msgstr "E-mail y/o contraseña incorrecta."
+
+msgid "OFFERS_FINISHED_STATUS"
+msgstr "Finalizado"
+
+msgid "OFFERS_FINISHED_STATUS_FINISHED"
+msgstr "Ofrecimiento no vigente"
+
+msgid "BACK_TO_HOME_PAGE"
+msgstr "Ir a la home"
+
+msgid "GO_BACK_TO_THE_PREVIOUS_PAGE"
+msgstr "Volver a la página anterior"
+
+msgid "ABOUT_US_LINK"
+msgstr "Acerca de Groofi"
+
+msgid "CONTACT_US_LINK"
+msgstr "Contáctanos"
+
+msgid "PAGE_ERROR_404"
+msgstr "Página no encontrada"
+
+msgid "PAGE_ERROR_403"
+msgstr "Página no disponible"
+
+msgid "THE_PROJECT_IS ABOUT_TO_FINISH %s %s"
+msgstr "El proyecto %s finalizará el %s"
+
+msgid "THE_PROJECT_IS ABOUT_TO_FINISH %s %s"
+msgstr "El ofrecimiento %s finalizará el %s"
+
+msgid "THE_OFFER_HAS_FINISHED %s %s"
+msgstr "El ofrecimiento %s finalizó el %s"
+
+msgid "THE_PROJECT_HAS_FINISHED %s %s"
+msgstr "El proyecto %s finalizó el %s"
+
+msgid "YOU_ONLY_WANT_TO_HELP"
+msgstr "Sin beneficio elegido"
+
+msgid "PROJECT_SPONSORSHIP %s"
+msgstr "Aporte para proyecto por USD %s"
+
+msgid "TRANSFER_ALL_FOUNDS"
+msgstr "Cobrar todos los pagos pre-aprobados"
+
+msgid "CHARGE_SPONSORSHIP"
+msgstr "Cobrar pago"
+
+msgid "PROJECT_FUNDED_TITLE"
+msgstr "Proyecto financiado"
+
+msgid "PAYMENT_NUMBER"
+msgstr "Pago #"
+
+msgid "PAYMENT_AMMOUNT"
+msgstr "Monto del pago"
+
+msgid "ACTION"
+msgstr "Acción"
+
+msgid "MARK_PROJECT_AS_FUNDED"
+msgstr "Marcar como financiado"
+
+msgid "MARK_PROJECT_AS_NOT_FUNDED"
+msgstr "Marcar como no financiado"
+
+msgid "PROJECT_FUNDED_PERCENTAGE "
+msgstr "Porcentaje de financiación"
+
+msgid "PROJECT_FINISHED"
+msgstr "Proyecto finalizado"
+
+msgid "NOT-CHARGED"
+msgstr "Aun no cobrado"
+
+msgid "CHARGED"
+msgstr "Cobrado"
+
+msgid "completed"
+msgstr "Completado"
+
+msgid "active"
+msgstr "Activo"
+
+msgid "DO_PAYMENT %s"
+msgstr "Realizar pago #%s"
+
+msgid "FOUND_THIS_PROJECT"
+msgstr "Financiar este proyecto"
+
+msgid "Payment %s OF %s FOR USD %s OF USD %s TO %s"
+msgstr "Pago %s de %s por USD %s de USD %s para %s"
+
+msgid "STATUS_OF_PROJECT"
+msgstr "Proyecto"
+
+msgid "PROJECT_FUNDED_PERCENTAGE"
+msgstr "Porcentaje financiado"
+
+msgid "SELECTED_PRIZE %s"
+msgstr "Beneficio elegido: %s"
+
+msgid "PROJECT_NOT_FUNDED_TITLE"
+msgstr "Fondos insuficientes para financiar el proyecto"
+
+msgid "FUNDING_GOAL"
+msgstr "Objetivo"
+
+msgid "TOTAL_REVENUE"
+msgstr "Total recolectado"
+
+msgid "DIFFERENCE"
+msgstr "Resta financiar"
+
+msgid "SPONSORSHIP_THIS_PROJECT"
+msgstr "Donar a este proyecto"
+
+msgid "REFOUND_ALL_PAYMENTS_AND_SEND_NOTIFICATIONS"
+msgstr "Dar reembolso a todas las donaciones y enviar notificaciones"
+
+msgid "VIEW_DETAILS"
+msgstr "Ver detalles"
+
+msgid "VIEW_PROJECT_PAGE"
+msgstr "Ver pagina del proyecto"
+
+msgid "VIEW_PROFILE"
+msgstr "Ir al perfil"
+
+msgid "PROJECT_STATS"
+msgstr "Estadísticas"
+
+msgid "FINISH IN %s days"
+msgstr "Finaliza en %s días"
+
+msgid "OPTIONS"
+msgstr "Opciones"
+
+msgid "ADMIN_PROJECTS_MENU_ABOUT_TO_FINISH"
+msgstr "Ver por finalizar"
+
+msgid "ADMIN_PROJECTS_MENU_FINISHED"
+msgstr "Ver finalizados"
+
+msgid "ADMIN_OFFERS_MENU_DISABLED"
+msgstr "Deshabilitados"
+
+msgid "ADMIN_OFFERS_MENU_PROPOSALS"
+msgstr "Ver propuestas"
+
+msgid "ADMIN_OFFERS_MENU_REJECTED"
+msgstr "Ver rechazados"
+
+msgid "ADMIN_OFFERS_MENU_APPROVED"
+msgstr "Ver no publicados"
+
+msgid "ADMIN_OFFERS_MENU_PUBLISHED"
+msgstr "Ver publicados"
+
+msgid "ADMIN_OFFERS_MENU_OUTSTANDING"
+msgstr "Destacados en home"
+
+msgid "ADMIN_OFFERS_MENU_LEADING"
+msgstr "Casos de exito"
+
+msgid "ADMIN_OFFERS_MENU_WEEK"
+msgstr "Destacados de la semana"
+
+msgid "ADMIN_OFFERS_MENU_ABOUT_TO_FINISH"
+msgstr "Ver por finalizar"
+
+msgid "ADMIN_OFFERS_MENU_FINISHED"
+msgstr "Ver finalizados"
+
+msgid "ADMIN_PROJECTS_MENU_FUNDED"
+msgstr "Ver financiados"
+
+msgid "ADMIN_PROJECTS_MENU_NOT-FUNDED"
+msgstr "Ver no financiados"
+
+msgid "ADMIN_OFFERS_FILTER_FILTER_DISABLED"
+msgstr "Deshabilitados"
+
+msgid "ADMIN_OFFERS_FILTER_FILTER_OUTSTANDING"
+msgstr "Destacados en home"
+
+msgid "ADMIN_OFFERS_FILTER_FILTER_LEADING"
+msgstr "Casos de exito"
+
+msgid "ADMIN_OFFERS_FILTER_FILTER_ABOUT-TO-FINISH"
+msgstr "Por finalizar"
+
+msgid "ADMIN_OFFERS_FILTER_FILTER_FINISHED"
+msgstr "Finalizados"
+
+msgid "ADMIN_USER_REPORTED_USERS"
+msgstr "Usuarios reportados"
+
+msgid "ADMIN_USER_ALL_ACTIVE_USERS"
+msgstr "Usuarios activos"
+
+msgid "ADMIN_USER_ALL_INACTIVE_USERS"
+msgstr "Usuarios inactivos"
+
+msgid "ADMIN_USER_ALL_FUNCTIONAL_USERS"
+msgstr "Usuarios confirmados"
+
+msgid "ADMIN_USER_ALL_ADMIN_USERS"
+msgstr "Todos los administradores"
+
+msgid "ADMIN_USER_ALL_ADMIN_USERS_ACTIVE"
+msgstr "Administradores activos"
+
+msgid "ADMIN_USER_ALL_ADMIN_USERS_INACTIVE"
+msgstr "Administradores inactivos"
+
+msgid "VIEW_ALL_USERS_ADMIN_INDEX"
+msgstr "Todos"
+
+msgid "VIEW___ADMIN_INDEX"
+msgstr "Listado"
+
+msgid "VIEW_REPORTED_USERS_ADMIN_INDEX"
+msgstr "Reportados"
+
+msgid "VIEW_ACTIVE_USERS_ADMIN_INDEX"
+msgstr "Activos"
+
+msgid "VIEW_INACTIVE_USERS_ADMIN_INDEX"
+msgstr "Inactivos"
+
+msgid "VIEW_ACTIVE_USERS_ADMIN_INDEX"
+msgstr "Confirmados"
+
+msgid "VIEW_ALL_ADMINS_ADMIN_INDEX"
+msgstr "Todos"
+
+msgid "VIEW_ALL_ADMIN_INDEX2"
+msgstr "Mercado Pago"
+
+msgid "VIEW_ACTIVE_ADMINS_ADMIN_INDEX"
+msgstr "Activos"
+
+msgid "VIEW_INACTIVE_ADMINS_ADMIN_INDEX"
+msgstr "Inactivos"
+
+msgid "VIEW__ADMIN_INDEX"
+msgstr "Listado"
+
+msgid "TRANSFERRED"
+msgstr "Transferido"
+
+msgid "NOT_TRANSFERRED"
+msgstr "No transferido"
+
+msgid "VIEW_COMPLETED_ADMIN_INDEX"
+msgstr "Paypal pagos completados"
+
+msgid "VIEW_NOT-COMPLETED_ADMIN_INDEX"
+msgstr "Paypal pagos no completados"
+
+msgid "VIEW_ALL_PAYPAL_ADMIN_INDEX"
+msgstr "Paypal todos"
+
+msgid "VIEW_COMPLETE_ADMIN_INDEX"
+msgstr "Paypal todos"
+
+msgid "SPONSORSHIP_INFO"
+msgstr "Informacíon general"
+
+msgid "VIEW__ADMIN_EDIT"
+msgstr "Editar"
+
+msgid "VIEW_SPONSORS"
+msgstr "Ver patrocinadores"
+
+msgid "PROJECTS_SPONSORS_TITLE"
+msgstr "Patrocinadores del proyecto"
+
+msgid "PROJECTS_SPONSORS"
+msgstr "Patrocinadores del proyecto"
+
+msgid "HAS_SUPPORTED_YOU_WITH USD %s"
+msgstr "Ha colaborado con USD %s"
+
+msgid "HAS_SUPPORTED_YOU_WITH USD %s AND_SELECTED_THE PRIZE \"%s\""
+msgstr "Ha colaborado con USD %s y selecciono el premio \"%s\""
+
+msgid "THIS_MESSAGE_CANT_NOT_BE_SENT"
+msgstr "El mensaje no pudo ser enviado"
+
+msgid "OFFER_VIDEO"
+msgstr "Video"
+
+msgid "slug"
+msgstr "Debes ingresar letras y números solamente"
+
+msgid "PROJECTS CREATED"
+msgstr "PROYECTOS CREADOS"
+
+msgid "HOW_WORK"
+msgstr "¿COMO FUNCIONA?"
+
+msgid "BUSI_NESS"
+msgstr "EMPRESAS"
+
+msgid "GROOFI_INTRODUCTION"
+msgstr "Groofi nació para convertirse en la primera plataforma de financiamiento colectivo global."
+
+msgid "GROOFI_INTRODUCTION_SUB"
+msgstr "Creemos que la diversidad potencia el talento y la suma de talento atrae al capital. De esa manera groofi esta destinada a convertirse en un puente entre la creatividad y el financiamiento, desatando de esa manera el potencial de todas las personas en el mundo."
+
+msgid "GROOFI_FOOTER"
+msgstr "GROOFI EN FACEBOOK"
+
+msgid "GROOFI_FOOTER_CONTACTATE"
+msgstr "CONTACTATE CON GROOFI"
+
+msgid "GROUPAL_GIFTS"
+msgstr "Regalos Grupales"
+
+msgid "GROOFI_SCHOOL"
+msgstr "Groofi Escuela"
+
+msgid "WHAT_IS_GROOFI"
+msgstr "¿Qué es Groofi?"
+
+msgid "WHAT_IS_GROOFI_SUB"
+msgstr "Groofi es el lugar donde las ganas de llevar adelante buenos proyectos confluyen con las ganas de apoyar las ideas más interesantes, originales o divertidas. Un lugar para conseguir fondos para tus proyectos creativos, artísticos, deportivos, solidarios o tecnológicos. Un lugar para patrocinar esos proyectos que te gustaría que se hagan realidad y recibir beneficios exclusivos a cambio."
+
+msgid "WHAT_IS_GROOFI_SUB1"
+msgstr "Groofi es mucho más que una plataforma de recaudación de fondos colectiva o de "crowdfunding", es una comunidad de usuarios con buenas ideas, con ganas de hacerlas realidad y de contribuir a que eso sea posible."
+
+msgid "TITLE_CREATIVITY_FUNDING"
+msgstr "Un puente entre la creatividad y el financiamiento"
+
+msgid "TITLE_CREATIVITY_FUNDING_SUB"
+msgstr "Quieres filmar una película, grabar un disco, escalar una montaña o recorrer tu país en bicicleta? Sos creativo y emprendedor, tenes una idea única e innovadora y necesitas los fondos para realizarla. Buscas el apoyo de una comunidad de miles de personas, que al identificarse y colaborar con tu idea, apuestan a tu desarrollo, se convierten en productores, y acceden a los beneficios y recompensas que diseñes a la hora de crear tú proyecto. O queres ganar dinero haciendo lo que te apasiona con proyectos y desafíos que otros proponen. "
+
+msgid "TITLE_CREATIVITY_FUNDING_SUB1"
+msgstr "Creá o descubre tu proyecto en Groofi.com, comparte con tus amigos en las redes sociales, consigue los recursos y haz realidad de manera simple, segura y comunitaria."
+
+msgid "ABOUT_US"
+msgstr "Quiénes Sómos?"
+
+msgid  "ABOUT_US_SUB"
+msgstr "Groofi es una empresa anglo-argentina con capitales españoles. Groofi nació para convertirse en la primera plataforma de financiamiento colectivo global. Creemos que la diversidad potencia el talento y la suma de talento atrae al capital. De esa manera groofi esta destinada a convertirse en un puente entre la creatividad y el financiamiento, desatando de esa manera el potencial de todas las personas en el mundo."
+
+msgid "ABOUT_US_SUB1"
+msgstr "Un lugar para conseguir fondos para tus proyectos creativos, artísticos, deportivos, solidarios o tecnológicos. Un lugar para patrocinar aquellos proyectos que te gustaría que se hicieran realidad y recibir beneficios exclusivos a cambio.."
+
+msgid "MODEL_FUNDING"
+msgstr "Sólo los proyectos que en el plazo establecido lleguen como mínimo al 100% de su objetivo de financiación recibirán el dinero aportado por sus patrocinadores. En caso contrario, las cantidades que los mecenas se han comprometido a aportar no se hacen efectivas y el proyecto no recibirá la financiación. Groofi cobra una comisión sobre el monto recaudado por los proyectos exitosos. No cobramos comisión sobre aquellos proyectos que no lograron su objetivo. La comisión es del 5.99 % (IVA incluido) en todos los países de Latinoamérica y España."
+
+msgid "MODEL_FUNDING_TITLE"
+msgstr "El modelo de financiación"
+
+msgid "I_WANT_START_MY_PROJECT"
+msgstr "Quiero empezar mi proyecto"
+
+msgid "CROWDFUNDING_TITLE"
+msgstr "¿Qué es "crowdfunding" o financiamiento colectivo?"
+
+msgid "CROWDFUNDING_CONCEPT"
+msgstr "Mediante la publicación de un proyecto Groofi, los dueños de los proyectos pueden financiar de manera alternativa sus proyectos e ideas mediante la pre-venta de los productos y/o servicios que piensan desarrollar, y así hacerlos realidad. El financiamiento se logra la sumatoria de  mini-donaciones de dinero (o no tanto) proveniente de multiples patrocinadores de cada proyecto, y a cambio de esos aportes de dinero reciben a cambio beneficios exclusivos   Ejemplo Una diseñadora de modas quiere juntar U$S 5000 dólares para lanzar su colección de ropa de la próxima temporada para poder comprar las telas, botones y pagar al taller de confección. Un buen ejemplo de beneficios a cambio de las donaciones seria por 20 usd, una camiseta exclusiva y dedicada personalmente por 40 usd, un cinturón exclusivo por 60 usd, un vestido, etc, etc"
+
+msgid "WHAT_IS_A_PROJECT"
+msgstr "¿Qué es un proyecto?"
+
+msgid "WHAT_IS_A_PROJECT_CONCEPT"
+msgstr "Cualquier idea creativa, original o simplemente divertida que estés en condiciones de llevar acabo por tus conocimientos, experiencia o ganas, y necesites fondos para realizarla. La única cosa a tener en cuenta es que debe aprovechar sus fortalezas y habilidades porque estás necesita credibilidad para atraer respaldo, y aprovechar lo que la gente quiere a modo de recompensa. Este no es un sitio de donación, esta es una plataforma de intercambio."
+
+msgid "CHARGES_A_COMISSION"
+msgstr "¿Groofi cobra una comisión?"
+
+msgid "CHARGES_A_COMISSION_CONCEPT"
+msgstr "Sí, Groofi cobra una comisión sobre el monto recaudado por los proyectos exitosos. No cobramos comisión sobre aquellos proyectos que no lograron su objetivo.  La comisión es del 5.99 % (IVA incluido) en todos los países de Latinoamérica y España.En caso de que el creador desee obtener de  una factura con el IVA discriminado, deberá consultar a  y notificar a Groofi al momento de presentar el proyecto."
+
+msgid "PAYPAL_CHARGES_COMISSION_CONCEPT"
+msgstr "Sí, Paypal toma de comisión del 3,9%, más 0,30 dólares EE.UU. por transacción, por lo que un total del 7,8%, más 0,60 dólares EE.UU., debido a que el dinero va a la cuenta del respaldo a la cuenta Groofi a la cuenta del propietario del proyecto (si el proyecto tiene éxito ) y va desde la cuenta del respaldo a la cuenta Groofi y de nuevo a la cuenta del patrocinador, si el proyecto tiene éxito."
+
+msgid "PAYPAL_CHARGES_COMISSION"
+msgstr "¿PayPal cobra una comisión?"
+
+msgid "FAQ"
+msgstr "Preguntas Frecuentes"
+
+msgid "GENERAL_QUESTIONS1"
+msgstr "Preguntas Generales"
+
+msgid "CREATING_A_PROJECT"
+msgstr "Creando un Proyecto"
+
+msgid "SUPPORTING_A_PROJECT"
+msgstr "Apoyando un Proyecto"
+
+msgid "HOW_CREATE_A_PROJECT"
+msgstr "¿Cómo creo un Proyecto?"
+
+msgid "HOW_CREATE_A_PROJECT_CONCEPT"
+msgstr "La creación de proyectos consta de dos etapas. En la primera, deberás completar un formulario con información acerca de tu propuesta de proyecto. Ésta será evaluada por nuestro staff y recibirás por e-mail, en no más de 48 horas, una respuesta en la que se te informará si tu propuesta ha sido aprobada o qué le falta para ello. En caso de que tu propuesta resulte aprobada, en una segunda etapa, podrás ingresar a tu proyecto, editarlo y terminar de completarlo. Una vez que sientas que está listo para ser visto por los demás usuarios y comenzar la recaudación de fondos, podrás lanzarlo."
+
+msgid "MERCADOPAGO_CHARGES_COMISSION"
+msgstr "¿MercadoPago cobra una comisión?"
+
+msgid "MERCADOPAGO_CHARGES_COMISSION_CONCEPT"
+msgstr "Sí, cobra una comisión de transacción del 5.99%."
+
+msgid "IMPLICATE_FOLLOW_PROJECT"
+msgstr "¿Qué implica estar "siguiendo" un proyecto?"
+
+msgid "IMPLICATE_FOLLOW_PROJECT_CONCEPT"
+msgstr "Los seguidores son usuarios interesados en mantenerse informadas sobre un proyecto. En su feed de "Novedades" recibirán las actualizaciones y últimas noticias de los proyectos que siguen."
+
+msgid "WHO_CREATE_PROJECTS"
+msgstr "¿Quiénes pueden crear proyectos?"
+
+msgid "WHO_CREATE_PROJECTS_CONCEPT"
+msgstr "Todos los usuarios registrados que tengan una buena idea, puedan realizarla y necesiten fondos para ello. Las categorías contempladas para los proyectos son las siguientes: arte, arquitectura, campañas solidarias, cine & video, cocina, danza, deportes, desafíos, diseño, juegos, libros & literatura, moda, música, teatro y tecnología."
+
+msgid "PAY_TO_PUBLISH_A_PROJECT"
+msgstr "¿Hay que pagar por publicar un proyecto?"
+
+msgid "PAY_TO_PUBLISH_A_PROJECT_CONCEPT"
+msgstr "No! Publicar un proyecto es gratuito, pero el mismo será aprobado por Groofi previo a su publicación."
+
+msgid "HAVE_ACCOUNT_IN_PAYPAL_MERCADO"
+msgstr "¿Debo tener una cuenta de PayPal/MercadoPago para poder cobrar lo recaudado por mi proyecto?"
+
+msgid "HAVE_ACCOUNT_IN_PAYPAL_MERCADO_CONCEPT"
+msgstr "Sí, es imprescindible que tengas una cuenta de PayPal o MercadoPago. Antes de crear tu proyecto, deberás también crear una cuenta en estos servicios."
+
+msgid "CREATE_YOUR_PROJECT"
+msgstr "Crea tu Proyecto"
+
+msgid "BENEFITS_REWARDS"
+msgstr "Beneficios y Recompensas"
+
+msgid "BENEFISTS_FOR_PEOPLE"
+msgstr "Beneficios para Personas"
+
+msgid "CORPORATE_BENEFIST"
+msgstr "Beneficios para Empresas"
+
+msgid "TIME_OF_PROJECT"
+msgstr "7 días"
+
+msgid "PROCEEDS_I_RECEIVE"
+msgstr "¿Cómo recibo los fondos recaudados?"
+
+msgid "PROCEEDS_I_RECEIVE_CONCEPT"
+msgstr "Fondos recibidos a través de Paypal o MercadoPago: El dinero se acumula en la cuenta de Paypal o MercadoPago de Groofi a cuenta del creador, pero que será administrada por Groofi hasta el cumplimiento del plazo de recaudación. En caso de que el proyecto sea exitoso, Paypal o MercadoPago y Groofi cobrarán su comisión. Groofi retendrá los fondos durante 10 días hábiles, a partir del cumplimiento del plazo de recaudación. Vencido ese plazo, el creador podrá disponer de los fondos recaudados, netos de las comisiones. En caso de que el proyecto sea exitoso, el creador deberá abrir su propia cuenta Paypal o MercadoPago para poder recibir los fondos recaudados en los términos y condiciones que Paypal o MercadoPago determinen para cada país en particular."
+
+msgid "PROJECT_IS_NOT_SUCCESSFUL"
+msgstr "¿Qué pasa si el proyecto no es exitoso?"
+
+msgid "PROJECT_IS_NOT_SUCCESSFUL_CONCEPT"
+msgstr "Si el proyecto no es exitoso porque no se llega a la meta del financiamiento en el plazo indicado, se le devuelven los fondos invertidos por los patrocinadores (menos los costos de Paypal/MercadoPago). En este caso groofi no cobra su comisión y si no se alcanza el objetivo, tampoco hay costo alguno para los creadores."
+
+msgid "HOW_SPONSOR_MY_PROJECT_USERS"
+msgstr "¿Cómo logro que otros usuarios patrocinen mi proyecto?"
+
+msgid "HOW_SPONSOR_MY_PROJECT_USERS_CONCEPT"
+msgstr "Lo más importante es tener una buena idea, saber transmitirla y por sobre todo, VENDER LA IDEA a tu circulo de amigos y familiares. Todo suma: un buen título, una descripción completa, un video en el que le hables a tus futuros patrocinadores, les cuentes sobre tu proyecto y sobre otros que hayas realizado. Recuerda que la imagen que das es muy importante para transmitir confianza y convencer a los patrocinadores. La otra clave es ofrecer beneficios atractivos, acordes al aporte. Muchos patrocinadores sólo están interesados en recibir algo a cambio."
+
+msgid "HOW_SPREAD_MY_PROJECT"
+msgstr "¿Cómo puedo difundir mi proyecto?"
+
+msgid "HOW_SPREAD_MY_PROJECT_CONCEPT"
+msgstr "Es indispensable que difundas tu proyecto o cualquier otro en redes sociales como Facebook, Twitter o Google+ haciendo clic en el botón "Quiero difundir esto" que se encuentra en la pantalla de cada proyecto. También te recomendamos que envíes el link del proyecto a todos tus contactos por mail."
+
+msgid "MY_PROJECT_ACHIEVED_THE REQUIRED FUNDS"
+msgstr "¿Qué ocurre si termina el tiempo y mi proyecto alcanzó los fondos requeridos?"
+
+msgid "MY_PROJECT_ACHIEVED_THE REQUIRED FUNDS_CONCEPT"
+msgstr "Si al finalizar el tiempo tu proyecto alcanza los fondos requeridos, entonces será financiado con los aportes de tus patrocinadores y te giramos el dinero que recaudaste, menos la comision de Groofi."
+
+msgid "PROJECTS_CAN_RAISE_MORE_MONEY"
+msgstr "¿Los proyectos pueden recaudar más dinero que el requerido?"
+
+msgid "PROJECTS_CAN_RAISE_MORE_MONEY_CONCEPT"
+msgstr "Sí, no hay límites para la recaudación de fondos."
+
+msgid "PROJECT_PROPOSAL_ONCE_APPROVED"
+msgstr "¿Puedo modificar mi propuesta de proyecto una vez aprobada?"
+
+msgid "PROJECT_PROPOSAL_ONCE_APPROVED_CONCEPT"
+msgstr "¿Puedo modificar mi propuesta de proyecto una vez aprobada?"
+
+msgid "MODIFY_MY_PROJECT_BEFORE_LAUNCHING"
+msgstr "¿Puedo modificar mi proyecto antes de lanzarlo?"
+
+msgid "MODIFY_MY_PROJECT_BEFORE_LAUNCHING_CONCEPT"
+msgstr "Sí, puedes editarlo cuantas veces quieras antes de lanzarlo. Sin embargo, hay ciertos campos (título, categoría y descripción breve) que no podrán ser modificados para mantener la idea original aprobada en la propuesta."
+
+msgid "MODIFY_MY_PROJECT_ONCE_LAUNCHED"
+msgstr "¿Puedo modificar mi proyecto una vez lanzado?"
+
+msgid "MODIFY_MY_PROJECT_ONCE_LAUNCHED_CONCEPT"
+msgstr "No, una vez lanzado tu proyecto se vuelve público y otros usuarios pueden comenzar a hacer sus aportes, por lo que no puede modificarse más."
+
+msgid "REMOVE_MY_PROJECT_ONCE_LAUNCHED"
+msgstr "¿Puedo eliminar mi proyecto una vez lanzado?"
+
+msgid  "REMOVE_MY_PROJECT_ONCE_LAUNCHED_CONCEPT"
+msgstr "No, una vez lanzado tu proyecto ya has comprometido a otros usuarios en él y no podrás eliminarlo."
+
+msgid "INFORM_USERS_ABOUT_UPDATES_TO_MY_PROJECT"
+msgstr "¿Cómo hago para informar a los usuarios sobre novedades de mi proyecto?"
+
+msgid "INFORM_USERS_ABOUT_UPDATES_TO_MY_PROJECT_CONCEPT"
+msgstr "Para mantener al tanto a tus patrocinadores y seguidores de las novedades de tu proyecto, puedes agregar actualizaciones. Las actualizaciones funcionan como un blog interno de tu proyecto en el que puedes contar avances, subir fotos, videos y noticias."
+
+msgid "SEND_DATA_SPONSORS_ONCE_MY_PROJECT_HAS_BEEN_FUNDED"
+msgstr "¿Cómo hago para enviar los beneficios elegidos por los patrocinadores una vez que mi proyecto haya sido financiado? "
+
+msgid "SEND_DATA_SPONSORS_ONCE_MY_PROJECT_HAS_BEEN_FUNDED_CONCEPT"
+msgstr "Si tu proyecto alcanza los fondos requeridos en el tiempo fijado, deberás ponerte en contacto con tus patrocinadores para enviarles los beneficios elegidos. Nosotros te proporcionaremos sus datos de contacto. "
+
+msgid "WILL_NOT_STEAL_THE_IDEA_FOR_MY_PROJECT"
+msgstr "¿Cómo me aseguro de que no van a robar la idea de mi proyecto?"
+
+msgid "WILL_NOT_STEAL_THE_IDEA_FOR_MY_PROJECT_CONCEPT"
+msgstr "Creemos que para que un proyecto se haga realidad, tan importante como la idea, es la ejecución de la misma y saber vender la misma a quienes ponen el dinero para financiar la misma. Para eso sirve Groofi.com, para hacer las ideas y proyectos realidad mediante la difusión de las mismas. La mejor manera de proteger una idea es haciéndola y haciéndola bien. De cualquier manera, si quieres estar seguro, puedes tomar las acciones que consideres necesarias para proteger tus derechos de propiedad intelectual. "
+
+msgid "WHAT_CURRENCIES_I_CAN_MAKE_MY_PROJECTS"
+msgstr "¿En qué monedas puedo realizar mis proyectos? "
+
+msgid "WHAT_CURRENCIES_I_CAN_MAKE_MY_PROJECTS_CONCEPT"
+msgstr "Actualmente puedes realizar tus proyectos en Dólares Estadounidenses (USD) y Pesos Argentinos (ARS), proximamente además en Libras Esterlinas (GBP), Euros (EUR), o Reales Brasileños (BRL). "
+
+msgid "WHY_SPONSOR_PROJECTS"
+msgstr "¿Por qué patrocinar proyectos?"
+
+msgid "WHY_SPONSOR_PROJECTS_CONCEPT"
+msgstr "Además de contribuir a que proyectos interesantes, innovadores, originales o divertidos se hagan realidad, podrás acceder a algún tipo de beneficio exclusivo relacionado con el proyecto. Si patrocinas una película, podrás recibir el DVD antes que nadie. Si patrocinas un invento, serás el primero en tenerlo una vez producido."
+
+msgid "WHO_ARE_SPONSORS_OF_PROJECTS_AND_WHY_SPONSOR_PROJECTS"
+msgstr "¿Quienes son los patrocinadores de los proyectos y por que patrocinan los proyectos?"
+
+msgid "WHO_ARE_SPONSORS_OF_PROJECTS_AND_WHY_SPONSOR_PROJECTS_CONCEPT"
+msgstr "Los patrocinadores en Groofi pueden ser personas o empresas, por lo tanto es muy importante cuando se definen los beneficios que la persona estime bien quien es su mercado potencial y definir los beneficios que va a entregar a cambio de cada nivel de patrocinio / donacion. Nos referimos a que el "precio" de los beneficios debe ser bien definido acorde al beneficio entregado para que el proyecto sea exitoso. Las personas generalmente van a estar mayormente interesadas en recibir a cambio cosas, servicios o productos y las empresas generalmente van a estar interesadas en publicidad de una marca especifica de un producto o servicio o branding corporativo"
+
+msgid "WHAT_IF_THE_PROJECT_IS_NOT_SUCCESSFUL"
+msgstr "¿Qué pasa si el proyecto no es exitoso?"
+
+msgid "WHAT_IF_THE_PROJECT_IS_NOT_SUCCESSFUL_CONCEPT"
+msgstr "Si el proyecto no es exitoso porque no se llega a la meta del financiamiento en el plazo indicado, se le devuelven los fondos invertidos por los patrocinadores (menos los costos de Paypal). En este caso groofi no cobra su comisión y si no se alcanza el objetivo, tampoco hay costo alguno para los creadores."
+
+msgid "HOW_TO_SPONSOR_A_PROJECT"
+msgstr "¿Cómo patrocino un proyecto?"
+
+msgid "HOW_TO_SPONSOR_A_PROJECT_CONCEPT"
+msgstr "Para patrocinar un proyecto deberás hacer clic en el botón "Quiero patrocinar" de la pantalla del proyecto o hacer clic sobre el beneficio que te interese. Una vez confirmado tu aporte y elegido el beneficio, serás dirigido a tu cuenta de PayPal para finalizar el proceso."
+
+msgid "WHAT_ARE_THE_BENEFITS"
+msgstr "¿Qué son los beneficios?"
+
+msgid "WHAT_ARE_THE_BENEFITS_CONCEPT"
+msgstr "Los beneficios son las recompensas que los creadores de los proyectos tienen preparadas para los patrocinadores, de acuerdo al monto de su aporte. Generalmente son premios exclusivos vinculados al proyecto."
+
+msgid "PUBLISH_MY_CONTRIBUTION"
+msgstr "¿Se publicará el monto de mi aporte?"
+
+msgid "PUBLISH_MY_CONTRIBUTION_CONCEPT"
+msgstr "No, no se publicará el monto de tu aporte. Sólo aparecerás entre los patrocinadores del proyecto."
+
+msgid "INFORMATION_FOR_SPONSORS"
+msgstr "¿Qué información recibe el creador del proyecto sobre los patrocinadores?"
+
+msgid "INFORMATION_FOR_SPONSORS_CONCEPT"
+msgstr "El creador del proyecto sólo recibirá tu nombre de usuario. En caso de que el proyecto sea financiado exitosamente, se le enviará también tu e-mail para que pueda contactarse y enviarte el beneficio elegido."
+
+msgid "HOW_DO_I_COLLECT_MY_REWARDS"
+msgstr "Come faccio ad avere il beneficio scelto?"
+
+msgid "HOW_DO_I_COLLECT_MY_REWARDS_CONCEPT"
+msgstr "Se il progetto diventa patrocinaste finanziato, il suo creatore riceverà le informazioni necessarie per contattare l'utente e inviare il beneficio prescelto."
+
+msgid "CAN_TRUST_CREATORS"
+msgstr "¿Puedo confiar en los creadores de proyectos?"
+
+msgid "CAN_TRUST_CREATORS_CONCEPT"
+msgstr "Nuestro staff de moderadores evalúa los proyectos para garantizar su calidad. Sin embargo, Groofi no es más que un intermediario entre los creadores y los patrocinadores. Es tu responsabilidad evaluar la confiabilidad y viabilidad de los proyectos antes de realizar tu aporte. En caso de tener sospechas acerca de un proyecto o usuario, podrás denunciarlo y será examinado por nuestro equipo."
+
+msgid "THE_GUIDE_OF_PROJECT"
+msgstr "La guía para armar tu proyecto"
+
+msgid "STEP_1"
+msgstr "Paso 1"
+
+msgid "STEP_2"
+msgstr "Paso 2"
+
+msgid "STEP_3"
+msgstr "Paso 3"
+
+msgid "STEP_4"
+msgstr "Paso 4"
+
+msgid "STEP_5"
+msgstr "Paso 5"
+
+msgid "STEP_6"
+msgstr "Paso 6"
+
+msgid "STEP_7"
+msgstr "Paso 7"
+
+msgid "STEP_8"
+msgstr "Paso 8"
+
+msgid "DEFINE_YOUR_PROJECT"
+msgstr "Define tu Proyecto"
+
+msgid "DEFINE_YOUR_PROJECT_CONCEPT"
+msgstr "Ya sea un libro, un film, o un invento, la característica particular que comparten todas las campañas de Groofi es que son un proyecto. Definir qué es tu proyecto es el primer paso para cualquier creador."
+
+msgid "DEFINE_YOUR_PROJECT_CONCEPT_1"
+msgstr "Para qué estás recaudando fondos? Tener un proyecto bien definido, con un comienzo y final claros es vital. Por ejemplo: grabar un nuevo disco es un proyecto finito - el proyecto finaliza en el momento que la banda lanza su disco - pero lanzar una carrera en el mundo de la música no lo es. No hay final, sino un esfuerzo constante. Groofi únicamente acepta proyectos finitos."
+
+msgid "DEFINE_YOUR_PROJECT_CONCEPT_2"
+msgstr "Con un objetivo definido en detalle, as expectativas son transparentes tanto para el creador como para los potenciales patrocinadores. Los patrocinadores pueden juzgar qué tan alcanzables las metas del proyecto son, así como la capacidad del creador del proyecto para su realización. Además, para los creadores, la práctica de definir los objetivos del proyecto establece el alcance del emprendimiento, un paso importante en el proceso creativo."
+
+msgid "DEFINE_YOUR_PROJECT_CONCEPT_3"
+msgstr "Groofi se nutre de estos intercambios abiertos y explicaciones claras de los objetivos. Asegúrense de que su proyecto cumple con esto!"
+
+msgid "DEFINE_YOUR_PROJECT_CONCEPT_4"
+msgstr "Si no estás seguro si tu proyecto se alínea con el marco de Groofi, te recomendamos leer nuestro FAQ en detalle. "
+
+msgid "CREATE_AWARDS"
+msgstr "Crea Recompensas"
+
+msgid "CREATE_AWARDS_1"
+msgstr "Las recompensas son lo que los patrocinadores reciben a cambio de comprometerse y aportar a un proyecto. Es muy important que las recompensas sean creativas, tangibles, y de un valor justo. Los proyectos con recompensas sobrevaluadas o sin inspiración raramente consiguen apoyo. "
+
+msgid "CREATE_AWARDS_2"
+msgstr "Decidir qué ofrecer"
+
+msgid "CREATE_AWARDS_3"
+msgstr "Todas las recompensas principales de un proyecto deben ser generadas por el mismo proyecto. Si el proyecto es grabar un disco, entonces las recompensas deberían incluir una copia del CD cuando éste se realice. Las recompensas le aseguran a los patrocinadores que ellos van a ser beneficiados por el proyecto de la misma manera que el creador (por ejemplo, consiguen cosas interesantes que ellos mismos ayudaron a producir!). "
+
+msgid "CREATE_AWARDS_4"
+msgstr "Hay cuatro tipos de recompensas típicas que podemos ver en Groofi: "
+
+msgid "CREATE_AWARDS_5"
+msgstr "Copias de lo producido: el disco, DVD, o un poster del show. Estos artículos deberían ser valuados al mismo precio o menor que el costo que tendría a nivel minorista."
+
+msgid "CREATE_AWARDS_6"
+msgstr "Colaboraciones creativas: un patrocinador aparece como un personaje dentro de un cómic, todos son pintados como parte de un mural, dos patrocinadores hacen los aplausos de fondo para cierta canción del disco, etc."
+
+msgid "CREATE_AWARDS_7"
+msgstr "Experiencias creativas: una visita para conocer el set, un llamado telefónico del autor, una cena con el elenco, un concierto privado en tu jardín, etc."
+
+msgid "CREATE_AWARDS_8"
+msgstr "Momentos creativos: fotos Polaroid enviadas desde la locación de grabación, agradecimientos en los créditos, artículos interesantes que hablen de la historia del proyecto, etc."
+
+msgid "CREATE_AWARDS_9"
+msgstr "Definir la Escala de Recompensas"
+
+msgid "CREATE_AWARDS_10"
+msgstr "Aunque en Groofi también apoyamos proyectos caritativos, nos focalizamos en intercambios que sean una mezcla entre comercio y mecenazgo, y los números así lo corroboran. Es importante darle énfasis a las recompensas pequeñas, para los patrocinadores individuales o pequeños - y también a las recompensas de mayor tampaño, para poder así atraer a potenciales grandes sponsors. "
+
+msgid "CREATE_AWARDS_11"
+msgstr "Entonces, qué funciona? Hay que encararlo por dos ángulos diferentes, pero siempre lo importante es ofrecer algo que tenga valor. En el caso de las recompensas para los patrocinadores individuales, el valor se define por mucho más que el "precio minorista" de un producto. Si algo es de edición limitada, o es una experiencia única, hay mucha mayor flexibilidad basada en tu audiencia. Pero si la recompensa es un producto manufacturado, en ese caso es una buena idea mantenerse algo debajo del precio que tendría en la calle. Por otro lado, cuando definimos las recompensas para grandes patrocinadores del mercado corporativo tenemos que pensar en qué tipo de promoción podemos ofrecerle a una empresa, qué le sería atractivo a un gerente de marketing - básicamente tenemos que ver de que manera nuestro proyecto puede ser un potencial vehículo de la promoción, posicionamiento, y marketing de una marca. "
+
+msgid "CREATE_AWARDS_12"
+msgstr "No hay varita mágica, y le recomendamos a todos los proyectos que sean lo más creativos y fieles a sí mismos. Es cuesitón de ponerse en el lugar del patrocinador: pagarías por las recompensas que ofrecés? La respuesta a esa pregunta te dirá mucho sobre el potencial de tu proyecto. "
+
+msgid "SET_YOUR_GOAL"
+msgstr "Fija tu Meta"
+
+msgid "SET_YOUR_GOAL_1"
+msgstr "Groofi trabaja con un modelo de financiamiento "todo-o-nada", donde los proyectos deben ser financiados en su totalidad o el dinero no cambia de manos. Los proyectos deben establecer un objetivo de financiamiento y un periodo de tiempo para llegar al mismo. No hay ninguna fórmula mágina para determinar el monto o duración perfectos. Cada proyecto es diferente, pero hay algunas cosas para tener en cuenta. "
+
+msgid "SET_YOUR_GOAL_2"
+msgstr "Investiga tu Presupuesto"
+
+msgid "SET_YOUR_GOAL_3"
+msgstr "Cuando dinero necesitas? Estás recaudando el presupuesto completo, o sólo parte? Estás considerando el costo de producción de las recompensas en el presupuesto? Ahorrate dolores de cabeza haciendo un buen estudio de tu presupuesto, y se lo más transparente posible. Tus patrocinadores te lo agradecerán. "
+
+msgid "SET_YOUR_GOAL_4"
+msgstr "Ten en cuenta tus redes"
+
+msgid "SET_YOUR_GOAL_5"
+msgstr "Groofi no es una fuente mágica de dinero. Los fondos provienen de una variedad de lugares - tu audiencia, tus amigos y familiares, tus redes sociales más amplias, y, si tu proyecto es exitoso, desconocidos de la web. Es tu responsabilidad generar ese empuje para tu proyecto. "
+
+msgid "SET_YOUR_GOAL_6"
+msgstr "Escoje tu Meta"
+
+msgid "SET_YOUR_GOAL_7"
+msgstr "Una vez investigado tu presupuesto y considerado tu alcance, ya estás listo para definir tu meta de financiamiento. Ya que el sistema es "todo-o-nada", siempre se puede recaudar más allá del objetivo determinado, pero nunca menos. Calcula cuanto dinero necesitas para completar tu proyecto (obviamente teniendo en cuenta cuantos fondos puedes generar), y selecciona un monto cercano a eso."
+
+msgid "SET_YOUR_GOAL_8"
+msgstr "Define la fecha límite de tu proyecto"
+
+msgid "SET_YOUR_GOAL_9"
+msgstr "Los proyectos pueden durar entre 7 y 365 días, sin embargo, que la duración del mismo sea mayor no es necesariamente mejor. Llevar adelante un proyecto en Groofi implica compromiso, y una fecha límite más tangible comunica confianza y ayuda a motivar a los posibles patrocinadores. Proyectos con mayor duración transmiten menor urgencia, pierden empuje, y tienden a esfumarse. "
+
+msgid "GO_UP"
+msgstr "Subir"
+
+msgid "MAKING_YOUR_VIDEO"
+msgstr "Cómo hacer tu video"
+
+msgid "MAKING_YOUR_VIDEO_1"
+msgstr "Si eres como nosotros, lo primero que debes hacer al ingresar a un proyecto es ver el video. Un video es por lejos la mejor manera de tener una idea de las emociones, motivaciones, y el carácter del proyecto. Es una demostración de esfuerzo y un buen predictor del éxito. Los proyectos que incluyen un video tienen mucha mayor posibilidad de conseguir fondos que los que no lo tienen. "
+
+msgid "MAKING_YOUR_VIDEO_2"
+msgstr "Sabemos que hacer un video puede ser intimidante. A no muchos de nosotros nos gusta estar frente a una cámara. Por otro lado, también sabemos que hacer un video es un reto que realmente vale la pena asumir. Esto transmite que tu proyecto te importa lo suficiente como para exponerte. Es un pequeño riesgo con una gran recompensa. "
+
+msgid "MAKING_YOUR_VIDEO_3"
+msgstr "Con sólo una computadora y entusiasmo es suficiente. Algunos video son grandes montajes y otros incluyen tomas largas y épicas, pero la mayoría de los videos son solamente alguien contando su historia frente a una cámara. Podés estar días grabando y editando, o simplemente despacharlo con un par de amigos una tarde de sábado. No tiene por qué ser perfecto, tiene que comunicarte a vos."
+
+msgid "MAKING_YOUR_VIDEO_4"
+msgstr "Sin importar lo creativo o simple que sea tu video, es importante: "
+
+msgid "MAKING_YOUR_VIDEO_5"
+msgstr "Contar quién eres"
+
+msgid "MAKING_YOUR_VIDEO_6"
+msgstr "Contar la historia detrás de tu proyecto. De dónde salió la idea? En qué etapa está? Cómo te sentis sobre el proyecto?"
+
+msgid "MAKING_YOUR_VIDEO_7"
+msgstr "Pedir el apoyo de la gente, explicando por qué lo necesitas, y qué estarás haciendo con el dinero"
+
+msgid "MAKING_YOUR_VIDEO_8"
+msgstr "Explica lo espectaculares que tus recompensas son, utilizando las imágenes que puedas"
+
+msgid "MAKING_YOUR_VIDEO_9"
+msgstr "Explica que si no llegas a tu objetivo, no conseguirás nada, y todo el mundo estará triste"
+
+msgid "MAKING_YOUR_VIDEO_10"
+msgstr "Saluda y agradece a todos!"
+
+msgid "MAKING_YOUR_VIDEO_11"
+msgstr "Y no tengas miedo de poner tu cara frente a la cámara y mostrar a tus patrocinadores a quién le estarán dando dinero. Presentarse y exponerse es algo realmente importante para transmitir confianza. "
+
+msgid "MAKING_YOUR_VIDEO_12"
+msgstr "Un detalle importante a tener en cuenta: no utilicen música registrada en sus videos si no tienen permiso! Los juicios nunca son divertidos. "
+
+msgid "MAKING_YOUR_VIDEO_13"
+msgstr "Con respecto al formato - nosotros personalmente recomendamos los suban a Vimeo, pero con que los tengan disponibles en Vimeo o YouTube, será suficiente. "
+
+msgid "TERMS_CONDITIONS"
+msgstr "Términos y Condiciones"
+
+msgid "ARM_YOUR_PROJECT"
+msgstr "Armar tu Proyecto"
+
+msgid "ARM_YOUR_PROJECT_1"
+msgstr "Tomate tu tiempo para armar tu proyecto! Los proyectos generalmente tardan entre una y dos semanas para estar listos para ser publicados. Un enfoque detallista y metódico puede ser muy beneficioso. "
+
+msgid "ARM_YOUR_PROJECT_2"
+msgstr "Definir el título de tu proyecto"
+
+msgid "ARM_YOUR_PROJECT_3"
+msgstr "El titulo de to proyecto en Groofi debe ser sencillo, específico y memorable, y debería incluir el título del proyecto creativo para el cual se están recaudando los fondos. Imaginen a este título como algo que los va a diferenciar de los demás - un título como "Mi nuevo disco" no es tan memorable o interesante como "La Banda Deluxor graba su disco debut, TODO O NADA!". "
+
+msgid "ARM_YOUR_PROJECT_4"
+msgstr "Elegir la imágen principal de tu proyecto"
+
+msgid "ARM_YOUR_PROJECT_5"
+msgstr "La imagen que selecciones será el representante de tu proyecto en Groofi y por toda internet. Selecciona algo que releje tus objetivos y sea atractivo!"
+
+msgid "ARM_YOUR_PROJECT_6"
+msgstr "Escribir una descripción corta"
+
+msgid "ARM_YOUR_PROJECT_7"
+msgstr "La descripción corta aparece en los listados de proyectos, y es la mejor manera de comunicarle a tu público de qué se trata tu proyecto. Hay que mantenerse enfocado y ser claro en qué espera lograr el proyecto. Si tuvieras que describir tu proyecto en un sólo tweet, cómo lo harías? "
+
+msgid "ARM_YOUR_PROJECT_8"
+msgstr "Escribir tu biografía"
+
+msgid "ARM_YOUR_PROJECT_9"
+msgstr "Tu bio es una excelente oportunidad para compartir más sobre vos. Por qué sos el elegido para llevar adelante este proyecto? Algún trabajo anterior que puedas compartir con tus potenciales patrocinadores? Esta es la clave para ganar su confianza. "
+
+msgid "PROMOTING_YOUR_PROJECT"
+msgstr "Promoción de tu Proyecto"
+
+msgid "PROMOTING_YOUR_PROJECT_1"
+msgstr "Un proyecto excepcional puede generar cantidades enormes de apoyo desde todos lados de la web, pero para la mayoría de los proyectos, el proyecto viene de sus propias redes sociales, y de las redes de sus redes. Si queres que la gente respalde tu proyecto, tenes que compartirlo con ellos. Más de una vez! Y en una variedad de formas! "
+
+msgid "PROMOTING_YOUR_PROJECT_2"
+msgstr "De la siguiente manera: "
+
+msgid "PROMOTING_YOUR_PROJECT_3"
+msgstr "Alcance Inteligente"
+
+msgid "PROMOTING_YOUR_PROJECT_4"
+msgstr "Un mensaje agradable, y personal es la forma más efectiva de hacerle saber a alguien acerca de tu proyecto. Envíale un mail a tus amigos y familiares para que puedan ser los primeros en apoyarte, y luego utiliza tu blog, Facebook, Twitter, y demás para atraer la atención de todo el mundo. Durante el transcurso del proyecto vuelve a contactar a tus circulos cercanos y comparte nuevamente con ellos tu iniciativa. "
+
+msgid "PROMOTING_YOUR_PROJECT_5"
+msgstr "Organizar Reuniones"
+
+msgid "PROMOTING_YOUR_PROJECT_6"
+msgstr "No tengas miedo de llevar tu proyecto de Groofi al mundo real. Nada conecta más a la gente con una idea que ver ese brillo en tus ojos cuando hablas de tu proyecto. Organiza fiestas, imprime posters o flyers para distribuir en tu comunidad, y organiza reuniones para educar a la gente sobre los detalles de tu proyecto. Se creativo! "
+
+msgid "PROMOTING_YOUR_PROJECT_7"
+msgstr "Detengan la prensa!"
+
+msgid "PROMOTING_YOUR_PROJECT_8"
+msgstr "Contacta tu diario, estaciones de televisión y radio locales para contarles sobre tu proyecto. Busca blogs y medios de comunicación que estén alineados con tus objetivos para solicitar cobertura. Los escritores y editores siempre están buscando historias sobre las que escribir y reportar, y los medios de comunicación tienen un aprecio especial por las historias de individuos llevando adelante proyectos exitosos. "
+
+msgid "PROMOTING_YOUR_PROJECT_9"
+msgstr "No hagas spam"
+
+msgid "PROMOTING_YOUR_PROJECT_10"
+msgstr "Sea cual sea el canal de promoción que decidas utilizar, no hagas spam. Generalmente el resultado de hacer spam termina siendo el opuesto al buscado, transformando a tu proyecto en no más que una molestia para todo el mundo. No lo hagas! "
+
+msgid "UPDATING_YOUR_PROJECT"
+msgstr "Actualización de tu Proyecto"
+
+msgid "UPDATING_YOUR_PROJECT_1"
+msgstr "Las actualizaciones de tu proyecto sirven como un "blog" del mismo. Son una excelente forma de compartir tu progreso, publicar nuevo contenido, y agradecer a tus patrocinadores. Publicar una actualización de tu proyecto automáticamente le envía un mail a todos tus patrocinadores con las novedades. "
+
+msgid "UPDATING_YOUR_PROJECT_2"
+msgstr "Traccionar"
+
+msgid "UPDATING_YOUR_PROJECT_3"
+msgstr "Mientras tu proyecto esté activo y el tiempo vaya avanzando, mantén a tus patrocinadores informados e inspirados para que te ayuden a difundir tu proyecto. En vez de publicar un link a tu proyecto y pedirle a todo el mundo que aporte diariamente, trata a tu proyecto como una historia que se va desarrollando y mantén a todo el mundo al tanto de su progreso. "Algunas fotos del show de anoche!" o "Encontramos un editor para nuestro libro!" seguidos de un link al proyecto son formas mucho más atractivas para generar interés. "
+
+msgid "UPDATING_YOUR_PROJECT_4"
+msgstr "Compartir el Proceso"
+
+msgid "UPDATING_YOUR_PROJECT_5"
+msgstr "Una vez que el proyecto sea financiado con éxito, no hay que olvidarse de todas las personas que lo hicieron posible. Deja que los patrocinadores y el público vean como tu proyecto cobra vida compartiendo las decisiones que tomas con ellos, comentando cómo se siente que tus objetivos se hagan realidad, y hasta pidiéndoles su opinión. Mantener a los patrocinadores informados y comprometidos es una parte esencial de Groofi. "
+
+msgid "UPDATING_YOUR_PROJECT_6"
+msgstr "Celebrando el éxito"
+
+msgid "UPDATING_YOUR_PROJECT_7"
+msgstr "Compartir opiniones, prensa, y fotos de tu proyecto con el mundo - ya sea la noche del lanzamiento de tu obra, o tu libro en el mostrador de un negocio - es genial para todos los involucrados. La historia de tu proyecto no termina en el momento que lo presentas. Todavía tienes un público cautivado que está de tu lado. Comunicarse con ellos puede ser una de las partes más gratificantes de todo el proceso. "
+
+msgid "COMPLY_WITH_REWARDS"
+msgstr "Cumplir con las Recompensas"
+
+msgid "COMPLY_WITH_REWARDS_1"
+msgstr "Una vez completado tu proyecto, el punto final crucial es cumplir tus promesas y recompensas con tus patrocinadores. Enviar todas esas recompensas puede parecer abrumador, pero mantenerse organizado y divertirse con el proceso lo harán todo mucho más interesante. "
+
+msgid "COMPLY_WITH_REWARDS_2"
+msgstr "Obtener datos de tus Patrocinadores"
+
+msgid "COMPLY_WITH_REWARDS_3"
+msgstr "No te preocupes de conseguir esta información hasta que tu iproyecto haya sido financiado con éxito. En el momento que esto suceda, Groofi te facilitará toda la información necesaria."
+
+msgid "COMPLY_WITH_REWARDS_4"
+msgstr "Planificar"
+
+msgid "COMPLY_WITH_REWARDS_5"
+msgstr "No te olvides de todos los pequeños gastos involucrados con enviar las recompensas, desde las cajas, envoltorios, cinta adhesiva, etiquetas, hasta gastos más... "emocionales"... como el tener que llenar 100 formularios de correo. Es importante también aclarar dentro del proyecto si el costo de envío de las recompensas irá por cargo del creador del proyecto, o el patrocinador."
+
+msgid "COMPLY_WITH_REWARDS_6"
+msgstr "Comunicación!"
+
+msgid "COMPLY_WITH_REWARDS_7"
+msgstr "El cumplimiento del proyecto puede no ser el momento más poético del mismo, pero es importante, ya que significa entregar tu proyecto en manos de tus patrocinadores. Saca fotos del proceso de empacar las recompensas -¡a todos nos encantan las fotos!-. Comparte las historias de horror del trato con el correo. Pídeles a tus patrocinadores que te notifiquen cuando reciben sus paquetes. Invita a tus amigos a tomar unas copas de vino y encintar paquetes. Aprecia lo que son los últimos momentos de la primera etapa de la vida de tu proyecto! "
+
+msgid "DELETE"
+msgstr "Borrar"
+
+msgid "PENDING_APPROVAL"
+msgstr "Pendiente de Aprobación"
+
+msgid "COMOFUNCIONA1"
+msgstr "Una idea comienza"
+
+msgid "COMOFUNCIONA1_1"
+msgstr "a tomar forma"
+
+msgid "COMOFUNCIONA1_2"
+msgstr "Mediante la publicación de un proyecto en Groofi,"
+
+msgid "COMOFUNCIONA1_3"
+msgstr "los dueños de los proyectos pueden financiar de"
+
+msgid "COMOFUNCIONA1_4"
+msgstr "manera alternativa sus proyectos e ideas mediante"
+
+msgid "COMOFUNCIONA1_5"
+msgstr "la pre-venta de los productos y/o servicios que"
+
+msgid "COMOFUNCIONA1_6"
+msgstr "piensan desarrollar, y asi hacerlos realidad."
+
+msgid "COMOFUNCIONA2"
+msgstr ""Crowdfunding""
+
+msgid "COMOFUNCIONA2_1"
+msgstr "o financiamiento colectivo"
+
+msgid "COMOFUNCIONA2_2"
+msgstr "El financiamiento se logra la sumatoria de"
+
+msgid "COMOFUNCIONA2_3"
+msgstr "mini-donaciones de dinero(o no tanto:))"
+
+msgid "COMOFUNCIONA2_4"
+msgstr "proveniente de multiples patrocinadores de"
+
+msgid "COMOFUNCIONA2_5"
+msgstr "cada proyecto, y a cambio de esos aportes"
+
+msgid "COMOFUNCIONA2_6"
+msgstr "de dinero reciben beneficios exclusivos."
+
+msgid "COMOFUNCIONA3"
+msgstr "Cada aporte"
+
+msgid "COMOFUNCIONA3_1"
+msgstr "tiene un beneficio"
+
+msgid "COMOFUNCIONA3_2"
+msgstr "Las personas generalmente van a estar"
+
+msgid "COMOFUNCIONA3_3"
+msgstr "mayormente interesadas en recibir a cambio"
+
+msgid "COMOFUNCIONA3_4"
+msgstr "cosas, servicios o productos. Por lo tanto es muy"
+
+msgid "COMOFUNCIONA3_5"
+msgstr "importante cuando se definen los beneficios que"
+
+msgid "COMOFUNCIONA3_6"
+msgstr "la persona estime bien quien es su mercado "
+
+msgid "COMOFUNCIONA3_7"
+msgstr "potencial y definir los beneficios que va a"
+
+msgid "COMOFUNCIONA3_8"
+msgstr "entregar a cambio de cada nivel de aportes"
+
+msgid "BE_GROOFI_SPONSOR"
+msgstr "Se Sponsor de Groofi"
+
+msgid "BUSISSNES"
+msgstr "EMPRESAS"
+
+msgid "CURADORAS"
+msgstr "CURADORAS"
+
+msgid "USERS_FORGOT_PASSWORD"
+msgstr "Contraseña Olvidada"
+
+msgid "COMOFUNCIONA4"
+msgstr "Las empresas"
+
+msgid "COMOFUNCIONA4_1"
+msgstr "tambien participan"
+
+msgid "COMOFUNCIONA4_2"
+msgstr "Los patrocinadores en Groofi pueden ser personas"
+
+msgid "COMOFUNCIONA4_3"
+msgstr "o empresas. Las empresas generalmente van a"
+
+msgid "COMOFUNCIONA4_4"
+msgstr "estar interesadas en publicidad de una marca"
+
+msgid "COMOFUNCIONA4_5"
+msgstr "especifica de un producto o servicio o branding"
+
+msgid "COMOFUNCIONA4_6"
+msgstr "corporativo. También pueden generar un"
+
+msgid "COMOFUNCIONA4_7"
+msgstr "ofrecimiento y desafiar a la comunidad Groofi a"
+
+msgid "COMOFUNCIONA4_8"
+msgstr "hacer algun proyecto a cambio de dinero."
+
+msgid "COMOFUNCIONA5"
+msgstr "Publicar un proyecto"
+
+msgid "COMOFUNCIONA5_1"
+msgstr "es gratuito"
+
+msgid "COMOFUNCIONA5_2"
+msgstr "Groofi cobra una comisión sobre el monto"
+
+msgid "COMOFUNCIONA5_3"
+msgstr "recaudado sólo por los proyectos exitosos. No"
+
+msgid "COMOFUNCIONA5_4"
+msgstr "cobramos comisión sobre aquellos proyectos que"
+
+msgid "COMOFUNCIONA5_5"
+msgstr "no lograron su objetivo. La comisión es del"
+
+msgid "COMOFUNCIONA5_6"
+msgstr "5.99%(IVA incluido)en todos los países de"
+
+msgid "COMOFUNCIONA5_7"
+msgstr "Latinoamérica y España"
+
+msgid "COMOFUNCIONA6"
+msgstr "Groofi es seguro y confiable"
+
+msgid "COMOFUNCIONA6_1"
+msgstr "Los aportes se pueden efectuar en diversas "
+
+msgid "COMOFUNCIONA6_2"
+msgstr "monedas, según como se haya creado el proyecto."
+
+msgid "COMOFUNCIONA6_3"
+msgstr "En el caso que no se llegue a recaudar los fondos"
+
+msgid "COMOFUNCIONA6_4"
+msgstr "necesarios, Groofi devuelve el dinero a los"
+
+msgid "COMOFUNCIONA6_5"
+msgstr "patrocinadores dado que no se ha logrado juntar el"
+
+msgid "COMOFUNCIONA6_6"
+msgstr "dinero necesario para hacer el mismo."
+
+msgid "COMOFUNCIONA6_7"
+msgstr "En ambos casos las operaciones están garantizadas"
+
+msgid "COMOFUNCIONA6_8"
+msgstr "por Paypal o Mercado Pago, que cobra sus gastos"
+
+msgid "COMOFUNCIONA6_9"
+msgstr "de transacción para hacerlo"
+
+msgid "DISCOVER"
+msgstr "Encuentra el proyecto"
+
+msgid "DISCOVER1_1"
+msgstr "que te identifique"
+
+msgid "DISCOVER1_2"
+msgstr "Apoya ideas innovadoras, ayuda a nuevos "
+
+msgid "DISCOVER1_3"
+msgstr "emprendedores, talentosos artistas y creadores"
+
+msgid "DISCOVER1_4"
+msgstr "que van en busca de sus sueños."
+
+msgid "DISCOVER2"
+msgstr "Decide qué monto"
+
+msgid "DISCOVER2_1"
+msgstr "vas a aportar"
+
+msgid "DISCOVER2_2"
+msgstr "Con tu aporte apuestas a un desarrollo"
+
+msgid "DISCOVER2_3"
+msgstr "independiente y te conviertes en su productor,"
+
+msgid "DISCOVER2_4"
+msgstr "haciendo que el proyecto se"
+
+msgid "DISCOVER2_5"
+msgstr "haga real."
+
+msgid "DISCOVER3"
+msgstr "Accede a los beneficios"
+
+msgid "DISCOVER3_1"
+msgstr "del proyecto"
+
+msgid "DISCOVER3_2"
+msgstr "De manera exclusiva. Consigue algo que aún no"
+
+msgid "DISCOVER3_3"
+msgstr "existe en el mercado antes que nadie, o algo que"
+
+msgid "DISCOVER3_4"
+msgstr "existe pero a un precio menos"
+
+msgid "CREATE_PROJECT1"
+msgstr "Propones y publicas gratis"
+
+msgid "CREATE_PROJECT1_1"
+msgstr "tu proyecto"
+
+msgid "CREATE_PROJECT1_2"
+msgstr "Determinas recaudar cierto monto de dinero, en"
+
+msgid "CREATE_PROJECT1_3"
+msgstr "un determinado tiempo. A cambio ofreces"
+
+msgid "CREATE_PROJECT1_4"
+msgstr "beneficios para los patrocinadores, que se los"
+
+msgid "CREATE_PROJECT1_5"
+msgstr "entregaras recien una vez que hayas recaudado"
+
+msgid "CREATE_PROJECT1_6"
+msgstr "el dinero y puedas realizar el mismo."
+
+msgid "CREATE_PROJECT2"
+msgstr "Difunde el proyecto y recauda los"
+
+msgid "CREATE_PROJECT2_1"
+msgstr "fondos necesarios"
+
+msgid "CREATE_PROJECT2_2"
+msgstr "Si al terminar el plazo logras recaudar todos los"
+
+msgid "CREATE_PROJECT2_3"
+msgstr "fondos necesarios(o mas)para hacer el"
+
+msgid "CREATE_PROJECT2_4"
+msgstr "proyecto, Groofi te gira el dinero recaudado,"
+
+msgid "CREATE_PROJECT2_5"
+msgstr "menos nuestra comision."
+
+msgid "CREATE_PROJECT3"
+msgstr "Groofi es seguro y confiable"
+
+msgid "CREATE_PROJECT3_1"
+msgstr "En el caso que no llegues a recaudar los fondos"
+
+msgid "CREATE_PROJECT3_2"
+msgstr "necesarios, Groofi devuelve el dinero a los"
+
+msgid "CREATE_PROJECT3_3"
+msgstr "patrocinadores sin necesidad de entregar los"
+
+msgid "CREATE_PROJECT3_4"
+msgstr "beneficios prometidos. En ambos casos las"
+
+msgid "CREATE_PROJECT3_5"
+msgstr "operaciones están garantizadas por Paypal, que"
+
+msgid "CREATE_PROJECT3_6"
+msgstr "cobra sus gastos de transacción para hacerlo."
+
+msgid "FINANCE_YOUR_THOUGHTS"
+msgstr "Financia tus ideas"
+
+msgid "SEE_SUCCESFUL_CASES"
+msgstr "Mira nuestros casos de éxito!"
+
+msgid "SEE_SUCCESFUL_CASES1"
+msgstr "¿Necesitas inspiración?"
+
+msgid "SEE_SUCCESFUL_CASES1_1"
+msgstr "¿Aún tienes dudas?"
+
+msgid "SEE_SUCCESFUL_CASES1_2"
+msgstr "Escuela Groofi"
+
+msgid "PROYECTOS_PRIVADOS1"
+msgstr "Proyectos Privados"
+
+msgid "PROYECTOS_PRIVADOS2"
+msgstr "Si marcas esta opcion en "Publico", tu proyecto será visualizado"
+
+msgid "PROYECTOS_PRIVADOS3"
+msgstr "a toda la comunidad de Groofi. En cambio si seleccionas"
+
+msgid "PROYECTOS_PRIVADOS4"
+msgstr ""Privado", el mismo tendra una visualizacion restingida a"
+
+msgid "PROYECTOS_PRIVADOS5"
+msgstr "quienes proveas una clave de acceso"
+
+msgid "PROYECTOS_PRIVADOS6"
+msgstr "Tipo de Proyecto"
+
+msgid "PROYECTOS_PRIVADOS7"
+msgstr "Público"
+
+msgid "PROYECTOS_PRIVADOS8"
+msgstr "Privado"
+
+msgid "DISCOVER_PRINCIPAL"
+msgstr "DESCUBRIR"
+
+msgid "TYPE_OF_CURRENCY"
+msgstr "Tipo de Moneda"
+
+msgid "TYPE_OF_CURRENCY_1"
+msgstr "Elige el tipo de moneda en el que manejaras tu proyecto y se mostrará al publico. Si marcas la opción USD(Dólares Estadounidenses), tus patrocinadores podrán pagar los aportes via Paypal. Sí eliges la opción ARS(Pesos Argentinos), los aportes se podrán abonar por Mercado Pago"
+
+msgid "TYPE_OF_CURRENCY_US"
+msgstr "USD - Dólares Estadounidenses"
+
+msgid "TYPE_OF_CURRENCY_ARS"
+msgstr "ARS - Pesos Argentinos"
+
+msgid "IMPORTANT"
+msgstr "IMPORTANTE:"
+
+msgid "IMPORTANT_1"
+msgstr "El presente es un aviso legal que se aplica a todo el contenido de la página web con el nombre de dominio www.groofi.com  (sitio web) y toda la correspondencia por correo electrónico que se envía. Por favor lea cuidadosamente estos términos antes de utilizar el Sitio Web. Al utilizar el sitio web usted acepta estos términos, independientemente de si usted decide o no registrarse con nosotros. Si usted no acepta estos términos, no utilice el Sitio Web. Este aviso es emitido por Groofi Limited (compañía)."
+
+msgid "SUCCESFUL_PROJECT"
+msgstr "CASOS DE EXITO"
+
+msgid "PROJECT_EXPLORER"
+msgstr "EXPLORAR PROYECTO"
+
+msgid "CATEGORY_OF PROJECT %s"
+msgstr "Proyecto de la categoría"
+
+msgid "IF_YOU_STAY_UP_TO DATE"
+msgstr "Si quieres estar al dia"
+
+msgid "SPACE_FOR"
+msgstr "ESPACIO PARA"
+
+msgid "SPONSOR"
+msgstr "SPONSORS"
+
+msgid "SEND_MAYUSCULA"
+msgstr "ENVIAR"
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""

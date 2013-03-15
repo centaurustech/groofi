@@ -1,0 +1,30 @@
+
+body { background : #CCCCCC ; }
+
+#main.block { background : url(/img/layout/940.png) repeat-y center top;}
+
+#header > .content  { background : url(/img/layout/940.png) repeat-y center top;}
+
+#footer > .content  { background : url(/img/layout/940.png) repeat-y center top;}
+
+.projects_index  > .content,
+.offers_index  > .content,
+.users_index  > .content{ background : url(/img/layout/search_right.png) repeat-y center top;}
+
+.staticpages_home > .content{ background : url(/img/layout/search_left.png) repeat-y center top;}
+
+.users_edit > .content{ background : url(/img/layout/form2.png) repeat-y center top;}
+
+.users_add > .content{ background : url(/img/layout/form2.png) repeat-y center top;}
+
+.projects_view > .content{ background : url(/img/layout/view.png) repeat-y center top;}
+.offers_view > .content{ background : url(/img/layout/view.png) repeat-y center top;}
+
+.users_view  > .content{ background : url(/img/layout/profile.png) repeat-y center top;}
+
+.projects_add  > .content ,
+.projects_edit  > .content,
+.offers_add  > .content ,
+.offers_edit  > .content{ background : url(/img/layout/form.png) repeat-y center top;}
+
+

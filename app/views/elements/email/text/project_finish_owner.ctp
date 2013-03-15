@@ -1,0 +1,1 @@
+Tu proyecto "<?=Project::getName($emailData)?>" ha finalizado. En breve nos pondremos en contacto para comunicarte los pasos a seguir.
