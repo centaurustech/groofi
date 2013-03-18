@@ -527,7 +527,7 @@ class Project extends AppModel {
 	*
 	* @return array con datos de la tabla projects si $find es true, o los datos de consulta en cao contrario
 	* @param Boolean $find a true provoca retorno de datos de consulta; a false retorna los datos de la consulta
-	* @param Int $limit cantidad de registros que retornará la consulta
+	* @param Int $limit cantidad de registros que retornarï¿½ la consulta
 	* 
 	*/
 	function getWeek($find = true, $limit = 8) {
@@ -618,10 +618,10 @@ class Project extends AppModel {
 
     }
 	/**
-	* Entrega las categorías para filtrar proyectos
+	* Entrega las categorï¿½as para filtrar proyectos
 	*
-	* @return array con datos para generación de los enlaces
-	* @param String $cual define los datos del menú a obtener
+	* @return array con datos para generaciï¿½n de los enlaces
+	* @param String $cual define los datos del menï¿½ a obtener
 	* 
 	*/
 	public static function getCategories($cual){
@@ -642,7 +642,7 @@ class Project extends AppModel {
 			break;
 			case 'ubicacion':
 			$pp=new City;
-			$datos=$pp->query("select * from cities where project_count>0 group by city_slug");
+			$datos=$pp->query("select * from cities where 1 group by city_slug");
 			return $datos;
 			break;
 		}

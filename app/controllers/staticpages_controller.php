@@ -244,10 +244,10 @@ class StaticpagesController extends AppController {
         }else if($sigla_pais =='BR'){
             $moneda= 'Real';
         }else if($sigla_pais =='GB'){
-            $moneda= 'Libra,Euro';
+            $moneda= 'Libra';
         }else if($sigla_pais =='ES'){
             $moneda= 'Euro';
-        }else if($sigla_pais =='FR'){
+        }else if($sigla_pais =='ES'){
             $moneda= 'Euro';
         }else{
             $moneda= 'Dolar';
