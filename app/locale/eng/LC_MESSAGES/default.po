@@ -577,7 +577,7 @@ msgid "SUBMIT_PROJECT"
 msgstr "SAVE / PREVIEW"
 
 msgid "PUBLISH_PROJECT"
-msgstr "PUBLISH PROJECT"
+msgstr "Publish Project"
 
 msgid "DELETE_PROJECT"
 msgstr "DELETE PROJECT"
@@ -646,7 +646,7 @@ msgstr "Charity"
 msgid "CATEGORY_SOLIDARITY_CAMPAIGNS"
 msgstr "Charity"
 
-msgid "CATEGORY_THEATER-DANCE"
+msgid "CATEGORY_THEATER_DANCE"
 msgstr "Theater & Dance"
 
 msgid "CATEGORY_ -  -  -  - THEATER-DANCE"
@@ -3911,8 +3911,17 @@ msgstr "Choose the currency in which you handle your project and be displayed pu
 msgid "TYPE_OF_CURRENCY_US"
 msgstr "USD - U.S. Dollars"
 
+msgid "TYPE_OF_CURRENCY_EUR"
+msgstr "EUR - Euro"
+
 msgid "TYPE_OF_CURRENCY_ARS"
 msgstr "ARS - Argentine Pesos"
+
+msgid "TYPE_OF_CURRENCY_GBP"
+msgstr "GBP - British Pounds"
+
+msgid "TYPE_OF_CURRENCY_BRL"
+msgstr "BRL - Brazilian Real"
 
 msgid "SUCCESFUL_PROJECT"
 msgstr "SUCCESS STORIES"
@@ -3934,6 +3943,9 @@ msgstr "SPONSORS"
 
 msgid "SEND_MAYUSCULA"
 msgstr "SEND"
+
+msgid "Providing"
+msgstr "Providing "
 
 msgid ""
 msgstr ""

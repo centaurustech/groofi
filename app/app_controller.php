@@ -26,6 +26,11 @@ class AppController extends Controller {
         'AppForm', //to override load the core helper and then your app helper.
         'AppHtml', //to override load the core helper and then your app helper.
         'AppText', //to override load the core helper and then your app helper.
+        'Cksource',
+        'Javascript',
+        'Cropimage'
+
+
     );
 
     /*
@@ -43,6 +48,7 @@ class AppController extends Controller {
         'RequestHandler',
         'DebugKit.Toolbar',
         'Facebook.Connect',
+        'JqImgcrop'
     );
 
     function beforeFilter() {

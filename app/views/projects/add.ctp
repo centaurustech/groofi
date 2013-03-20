@@ -1,11 +1,12 @@
 <?php
+
 /* @var $this ViewCC */
 //vd($validationErrorsArray);
 //vd($_POST['data']['Prize']);
 asort($base_categories);
 //vd($this->data);
 function traducirMoneda($m){
-	
+
 	return $m;
 }
 function getVideoFromURL($u){
@@ -16,7 +17,7 @@ function getVideoFromURL($u){
 		$code=explode('&',$code);
 		$code=$code[0];
 	}
-	
+
 	if($pos===false){
 	    $ret='<iframe width="280" height="210" src="http://www.youtube.com/embed/'.$code.'" frameborder="0" allowfullscreen></iframe>';
 	}else{
@@ -25,6 +26,14 @@ function getVideoFromURL($u){
 	return $ret;
 }
 ?>
+<?php
+echo $javascript->link('ckeditor/ckeditor');
+echo $this->Html->script('ckfinder/ckfinder.js');
+
+?>
+
+
+
 <div class="crear_proye">
 <h2><?php echo __("CREATE_PROJECT1");?><br>
 <?php echo __("CREATE_PROJECT1_1");?></h2><br>
@@ -59,6 +68,8 @@ function getVideoFromURL($u){
 
 
 </div>
+
+
 
 <div><img src="/2012/images/sombra_header.png" width="957" height="20">
 <div class="casos_exito" onclick="window.location='/#proyecto_destacado';">
@@ -104,6 +115,7 @@ function getVideoFromURL($u){
 </div>
 </div>
 <div class="texto_how_izq">
+
 <p style="font-size:12px"><?php echo __("PROJECT__MOTIVATION");?></p>
 
 <div class="rounded_area_crear">
@@ -112,6 +124,7 @@ function getVideoFromURL($u){
 </div>
 
 </div>
+
 
 <div class="texto_how_izq" style="position:relative;">
 <p style="font-size:12px"><?php echo __("PROJECT__SHORT_DESCRIPTION");?></p>
@@ -158,7 +171,8 @@ function getVideoFromURL($u){
 <div class="texto_how_izq">
 <p style="font-size:12px"><?php echo __("PROJECT__DESCRIPTION");?></p>
 <div class="rounded_area_crear">
-<textarea name="data[Project][description]" autocomplete="off" cols="30" rows="6"><?if(isset($_POST['data']['Project']['description'])){echo $_POST['data']['Project']['description'];}?></textarea>
+
+<textarea class="ckeditor" name="data[Project][description]" autocomplete="off" cols="30" rows="6"><?if(isset($_POST['data']['Project']['description'])){echo $_POST['data']['Project']['description'];}?></textarea>
 <div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['description']) && !empty($validationErrorsArray['description'])){echo $validationErrorsArray['description'];}?></div>
 <div class="bot_info_area" onmouseout="hideTip()" onmousemove="showTip(event,'Describe tu proyecto en extenso. Podr&aacute;s editar esta descripci&oacute;n una vez aprobado tu proyecto.<br>Cuanta m&aacute;s informaci&oacute;n pongas y m&aacute;s claro seas en esta descripci&oacute;n, m&aacute;s confiable resultar&aacute; tu proyecto para los patrocinadores.')"></div>
 </div>
@@ -268,10 +282,18 @@ function getVideoFromURL($u){
 <div class="tipo_moneda_us">
 <?php echo __("TYPE_OF_CURRENCY_US");?>
 </div>
+<div class="tipo_moneda_eu">
+<?php echo __("TYPE_OF_CURRENCY_EUR");?>
+</div>
 <div class="tipo_moneda_ar">
 <?php echo __("TYPE_OF_CURRENCY_ARS");?>
 </div>
-
+<div class="tipo_moneda_gb">
+<?php echo __("TYPE_OF_CURRENCY_GBP");?>
+</div>
+<div class="tipo_moneda_br">
+<?php echo __("TYPE_OF_CURRENCY_BRL");?>
+</div>
 
 <div class="input_fondos">
 <div id="quemoneda" style="color:#686b68; width:50px; height:30px; text-align:right; line-height:30px;font-size:15px;font-weight:normal; position:absolute; left:-45px;top:20px;font-family:Arial, Helvetica, sans-serif"><?if(!isset($_POST['data']['Project']['moneda'])){?>USD<? }else{?><?=traducirMoneda($_POST['data']['Project']['moneda'])?><? } ?></div>
@@ -283,9 +305,19 @@ function getVideoFromURL($u){
 <label style="position:absolute; height:15px;width:300px;  left:0; top:98px; text-align:left; margin:0; padding:0" for="usd">
     <input onchange="if(this.checked){$('quemoneda').innerHTML=this.value;window.lamoneda=this.value;changeBoxesMoneda();}" value="USD" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="usd" <?if((isset($_POST['data']['Project']['moneda']) && $_POST['data']['Project']['moneda']=='USD') || !isset($_POST['data']['Project']['moneda'])){?>checked="checked"<? } ?>>
 </label>
-<label style="position:absolute; height:15px;width:300px;  left:0; top:125px; text-align:left; margin:0; padding:0" for="ars">
+<label style="position:absolute; height:15px;width:300px;  left:0; top:125px; text-align:left; margin:0; padding:0" for="eur">
+    <input onchange="if(this.checked){$('quemoneda').innerHTML='EUR';window.lamoneda='EUR';changeBoxesMoneda();}" value="EUR" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="eur" <?if(isset($_POST['data']['Project']['moneda']) && $_POST['data']['Project']['moneda']=='EUR'){?>checked="checked"<? } ?>>
+</label>
+<label style="position:absolute; height:15px;width:300px;  left:0; top:152px; text-align:left; margin:0; padding:0" for="ars">
     <input onchange="if(this.checked){$('quemoneda').innerHTML='ARS';window.lamoneda='ARS';changeBoxesMoneda();}" value="ARS" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="ars" <?if(isset($_POST['data']['Project']['moneda']) && $_POST['data']['Project']['moneda']=='ARS'){?>checked="checked"<? } ?>>
 </label>
+<label style="position:absolute; height:15px;width:300px;  left:0; top:179px; text-align:left; margin:0; padding:0" for="gbp">
+    <input onchange="if(this.checked){$('quemoneda').innerHTML='GBP';window.lamoneda='GBP';changeBoxesMoneda();}" value="GBP" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="gbp" <?if(isset($_POST['data']['Project']['moneda']) && $_POST['data']['Project']['moneda']=='GBP'){?>checked="checked"<? } ?>>
+</label>
+<label style="position:absolute; height:15px;width:300px;  left:0; top:206px; text-align:left; margin:0; padding:0" for="brl">
+    <input onchange="if(this.checked){$('quemoneda').innerHTML='BRL';window.lamoneda='ARS';changeBoxesMoneda();}" value="BRL" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="brl" <?if(isset($_POST['data']['Project']['moneda']) && $_POST['data']['Project']['moneda']=='BRL'){?>checked="checked"<? } ?>>
+</label>
+
 </div>
 </div>
 
@@ -407,34 +439,34 @@ var DragableRestrict={
 		if(!this.restricty)
 			o.style.top=pos.top+'px';
 		o.style.left=pos.left+'px';
-		this.cx0=0; 
+		this.cx0=0;
         this.cy0=0;
 		var backslider=getElementsByClassName('back_slider',panino.getO(o.parentNode))[0];//
 		panino.getO(backslider).addEvent(
 			'mouseout',
 			function(e){
-				cancelEvent(e); 
-        		stopEvent(e); 
+				cancelEvent(e);
+        		stopEvent(e);
 				panino.getO(o.parentNode)['okchildmove']=0;
 			}
 		);
 		panino.getO(backslider).addEvent(
 			'mouseover',
 			function(e){
-				cancelEvent(e); 
-        		stopEvent(e); 
+				cancelEvent(e);
+        		stopEvent(e);
 				panino.getO(o.parentNode)['okchildmove']=1;
 			}
 		);
 		panino.getO(o.parentNode).addEvent(
 			'mousedown',
 			function(e){
-				cancelEvent(e); 
-        		stopEvent(e); 
+				cancelEvent(e);
+        		stopEvent(e);
 				if(!this['okchildmove'])return;
 				var p=getPos(e);
 				if(parseInt(o.style.left)>=(p.x)){
-					o.style.left=(p.x)+'px';				   
+					o.style.left=(p.x)+'px';
 				}else{
 					o.style.left=((p.x)-o.offsetWidth)+'px'
 				}
@@ -451,12 +483,12 @@ var DragableRestrict={
 		this.addEvent('mousedown',
 				 function(e){
 					panino.actR=this;
-					e=e || window.event; 
-        			cancelEvent(e); 
-        			stopEvent(e); 
-        			this.cx0=e.clientX || 0; 
-        			this.cy0=e.clientY || 0; 
-        			this.ox=parseInt(o.style.left) || 0; 
+					e=e || window.event;
+        			cancelEvent(e);
+        			stopEvent(e);
+        			this.cx0=e.clientX || 0;
+        			this.cy0=e.clientY || 0;
+        			this.ox=parseInt(o.style.left) || 0;
         			if(!this.restricty)
 						this.oy=parseInt(o.style.top) || 0;
 					panino.getO(document).addEvent('mousemove',function(e){if(panino.actR)panino.actR.arrastrarR(e);});
@@ -469,7 +501,7 @@ var DragableRestrict={
 		e=e || window.event;
 		clearSelection();
 		var o=panino.getO(this);
-        cancelEvent(e); 
+        cancelEvent(e);
         stopEvent(e);
 		if(!this.restrictx){
         	o.style.left=this.ox-this.cx0+e.clientX+'px';
@@ -481,7 +513,7 @@ var DragableRestrict={
 			}
 		}
 		if(!this.restricty){
-        	o.style.top=this.oy-this.cy0+e.clientY+'px'; 
+        	o.style.top=this.oy-this.cy0+e.clientY+'px';
 		}
 		this.callback(o.style.left);
 		return this;
@@ -489,12 +521,12 @@ var DragableRestrict={
 
 	soltarR:function(e){
 		var o=panino.getO(this);
-		e=e || window.event; 
-        cancelEvent(e); 
-        stopEvent(e); 
+		e=e || window.event;
+        cancelEvent(e);
+        stopEvent(e);
        	panino.getO(document).removeEvent('mousemove',function(e){if(panino.actR)panino.actR.arrastrarR(e);});
 		panino.getO(document).removeEvent('mouseup',function(e){if(panino.actR)panino.actR.soltarR(e);});
-		
+
 		this.callbackEnd(o.style.left);
 		panino.actR=null;
 		return this;
@@ -502,7 +534,7 @@ var DragableRestrict={
 	finalPositionR:function(){
 		return {x:parseInt(this.style.left),y:parseInt(this.style.top)}
 	}
-	
+
 }
 function setBlueLine(r){
 	var valor=Math.round((100*parseInt(r)/343)*365/100);
@@ -520,14 +552,14 @@ DR(function(){
 <script>
 DR(function(){
 	for(var i=0;i<10;i++){
-		
+
 			if($('web'+i).value.length>1){
 				$('web'+i).parentNode.style.display='block';
 				if($('web'+(i+1))){
 					$('web'+(i+1)).parentNode.style.display='block';
 				}
 			}
-		
+
 		$('web'+i).addEvent(
 			'keyup',
 			function(e){
@@ -540,7 +572,7 @@ DR(function(){
 				}else{
 					o.parentNode.style.display='none';
 				}
-				
+
 			}
 		);
 	}
@@ -548,8 +580,8 @@ DR(function(){
 window.memo={};
 window.memo.index=-1;
 function addBeneficio(monto, descripcion, entidad){
-	var id='__id'+(+new Date()); 
-	
+	var id='__id'+(+new Date());
+
 	window.memo.index++;
 	if(entidad=='empresa'){
 		var ente=' empresas';
@@ -565,7 +597,7 @@ function addBeneficio(monto, descripcion, entidad){
 		var elente='P';
 	}
 	//errE
-	var patron = /\d/; 
+	var patron = /\d/;
 	if(!patron.test(monto)){
 		$('err'+elente).innerHTML='El monto ingresado es inv&aacute;lido';
 		return;
@@ -591,12 +623,12 @@ function xrestantes(campo,label,mx,mi){
 		var ingresados='Ingresados: '+campo.value.length+' caracteres. ';
 	}else{
 		var ingresados='';
-	}		
-	label.innerHTML=ingresados+'Restan: '+(mx-campo.value.length)+' caracteres';	
+	}
+	label.innerHTML=ingresados+'Restan: '+(mx-campo.value.length)+' caracteres';
 }
 <?if(isset($_POST['data']['Project']['project_duration'])){?>
 DR(function(){
-	
+
 	$('ProjectProjectDuration').value=<?=$_POST['data']['Project']['project_duration']?>;
 	var r=Math.round($('ProjectProjectDuration').value/365*343);
 	$('cursor').style.left=r+'px';
@@ -604,9 +636,9 @@ DR(function(){
 });
 <? } ?>
 <? if(isset($_POST['data']['Prize'])){?>
-	
+
 DR(function(){
-<?	
+<?
 	foreach($_POST['data']['Prize'] as $k=>$v){
 		if($v['ente']=='E'){
 			?>

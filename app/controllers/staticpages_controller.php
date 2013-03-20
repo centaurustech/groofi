@@ -13,6 +13,7 @@ class StaticpagesController extends AppController {
 
     }
 
+
     var $name = 'Staticpages';
 
     function message($messageSlug) {
@@ -246,9 +247,7 @@ class StaticpagesController extends AppController {
         }else if($sigla_pais =='GB'){
             $moneda= 'Libra';
         }else if($sigla_pais =='ES'){
-            $moneda= 'Euro';
-        }else if($sigla_pais =='ES'){
-            $moneda= 'Euro';
+            $moneda= 'Real';
         }else{
             $moneda= 'Dolar';
         }

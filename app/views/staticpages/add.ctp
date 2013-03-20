@@ -1,3 +1,4 @@
+
 <div class="staticpages form">
 <?php echo $this->Form->create('Staticpage');?>
 	<fieldset>

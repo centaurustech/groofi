@@ -32,17 +32,23 @@ a:active {color:#356980;}  /* selected link */
 
 .header_letras1
 {
+    color: #3B3B3B;
+    cursor: pointer;
     display: block;
     font-family: monospace;
-    font-size: 23px;
+    font-size: 24px;
     font-weight: bold;
-    left: 630px;
+    left: 24px;
     position: absolute;
-    top: 82px;
+    top: -4px;
     z-index: 5;
-    cursor: pointer;
-    color: #3b3b3b;
 
+}
+.header_letras1:hover,.header_letras1:hover span
+{
+    background-position:0px -40px;
+    cursor:pointer;
+    color: #559c48;
 }
 .header_letras1:hover
 {
@@ -54,15 +60,20 @@ a:active {color:#356980;}  /* selected link */
     font-family: monospace;
     font-size: 23px;
     font-weight: bold;
-    left: 790px;
+    left: 180px;
     position: absolute;
-    top: 82px;
+    top: -4px;
     z-index: 20;
     cursor: pointer;
     color: #3b3b3b;
 }
-.header_letras2:hover
+.header_letras2:hover,.header_letras2:hover span
 {
+    background-position:-143px -40px;
+    cursor:pointer;
+    color: #368fc0;
+}
+.header_letras2:hover{
     color: #368fc0;
 }
 .header_letras3
@@ -71,15 +82,20 @@ a:active {color:#356980;}  /* selected link */
     font-family: monospace;
     font-size: 23px;
     font-weight: bold;
-    left: 905px;
+    left: 310px;
     position: absolute;
-    top: 82px;
+    top: -4px;
     z-index: 20;
     cursor: pointer;
     color: #3b3b3b;
 }
-.header_letras3:hover
+.header_letras3:hover,.header_letras3:hover span
 {
+    background-position:-258px -40px;
+    cursor:pointer;
+    color: #dab620;
+}
+.header_letras3:hover{
     color: #dab620;
 }
 
@@ -98,42 +114,43 @@ a:active {color:#356980;}  /* selected link */
 	text-decoration:none;
 }
 #menu{
-	width:365px;
+    width: 420px;
 	height:36px;
 	position:absolute;
 	top:85px;
 	right:-16px;
 }
 .descubri{
-	width:145px;
-	height:36px;
+	width:23px;
+	height:19px;
 	background:url(images/menu.png) no-repeat;
-	background-position:0px 0px;
+	background-position:0px 3px;
 		margin-right:8px;
 	float:left;
 	display:block;
 	text-decoration:none;
-}
+ }
 .crea{
-	width:98px;
-	height:36px;
+	width:27px;
+	height:21px;
 	background:url(images/menu.png) no-repeat;
-	background-position:-143px 0px;
+	background-position:-143px 3px;
 	float:left;
 	margin-right:8px;
 	display:block;
 	text-decoration:none;
 }
+
 .blog{
-	width:105px;
-	height:36px;
+	width:30px;
+	height:23px;
 	background:url(images/menu.png) no-repeat;
-	background-position:-245px 0px;
+	background-position:-258px 3px;
 	float:left;
 	display:block;
 	text-decoration:none;
 }
-.descubri:hover{
+/*.descubri:hover{
 	background-position:0px -43px;
 	cursor:pointer
 }
@@ -144,7 +161,7 @@ a:active {color:#356980;}  /* selected link */
 .blog:hover{
 	background-position:-245px -43px;
 	cursor:pointer
-}
+}*/
 
 
 
@@ -752,13 +769,13 @@ text-align:center;
 	
 }
 .texto_how_izq{
-	width:450px;
+    width: 375px;
 	float:left;
 	color:#3f3e3e;
 	font-size:13px;
 	line-height:18px;
 	margin-right:25px;
-	margin-bottom:40px;
+    margin-bottom: 60px;
 	position:relative;
 }
 .texto_contacto_izq{
@@ -1109,7 +1126,7 @@ margin-left:-6px;
     display: block;
     float: right;
     height: 77px;
-    left: 30px;
+    left: 70px;
     margin-top: -12px;
     position: relative;
     text-decoration: none;
@@ -3773,7 +3790,7 @@ color:#FFF
     text-align: center;
     top: 415px;
     z-index: 10;
-    width: 310px
+    width: 320px
 
 
 
@@ -3857,11 +3874,12 @@ color:#FFF
     font-size: 8px;
     font-style: italic;
     font-weight: bold;
-    left: 845px;
+    left: 885px;
     position: absolute;
     top: 620px;
     width: 180px;
     z-index: 10;
+
 
     }
 .casos_exito1_2{
@@ -3872,7 +3890,7 @@ color:#FFF
     float: left;
     font-size: 21px;
     font-weight: bold;
-    left: 845px;
+    left: 885px;
     position: absolute;
     top: 635px;
     width: 160px;
@@ -4015,7 +4033,9 @@ color:#FFF
     font-family: sans-serif;
 
 }
-.tipo_moneda_ar{
+
+.tipo_moneda_eu{
+
     z-index: 1;
     display: block;
     position: absolute;
@@ -4026,6 +4046,43 @@ color:#FFF
     color: rgb(97, 97, 97);
     font-family: sans-serif;
 }
+.tipo_moneda_ar{
+    z-index: 1;
+    display: block;
+    position: absolute;
+    left: 445px;
+    width: 530px;
+    top: 148px;
+    font-size: 18px;
+    color: rgb(97, 97, 97);
+    font-family: sans-serif;
+}
+.tipo_moneda_gb{
+    z-index: 2;
+    display: block;
+    position: absolute;
+    left: 445px;
+    width: 530px;
+    top: 174px;
+    font-size: 18px;
+    color: rgb(97, 97, 97);
+    font-family: sans-serif;
+
+
+}
+.tipo_moneda_br{
+    z-index: 2;
+    display: block;
+    position: absolute;
+    left: 445px;
+    width: 530px;
+    top: 200px;
+    font-size: 18px;
+    color: rgb(97, 97, 97);
+    font-family: sans-serif;
+
+}
+
 .sponsor1{
     color: gray;
     display: block;

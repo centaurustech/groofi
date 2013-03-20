@@ -582,7 +582,7 @@ msgid "SUBMIT_PROJECT"
 msgstr "GUARDAR / VISTA PREVIA"
 
 msgid "PUBLISH_PROJECT"
-msgstr "LANZAR PROYECTO"
+msgstr "Lanzar Proyecto"
 
 msgid "DELETE_PROJECT"
 msgstr "ELIMINAR PROYECTO"
@@ -651,7 +651,7 @@ msgstr "Campañas solidarias"
 msgid "CATEGORY_SOLIDARITY_CAMPAIGNS"
 msgstr "Campañas solidarias"
 
-msgid "CATEGORY_THEATER-DANCE"
+msgid "CATEGORY_THEATER_DANCE"
 msgstr "Teatro & Danza"
 
 msgid "CATEGORY_ -  -  -  - THEATER-DANCE"
@@ -3927,8 +3927,18 @@ msgstr "Elige el tipo de moneda en el que manejaras tu proyecto y se mostrará a
 msgid "TYPE_OF_CURRENCY_US"
 msgstr "USD - Dólares Estadounidenses"
 
+msgid "TYPE_OF_CURRENCY_EUR"
+msgstr "EUR - Euro"
+
 msgid "TYPE_OF_CURRENCY_ARS"
 msgstr "ARS - Pesos Argentinos"
+
+msgid "TYPE_OF_CURRENCY_GBP"
+msgstr "GBP - Libras Esterlinas"
+
+msgid "TYPE_OF_CURRENCY_BRL"
+msgstr "BRL - Real Brasileño"
+
 
 msgid "IMPORTANT"
 msgstr "IMPORTANTE:"
@@ -3957,8 +3967,8 @@ msgstr "SPONSORS"
 msgid "SEND_MAYUSCULA"
 msgstr "ENVIAR"
 
-msgid ""
-msgstr ""
+msgid "Providing"
+msgstr "Aportando "
 
 msgid ""
 msgstr ""

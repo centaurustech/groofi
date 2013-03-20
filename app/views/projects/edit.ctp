@@ -10,19 +10,67 @@ function traducirMoneda($m){
 }
 ?>
 
+<div class="crear_proye">
+<h2><?php echo __("CREATE_PROJECT1");?><br>
+<?php echo __("CREATE_PROJECT1_1");?></h2><br>
+<p><?php echo __("CREATE_PROJECT1_2");?><br>
+<?php echo __("CREATE_PROJECT1_3");?><br>
+<?php echo __("CREATE_PROJECT1_4");?>
+<?php echo __("CREATE_PROJECT1_5");?><br>
+<?php echo __("CREATE_PROJECT1_6");?><br></p>
+</div>
+<div class="crear_proye1">
+<h2><?php echo __("CREATE_PROJECT2");?><br>
+<?php echo __("CREATE_PROJECT2_1");?></h2><br>
+<p><?php echo __("CREATE_PROJECT2_2");?><br>
+<?php echo __("CREATE_PROJECT2_3");?><br>
+<?php echo __("CREATE_PROJECT2_4");?>
+<?php echo __("CREATE_PROJECT2_5");?><br></p>
+</div>
+<div class="crear_proye2">
+<h2><?php echo __("CREATE_PROJECT3");?></h2><br>
+<?php echo __("CREATE_PROJECT3_1");?><br>
+<p><?php echo __("CREATE_PROJECT3_2");?><br>
+<?php echo __("CREATE_PROJECT3_3");?><br>
+<?php echo __("CREATE_PROJECT3_4");?>
+<?php echo __("CREATE_PROJECT3_5");?><br>
+<?php echo __("CREATE_PROJECT3_6");?><br></p>
+</div>
 <div style="width:100%; height:auto; margin-top:20px">
-<h1>Crea tu Proyecto</h1>
-<span style=" font-style:italic">&#191;C&oacute;mo funciona?</span><br><br>
+<h1><?php echo __("CREATE_YOUR_PROJECT");?></h1>
+<span style=" font-style:italic"><?php echo __("HOW_WORK");?></span><br><br>
 <div id="banner_crea_proyecto"><img src="/2012/images/info_crea_proyecto.png" width="957" height="286">
 <div id="relleno_crea_proyecto"></div>
-
-
 </div>
-<div><img src="/2012/images/sombra_header.png" width="957" height="20"></div>
+
+<div><img src="/2012/images/sombra_header.png" width="957" height="20">
+<div class="casos_exito" onclick="window.location='/#proyecto_destacado';">
+<h2><?php echo __("SEE_SUCCESFUL_CASES");?></h2><br>
+</div>
+<div class="casos_exito1" onclick="window.location='/#proyecto_destacado';">
+<?php echo __("SEE_SUCCESFUL_CASES1");?><br>
+</div>
+<div class="casos_exito1_1" onclick="window.location='/#proyecto_destacado';">
+<h2><?php echo __("SEE_SUCCESFUL_CASES1_1");?></h2><br>
+</div>
+<div class="casos_exito1_2" onclick="window.location='/#proyecto_destacado';">
+<?php echo __("SEE_SUCCESFUL_CASES1_2");?><br>
+</div>
+<a href="/#proyecto_destacado" id="casos_de_exito"></a>
 <a href="/guidelines" id="groofi_escuela"></a>
+
 <br>
 <br>
-<div style="font-style:italic">Completa la siguiente informaci&oacute;n</div> <div class="misc_separador" style="width:100%"></div><br>
+
+
+<?php
+echo $javascript->link('ckeditor/ckeditor');
+
+
+?>
+
+
+<div style="font-style:italic"><?php echo __("PROJECT_ADD_FIRST_BLOCK_SUBTITLE");?></div> <div class="misc_separador" style="width:100%"></div><br>
 <script>
 function validIm(action){
 	var yaHayImg=<?=$yaHayImg;?>;
@@ -47,8 +95,10 @@ function validIm(action){
 
 
 
+
+
 <div class="texto_how_izq" style="position:relative;">
-<p style="font-size:12px">T&iacute;tulo</p>
+<p style="font-size:12px"><?php echo __("Project.title");?></p>
 <div class="rounded_crear">
 <input onfocus="this.blur();" autocomplete="off" type="text" name="data[Project][title]" value="<?=$this->data['Project']['title'];?>" />
 
@@ -56,7 +106,7 @@ function validIm(action){
 </div>
 </div>
 <div class="texto_how_izq">
-<p style="font-size:12px">Categor&iacute;a</p>
+<p style="font-size:12px"><?php echo __("PROJECT__CATEGORY");?></p>
 <div class="rounded_crear">
 <input autocomplete="off" type="hidden" name="data[Project][category_id]" value="<?=$this->data['Project']['category_id'];?>" />
 <input onfocus="this.blur();"  autocomplete="off" type="text" name="vista" value="<?=$base_categories[$this->data['Project']['category_id']];?>" />
@@ -67,7 +117,7 @@ function validIm(action){
 </div>
 </div>
 <div class="texto_how_izq">
-<p style="font-size:12px">Descripci&oacute;n breve</p>
+<p style="font-size:12px"><?php echo __("PROJECT__SHORT_DESCRIPTION");?></p>
 <script>
 function noenter(e){
 	var evt=e || window.event;
@@ -81,6 +131,32 @@ function noenter(e){
 <div class="bot_info_area"  onmouseout="hideTip()" onmousemove="showTip(event,'Esta es la descripci&oacute;n breve de tu proyecto. En esta instancia, ya no puedes editarla.')"></div>
 </div>
 <div style="width:370px; height:253px; background:url(/2012/images/proyectosprivados.png); position:absolute; top:174px;left:477px">
+
+<div class="proyectos_privados0">
+<?php echo __("PROYECTOS_PRIVADOS1");?>
+</div>
+<div class="proyectos_privados">
+<p><?php echo __("PROYECTOS_PRIVADOS2");?><br>
+<?php echo __("PROYECTOS_PRIVADOS3");?><br>
+<?php echo __("PROYECTOS_PRIVADOS4");?><br>
+<?php echo __("PROYECTOS_PRIVADOS5");?></p>
+</div>
+<div class="proyectos_privados1">
+<?php echo __("PROYECTOS_PRIVADOS6");?>
+</div>
+<div class="proyectos_privados2">
+<?php echo __("PROYECTOS_PRIVADOS7");?>
+</div>
+<div class="proyectos_privados3">
+<?php echo __("PROYECTOS_PRIVADOS8");?>
+</div>
+<div class="proyectos_privados4">
+<?php echo __("USER__PASSWORD");?>
+</div>
+<div class="proyectos_privados5">
+<?php echo __("USER__PASSWORD_CONFIRMATION");?>
+</div>
+
 <label style="position:absolute;left:2px; top:156px ;width:70px; height:30px;"><input <? if(!isset($this->data['Project']['private']) || $this->data['Project']['private']=='0'){?>checked="checked"<? } ?> style="width:20px; height:20px" type="radio" name="data[Project][private]" id="private0" value="0" /></label>
 <label style="position:absolute;left:70px; top:156px ;width:70px; height:30px;"><input <? if(isset($this->data['Project']['private']) && $this->data['Project']['private']=='1'){?>checked="checked"<? } ?> style=" width:20px; height:20px" type="radio" name="data[Project][private]" id="private1" value="1" /></label>
 <input value="<? if(isset($this->data['Project']['private_pass'])){echo $this->data['Project']['private_pass'];}?>" style="border:none; background:url(/2012/images/Vacio.gif); position:absolute; width:165px;height:23px;left:2px; top:209px" type="password" id="claveprivado" name="data[Project][private_pass]">
@@ -90,7 +166,7 @@ function noenter(e){
 </div>
 
 <div class="texto_how_izq" style="position:relative;">
-<p style="font-size:12px">Descripci&oacute;n</p>
+<p style="font-size:12px"><?php echo __("PROJECT_MAIN_POST");?></p>
 <div class="rounded_area_crear">
 <textarea name="data[Project][description]" autocomplete="off" cols="30" rows="6"><?=$this->data['Project']['description'];?></textarea>
 <div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['description']) && !empty($validationErrorsArray['description'])){echo $validationErrorsArray['description'];}?></div>
@@ -102,7 +178,7 @@ function noenter(e){
 <div class="texto_how_izq">
 <p style="font-size:12px"><?php echo __("PROJECT_REASON");?></p>
 <div class="rounded_area_crear">
-<textarea name="data[Project][reason]" autocomplete="off" cols="30" rows="6"><?if(isset($this->data['Project']['reason'])){echo $this->data['Project']['reason'];}?></textarea>
+<textarea class="ckeditor" name="data[Project][reason]" autocomplete="off" cols="30" rows="6"><?if(isset($this->data['Project']['reason'])){echo $this->data['Project']['reason'];}?></textarea>
 <div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['reason']) && !empty($validationErrorsArray['reason'])){echo $validationErrorsArray['reason'];}?></div>
 <div class="bot_info_area" onmouseout="hideTip()" onmousemove="showTip(event,'Cu&eacute;ntales a tus posibles patrocinadores por qu&eacute; deber&iacute;an aportar fondos para tu proyecto.')"></div>
 </div>
@@ -165,16 +241,16 @@ function noenter(e){
 <div class="texto_how_izq">
 
 </div>
-<div style="font-style:italic;clear:both">Imagen & Video</div> <div class="misc_separador" style="width:100%"></div><br>
+<div style="font-style:italic;clear:both"><?php echo __("PROJECT_ADD_SECOND_BLOCK_TITLE");?></div> <div class="misc_separador" style="width:100%"></div><br>
 <div class="texto_how_izq" style="margin-bottom:0 !important">
-<p style="font-size:12px">Imagen</p>
+<p style="font-size:12px"><?php echo __("PROJECT_IMAGE");?></p>
 
-<div id="bajofoto1">Examinar...</div>
+<div id="bajofoto1"><?php echo __("UPLOAD_BROWSE");?></div>
  <div id="extfoto2"><input onchange="if((this.value.toLowerCase().indexOf('.jpg')==-1) && (this.value.toLowerCase().indexOf('.jpeg')==-1) && (this.value.toLowerCase().indexOf('.gif')==-1) && (this.value.toLowerCase().indexOf('.png')==-1)){$('elfile2').innerHTML='<span style=&quot;color:red;font-size:9px&quot;>Formato de archivo no permitido.</span>';this.value='';return;}$('elfile2').innerHTML=this.value" onmouseover="$('bajofoto1').style.background='#237fb5';" onmouseout="$('bajofoto1').style.background='#000';" id="foto1"  name="data[Project][file]" autocomplete="off" type="file" /></div>
 
 
 
-<br><div id="elfile2">Selecciona un archivo</div>
+<br><div id="elfile2"><?php echo __("UPLOAD_NO_FILE_SELECTED");?></div>
 <div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['file']) && !empty($validationErrorsArray['file'])){echo $validationErrorsArray['file'];}?></div>
 <br>
 
@@ -201,8 +277,34 @@ function noenter(e){
 <? if($video){?>
 <div style="margin-bottom:30px;"><?=$video?></div>
 <? } ?>
-<div style="font-style:italic">Recaudaci&oacute;n de fondos</div> <div class="misc_separador" style="width:100%"></div><br>
+<div style="font-style:italic"><?php echo __("PROJECT_ADD_THIRD_BLOCK_TITLE");?></div> <div class="misc_separador" style="width:100%"></div><br>
 <div id="fondos_requeridos">
+
+<div class="fond_reque">
+<?php echo __("PROJECT_FUNDING_GOAL");?>
+</div>
+<div class="tipo_moneda">
+<?php echo __("TYPE_OF_CURRENCY");?>
+</div>
+<div class="tipo_moneda_concept">
+<?php echo __("TYPE_OF_CURRENCY_1");?>
+</div>
+<div class="tipo_moneda_us">
+<?php echo __("TYPE_OF_CURRENCY_US");?>
+</div>
+<div class="tipo_moneda_eu">
+<?php echo __("TYPE_OF_CURRENCY_EUR");?>
+</div>
+<div class="tipo_moneda_ar">
+<?php echo __("TYPE_OF_CURRENCY_ARS");?>
+</div>
+<div class="tipo_moneda_gb">
+<?php echo __("TYPE_OF_CURRENCY_GBP");?>
+</div>
+<div class="tipo_moneda_br">
+<?php echo __("TYPE_OF_CURRENCY_BRL");?>
+</div>
+
 <div class="input_fondos">
 <div id="quemoneda" style="color:#686b68; width:50px; height:30px; text-align:right; line-height:30px;font-size:15px;font-weight:normal; position:absolute; left:-45px;top:20px;font-family:Arial, Helvetica, sans-serif"><?if(!isset($this->data['Project']['moneda'])){?>USD<? }else{?><?=traducirMoneda($this->data['Project']['moneda'])?><? } ?></div>
 <input value="<?if(isset($this->data['Project']['funding_goal'])){echo $this->data['Project']['funding_goal'];}?>" id="in_fondos" type="text" name="data[Project][funding_goal]" /></div>
@@ -210,17 +312,28 @@ function noenter(e){
 
 <div class="bot_info" onmouseout="hideTip()"  onmousemove="showTip(event,'Ingresa el monto en d&oacute;lares que necesitas para realizar tu proyecto. Podr&aacute;s modificar este importe una vez aprobada tu propuesta.<br>Recuerda que si al cabo del tiempo elegido a continuaci&oacute;n tu proyecto no recauda este monto, no ser&aacute; financiado. Piensa en una suma que est&eacute;s en condiciones de recaudar en el tiempo previsto.')"></div>
 <div style="position:absolute; width:534px; height:148px; background:url(/2012/images/tipodemoneda.jpg); left:420px; top:0">
+
 <label style="position:absolute; height:15px;width:300px;  left:0; top:98px; text-align:left; margin:0; padding:0" for="usd">
-    <input onchange="if(this.checked){$('quemoneda').innerHTML=this.value;window.lamoneda=this.value;changeBoxesMoneda();}" value="USD" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="usd" <?if((isset($this->data['Project']['moneda']) && $this->data['Project']['moneda']=='USD') || !isset($this->data['Project']['moneda'])){?>checked="checked"<? } ?>>
+    <input onchange="if(this.checked){$('quemoneda').innerHTML=this.value;window.lamoneda=this.value;changeBoxesMoneda();}" value="USD" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="usd" <?if((isset($_POST['data']['Project']['moneda']) && $_POST['data']['Project']['moneda']=='USD') || !isset($_POST['data']['Project']['moneda'])){?>checked="checked"<? } ?>>
 </label>
-<label style="position:absolute; height:15px;width:300px;  left:0; top:125px; text-align:left; margin:0; padding:0" for="ars">
-    <input onchange="if(this.checked){$('quemoneda').innerHTML='ARS';window.lamoneda='ARS';changeBoxesMoneda();}" value="ARS" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="ars" <?if(isset($this->data['Project']['moneda']) && $this->data['Project']['moneda']=='ARS'){?>checked="checked"<? } ?>>
+<label style="position:absolute; height:15px;width:300px;  left:0; top:125px; text-align:left; margin:0; padding:0" for="eur">
+    <input onchange="if(this.checked){$('quemoneda').innerHTML='EUR';window.lamoneda='EUR';changeBoxesMoneda();}" value="EUR" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="eur" <?if(isset($_POST['data']['Project']['moneda']) && $_POST['data']['Project']['moneda']=='EUR'){?>checked="checked"<? } ?>>
 </label>
+<label style="position:absolute; height:15px;width:300px;  left:0; top:152px; text-align:left; margin:0; padding:0" for="ars">
+    <input onchange="if(this.checked){$('quemoneda').innerHTML='ARS';window.lamoneda='ARS';changeBoxesMoneda();}" value="ARS" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="ars" <?if(isset($_POST['data']['Project']['moneda']) && $_POST['data']['Project']['moneda']=='ARS'){?>checked="checked"<? } ?>>
+</label>
+<label style="position:absolute; height:15px;width:300px;  left:0; top:179px; text-align:left; margin:0; padding:0" for="gbp">
+    <input onchange="if(this.checked){$('quemoneda').innerHTML='GBP';window.lamoneda='GBP';changeBoxesMoneda();}" value="GBP" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="gbp" <?if(isset($_POST['data']['Project']['moneda']) && $_POST['data']['Project']['moneda']=='GBP'){?>checked="checked"<? } ?>>
+</label>
+<label style="position:absolute; height:15px;width:300px;  left:0; top:206px; text-align:left; margin:0; padding:0" for="brl">
+    <input onchange="if(this.checked){$('quemoneda').innerHTML='BRL';window.lamoneda='ARS';changeBoxesMoneda();}" value="BRL" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="brl" <?if(isset($_POST['data']['Project']['moneda']) && $_POST['data']['Project']['moneda']=='BRL'){?>checked="checked"<? } ?>>
+</label>
+
 </div>
 </div>
 
 <div class="texto_how_izq">
-<p style="font-size:12px">Duraci&oacute;n del proyecto</p><br>
+<p style="font-size:12px"><?php echo __("PROJECT__PROJECT_DURATION");?></p><br>
 <input name="data[Project][project_duration]" type="hidden" autocomplete="off" class="range" value="7" id="ProjectProjectDuration" />
 <div style="position:relative; height:17px; width:360px">
 <div id="indicadords" style="font-size:10px;">7 d&iacute;a/s</div>
@@ -235,22 +348,22 @@ function noenter(e){
 <div class="clear"></div>
 <div class="misc_separador" style=" width:367px; height:1px; margin-top:-10px; margin-bottom:15px;"></div>
 <div class="clear"></div>
-<div id="beneficiosyrecompensas" style="font-style:italic">Beneficios & Recompensas</div> <div class="misc_separador" style="width:100%"></div><br>
-<div class="titulos_beneficios">Beneficios para Personas</div>
-<div class="titulos_beneficios empresas">Beneficios para Empresas</div>
+<div id="beneficiosyrecompensas" style="font-style:italic"><?php echo __("BENEFITS_REWARDS");?></div> <div class="misc_separador" style="width:100%"></div><br>
+<div class="titulos_beneficios"><?php echo __("BENEFISTS_FOR_PEOPLE");?></div>
+<div class="titulos_beneficios empresas"><?php echo __("CORPORATE_BENEFIST");?></div>
 <div class="clear"></div>
 <div id="beneficios_personas_crear">
-<div class="monto_crear"><p style="font-size:12px">Monto M&iacute;nimo</p><br>
+<div class="monto_crear"><p style="font-size:12px"><?php echo __("Prize_VALUE");?></p><br>
 <div class="rounded_crear beneficio">
 <input style="width:70px; " type="text" name="nombre" id="mminazul" />
 </div>
 </div>
-<div class="desc_crear"><p style="font-size:12px">Descripci&oacute;n</p><br>
+<div class="desc_crear"><p style="font-size:12px"><?php echo __("Prize_TEXT");?></p><br>
 <div class="rounded_area_beneficios">
 <textarea onkeypress="return noenter(event)" name="comments" cols="1" rows="1" id="descrazul"></textarea>
 <div id="errP" style="color:red;font-size:9px;position:relative; top:6px; left:10px"></div>
 <div class="bot_info_beneficio" onmouseout="hideTip()"  onmousemove="showTip(event,'Ingresa los beneficios que recibir&aacute;n tus patrocinadores de acuerdo al monto que elijan aportar a tu proyecto.<br>Los beneficios son regalos o premios relacionados con el proyecto, que te comprometes a darles a tus patrocinadores.<br>Podr&aacute;s modificar esto una vez aprobada tu propuesta.<br>Ten en mente que muchos patrocinadores s&oacute;lo est&aacute;n interesados en los beneficios.<br>Ofrece recompensas atractivas y acorde al monto del aporte.')"></div>
-<div class="bot_crear_nuevo" onclick="addBeneficio($('mminazul').value, $('descrazul').value, 'personas');">CREAR</div>
+<div class="bot_crear_nuevo" onclick="addBeneficio($('mminazul').value, $('descrazul').value, 'personas');"><?php echo __("CREATE");?></div>
 
 </div>
 
@@ -265,17 +378,17 @@ function noenter(e){
 
 <div id="beneficios_empresas_crear">
 
-<div class="monto_crear"><p style="font-size:12px">Monto M&iacute;nimo</p><br>
+<div class="monto_crear"><p style="font-size:12px"><?php echo __("Prize_VALUE");?></p><br>
 <div class="rounded_crear beneficio">
 <input style="width:70px; " type="text" name="nombre" id="mminverde" />
 </div>
 </div>
-<div class="desc_crear"><p style="font-size:12px">Descripci&oacute;n</p><br>
+<div class="desc_crear"><p style="font-size:12px"><?php echo __("Prize_TEXT");?></p><br>
 <div class="rounded_area_beneficios">
 <textarea onkeypress="return noenter(event)" name="comments" cols="1" rows="1" id="descverde"></textarea>
 <div id="errE" style="color:red;font-size:9px;position:relative; top:6px; left:10px"></div>
 <div class="bot_info_empresas"  onmouseout="hideTip()"  onmousemove="showTip(event,'Ingresa los beneficios que recibir&aacute;n tus patrocinadores de acuerdo al monto que elijan aportar a tu proyecto.<br>Los beneficios son regalos o premios relacionados con el proyecto, que te comprometes a darles a tus patrocinadores.<br>Podr&aacute;s modificar esto una vez aprobada tu propuesta.<br>Ten en mente que muchos patrocinadores s&oacute;lo est&aacute;n interesados en los beneficios.<br>Ofrece recompensas atractivas y acorde al monto del aporte.')"></div>
-<div class="bot_crear_nuevo empresas" onclick="addBeneficio($('mminverde').value, $('descverde').value, 'empresa');">CREAR</div>
+<div class="bot_crear_nuevo empresas" onclick="addBeneficio($('mminverde').value, $('descverde').value, 'empresa');"><?php echo __("CREATE");?></div>
 
 </div>
 
@@ -293,10 +406,10 @@ function noenter(e){
 
 </form>
 
-<a onclick="validIm();return false;" class="bot_envnuevoproy" href="#">Guardar</a>
+<a onclick="validIm();return false;" class="bot_envnuevoproy" href="#"><?php echo __("SAVE");?></a>
 <? if ($this->data['Project']['public'] == 0) {?>
-<a onclick="validIm('<?= Project::getLink($this->data, 'publish') ?>');return false;" class="bot_envnuevoproy" href="#" style="position:relative; top:-66px; left:150px;">Lanzar Proyecto</a>
-<a class="bot_envnuevoproy" href="/projects/delete/<?=$this->data['Project']['id']?>" style="position:relative; top:-132px; left:299px;">Eliminar</a>
+<a onclick="validIm('<?= Project::getLink($this->data, 'publish') ?>');return false;" class="bot_envnuevoproy" href="#" style="position:relative; top:-66px; left:150px;"><?php echo __("PUBLISH_PROJECT");?></a>
+<a class="bot_envnuevoproy" href="/projects/delete/<?=$this->data['Project']['id']?>" style="position:relative; top:-132px; left:299px;"><?php echo __("DELETE");?></a>
 <? } ?>
 </div>
 <script>
@@ -502,7 +615,7 @@ function addBeneficio(monto, descripcion, entidad){
 	}
 	$(campos[0]).value=$(campos[1]).value='';
 	$('err'+elente).innerHTML='';
-	var html='	<div id="'+id+'"><input type="hidden" name="data[Prize]['+window.memo.index+'][model]" autocomplete="off" value="Project" />	<input type="hidden" name="data[Prize]['+window.memo.index+'][value]" autocomplete="off" value="'+monto+'" />	<input name="data[Prize]['+window.memo.index+'][description]" type="hidden" autocomplete="off" value="'+descripcion+'" />	<input name="data[Prize]['+window.memo.index+'][ente]" type="hidden" autocomplete="off" value="'+elente+'" />	'+sep+'<div class="beneficio_creado'+ente+'"><h3 class="'+colortxt+'">Aportando <span class="lamonedaelegida">'+window.lamoneda+'</span> '+monto+' </h3><p class="texto_proyecto" style="color:#383938; height:60px; overflow:auto;">'+descripcion+'</p><div onclick="$(&quot;'+id+'&quot;).parentNode.removeChild($(&quot;'+id+'&quot;));" class="borrar_beneficio'+ente+'"></div><div onclick="$(&quot;'+campos[0]+'&quot;).value=&quot;'+monto+'&quot;;$(&quot;'+campos[1]+'&quot;).value=&quot;'+descripcion+'&quot;;$(&quot;'+id+'&quot;).parentNode.removeChild($(&quot;'+id+'&quot;));location=&quot;#beneficiosyrecompensas&quot;" class="editar_beneficio'+ente+'"></div></div></div>';
+	var html='	<div id="'+id+'"><input type="hidden" name="data[Prize]['+window.memo.index+'][model]" autocomplete="off" value="Project" />	<input type="hidden" name="data[Prize]['+window.memo.index+'][value]" autocomplete="off" value="'+monto+'" />	<input name="data[Prize]['+window.memo.index+'][description]" type="hidden" autocomplete="off" value="'+descripcion+'" />	<input name="data[Prize]['+window.memo.index+'][ente]" type="hidden" autocomplete="off" value="'+elente+'" />	'+sep+'<div class="beneficio_creado'+ente+'"><h3 class="'+colortxt+'"><?php echo __("Providing");?><span class="lamonedaelegida">'+window.lamoneda+'</span> '+monto+' </h3><p class="texto_proyecto" style="color:#383938; height:60px; overflow:auto;">'+descripcion+'</p><div onclick="$(&quot;'+id+'&quot;).parentNode.removeChild($(&quot;'+id+'&quot;));" class="borrar_beneficio'+ente+'"></div><div onclick="$(&quot;'+campos[0]+'&quot;).value=&quot;'+monto+'&quot;;$(&quot;'+campos[1]+'&quot;).value=&quot;'+descripcion+'&quot;;$(&quot;'+id+'&quot;).parentNode.removeChild($(&quot;'+id+'&quot;));location=&quot;#beneficiosyrecompensas&quot;" class="editar_beneficio'+ente+'"></div></div></div>';
 	if(entidad=='empresa'){
 		$('contverde').innerHTML+=html;
 	}else{

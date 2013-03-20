@@ -1335,6 +1335,7 @@ class ProjectsController extends AppController {
 	imagedestroy($thumb);
 	}
 
+
 }
 
 ?>

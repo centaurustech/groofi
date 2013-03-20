@@ -61,7 +61,6 @@ var conface='<?php echo __("FACEBOOK_LOGIN_TITLE_1");?>';
 var newuser='<?php echo __("REGISTER_ME");?>';
 var config='<?php echo __("USERS_EDIT");?>';
 
-
 <?php
 if ($this->Session->read ('Auth.User.id')) {
     $user = $this->Session->read ('Auth');
@@ -119,13 +118,21 @@ ns.logueado=0;
 <div onclick="$('searchform').action='/search/projects/'+$('keybus').value;$('searchform').submit();" class="bot_search"></div>
 <form onsubmit="this.action='/search/projects/'+$('keybus').value" id="searchform" method="post" action="/search/projects" accept-charset="utf-8"><input id="keybus" autocomplete="off" class="input_buscador"  name="data[Search][q]" type="text"></form></div>
   <div id="menu">
-  <div></div>
-    <a href="/discover/projects" id="descubri" class="descubri">
-    </a>
-    <a href="<?= Router::url (array ('controller' => 'projects', 'action' => 'add'))?>" id="crea" class="crea">
-    </a>
-    <a href="http://blog.groofi.com/" class="blog">
-    </a>
+    <div class="grof">
+    <a href="/discover/projects" class="header_letras1" id="descubri">
+    <span class="descubri"></span>
+    <?php echo __("DISCOVER_PRINCIPAL");?>
+    </a></div>
+    <div class="grof">
+        <a href="<?= Router::url (array ('controller' => 'projects', 'action' => 'add'))?>" class="header_letras2" id="crea">
+        <span class="crea"></span>
+        <?php echo __("CREATE");?>
+        </a></div>
+    <div class="grof">
+        <a href="http://blog.groofi.com/" class="header_letras3" id="blog">
+        <span class="blog"></span>
+        <?php echo __("BLOG");?>
+        </a></div>
     <div class="clear"></div>
   </div>
 </div>
@@ -152,15 +159,8 @@ ns.logueado=0;
 <div class="header_groofi">
 <?php echo __("FINANCE_YOUR_THOUGHTS");?><br>
 </div>
-<div class="header_letras1" onclick="location='/discover/projects';">
-<?php echo __("DISCOVER_PRINCIPAL");?><br>
-</div>
-<div class="header_letras2" onclick="location='<?= Router::url (array ('controller' => 'projects', 'action' => 'add'))?>'">
-<?php echo __("CREATE");?><br>
-</div>
-<div class="header_letras3" onclick="location='http://blog.groofi.com/';">
-<?php echo __("BLOG");?><br>
-</div>
+
+
 
 <?php echo $content_for_layout; ?>
 
