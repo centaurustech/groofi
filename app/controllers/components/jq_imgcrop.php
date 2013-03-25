@@ -104,5 +104,6 @@ class JqImgcropComponent extends Object {
         $cropped = $this->resizeThumbnailImage(WWW_ROOT.str_replace("/", DS,$thumbLocation),WWW_ROOT.str_replace("/", DS,$imageLocation),$w,$h,$x1,$y1,$scale);
         return $cropped;
     }
+
 }
 ?>

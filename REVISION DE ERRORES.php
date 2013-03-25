@@ -28,22 +28,17 @@ function getVideoFromURL($u){
 ?>
 <?php
 echo $javascript->link('ckeditor/ckeditor');
-?>
+echo $this->Html->script('ckfinder/ckfinder.js');
 
+?>
 <?php
-echo $cksource->create('CKSource');
-//echo $cksource->ckeditor('example1');
-
-/*$config['toolbar'] = array(
-    array( 'Source', '-', 'Bold', 'Italic', 'Underline', 'Strike' ),
-    array( 'Image', 'Link', 'Unlink', 'Anchor' )
-);
-$events['instanceReady'] = 'function (ev) {
-          alert("Loaded: " + ev.editor.name);
-      }';*/
-
-
+if(isset($javascript)):
+    echo $javascript->link('jquery-1.2.6.min.js');
+    echo $javascript->link('jquery.imgareaselect-0.4.2.min.js');
+endif;
 ?>
+
+
 
 <div class="crear_proye">
     <h2><?php echo __("CREATE_PROJECT1");?><br>
@@ -69,7 +64,8 @@ $events['instanceReady'] = 'function (ev) {
         <?php echo __("CREATE_PROJECT3_3");?><br>
         <?php echo __("CREATE_PROJECT3_4");?>
         <?php echo __("CREATE_PROJECT3_5");?><br>
-        <?php echo __("CREATE_PROJECT3_6");?><br></p>
+        <?php echo __("CREATE_PROJECT3_6");?><br>
+    </p>
 </div>
 <div style="width:100%; height:auto; margin-top:20px">
 <h1><?php echo __("CREATE_YOUR_PROJECT");?></h1>
@@ -112,6 +108,24 @@ $events['instanceReady'] = 'function (ev) {
         <div class="bot_info"  onmouseout="hideTip()" onmousemove="showTip(event,'Este ser&aacute; el t&iacute;tulo de tu proyecto. Una vez aprobado, no podr&aacute;s modificarlo.')"></div>
     </div>
 </div>
+
+
+
+
+<div class="texto_how_izq">
+    <p style="font-size:12px"><?php echo __("COUNTRY");?></p>
+    <div class="rounded_crear">
+        <input onkeyup="xrestantes(this,$('restantes1'),50)" onkeydown="xrestantes(this,$('restantes1'),50)" onchange="xrestantes(this,$('restantes1'),50)" autocomplete="off" type="text" name="data[Project][country]" value="<?if(isset($_POST['data']['Project']['country'])){echo $_POST['data']['Project']['country'];}?>" />
+        <div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['country']) && !empty($validationErrorsArray['country'])){echo $validationErrorsArray['country'];}?></div>
+        <div id="restantes1" style="font-size:9px;position:absolute;left:0; top:28px; text-align:right; width:370px; height:15px;">Restan: <?if(isset($_POST['data']['Project']['country'])){echo 50-intval((strlen(utf8_decode($_POST['data']['Project']['country']))));}else{echo '50';}?> caracteres</div>
+        <div class="bot_info"  onmouseout="hideTip()" onmousemove="showTip(event,'Este ser&aacute; el t&iacute;tulo de tu proyecto. Una vez aprobado, no podr&aacute;s modificarlo.')"></div>
+    </div>
+</div>
+
+
+
+
+
 <div class="texto_how_izq">
     <p style="font-size:12px"><?php echo __("PROJECT__CATEGORY");?></p>
     <div class="rounded_crear" style=background:none>
@@ -124,76 +138,14 @@ $events['instanceReady'] = 'function (ev) {
         </select>
         <div class="bot_info" onmouseout="hideTip()" onmousemove="showTip(event,'Elige la categor&iacute;a que mejor describa a tu proyecto. Una vez aprobado, no podr&aacute;s modificarla.')"></div>
     </div>
-</div>
-<div class="texto_how_izq">
-
-    <p style="font-size:12px"><?php echo __("PROJECT__MOTIVATION");?></p>
-
-    <div class="rounded_area_crear">
-        <textarea name="data[Project][motivation]" cols="30" rows="6" autocomplete="off"><?if(isset($_POST['data']['Project']['motivation'])){echo $_POST['data']['Project']['motivation'];}?></textarea>
-        <div class="bot_info_area"  onmouseout="hideTip()" onmousemove="showTip(event,'Esta informaci&oacute;n nos ser&aacute; &uacute;til para evaluar tu propuesta. No la publicaremos.')"></div>
-    </div>
-
-</div>
+</
 
 
-<div class="texto_how_izq" style="position:relative;">
-    <p style="font-size:12px"><?php echo __("PROJECT__SHORT_DESCRIPTION");?></p>
-    <div class="rounded_area_crear">
-        <textarea onkeyup="xrestantes(this,$('restantes2'),140,50)" onkeydown="xrestantes(this,$('restantes2'),140,50)" onchange="xrestantes(this,$('restantes2'),140,50)" name="data[Project][short_description]" autocomplete="off" cols="30" rows="6"><?if(isset($_POST['data']['Project']['short_description'])){echo $_POST['data']['Project']['short_description'];}?></textarea>
-        <div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['short_description']) && !empty($validationErrorsArray['short_description'])){echo $validationErrorsArray['short_description'];}?></div>
-        <div   id="restantes2" style="font-size:9px;position:absolute;left:0; top:118px; text-align:right; width:370px; height:15px;">Ingresados: <?if(isset($_POST['data']['Project']['short_description'])){echo intval((strlen(utf8_decode($_POST['data']['Project']['short_description']))));}else{echo '0';}?> caracteres. Restan: <?if(isset($_POST['data']['Project']['short_description'])){echo 140-intval((strlen(utf8_decode($_POST['data']['Project']['short_description']))));}else{echo '140';}?> caracteres</div>
-        <div class="bot_info_area" onmouseout="hideTip()" onmousemove="showTip(event,'Describe en pocas palabras la idea de tu proyecto. Una vez aprobado, no podr&aacute;s modificarla.')"></div>
-    </div>
-    <div style="width:370px; height:253px; background:url(/2012/images/proyectosprivados.png); position:absolute; top:150px">
-        <div class="proyectos_privados0">
-            <?php echo __("PROYECTOS_PRIVADOS1");?>
-        </div>
-        <div class="proyectos_privados">
-            <p><?php echo __("PROYECTOS_PRIVADOS2");?><br>
-                <?php echo __("PROYECTOS_PRIVADOS3");?><br>
-                <?php echo __("PROYECTOS_PRIVADOS4");?><br>
-                <?php echo __("PROYECTOS_PRIVADOS5");?></p>
-        </div>
-        <div class="proyectos_privados1">
-            <?php echo __("PROYECTOS_PRIVADOS6");?>
-        </div>
-        <div class="proyectos_privados2">
-            <?php echo __("PROYECTOS_PRIVADOS7");?>
-        </div>
-        <div class="proyectos_privados3">
-            <?php echo __("PROYECTOS_PRIVADOS8");?>
-        </div>
-        <div class="proyectos_privados4">
-            <?php echo __("USER__PASSWORD");?>
-        </div>
-        <div class="proyectos_privados5">
-            <?php echo __("USER__PASSWORD_CONFIRMATION");?>
-        </div>
-        <label style="position:absolute;left:2px; top:156px ;width:70px; height:30px;"><input <? if(!isset($_POST['data']['Project']['private']) || $_POST['data']['Project']['private']=='0'){?>checked="checked"<? } ?> style="width:20px; height:20px" type="radio" name="data[Project][private]" id="private0" value="0" /></label>
-        <label style="position:absolute;left:70px; top:156px ;width:70px; height:30px;"><input <? if(isset($_POST['data']['Project']['private']) && $_POST['data']['Project']['private']=='1'){?>checked="checked"<? } ?> style=" width:20px; height:20px" type="radio" name="data[Project][private]" id="private1" value="1" /></label>
-        <input value="<? if(isset($_POST['data']['Project']['private_pass'])){echo $_POST['data']['Project']['private_pass'];}?>" style="border:none; background:url(/2012/images/Vacio.gif); position:absolute; width:165px;height:23px;left:2px; top:209px" type="password" id="claveprivado" name="data[Project][private_pass]">
-        <input value="<? if(isset($_POST['data']['Project']['private_pass2'])){echo $_POST['data']['Project']['private_pass2'];}?>" style="border:none; background:url(/2012/images/Vacio.gif); position:absolute; width:165px;height:23px;left:177px; top:209px;" type="password" id="claveprivado2" name="data[Project][private_pass2]">
-        <div style="color:red;font-size:9px;position:relative; top:256px"><?php if (isset($validationErrorsArray['private']) && !empty($validationErrorsArray['private'])){echo $validationErrorsArray['private'];}?></div>
-    </div>
-</div>
-
-
-<div class="texto_how_izq">
-    <p style="font-size:12px"><?php echo __("PROJECT__DESCRIPTION");?></p>
-    <div class="rounded_area_crear">
-        <?php echo $cksource->ckeditor('data[Project][description]', array('value'=>'', 'config'=>$config));
-        echo $cksource->end();?>
-        <!--textarea name="data[Project][description]" autocomplete="off" cols="30" rows="6"><!--?if(isset($_POST['data']['Project']['description'])){echo $_POST['data']['Project']['description'];}?></textarea-->
-        <div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['description']) && !empty($validationErrorsArray['description'])){echo $validationErrorsArray['description'];}?></div>
-        <div class="bot_info_area" onmouseout="hideTip()" onmousemove="showTip(event,'Describe tu proyecto en extenso. Podr&aacute;s editar esta descripci&oacute;n una vez aprobado tu proyecto.<br>Cuanta m&aacute;s informaci&oacute;n pongas y m&aacute;s claro seas en esta descripci&oacute;n, m&aacute;s confiable resultar&aacute; tu proyecto para los patrocinadores.')"></div>
-    </div>
-
-</div>
 <div class="clear"></div>
 <div class="texto_how_izq">
     <p style="font-size:12px"><?php echo __("GIVE_US_SOME_LINKS");?></p>
-    <div class="bot_info" style="top:26px;" onmouseout="hideTip()"  onmousemove="showTip(event,'Ingresa websites en los que podamos encontrar m&aacute;s informaci&oacute;n sobre tu proyecto. Esto ser&aacute; utilizado para evaluar tu propuesta.')"></div>
+    <div class="bot_info" style="top:26px;" onmouseout="hideTip()"  onmousemove="showTip(event,'+lala+')">
+    </div>
 
     <div class="rounded_perfil">
         <input value="<?if(isset($_POST['data']['Link'][0]['link'])){echo $_POST['data']['Link'][0]['link'];}?>" autocomplete="off"   id="web0" type="text" name="data[Link][0][link]" style="width:350px;"/>
@@ -244,6 +196,74 @@ $events['instanceReady'] = 'function (ev) {
 
 
 </div>
+
+<div class="texto_how_izq">
+
+    <p style="font-size:12px"><?php echo __("PROJECT__MOTIVATION");?></p>
+
+    <div class="rounded_area_crear">
+        <textarea name="data[Project][motivation]" cols="30" rows="6" autocomplete="off"><?if(isset($_POST['data']['Project']['motivation'])){echo $_POST['data']['Project']['motivation'];}?></textarea>
+        <div class="bot_info_area"  onmouseout="hideTip()" onmousemove="showTip(event,'Esta informaci&oacute;n nos ser&aacute; &uacute;til para evaluar tu propuesta. No la publicaremos.')"></div>
+    </div>
+
+</div>
+
+
+
+
+<div class="texto_how_izq">
+    <p style="font-size:12px"><?php echo __("PROJECT__SHORT_DESCRIPTION");?></p>
+    <div class="rounded_area_crear">
+        <textarea onkeyup="xrestantes(this,$('restantes2'),140,50)" onkeydown="xrestantes(this,$('restantes2'),140,50)" onchange="xrestantes(this,$('restantes2'),140,50)" name="data[Project][short_description]" autocomplete="off" cols="30" rows="6"><?if(isset($_POST['data']['Project']['short_description'])){echo $_POST['data']['Project']['short_description'];}?></textarea>
+        <div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['short_description']) && !empty($validationErrorsArray['short_description'])){echo $validationErrorsArray['short_description'];}?></div>
+        <div   id="restantes2" style="font-size:9px;position:absolute;left:0; top:118px; text-align:right; width:370px; height:15px;">Ingresados: <?if(isset($_POST['data']['Project']['short_description'])){echo intval((strlen(utf8_decode($_POST['data']['Project']['short_description']))));}else{echo '0';}?> caracteres. Restan: <?if(isset($_POST['data']['Project']['short_description'])){echo 140-intval((strlen(utf8_decode($_POST['data']['Project']['short_description']))));}else{echo '140';}?> caracteres</div>
+        <div class="bot_info_area" onmouseout="hideTip()" onmousemove="showTip(event,'Describe en pocas palabras la idea de tu proyecto. Una vez aprobado, no podr&aacute;s modificarla.')"></div>
+    </div>
+    <div style="width:370px; height:253px; background:url(/2012/images/proyectosprivados.png); position:absolute; top:540px">
+        <div class="proyectos_privados0">
+            <?php echo __("PROYECTOS_PRIVADOS1");?>
+        </div>
+        <div class="proyectos_privados">
+            <p><?php echo __("PROYECTOS_PRIVADOS2");?><br>
+                <?php echo __("PROYECTOS_PRIVADOS3");?><br>
+                <?php echo __("PROYECTOS_PRIVADOS4");?><br>
+                <?php echo __("PROYECTOS_PRIVADOS5");?></p>
+        </div>
+        <div class="proyectos_privados1">
+            <?php echo __("PROYECTOS_PRIVADOS6");?>
+        </div>
+        <div class="proyectos_privados2">
+            <?php echo __("PROYECTOS_PRIVADOS7");?>
+        </div>
+        <div class="proyectos_privados3">
+            <?php echo __("PROYECTOS_PRIVADOS8");?>
+        </div>
+        <div class="proyectos_privados4">
+            <?php echo __("USER__PASSWORD");?>
+        </div>
+        <div class="proyectos_privados5">
+            <?php echo __("USER__PASSWORD_CONFIRMATION");?>
+        </div>
+        <label style="position:absolute;left:2px; top:156px ;width:70px; height:30px;"><input <? if(!isset($_POST['data']['Project']['private']) || $_POST['data']['Project']['private']=='0'){?>checked="checked"<? } ?> style="width:20px; height:20px" type="radio" name="data[Project][private]" id="private0" value="0" /></label>
+        <label style="position:absolute;left:70px; top:156px ;width:70px; height:30px;"><input <? if(isset($_POST['data']['Project']['private']) && $_POST['data']['Project']['private']=='1'){?>checked="checked"<? } ?> style=" width:20px; height:20px" type="radio" name="data[Project][private]" id="private1" value="1" /></label>
+        <input value="<? if(isset($_POST['data']['Project']['private_pass'])){echo $_POST['data']['Project']['private_pass'];}?>" style="border:none; background:url(/2012/images/Vacio.gif); position:absolute; width:165px;height:23px;left:2px; top:209px" type="password" id="claveprivado" name="data[Project][private_pass]">
+        <input value="<? if(isset($_POST['data']['Project']['private_pass2'])){echo $_POST['data']['Project']['private_pass2'];}?>" style="border:none; background:url(/2012/images/Vacio.gif); position:absolute; width:165px;height:23px;left:177px; top:209px;" type="password" id="claveprivado2" name="data[Project][private_pass2]">
+        <div style="color:red;font-size:9px;position:relative; top:256px"><?php if (isset($validationErrorsArray['private']) && !empty($validationErrorsArray['private'])){echo $validationErrorsArray['private'];}?></div>
+    </div>
+</div>
+
+
+<div class="ckeditor0">
+    <p style="font-size:12px"><?php echo __("PROJECT__DESCRIPTION");?></p>
+    <div class="ckeditor0">
+
+        <textarea class="ckeditor" name="data[Project][description]" autocomplete="off" cols="30" rows="6"><?if(isset($_POST['data']['Project']['description'])){echo $_POST['data']['Project']['description'];}?></textarea>
+        <div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['description']) && !empty($validationErrorsArray['description'])){echo $validationErrorsArray['description'];}?></div>
+        <div class="bot_info_area" onmouseout="hideTip()" onmousemove="showTip(event,'Describe tu proyecto en extenso. Podr&aacute;s editar esta descripci&oacute;n una vez aprobado tu proyecto.<br>Cuanta m&aacute;s informaci&oacute;n pongas y m&aacute;s claro seas en esta descripci&oacute;n, m&aacute;s confiable resultar&aacute; tu proyecto para los patrocinadores.')"></div>
+    </div>
+
+</div>
+
 <div class="texto_how_izq">
 
 </div>
@@ -252,7 +272,8 @@ $events['instanceReady'] = 'function (ev) {
     <p style="font-size:12px"><?php echo __("FILE");?></p>
 
     <div id="bajofoto1"><?php echo __("Browse");?></div>
-    <div id="extfoto2"><input onchange="if((this.value.toLowerCase().indexOf('.jpg')==-1) && (this.value.toLowerCase().indexOf('.jpeg')==-1) && (this.value.toLowerCase().indexOf('.gif')==-1) && (this.value.toLowerCase().indexOf('.png')==-1)){$('elfile2').innerHTML='<span style=&quot;color:red;font-size:9px&quot;>Formato de archivo no permitido.</span>';return;}$('elfile2').innerHTML=this.value" onmouseover="$('bajofoto1').style.background='#237fb5';" onmouseout="$('bajofoto1').style.background='#000';" id="foto1"  name="data[Project][file]" autocomplete="off" type="file" /></div>
+
+    <div id="extfoto2"><input onchange="if((this.value.toLowerCase().indexOf('.jpg')==-1) && (this.value.toLowerCase().indexOf('.jpeg')==-1) && (this.value.toLowerCase().indexOf('.gif')==-1) && (this.value.toLowerCase().indexOf('.png')==-1)){$('elfile2').innerHTML='<span style=&quot;color:red;font-size:9px&quot;>Formato de archivo no permitido.</span>';return;}$('elfile2').innerHTML=this.value" onmouseover="$('bajofoto1').style.background='#237fb5';" onmouseout="$('bajofoto1').style.background='#000';" id="foto1"  name="data[Project][file]" autocomplete="off" type="file" /></div>>
 
 
 
@@ -685,3 +706,4 @@ $events['instanceReady'] = 'function (ev) {
         $('tip').style.top='-1500px';
     }
 </script>
+var lala = {'<?php echo __("VIEW_PROPOSALS_ADMIN_PROPOSALS");?>'};

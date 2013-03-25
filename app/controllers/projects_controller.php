@@ -84,7 +84,14 @@ class ProjectsController extends AppController {
         $base_categories = $this->Project->Category->generatetreelist (null, null, null, " - ");
         foreach ($base_categories as $key => $category) {
             $base_categories[$key] = __ ('CATEGORY_' . up ($category), true);
+
         }
+        /*$base_countries = $this->Project->Country->generatetreelist (null, null, null, " - ");
+        foreach ($base_countries as $key => $country) {
+            $base_countries[$key] = __ ('COUNTRY_' . up ($country), true);
+
+        }
+*/
         $this->set (compact ('base_money', 'base_categories', 'base_prizes'));
 
         parent::beforeRender ();
@@ -227,19 +234,24 @@ class ProjectsController extends AppController {
     }
 
     function add ($offerId=false) {
-		
-		$predefinido=0;
+
+        $this->loadModel('Country');
+
+
+        $base_countries = $this->Country->find('all');
+        $this->set (compact ('base_countries'));
+        $predefinido=0;
 		if($this->Session->check('predefinido')){
 			$predefinido=1;
 			$pred=$this->Session->read('predefinido');
 			
 		}
-				
+
 		if($predefinido){
 			unset($this->Project->validate['file']);
 			if(!$this->data){
 				$_POST['data']['Project']['title']=$pred['title'];
-				$_POST['data']['Project']['category_id']=$pred['category_id'];
+                $_POST['data']['Project']['category_id']=$pred['category_id'];
 				$_POST['data']['Project']['description']=$pred['description'];
 				$_POST['data']['Project']['motivation']=$pred['motivation'];
 				$_POST['data']['Project']['short_description']=$pred['short_description'];
@@ -266,6 +278,7 @@ class ProjectsController extends AppController {
                 $this->set ('offer', $offer);
             }
         }
+
 
         if ($this->data) {
 
@@ -294,8 +307,7 @@ class ProjectsController extends AppController {
 			}
             $invalid = $invalid || !$hasLink || !$hasPrize || $privatepassko;
 
-			
-			
+
 			
             if ($this->Project->saveAll ($this->data, array ('validate' => 'only')) && !$invalid) {
 
@@ -1122,9 +1134,7 @@ class ProjectsController extends AppController {
 
          */
 
-
         if ($this->data) {
-
 
 
             $query = $this->Project->queryStandarSet (true, true);

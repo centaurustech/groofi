@@ -8,18 +8,28 @@ CKEDITOR.editorConfig = function( config )
 	// Define changes to default configuration here. For example:
 	// config.language = 'fr';
 	// config.uiColor = '#AADC6E';
-    CKEDITOR.config.height = 40;
-
-    CKEDITOR.config.toolbar = [
-        ['Format','Font','FontSize'],
-
-        ['Bold','Italic','Underline','StrikeThrough','Cut','Copy','Paste','Print','NumberedList','BulletedList','-','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','Link']
-           ]
 
 
+    config.resize_enabled = false;
 
+    config.height = '120px';
+    config.width = '840px';
+    config.toolbar = 'Full';
 
+    config.toolbar_Full =
+        [
+            ['Cut','Copy','Paste','PasteText','PasteFromWord','-','Print', 'SpellChecker', 'Scayt'],
+            ['Undo','Redo','-','Find','Replace','-','SelectAll','RemoveFormat'],
+            ['Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton', 'HiddenField'],
+            '/',
+            ['Bold','Italic','Underline','Strike','-','Subscript','Superscript'],
+            ['NumberedList','BulletedList','-','Outdent','Indent','Blockquote'],
+            ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
+            ['Link','Unlink','Anchor'],
+            '/',
+            ['Styles','Format','Font','FontSize'],
+            ['TextColor','BGColor']
 
+        ];
 
-
-};
+}

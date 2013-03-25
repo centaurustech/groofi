@@ -28,7 +28,8 @@ class AppController extends Controller {
         'AppText', //to override load the core helper and then your app helper.
         'Cksource',
         'Javascript',
-        'Cropimage'
+        'Cropimage',
+        'Paiseslistado'
 
 
     );

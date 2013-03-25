@@ -3947,11 +3947,11 @@ msgstr "SEND"
 msgid "Providing"
 msgstr "Providing "
 
-msgid ""
-msgstr ""
+msgid "COUNTRY"
+msgstr "Country"
 
-msgid ""
-msgstr ""
+msgid "CHOICE_YOUR_COUNTRY"
+msgstr "Select your country of origin"
 
 msgid ""
 msgstr ""

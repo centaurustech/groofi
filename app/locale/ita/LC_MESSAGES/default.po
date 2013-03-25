@@ -3940,11 +3940,11 @@ msgstr "INVIA"
 msgid "Providing"
 msgstr "Contribuire "
 
-msgid ""
-msgstr ""
+msgid "COUNTRY"
+msgstr "Paese"
 
-msgid ""
-msgstr ""
+msgid "CHOICE_YOUR_COUNTRY"
+msgstr "Seleziona il tuo paese di origine"
 
 msgid ""
 msgstr ""

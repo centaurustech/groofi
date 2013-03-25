@@ -3,9 +3,11 @@
 class StaticpagesController extends AppController {
 
     function beforeFilter() {
+
         if(isset($_SESSION['idioma']) && !empty($_SESSION['idioma'])){
             $idioma = $_SESSION['idioma'];
             Configure::write('Config.language', $idioma);
+
         }
 
         $this->Auth->allow('view', 'home','message','guidelines','comofunciona','faq','contacto','translate', 'country');
@@ -138,6 +140,12 @@ class StaticpagesController extends AppController {
     }
 
     function home() {
+
+        if(!$_SESSION['idioma']){
+            $this->country();
+        }
+
+
         App::import('model', 'User');
         App::import('model', 'Project');
         App::import('model', 'Offer');
@@ -211,8 +219,16 @@ class StaticpagesController extends AppController {
 		}
 	}
 
-    function translate(){
-       $idioma = $_GET['idioma'];
+    function translate($idioma=null){
+
+        if ($idioma)
+        {
+            $idioma=$idioma;
+        }else{
+            $idioma = $_GET['idioma'];
+        }
+
+
        switch ($idioma){
            case "en": $new_idioma = "eng";
            break;
@@ -224,7 +240,8 @@ class StaticpagesController extends AppController {
        }
        unset($_SESSION['idioma']);
        $_SESSION['idioma'] = $new_idioma;
-       $this->redirect(array('controller' => 'staticpages', 'action' => 'home'));
+
+       $this->redirect(array('controller' => 'staticpages', 'action' => 'home'),null,true);
     }
 
     function country(){
@@ -242,18 +259,28 @@ class StaticpagesController extends AppController {
 
         if( $sigla_pais =='AR'){
             $moneda= 'Peso';
+            $this->translate('es');
         }else if($sigla_pais =='BR'){
             $moneda= 'Real';
+            $this->translate('en');
         }else if($sigla_pais =='GB'){
             $moneda= 'Libra';
+            $this->translate('en');
         }else if($sigla_pais =='ES'){
-            $moneda= 'Real';
+            $moneda= 'Euro';
+            $this->translate('es');
+        }else if($sigla_pais =='BO'){
+            $moneda= 'Dolar';
+            $this->translate('es');
+        }else if($sigla_pais =='IT'){
+            $moneda= 'Euro';
+            $this->translate('it');
         }else{
             $moneda= 'Dolar';
+            $this->translate('en');
         }
-
         echo $moneda;
-        die;
+
     }
 
 

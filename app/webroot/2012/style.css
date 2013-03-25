@@ -19,7 +19,7 @@ a:active {color:#356980;}  /* selected link */
     color: gray;
     display: block;
     float: left;
-    font-family: Asap;
+    font-family: 'Asap',sans-serif;
     font-size: 13px;
     font-weight: 900;
     left: 100px;
@@ -32,7 +32,7 @@ a:active {color:#356980;}  /* selected link */
 
 .header_letras1
 {
-    color: #3B3B3B;
+    color: #393739;
     cursor: pointer;
     display: block;
     font-family: monospace;
@@ -65,7 +65,7 @@ a:active {color:#356980;}  /* selected link */
     top: -4px;
     z-index: 20;
     cursor: pointer;
-    color: #3b3b3b;
+    color: #393739;
 }
 .header_letras2:hover,.header_letras2:hover span
 {
@@ -87,7 +87,7 @@ a:active {color:#356980;}  /* selected link */
     top: -4px;
     z-index: 20;
     cursor: pointer;
-    color: #3b3b3b;
+    color: #393739;
 }
 .header_letras3:hover,.header_letras3:hover span
 {
@@ -773,9 +773,9 @@ text-align:center;
 	float:left;
 	color:#3f3e3e;
 	font-size:13px;
-	line-height:18px;
+	line-height:30px;
 	margin-right:25px;
-    margin-bottom: 60px;
+    margin-right: 100px;
 	position:relative;
 }
 .texto_contacto_izq{
@@ -3751,7 +3751,7 @@ color:#FFF
     color: white;
     cursor: pointer;
     display: block;
-    font-family: sans-serif;
+    font-family: 'Asap',sans-serif;
     font-size: 12px;
     font-weight: bold;
     left: 35px;
@@ -4030,7 +4030,7 @@ color:#FFF
     top: 96px;
     font-size: 18px;
     color: rgb(97, 97, 97);
-    font-family: sans-serif;
+    font-family: 'Asap',sans-serif;
 
 }
 
@@ -4044,7 +4044,7 @@ color:#FFF
     top: 122px;
     font-size: 18px;
     color: rgb(97, 97, 97);
-    font-family: sans-serif;
+    font-family: 'Asap',sans-serif;
 }
 .tipo_moneda_ar{
     z-index: 1;
@@ -4055,7 +4055,7 @@ color:#FFF
     top: 148px;
     font-size: 18px;
     color: rgb(97, 97, 97);
-    font-family: sans-serif;
+    font-family: 'Asap',sans-serif;
 }
 .tipo_moneda_gb{
     z-index: 2;
@@ -4066,7 +4066,7 @@ color:#FFF
     top: 174px;
     font-size: 18px;
     color: rgb(97, 97, 97);
-    font-family: sans-serif;
+    font-family: 'Asap',sans-serif;
 
 
 }
@@ -4079,14 +4079,14 @@ color:#FFF
     top: 200px;
     font-size: 18px;
     color: rgb(97, 97, 97);
-    font-family: sans-serif;
+    font-family: 'Asap',sans-serif;
 
 }
 
 .sponsor1{
     color: gray;
     display: block;
-    font-family: Asap;
+    font-family: 'Asap',sans-serif;
     font-size: 12px;
     font-weight: bold;
     left: 67px;
@@ -4097,7 +4097,7 @@ color:#FFF
 .sponsor2{
     color: gray;
     display: block;
-    font-family: caption;
+    font-family: 'Asap',sans-serif;
     font-size: 20px;
     font-weight: bold;
     left: 169px;
@@ -4111,7 +4111,7 @@ color:#FFF
 .sponsor3{
     color: #65ae58;
     display: block;
-    font-family: caption;
+    font-family: 'Asap',sans-serif;
     font-size: 28px;
     font-weight: bold;
     height: 21px;
@@ -4121,4 +4121,28 @@ color:#FFF
     width: 159px;
     z-index: 2;
     text-shadow: 1px 1px 0 black;
+}
+.ckeditor0{
+
+    display: block;
+    height: 570px;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.ckeditor1{
+    padding-top: 20px;
+
+}
+.ckeditor2{
+    padding-top: 20px;
+
+}
+
+.proyectos_password{
+    position: absolute;
+    display:block;
+
+
+
 }

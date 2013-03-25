@@ -93,7 +93,7 @@ Router::connect('/admin/admins/:filter/*', array('controller' => 'users', 'actio
 Router::connect('/admin/admins/add/*', array('controller' => 'users', 'action' => 'add', 'admin' => true));
 
 
-Router::connect('/', array('controller' => 'staticpages', 'action' => 'home'));
+Router::connect('/', array('controller' => 'staticpages', 'action' => 'country'));
 Router::connect('/admin', array('controller' => 'users', 'action' => 'index', 'admin' => true));
 Router::connect('/home', array('controller' => 'staticpages', 'action' => 'home'));
 Router::connect('/guidelines', array('controller' => 'staticpages', 'action' => 'guidelines'));

@@ -1,8 +1,4 @@
 
-<?php
-echo $javascript->link('ckeditor/ckeditor');
-?>
-
 
 <?php
 /* @var $this ViewCC */

@@ -302,6 +302,9 @@ if(curPageURL()=='http://www.groofi.com/profile/557/projects/expedicion-al-llull
 
 <?if($this->Session->check('deletedok')){?>
 <script>DR(function(){alerta("El proyecto ha sido eliminado");});</script>
+
+
+
 <?
 $this->Session->delete('deletedok');
 }?>

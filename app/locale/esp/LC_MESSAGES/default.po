@@ -3970,11 +3970,11 @@ msgstr "ENVIAR"
 msgid "Providing"
 msgstr "Aportando "
 
-msgid ""
-msgstr ""
+msgid "COUNTRY"
+msgstr "Pais"
 
-msgid ""
-msgstr ""
+msgid "CHOICE_YOUR_COUNTRY"
+msgstr "Selecciona tu pais de Origen"
 
 msgid ""
 msgstr ""
