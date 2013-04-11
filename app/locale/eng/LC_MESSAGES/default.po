@@ -3168,7 +3168,7 @@ msgid "CORPORATE_BENEFIST"
 msgstr "Corporate Benefits"
 
 msgid "TIME_OF_PROJECT"
-msgstr "7 days"
+msgstr "day(s)"
 
 msgid "PROJECT_IMPORTANT_ADVICE %s %s %s"
 msgstr "This project will be funded on% s at 0:00 pm. whether they were committed% s% s."
@@ -3953,11 +3953,17 @@ msgstr "Country"
 msgid "CHOICE_YOUR_COUNTRY"
 msgstr "Select your country of origin"
 
-msgid ""
-msgstr ""
+msgid "INGRE"
+msgstr "Entered:"
 
-msgid ""
-msgstr ""
+msgid "Res"
+msgstr "characters. Left:"
+
+msgid "Carac"
+msgstr "characters."
+
+msgid "Res1"
+msgstr "Left:"
 
 msgid ""
 msgstr ""

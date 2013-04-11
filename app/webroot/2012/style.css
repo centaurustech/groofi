@@ -64,7 +64,7 @@
 body{ text-align:center; background:url(images/fondo_header.jpg) repeat-x; overflow-x:hidden; position:relative}
 /*body{ background-position: 0 58px;}*/
 a:link {color: #262525;text-decoration:none}      /* unvisited link */
-a:visited {color:#000}  /* visited link */
+a:visited {color:#505050}  /* visited link */
 a:hover {color:#4e90ae;}  /* mouse over link */
 a:active {color:#356980;}  /* selected link */ 
 #contenedor{ text-align:left;  width:957px;  margin:0 auto; font-family: "signika_negativeregular"; z-index:2; position:relative}
@@ -181,6 +181,7 @@ a:active {color:#356980;}  /* selected link */
 	float:left;
 	display:block;
 	text-decoration:none;
+    margin-top: 10px;
  }
 .crea{
 	width:27px;
@@ -191,6 +192,7 @@ a:active {color:#356980;}  /* selected link */
 	margin-right:6px;
 	display:block;
 	text-decoration:none;
+    margin-top: 10px;
 }
 
 .blog{
@@ -201,6 +203,7 @@ a:active {color:#356980;}  /* selected link */
 	float:left;
 	display:block;
 	text-decoration:none;
+    margin-top: 10px;
 }
 /*.descubri:hover{
 	background-position:0px -43px;
@@ -659,22 +662,24 @@ text-align:center;
 	color:#597fa9;
 	font-size:12px;
 	font-weight:600;
-	margin-top:-8px;
+    margin-top: -25px;
 	overflow:hidden;
 }
 .listado_categorias a{ text-decoration:none; color:#597fa9;}
 .listado_categorias a:hover{ text-decoration:underline;}
 .listado_ubicaciones{
+    font-family: "signika_negativeregular";
 	line-height:20px;
 	color:#597fa9;
 	font-size:12px;
 	font-weight:600;
-	margin-top:-8px;
+	margin-top:-25px;
 }
 .listado_ubicaciones a{ text-decoration:none; color:#597fa9;}
 .listado_ubicaciones a:hover{ text-decoration:underline;}
 .iconos_contacto{
-	
+
+    font-family: "signika_negativeregular";
 	position:absolute;
 	width:30px;
 	height:200px;
@@ -966,11 +971,25 @@ margin-left:11px;
 	width:16px;
 	height:16px;
 	cursor:pointer;
-	position:absolute;
+	position:relative;
 	left: 381px;
-	top: 2px;
+    top: -115px;
 
 }
+
+.bot_info_ckeditor{
+
+    background:url(images/bot_info.png) no-repeat;
+    height: 16px;
+    position: absolute;
+    right: 85px;
+    top: 1040px;
+    width: 16px;
+
+}
+
+
+
 .bot_info.img
 {
 	background:url(images/bot_info.png) no-repeat;
@@ -1191,20 +1210,19 @@ margin-left:-6px;
     display: block;
     float: right;
     height: 77px;
-    left: 70px;
-    margin-top: -12px;
+    top: -75px;
     position: relative;
     text-decoration: none;
-    width: 231px;
+    width: 90px;
+    right: 150px;
 }
 
 #casos_de_exito{
     background: url("images/casosexito.png") no-repeat scroll 0 0 transparent;
     cursor: pointer;
     display: block;
-    float: left;
     height: 46px;
-    margin-left: 345px;
+    margin-left: 240px;
     margin-top: 10px;
     text-decoration: none;
     width: 342px;
@@ -1962,13 +1980,13 @@ height:41px;
 		.tit_mi_cuenta
 	{
 		background:url(images/mi_cuenta.gif) no-repeat;
-		width:82px;
-		height:31px;
-		margin-top:-6px;
-		float:left;
-		margin-left:10px;
-		cursor:pointer;
-		background-position:0 -32px;	
+		background-position:0 -32px;
+        cursor: pointer;
+        float: left;
+        height: 31px;
+        margin-left: 10px;
+        margin-top: -6px;
+        width: 89px;
 	
 	}
 		.tit_mi_cuenta:hover
@@ -1983,11 +2001,11 @@ height:41px;
 	{
 		background:url(images/mi_perfil.gif) no-repeat;
 		background-position:0 -32px;
-		width:75px;
-		height:31px;
-		margin-top:-6px;
-		float:left;
-		cursor:pointer;
+        cursor: pointer;
+        float: left;
+        height: 31px;
+        margin-top: -6px;
+        width: 90px;
 	
 	}
 		.tit_mi_perfil.selected
@@ -3836,24 +3854,28 @@ color:#FFF
 }
 .perfil_user
 {
+
+    cursor: pointer;
     display: block;
     font-size: 12px;
-    left: 10px;
-    position: absolute;
-    top: 275px;
     font-weight: bold;
-    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    top: 275px;
+    width: 90px;
 }
 
 .cuenta_user
 {
+    cursor: pointer;
     display: block;
     font-size: 12px;
-    left: 96px;
-    position: absolute;
-    top: 275px;
     font-weight: bold;
-    cursor: pointer;
+    left: 100px;
+    position: absolute;
+    text-align: center;
+    top: 275px;
+    width: 89px;
 }
 .crear_proye
     {
@@ -3897,7 +3919,7 @@ color:#FFF
     text-align: center;
     top: 415px;
     z-index: 10;
-    width: 300px
+    width: 275px
 
 
 
@@ -3920,7 +3942,7 @@ color:#FFF
      display: block;
      float: left;
      font-size: 15px;
-     left: 407px;
+     left: 310px;
      position: absolute;
      top: 635px;
      z-index: 10;
@@ -3937,7 +3959,7 @@ color:#FFF
     font-size: 12px;
     font-style: italic;
     font-weight: bold;
-    left: 405px;
+    left: 310px;
     position: absolute;
     top: 620px;
     z-index: 10;
@@ -3953,7 +3975,7 @@ color:#FFF
     font-size: 8px;
     font-style: italic;
     font-weight: bold;
-    left: 885px;
+    left: 810px;
     position: absolute;
     top: 620px;
     width: 180px;
@@ -3969,7 +3991,7 @@ color:#FFF
     float: left;
     font-size: 21px;
     font-weight: bold;
-    left: 885px;
+    left: 810px;
     position: absolute;
     top: 635px;
     width: 160px;
@@ -4213,7 +4235,6 @@ color:#FFF
     text-shadow: 1px 1px 0 black;
 }
 .ckeditor0{
-
     display: block;
     height: 570px;
     width: 100%;
@@ -4269,4 +4290,9 @@ color:#FFF
 .info_ckeditor1:hover
 {
     background-position:0px -16px;
+}
+.websites{
+
+    position: relative;
+    display: block;
 }

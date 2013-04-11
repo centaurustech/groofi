@@ -3187,7 +3187,7 @@ msgid "CORPORATE_BENEFIST"
 msgstr "Beneficios para Empresas"
 
 msgid "TIME_OF_PROJECT"
-msgstr "7 días"
+msgstr "día(s)"
 
 msgid "PROCEEDS_I_RECEIVE"
 msgstr "¿Cómo recibo los fondos recaudados?"
@@ -3976,14 +3976,14 @@ msgstr "Pais"
 msgid "CHOICE_YOUR_COUNTRY"
 msgstr "Selecciona tu pais de Origen"
 
-msgid ""
-msgstr ""
+msgid "INGRE"
+msgstr "Ingresados:"
 
-msgid ""
-msgstr ""
+msgid "Res"
+msgstr "caracteres. Restan:"
 
-msgid ""
-msgstr ""
+msgid "Carac"
+msgstr "caracteres."
 
-msgid ""
-msgstr ""
+msgid "Res1"
+msgstr "Restan: "

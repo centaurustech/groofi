@@ -50,7 +50,8 @@ class AppController extends Controller {
         'RequestHandler',
         'DebugKit.Toolbar',
         'Facebook.Connect',
-        'JqImgcrop'
+        'JqImgcrop',
+
     );
 
     function beforeFilter() {

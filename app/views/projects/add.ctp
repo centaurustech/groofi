@@ -104,8 +104,8 @@ endif;
     <div class="rounded_crear">
         <input onkeyup="xrestantes(this,$('restantes1'),50)" onkeydown="xrestantes(this,$('restantes1'),50)" onchange="xrestantes(this,$('restantes1'),50)" autocomplete="off" type="text" name="data[Project][title]" value="<?if(isset($_POST['data']['Project']['title'])){echo $_POST['data']['Project']['title'];}?>" />
         <div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['title']) && !empty($validationErrorsArray['title'])){echo $validationErrorsArray['title'];}?></div>
-        <div id="restantes1" style="font-size:9px;position:absolute;left:0; top:28px; text-align:right; width:370px; height:15px;">Restan: <?if(isset($_POST['data']['Project']['title'])){echo 50-intval((strlen(utf8_decode($_POST['data']['Project']['title']))));}else{echo '50';}?> caracteres</div>
-        <div class="bot_info"  onmouseout="hideTip()" onmousemove="showTip(event,'Este ser&aacute; el t&iacute;tulo de tu proyecto. Una vez aprobado, no podr&aacute;s modificarlo.')"></div>
+        <div id="restantes1" style="font-size:9px;position:absolute;left:0; top:28px; text-align:right; width:370px; height:15px;"><?php echo __("Res1");?><?if(isset($_POST['data']['Project']['title'])){echo 50-intval((strlen(utf8_decode($_POST['data']['Project']['title']))));}else{echo '50';}?><?php echo __("Carac");?></div>
+        <div class="bot_info"  onmouseout="hideTip()" onmousemove="showTip(event,'<?php echo __("PROJECT__TITLE__HELP_MESSAGE_TEXT");?>')"></div>
     </div>
 </div>
 
@@ -114,7 +114,7 @@ endif;
 
 <div class="texto_how_izq">
     <p style="font-size:12px"><?php echo __("COUNTRY");?></p>
-    <div class="rounded_crear">
+    <div class="rounded_crear" style=background:none>
 
 <select autocomplete="off" style="width:373px; height:27px; position:relative;top:0; left:0;border:1px solid #e1e1e1; background:#f6f7f6" name="data[Project][paislugar]" autocomplete="off" id="ProjectCountryId">
                 <? foreach($base_countries as $k=>$v){ ?>
@@ -125,7 +125,7 @@ endif;
             </select>
 
         <div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['country']) && !empty($validationErrorsArray['country'])){echo $validationErrorsArray['country'];}?></div>
-        <div id="restantes1" style="font-size:9px;position:absolute;left:0; top:28px; text-align:right; width:370px; height:15px;">Restan: <?if(isset($_POST['data']['Project']['country'])){echo 50-intval((strlen(utf8_decode($_POST['data']['Project']['country']))));}else{echo '50';}?> caracteres</div>
+        <div id="restantes1" style="font-size:9px;position:absolute;left:0; top:28px; text-align:right; width:370px; height:15px;"><?php echo __("Res1");?> <?if(isset($_POST['data']['Project']['country'])){echo 50-intval((strlen(utf8_decode($_POST['data']['Project']['country']))));}else{echo '50';}?> <?php echo __("Carac");?></div>
         <div class="bot_info"  onmouseout="hideTip()" onmousemove="showTip(event,'<?php echo __("CHOICE_YOUR_COUNTRY");?>')"></div>
     </div>
 </div>
@@ -144,7 +144,7 @@ endif;
             <? } ?>
 
         </select>
-        <div class="bot_info" onmouseout="hideTip()" onmousemove="showTip(event,'Elige la categor&iacute;a que mejor describa a tu proyecto. Una vez aprobado, no podr&aacute;s modificarla.')"></div>
+        <div class="bot_info" onmouseout="hideTip()" onmousemove="showTip(event,'<?php echo __("PROJECT__CATEGORY__HELP_MESSAGE_TEXT");?>')"></div>
     </div>
 </
 
@@ -224,7 +224,7 @@ endif;
     <div class="rounded_area_crear">
         <textarea onkeyup="xrestantes(this,$('restantes2'),140,50)" onkeydown="xrestantes(this,$('restantes2'),140,50)" onchange="xrestantes(this,$('restantes2'),140,50)" name="data[Project][short_description]" autocomplete="off" cols="30" rows="6"><?if(isset($_POST['data']['Project']['short_description'])){echo $_POST['data']['Project']['short_description'];}?></textarea>
         <div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['short_description']) && !empty($validationErrorsArray['short_description'])){echo $validationErrorsArray['short_description'];}?></div>
-        <div   id="restantes2" style="font-size:9px;position:absolute;left:0; top:118px; text-align:right; width:370px; height:15px;">Ingresados: <?if(isset($_POST['data']['Project']['short_description'])){echo intval((strlen(utf8_decode($_POST['data']['Project']['short_description']))));}else{echo '0';}?> caracteres. Restan: <?if(isset($_POST['data']['Project']['short_description'])){echo 140-intval((strlen(utf8_decode($_POST['data']['Project']['short_description']))));}else{echo '140';}?> caracteres</div>
+        <div   id="restantes2" style="font-size:9px;position:absolute;left:0; top:118px; text-align:right; width:370px; height:15px;"><?php echo __("INGRE");?> <?if(isset($_POST['data']['Project']['short_description'])){echo intval((strlen(utf8_decode($_POST['data']['Project']['short_description']))));}else{echo '0';}?> <?php echo __("Res");?> <?if(isset($_POST['data']['Project']['short_description'])){echo 140-intval((strlen(utf8_decode($_POST['data']['Project']['short_description']))));}else{echo '140';}?> <?php echo __("Carac");?></div>
         <div class="bot_info_area" onmouseout="hideTip()" onmousemove="showTip(event,'Describe en pocas palabras la idea de tu proyecto. Una vez aprobado, no podr&aacute;s modificarla.')"></div>
     </div>
     <div style="width:370px; height:253px; background:url(/2012/images/proyectosprivados.png); position:absolute; top:510px">
@@ -267,7 +267,7 @@ endif;
 
         <textarea class="ckeditor" name="data[Project][description]" autocomplete="off" cols="30" rows="6"><?if(isset($_POST['data']['Project']['description'])){echo $_POST['data']['Project']['description'];}?></textarea>
         <div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['description']) && !empty($validationErrorsArray['description'])){echo $validationErrorsArray['description'];}?></div>
-        <div class="bot_info_area" onmouseout="hideTip()" onmousemove="showTip(event,'Describe tu proyecto en extenso. Podr&aacute;s editar esta descripci&oacute;n una vez aprobado tu proyecto.<br>Cuanta m&aacute;s informaci&oacute;n pongas y m&aacute;s claro seas en esta descripci&oacute;n, m&aacute;s confiable resultar&aacute; tu proyecto para los patrocinadores.')"></div>
+        <div class="bot_info_ckeditor" onmouseout="hideTip()" onmousemove="showTip(event,'<?php echo __("PROJECT__DESCRIPTION__HELP_MESSAGE_TEXT");?>')"></div>
     </div>
 
 </div>
@@ -366,11 +366,11 @@ endif;
     <p style="font-size:12px"><?php echo __("PROJECT__PROJECT_DURATION");?></p><br>
     <input name="data[Project][project_duration]" type="hidden" autocomplete="off" class="range" value="7" id="ProjectProjectDuration" />
     <div style="position:relative; height:17px; width:360px">
-        <div id="indicadords" style="font-size:10px;">7 d&iacute;a/s</div>
-        <div  class="back_slider" style=" width:360px; height:10px; border:1px solid #eaeaea; position:relative; top:15px;">
+        <div id="indicadords" style="font-size:10px;"><?php echo __("TIME_OF_PROJECT");?></div>
+        <div  class="back_slider" style=" width:360px; height:10px; border:1px solid #eaeaea; position:relative; top:-40px;">
             <div id="blueLine" style="width:0%; height:100%;background:#338abd;"></div>
         </div>
-        <div id="cursor" style="width:17px; height:17px; border:1px solid #d3d3d3; background:#e6e6e6;cursor:pointer; position:relative; top:27px;"></div>
+        <div id="cursor" style="width:17px; height:17px; border:1px solid #d3d3d3; background:#e6e6e6;cursor:pointer; position:relative; top:-15px;"></div>
     </div>
 
     <div class="bot_info duracion" onmouseout="hideTip()"  onmousemove="showTip(event,'Elige la cantidad de d&iacute;as que deseas que dure la recaudaci&oacute;n de fondos de tu proyecto. Podr&aacute;s modificar la duraci&oacute;n del proyecto una vez aprobada tu propuesta.<br>Cuanto m&aacute;s dure el proyecto, m&aacute;s posible ser&aacute; que alcances a recaudar los fondos necesarios.')"></div>
@@ -378,7 +378,7 @@ endif;
 <div class="clear"></div>
 <div class="misc_separador" style=" width:367px; height:1px; margin-top:-10px; margin-bottom:15px;"></div>
 <div class="clear"></div>
-<div id="beneficiosyrecompensas" style="font-style:italic"><?php echo __("BENEFITS_REWARDS");?></div> <div class="misc_separador" style="width:100%"></div><br>
+<div id="beneficiosyrecompensas" style="font-style:italic; top: 50px;"><?php echo __("BENEFITS_REWARDS");?></div> <div class="misc_separador" style="width:100%"></div><br>
 <div class="titulos_beneficios"><?php echo __("BENEFISTS_FOR_PEOPLE");?></div>
 <div class="titulos_beneficios empresas"><?php echo __("CORPORATE_BENEFIST");?></div>
 <div class="clear"></div>
@@ -580,7 +580,7 @@ endif;
     function setBlueLine(r){
         var valor=Math.round((100*parseInt(r)/343)*365/100);
         if(valor<7)valor=7;
-        $('indicadords').innerHTML=valor+' d&iacute;a/s';
+        $('indicadords').innerHTML=valor+' <?php echo __("TIME_OF_PROJECT");?>';
         $('ProjectProjectDuration').value=valor;
         $('blueLine').style.width=(100*parseInt(r)/343)+'%';
     }

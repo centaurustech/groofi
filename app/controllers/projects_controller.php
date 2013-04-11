@@ -8,6 +8,9 @@
 /**
  * @property Project $Project
  */
+
+
+
 class ProjectsController extends AppController {
 
     var $paginate = array (
@@ -16,6 +19,10 @@ class ProjectsController extends AppController {
     );
 
     function beforeFilter () {
+
+
+
+
         if(isset($_SESSION['idioma']) && !empty($_SESSION['idioma'])){
             $idioma = $_SESSION['idioma'];
             Configure::write('Config.language', $idioma);
@@ -234,7 +241,7 @@ class ProjectsController extends AppController {
     }
 
     function add ($offerId=false) {
-
+        App::import('Vendor','upload');
         $this->loadModel('Country');
 
 
@@ -288,6 +295,7 @@ class ProjectsController extends AppController {
             $hasLink = count (array_unique (Set::extract ('/Link/link', $this->data))) > 1; //user has filled any link ?
             //$hasPrize = count (array_unique (Set::extract ('/Prize/value', $this->data))) > 1; //user has filled any prize ?
 			$hasPrize=isset($_POST['data']['Prize']);
+
 			
 			if( ($this->data['Project']['private_pass']!=$this->data['Project']['private_pass2'] || empty($this->data['Project']['private_pass']))  &&  $this->data['Project']['private']=='1'){
 				if(($this->data['Project']['private_pass']!=$this->data['Project']['private_pass2'])){
@@ -320,8 +328,9 @@ class ProjectsController extends AppController {
 
                 if ($this->Project->id) {
 					
-					if($predefinido && isset($pred['foto']) && strlen($pred['foto'])>4 && (!isset($_FILES['data']['name']['Project']['file']) || $_FILES['data']['name']['Project']['file']=='') ){
-						$picname='____'.md5(time()).rand(0,99999).'.png';
+					if($predefinido && isset($pred['foto']) && strlen($pred['foto'])>4 && (!isset($_FILES['data']['name']['Project']['file']) || $_FILES['data']['name']['Project']['file']=='') )
+                    {
+						/*$picname='____'.md5(time()).rand(0,99999).'.png';
 						$this->data['Project']['dirname']='project/'.$this->Project->id.'/img';
 						$this->data['Project']['basename']=$picname;
 						$this->data['Project']['id']=$this->Project->id;
@@ -337,7 +346,19 @@ class ProjectsController extends AppController {
 						$pp=new Project();
 						$datos=$pp->query("update projects set dirname='".$this->data['Project']['dirname']."',basename='".$picname."' where id='".$this->Project->id."'");
 						$this->Session->delete('priz');
-						$this->Session->delete('predefinido');
+						$this->Session->delete('predefinido');*/
+                        $this->Image = $this->Components->load("Image");
+
+                        $this->request->$_FILES['data']['name']['Project']['file'] = $this->upload($this->request->$_FILES['data']['name']['Project']['file']);
+                        $this->Image->copia_optimizada('media/filter/l560/project/'.$this->Project->id.'/img',280,600);
+                        $this->Image->borrar_tmp();
+                    }else{
+                        $this->request->$_FILES['data']['name']['Project']['file'] = "";
+
+
+
+
+
 					}
 					
 					
@@ -386,6 +407,9 @@ class ProjectsController extends AppController {
 			
 			
 		 }
+
+
+
 		 
     }
 
