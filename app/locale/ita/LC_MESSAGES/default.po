@@ -297,7 +297,7 @@ msgid "OFFER__FUNDING_SPONSORSHIPS_FOUNDS"
 msgstr "Importo offerto per il progetto"
 
 msgid "OFFER__OFFER_SPONSORSHIPS"
-msgstr "Quantit� massima di progetti che sei disposto a sponsorizzare"
+msgstr "quantité massima di progetti che sei disposto a sponsorizzare"
 
 msgid "OFFER__OFFER_DURATION"
 msgstr "Durata dell' offerta"
@@ -439,7 +439,7 @@ msgid "SEND_MESSAGE"
 msgstr "Inviare messaggio"
 
 msgid "PROJECT_IMPORTANT_ADVICE %s %s"
-msgstr "Questo progetto sar� finanziato il giorno %s alle ore 0:00 . se saranno raccolti USD %s."
+msgstr "Questo progetto sarà finanziato il giorno %s alle ore 0:00 . se saranno raccolti USD %s."
 
 msgid "COMMENT__COMMENT"
 msgstr "Scrivi il tuo messaggio"
@@ -1033,7 +1033,7 @@ msgid "I_WANT_NOT_TO_BE_PART"
 msgstr "NON VOGLIO PIU' UNIRMI"
 
 msgid "READ_MORE"
-msgstr "Leggere di pi�"
+msgstr "Leggere di più"
 
 msgid "CATEGORIES"
 msgstr "Categorie"
@@ -1075,19 +1075,19 @@ msgid "HIGHLIGHT_PROJECTS_TITLE"
 msgstr "Progetti rilevanti"
 
 msgid "HIGHLIGHT_PROJECTS_SUBTITLE"
-msgstr "Sponsorizza i progetti pi� interessanti della nostra comunit�"
+msgstr "Sponsorizza i progetti più interessanti della nostra comunit�"
 
 msgid "HIGHLIGHT_OFFERS_TITLE"
 msgstr "Offerte rilevanti"
 
 msgid "HIGHLIGHT_OFFERS_SUBTITLE"
-msgstr "Accetta le offerte pi� interessanti della nostra comunit�"
+msgstr "Accetta le offerte più interessanti della nostra comunit�"
 
 msgid "HIGHLIGHT_USERS_TITLE"
 msgstr "Utenti rilevanti"
 
 msgid "HIGHLIGHT_USERS_SUBTITLE"
-msgstr "Nostri membri pi� attivi"
+msgstr "Nostri membri più attivi"
 
 msgid "NEWEST_USERS_TITLE"
 msgstr "Ultimi registrati"
@@ -1201,7 +1201,7 @@ msgid "PROJECT_ADD_THIRD_BLOCK_SUBTITLE"
 msgstr "Completa la seguente informazione"
 
 msgid "PROJECT__TITLE__HELP_MESSAGE_TEXT"
-msgstr "Questo sar� il titolo del tuo progetto. Una volta approvato, non potrai modificarlo."
+msgstr "Questo sarà il titolo del tuo progetto. Una volta approvato, non potrai modificarlo."
 
 msgid "PROJECT__CATEGORY__HELP_MESSAGE_TEXT"
 msgstr "Scegli la categoria che meglio descrive il tuo progetto. Una volta approvata, non potrai modificarla."
@@ -1213,10 +1213,10 @@ msgid "PROJECT__DESCRIPTION__HELP_MESSAGE_TEXT"
 msgstr "Desrivi ampiamente il tuo progetto. Potrai modificare questa descrizione una volta approvato il tuo progetto."
 
 msgid "PROJECT__MOTIVATION__HELP_MESSAGE_TEXT"
-msgstr "Questa informazione ci sar� utile per valutare la tua proposta. Non la pubblicheremo."
+msgstr "Questa informazione ci sarà utile per valutare la tua proposta. Non la pubblicheremo."
 
 msgid "PROJECT__URL__HELP_MESSAGE_TEXT"
-msgstr "Inserisci siti internet dove possiamo trovare pi� informazioni sul progetto. Questo sar� utilizzato per valutare la tua proposta."
+msgstr "Inserisci siti internet dove possiamo trovare più informazioni sul progetto. Questo saré utilizzato per valutare la tua proposta."
 
 msgid "PROJECT__FILE__HELP_MESSAGE_TEXT"
 msgstr "Scegli una immagine per illustrare il tuo progetto (Facoltativo)."
@@ -1237,7 +1237,7 @@ msgid "PROJECT__FUNDING_GOAL__HELP_MESSAGE_TEXT"
 msgstr "Inserisci l' importo in dollari di cui hai bisogno per realizzare il tuo progetto. Podrai modificare questo importo una volta approvata la tua proposta."
 
 msgid "PROJECT__PROJECT_DURATION__HELP_MESSAGE_TEXT"
-msgstr "Scegli la quantit� di giorni che vuoi che duri la raccolta di fondi del tuo progetto. Potrai modificare la durata del progetto una volta approvata la tua proposta."
+msgstr "Scegli la quantité di giorni che vuoi che duri la raccolta di fondi del tuo progetto. Potrai modificare la durata del progetto una volta approvata la tua proposta."
 
 msgid "PROJECT__PRIZE__HELP_MESSAGE_TEXT"
 msgstr "Inserisci i benefici che riceveranno i tuoi sponsor in base all' importo che scelgono di apportare al progetto. I benefici sono regali o premi relazionati col progetto, che ti comprometti a dare ai tuoi sponsor. Potrai modificare questo una volta approvata la tua proposta."
@@ -1261,7 +1261,7 @@ msgid "OFFER_ADD_THIRD_BLOCK_SUBTITLE"
 msgstr "Completa la seguente informazione"
 
 msgid "OFFER__TITLE__HELP_MESSAGE_TEXT"
-msgstr "Questo sar� il titolo della tua offerta. Una volta approvato, non potrai modificarlo."
+msgstr "Questo sarà il titolo della tua offerta. Una volta approvato, non potrai modificarlo."
 
 msgid "OFFER__CATEGORY__HELP_MESSAGE_TEXT"
 msgstr "Scegli la categoria che meglio descriva la tua offerta. Una volta approvato, non potrai modificarla."
@@ -1273,7 +1273,7 @@ msgid "OFFER__DESCRIPTION__HELP_MESSAGE_TEXT"
 msgstr "Descrivi la tua offerta ampiamente. Potrai modificare questa descrizione una volta approvata la tua proposta."
 
 msgid "OFFER__URL__HELP_MESSAGE_TEXT"
-msgstr "Inserisci siti internet nei quali possiamo incontrare maggiori informazioni su di te. Questo sar� utilizzato per valutare la tua proposta."
+msgstr "Inserisci siti internet nei quali possiamo incontrare maggiori informazioni su di te. Questo sarà utilizzato per valutare la tua proposta."
 
 msgid "OFFER__VIDEO_URL__HELP_MESSAGE_TEXT"
 msgstr "Inserisci la URL di un proprio video circa la tua offerta, che sia stato messo in YouTube.com o Vimeo.com (Facoltativo)."
@@ -1285,7 +1285,7 @@ msgid "OFFER__OFFER_SPONSORSHIPS__HELP_MESSAGE_TEXT"
 msgstr "Scrivi il numero massimo di progetti che ti comprometti a sponsorizzare con l' importo inserito in alto. Potrai modificare questo una volta approvata la tua proposta."
 
 msgid "OFFER__OFFER_DURATION__HELP_MESSAGE_TEXT"
-msgstr "Scegli la quantit� di giorni che durer� la tua offerta. Potrai modificarla una volta approvata la tua proposta."
+msgstr "Scegli la quantité di giorni che durerá la tua offerta. Potrai modificarla una volta approvata la tua proposta."
 
 msgid "OFFER__OFFER_PUBLIC_EDIT_HELP_MESSAGE_TEXT"
 msgstr "Se selezioni questa opzione, altri utenti potranno unirsi e dare fondi ai progetti che si applicano all' offerta creata in origine da te."
@@ -1315,16 +1315,16 @@ msgid "BETWEEN_50_140_CHARS"
 msgstr "Inserisci da 50 a 140 caratteri"
 
 msgid "OFFER__TITLE_EDIT_HELP_MESSAGE_TEXT"
-msgstr "Questo � il titolo della tua offerta. In questo caso,non puoi pi� modificarlo."
+msgstr "Questo é il titolo della tua offerta. In questo caso,non puoi più modificarlo."
 
 msgid "OFFER__CATEGORY_EDIT_HELP_MESSAGE_TEXT"
-msgstr "Questa � la categoria che hai scelto per la tua offerta. In questo caso, non puoi pi� modificarla."
+msgstr "Questa é la categoria che hai scelto per la tua offerta. In questo caso, non puoi più modificarla."
 
 msgid "OFFER__SHORT_DESCRIPTION_EDIT_HELP_MESSAGE_TEXT"
-msgstr "Questa � la descrizione in breve della tua offerta. In questo caso, non puoi pi� modificarla."
+msgstr "Questa é la descrizione in breve della tua offerta. In questo caso, non puoi più modificarla."
 
 msgid "OFFER__DESCRIPTION_EDIT_HELP_MESSAGE_TEXT"
-msgstr "Descrivi in cosa consiste la tua offerta. Quanto pi� completa � la descrizione, meglio."
+msgstr "Descrivi in cosa consiste la tua offerta. Quanto più completa é la descrizione, meglio."
 
 msgid "OFFER__VIDEO_URL_EDIT_HELP_MESSAGE_TEXT"
 msgstr "Inserisci la URL di un proprio video circa la tua offerta che hai messo in YouTube.com o Vimeo.com"
@@ -1336,7 +1336,7 @@ msgid "OFFER__OFFER_SPONSORSHIPS_EDIT_HELP_MESSAGE_TEXT"
 msgstr "Scrivi il numero massimo di progetti che ti comprometti a sposorizzare con l' importo inserito sopra."
 
 msgid "OFFER__OFFER_DURATION_EDIT_HELP_MESSAGE_TEXT"
-msgstr "Scegli la quantit� di giorni che durer� la tua offerta. Potrai modificarla una volta approvata la tua proposta."
+msgstr "Scegli la quantité di giorni che durerá la tua offerta. Potrai modificarla una volta approvata la tua proposta."
 
 msgid "PROJECT_EDIT_FIRST_BLOCK_TITLE"
 msgstr "Tua offerta"
@@ -1357,16 +1357,16 @@ msgid "PROJECT_EDIT_THIRD_BLOCK_SUBTITLE"
 msgstr "Completa la seguente informazione"
 
 msgid "PROJECT__TITLE_EDIT_HELP_MESSAGE_TEXT"
-msgstr "Questo � il titolo del tuo progetto. In questo caso, non puoi pi� modificarlo."
+msgstr "Questo � il titolo del tuo progetto. In questo caso, non puoi più modificarlo."
 
 msgid "PROJECT__CATEGORY_EDIT_HELP_MESSAGE_TEXT"
-msgstr "Questa � la categoria che hai scelto per il tuo progetto. In questo caso, non puoi pi� modificarla."
+msgstr "Questa � la categoria che hai scelto per il tuo progetto. In questo caso, non puoi più modificarla."
 
 msgid "PROJECT__SHORT_DESCRIPTION_EDIT_HELP_MESSAGE_TEXT"
-msgstr "Questa � la descrizione in breve del tuo progetto. In questo caso, non puoi pi� modificarla."
+msgstr "Questa � la descrizione in breve del tuo progetto. In questo caso, non puoi più modificarla."
 
 msgid "PROJECT__DESCRIPTION_EDIT_HELP_MESSAGE_TEXT"
-msgstr "Descrivi in cosa consiste il tuo progetto. Quanto pi� completa � la descrizione, meglio."
+msgstr "Descrivi in cosa consiste il tuo progetto. Quanto più completa � la descrizione, meglio."
 
 msgid "PROJECT__VIDEO_URL_EDIT_HELP_MESSAGE_TEXT"
 msgstr "Inserisci la URL di un proprio video circa il tuo progetto che hai messo in YouTube.com o Vimeo.com"
@@ -1378,7 +1378,7 @@ msgid "PROJECT__FUNDING_GOAL_EDIT_HELP_MESSAGE_TEXT"
 msgstr "Inserisci l' importo in dollari di cui hai bisogno per realizzare il tuo progetto."
 
 msgid "PROJECT__PROJECT_DURATION_EDIT_HELP_MESSAGE_TEXT"
-msgstr "Scegli la quantit� di giorni che vuoi che duri la raccolta di fondi del tuo progetto."
+msgstr "Scegli la quantité di giorni che vuoi che duri la raccolta di fondi del tuo progetto."
 
 msgid "PROJECT__PRIZE_EDIT_HELP_MESSAGE_TEXT"
 msgstr "Inserisci i benefici che riceveranno i tuoi sponsor in base all' importo che scelgono di contribuire al tuo progetto. I benefici sono regali o premi relazionati con il progetto, che ti comprometti a dare ai tuoi sponsor."
@@ -2011,10 +2011,10 @@ msgid "PROJECT_COUNT_LEFT"
 msgstr "Sapzio restante"
 
 msgid "PROJECT__DESCRIPTION__TIP_MESSAGE_TEXT"
-msgstr "Maggiori informazioni metti e pi� chiaro sarai in questa descrizione, pi� affidabile risulter� il tuo progetto per gli sponsor."
+msgstr "Maggiori informazioni metti e più chiaro sarai in questa descrizione, più affidabile risulter� il tuo progetto per gli sponsor."
 
 msgid "PROJECT__VIDEO_URL__TIP_MESSAGE_TEXT"
-msgstr "Il video � la tua lettera di presentazione. Dimostra la qualit� del tuo progetto con un video di qualit�. Il tuo progetto diventer� pi� affidabile se parli ai tuoi futuri sponsor e gli dimostri le tue capacit� ed il tuo impegno."
+msgstr "Il video � la tua lettera di presentazione. Dimostra la qualit� del tuo progetto con un video di qualit�. Il tuo progetto diventer� più affidabile se parli ai tuoi futuri sponsor e gli dimostri le tue capacit� ed il tuo impegno."
 
 msgid "PROJECT_-PRIZE__TIP_MESSAGE_TEXT"
 msgstr "Tieni a mente che molti sponsor sono interessati ai benefici. Offri ricompense attrattive e ricorda l' importo del contributo."
@@ -2026,7 +2026,7 @@ msgid "PROJECT__DESCRIPTION_EDIT_TIP_MESSAGE_TEXT"
 msgstr "Puoi utilizzare la barra degli strumenti superiore per dare un formato al tuo testo."
 
 msgid "PROJECT__VIDEO_URL_EDIT_TIP_MESSAGE_TEXT"
-msgstr "Il video � la tua lettera di presentazione. Dimostra la qualit� del tuo progetto con un video di qualit�. Il tuo progetto diventer� pi� affidabile se parli ai tuoi futuri sponsor e gli dimostri le tue capacit� ed il tuo impegno."
+msgstr "Il video � la tua lettera di presentazione. Dimostra la qualit� del tuo progetto con un video di qualit�. Il tuo progetto diventer� più affidabile se parli ai tuoi futuri sponsor e gli dimostri le tue capacit� ed il tuo impegno."
 
 msgid "PROJECT_-PRIZE_EDIT_TIP_MESSAGE_TEXT"
 msgstr "Tieni a mente che molti sponsor sono interessati ai benefici. Offri ricompense attrattive e ricorda l' importo del contributo."
@@ -2041,31 +2041,31 @@ msgid "OFFER__SHORT_DESCRIPTION__TIP_MESSAGE_TEXT"
 msgstr "Hai 140 caratteri per comunicare la tua offerta. Concentrati in ci� che conta. "
 
 msgid "OFFER__DESCRIPTION__TIP_MESSAGE_TEXT"
-msgstr "Maggiori informaioni metti e pi� claro sei nella descrizione, maggiori saranno le possibilit� che altri utenti creino progetti che rispecchino le tue aspettative."
+msgstr "Maggiori informaioni metti e più claro sei nella descrizione, maggiori saranno le possibilit� che altri utenti creino progetti che rispecchino le tue aspettative."
 
 msgid "OFFER__FILE__TIP_MESSAGE_TEXT"
 msgstr "La immagine non � tutto, pero � molto importante. Metti una immagine di buona qualit�, con un aspetto di 4:3 e un massimo di 560 x 430 pixels aprossimatamente."
 
 msgid "OFFER__VIDEO_URL__TIP_MESSAGE_TEXT"
-msgstr "Il video � la tua lettera di presentazione. Dimostra la qualit� della tua offerta con un video di qualit�. La tua offerta diventer� molto pi� affidabile se racconti agli utenti quello che cerchi e perch� vuoi sponsorizzarli."
+msgstr "Il video � la tua lettera di presentazione. Dimostra la qualit� della tua offerta con un video di qualit�. La tua offerta diventer� molto più affidabile se racconti agli utenti quello che cerchi e perch� vuoi sponsorizzarli."
 
 msgid "OFFER__DESCRIPTION_EDIT_TIP_MESSAGE_TEXT"
 msgstr "Puoi utilizzare la barra degli strumenti superiore per dare un formato al tuo testo."
 
 msgid "OFFER__VIDEO_URL_EDIT_TIP_MESSAGE_TEXT"
-msgstr "Il video � la tua lettera di presentazione. Dimostra la qualit� della tua offerta con un video di qualit�. La tua offerta diventer� molto pi� affidabile se racconti agli utenti quello che cerchi e perch� vuoi sponsorizzarli."
+msgstr "Il video � la tua lettera di presentazione. Dimostra la qualit� della tua offerta con un video di qualit�. La tua offerta diventer� molto più affidabile se racconti agli utenti quello che cerchi e perch� vuoi sponsorizzarli."
 
 msgid "PROJECT__FUNDING_GOAL__TIP_MESSAGE_TEXT"
-msgstr "Ricorda che se al termine del tempo scelto a continuazione il tuo progetto non raccoglie questo importo, non sar� finanziato. Pensa ad una somma che sei in condizione di raccogliere nel tempo previsto. "
+msgstr "Ricorda che se al termine del tempo scelto a continuazione il tuo progetto non raccoglie questo importo, non sarà finanziato. Pensa ad una somma che sei in condizione di raccogliere nel tempo previsto. "
 
 msgid "PROJECT__PROJECT_DURATION__TIP_MESSAGE_TEXT"
-msgstr "Quanto pi� dura il progetto, pi� sar� possibile che riesca a raccogliere i fondi necessari."
+msgstr "Quanto più dura il progetto, più sarà possibile che riesca a raccogliere i fondi necessari."
 
 msgid "PROJECT__FUNDING_GOAL_EDIT_TIP_MESSAGE_TEXT"
-msgstr "Ricorda che se al termine del tempo scelto a continuazione il tuo progetto non raccoglie questo importo, non sar� finanziato. Pensa ad una somma che sei in condizione di raccogliere nel tempo previsto."
+msgstr "Ricorda che se al termine del tempo scelto a continuazione il tuo progetto non raccoglie questo importo, non sarà finanziato. Pensa ad una somma che sei in condizione di raccogliere nel tempo previsto."
 
 msgid "PROJECT__PROJECT_DURATION_EDIT_TIP_MESSAGE_TEXT"
-msgstr "Quanto pi� dura il progetto, pi� sar� possibile che riesca a raccogliere i fondi necessari."
+msgstr "Quanto più dura il progetto, più sarà possibile che riesca a raccogliere i fondi necessari."
 
 msgid "PAYMENT_TYPE"
 msgstr "Tipo di pagamento"
@@ -2363,7 +2363,7 @@ msgid "THE_OFFER_HAS_FINISHED %s"
 msgstr "Offerta terminata il %s"
 
 msgid "THIS_OFFER_IS_NOT_EDITABLE_ANY_MORE"
-msgstr "Questa offerta non � pi� modificabile ora"
+msgstr "Questa offerta non � più modificabile ora"
 
 msgid "APPROVED_OFFER_STATUS"
 msgstr "Offerta approvata"

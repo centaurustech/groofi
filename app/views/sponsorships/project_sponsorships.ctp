@@ -22,6 +22,7 @@ $moneda=Project::getMoneda($project);
 			
 			<a style="left:-20px" class="delproy" href="/projects/delete/<?=$project['Project']['id']?>"><span class="delp"></span>Borrar</a>
 			<div class="misc_divisor" style="width:551px;clear:both;"></div>
+
 		<?}?>
 			
 	<?}else{?>
@@ -136,6 +137,7 @@ $file = $this->Media->getImage('s50', $this->data['User']['avatar_file'], '/img/
     	<?php echo __("FINANCE_YOUR_THOUGHTS");?>
     	</div>
     <div class="sponsor2">
+        <echo "sdñlfkjaslñdkjflñasjdfkl">
        	<?php echo __("SPACE_FOR");?>
        	</div>
     <div class="sponsor3">

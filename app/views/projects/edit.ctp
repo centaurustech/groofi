@@ -64,7 +64,8 @@ function traducirMoneda($m){
 
 
 <?php
-echo $javascript->link('ckeditor/ckeditor');
+echo $this->Html->script('ckeditor/ckeditor');
+echo $this->Html->script('ckfinder/ckfinder');
 
 
 ?>
@@ -102,20 +103,19 @@ function validIm(action){
 <div class="rounded_crear">
 <input onfocus="this.blur();" autocomplete="off" type="text" name="data[Project][title]" value="<?=$this->data['Project']['title'];?>" />
 
-<div class="bot_info"  onmouseout="hideTip()" onmousemove="showTip(event,'Este es el t&iacute;tulo de tu proyecto. En esta instancia, ya no puedes editarlo.')"></div>
+<div class="bot_info"  onmouseout="hideTip()" onmousemove="showTip(event,'<?php echo __("PROJECT__TITLE_EDIT_HELP_MESSAGE_TEXT");?>')"></div>
 </div>
 </div>
-
-<!--div class="texto_how_izq">
-    <p style="font-size:12px"><?php echo __("COUNTRY");?></p>
+<div class="texto_how_izq">
+    <!--p style="font-size:12px"><?php echo __("COUNTRY");?></p>
    <div class="rounded_crear">
-        <input autocomplete="off" type="hidden" name="data[Project][paislugar]" value="<?=$this->data['Project']['paislugar'];?>" />
-        <input onfocus="this.blur();"  autocomplete="off" type="text" name="vista" value="<?=$base_categories[$this->data['Project']['paislugar']];?>" />
+        <input autocomplete="off" type="hidden" name="data[Project][paislugar]" value="<!?=$this->data['Project']['paislugar'];?>" />
+        <input onfocus="this.blur();"  autocomplete="off" type="text" name="vista" value="<!?=$base_categories[$this->data['Project']['paislugar']];?>" />
 
-        <div id="restantes1" style="font-size:9px;position:absolute;left:0; top:28px; text-align:right; width:370px; height:15px;">Restan: <?if(isset($_POST['data']['Project']['country'])){echo 50-intval((strlen(utf8_decode($_POST['data']['Project']['country']))));}else{echo '50';}?> caracteres</div>
+        <div id="restantes1" style="font-size:9px;position:absolute;left:0; top:28px; text-align:right; width:370px; height:15px;">Restan: <!?if(isset($_POST['data']['Project']['country'])){echo 50-intval((strlen(utf8_decode($_POST['data']['Project']['country']))));}else{echo '50';}?> caracteres</div>
         <div class="bot_info"  onmouseout="hideTip()" onmousemove="showTip(event,'Este ser&aacute; el t&iacute;tulo de tu proyecto. Una vez aprobado, no podr&aacute;s modificarlo.')"></div>
-    </div>
-</div-->
+    </div-->
+</div>
 
 <div class="texto_how_izq">
 <p style="font-size:12px"><?php echo __("PROJECT__CATEGORY");?></p>
@@ -125,7 +125,7 @@ function validIm(action){
 
 
 
-<div class="bot_info" onmouseout="hideTip()" onmousemove="showTip(event,'Esta es la categor&iacute;a que has elegido para tu proyecto. En esta instancia, ya no puedes editarla.')"></div>
+<div class="bot_info" onmouseout="hideTip()" onmousemove="showTip(event,'<?php echo __("PROJECT__CATEGORY_EDIT_HELP_MESSAGE_TEXT");?>')"></div>
 </div>
 </div>
 <div class="texto_how_izq">
@@ -140,9 +140,9 @@ function noenter(e){
 </script>
 <div class="rounded_area_crear">
 <textarea  onfocus="this.blur();"  name="data[Project][short_description]" cols="30" rows="6" autocomplete="off"><?=$this->data['Project']['short_description'];?></textarea>
-<div class="bot_info_area"  onmouseout="hideTip()" onmousemove="showTip(event,'Esta es la descripci&oacute;n breve de tu proyecto. En esta instancia, ya no puedes editarla.')"></div>
+<div class="bot_info_area"  onmouseout="hideTip()" onmousemove="showTip(event,'<?php echo __("PROJECT__SHORT_DESCRIPTION_EDIT_HELP_MESSAGE_TEXT");?>')"></div>
 </div>
-<div style="width:370px; height:253px; background:url(/2012/images/proyectosprivados.png); position:absolute; top:1050px;left:15px">
+<div style="width:370px; height:253px; background:url(/2012/images/proyectosprivados.png); position:absolute; top:950px;left:490px">
 
 <div class="proyectos_privados0">
 <?php echo __("PROYECTOS_PRIVADOS1");?>
@@ -181,18 +181,20 @@ function noenter(e){
 <p style="font-size:12px"><?php echo __("PROJECT_MAIN_POST");?></p>
 <div class="ckeditor1">
 <textarea class="ckeditor" name="data[Project][description]" autocomplete="off" cols="30" rows="6"><?=$this->data['Project']['description'];?></textarea>
-<!--div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['description']) && !empty($validationErrorsArray['description'])){echo $validationErrorsArray['description'];}?></div>
-<div class="bot_info_area" onmouseout="hideTip()" onmousemove="showTip(event,'Describe en qu&eacute; consiste tu proyecto. Cuanto m&aacute;s completa sea esta descripci&oacute;n, mejor.')"></div-->
+<!--div style="color:red;font-size:9px;position:relative; top:6px"><!?php if (isset($validationErrorsArray['description']) && !empty($validationErrorsArray['description'])){echo $validationErrorsArray['description'];}?></div-->
+<div class="info_ckeditor" onmouseout="hideTip()" onmousemove="showTip(event,'Describe en qu&eacute; consiste tu proyecto. Cuanto m&aacute;s completa sea esta descripci&oacute;n, mejor.')"></div>
 </div>
 
 </div>
+
+
 
 <div class="ckeditor2">
 <p style="font-size:12px"><?php echo __("PROJECT_REASON");?></p>
 <div class="ckeditor2">
 <textarea class="ckeditor" name="data[Project][reason]" autocomplete="off" cols="30" rows="6"><?if(isset($this->data['Project']['reason'])){echo $this->data['Project']['reason'];}?></textarea>
 <div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['reason']) && !empty($validationErrorsArray['reason'])){echo $validationErrorsArray['reason'];}?></div>
-<div class="bot_info_area" onmouseout="hideTip()" onmousemove="showTip(event,'Cu&eacute;ntales a tus posibles patrocinadores por qu&eacute; deber&iacute;an aportar fondos para tu proyecto.')"></div>
+<div class="info_ckeditor1" onmouseout="hideTip()" onmousemove="showTip(event,'Cu&eacute;ntales a tus posibles patrocinadores por qu&eacute; deber&iacute;an aportar fondos para tu proyecto.')"></div>
 </div>
 
 </div>
@@ -691,4 +693,36 @@ function hideTip(){
 	$('tip').innerHTML='';
 	$('tip').style.top='-1500px';
 }
+</script>
+<script type="text/javascript">
+
+    //var ck_newsContent = CKEDITOR.replace( 'data[Project][description]' );
+    CKEDITOR.replace( 'data[Project][description]',
+            {
+                filebrowserBrowseUrl : '/js/ckfinder/ckfinder.html',
+                filebrowserImageBrowseUrl : '/js/ckfinder/ckfinder.html?type=Images',
+                filebrowserFlashBrowseUrl : '/js/ckfinder/ckfinder.html?type=Flash',
+                filebrowserUploadUrl : '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+                filebrowserImageUploadUrl : '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+                filebrowserFlashUploadUrl : '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
+            });
+
+    //ck_newsContent.setData( '<p>Just click the <b>Image</b> or <b>Link</b> button, and then <b>&quot;Browse Server&quot;</b>.</p>' );
+
+</script>
+<script type="text/javascript">
+
+    //var ck_newsContent = CKEDITOR.replace( 'data[Project][description]' );
+    CKEDITOR.replace( 'data[Project][reason]',
+            {
+                filebrowserBrowseUrl : '/js/ckfinder/ckfinder.html',
+                filebrowserImageBrowseUrl : '/js/ckfinder/ckfinder.html?type=Images',
+                filebrowserFlashBrowseUrl : '/js/ckfinder/ckfinder.html?type=Flash',
+                filebrowserUploadUrl : '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+                filebrowserImageUploadUrl : '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+                filebrowserFlashUploadUrl : '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
+            });
+
+    //ck_newsContent.setData( '<p>Just click the <b>Image</b> or <b>Link</b> button, and then <b>&quot;Browse Server&quot;</b>.</p>' );
+
 </script>

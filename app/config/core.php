@@ -52,7 +52,7 @@ include_once CONFIGS . DS . 'site/enviroment/site_enviroment.php';
  *
  *  Integer: Use built-in PHP constants to set the error level (see error_reporting)
  *    Configure::write('log', E_ERROR | E_WARNING);
- *    Configure::write('log', E_ALL ^ E_NOTICE);
+ *    Configure::write('log', E_ALL ^ E_NOICE);
  */
 Configure::write('log', true);
 

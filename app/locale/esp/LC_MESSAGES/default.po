@@ -1221,7 +1221,7 @@ msgid "PROJECT_ADD_THIRD_BLOCK_SUBTITLE"
 msgstr "Completa la siguiente información"
 
 msgid "PROJECT__TITLE__HELP_MESSAGE_TEXT"
-msgstr "Este será el título de tu proyecto. Una vez aprobado, no podrás modificarlo."
+msgstr "Este será el título de tu proyecto."
 
 msgid "PROJECT__CATEGORY__HELP_MESSAGE_TEXT"
 msgstr "Elige la categoría que mejor describa a tu proyecto. Una vez aprobado, no podrás modificarla."

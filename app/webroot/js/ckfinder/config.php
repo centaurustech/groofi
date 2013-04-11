@@ -18,6 +18,9 @@
  *
  * @return boolean
  */
+
+
+
 function CheckAuthentication()
 {
 	// WARNING : DO NOT simply return "true". By doing so, you are allowing
@@ -30,7 +33,7 @@ function CheckAuthentication()
 	// user logs in your system. To be able to use session variables don't
 	// forget to add session_start() at the top of this file.
 
-	return false;
+	return true;
 }
 
 // LicenseKey : Paste your license key here. If left blank, CKFinder will be
@@ -60,7 +63,8 @@ Examples:
 
 ATTENTION: The trailing slash is required.
 */
-$baseUrl = '/ckfinder/userfiles/';
+$baseUrl = 'http://groofi.bo/app/webroot/upload/';
+
 
 /*
 $baseDir : the path to the local directory (in the server) which points to the
@@ -80,10 +84,12 @@ Examples:
 ATTENTION: The trailing slash is required.
 */
 $baseDir = resolveUrl($baseUrl);
-
+//$baseDir = '/groofi/app/webroot/upload/';
 /*
  * ### Advanced Settings
  */
+
+
 
 /*
 Thumbnails : thumbnails settings. All thumbnails will end up in the same
@@ -312,3 +318,5 @@ include_once "plugins/fileeditor/plugin.php";
 $config['plugin_imageresize']['smallThumb'] = '90x90';
 $config['plugin_imageresize']['mediumThumb'] = '120x120';
 $config['plugin_imageresize']['largeThumb'] = '180x180';
+
+

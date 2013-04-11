@@ -27,8 +27,8 @@ function getVideoFromURL($u){
 }
 ?>
 <?php
-echo $javascript->link('ckeditor/ckeditor');
-echo $this->Html->script('ckfinder/ckfinder.js');
+echo $this->Html->script('ckeditor/ckeditor');
+echo $this->Html->script('ckfinder/ckfinder');
 
 ?>
 <?php
@@ -126,7 +126,7 @@ endif;
 
         <div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['country']) && !empty($validationErrorsArray['country'])){echo $validationErrorsArray['country'];}?></div>
         <div id="restantes1" style="font-size:9px;position:absolute;left:0; top:28px; text-align:right; width:370px; height:15px;">Restan: <?if(isset($_POST['data']['Project']['country'])){echo 50-intval((strlen(utf8_decode($_POST['data']['Project']['country']))));}else{echo '50';}?> caracteres</div>
-        <div class="bot_info"  onmouseout="hideTip()" onmousemove="showTip(event,'Este ser&aacute; el t&iacute;tulo de tu proyecto. Una vez aprobado, no podr&aacute;s modificarlo.')"></div>
+        <div class="bot_info"  onmouseout="hideTip()" onmousemove="showTip(event,'<?php echo __("CHOICE_YOUR_COUNTRY");?>')"></div>
     </div>
 </div>
 
@@ -152,7 +152,7 @@ endif;
 <div class="clear"></div>
 <div class="texto_how_izq">
     <p style="font-size:12px"><?php echo __("GIVE_US_SOME_LINKS");?></p>
-    <div class="bot_info" style="top:26px;" onmouseout="hideTip()"  onmousemove="showTip(event,'Ingresa websites en los que podamos encontrar m&aacute;s informaci&oacute;n sobre tu proyecto. Esto ser&aacute; utilizado para evaluar tu propuesta.')">
+    <div class="bot_info" style="top:26px;" onmouseout="hideTip()"  onmousemove="showTip(event,'<?php echo __("PROJECT__URL__HELP_MESSAGE_TEXT");?>')">
     </div>
 
     <div class="rounded_perfil">
@@ -281,7 +281,7 @@ endif;
 
     <div id="bajofoto1"><?php echo __("Browse");?></div>
 
-    <div id="extfoto2"><input onchange="if((this.value.toLowerCase().indexOf('.jpg')==-1) && (this.value.toLowerCase().indexOf('.jpeg')==-1) && (this.value.toLowerCase().indexOf('.gif')==-1) && (this.value.toLowerCase().indexOf('.png')==-1)){$('elfile2').innerHTML='<span style=&quot;color:red;font-size:9px&quot;>Formato de archivo no permitido.</span>';return;}$('elfile2').innerHTML=this.value" onmouseover="$('bajofoto1').style.background='#237fb5';" onmouseout="$('bajofoto1').style.background='#000';" id="foto1"  name="data[Project][file]" autocomplete="off" type="file" /></div>>
+    <div id="extfoto2"><input onchange="if((this.value.toLowerCase().indexOf('.jpg')==-1) && (this.value.toLowerCase().indexOf('.jpeg')==-1) && (this.value.toLowerCase().indexOf('.gif')==-1) && (this.value.toLowerCase().indexOf('.png')==-1)){$('elfile2').innerHTML='<span style=&quot;color:red;font-size:9px&quot;>Formato de archivo no permitido.</span>';return;}$('elfile2').innerHTML=this.value" onmouseover="$('bajofoto1').style.background='#237fb5';" onmouseout="$('bajofoto1').style.background='#000';" id="foto1"  name="data[Project][file]" autocomplete="off" type="file" /></div>
 
 
 
@@ -590,6 +590,24 @@ endif;
     });
 
 </script>
+
+<script type="text/javascript">
+
+    //var ck_newsContent = CKEDITOR.replace( 'data[Project][description]' );
+    CKEDITOR.replace( 'data[Project][description]',
+            {
+                filebrowserBrowseUrl : '/js/ckfinder/ckfinder.html',
+                filebrowserImageBrowseUrl : '/js/ckfinder/ckfinder.html?type=Images',
+                filebrowserFlashBrowseUrl : '/js/ckfinder/ckfinder.html?type=Flash',
+                filebrowserUploadUrl : '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+                filebrowserImageUploadUrl : '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+                filebrowserFlashUploadUrl : '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
+            });
+
+    //ck_newsContent.setData( '<p>Just click the <b>Image</b> or <b>Link</b> button, and then <b>&quot;Browse Server&quot;</b>.</p>' );
+
+</script>
+
 <script>
     DR(function(){
         for(var i=0;i<10;i++){

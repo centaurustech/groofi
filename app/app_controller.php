@@ -29,7 +29,8 @@ class AppController extends Controller {
         'Cksource',
         'Javascript',
         'Cropimage',
-        'Paiseslistado'
+        'Paiseslistado',
+        'Cropimage'
 
 
     );

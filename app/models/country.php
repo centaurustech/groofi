@@ -138,9 +138,9 @@ class country extends AppModel {
         $this->save($data);
     }
 
-    function slugCities() {
+    function slugCountries() {
         $this->contain = array();
-        $sql = "UPDATE `groofi`.`cities` SET `country_slug` = '', `country_slug` = ''";
+        $sql = "UPDATE `groofi`.`countries` SET `country_slug` = '', `country_slug` = ''";
 
         $this->query($sql);
 
