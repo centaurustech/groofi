@@ -175,15 +175,57 @@ class StaticpagesController extends AppController {
          }
 		 $this->set ('base_categories',$base_categories);
 		 $this->set ('keys_categories',$keys_categories);
+
+
+
+
+        $this->loadModel('Country');
+
+
+        $base_countries = $this->Country->find('all');
+        $this->set (compact ('base_countries'));
+        $predefinido=0;
+        if($this->Session->check('predefinido')){
+            $predefinido=1;
+            $pred=$this->Session->read('predefinido');
+
+        }
+
+        if($predefinido){
+            unset($this->Project->validate['file']);
+            if(!$this->data){
+                $_POST['data']['Project']['title']=$pred['title'];
+                $_POST['data']['Project']['category_id']=$pred['category_id'];
+                $_POST['data']['Project']['description']=$pred['description'];
+                $_POST['data']['Project']['motivation']=$pred['motivation'];
+                $_POST['data']['Project']['short_description']=$pred['short_description'];
+                $_POST['data']['Project']['funding_goal']=$pred['funding_goal'];
+                $_POST['data']['Project']['reason']=$pred['reason'];
+                $_POST['data']['Project']['moneda']=$pred['moneda'];
+                $_POST['data']['Project']['project_duration']=$pred['project_duration'];
+                $_POST['data']['Project']['video_url']=$pred['video'];
+                $_POST['data']['Prize']=$this->Session->read('priz');
+                $this->set('fotito',$pred['foto']);
+            }
+        }
+
+
     }
 	function guidelines(){
 		
 	}
+    function politicasdeprivacidad(){
+
+    }
 	function comofunciona(){
 		
 	}
 	function faq(){
 	}
+    function terminos(){
+
+
+    }
 	function contacto(){
 		
 		$pat="/^[^@]*@[^@]*\.[^@]*$/";

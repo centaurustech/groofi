@@ -10,7 +10,6 @@
  */
 
 
-
 class ProjectsController extends AppController {
 
     var $paginate = array (
@@ -104,6 +103,7 @@ class ProjectsController extends AppController {
         parent::beforeRender ();
 
     }
+
 
     // PROJECT_APPROVED
     function admin_approve ($projectId=null, $paymentType=EXPRESSCHECKOUT) {
@@ -239,6 +239,35 @@ class ProjectsController extends AppController {
 		
 		$this->render ('admin_index');
     }
+    function createimage_step2(){
+
+
+
+    }
+    function createimage_step3(){
+
+
+    }
+
+    function prueba(){
+
+
+        if (!empty($this->data)) {
+            $uploaded = $this->JqImgcrop->uploadImage($this->data['projects']['image'], '/img/upload/', 'prefix_');
+            $this->set('uploaded',$uploaded);
+
+        }
+        $this->JqImgcrop->cropImage(151, $this->data['projects']['x1'], $this->data['projects']['y1'], $this->data['projects']['x2'], $this->data['projects']['y2'], $this->data['projects']['w'], $this->data['projects']['h'], $this->data['projects']['imagePath'], $this->data['projects']['imagePath']);
+
+
+
+
+    }
+
+
+
+
+
 
     function add ($offerId=false) {
         App::import('Vendor','upload');
@@ -272,8 +301,7 @@ class ProjectsController extends AppController {
 			}
 		}
 		
-		
-		
+
 
         if ($offerId) {
             $offer = $this->Project->Offer->getViewData ($offerId);
@@ -327,10 +355,10 @@ class ProjectsController extends AppController {
 
 
                 if ($this->Project->id) {
-					
 					if($predefinido && isset($pred['foto']) && strlen($pred['foto'])>4 && (!isset($_FILES['data']['name']['Project']['file']) || $_FILES['data']['name']['Project']['file']=='') )
                     {
-						/*$picname='____'.md5(time()).rand(0,99999).'.png';
+
+						$picname='____'.md5(time()).rand(0,99999).'.png';
 						$this->data['Project']['dirname']='project/'.$this->Project->id.'/img';
 						$this->data['Project']['basename']=$picname;
 						$this->data['Project']['id']=$this->Project->id;
@@ -346,22 +374,19 @@ class ProjectsController extends AppController {
 						$pp=new Project();
 						$datos=$pp->query("update projects set dirname='".$this->data['Project']['dirname']."',basename='".$picname."' where id='".$this->Project->id."'");
 						$this->Session->delete('priz');
-						$this->Session->delete('predefinido');*/
+						$this->Session->delete('predefinido');
                         $this->Image = $this->Components->load("Image");
 
                         $this->request->$_FILES['data']['name']['Project']['file'] = $this->upload($this->request->$_FILES['data']['name']['Project']['file']);
                         $this->Image->copia_optimizada('media/filter/l560/project/'.$this->Project->id.'/img',280,600);
                         $this->Image->borrar_tmp();
                     }else{
+
                         $this->request->$_FILES['data']['name']['Project']['file'] = "";
 
-
-
-
-
 					}
-					
-					
+
+
 
                     if (!$this->Project->User->Notification->add (//PROJECT_PENDING_APPROVE
                                     'PROJECT_PENDING_APPROVE'
@@ -409,9 +434,19 @@ class ProjectsController extends AppController {
 		 }
 
 
+        if (!empty($this->data)) {
+            $uploaded = $this->JqImgcrop->uploadImage($this->data['projects']['image'], '/img/upload/', 'prefix_');
+            $this->set('uploaded',$uploaded);
+
+        }
+        $this->JqImgcrop->cropImage(151, $this->data['projects']['x1'], $this->data['projects']['y1'], $this->data['projects']['x2'], $this->data['projects']['y2'], $this->data['projects']['w'], $this->data['projects']['h'], $this->data['projects']['imagePath'], $this->data['projects']['imagePath']);
 
 		 
     }
+
+
+
+
 
     function associateWithPaypal ($projectId, $operation='set') {
         App::import ('Vendor', 'paypal');
@@ -805,7 +840,7 @@ class ProjectsController extends AppController {
 
     function edit ($id = null, $publish=false, $getData = false) {
 			
-				
+			echo "aaaaasdasd";
 		    App::import('model', 'Project');
 			$pp=new Project();
 			$datos=$pp->query("select * from projects where id=".$id);

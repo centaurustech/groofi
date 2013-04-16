@@ -182,7 +182,7 @@ function noenter(e){
 <div class="ckeditor1">
 <textarea class="ckeditor" name="data[Project][description]" autocomplete="off" cols="30" rows="6"><?=$this->data['Project']['description'];?></textarea>
 <!--div style="color:red;font-size:9px;position:relative; top:6px"><!?php if (isset($validationErrorsArray['description']) && !empty($validationErrorsArray['description'])){echo $validationErrorsArray['description'];}?></div-->
-<div class="info_ckeditor" onmouseout="hideTip()" onmousemove="showTip(event,'Describe en qu&eacute; consiste tu proyecto. Cuanto m&aacute;s completa sea esta descripci&oacute;n, mejor.')"></div>
+<div class="info_ckeditor" onmouseout="hideTip()" onmousemove="showTip(event,'<?php echo __("PROJECT__DESCRIPTION_EDIT_HELP_MESSAGE_TEXT");?>')"></div>
 </div>
 
 </div>
@@ -194,14 +194,14 @@ function noenter(e){
 <div class="ckeditor2">
 <textarea class="ckeditor" name="data[Project][reason]" autocomplete="off" cols="30" rows="6"><?if(isset($this->data['Project']['reason'])){echo $this->data['Project']['reason'];}?></textarea>
 <div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['reason']) && !empty($validationErrorsArray['reason'])){echo $validationErrorsArray['reason'];}?></div>
-<div class="info_ckeditor1" onmouseout="hideTip()" onmousemove="showTip(event,'Cu&eacute;ntales a tus posibles patrocinadores por qu&eacute; deber&iacute;an aportar fondos para tu proyecto.')"></div>
+<div class="info_ckeditor1" onmouseout="hideTip()" onmousemove="showTip(event,'<?php echo __("PROJECT__REASON_EDIT_HELP_MESSAGE_TEXT");?>')"></div>
 </div>
 
 </div>
 <div class="clear"></div>
 <div class="texto_how_izq">
 <p style="font-size:12px">Website</p>
-<div class="bot_info" style="top:26px;" onmouseout="hideTip()"  onmousemove="showTip(event,'Ingresa websites en los que podamos encontrar m&aacute;s informaci&oacute;n sobre tu proyecto. Esto ser&aacute; utilizado para evaluar tu propuesta.')"></div>
+<div class="bot_info" style="top:26px;" onmouseout="hideTip()"  onmousemove="showTip(event,'<?php echo __("PROJECT__URL__HELP_MESSAGE_TEXT");?>')"></div>
 
 <div class="rounded_perfil">
 <input value="<?if(isset($this->data['Link'][0]['link'])){echo $this->data['Link'][0]['link'];}?>" autocomplete="off"   id="web0" type="text" name="data[Link][0][link]" style="width:350px;"/>
@@ -271,7 +271,7 @@ function noenter(e){
 
 
 
-<div class="bot_info img" onmouseout="hideTip()"  onmousemove="showTip(event,'Elige una imagen para ilustrar tu proyecto. La imagen no es todo, pero es muy importante.<br>Sube una imagen de buena calidad, con un aspecto de 4:3 y un m&aacute;ximo de 560 x 430 pixeles aproximadamente.')"></div>
+<div class="bot_info img" onmouseout="hideTip()"  onmousemove="showTip(event,'<?php echo __("PROJECT__FILE__HELP_MESSAGE_TEXT");?>')"></div>
 </div>
 <div style="clear:both"></div>
 
@@ -283,7 +283,7 @@ function noenter(e){
 <p style="font-size:12px">Video (URL)</p>
 <div class="rounded_crear">
 <input value="<?if(isset($this->data['Project']['video_url'])){echo $this->data['Project']['video_url'];}?>" type="text"  autocomplete="off" name="data[Project][video_url]" />
-<div class="bot_info" onmouseout="hideTip()"  onmousemove="showTip(event,'Ingresa la URL de un video propio sobre tu proyecto que hayas subido a YouTube.com o Vimeo.com (opcional).<br>El video es tu carta de presentaci&oacute;n. Demuestra la calidad de tu proyecto con un video de calidad. Tu proyecto se volver&aacute; mucho m&aacute;s confiable si les hablas a tus futuros patrocinadores y les demuestras tu capacidad y compromiso.')"></div>
+<div class="bot_info" onmouseout="hideTip()"  onmousemove="showTip(event,'<?php echo __("PROJECT__VIDEO_URL__HELP_MESSAGE_TEXT");?><br><?php echo __("PROJECT__VIDEO_URL__TIP_MESSAGE_TEXT");?>')"></div>
 </div>
 </div>
 <? $video = getVideoEmbed($this->data['Project']['video_url'], 280, 210);?>
@@ -351,10 +351,10 @@ function noenter(e){
 <input name="data[Project][project_duration]" type="hidden" autocomplete="off" class="range" value="7" id="ProjectProjectDuration" />
 <div style="position:relative; height:17px; width:360px">
 <div id="indicadords" style="font-size:10px;">7 d&iacute;a/s</div>
-<div  class="back_slider" style=" width:360px; height:10px; border:1px solid #eaeaea; position:relative; top:15px;">
+<div  class="back_slider" style=" width:360px; height:10px; border:1px solid #eaeaea; position:relative; top:-40px;">
 <div id="blueLine" style="width:0%; height:100%;background:#338abd;"></div>
 </div>
-<div id="cursor" style="width:17px; height:17px; border:1px solid #d3d3d3; background:#e6e6e6;cursor:pointer; position:relative; top:24px;"></div>
+<div id="cursor" style="width:17px; height:17px; border:1px solid #d3d3d3; background:#e6e6e6;cursor:pointer; position:relative; top:-15px;"></div>
 </div>
 
 <div class="bot_info duracion" onmouseout="hideTip()"  onmousemove="showTip(event,'Elige la cantidad de d&iacute;as que deseas que dure la recaudaci&oacute;n de fondos de tu proyecto. Podr&aacute;s modificar la duraci&oacute;n del proyecto una vez aprobada tu propuesta.<br>Cuanto m&aacute;s dure el proyecto, m&aacute;s posible ser&aacute; que alcances a recaudar los fondos necesarios.')"></div>

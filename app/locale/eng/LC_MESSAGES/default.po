@@ -3965,6 +3965,456 @@ msgstr "characters."
 msgid "Res1"
 msgstr "Left:"
 
+msgid "Personas_patro"
+msgstr "INDIVIDUALS OR SMALL SPONSORS"
+
+msgid "Personas_patro_gran"
+msgstr "LARGE COMPANIES OR SPONSORS"
+
+msgid "PROCESO_MERCADO_PAGO"
+msgstr "Market Continues to Pay process"
+
+msgid "TERMINOS_DE_USO_0"
+msgstr "IMPORTANT:"
+
+msgid "TERMINOS_DE_USO_1"
+msgstr "This is a legal notice applies to the entire contents of the website with the domain name www.groofi.com (website) and all email correspondence sent. Please read these terms carefully before using the Website. By using the website you accept these terms regardless of whether or not you choose to register with us. If you do not accept these terms, do not use the Website. This notice is issued by Groofi Limited (Company)."
+
+msgid "TERMINOS_DE_USO_2"
+msgstr "1. INTRODUCTION"
+
+msgid "TERMINOS_DE_USO_3"
+msgstr "1.1 You can access most of the website without registering your details with us. Certain areas of the Website are only open to anyone who registers."
+
+msgid "TERMINOS_DE_USO_4"
+msgstr "1.2 In accessing any part of the Website shall be deemed to have accepted this legal notice in full. If you do not accept this legal notice in full, you must leave the website immediately."
+
+msgid "TERMINOS_DE_USO_5"
+msgstr "1.3 The Company may revise this legal notice at any time by updating this posting. You should check the website each time you use it to review the current legal notice at that time, as it is mandatory for you. Certain provisions of this legal notice may be superseded by expressly designated legal notices or terms located on particular pages at the website."
+
+msgid "TERMINOS_DE_USO_6"
+msgstr "2. TERMS OF SERVICE"
+
+msgid "TERMINOS_DE_USO_7"
+msgstr "2.1 This website is intended solely for users who are eighteen (18) years of age or older, and any registration, use or access to the Web Site by anyone under 18 is unauthorized, and breaching it is a violation of this agreement . The Company may terminate your account, delete any content or information you have posted on the website and / or prohibit the use or access to the Website (or any portion, aspect or feature of the Site) for any reason, at any time in its sole discretion, with or without notice, if you believe that you are under 18. If you are under 18 years of age, you can use the Web site if you have the consent of their parents or guardians, and are fully able and competent to enter into the terms, conditions, obligations, affirmations, representations and warranties set forth in this Agreement and to abide by and comply with this Agreement."
+
+msgid "TERMINOS_DE_USO_8"
+msgstr "3. LICENSE "
+
+msgid "TERMINOS_DE_USO_9"
+msgstr "3.1 allows you to print and download files from the website for your own use as follows, if;"
+
+msgid "TERMINOS_DE_USO_10"
+msgstr "(A) no documents or related graphics on the website are modified in any way;"
+
+msgid "TERMINOS_DE_USO_11"
+msgstr "(B) no graphics on the Website are used separately from the corresponding text, and"
+
+msgid "TERMINOS_DE_USO_12"
+msgstr "(C) copyright of the Company and brand communications and this permission notice appear in all copies."
+
+msgid "TERMINOS_DE_USO_13"
+msgstr "3.2 Unless otherwise stated, the copyright and other intellectual property rights in all material on the Website (including without limitation photographs and graphical images) are owned by the Company or its licensors. For the purposes of this legal notice, any use of the website files other than in accordance with clause 2.1 for any purpose. If you breach any of the terms of this legal notice, your permission to use the Website automatically terminates and you must immediately destroy any downloaded or printed arhcivo website."
+
+msgid "TERMINOS_DE_USO_14"
+msgstr "3.3 The rights not expressly granted in these terms are reserved."
+
+msgid "TERMINOS_DE_USO_15"
+msgstr "4. ACCESS SERVICE"
+
+msgid "TERMINOS_DE_USO_16"
+msgstr "4.1 While the Company endeavors to ensure that the website is available 24 hours a day, the Company will not be liable if for any reason the website is unavailable at any time or for any period."
+
+msgid "TERMINOS_DE_USO_17"
+msgstr "4.2 Access to the Website may be suspended temporarily and without notice in the event of system failure, maintenance or repair or for reasons beyond the control of the Company."
+
+msgid "TERMINOS_DE_USO_18"
+msgstr "5. INFORMATION AND CONDUCT"
+
+msgid "TERMINOS_DE_USO_19"
+msgstr "5.1. Besides personally identifiable information, which is covered under our Privacy Policy, any material you transmit or post to the web site will be considered non-confidential and not to your cozy property. The Company shall have no obligation with respect to such material. The Company and its designees will be free to copy, disclose, distribute, incorporate, modify, delete, reformat, or translate and otherwise use such material and all data, images, video, audio, text and other things embodied therein for any commercial or noncommercial."
+
+msgid "TERMINOS_DE_USO_20"
+msgstr "5.2 You are prohibited from posting or transmitting to or from the Website any material:"
+
+msgid "TERMINOS_DE_USO_21"
+msgstr "(A) that is threatening, defamatory, obscene, indecent, seditious, offensive, pornographic, abusive, liable to incite racial hatred, discriminatory, menacing, scandalous, blasphemous, in breach of confidence, in violation of privacy or which may cause discomfort or inconvenience, or"
+
+msgid "TERMINOS_DE_USO_22"
+msgstr "(B) for which they have not obtained all necessary licenses and / or approvals, you agree to pay all royalties and other amounts owed to any person or entity, due to the submission of any User Submissions to the Service, or"
+
+msgid "TERMINOS_DE_USO_23"
+msgstr "(C) which constitutes or encourages conduct that would be considered a criminal offense, give rise to civil liability, or otherwise be contrary to the law or infringe the rights of third parties, in any country, or"
+
+msgid "TERMINOS_DE_USO_24"
+msgstr "(D) which is technically harmful (including, without limitation, computer viruses, logic bombs, Trojan horses, worms, harmful components, corrupted data or other malicious software or harmful data)."
+
+msgid "TERMINOS_DE_USO_25"
+msgstr "5.3 No may misuse the Website (including, without limitation, by hacking)."
+
+msgid "TERMINOS_DE_USO_26"
+msgstr "5.4 The Company will fully cooperate with any authority of law enforcement or court order requesting or directing the Company to disclose the identity or locate anyone posting any material in violation of clause 4.2 or clause 4.3."
+
+msgid "TERMINOS_DE_USO_27"
+msgstr "6. PROJECTS"
+
+msgid "TERMINOS_DE_USO_28"
+msgstr "6.1 The website is a platform for joint financing. Allows users to project developers ("Groofies") add a project to the list of projects and raise funds from other users ("Groopies"). All funds are collected by Groofi for Groofies through PayPal payment system. The success of a project is defined as a project that meets or exceeds the funding target established in the project on time. Therefore, an unsuccessful project is one that does not reach the level of funding on time."
+
+msgid "TERMINOS_DE_USO_29"
+msgstr "6.2 The funds committed for Groofies may be debited from the account in two ways according Groopies Groofi operatively deemed appropriate; 1) Immediate, or 2) Deferred;"
+
+msgid "TERMINOS_DE_USO_30"
+msgstr "1) IMMEDIATE be debited at the time Groopies support the project."
+
+msgid "TERMINOS_DE_USO_31"
+msgstr "2) Deferred: Deferred as is debited at the time Groofies have reached their funding goals prior acceptance of Groopies."
+
+msgid "TERMINOS_DE_USO_32"
+msgstr "6.3 In the event of a successful project, approving payments will be executed immediately upon Groopies support the project and all funds will be transferred to the PayPal account of Groofi, and only when the project ends, be transferred to the the Groofies account. If payment is debited on a deferred, once the newly successful project begins the process Groofi to debit funds from Groopies, then transfer it to the Groofies.En both modes (immediate and delayed), began with Groofi process debits to Groopies immediately from the beginning of the transaction."
+
+msgid "TERMINOS_DE_USO_33"
+msgstr "About the payment, once a project is completed successfully Groofi immediately began the process of transferring funds to Groofies. The Groofies be eligible to receive money via your Paypal account or money to a bank account indicated in a reliable way. A Groofi operating times, operating times must be added published by Paypal payment applicable to each country and / or bank clearing times of the banks involved."
+
+msgid "TERMINOS_DE_USO_34"
+msgstr "Groofi proceeds transferred to the account specified by Groofies less Groofi commission and transaction costs of Paypal or bank transfer costs accordingly."
+
+msgid "TERMINOS_DE_USO_35"
+msgstr "6.4 If Groofies fail its purpose of financing, in the case of debit as 1) Immediate, funds will be transferred back to the source account Groopies, less operating costs PayPal. In the case of debit fit 2) Deferred, the funds will remain in the accounts of the Groopies, less operating costs PayPal. In the event of unsuccessful project, Groofi not charge commission."
+
+msgid "TERMINOS_DE_USO_36"
+msgstr "6.5 The Company is not responsible for your interactions with other organizations and / or individuals found on or through the website. This includes, but is not limited to, the delivery of goods and services, and any other terms, conditions, warranties or representations associated with listings on the website. The Company does not oversee the performance or punctuality of projects. The Company is not responsible for any damage or loss suffered as a result of these negotiations. All relationships are solely between you and such organizations and / or individuals. The Company has no obligation to become involved in disputes between Groopies and Groofies, or between site members and / or visitors and others. In the case of a conflict, is released to the Company, its officers, employees, agents and successors from claims, demands and damages of every kind, known or unknown, suspected or unsuspected, disclosed or undisclosed, arising out of or in any way related to such disputes and our service."
+
+msgid "TERMINOS_DE_USO_37"
+msgstr "6.6 While the company is not responsible for the actions of a Groofie, however Groofies are fully responsible for the fulfillment of obligations undertaken in the projects they create. The Company reserves the right to cancel projects and payments for reimbursement of all associate members "" at any time for any reason. ""Groofi reserves the right to remove projects from public listings for any reason."
+
+msgid "TERMINOS_DE_USO_38"
+msgstr "6.7 Groofi no warranties regarding the performance or functionality of Paypal. Moreover, due to occasional failures of some credit cards, the Company can not guarantee the complete reception of the target funds."
+
+msgid "TERMINOS_DE_USO_39"
+msgstr "THE COMPANY RESERVES THE RIGHT TO CANCEL, INTERRUPT OR SUSPEND PROJECTS AT ANY TIME FOR ANY REASON."
+
+msgid "TERMINOS_DE_USO_40"
+msgstr "7. COMMISSIONS"
+
+msgid "TERMINOS_DE_USO_41"
+msgstr "7.1 Up to the website is free. However, we charge a commission of 5% plus VAT on all the money raised by Groofies successfully. We also charge all transaction fees charged by Paypal website. When you use a service that costs you have the opportunity to review and accept the fees that will be charged, and they can be modified. The changes are effective after being published on the website. We may choose to temporarily change the fees for our services for promotional events or new services, and such changes are effective when we post the temporary promotional event or new service on the website."
+
+msgid "TERMINOS_DE_USO_42"
+msgstr "7.2 You are responsible for paying all fees and taxes associated with the use of the Website. In the event that a project is removed from the website for violating the terms of use, all fees paid will not be refunded, unless, at the Company's sole discretion, determines that a refund is appropriate."
+
+msgid "TERMINOS_DE_USO_43"
+msgstr "8. LINKS TO AND FROM OTHER WEBSITES"
+
+msgid "TERMINOS_DE_USO_44"
+msgstr "8.1 The links to third party websites on the Website are provided solely for your convenience. If you use these links, you leave the website. The Company has not reviewed all of these third party websites and does not control and is not responsible for these websites or their content or availability. The Company therefore does not endorse or make any representations about them, or any material found there, or any results that may be obtained from using them. If you decide to access any of the third party websites linked to the Website, you do so at your own risk."
+
+msgid "TERMINOS_DE_USO_45"
+msgstr "8.2 If you wish to incorporate a link to the web page, you can only do so on the basis that the link will lead to the main page of the website, and subject to the following conditions, which;"
+
+msgid "TERMINOS_DE_USO_46"
+msgstr "(A) not remove, distort or alter the size or appearance of the logo Groofi;"
+
+msgid "TERMINOS_DE_USO_47"
+msgstr "(B) does not create a frame or any other browser or border developed on the Web Site;"
+
+msgid "TERMINOS_DE_USO_48"
+msgstr "(C) does not imply in any way that the company is promoting products or services other than its own;"
+
+msgid "TERMINOS_DE_USO_49"
+msgstr "(D) not misrepresent your relationship with the Company nor present any other false information about the Company;"
+
+msgid "TERMINOS_DE_USO_50"
+msgstr "(E) your website does not contain content that is distasteful, offensive or controversial, infringes the intellectual property rights or other rights of any other person or otherwise does not comply with all applicable laws and regulations."
+
+msgid "TERMINOS_DE_USO_51"
+msgstr "8.3 The Company expressly reserves the right to revoke the right granted in clause 5.2 for breach of these terms and to take any action it deems appropriate."
+
+msgid "TERMINOS_DE_USO_52"
+msgstr "8.4 You shall fully indemnify the Company for any loss or damage suffered by the Company or any of its group companies for breach of clause 5.2."
+
+msgid "TERMINOS_DE_USO_53"
+msgstr "9. REGISTER"
+
+msgid "TERMINOS_DE_USO_54"
+msgstr "9.1 Each registration is for a single user. The Company does not permit you to share your user name and password with any other person nor with multiple users on a network."
+
+msgid "TERMINOS_DE_USO_55"
+msgstr "9.2 The responsibility for the security of passwords issued up to you."
+
+msgid "TERMINOS_DE_USO_56"
+msgstr "10. DISCLAIMER"
+
+msgid "TERMINOS_DE_USO_57"
+msgstr "10.1 While the Company endeavors to ensure that the information on the website is correct, the Company does not guarantee the accuracy and completeness of the material on the website. The Company may make changes to the material on the website, or to the products and prices described in it, at any time without notice. The material on the Website may be out of date, and the Company makes no commitment to update the materials."
+
+msgid "TERMINOS_DE_USO_58"
+msgstr "10.2 The material on the website is provided "as is", without any conditions, warranties or other terms of any kind. Accordingly, to the maximum extent permitted by law, the Company offers the web based on the Company excludes all representations, warranties, conditions and other terms (including, without limitation), the conditions implied by law of satisfactory quality, fitness for purpose and the use of reasonable care and skill, without this legal notice, might have effect in relation to the Website."
+
+msgid "TERMINOS_DE_USO_59"
+msgstr "11. RESPONSIBILITY"
+
+msgid "TERMINOS_DE_USO_60"
+msgstr "11.1 The Company, (whether or not involved in creating, producing, maintaining or delivering the Website), and any of the group companies of the company and the officers, directors, employees, shareholders or agents of any of them, exclude all liability and responsibility for any amount or kind of loss or damage that may result to you or a third party, including, without limitation, any direct, indirect, punitive or consequential damages, or any loss of income, profits, goodwill, data , contracts, use of money, or loss or damages arising from or related in any way to business interruption, and whether in tort (including, without limitation, negligence), contract or otherwise in connection with the Website, in any way or in connection with the use, inability to use or the results of use of the Website, any websites linked to the website or the material on such websites, including but not limited to loss or damage caused by viruses may infect your computer equipment, software, data or other property on account of your access, use or browsing the website or your downloading of any material from the Website or any websites linked to the website."
+
+msgid "TERMINOS_DE_USO_61"
+msgstr "11.2 The Company does not endorse and has no control over user materials. The Company can not guarantee the authenticity of data that users can give themselves. You acknowledge that all content available for you to use the Web Site is at your own risk and you are solely responsible for any damage or loss to any party resulting."
+
+msgid "TERMINOS_DE_USO_62"
+msgstr "11.3 Nothing in this legal notice shall exclude or limit the liability of the Company to:"
+
+msgid "TERMINOS_DE_USO_63"
+msgstr "(A) death or personal injury caused by negligence [as such term is defined by the Unfair Contract Terms Act 1977], or"
+
+msgid "TERMINOS_DE_USO_64"
+msgstr "(B) fraud, or"
+
+msgid "TERMINOS_DE_USO_65"
+msgstr "(C) misrepresentation as to a fundamental matter, or"
+
+msgid "TERMINOS_DE_USO_66"
+msgstr "(D) any liability which can not be excluded or limited by applicable law."
+
+msgid "TERMINOS_DE_USO_67"
+msgstr "12. LAW AND JURISDICTION"
+
+msgid "TERMINOS_DE_USO_68"
+msgstr "This legal notice shall be governed by and construed in accordance with the law applicable to the UK. Disputes arising in connection with this legal notice shall be subject to the exclusive jurisdiction of the English courts."
+
+msgid "TERMINOS_DE_USO_69"
+msgstr "Issue Date: December 6, 2012"
+
+msgid "POLITICAS_PRIVACIDAD0"
+msgstr "Groofi Limited ("We") are committed to protecting and respecting your privacy. This policy together with our"
+
+msgid "POLITICAS_PRIVACIDAD01"
+msgstr "Terms of Use"
+
+msgid "POLITICAS_PRIVACIDAD02"
+msgstr "and any other documents referred to) sets out the basis on which personal data we collect from you, or that you provide to us, will be processed by us."
+
+msgid "POLITICAS_PRIVACIDAD1"
+msgstr "Please read the following carefully to understand our treatment to the subject and practices regarding your personal data."
+
+msgid "POLITICAS_PRIVACIDAD2"
+msgstr "For the purposes of the Data Protection Act 1998 (the Act), the data controller is Groofi Limited."
+
+msgid "POLITICAS_PRIVACIDAD3"
+msgstr "INFORMATION WE MAY COLLECT FROM YOU"
+
+msgid "POLITICAS_PRIVACIDAD4"
+msgstr "We may collect and process the following data about you:"
+
+msgid "POLITICAS_PRIVACIDAD5"
+msgstr "• Information that you provide by filling in forms on our site www.groofi.com (our site). This includes information provided at the time of registering to use our site, subscribing to our service, posting material or requesting further services. We may also ask you for information when you enter a contest or promotion sponsored by a third party, and when you report a problem with our site."
+
+msgid "POLITICAS_PRIVACIDAD6"
+msgstr "• If you contact us, we may keep a record of that correspondence."
+
+msgid "POLITICAS_PRIVACIDAD7"
+msgstr "• We may also ask you to complete surveys that we use for research purposes, although it has no obligation to respond to them."
+
+msgid "POLITICAS_PRIVACIDAD8"
+msgstr "• Details of your transactions through our site and of the fulfillment of your orders."
+
+msgid "POLITICAS_PRIVACIDAD9"
+msgstr "• Details of your visits to our site including but not limited to, traffic data, location data, weblogs and other communication data, whether this is required for our billing purposes or otherwise."
+
+msgid "POLITICAS_PRIVACIDAD10"
+msgstr "• Any other details that you may require that you provide."
+
+msgid "POLITICAS_PRIVACIDAD11"
+msgstr "IP ADDRESSES"
+
+msgid "POLITICAS_PRIVACIDAD12"
+msgstr "We may collect information about your computer, including your IP address, operating system and browser type, for system administration and to report aggregate information to our advertisers. This is statistical data about our users' actions and navigation patterns, and does not identify any individual."
+
+msgid "POLITICAS_PRIVACIDAD13"
+msgstr "COOKIES"
+
+msgid "POLITICAS_PRIVACIDAD14"
+msgstr "For the same reason, we may obtain information about the general use of the Internet using a cookie file which is stored in the browser or the hard drive of your computer. Cookies contain information that is transferred to your computer's hard disk. They help us to improve our site and to deliver a better and more personalized service. Some of the cookies we use are essential for the site to operate."
+
+msgid "POLITICAS_PRIVACIDAD15"
+msgstr "Please note that our advertisers may also use cookies, over which we have no control."
+
+msgid "POLITICAS_PRIVACIDAD16"
+msgstr "You can block cookies by activating the setting on your browser which allows you to refuse the setting of all or some cookies. However, if you use your browser settings to block all cookies (including essential cookies) you may not have access to all or part of our site. Unless you have adjusted your browser to refuse cookies, our system will issue cookies as soon as when you enter our site."
+
+msgid "POLITICAS_PRIVACIDAD17"
+msgstr "STORING YOUR PERSONAL INFORMATION"
+
+msgid "POLITICAS_PRIVACIDAD18"
+msgstr "The data we collect from you may be transferred to and stored at a destination outside the European Economic Area ("EEA"). It may also be processed by staff operating outside the EEA who work for us or for one of our suppliers. Such staff maybe engaged in, among other things, the fulfillment of your request within our site, processing your payment details and the provision of support services. By submitting your personal data, you agree to this transfer, storing or processing data."
+
+msgid "POLITICAS_PRIVACIDAD19"
+msgstr "All information you provide to us is stored on our secure servers. Payment transactions are encrypted for security, and is given a password that allows you to access certain parts of our site, you are responsible for keeping this password confidential. We ask you not to share your password with anyone. If you share this password is your sole responsibility."
+
+msgid "POLITICAS_PRIVACIDAD20"
+msgstr "Unfortunately, the transmission of information via the internet is not completely secure. Although we will do our best to protect your personal information, we can not guarantee the security of your data transmitted to our site, any transmission is at your own risk. Once we receive your information, we will use strict procedures and security features to try to prevent unauthorized access."
+
+msgid "POLITICAS_PRIVACIDAD21"
+msgstr "USES OF INFORMATION"
+
+msgid "POLITICAS_PRIVACIDAD22"
+msgstr "We use the information we have about you for the following:"
+
+msgid "POLITICAS_PRIVACIDAD23"
+msgstr "• To ensure that content from our site is presented in the most effective manner for you and for your computer."
+
+msgid "POLITICAS_PRIVACIDAD24"
+msgstr "• To provide information, products or services that you request or which we feel may interest you, where you have consented to be contacted for such purposes."
+
+msgid "POLITICAS_PRIVACIDAD25"
+msgstr "• To carry out our obligations arising from any contracts entered into between you and us."
+
+msgid "POLITICAS_PRIVACIDAD26"
+msgstr "• To be able to participate in interactive features of our service, when they so choose."
+
+msgid "POLITICAS_PRIVACIDAD27"
+msgstr "• To notify you about changes to our service."
+
+msgid "POLITICAS_PRIVACIDAD28"
+msgstr "We do not disclose information about identifiable individuals to our advertisers, but we may provide aggregate information about our users (for example, we can report that 500 men aged under 30 have entered their ads on a given day). We may also use such aggregate information to help advertisers reach the kind of audience you want to target. We may use the personal information we have collected from you in order to fulfill the wishes of our advertisers to show their ads to that target audience."
+
+msgid "POLITICAS_PRIVACIDAD29"
+msgstr "DISCLOSURE OF YOUR INFORMATION"
+
+msgid "POLITICAS_PRIVACIDAD30"
+msgstr "We may disclose your personal information to any member of our group, which means our subsidiaries, holding company and its subsidiaries, as defined in section 1159 of the Companies Act 2006 of the United Kingdom. We may disclose your personal information to third parties:"
+
+msgid "POLITICAS_PRIVACIDAD31"
+msgstr "• In the event that we sell or buy any business or assets, in which case we may disclose your personal data to the prospective seller or buyer of such business or assets."
+
+msgid "POLITICAS_PRIVACIDAD32"
+msgstr "• If Groofi Limited or substantially all of its assets are acquired by a third party, in which case personal data held by clients of the company will be one of the transferred assets."
+
+msgid "POLITICAS_PRIVACIDAD33"
+msgstr "• If we are obliged to disclose or share your personal data in order to comply with any legal obligation, or in order to enforce or apply our Terms of Use or to protect property rights or safety of Groofi Limited, our customers or others. This includes exchanging information with other companies and organizations for the purposes of fraud protection and credit risk reduction."
+
+msgid "POLITICAS_PRIVACIDAD34"
+msgstr "YOUR RIGHTS"
+
+msgid "POLITICAS_PRIVACIDAD35"
+msgstr "You have the right to ask us not to process your personal data for marketing purposes. Usually inform you (before collecting your data) if we intend to use your data for such purposes or if we intend to disclose your information to third parties for such purposes. You can exercise your right to prevent certain data are restricted by checking certain boxes on the forms we use to collect your data. You can also exercise the right at any time by contacting us at info@groofi.com. Our site may, at any time, contain links to and from the websites of our partner networks, advertisers and affiliates. If you follow a link to any of these websites, please note that these websites have their own privacy policies and that we do not accept any liability for those policies. Please check these policies before you submit any personal data to these websites."
+
+msgid "POLITICAS_PRIVACIDAD36"
+msgstr "ACCESS TO INFORMATION"
+
+msgid "POLITICAS_PRIVACIDAD37"
+msgstr "The Act gives you the right to access information about you. Your right of access can be exercised in accordance with the law. Any access request may be subject to a fee of £ 10 to cover the costs of providing the details of the information we have about you."
+
+msgid "POLITICAS_PRIVACIDAD38"
+msgstr "CHANGES TO OUR PRIVACY POLICY"
+
+msgid "POLITICAS_PRIVACIDAD39"
+msgstr "Any changes we make to our privacy policy in the future will be posted on this page and, where appropriate, will be notified by e-mail."
+
+msgid "POLITICAS_PRIVACIDAD40"
+msgstr "CONTACT"
+
+msgid "POLITICAS_PRIVACIDAD41"
+msgstr "Questions, comments and requests regarding this privacy policy are welcomed and should be addressed to info@groofi.com."
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
 msgid ""
 msgstr ""
 

@@ -156,25 +156,49 @@ foreach($mostrar as $k=>$v){
 
 </div>
 
+
+
 <div id="ubicacion">
-<h4  style="cursor:pointer"  class="titulo_footer"><?php echo __("LOCATION");?></h4>
+
+
+    <h4  style="cursor:pointer"  class="titulo_footer"><?php echo __("LOCATION");?></h4>
 <img  style="cursor:pointer"  class="misc_categorias02" src="/2012/images/misc_categorias02.png" width="19" height="16">
 <div class="clear"></div>
 <div style="width:2px" class="misc_separador"></div><br>
-<div class="listado_ubicaciones">
-<ul><a href="/discover/projects"><?php echo __("ALL_COUNTRIES");?></a></ul>
-<?php 
+
+
+
+
+    <div class="ubicacion_proyecto">
+
+        <select autocomplete="off"  name="data[Project][paislugar]" autocomplete="off" id="ProjectCountryId">
+            <? foreach($base_countries as $k=>$v){ ?>
+            <option <?if(isset($_POST['data']['Project']['paislugar']) && $_POST['data']['Project']['paislugar']==$k['Country']['PAI_ISO2']){echo ' selected="selected" ';}?> value="<?=$v['Country']['PAI_ISO2']?>"><?=$v['Country']['PAI_NOMBRE']?></option>
+
+            <? } ?>
+
+        </select>
+
+
+    </div>
+</div>
+
+
+
+<!--div class="listado_ubicaciones">
+<ul><a href="/discover/projects"><!?php echo __("ALL_COUNTRIES");?></a></ul>
+<!--?php
 $ubicacion=Project::getCategories('ubicacion');
 $ciudades=array();
 for($i=0;$i<count($ubicacion);$i++){
 $ciudades['City']=$ubicacion[$i]['cities'];
 ?>
-<ul><a href="<? echo City::getLink($ciudades,  array('extra' => 'projects'));?>"><? echo City::getName($ciudades);?></a></ul>
-<?php } ?>
+<ul><a href="<!--? echo City::getLink($ciudades,  array('extra' => 'projects'));?>"><!? echo City::getName($ciudades);?--><!/a--><!/ul-->
+<!?php } ?->
 
-</div>
+<!--/div>
 
-</div>
+</div-->
 <div class="clear"></div>
 </div>
 

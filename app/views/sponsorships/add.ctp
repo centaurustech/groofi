@@ -44,8 +44,8 @@ function sendToPaypal(){
 <div class="misc_divisor"></div>
 <br>
 <div class="pagar_izq">
-<h3 class="cyan">Felicitaciones</h3>
-<p>Est&aacute;s a un paso de ser patrocinador de &eacute;ste proyecto</p>
+<h3 class="cyan"><?php echo __("SPONSORSHIP_CREATE_TITLE");?></h3>
+<p><?php echo __("SPONSORSHIP_CREATE_SUBTITLE");?></p>
 <p><br>
 </p>
 <div id="beneficioElegido" class="importe_pagar">
@@ -58,19 +58,19 @@ function sendToPaypal(){
 <input type="hidden" name="data[v]" autocomplete="off" value="1" />
 <input type="hidden" id="datamp" name="data[mp]" autocomplete="off" value="0" />
 <div class="beneficio_elegido">
-<h4 id="titulobenefel">Beneficio Elegido</h4>
+<h4 id="titulobenefel"><?php echo __("PRIZE_");?></h4>
 <p id="descbelegido"><?=$selectedPrize['Prize']['description']?></p>
 </div>
 
 </div>
-<label style="position:relative;  text-align:left !important; font-size:12px; margin:0; padding:0; width:400px; display:block" for="SponsorshipNoPrize"><input onchange="if(this.checked){$('titulobenefel').style.display=$('descbelegido').style.display='none';}else{$('titulobenefel').style.display=$('descbelegido').style.display='block';}" style="display:inline; margin:5px;; padding:0; width:auto; position:relative; top:2px;" type="checkbox" name="data[Sponsorship][no_prize]" autocomplete="off" value="1" id="SponsorshipNoPrize" <?if(isset($this->data['Sponsorship']['no_prize']) && !empty($this->data['Sponsorship']['no_prize'])){echo ' checked="checked" ';}?>>No deseo recibir ning&uacute;n beneficio. S&oacute;lo quiero ayudar al proyecto.</label><br /><br />
-<h3 style="color:#666; font-size:15px">Beneficios Disponibles</h3>
+<label style="position:relative;  text-align:left !important; font-size:12px; margin:0; padding:0; width:400px; display:block" for="SponsorshipNoPrize"><input onchange="if(this.checked){$('titulobenefel').style.display=$('descbelegido').style.display='none';}else{$('titulobenefel').style.display=$('descbelegido').style.display='block';}" style="display:inline; margin:5px;; padding:0; width:auto; position:relative; top:2px;" type="checkbox" name="data[Sponsorship][no_prize]" autocomplete="off" value="1" id="SponsorshipNoPrize" <?if(isset($this->data['Sponsorship']['no_prize']) && !empty($this->data['Sponsorship']['no_prize'])){echo ' checked="checked" ';}?>><?php echo __("YOU_SELECT_ONLY_HELP");?></label><br /><br />
+<h3 style="color:#666; font-size:15px"><?php echo __("SPONSORSHIP_CREATE_PRIZES_TITLE");?></h3>
 <div class="misc_separador"></div><br>
 <? if(count($personas)>0){ ?>
-<h4 class="cyan">PERSONAS O PEQUE&Ntilde;OS PATROCINADORES</h4><br>
+<h4 class="cyan"><?php echo __("Personas_patro");?></h4><br>
 <? for($i=0;$i<count($personas);$i++){?>
 <div class="beneficio_creado_pagar">
-<h3 class="cyan">Aportando <?=$moneda?> <?=$personas[$i]['value']?> </h3>
+<h3 class="cyan"><?php echo __("Providing");?> <?=$moneda?> <?=$personas[$i]['value']?> </h3>
 <p class="texto_proyecto" style="color:#383938"><?=$personas[$i]['description']?></p>
 <a class="btcambiarbeneficio" href="<?=Project::getLink(array('Project' => $this->data['Project']), array('extra' => 'Back', 'prize' => $personas[$i]['id']))?>"></a>
 </div>
@@ -79,10 +79,10 @@ function sendToPaypal(){
 <br>
 <? } ?>
 <? if(count($empresas)>0){ ?>
-<h4 class="green">EMPRESAS O GRANDES PATROCINADORES</h4><br>
+<h4 class="green"><?php echo __("Personas_patro_gran");?></h4><br>
 <? for($i=0;$i<count($empresas);$i++){?>
 <div class="beneficio_creado_pagar empresas">
-<h3 class="green">Aportando <?=$moneda?> <?=$empresas[$i]['value']?> </h3>
+<h3 class="green"><?php echo __("Providing");?><?=$moneda?> <?=$empresas[$i]['value']?> </h3>
 <p class="texto_proyecto" style="color:#383938"><?=$empresas[$i]['description']?></p>
 <a class="btcambiarbeneficio verde" href="<?=Project::getLink(array('Project' => $this->data['Project']), array('extra' => 'Back', 'prize' => $empresas[$i]['id']))?>"></a>
 </div>
@@ -94,21 +94,21 @@ function sendToPaypal(){
 </div>
 <div class="paypal_der">
 <? if($moneda=='USD'){ ?>
-<h3 style="font-size:18px; font-weight:400; color:#333">Contin&uacute;a el proceso en PayPal</h3><br>
+<h3 style="font-size:18px; font-weight:400; color:#333"><?php echo __("SPONSORSHIP_LAST_STEP_SUBTITLE");?></h3><br>
 <div class="texto_importante_paypal">
 <div class="icono_importante_paypal"></div>
-<p><strong>Importante</strong><br>
-Haciendo Click en Continuar, dejar&aacute;s de estar navegando en Groofi y ser&aacute;s dirigido al sitio oficial de Paypal para realizar tu aporte desde tu cuenta de ese servicio. Si no tienes una deber&aacute;s crearla. </p>
+<p><strong><?php echo __("IMPORTANT_PAYPAL_TITLE");?></strong><br>
+<?php echo __("IMPORTANT_PAYPAL_BODY");?></p>
 <p>&nbsp;</p>
 </div>
 <p><img src="/2012/images/paypal_cards.png" width="262" height="62"></p>
 <p>&nbsp; </p>
-<div onclick="sendToPaypal();" class="boton_paypal">CONTINUAR</div>
+<div onclick="sendToPaypal();" class="boton_paypal"><?php echo __("SPONSORSHIP_CREATE_SUBMIT");?></div>
 <div style="height:25px; overflow:hidden; width:100%; background:#fff; border-bottom:2px solid #e1e1e1;margin-bottom:15px; visibility:hidden"></div>
 <? }else{ ?>
-<h3 style="font-size:18px; font-weight:400; color:#333;">Contin&uacute;a el proceso en Mercado Pago</h3><br>
+<h3 style="font-size:18px; font-weight:400; color:#333;"><?php echo __("PROCESO_MERCADO_PAGO");?></h3><br>
 <img src="/2012/images/mercadopago.png">
-<div onclick="sendToMP();" class="boton_paypal">CONTINUAR</div>
+<div onclick="sendToMP();" class="boton_paypal"><?php echo __("SPONSORSHIP_CREATE_SUBMIT");?></div>
 <? } ?>
 <script type="text/javascript">
 function pseudomodal(cual){

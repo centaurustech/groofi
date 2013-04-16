@@ -2014,7 +2014,7 @@ msgid "PROJECT__DESCRIPTION__TIP_MESSAGE_TEXT"
 msgstr "Maggiori informazioni metti e più chiaro sarai in questa descrizione, più affidabile risulter� il tuo progetto per gli sponsor."
 
 msgid "PROJECT__VIDEO_URL__TIP_MESSAGE_TEXT"
-msgstr "Il video � la tua lettera di presentazione. Dimostra la qualit� del tuo progetto con un video di qualit�. Il tuo progetto diventer� più affidabile se parli ai tuoi futuri sponsor e gli dimostri le tue capacit� ed il tuo impegno."
+msgstr "Il video � la tua lettera di presentazione. Dimostra la qualità del tuo progetto con un video di qualità. Il tuo progetto diventer� più affidabile se parli ai tuoi futuri sponsor e gli dimostri le tue capacit� ed il tuo impegno."
 
 msgid "PROJECT_-PRIZE__TIP_MESSAGE_TEXT"
 msgstr "Tieni a mente che molti sponsor sono interessati ai benefici. Offri ricompense attrattive e ricorda l' importo del contributo."
@@ -2026,16 +2026,16 @@ msgid "PROJECT__DESCRIPTION_EDIT_TIP_MESSAGE_TEXT"
 msgstr "Puoi utilizzare la barra degli strumenti superiore per dare un formato al tuo testo."
 
 msgid "PROJECT__VIDEO_URL_EDIT_TIP_MESSAGE_TEXT"
-msgstr "Il video � la tua lettera di presentazione. Dimostra la qualit� del tuo progetto con un video di qualit�. Il tuo progetto diventer� più affidabile se parli ai tuoi futuri sponsor e gli dimostri le tue capacit� ed il tuo impegno."
+msgstr "Il video � la tua lettera di presentazione. Dimostra la qualità del tuo progetto con un video di qualità. Il tuo progetto diventer� più affidabile se parli ai tuoi futuri sponsor e gli dimostri le tue capacit� ed il tuo impegno."
 
 msgid "PROJECT_-PRIZE_EDIT_TIP_MESSAGE_TEXT"
 msgstr "Tieni a mente che molti sponsor sono interessati ai benefici. Offri ricompense attrattive e ricorda l' importo del contributo."
 
 msgid "PROJECT__FILE_EDIT_TIP_MESSAGE_TEXT"
-msgstr "La immagine non � tutto, per� � molto importante. Metti una immagine di buona qualit�, con un aspetto di 4:3 e un massimo di 560 x 430 pixels aprossimatamente."
+msgstr "La immagine non è tutto, per� � molto importante. Metti una immagine di buona qualità, con un aspetto di 4:3 e un massimo di 560 x 430 pixels aprossimatamente."
 
 msgid "PROJECT__FILE__TIP_MESSAGE_TEXT"
-msgstr "La immagine non � tutto, per� � molto importante. Metti una immagine di buone qualit�, con un aspetto di 4:3 e un massimo di 560 x 430 pixels aprossimatamente."
+msgstr "La immagine non è tutto, per� � molto importante. Metti una immagine di buone qualità, con un aspetto di 4:3 e un massimo di 560 x 430 pixels aprossimatamente."
 
 msgid "OFFER__SHORT_DESCRIPTION__TIP_MESSAGE_TEXT"
 msgstr "Hai 140 caratteri per comunicare la tua offerta. Concentrati in ci� che conta. "
@@ -2044,16 +2044,16 @@ msgid "OFFER__DESCRIPTION__TIP_MESSAGE_TEXT"
 msgstr "Maggiori informaioni metti e più claro sei nella descrizione, maggiori saranno le possibilit� che altri utenti creino progetti che rispecchino le tue aspettative."
 
 msgid "OFFER__FILE__TIP_MESSAGE_TEXT"
-msgstr "La immagine non � tutto, pero � molto importante. Metti una immagine di buona qualit�, con un aspetto di 4:3 e un massimo di 560 x 430 pixels aprossimatamente."
+msgstr "La immagine non è tutto, pero è molto importante. Metti una immagine di buona qualità, con un aspetto di 4:3 e un massimo di 560 x 430 pixels aprossimatamente."
 
 msgid "OFFER__VIDEO_URL__TIP_MESSAGE_TEXT"
-msgstr "Il video � la tua lettera di presentazione. Dimostra la qualit� della tua offerta con un video di qualit�. La tua offerta diventer� molto più affidabile se racconti agli utenti quello che cerchi e perch� vuoi sponsorizzarli."
+msgstr "Il video � la tua lettera di presentazione. Dimostra la qualità della tua offerta con un video di qualità. La tua offerta diventer� molto più affidabile se racconti agli utenti quello che cerchi e perch� vuoi sponsorizzarli."
 
 msgid "OFFER__DESCRIPTION_EDIT_TIP_MESSAGE_TEXT"
 msgstr "Puoi utilizzare la barra degli strumenti superiore per dare un formato al tuo testo."
 
 msgid "OFFER__VIDEO_URL_EDIT_TIP_MESSAGE_TEXT"
-msgstr "Il video � la tua lettera di presentazione. Dimostra la qualit� della tua offerta con un video di qualit�. La tua offerta diventer� molto più affidabile se racconti agli utenti quello che cerchi e perch� vuoi sponsorizzarli."
+msgstr "Il video � la tua lettera di presentazione. Dimostra la qualità della tua offerta con un video di qualità. La tua offerta diventer� molto più affidabile se racconti agli utenti quello che cerchi e perch� vuoi sponsorizzarli."
 
 msgid "PROJECT__FUNDING_GOAL__TIP_MESSAGE_TEXT"
 msgstr "Ricorda che se al termine del tempo scelto a continuazione il tuo progetto non raccoglie questo importo, non sarà finanziato. Pensa ad una somma che sei in condizione di raccogliere nel tempo previsto. "
@@ -2113,7 +2113,7 @@ msgid "INSUFICIENT_FOUNDS_TO_PAY_THIS_PROJECT"
 msgstr "I fondi disponibili in Paypal non sono sufficienti per realizzare il pagamento del progetto."
 
 msgid "OFFER__FILE_EDIT_TIP_MESSAGE_TEXT"
-msgstr "La immagine non � tutto, per� � molto importante. Metti una immagine di buona qualit�, con un' aspetto di 4:3 e un massimo di 560 x 430 pixels approssimatamente."
+msgstr "La immagine non � tutto, per� � molto importante. Metti una immagine di buona qualità, con un' aspetto di 4:3 e un massimo di 560 x 430 pixels approssimatamente."
 
 msgid "THE_PROJECT_HAS_FINISHED %s"
 msgstr "Progetto concluso il %s"
@@ -3958,8 +3958,225 @@ msgstr "caratteri"
 msgid "Res1"
 msgstr "Sottrarre: "
 
-msgid ""
-msgstr ""
+msgid "Personas_patro"
+msgstr "SPONSOR GLI INDIVIDUI O PICCOLI"
+
+msgid "Personas_patro_gran"
+msgstr "GRANDI IMPRESE O SPONSOR"
+
+msgid "PROCESO_MERCADO_PAGO"
+msgstr "Mercato continua a pagare processo"
+
+msgid "TERMINOS_DE_USO_0"
+msgstr "IMPORTANTE:"
+
+msgid "TERMINOS_DE_USO_1"
+msgstr "El presente es un aviso legal que se aplica a todo el contenido de la página web con el nombre de dominio www.groofi.com  (sitio web) y toda la correspondencia por correo electrónico que se envía. Por favor lea cuidadosamente estos términos antes de utilizar el Sitio Web. Al utilizar el sitio web usted acepta estos términos, independientemente de si usted decide o no registrarse con nosotros. Si usted no acepta estos términos, no utilice el Sitio Web. Este aviso es emitido por Groofi Limited (compañía). "
+
+msgid "TERMINOS_DE_USO_2"
+msgstr "1. INTRODUCCIÓN "
+
+msgid "TERMINOS_DE_USO_3"
+msgstr "1.1 Ud puede acceder a la mayor parte del sitio web sin registrar sus datos con nosotros. Ciertas áreas del Sitio Web sólo están abiertas a quien se registra."
+
+msgid "TERMINOS_DE_USO_4"
+msgstr "1.2 Con el acceso a cualquier parte del sitio Web se considerará que han aceptado este aviso legal en su totalidad. Si no acepta este aviso legal en su totalidad, debe dejar el sitio web de inmediato. "
+
+msgid "TERMINOS_DE_USO_5"
+msgstr "1.3 La Compañía puede revisar este aviso legal en cualquier momento y actualizar esta publicación. Usted debe verificar el sitio web cada vez que lo utiliza para revisar el aviso legal vigente en ese momento, ya que es obligatorio para usted. Ciertas disposiciones del presente aviso legal pueden ser reemplazadas por avisos legales expresamente designados o términos ubicados en páginas particulares en el sitio web. "
+
+msgid "TERMINOS_DE_USO_6"
+msgstr "2. CONDICIONES DEL SERVICIO"
+
+msgid "TERMINOS_DE_USO_7"
+msgstr "2.1 Este sitio web está destinado exclusivamente para usuarios que tienen dieciocho (18) años de edad o más, y cualquier registro, uso o acceso al Sitio Web por cualquier persona menor de 18 años no está autorizado, e incumplirlo es una violación de este acuerdo. La empresa puede cancelar su cuenta, borrar cualquier contenido o información que han publicado en el sitio web y / o prohibir el uso o acceso al Sitio Web (o cualquier parte, aspecto o característica de la Página Web) por cualquier motivo, en cualquier momento a su sola discreción, con o sin previo aviso, si considera que usted es menor de 18 años. Si usted es menor de 18 años de edad, usted puede usar el sitio Web si tiene el consentimiento de sus padres o tutores, y es completamente capaz y competente para entrar en los términos, condiciones, obligaciones, afirmaciones, declaraciones y garantías establecidas en este Acuerdo, y de acatar y cumplir con este Acuerdo."
+
+msgid "TERMINOS_DE_USO_8"
+msgstr "3. LICENCIA "
+
+msgid "TERMINOS_DE_USO_9"
+msgstr "3.1 Se le permite imprimir y descargar archivos de la página web para su propio uso de la siguiente manera, si;"
+
+msgid "TERMINOS_DE_USO_10"
+msgstr "(A) no hay documentos o gráficos relacionados en el sitio web que sean modificados de ninguna manera;"
+
+msgid "TERMINOS_DE_USO_11"
+msgstr "(B) los elementos gráficos en el Sitio Web se utilizan por separado del texto correspondiente, y "
+
+msgid "TERMINOS_DE_USO_12"
+msgstr "(C) los derechos de autor de la Compañía y las comunicaciones de marca y este aviso de permiso aparezcan en todas las copias."
+
+msgid "TERMINOS_DE_USO_13"
+msgstr "3.2 A menos que se indique lo contrario, los derechos de autor y otros derechos de propiedad intelectual en todo el material en el sitio web (incluyendo, sin limitación, fotografías e imágenes gráficas) son propiedad de la Compañía o de sus licenciatarios. A los efectos del presente aviso legal, cualquier uso de archivos de la página web que no sea conforme a la cláusula 2.1 para cualquier propósito. Si usted incumple alguno de los términos de este aviso legal, su permiso para utilizar el Sitio Web terminará automáticamente y usted deberá destruir inmediatamente cualquier arhcivo descargado o impreso desde el sitio web."
+
+msgid "TERMINOS_DE_USO_14"
+msgstr "3.3 Los derechos no expresamente concedidos en estos términos están reservados. "
+
+msgid "TERMINOS_DE_USO_15"
+msgstr "4. SERVICIO DE ACCESO "
+
+msgid "TERMINOS_DE_USO_16"
+msgstr "4.1 Si bien la empresa se esfuerza por asegurar que el sitio web esté disponible las 24 horas del día, la Compañía no será responsable si por alguna razón la página web no está disponible en cualquier momento o durante algún período. "
+
+msgid "TERMINOS_DE_USO_17"
+msgstr "4.2 El acceso a la Página Web podrá ser suspendido temporalmente y sin previo aviso en caso de fallo del sistema, mantenimiento o reparación o por razones fuera del control de la Compañía. "
+
+msgid "TERMINOS_DE_USO_18"
+msgstr "5. INFORMACION Y CONDUCTA "
+
+msgid "TERMINOS_DE_USO_19"
+msgstr "5.1. Además de la información de identificación personal, que está cubierto por nuestra Política de Privacidad, cualquier material que usted transmita o publique en el sitio web será considerada que no es confidencial y que no es de su porpiedad. La Compañía no tendrá ninguna obligación con respecto a dicho material. La Compañía y sus designados tendrán la libertad de copiar, revelar, distribuir, incorporar, modificar, borrar, reformatear, o traducir y utilizar dicho material y todos los datos, imágenes, video, sonidos, textos y otros elementos incorporados para cualquier fin comercial o no comercial."
+
+msgid "TERMINOS_DE_USO_20"
+msgstr "5.2 Se le prohíbe publicar o transmitir hacia o desde el sitio web cualquier material:"
+
+msgid "TERMINOS_DE_USO_21"
+msgstr "(A) que sea amenazante, difamatorio, obsceno, indecente, sedicioso, ofensivo, pornográfico, abusivo, susceptible de incitar al odio racial, discriminatorio, amenazador, escandaloso, blasfemias, en el abuso de confianza, en violación de la intimidad o que puedan causar molestias o inconvenientes, o "
+
+msgid "TERMINOS_DE_USO_22"
+msgstr "(B) para los que no han obtenido todas las licencias y / o aprobaciones, usted acepta pagar todas las regalías y otros montos adeudados a cualquier persona o entidad, debido a la presentación de cualquier Archivo de Usuario en el Servicio, o      "
+
+msgid "TERMINOS_DE_USO_23"
+msgstr "(C) que constituya o fomente conductas que puedan ser consideradas una ofensa criminal, dar lugar a responsabilidad civil, o sea contraria a la ley o infringe los derechos de terceros, en cualquier país del mundo, o"
+
+msgid "TERMINOS_DE_USO_24"
+msgstr "(D) que sea técnicamente dañino (incluyendo, sin limitación, virus informáticos, bombas lógicas, troyanos, gusanos, componentes dañinos, datos corruptos u otro software malicioso o datos dañinos)."
+
+msgid "TERMINOS_DE_USO_25"
+msgstr "5.3 No se pueden hacer mal uso del Sitio Web (incluyendo, sin limitación, por la piratería). "
+
+msgid "TERMINOS_DE_USO_26"
+msgstr "5.4 La empresa cooperará totalmente con cualquier autoridad de aplicación de la ley u orden judicial que solicite u ordene a la empresa a revelar la identidad o localizar a cualquier persona que publique material en violación de la cláusula 4.2 o la cláusula 4.3. "
+
+msgid "TERMINOS_DE_USO_27"
+msgstr "6. PROYECTOS "
+
+msgid "TERMINOS_DE_USO_28"
+msgstr "6.1 El sitio web es una plataforma de financiamiento colectivo. Permite a los usuarios creadores de proyectos ("Groofies") sumar un proyecto a la lista de proyectos y recaudar fondos de otros usuarios ("Groopies"). Todos los fondos son recaudados por Groofi para Groofies a través del sistema de cobro PayPal. El éxito de un proyecto se define como el proyecto que  alcanza o supera la meta de financiamiento establecida en el proyecto en el tiempo establecido. Por lo tanto, un proyecto no exitoso es aquel que no alcanza al nivel de financiamiento en el tiempo establecido. "
+
+msgid "TERMINOS_DE_USO_29"
+msgstr "6.2 Los fondos comprometidos para Groofies podrán ser debitados de la cuenta de Groopies de dos formas según Groofi lo considere conveniente operativamente; 1) Inmediata; ó 2) Diferida;"
+
+msgid "TERMINOS_DE_USO_30"
+msgstr "1) Inmediata: Se debitará en el momento en que Groopies apoyan el proyecto."
+
+msgid "TERMINOS_DE_USO_31"
+msgstr "2) Diferida: Se debitará en forma diferida al momento en que Groofies han alcanzado sus objetivos de financiación con la previa aceptación de Groopies."
+
+msgid "TERMINOS_DE_USO_32"
+msgstr "6.3  En el caso de éxito de un proyecto, los pagos con aprobación inmediata serán ejecutados al momento de apoyar el proyecto por Groopies y todos los fondos se transferirán a la cuenta de PayPal de Groofi, y recién cuando el proyecto termina, se transferirán a la cuenta de los Groofies. Si el pago es debitado en forma diferida, recién una vez finalizado el proyecto exitoso, Groofi dará comienzo al proceso para debitar los fondos de los Groopies, para luego transferirlo a los Groofies.En ambas modalidades (inmediato y diferido), Groofi comenzara con el proceso de los débitos a los Groopies de manera inmediata desde el comienzo de la transacción."
+
+msgid "TERMINOS_DE_USO_33"
+msgstr "Con respecto a los pagos, una vez que se termina un proyecto exitoso Groofi comenzara de manera inmediata con el proceso de transferencia de los fondos a los Groofies. Los Groofies podrán optar recibir el dinero vía su cuenta de Paypal o giro a una cuenta bancaria indicada de manera fehaciente.  A los tiempos operativos de Groofi, deberá adicionarse los tiempos operativos de pago publicados por Paypal aplicable a cada país y/o los tiempos de clearing bancario de los bancos intervinientes."
+
+msgid "TERMINOS_DE_USO_34"
+msgstr "Groofi transferirá los fondos recaudados a la cuenta indicada por los Groofies, menos la comisión de Groofi y los costos de transacción de Paypal o costos de transferencia bancaria según corresponda."
+
+msgid "TERMINOS_DE_USO_35"
+msgstr "6.4 Si Groofies no logran su objetivo de financiamiento, para el caso de debito en forma 1) Inmediata, los fondos serán transferidos nuevamente a la cuenta de origen de Groopies, menos los costos operativos de PayPal. Para el caso de debito en forma 2) Diferida, los fondos se mantendrán en las cuentas de los Groopies, menos los costos operativos de PayPal. En el supuesto de proyecto no exitoso, Groofi no cobrará comisión."
+
+msgid "TERMINOS_DE_USO_36"
+msgstr "6.5 La Compañía no se hace responsable de sus interacciones con otras organizaciones y / o individuos encontrados en o a través del sitio web. Esto incluye, pero no se limita a, la entrega de bienes y servicios, y cualesquiera otros términos, condiciones, garantías o representaciones asociadas con los listados en el sitio web. La Compañía no supervisará el rendimiento o la puntualidad de los proyectos. La Compañía no se hace responsable de cualquier daño o pérdida sufrida como resultado de dichas negociaciones. Todas las relaciones son exclusivamente entre usted y dichas organizaciones y / o individuos. La Compañía no tiene ninguna obligación de involucrarse en las disputas entre Groopies y Groofies, o entre los miembros del sitio y / o visitantes y por terceros. En el caso de un conflicto, se libera a la Compañía, sus funcionarios, empleados, agentes y sucesores de los reclamos, daños y demandas de todo tipo, conocidos o desconocidos, sospechados o insospechados, divulgados o no divulgados, que surjan de o en cualquier forma relacionados con dichos conflictos y nuestro servicio. "
+
+msgid "TERMINOS_DE_USO_37"
+msgstr "6.6 Aunque la compañía no se hace responsable por las acciones de un Groofie, Groofies son sin embargo totalmente responsable del cumplimiento de las obligaciones aceptadas en el los proyectos que crean. La Compañía se reserva el derecho de cancelar proyectos y los pagos de reembolso de todos los miembros asociados ""en cualquier momento y por cualquier razón”. Groofi se reserva el derecho a eliminar proyectos de oferta al público, por cualquier razón."
+
+msgid "TERMINOS_DE_USO_38"
+msgstr "6.7 Groofi no ofrece ninguna garantía con respecto al rendimiento o la funcionalidad de Paypal. Además, debido a fallos ocasionales de algunas tarjetas de crédito, la Compañía no puede garantizar la recepción completa de los fondos de la meta fijada. "
+
+msgid "TERMINOS_DE_USO_39"
+msgstr "LA EMPRESA SE RESERVA EL DERECHO DE CANCELAR, INTERRUMPIR O SUSPENDER PROYECTOS EN CUALQUIER MOMENTO POR CUALQUIER MOTIVO. "
+
+msgid "TERMINOS_DE_USO_40"
+msgstr "7. COMISIONES"
+
+msgid "TERMINOS_DE_USO_41"
+msgstr "7.1 Registrarse a la página web es gratuito. Sin embargo, nosotros cobramos una comisión del 5% mas IVA sobre todo el dinero recaudado con éxito por Groofies. También cobramos todas las tarifas que cargue por transacciones el sitio web de Paypal. Cuando se utiliza un servicio que tiene un costo usted tiene la oportunidad de revisar y aceptar los cargos que se le cobrará, y los mismos pueden ser modificados. Los cambios son efectivos después de ser publicados el sitio web. Podemos optar por cambiar temporalmente los honorarios por nuestros servicios para eventos promocionales o servicios nuevos, y esos cambios son efectivos cuando nosotros publicamos el evento promocional temporal o el nuevo servicio en el sitio web. "
+
+msgid "TERMINOS_DE_USO_42"
+msgstr "7.2 Usted es responsable de pagar todas las tasas y los impuestos asociados al uso del Sitio Web. En el caso en que se elimine un proyecto de la página web por violar los términos de uso, todas las cuotas pagadas no serán reembolsables, a menos que, a discreción exclusiva de la Compañía, se determine que la devolución es apropiada. "
+
+msgid "TERMINOS_DE_USO_43"
+msgstr "8. ENLACES HACIA Y DESDE OTROS SITIOS WEB "
+
+msgid "TERMINOS_DE_USO_44"
+msgstr "8.1 Los enlaces a sitios web de terceros en el sitio web se proporcionan únicamente para su conveniencia. Si utiliza estos enlaces, usted sale de la página web. La Compañía no ha revisado todos los sitios web de terceros y no controla y no es responsable de estos sitios web o su contenido o disponibilidad. La compañía por lo tanto, no apoya ni representa a ninguno de ellos, o cualquier material que se encuentra allí, o cualquier resultado que pueda obtenerse mediante su utilización. Si usted decide acceder a cualquiera de los sitios web de terceros vinculados con el Sitio Web, lo hará bajo su propio riesgo. "
+
+msgid "TERMINOS_DE_USO_45"
+msgstr "8.2 Si usted desea incorporar un enlace hacia la página web, sólo puede hacerlo sobre la base de que el vínculo, se dirija a la página principal del sitio web, y con sujeción a las siguientes condiciones, que; "
+
+msgid "TERMINOS_DE_USO_46"
+msgstr "(A) no se elimine, distorsione o altere el tamaño o el aspecto del logotipo de Groofi;"
+
+msgid "TERMINOS_DE_USO_47"
+msgstr "(B) no se cree un marco o cualquier otro navegador o un borde desarrollado sobre todo el Sitio Web;"
+
+msgid "TERMINOS_DE_USO_48"
+msgstr "(C) no implica en modo alguno que la compañía está promocionando productos o servicios sean de su propiedad;"
+
+msgid "TERMINOS_DE_USO_49"
+msgstr "(D) no tergiversar su relación con la Compañía ni presentar cualquier otra información falsa acerca de la Compañía;"
+
+msgid "TERMINOS_DE_USO_50"
+msgstr "(E) de su sitio web no contenga contenido que es de mal gusto, ofensivo o controvertido, infrinja los derechos de propiedad intelectual u otros derechos de cualquier otra persona o de lo contrario no cumple con todas las leyes y reglamentos aplicables."
+
+msgid "TERMINOS_DE_USO_51"
+msgstr "8.3 La Compañía se reserva expresamente el derecho de revocar el derecho otorgado en la cláusula 5.2 por incumplimiento de estos términos y tomar las medidas que considere apropiadas."
+
+msgid "TERMINOS_DE_USO_52"
+msgstr "8.4 Usted indemnizará completamente a la Compañía por cualquier pérdida o daño sufrido por la Compañía o cualquiera de su grupo de empresas por incumplimiento de la cláusula 5.2. "
+
+msgid "TERMINOS_DE_USO_53"
+msgstr "9. REGISTRO "
+
+msgid "TERMINOS_DE_USO_54"
+msgstr "9.1 Cada registro es para un solo usuario. La Compañía no permite que usted comparta su nombre de usuario y contraseña con cualquier otra persona, ni con múltiples usuarios en una red."
+
+msgid "TERMINOS_DE_USO_55"
+msgstr "9.2 La responsabilidad de la seguridad de las contraseñas emitida depende de usted."
+
+msgid "TERMINOS_DE_USO_56"
+msgstr "10. RENUNCIA"
+
+msgid "TERMINOS_DE_USO_57"
+msgstr "10.1 Si bien la empresa se esfuerza por asegurar que la información en el sitio web sea correcta, la Compañía no garantiza la exactitud e integridad de los materiales en el sitio web. La Compañía puede realizar cambios en el material del sitio web, o en los productos y precios descritos en él, en cualquier momento sin previo aviso. El material en el sitio web puede estar fuera de fecha, y la Compañía no se compromete a actualizar dichos materiales."
+
+msgid "TERMINOS_DE_USO_58"
+msgstr "10.2 El material del sitio web se proporciona "tal cual", sin ningún tipo de condiciones, garantías u otros términos de cualquier tipo. En consecuencia, en la medida máxima permitida por la ley, la Compañía le ofrece la web en la base de que la Compañía excluye todas las representaciones, garantías, condiciones y otros términos (incluyendo, sin limitación), las condiciones implícitas en la ley de calidad satisfactoria, adecuación para el propósito y el uso de cuidado y pericia razonables que, sin este aviso legal, podría tener efecto en relación al Sitio Web."
+
+msgid "TERMINOS_DE_USO_59"
+msgstr "11. RESPONSABILIDAD"
+
+msgid "TERMINOS_DE_USO_60"
+msgstr "11.1 La compañía, (esté o no involucrada en la creación, producción, mantenimiento o entrega del Sitio Web), y cualquiera de las empresas del grupo de la empresa y los funcionarios, directores, empleados, accionistas o agentes de cualquiera de ellos, excluyen toda responsabilidad y la responsabilidad por cualquier cantidad o tipo de pérdida o daño que pueda resultar a usted o a un tercero, incluyendo, sin limitación, cualquier daño directo, indirecto, punitivo o consecuencial, o cualquier pérdida de ingresos, ganancias, buena voluntad, datos, contratos, el uso de dinero, o pérdida o daños derivados de o relacionados de alguna forma con la interrupción del negocio, ya sea por agravio (incluyendo, sin limitación, negligencia), contrato u otro, en relación con el Sitio Web, en cualquier forma o en conexión con el uso, imposibilidad de uso o los resultados del uso de la Página Web, cualquier sitio web vinculado a la página web o el material de dichos sitios, incluyendo pero no limitado a la pérdida o daño causado por virus que pueden infectar su equipo informático, software, datos u otra propiedad como consecuencia del acceso, uso o navegación por la página web o la descarga de cualquier material del Sitio Web o los sitios web vinculados al sitio web."
+
+msgid "TERMINOS_DE_USO_61"
+msgstr "11.2 La Compañía no respalda y no tiene ningún control sobre los materiales del usuario. La Compañía no puede garantizar la autenticidad de los datos que los usuarios pueden dar de sí mismos. Usted reconoce que todos los contenidos accesibles por usted al utilizar el Sitio Web son bajo su propio riesgo y usted será el único responsable de cualquier daño o pérdida de cualquiera de las partes resultantes. "
+
+msgid "TERMINOS_DE_USO_62"
+msgstr "11.3 Nada de lo dispuesto en el presente aviso legal excluirá o limitará la responsabilidad de la Compañía para: "
+
+msgid "TERMINOS_DE_USO_63"
+msgstr "(A) muerte o daños personales causados por negligencia [según dicho término se define por la Unfair Contract Terms Act 1977], o"
+
+msgid "TERMINOS_DE_USO_64"
+msgstr "(B) el fraude, o"
+
+msgid "TERMINOS_DE_USO_65"
+msgstr "(C) la tergiversación en cuanto a una cuestión fundamental, o"
+
+msgid "TERMINOS_DE_USO_66"
+msgstr "(D) cualquier responsabilidad que no puede ser excluida o limitada por la ley aplicable."
+
+msgid "TERMINOS_DE_USO_67"
+msgstr "12. LEY APLICABLE Y JURISDICCIÓN"
+
+msgid "TERMINOS_DE_USO_68"
+msgstr "El presente aviso legal se regirá e interpretará de acuerdo con la ley aplicable al Reino Unido. Las controversias que surjan en relación con el presente Aviso Legal se someterán a la jurisdicción exclusiva de los tribunales Ingleses."
+
+msgid "TERMINOS_DE_USO_69"
+msgstr "Fecha de emisión: 6 de Diciembre de 2012"
+
 
 msgid ""
 msgstr ""

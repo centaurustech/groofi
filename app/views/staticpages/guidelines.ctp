@@ -353,7 +353,7 @@ $this->set('title_for_layout' ,'Groofi Escuela' ) ;
 <?php echo __("UPDATING_YOUR_PROJECT_7");?>
 
 
-
+</span>
   </p><br>
 </div>
 
@@ -394,7 +394,7 @@ $this->set('title_for_layout' ,'Groofi Escuela' ) ;
 <span class="texto_proyecto">
 <?php echo __("COMPLY_WITH_REWARDS_7");?>
 
-
+</span>
   </p><br>
 </div>
 

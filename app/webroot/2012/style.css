@@ -6,22 +6,22 @@
 }*/
 @font-face {
     font-family: "phoenica_std_demoregular";
-    src: url(http://groofi.bo/fuentes/phoenicastd-webfont.eot);
-    src: url(http://groofi.bo/fuentes/phoenicastd-webfont.eot?#iefix) format('embedded-opentype'),
-    url(http://groofi.bo/fuentes/phoenicastd-webfont.woff) format('woff'),
-    url(http://groofi.bo/fuentes/phoenicastd-webfont.ttf) format('truetype'),
-    url(http://groofi.bo/fuentes/phoenicastd-webfont.svg#phoenica_std_demoregular) format('svg');
+    src: url(../fuentes/phoenicastd-webfont.eot);
+    src: url(../fuentes/phoenicastd-webfont.eot?#iefix) format('embedded-opentype'),
+    url(../fuentes/phoenicastd-webfont.woff) format('woff'),
+    url(../fuentes/phoenicastd-webfont.ttf) format('truetype'),
+    url(../fuentes/phoenicastd-webfont.svg#phoenica_std_demoregular) format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
     font-family: "signika_negativeregular";
-    src: url(http://groofi.bo/fuentes/signikanegative-regular-webfont.eot);
-    src: url(http://groofi.bo/fuentes/signikanegative-regular-webfont.eot?#iefix) format('embedded-opentype'),
-    url(http://groofi.bo/fuentes/signikanegative-regular-webfont.woff) format('woff'),
-    url(http://groofi.bo/fuentes/signikanegative-regular-webfont.ttf) format('truetype'),
-    url(http://groofi.bo/fuentes/signikanegative-regular-webfont.svg#signika_negativeregular) format('svg');
+    src: url(../fuentes/signikanegative-regular-webfont.eot);
+    src: url(../fuentes/signikanegative-regular-webfont.eot?#iefix) format('embedded-opentype'),
+    url(../fuentes/signikanegative-regular-webfont.woff) format('woff'),
+    url(../fuentes/signikanegative-regular-webfont.ttf) format('truetype'),
+    url(../fuentes/signikanegative-regular-webfont.svg#signika_negativeregular) format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -29,11 +29,11 @@
 
 @font-face {
     font-family: "courier_newbold";
-    src: url(http://groofi.bo/fuentes/courbd-webfont.eot);
-    src: url(http://groofi.bo/fuentes/courbd-webfont.eot?#iefix) format('embedded-opentype'),
-    url(http://groofi.bo/fuentes/courbd-webfont.woff) format('woff'),
-    url(http://groofi.bo/fuentes/courbd-webfont.ttf) format('truetype'),
-    url(http://groofi.bo/fuentes/courbd-webfont.svg#courier_newbold) format('svg');
+    src: url(../fuentes/courbd-webfont.eot);
+    src: url(../fuentes/courbd-webfont.eot?#iefix) format('embedded-opentype'),
+    url(../fuentes/courbd-webfont.woff) format('woff'),
+    url(../fuentes/courbd-webfont.ttf) format('truetype'),
+    url(../fuentes/courbd-webfont.svg#courier_newbold) format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -43,11 +43,11 @@
 
 @font-face {
     font-family: "signika_negativesemibold";
-    src: url(http://groofi.bo/fuentes/signikanegative-semibold-webfont.eot);
-    src: url(http://groofi.bo/fuentes/signikanegative-semibold-webfont.eot?#iefix) format('embedded-opentype'),
-    url(http://groofi.bo/fuentes/signikanegative-semibold-webfont.woff) format('woff'),
-    url(http://groofi.bo/fuentes/signikanegative-semibold-webfont.ttf) format('truetype'),
-    url(http://groofi.bo/fuentes/signikanegative-semibold-webfont.svg#signika_negativesemibold) format('svg');
+    src: url(../fuentes/signikanegative-semibold-webfont.eot);
+    src: url(../fuentes/signikanegative-semibold-webfont.eot?#iefix) format('embedded-opentype'),
+    url(../fuentes/signikanegative-semibold-webfont.woff) format('woff'),
+    url(../fuentes/signikanegative-semibold-webfont.ttf) format('truetype'),
+    url(../fuentes/signikanegative-semibold-webfont.svg#signika_negativesemibold) format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -983,7 +983,7 @@ margin-left:11px;
     height: 16px;
     position: absolute;
     right: 85px;
-    top: 1040px;
+    top: 1065px;
     width: 16px;
 
 }
@@ -1065,7 +1065,7 @@ margin-left:-6px;
 	text-align:center;
 	font-size:14px;
 	font-weight:600;
-	line-height:30px;
+	line-height:35px;
 	
 }
 .bot_enviar:hover{
@@ -1275,9 +1275,10 @@ margin-left:-6px;
 	background-position:1px -16px}
 	
 	.empezar_proyecto{
+    font-family: "signika_negativeregular";
 	color:#FFF;
-    font-size:12px;
-	line-height:26px;
+    font-size:11px;
+    line-height: 31px;;
 	cursor:pointer;
 	font-weight:bold;
 	text-align:center;
@@ -1970,11 +1971,11 @@ height:41px;
 	
 	.icono_importante_facebook{
 	background:url(images/important.png) no-repeat;
-	position:absolute;
-	width:20px;
-	height:20px;
-	left: 130px;
-	top: 0px;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    left: 135px;
+    top: 15px;
 	
 	}
 		.tit_mi_cuenta
@@ -2064,7 +2065,7 @@ height:41px;
 	text-align:center;
 	font-size:14px;
 	font-weight:600;
-	line-height:30px;
+    line-height: 35px;
 	
 }
 .bot_guardar:hover{
@@ -3625,7 +3626,7 @@ color:#FFF
  float:left; color:#007fc3; font-family:Arial, Helvetica, sans-serif; font-size:10px; position:relative; top:-12px; border-right:1px solid #a2a8ab}
  .lanzp{ width:18px; height:18px; background:url(images/iconos.png); border:0; display:block; float:left; position:relative;top:3px; margin-right:2px}
  .lanzarproy:hover,.lanzarproy:hover span{ color:#000; background-position: 0 -20px}
- .editproy,.editproy:visited{display:block; text-decoration:none; width:70px;  height:20px; line-height:20px; 
+ .editproy,.editproy:visited{display:block; text-decoration:none;  width: 90px;  height:20px; line-height:20px;
  float:left; color:#007fc3; font-family:Arial, Helvetica, sans-serif; font-size:10px; position:relative; top:-12px; margin-left:20px;border-right:1px solid #a2a8ab}
  .editp{ width:18px; height:18px; background:url(images/iconos.png) -23px 0; border:0; display:block; float:left; position:relative;top:3px; margin-right:2px}
  .editproy:hover,.editproy:hover span{ color:#000; background-position: -23px -20px}
@@ -3928,12 +3929,16 @@ color:#FFF
     color: white;
     cursor: pointer;
     display: block;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bold;
-    left: 40px;
+    left: 29px;
     position: absolute;
-    top: 83px;
+    top: 85px;
     z-index: 0;
+    font-family: "signika_negativeregular";
+    width: 143px;
+    text-align: center;
+
 }
 
 .casos_exito{
@@ -4268,7 +4273,7 @@ color:#FFF
     cursor:pointer;
     position:absolute;
     left: 860px;
-    top: 960px;
+    top: 1015px;
 }
 
 .info_ckeditor:hover
@@ -4284,7 +4289,7 @@ color:#FFF
     cursor:pointer;
     position:absolute;
     left: 860px;
-    top: 1270px;
+    top: 1325px;
 }
 
 .info_ckeditor1:hover
@@ -4295,4 +4300,11 @@ color:#FFF
 
     position: relative;
     display: block;
+}
+.ubicacion_proyecto
+{
+
+    display: block;
+    position: relative;
+    top: -20px;
 }

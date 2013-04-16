@@ -87,7 +87,7 @@ function openBoxUser1(e){
 					stopEvent(e);
 					if(window.animationOn)return;
 					clearTimeout(ns.timer);
-					
+
 					var pos=getElementPosition.call($('gear'));
 					$('boxUser').style.left=(pos.left-171)+'px';
 					$('boxUser').style.top=(pos.top+4)+'px';
@@ -95,14 +95,14 @@ function openBoxUser1(e){
 					$('boxUser').style.height='140px';
 					$('boxUser').style.background='url(/2012/images/bgLogOn.png)';
 					$('boxUser').style.display='block';
-					
+
 }
 function openBoxUser2(e){
 					cancelEvent(e);
 					stopEvent(e);
 					if(window.animationOn)return;
 					clearTimeout(ns.timer);
-					
+
 					var pos=getElementPosition.call($('gear'));
 					$('boxUser').style.left=(pos.left-144)+'px';
 					$('boxUser').style.top=(pos.top+5)+'px';

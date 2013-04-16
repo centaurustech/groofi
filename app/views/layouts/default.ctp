@@ -79,6 +79,8 @@ var nummens='';
 <? } ?>
 $('login_text').innerHTML='<a onclick="location=&quot;<?= User::getLink ($user)?>&quot;" id="gear3" href="<?= User::getLink ($user)?>">'+perfi+'</a> / <a href="<?=Router::url (array ('controller' => 'users', 'action' => 'logout'))?>">'+out+'</a>';
 $('boxUser').innerHTML='<div id="picuserbox"><?=$file?></div><div id="nombreabreviado"><?php echo $alias ;?></div><div id="nombrecompleto"><?=$user['User']['display_name'];?></div><a onclick="window.location=&quot;<? echo User::getLink ($user);?>&quot;;return false;" id="miperfilboxexpand" href="<? echo User::getLink ($user);?>">'+perfi+'</a><a onclick="window.location=&quot;<? echo User::getLink ($user, 'settings');?>&quot;;return false;" id="settingsboxexpand" href="<? echo User::getLink ($user, 'settings');?>">'+config+'</a><img id="ikomse" onclick="location=&quot;/messages&quot;;return false;" style="position:absolute;top:67px;left:77px;cursor:pointer;" src="/2012/images/mensajes.png">'+nummens;
+
+
 });
 
 <?php }else{ ?>
@@ -213,8 +215,8 @@ ns.logueado=0;
         <div class="content">
  <div class="left">
  <ul>
- <li><a href="/page/terminos-de-uso"   ><?php echo __("TERMS_CONDITIONS");?></a></li>
- <li><a href="/page/politica-de-privacidad" ><?php echo __("PRIVACY");?></a></li>
+ <li><a href="/staticpages/terminos"   ><?php echo __("TERMS_CONDITIONS");?></a></li>
+ <li><a href="/staticpages/politicasdeprivacidad" ><?php echo __("PRIVACY");?></a></li>
  <li><a href="/contacto" ><?php echo __("CONTACT");?></a></li>
   </ul>
  </div>

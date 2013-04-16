@@ -33,8 +33,9 @@ echo $this->Html->script('ckfinder/ckfinder');
 ?>
 <?php
 if(isset($javascript)):
+
     echo $javascript->link('jquery-1.2.6.min.js');
-    echo $javascript->link('jquery.imgareaselect-0.4.2.min.js');
+    echo $javascript->link('jquery.imgareaselect.pack.js');
 endif;
 ?>
 
@@ -199,7 +200,7 @@ endif;
         <input type="hidden" name="data[Link][9][model]" autocomplete="off" value="Project" />
     </div>
 
-    <div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['link']) && !empty($validationErrorsArray['link'])){echo $validationErrorsArray['link'];}?><?if(isset($validationErrorsArray['Link'])){echo 'La url ingresada no es v&aacute;lida';}?></div>
+    <div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['link']) && !empty($validationErrorsArray['link'])){echo $validationErrorsArray['link'];}?><?if(isset($validationErrorsArray['Link'])){echo __("THE_URL_IS_NOT_VALID");}?></div>
 
 
 
@@ -211,7 +212,7 @@ endif;
 
     <div class="rounded_area_crear">
         <textarea name="data[Project][motivation]" cols="30" rows="6" autocomplete="off"><?if(isset($_POST['data']['Project']['motivation'])){echo $_POST['data']['Project']['motivation'];}?></textarea>
-        <div class="bot_info_area"  onmouseout="hideTip()" onmousemove="showTip(event,'Esta informaci&oacute;n nos ser&aacute; &uacute;til para evaluar tu propuesta. No la publicaremos.')"></div>
+        <div class="bot_info_area"  onmouseout="hideTip()" onmousemove="showTip(event,'<?php echo __("PROJECT__MOTIVATION__HELP_MESSAGE_TEXT");?>')"></div>
     </div>
 
 </div>
@@ -277,23 +278,20 @@ endif;
 </div>
 <div style="font-style:italic;clear:both"><?php echo __("PROJECT_ADD_SECOND_BLOCK_TITLE");?></div> <div class="misc_separador" style="width:100%"></div><br>
 <div class="texto_how_izq">
-    <p style="font-size:12px"><?php echo __("FILE");?></p>
-
-    <div id="bajofoto1"><?php echo __("Browse");?></div>
-
-    <div id="extfoto2"><input onchange="if((this.value.toLowerCase().indexOf('.jpg')==-1) && (this.value.toLowerCase().indexOf('.jpeg')==-1) && (this.value.toLowerCase().indexOf('.gif')==-1) && (this.value.toLowerCase().indexOf('.png')==-1)){$('elfile2').innerHTML='<span style=&quot;color:red;font-size:9px&quot;>Formato de archivo no permitido.</span>';return;}$('elfile2').innerHTML=this.value" onmouseover="$('bajofoto1').style.background='#237fb5';" onmouseout="$('bajofoto1').style.background='#000';" id="foto1"  name="data[Project][file]" autocomplete="off" type="file" /></div>
-
-
-
-    <br><div id="elfile2"><?php echo __("UPLOAD_NO_FILE_SELECTED");?></div>
-    <div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['file']) && !empty($validationErrorsArray['file'])){echo $validationErrorsArray['file'];}?></div>
-    <br>
-    <? if($this->Session->check('predefinido') && isset($fotito) && strlen($fotito)>4 && (!isset($_FILES['data']['name']['Project']['file']) || $_FILES['data']['name']['Project']['file']=='')){?>
-    <img style="max-width:280px" src="/<?=$fotito;?>">
-    <? } ?>
-
+    <div>
+        <?php echo $form->create('projects', array('action' => 'prueba', "enctype" => "multipart/form-data"));?>
+        <?php
+        echo $cropimage->createJavaScript($uploaded['imageWidth'],$uploaded['imageHeight'],151,151);
+        //echo $cropimage->createForm($uploaded["imagePath"], $width, $height);
+        echo $form->input('name');
+        echo $form->input('image',array("type" => "file"));
+        echo $cropimage->createForm($uploaded["imagePath"], 151, 151);
+        echo $form->submit('Done', array("id"=>"save_thumb"));
+        echo $form->end('Upload');
+        ?>
+    </div>
     <div class="misc_separador" style=" width:367px; height:1px;"></div>
-    <div class="bot_info img" onmouseout="hideTip()"  onmousemove="showTip(event,'Elige una imagen para ilustrar tu proyecto. La imagen no es todo, pero es muy importante.<br>Sube una imagen de buena calidad, con un aspecto de 4:3 y un m&aacute;ximo de 560 x 430 pixeles aproximadamente.')"></div>
+    <div class="bot_info img" onmouseout="hideTip()"  onmousemove="showTip(event,'<?php echo __("PROJECT__FILE_EDIT_HELP_MESSAGE_TEXT");?><br><?php echo __("PROJECT__FILE__TIP_MESSAGE_TEXT");?>')"></div>
 </div>
 <div class="clear"></div>
 
@@ -301,7 +299,7 @@ endif;
     <p style="font-size:12px"><?php echo __("PROJECT_VIDEO");?></p>
     <div class="rounded_crear">
         <input value="<?if(isset($_POST['data']['Project']['video_url'])){echo $_POST['data']['Project']['video_url'];}?>" type="text"  autocomplete="off" name="data[Project][video_url]" />
-        <div class="bot_info" onmouseout="hideTip()"  onmousemove="showTip(event,'Ingresa la URL de un video propio sobre tu proyecto que hayas subido a YouTube.com o Vimeo.com (opcional).<br>El video es tu carta de presentaci&oacute;n. Demuestra la calidad de tu proyecto con un video de calidad. Tu proyecto se volver&aacute; mucho m&aacute;s confiable si les hablas a tus futuros patrocinadores y les demuestras tu capacidad y compromiso.')"></div>
+        <div class="bot_info" onmouseout="hideTip()"  onmousemove="showTip(event,'<?php echo __("PROJECT__VIDEO_URL__HELP_MESSAGE_TEXT");?> <br> <?php echo __("PROJECT__VIDEO_URL__TIP_MESSAGE_TEXT");?>')"></div>
     </div>
     <? if($this->Session->check('predefinido') && isset($_POST['data']['Project']['video_url']) && !empty($_POST['data']['Project']['video_url'])){ ?>
     <?='<div style="height:20px"></div>'.getVideoFromURL($_POST['data']['Project']['video_url'])?>

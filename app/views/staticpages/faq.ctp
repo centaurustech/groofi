@@ -5,6 +5,7 @@ $this->set('pageTitle' , 'Preguntas frecuentes' ) ;
 $this->set('title_for_layout' ,'Preguntas frecuentes' ) ;
 
 ?>
+
 <div style="width:100%; height:auto; margin-top:20px">
 <h1 style="font-weight:normal; font-size:28px; line-height:32px">FAQs</h1>
 

@@ -29,8 +29,8 @@ class AppController extends Controller {
         'Cksource',
         'Javascript',
         'Cropimage',
-        'Paiseslistado',
-        'Cropimage'
+        'Paiseslistado'
+
 
 
     );
@@ -50,9 +50,12 @@ class AppController extends Controller {
         'RequestHandler',
         'DebugKit.Toolbar',
         'Facebook.Connect',
-        'JqImgcrop',
+        'JqImgcrop'
 
     );
+
+
+
 
     function beforeFilter() {
 

@@ -105,6 +105,7 @@ Router::connect('/country', array('controller' => 'staticpages', 'action' => 'co
 Router::connect('/mp_ipn.php', array('controller' => 'sponsorships', 'action' => 'mp_ipn'));
 
 
+
 Router::connect('/debug_kit/:controller/:action/*', array('plugin' => 'debugKit'));
 Router::connect('/debug_kit/:controller/*', array('plugin' => 'debugKit'));
 
