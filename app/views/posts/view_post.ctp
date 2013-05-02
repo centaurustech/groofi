@@ -148,7 +148,7 @@ $file = $this->Media->getImage('s50', $this->data['User']['avatar_file'], '/img/
 <?}?>
 <div class="iconos_usuario"><img src="/2012/images/iconos_usuario.gif" width="20" height="41"></div>
 
-<div class="info_usuario" style="overflow:hidden;"><?=$this->data['User']['city']?> <br><strong class="cyan"><a onclick="<?if (!$this->Session->read ('Auth.User.id')){$_SESSION['VOLVER']=$this->here;?>alerta('Debes estar registrado para poder enviarle un mensaje a <?=User::getName($this->data)?>');<?}else{?>if($('fromoculto').style.display!='block')$('fromoculto').style.display='block';else $('fromoculto').style.display='none';<?}?>return false;" class="cyan" href="#">Enviar Mensaje</a></strong></div>
+<div class="info_usuario" style="overflow:hidden;"><?=$this->data['User']['city']?> <br><strong class="cyan"><a onclick="<?if (!$this->Session->read ('Auth.User.id')){$_SESSION['VOLVER']=$this->here;?>alerta('Debes estar registrado para poder enviarle un mensaje a <?=User::getName($this->data)?>');<?}else{?>if($('fromoculto').style.display!='block')$('fromoculto').style.display='block';else $('fromoculto').style.display='none';<?}?>return false;" class="cyan" href="#"><?php echo __("SEND_MESSAGE");?></a></strong></div>
 <div class="foto_usuario"><?=$file?></div>
 
 </div>

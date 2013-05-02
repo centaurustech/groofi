@@ -11,6 +11,7 @@ parent.location='/news';
 <?php }elseif($loginok && isset($_SESSION['VOLVER']) && !empty($_SESSION['VOLVER'])){?>
 parent.location='<?=$_SESSION['VOLVER']?>';
 <? $_SESSION['VOLVER']=0;unset($_SESSION['VOLVER']);}else{ ?>
-parent.alerta('Usuario o clave incorrectos',1);
+parent.alerta('<?php echo __("USER_PASS");?>',1);
+
 <?php } ?>
 </script>

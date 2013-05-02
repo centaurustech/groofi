@@ -447,7 +447,7 @@ msgid "ABOUT_THIS_PROJECT"
 msgstr "Acerca de este proyecto"
 
 msgid "SEND_MESSAGE"
-msgstr "Enviar mensaje"
+msgstr "Enviar Mensaje"
 
 msgid "PROJECT_IMPORTANT_ADVICE %s %s %s"
 msgstr "Este proyecto será financiado el día %s a las 0:00 hs. si fueron comprometidos %s %s."
@@ -1094,6 +1094,9 @@ msgstr "Home"
 msgid "HIGHLIGHT_PROJECTS_TITLE"
 msgstr "Proyectos destacados"
 
+msgid "HIGHLIGHT_PROJECTS_TITLE1"
+msgstr "PROYECTOS DESTACADOS"
+
 msgid "HIGHLIGHT_PROJECTS_SUBTITLE"
 msgstr "Patrocina los proyectos más interesantes de nuestra comunidad"
 
@@ -1228,6 +1231,9 @@ msgstr "Elige la categoría que mejor describa a tu proyecto. Una vez aprobado, 
 
 msgid "PROJECT__SHORT_DESCRIPTION__HELP_MESSAGE_TEXT"
 msgstr "Describe en pocas palabras la idea de tu proyecto. Una vez aprobado, no podrás modificarla."
+
+msgid "Projemsn"
+msgstr  "Describe en pocas palabras la idea de tu proyecto. Una vez aprobado, no podrás modificarla."
 
 msgid "PROJECT__DESCRIPTION__HELP_MESSAGE_TEXT"
 msgstr "Describe tu proyecto en extenso. Podrás editar esta descripción una vez aprobado tu proyecto."
@@ -1706,6 +1712,9 @@ msgstr "Finalizados"
 msgid "VIEW_FUNDED_ADMIN_INDEX"
 msgstr "Financiados"
 
+msgid "VIEW_FUNDED_ADMIN_INDEX1"
+msgstr "Financiados"
+
 msgid "VIEW_NOT-FUNDED_ADMIN_INDEX"
 msgstr "No financiados"
 
@@ -1724,6 +1733,9 @@ msgstr "Sección"
 msgid "Title"
 msgstr "Título"
 
+msgid "Title1"
+msgstr "Este sera el Titulo de tu Proyecto"
+
 msgid "Offer.id"
 msgstr "ID"
 
@@ -1732,6 +1744,10 @@ msgstr "Usuario"
 
 msgid "Offer.category"
 msgstr "Categoría"
+
+msgid "TitleCate"
+msgstr "Elige la categoría que mejor describa a tu proyecto. Una vez aprobado, no podrás modificarla."
+
 
 msgid "Offer.title"
 msgstr "Título"
@@ -4361,26 +4377,26 @@ msgstr "Preguntas, comentarios y peticiones con respecto a esta política de pri
 msgid "POLITICAS_PRIVACIDAD41_1"
 msgstr "info@groofi.com ."
 
-msgid ""
-msgstr ""
+msgid "ckeditor"
+msgstr "Describe tu proyecto en extenso. Podrás editar esta descripción una vez aprobado tu proyecto."
 
-msgid ""
-msgstr ""
+msgid "by"
+msgstr "por - "
 
-msgid ""
-msgstr ""
+msgid "RECAUDADOS"
+msgstr "Recaudados"
 
-msgid ""
-msgstr ""
+msgid "SHOW_VIDEO"
+msgstr "VER VIDEO"
 
-msgid ""
-msgstr ""
+msgid "SHOW_ALL"
+msgstr "Ver todas"
 
-msgid ""
-msgstr ""
+msgid "POLITICAS_DE_PRIVACIDAD"
+msgstr "Políticas de Privacidad"
 
-msgid ""
-msgstr ""
+msgid "USER_PASS"
+msgstr "Usuario o clave incorrectos"
 
 msgid ""
 msgstr ""

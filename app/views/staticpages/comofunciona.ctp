@@ -1,5 +1,5 @@
-    
-<?php /* @var $this ViewCC */ 
+
+<?php /* @var $this ViewCC */
 
 $this->set('pageTitle' , 'Acerca de Groofi' ) ;
 $this->set('title_for_layout' ,'Acerca de Groofi' ) ;

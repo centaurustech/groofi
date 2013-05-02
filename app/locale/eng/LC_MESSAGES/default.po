@@ -442,7 +442,7 @@ msgid "ABOUT_THIS_PROJECT"
 msgstr "About this project"
 
 msgid "SEND_MESSAGE"
-msgstr "Send message"
+msgstr "Send Message"
 
 msgid "PROJECT_IMPORTANT_ADVICE %s %s"
 msgstr "This project will be funded on day %s at 0:00 hs. If %s USD were collected."
@@ -1083,6 +1083,9 @@ msgstr "Home"
 msgid "HIGHLIGHT_PROJECTS_TITLE"
 msgstr "Featured Projects"
 
+msgid "HIGHLIGHT_PROJECTS_TITLE1"
+msgstr "FEATURED PROJECTS"
+
 msgid "HIGHLIGHT_PROJECTS_SUBTITLE"
 msgstr "Back our community's most interesting projects"
 
@@ -1217,6 +1220,9 @@ msgstr "Pick the category that best fits your project. Once approved, you won'tb
 
 msgid "PROJECT__SHORT_DESCRIPTION__HELP_MESSAGE_TEXT"
 msgstr "Describe your project in a few words. Once approved, you won't be able to modify this."
+
+msgid "Projemsn"
+msgstr  "Describe your project in a few words. Once approved, you won't be able to modify this."
 
 msgid "PROJECT__DESCRIPTION__HELP_MESSAGE_TEXT"
 msgstr "Now give a fuller account of your project. Once your project is approved, you'll still be able to amend this part."
@@ -1695,6 +1701,9 @@ msgstr "Finished"
 msgid "VIEW_FUNDED_ADMIN_INDEX"
 msgstr "Funded"
 
+msgid "VIEW_FUNDED_ADMIN_INDEX1"
+msgstr "Funded"
+
 msgid "VIEW_NOT-FUNDED_ADMIN_INDEX"
 msgstr "Not funded"
 
@@ -1713,6 +1722,9 @@ msgstr "Section"
 msgid "Title"
 msgstr "Title"
 
+msgid "Title1"
+msgstr "This will be the title of your project"
+
 msgid "Offer.id"
 msgstr "ID"
 
@@ -1721,6 +1733,9 @@ msgstr "User"
 
 msgid "Offer.category"
 msgstr "Category"
+
+msgid "TitleCate"
+msgstr "Choose the category that best describes your project. Once approved, you can not modify it."
 
 msgid "Offer.title"
 msgstr "Title"
@@ -2720,7 +2735,7 @@ msgid "PROJECT_SPONSORS"
 msgstr "Backers"
 
 msgid "INVALID_LOGIN_INFORMATION"
-msgstr "Wrong E-mail and/or passwrd"
+msgstr "Wrong E-mail and/or password"
 
 msgid "OFFERS_FINISHED_STATUS"
 msgstr "Ended"
@@ -4206,7 +4221,13 @@ msgid "POLITICAS_PRIVACIDAD4"
 msgstr "We may collect and process the following data about you:"
 
 msgid "POLITICAS_PRIVACIDAD5"
-msgstr "• Information that you provide by filling in forms on our site www.groofi.com (our site). This includes information provided at the time of registering to use our site, subscribing to our service, posting material or requesting further services. We may also ask you for information when you enter a contest or promotion sponsored by a third party, and when you report a problem with our site."
+msgstr "• Information that you provide by filling in forms on our site "
+
+msgid "POLITICAS_PRIVACIDAD5_1"
+msgstr "www.groofi.com"
+
+msgid "POLITICAS_PRIVACIDAD5_2"
+msgstr "(our site). This includes information provided at the time of registering to use our site, subscribing to our service, posting material or requesting further services. We may also ask you for information when you enter a contest or promotion sponsored by a third party, and when you report a problem with our site."
 
 msgid "POLITICAS_PRIVACIDAD6"
 msgstr "• If you contact us, we may keep a record of that correspondence."
@@ -4290,13 +4311,25 @@ msgid "POLITICAS_PRIVACIDAD32"
 msgstr "• If Groofi Limited or substantially all of its assets are acquired by a third party, in which case personal data held by clients of the company will be one of the transferred assets."
 
 msgid "POLITICAS_PRIVACIDAD33"
-msgstr "• If we are obliged to disclose or share your personal data in order to comply with any legal obligation, or in order to enforce or apply our Terms of Use or to protect property rights or safety of Groofi Limited, our customers or others. This includes exchanging information with other companies and organizations for the purposes of fraud protection and credit risk reduction."
+msgstr "• If we are obliged to disclose or share your personal data in order to comply with any legal obligation, or in order to enforce or apply our"
+
+msgid "POLITICAS_PRIVACIDAD33_1"
+msgstr "Terms of Use"
+
+msgid "POLITICAS_PRIVACIDAD33_2"
+msgstr "or to protect the rights of property or safety of Groofi Limited, our customers or others. This includes exchanging information with other companies and organizations for the purposes of fraud protection and credit risk reduction."
 
 msgid "POLITICAS_PRIVACIDAD34"
 msgstr "YOUR RIGHTS"
 
 msgid "POLITICAS_PRIVACIDAD35"
-msgstr "You have the right to ask us not to process your personal data for marketing purposes. Usually inform you (before collecting your data) if we intend to use your data for such purposes or if we intend to disclose your information to third parties for such purposes. You can exercise your right to prevent certain data are restricted by checking certain boxes on the forms we use to collect your data. You can also exercise the right at any time by contacting us at info@groofi.com. Our site may, at any time, contain links to and from the websites of our partner networks, advertisers and affiliates. If you follow a link to any of these websites, please note that these websites have their own privacy policies and that we do not accept any liability for those policies. Please check these policies before you submit any personal data to these websites."
+msgstr "You have the right to ask us not to process your personal data for marketing purposes. Usually inform you (before collecting your data) if we intend to use your data for such purposes or if we intend to disclose your information to third parties for such purposes. You can exercise your right to prevent certain data are restricted by checking certain boxes on the forms we use to collect your data. You can also exercise the right at any time by contacting us at"
+
+msgid "POLITICAS_PRIVACIDAD35_1"
+msgstr "info@groofi.com."
+
+msgid "POLITICAS_PRIVACIDAD35_2"
+msgstr "Our site may, at any time, contain links to and from the websites of our partner networks, advertisers and affiliates. If you follow a link to any of these websites, please note that these websites have their own privacy policies and that we do not accept any liability for those policies. Please check these policies before you submit any personal data to these websites."
 
 msgid "POLITICAS_PRIVACIDAD36"
 msgstr "ACCESS TO INFORMATION"
@@ -4314,31 +4347,31 @@ msgid "POLITICAS_PRIVACIDAD40"
 msgstr "CONTACT"
 
 msgid "POLITICAS_PRIVACIDAD41"
-msgstr "Questions, comments and requests regarding this privacy policy are welcomed and should be addressed to info@groofi.com."
+msgstr "Questions, comments and requests regarding this privacy policy are welcomed and should be addressed to"
 
-msgid ""
-msgstr ""
+msgid "POLITICAS_PRIVACIDAD41_1"
+msgstr "info@groofi.com ."
 
-msgid ""
-msgstr ""
+msgid "ckeditor"
+msgstr "Describe your project at length. You can edit this description once approved your project."
 
-msgid ""
-msgstr ""
+msgid "by"
+msgstr "by - "
 
-msgid ""
-msgstr ""
+msgid "RECAUDADOS"
+msgstr "Collected"
 
-msgid ""
-msgstr ""
+msgid "SHOW_VIDEO"
+msgstr "WATCH VIDEO"
 
-msgid ""
-msgstr ""
+msgid "SHOW_ALL"
+msgstr "View all"
 
-msgid ""
-msgstr ""
+msgid "POLITICAS_DE_PRIVACIDAD"
+msgstr "Privacy Policy"
 
-msgid ""
-msgstr ""
+msgid "USER_PASS"
+msgstr "Username or password incorrect"
 
 msgid ""
 msgstr ""

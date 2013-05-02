@@ -1,6 +1,8 @@
 <?php
-$this->set('pageTitle' , 'Politicas de Privacidad' ) ;
-$this->set('title_for_layout' ,'Politicas de Privacidad' ) ;
+
+
+$this->set('pageTitle' , __("POLITICAS_DE_PRIVACIDAD",$return = true));
+$this->set('title_for_layout' ,__("POLITICAS_DE_PRIVACIDAD",$return = true));
 
 ?>
 
@@ -26,7 +28,7 @@ $this->set('title_for_layout' ,'Politicas de Privacidad' ) ;
     <br>
     <br>
     <?php echo __("POLITICAS_PRIVACIDAD5");?>
-    <a href="http:\\www.groofi.com" target="_blank" style="color: #87cefa"><?php echo __("POLITICAS_PRIVACIDAD5_1");?></a>
+    <a href="http://www.groofi.com/" target="_blank" style="color: #87cefa"><?php echo __("POLITICAS_PRIVACIDAD5_1");?></a>
     <?php echo __("POLITICAS_PRIVACIDAD5_2");?>
     <br>
     <?php echo __("POLITICAS_PRIVACIDAD6");?>

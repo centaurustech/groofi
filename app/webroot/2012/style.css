@@ -63,7 +63,7 @@
 *{ margin:0; padding:0; outline:none; font-smooth:always;}
 body{ text-align:center; background:url(images/fondo_header.jpg) repeat-x; overflow-x:hidden; position:relative}
 /*body{ background-position: 0 58px;}*/
-a:link {color: #262525;text-decoration:none}      /* unvisited link */
+a:link {color: #505050;text-decoration:none}      /* unvisited link */
 a:visited {color:#505050}  /* visited link */
 a:hover {color:#4e90ae;}  /* mouse over link */
 a:active {color:#356980;}  /* selected link */ 
@@ -220,13 +220,13 @@ a:active {color:#356980;}  /* selected link */
 
 
 
-#sub_header{ width:956px; height:39px; background:#202020 ; position:relative}
+#sub_header{ width:950px; height:38px; background:#202020 ; position:relative}
 
 #izquierda{ width:180px; float:left;  padding:10px; background:#933}
 #derecha{   padding:10px; background:#C66; margin-left:200px;}
 #pie{ height:50px; background:#996}
 .clear{ clear:both;}
-#tools{ width:380px; height:39px; margin:0; float:right }
+#tools{ width:310px; height:38px; margin:0; float:right }
 #logos{ width:571px; height:37px; background:url(images/sponsors.png);  float:left }
 
 
@@ -235,21 +235,21 @@ a:active {color:#356980;}  /* selected link */
 #login_text a{ color:#CCC; text-decoration:none}
 #login_text a:hover{color:#1fa8e9}
 
-.gear{ background:url(images/gear.gif) no-repeat; width:32px; height:39px; cursor:pointer; float:left; position:relative; left:-11px;left:0px;}
+.gear{ background:url(images/gear.gif) no-repeat; width:32px; height:38px; cursor:pointer; float:left; position:relative; left:-11px;left:0px;}
 .line_separador{ background:url(images/redes_sociales.png) no-repeat; background-position:-73px -10px; width:10px; height:18px; float:left; margin:8px 3px}
 .facebook{ background:url(images/redes_sociales.png) no-repeat; background-position:-4px -10px; width:18px; height:18px; float:left; margin-right:3px; margin-top:8px; cursor:pointer; text-decoration:none; display:block}
 .facebook:hover{ background-position:-4px -49px}
 .twitter{ background:url(images/redes_sociales.png) no-repeat;  margin-top:9px; background-position:-28px -11px; width:18px; height:18px; float:left;margin-right:3px; cursor:pointer; text-decoration:none; display:block}
-.twitter:hover{ background-position:-29px -49px}
+.twitter:hover{ background-position:-28px -49px}
 .mail{ background:url(images/redes_sociales.png) no-repeat;  margin-top:9px;background-position:-50px -11px; width:20px; height:18px; float:left;margin-right:3px; cursor:pointer; text-decoration:none; display:block}
 .mail:hover{ background-position:-50px -49px}
-.esp{ background: url("images/redes_sociales.png") no-repeat scroll -90px -10px transparent;
+.esp{ background: url("images/redes_sociales.png") no-repeat scroll -90px -11px transparent;
     float: left;
     height: 18px;
     margin-right: 3px;
-    margin-top: 8px;
+    margin-top: 9px;
     width: 20px;}
-.esp:hover{ background-position:-90px -46px; ; cursor:pointer}
+.esp:hover{ background-position:-90px -47px; ; cursor:pointer}
 .ing{ background:url(images/redes_sociales.png) no-repeat; background-position:-112px -11px; width:20px; height:18px; float:left;margin-right:3px;  margin-top:9px;}
 .ing:hover{ background-position:-112px -47px; ; cursor:pointer}
 .ita{ background:url(images/redes_sociales.png) no-repeat; background-position:-134px -11px; width:20px; height:18px; float:left;margin-right:3px;  margin-top:9px;}
@@ -267,7 +267,7 @@ a:active {color:#356980;}  /* selected link */
 .boton_crear:hover{ background-position:0px -42px; }
 .boton_patrocina{ background:url(images/botones_banner.png) no-repeat; background-position:-165px 0px; width:158px; height:40px; color:#FFF; font-size:13px; font-weight:700; line-height:32px; text-align:center; cursor:pointer; float:left; margin-right:10px}
 .boton_patrocina:hover{ background-position:-165px -42px; }
-.boton_explorar{ background:#333; width:190px; height:35px; color:#FFF; font-size:15px; font-weight:700; line-height:35px; text-align:center; cursor:pointer; float:left; margin-right:10px; border-radius: 3px; margin-top:10px}
+.boton_explorar{ background:#333; width:190px; height:35px; color:#FFF; font-size:15px; font-weight:700; line-height:35px; text-align:center; cursor:pointer; float:left; margin-right:10px; border-radius: 3px; margin-top: 50px;}
 
 .boton_explorar:hover{ background:#000}
 
@@ -514,7 +514,7 @@ display:block;
 background:#f1d45b;
 float:left;
 height:320px;
-width:451px;
+width:450px;
 padding:15px;
 padding-top:20px;
 position:relative;
@@ -658,22 +658,22 @@ text-align:center;
 }
 .listado_categorias{
     font-family: "signika_negativeregular";
-	line-height:16px;
+	line-height:15px;
 	color:#597fa9;
 	font-size:12px;
 	font-weight:600;
-    margin-top: -25px;
+    margin-top: -10px;
 	overflow:hidden;
 }
 .listado_categorias a{ text-decoration:none; color:#597fa9;}
 .listado_categorias a:hover{ text-decoration:underline;}
 .listado_ubicaciones{
     font-family: "signika_negativeregular";
-	line-height:20px;
+	line-height:16px;
 	color:#597fa9;
 	font-size:12px;
 	font-weight:600;
-	margin-top:-25px;
+	margin-top:-10px;
 }
 .listado_ubicaciones a{ text-decoration:none; color:#597fa9;}
 .listado_ubicaciones a:hover{ text-decoration:underline;}
@@ -693,7 +693,7 @@ text-align:center;
 	color:#597fa9;
 	font-size:12px;
 	font-weight:600;
-	margin-top:-8px;
+	margin-top:-10px;
 	margin-left:23px;
 	
 	
@@ -715,7 +715,7 @@ text-align:center;
     font-family: "phoenica_std_demoregular";
 	display:block;
 	width:338px;
-	height:100%;
+	height:350px;
 	float:left
 	
 	
@@ -724,7 +724,7 @@ text-align:center;
     font-family: "phoenica_std_demoregular";
 	display:block;
 	width:278px;
-	height:100%;
+    height:350px;
 	float:left
 	
 	
@@ -734,7 +734,7 @@ text-align:center;
 	display:block;
 	font-weight:400;
 	width:258px;
-	height:100%;
+    height:350px;
 	float:left
 	
 	
@@ -981,10 +981,12 @@ margin-left:11px;
 
     background:url(images/bot_info.png) no-repeat;
     height: 16px;
-    position: absolute;
-    right: 85px;
-    top: 1065px;
+    position: relative;
     width: 16px;
+    left: 50px;
+    cursor:pointer;
+    left: 855px;
+    bottom: 250px;
 
 }
 
@@ -1948,7 +1950,7 @@ height:41px;
 .entrar_con_facebook p{
 	margin-left:7px;
 	font-size:13px;
-	margin-bottom:7px;
+	margin-bottom:25px;
 	color:#CCC
 
 }
@@ -1957,7 +1959,8 @@ height:41px;
 	width:164px;
 	height:22px;
 	margin-left:8px;
-	margin-top:5px;
+    margin-top: -10px;
+    position: absolute;
 	cursor:pointer;
 }
 .texto_importante_facebook{
@@ -1974,7 +1977,7 @@ height:41px;
     position: relative;
     width: 20px;
     height: 20px;
-    left: 135px;
+    left: 75px;
     top: 15px;
 	
 	}
@@ -3478,9 +3481,9 @@ text-decoration: none;
 font-family:Tahoma, Geneva, sans-serif;
 font-size:13px;
 }
-a:link {
+/*a:link {
 -webkit-tap-highlight-color: #FF5E99;
-}
+}*/
 .user.sponsorship.info .thumb {
 float: left;
 margin-right: 10px;
@@ -3647,9 +3650,16 @@ color:#FFF
 .titulolink{ color:#000 !important}
 
 
-.boton_videocaso{ background:#333; width:154px; height:36px;  cursor:pointer;  margin-right:10px; margin-top:10px; background:url(images/casos_exitovervideo.jpg)}
-
-.boton_videocaso:hover{ opacity:.8; filter:alpha(opacity=80);}
+.boton_videocaso{ background:#333; width:154px; height:36px;  color:#ffffff; text-align: center;   cursor:pointer;  margin-right:10px; margin-top:40px; background:url(images/casos_exitovervideo.jpg)}
+.video_boton{
+    color:#ffffff;
+    text-align: center;
+    cursor:pointer;
+    font-family: "signika_negativeregular";
+    width:154px;
+    height:36px;
+}
+.video_boton:hover{ opacity:.8; filter:alpha(opacity=80);}
 
 .boton_difundir_predefinido,.boton_difundir_predefinido:visited{
 	background:url(images/proyecto_predefinido_difundir_bt.png) no-repeat;
@@ -3846,11 +3856,11 @@ color:#FFF
     cursor: pointer;
     display: block;
     font-family: "signika_negativeregular";
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bold;
-    left: 35px;
+    left: 37px;
     position: absolute;
-    top: 26px;
+    top: 36px;
     z-index: 0;
 }
 .perfil_user
@@ -4241,9 +4251,10 @@ color:#FFF
 }
 .ckeditor0{
     display: block;
-    height: 570px;
-    width: 100%;
+
+
     padding-top: 20px;
+    position: relative;
 }
 
 .ckeditor1{
@@ -4307,4 +4318,27 @@ color:#FFF
     display: block;
     position: relative;
     top: -20px;
+}
+.homeslider{
+
+    display: block;
+    color: #4c4c4c;
+    z-index: 100;
+    position: absolute;
+    right: 170px;
+    top: 800px;
+    font-size: 14px;
+    font-family: "signika_negativeregular";
+}
+.texto_boton{
+    display: block;
+    float: right;
+    font-weight: bold;
+    height: 17px;
+    margin: 9px;
+    position: relative;
+    text-align: center;
+    width: 111px;
+
+
 }

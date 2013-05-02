@@ -166,7 +166,7 @@ function desplegarCategorias(){
 	if(window.animationOn2)return setTimeout(function(){desplegarCategorias()},1000);
 	ns.plegado=0;
 	var t=new Transition(easing,300,function(percentage){
-			var fin=175,inicio=35, delta=fin-inicio;
+			var fin=238,inicio=35, delta=fin-inicio;
 			if($('filtro'))
 			$('filtro').style.height=(inicio+(percentage*delta))+'px';						  
 	});

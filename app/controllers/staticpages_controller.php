@@ -10,7 +10,7 @@ class StaticpagesController extends AppController {
 
         }
 
-        $this->Auth->allow('view', 'home','message','guidelines','comofunciona','faq','contacto','translate', 'country');
+        $this->Auth->allow('view', 'home','message','guidelines','comofunciona','faq','contacto','translate', 'country','terminos','politicasdeprivacidad');
         parent::beforeFilter();
 
     }

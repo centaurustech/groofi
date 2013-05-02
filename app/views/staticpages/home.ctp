@@ -1,5 +1,6 @@
 <?php /* @var $this ViewCC */ ?>
 <?
+
 function friendlyUrl ($str = '') {
 
     $friendlyURL = htmlentities($str, ENT_COMPAT, "UTF-8", false); 
@@ -15,35 +16,42 @@ function friendlyUrl ($str = '') {
 $this->set('pageTitle', false); ?>
 
 <? if($this->data['WeekProjects']) { ?>
-
 <script type="text/javascript">
+    $proyectosem='<?php echo __("Subtitle");?>';/*VARIABLE CAMBIO DE IDIOMA SLIDER*/
 
-DR(
-   function(){
-	if($('corjurto'))   
-   createSlideHome(
-				   [
-				   <? foreach($this->data['WeekProjects'] as $v){
-				   $img=str_replace('.jpg','.png','media/filter/l560/'.$v['Project']['dirname'].'/'.$v['Project']['basename']);
-				   
-					if (file_exists($img) ){
-						$img='/comodo.php?imagen=media/filter/l560/'.$v['Project']['dirname'].'/'.$v['Project']['basename'];
-						$img=str_replace('.jpg','.png',$img);
-						
-					}else{
-						$img='/comodo.php?imagen=img/assets/img_default_280x210px.png';	
-					}
-					$imgficha=$v['Project']['moneda']=='USD'?'ficha':'fichapesos';
-					$descw=($v['Project']['leading']==1 && strlen($v['Project']['videoid'])>2 && strlen($v['Project']['videotype'])>2)?'CASOS DE &Eacute;XITO':'PROYECTOS DE LA SEMANA';
-					$button=($v['Project']['leading']==1 && strlen($v['Project']['videoid'])>2 && strlen($v['Project']['videotype'])>2)?'<div onclick="verVideo(&quot;'.$v['Project']['videoid'].'&quot;,&quot;'.$v['Project']['videotype'].'&quot;,&quot;'.$modules->js_encode($v['Project']['title']).'&quot;,&quot;'.$modules->js_encode($v['User']['display_name']).'&quot;,&quot;'.Project::getLink($v).'&quot;,&quot;'.User::getLink($v).'&quot;)" class="boton_videocaso"></div>':'<div onclick="window.location=&quot;'.Project::getLink($v).'&quot;;" class="boton_explorar">EXPLORAR PROYECTO</div>';
-				  ?>
-					'<div id="foto" style="background:url( <?=$img ?>) center center no-repeat"></div><div id="descripcion"><h2 style="color:#FFF"><?=$descw?></h2><h5 class="titulo_categoria" style="color:#666;"><a href="<?=$modules->js_encode(Category::getLink($v));?>"><?=$modules->js_encode(Category::getName($v));?></a></h5><br><h3 class=titulo_proyecto><a href="<?=$modules->js_encode(Project::getLink($v));?>"><?=$modules->js_encode($v['Project']['title']);?></h3><span class="autor">por <a href="<?=User::getLink($v)?>"><?=$modules->js_encode($v['User']['display_name']);?></a></span><br>-<p class="texto_destacado"><?=$modules->js_encode($v['Project']['short_description']);?></p><br>	<table  style="position:relative; display:inline-block" width="200" border="0" align="center" class="tabla_proyectos">	  <tr>    	<td width="71" align="center"><?= Project::getFundedValue($v) ?>%</td>	    <td width="121" align="center"><?= Project::getCollectedValue($v) ?></td>	    <td width="81" align="center"><?= $v['Project']['sponsorships_count']; ?></td>	  </tr>	</table>	<img src="/2012/images/<?=$imgficha?>.png" width="288" height="16"> <?=$button?></div>',
-					<? } ?>
-					
-					],$('corjurto'),$('thumbs_destacados')
-				   );
-   
-   });
+    DR(
+            function(){
+                if($('corjurto'))
+                    createSlideHome(
+                            [
+                                <?
+                                foreach($this->data['WeekProjects'] as $v){
+                                $img=str_replace('.jpg','.png','media/filter/l560/'.$v['Project']['dirname'].'/'.$v['Project']['basename']);
+
+                                if (file_exists($img) ){
+                                    $img='/comodo.php?imagen=media/filter/l560/'.$v['Project']['dirname'].'/'.$v['Project']['basename'];
+                                    $img=str_replace('.jpg','.png',$img);
+
+                                }else{
+                                    $img='/comodo.php?imagen=img/assets/img_default_280x210px.png';
+                                }
+                                $imgficha=$v['Project']['moneda']=='USD'?'ficha':'fichapesos';
+                                if($v['Project']['leading']==1 && strlen($v['Project']['videoid'])>2 && strlen($v['Project']['videotype'])>2){
+                                    $descw = __("SUCCESFUL_PROJECT",$return = true);
+                                }else{
+                                    $descw= __("HIGHLIGHT_PROJECTS_TITLE1",$return = true);
+                                }
+                                //$descw=($v['Project']['leading']==1 && strlen($v['Project']['videoid'])>2 && strlen($v['Project']['videotype'])>2)?'CASOS DE &Eacute;XITO': __("RECOVER_PASSWORD_1");/*ACA ESTO*/
+                                $button=($v['Project']['leading']==1 && strlen($v['Project']['videoid'])>2 && strlen($v['Project']['videotype'])>2)?'<div onclick="verVideo(&quot;'.$v['Project']['videoid'].'&quot;,&quot;'.$v['Project']['videotype'].'&quot;,&quot;'.$modules->js_encode($v['Project']['title']).'&quot;,&quot;'.$modules->js_encode($v['User']['display_name']).'&quot;,&quot;'.Project::getLink($v).'&quot;,&quot;'.User::getLink($v).'&quot;)" class="boton_videocaso"><span class="texto_boton">'.__("SHOW_VIDEO",$return=true).'<span></div>':'<div onclick="window.location=&quot;'.Project::getLink($v).'&quot;;" class="boton_explorar">'.__("PROJECT_EXPLORER",$return=true).'</div>';
+                                ?>
+                                '<div id="foto" style="background:url( <?=$img ?>) center center no-repeat"></div><div id="descripcion"><h2 style="color:#FFF"><?=$descw?></h2><h5 class="titulo_categoria" style="color:#666;"><a href="<?=$modules->js_encode(Category::getLink($v));?>"><?=$modules->js_encode(Category::getName($v));?></a></h5><br><h3 class=titulo_proyecto><a href="<?=$modules->js_encode(Project::getLink($v));?>"><?=$modules->js_encode($v['Project']['title']);?></h3><span class="autor"><?php echo __("by");?><a href="<?=User::getLink($v)?>"><?=$modules->js_encode($v['User']['display_name']);?></a></span><br><p class="texto_destacado"><?=$modules->js_encode($v['Project']['short_description']);?></p><br>	<table  style="position:relative; display:inline-block" width="200" border="0" align="center" class="tabla_proyectos">	  <tr>    	<td width="71" align="center"><?= Project::getFundedValue($v) ?>%</td>	    <td width="121" align="center"><?= Project::getCollectedValue($v) ?></td>	    <td width="81" align="center"><?= $v['Project']['sponsorships_count']; ?></td>	  </tr>	</table>	<img src="/2012/images/<?=$imgficha?>.png" width="288" height="16"> <?=$button?></div>',
+                                <? } ?>
+
+                            ],$('corjurto'),$('thumbs_destacados')
+                    );
+
+            });
+
 </script>
 <? } ?>
 <script type="text/javascript">
@@ -84,7 +92,13 @@ function setVideoEmpresas(){
 </div>
 <? if($this->data['WeekProjects']) { ?>
 <br>
-
+    <table  style="position:absolute; display:inline-block" width="300" border="0" align="center" class="homeslider">	  <tr>
+        <td width="120" align="center"><?php echo __("VIEW_FUNDED_ADMIN_INDEX1");?></td>
+        <td width="120" align="center"><?php echo __("|");?></td>
+        <td width="120" align="center"><?php echo __("RECAUDADOS");?></td>
+        <td width="120" align="center"><?php echo __("|");?></td>
+        <td width="120" align="center"><?php echo __("SPONSORSHIPS_INDEX");?></td>	  </tr>
+    </table>
 <div id="proyecto_destacado">
   <div id="tool"><a href="#" id="play"></a><a href="#" id="pause"></a><a href="#" id="at"></a><a href="#" id="ad"></a></div>
 <div id="corjurto"> 
@@ -169,7 +183,7 @@ foreach($mostrar as $k=>$v){
 
 
 
-    <div class="ubicacion_proyecto">
+    <!--div class="ubicacion_proyecto">
 
         <select autocomplete="off"  name="data[Project][paislugar]" autocomplete="off" id="ProjectCountryId">
             <? foreach($base_countries as $k=>$v){ ?>
@@ -181,24 +195,24 @@ foreach($mostrar as $k=>$v){
 
 
     </div>
-</div>
+</div-->
 
 
 
-<!--div class="listado_ubicaciones">
-<ul><a href="/discover/projects"><!?php echo __("ALL_COUNTRIES");?></a></ul>
-<!--?php
+<div class="listado_ubicaciones">
+<ul><a href="/discover/projects"><?php echo __("ALL_COUNTRIES");?></a></ul>
+<?php
 $ubicacion=Project::getCategories('ubicacion');
 $ciudades=array();
 for($i=0;$i<count($ubicacion);$i++){
 $ciudades['City']=$ubicacion[$i]['cities'];
 ?>
-<ul><a href="<!--? echo City::getLink($ciudades,  array('extra' => 'projects'));?>"><!? echo City::getName($ciudades);?--><!/a--><!/ul-->
-<!?php } ?->
+<ul><a href="<? echo City::getLink($ciudades,  array('extra' => 'projects'));?>"><? echo City::getName($ciudades);?></a></ul>
+<?php } ?>
 
-<!--/div>
+</div>
 
-</div-->
+</div>
 <div class="clear"></div>
 </div>
 
@@ -232,7 +246,7 @@ foreach($this->data['HighlightProjects'] as $v){
 	<h5 class="titulo_categoria"><a href="<?=Category::getLink($v)?>"><?=Category::getName($v)?></a></h5>
 <div class="misc_categoria"></div>
 <h3 class=titulo_proyecto><a href="<?= Project::getLink($v)?>"><?=$v['Project']['title']?></a></h3>
-<span class="autor">por <a href="<?=User::getLink($v)?>"><?=$v['User']['display_name']?></a></span>
+<span class="autor"><?php echo __("by");?><a href="<?=User::getLink($v)?>"><?=$v['User']['display_name']?></a></span>
 
 
 <p class="texto_proyecto"><?=$v['Project']['short_description']?></p>

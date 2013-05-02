@@ -104,12 +104,7 @@ class JqImgcropComponent extends Object {
         $cropped = $this->resizeThumbnailImage(WWW_ROOT.str_replace("/", DS,$thumbLocation),WWW_ROOT.str_replace("/", DS,$imageLocation),$w,$h,$x1,$y1,$scale);
         return $cropped;
     }
-    function createimage_step2(){
-        if (!empty($this->data)) {
-            $uploaded = $this->JqImgcrop->uploadImage($this->data['YourModel']['image'], '/img/upload/', 'prefix_');
-            $this->set('uploaded',$uploaded);
-        }
-    }
+
 }
 
 ?>

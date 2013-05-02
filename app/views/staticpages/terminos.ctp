@@ -1,7 +1,6 @@
 <?php
-$this->set('pageTitle' , 'Terminos de Uso' ) ;
-$this->set('title_for_layout' ,'Terminos de Uso' ) ;
-
+$this->set('pageTitle' , __("TERMS_CONDITIONS",$return = true));
+$this->set('title_for_layout' ,__("TERMS_CONDITIONS",$return = true));
 ?>
 
 

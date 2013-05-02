@@ -3,12 +3,12 @@
 <?php
 
 if(isset($javascript)):
-    echo $javascript->link('jquery.min.js');
-    echo $javascript->link('jquery.imgareaselect.pack.js');
+    echo $javascript->link('/js/imgareaselect/jquery.min.js');
+    echo $javascript->link('/js/imgareaselect/jquery.imgareaselect.pack.js');
 endif;
 
 ?>
-<div>
+<div id="loading">
     <?php echo $form->create('projects', array('action' => 'prueba', "enctype" => "multipart/form-data"));?>
     <?php
     echo $cropimage->createJavaScript($uploaded['imageWidth'],$uploaded['imageHeight'],151,151);
@@ -18,5 +18,31 @@ endif;
     echo $cropimage->createForm($uploaded["imagePath"], 151, 151);
     echo $form->submit('Done', array("id"=>"save_thumb"));
     echo $form->end('Upload');
+
     ?>
-</div>
+    <!--script type="text/javascript">
+        $(function(){
+            $("#projectsPruebaForm").submit(function(){
+                $.ajax({
+                    type:"POST",
+                    url:"groofi.bo/send.php",
+                    dataType:"html",
+                    data:$(this).serialize(),
+                    beforeSend:function(){
+                        $("#loading").show();
+                    },
+                    success:function(response){
+                        $("#response").html(response);
+                        $("#loading").hide();
+                    }
+
+                })
+                return false;
+            })
+
+        })
+    </script-->
+
+
+
+<div id="response"></div>

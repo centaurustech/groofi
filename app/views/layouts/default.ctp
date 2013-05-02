@@ -45,6 +45,7 @@ echo $this->Html->meta (array ('HTTP-EQUIV' => 'Expires', 'content' => date ('D,
 ?>
 <LINK REL='StyleSheet' HREF="/2012/style.css" TYPE="text/css" MEDIA='screen'>
 <link href='http://fonts.googleapis.com/css?family=Asap:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
 <script type="text/javascript" src="/js/panino/panino.js"></script>
 <script type="text/javascript" src="/js/panino/comunes.js"></script>
 <script type="text/javascript" src="/js/panino/transicion.js"></script>
@@ -115,7 +116,7 @@ ns.logueado=0;
 <div id="contenedor">
 
 <div id="header">
-  <a title="Groofi" href="/" id="logo"></a>
+  <a title="Groofi" href="/home" id="logo"></a>
   <div id="buscador">
 <div onclick="$('searchform').action='/search/projects/'+$('keybus').value;$('searchform').submit();" class="bot_search"></div>
 <form onsubmit="this.action='/search/projects/'+$('keybus').value" id="searchform" method="post" action="/search/projects" accept-charset="utf-8"><input id="keybus" autocomplete="off" class="input_buscador"  name="data[Search][q]" type="text"></form></div>
@@ -152,7 +153,7 @@ ns.logueado=0;
     <div class="line_separador"></div>
     <div onclick="window.location='<?= Router::url (array ('controller' => 'staticpages', 'action' => 'translate','?' => array('idioma' => 'es')))?>';" class="esp"></div>
     <div onclick="window.location='<?= Router::url (array ('controller' => 'staticpages', 'action' => 'translate','?' => array('idioma' => 'en')))?>';" class="ing"></div>
-    <div onclick="window.location='<?= Router::url (array ('controller' => 'staticpages', 'action' => 'translate','?' => array('idioma' => 'it')))?>';" class="ita"></div>
+    <!--div onclick="window.location='<?= Router::url (array ('controller' => 'staticpages', 'action' => 'translate','?' => array('idioma' => 'it')))?>';" class="ita"></div-->
     <div class="clear"></div>
     </div>
   <div id="logos"></div>
@@ -180,7 +181,7 @@ ns.logueado=0;
 <? }?>
 
 
-<a href="/discover/projects" class="ver_todas">Ver todas</a>
+<a href="/discover/projects" class="ver_todas"><?php echo __("SHOW_ALL");?></a>
 </div>
 
 
@@ -255,6 +256,20 @@ ns.logueado=0;
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
 
+jQuery(document).ready(function(){
+    jQuery('#boxUser').bind('click',function(){
+        var time = setTimeout(function(){
+            jQuery('#pass').bind('keypress', function(e) {
+                var code = (e.keyCode ? e.keyCode : e.which);
+                if(code == 13){
+                    jQuery('#flogsup').submit();
+                }
+            });
+        },100);
+
+    });
+})
+
 </script>
 <?if($this->Session->check('promptPrivate')){?>
 <script>
@@ -262,7 +277,7 @@ promptPrivate('<?=$this->Session->read('privateTitle')?>','<?=$this->Session->re
 </script>
 <form target="ifr" id="formprivate" action="/verifyPrivate" method="post"><input type="hidden" name="keyPrivate" id="keyPrivate"></form>
 <? $this->Session->delete('promptPrivate');} ?>
-<iframe name="ifr" style="width:0; height:o; position:absolute; top:-15000px;"></iframe>
+<iframe name="ifr" style="width:0; height:0; position:absolute; top:-15000px;"></iframe>
 
 </body>
 </html>

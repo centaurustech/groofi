@@ -79,7 +79,7 @@ $file = $this->Media->getImage('s50', $this->data['User']['avatar_file'], '/img/
 
 <div class="iconos_usuario"><img src="/2012/images/iconos_usuario.gif" width="20" height="41"></div>
 
-<div class="info_usuario" style="overflow:hidden;">Buenos Aires, Argentina <br><strong class="cyan"><a class="cyan" href="/contacto">Enviar Mensaje</a></strong></div>
+<div class="info_usuario" style="overflow:hidden;">Buenos Aires, Argentina <br><strong class="cyan"><a class="cyan" href="/contacto"><?php echo __("SEND_MESSAGE");?></a></strong></div>
 <div class="foto_usuario"><?=$file?></div>
 
 </div>

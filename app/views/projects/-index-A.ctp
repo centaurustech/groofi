@@ -135,11 +135,11 @@ foreach($this->data as $k=>  $v){
  
   <? } ?>
 	
-	<div style="height:190px;">
+	<div style="height:210px;">
 	<h5 class="titulo_categoria"><a href="<?=Category::getLink($v)?>"><?=Category::getName($v)?></a></h5>
 	<div class="misc_categoria"></div>
 <h3 class=titulo_proyecto><a href="<?= Project::getLink($v)?>"><?=$v['Project']['title']?></a></h3>
-<span class="autor">por <a href="<?=User::getLink($v)?>"><?=$v['User']['display_name']?></a></span>
+<span class="autor"><?php echo __("by");?><a href="<?=User::getLink($v)?>"><?=$v['User']['display_name']?></a></span>
 
 
 
