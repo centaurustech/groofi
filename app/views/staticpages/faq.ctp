@@ -1,8 +1,8 @@
     
 <?php /* @var $this ViewCC */ 
 
-$this->set('pageTitle' , 'Preguntas frecuentes' ) ;
-$this->set('title_for_layout' ,'Preguntas frecuentes' ) ;
+$this->set('pageTitle' , __("FAQ", true)) ;
+$this->set('title_for_layout' ,__("FAQ", true)) ;
 
 ?>
 

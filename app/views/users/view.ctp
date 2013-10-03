@@ -112,23 +112,24 @@ if ( !empty($data['Notifications']) && is_array($data['Notifications'])) {
 <span class="ui-icon site-icon auto-icon medium">&nbsp;</span>
 <p class="novedad_titulo">
 <?
+
 $replace=array(
 'Coment&oacute; una actualizaci&oacute;n -'.$this->Time->format($notification['Notification']['created'], '%A %d  ' . __('OF', true) . ' %B ' . __('OF', true) . ' %Y'),
 'Coment&oacute; un proyecto -'.$this->Time->format($notification['Notification']['created'], '%A %d  ' . __('OF', true) . ' %B ' . __('OF', true) . ' %Y'),
 sprintf(
-                'Agreg&oacute; una actualizaci&oacute;n a su proyecto -%s- %s', $this->Html->link(Project::getName($data), Project::getLink($data)), $this->Time->format($notification['Notification']['created'], '%A %d  ' . __('OF', true) . ' %B ' . __('OF', true) . ' %Y')
+                __("ADD_UPDATE_PROJECT", true).'-%s- %s', $this->Html->link(Project::getName($data), Project::getLink($data)), $this->Time->format($notification['Notification']['created'], '%A %d  ' . __('OF', true) . ' %B ' . __('OF', true) . ' %Y')
         ),
 sprintf(
-                'Public&oacute; su proyecto  %s -%s-', $this->Html->link(Project::getName($data), Project::getLink($data)), $this->Time->format($notification['Notification']['created'], '%A %d  ' . __('OF', true) . ' %B ' . __('OF', true) . ' %Y')
+                __("PUBLISH_PROJECT", true).'%s -%s-', $this->Html->link(Project::getName($data), Project::getLink($data)), $this->Time->format($notification['Notification']['created'], '%A %d  ' . __('OF', true) . ' %B ' . __('OF', true) . ' %Y')
         ),
 sprintf(
-                'Faltan 24 hs. para la finalizaci&oacute;n de su proyecto  %s -%s-', $this->Html->link(Project::getName($data), Project::getLink($data)), $this->Time->format($notification['Notification']['created'], '%A %d  ' . __('OF', true) . ' %B ' . __('OF', true) . ' %Y')
+                __("24_HS_LEFT ", true).'%s -%s-', $this->Html->link(Project::getName($data), Project::getLink($data)), $this->Time->format($notification['Notification']['created'], '%A %d  ' . __('OF', true) . ' %B ' . __('OF', true) . ' %Y')
         ),
 sprintf(
-                'Su proyecto %s ha finalizado. -%s-', $this->Html->link(Project::getName($data), Project::getLink($data)), $this->Time->format($notification['Notification']['created'], '%A %d  ' . __('OF', true) . ' %B ' . __('OF', true) . ' %Y')
+                __("YOUR_PROJECT", true).'to'.__("PROJECT_IS_FINISHED", true).'o. -%s-', $this->Html->link(Project::getName($data), Project::getLink($data)), $this->Time->format($notification['Notification']['created'], '%A %d  ' . __('OF', true) . ' %B ' . __('OF', true) . ' %Y')
         ),
 sprintf(
-                'Su proyecto %s ha finalizado. -%s-', $this->Html->link(Project::getName($data), Project::getLink($data)), $this->Time->format($notification['Notification']['created'], '%A %d  ' . __('OF', true) . ' %B ' . __('OF', true) . ' %Y')
+                __("YOUR_PROJECT", true).' %s'.__("PROJECT_IS_FINISHED", true).'-%s-', $this->Html->link(Project::getName($data), Project::getLink($data)), $this->Time->format($notification['Notification']['created'], '%A %d  ' . __('OF', true) . ' %B ' . __('OF', true) . ' %Y')
         )		
 		
 		
@@ -178,8 +179,9 @@ foreach ($projects as $key => $project) {
  if ($project) {
 ?>
 <div class="novedad">
-<div class="feed-content" style="float : right ; width : 720px ; margin-top:-15px;position:relative; z-index:2000">
-        
+
+<div class="feed-content" style="float : right ; width : 720px ; margin-top:-15px;position:relative; z-index:2000;">
+      <div style="display: block">
 <div id="project_<?= $project['Project']['id'] ?>" class="box box-project box-profile-project">
     <div class="thumb2">
 	<?if(Project::isEnabled($project)){?>
@@ -242,7 +244,10 @@ foreach ($projects as $key => $project) {
 			<a  class="delproy" href="/projects/delete/<?=$project['Project']['id']?>"><span class="delp"></span><?php echo __("DELETE");?></a>
 			<?}else{?>
 			<? if($owner){?>
-			<a  class="lanzaract" href="/project/<?=$project['Project']['id']?>/create-update"><span class="lanzact"></span><?php echo __("CREATE_UPDATE");?></a>
+
+                    <a  style="border-right: none!important;" class="editproy" href="/projects/edit/<?=$project['Project']['id']?>"><span class="editp"></span><?php echo __("edit");?></a>
+                    <a  class="lanzaract" href="/project/<?=$project['Project']['id']?>/create-update"><span class="lanzact"></span><?php echo __("CREATE_UPDATE");?></a>
+
 			<? } ?>
 			<? } ?>
 		<? } ?>
@@ -256,9 +261,9 @@ foreach ($projects as $key => $project) {
 
 
 
-              
-        
-</div><div class="clear"></div>
+    </div>
+
+    </div><div class="clear"></div>
     </div>
 <div class="clear"></div>
 </div>

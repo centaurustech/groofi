@@ -1,1 +1,3 @@
-<? echo String::insert($emailMessage , $emailData) ; ?>
+<? echo String::insert($emailMessage , $emailData) ;
+
+?>

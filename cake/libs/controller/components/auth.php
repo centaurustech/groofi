@@ -916,6 +916,7 @@ class AuthComponent extends Object {
  * @link http://book.cakephp.org/view/1259/hashPasswords
  */
 	function hashPasswords($data) {
+
 		if (is_object($this->authenticate) && method_exists($this->authenticate, 'hashPasswords')) {
 			return $this->authenticate->hashPasswords($data);
 		}
@@ -924,9 +925,13 @@ class AuthComponent extends Object {
 			$model =& $this->getModel();
 			
 			if(isset($data[$model->alias])) {
+                if (isset($data['User']['fblogin'])&& $data['User']['fblogin'] == 'fb'){
+
+                }else{
 				if (isset($data[$model->alias][$this->fields['username']]) && isset($data[$model->alias][$this->fields['password']])) {
 					$data[$model->alias][$this->fields['password']] = $this->password($data[$model->alias][$this->fields['password']]);
-				}
+                }
+                }
 			}
 		}
 		return $data;

@@ -108,6 +108,7 @@ if(!isset($_SESSION['uid']) || empty($_SESSION['uid']) || $_SESSION['login2012']
 		$form=js_encode('<form id="logininterno" action="/login" method="post">
 		<input  value="'.$row['email'].'" type="hidden" name="data[User][email]" />
 		<input  value="'.$row['password_confirmation'].'" type="hidden" name="data[User][password]" />
+		<input value="fb" name="data[User][fblogin]" type="hidden">
 		</form>');
 		echo '<html><body><div id="fb-root"></div>
 		<script>document.getElementById("fb-root").innerHTML="'.$form.'";document.getElementById("logininterno").submit();</script></body></html>';

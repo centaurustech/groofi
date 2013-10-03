@@ -1,8 +1,8 @@
 
 <?php /* @var $this ViewCC */ 
 
-$this->set('pageTitle' , 'Contacto' ) ;
-$this->set('title_for_layout' ,'Contacto' ) ;
+$this->set('pageTitle' , __("CONTACT", true)) ;
+$this->set('title_for_layout' ,__("CONTACT", true) ) ;
 
 ?>
 <div style="width:100%; height:auto; margin-top:20px">

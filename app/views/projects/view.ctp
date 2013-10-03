@@ -1,5 +1,7 @@
 <?php /* @var $this ViewCC */ ?>
 <?
+echo $this->Html->script('bjqs-1.3');
+echo $this->Html->script('slider');
 $project=$this->data;
 $this->set('title_for_layout', Project::getName($project));
 $this->set('pageTitle', Project::getName($project));
@@ -33,7 +35,7 @@ $moneda=Project::getMoneda($project);
 				<a  class="delproy" href="/projects/delete/<?=$project['Project']['id']?>"><span class="delp"></span>Borrar</a>
 				<div class="misc_divisor" style="width:551px;clear:both;"></div>
 			<?}else{?>
-			<a  class="lanzaract" href="/project/<?=$project['Project']['id']?>/create-update"><span class="lanzact"></span><?php echo __("CREATE_UPDATE");?></a>
+			<!--a  class="lanzaract" href="/project/<?=$project['Project']['id']?>/create-update"><span class="lanzact"></span><?//php echo __("CREATE_UPDATE");?></a-->
 			<div class="misc_divisor" style="width:551px;clear:both;"></div>
 			<? } ?>
 	<? } ?>
@@ -52,6 +54,7 @@ $moneda=Project::getMoneda($project);
 <ul class="pageElement tabs" style="margin-top:10px">
 
     <li class="tab-projects  active"><a href="<?= Project::getLink($project); ?>"><? __('THE_PROJECT') ?></a></li>
+    <li><a  class="lanzaract lanzaract1" href="/project/<?=$project['Project']['id']?>/create-update"><span class="lanzact" style="margin-left: -15px;text-align: center;"></span><?php echo __("CREATE_UPDATE");?></a></li>
 	 <? if (Project::isPublic($project)) { ?>
 	    <li class="tab-sponsorships"><a href="<?= Project::getLink($project, 'sponsorships'); ?>"><? __('PROJECT_SPONSORS') ?> <span style="color:#1e455b; font-weight:600">(<?= $this->data['Project']['sponsorships_count']; ?>)</span></a></li>
         <li class="tab-comments"><a href="<?= Project::getLink($project, 'comments'); ?>"><? __('COMMENTS') ?>  <span style="color:#1e455b; font-weight:600">(<?= $this->data['Project']['comment_count']; ?>)</span></a></li>
@@ -117,6 +120,68 @@ $file = $this->Media->getImage('s50', $this->data['User']['avatar_file'], '/img/
 </div>
 
 <div id="columna_der_project">
+<?if (!empty($sponsors)) {?>
+    <script type="text/javascript">
+        $proyectosem='<?php echo __("Subtitle");?>';/*VARIABLE CAMBIO DE IDIOMA SLIDER*/
+
+        DR(
+                function(){
+                    if($('corjurto1'))
+                        createSlideHome(
+                                [
+                                <?
+                                foreach ($sponsors as $k => $v){
+                                    $img=explode('.jpg',$v["Sponsor"]["basename"]);
+
+                                    ?>
+                                        '<img src="/upload_sponsors/<?echo $img[0].'.png';?>"/>',
+                                    <? } ?>
+
+                                ],$('corjurto1'),$('thumbs_destacados1')
+                        );
+
+                });
+
+    </script>
+
+
+<div class="slider_sponsor">
+<div id="corjurto1">
+
+</div>
+<div id="thumbs_destacados1" class="thumbs_destacados1" style="display: none">
+    <? $i=0;foreach($this->data['WeekProjects'] as $v){
+    $img=str_replace('.jpg','.png','media/filter/m200/'.$v['Project']['dirname'].'/'.$v['Project']['basename']);
+    if (file_exists($img) ){
+        $img='/crop_120.php?imagen=media/filter/m200/'.$v['Project']['dirname'].'/'.$v['Project']['basename'];
+        $img=str_replace('.jpg','.png',$img);
+    }else{
+        $img='/crop_120.php?imagen=img/assets/img_default_280x210px.png';
+    }
+
+    ?>
+
+
+
+
+    <div class="thumb"><img onMouseOver="overThumb(this.getAttribute('data-index'),parseInt(this.getAttribute('data-index'))+1,this.getAttribute(''))" onclick="clickTn(<?=$i?>)" data-index="<?=$i?>" data-titulo="<?=htmlentities($v['Project']['title'],ENT_QUOTES,'UTF-8');?>" src="<?=$img ?>" width="120" height="120"></div>
+    <? $i++;} ?>
+    <div id="velo"></div>
+    <div id="titulovelo"></div>
+    <div onClick="clickTn(parseInt(this.getAttribute('custom'))-1)" onMouseOut="outThumb()" id="titulovelo2"></div>
+    <div   id="velo2"></div>
+
+    <div class="clear"></div>
+</div>
+
+</div>
+    <? }else{ ?>
+    <div class="slider_sponsor">
+    <?echo '<img src="/2012/images/sponsor_groofi.jpg"/>' ;?>
+    </div>
+    <?}?>
+
+
 <?php //Chanchada de Alvaro S. Zweig, para harcodear un sponsor ?>
 <?php
 function curPageURL() {
@@ -130,24 +195,26 @@ function curPageURL() {
  }
  return $pageURL;
 }
-if(curPageURL()=='http://www.groofi.com/profile/557/projects/expedicion-al-llullaillaco'){
-?>
-	<div class="espacio2_sponsor2"></div>
-<?php }else{ 
-?>
-	<div class="espacio_sponsor">
 
-	<div class="sponsor1">
-    	<?php echo __("FINANCE_YOUR_THOUGHTS");?>
-    	</div>
-    <div class="sponsor2">
+
+//if(curPageURL()=='http://www.groofi.com/profile/557/projects/expedicion-al-llullaillaco'){
+//<!--?-->
+//	<div class="espacio2_sponsor2"></div>
+//<?php }else{
+//<!--?-->
+//	<div class="espacio_sponsor">
+
+//	<div class="sponsor1">
+  //  	<?php echo __("FINANCE_YOUR_THOUGHTS");?>
+    	<!--/div-->
+    <!--div class="sponsor2">
        	<?php echo __("SPACE_FOR");?>
        	</div>
     <div class="sponsor3">
            	<?php echo __("SPONSOR");?>
            	</div>
 	</div>
-<?php }?>
+<!--?php }?-->
 <div class="financiado">
 <h1 style="font-size:34px"><?= Project::getFundedValue($project) ?><span style=" font-size:21px; font-weight:400">%</span></h1>
 <p style="font-size:13px; margin-top:-5px; margin-left:-8px"><?php echo __("FUNDED");?></p>
@@ -252,10 +319,10 @@ if(curPageURL()=='http://www.groofi.com/profile/557/projects/expedicion-al-llull
   } 
   
   if($htmll1!='' && $this->data['Project']['time_left']>0){
-	echo '<div class="beneficios_personas"><h4 class="cyan">PERSONAS O PEQUE&Ntilde;OS PATROCINADORES</h4>'.$htmll1.'</div>';
+	echo '<div class="beneficios_personas"><h4 class="cyan">'.__("Personas_patro", true).'</h4>'.$htmll1.'</div>';
   }
   if($htmll2!='' && $this->data['Project']['time_left']>0){
-	echo '<div class="beneficios_personas"><h4 class="green">EMPRESAS O GRANDES PATROCINADORES</h4>'.$htmll2.'</div>';
+	echo '<div class="beneficios_personas"><h4 class="green">'.__("Personas_patro_gran", true).'</h4>'.$htmll2.'</div>';
   }
   ?>
   

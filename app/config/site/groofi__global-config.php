@@ -6,8 +6,8 @@ $config['Email']['default'] = array(
         'port' => SMTP_PORT,
         'timeout' => SMTP_TIMEOUT,
         'host' => SMTP_HOST,
-        'username' => SMTP_USERNAME,
-        'password' => SMTP_PASSWORD
+        //'username' => SMTP_USERNAME,
+        //'password' => SMTP_PASSWORD
     ),
     'replyTo' => SMTP_REPLYTO,
     'from' => SMTP_FROM,

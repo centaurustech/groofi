@@ -130,8 +130,12 @@ switch ($project['Project']['status']) {
 
 
     <ul class="status-info info">
-        <li><b>Nombre y apelldo</b><?= User::getName($project); ?> [<a href="<?= User::getLink($project); ?>" target="_blank"><? __('VIEW_PROFILE') ?></a>] </li>
+        <li><b>Nombre y apellido</b><?= User::getName($project); ?> [<a href="<?= User::getLink($project); ?>" target="_blank"><? __('VIEW_PROFILE') ?></a>] </li>
         <li><b>email</b><?= $project['User']['email'] ?></li>
+        <li><b>Idioma del proyecto</b><?= $project['Project']['idioma'] ?></li>
+        <li><a  class="editproy" href="/projects/editprojects/<?=$project['Project']['id']?>/1"><span class="editp"></span>Editar</a></li>
+        <div class="link_sponsor"><a href="/projects/adminuploadimage/<?=$project['Project']['id'] ?>" >Agregar Imagen para Sponsor</a></div>
+
 
 
 <? if (!Project::isPublic($project)) { ?>

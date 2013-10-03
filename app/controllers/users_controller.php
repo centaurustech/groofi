@@ -21,8 +21,10 @@ class UsersController extends AppController {
                 )
         );
         parent::beforeFilter();
+        //$this->set('adminMenu', $this->_getAdminMenu());
 
     }
+
 
     function admin_logout() {
         $this->logout();
@@ -95,24 +97,29 @@ class UsersController extends AppController {
 
 
       function afterFacebookLogin(){
+
       //Logic to happen after successful facebook login.
       vd('logued in facebook complete');
       //$this->redirect('/custom_facebook_redirect');
       }
 
     function admin_login() {
+
         $this->set('error', false);
 
         if(!empty($this->data)) {
             if(!$this->Auth->login($this->data)) {
+
                 $this->set('error', true);
             }
         }
 
         if($this->Auth->user()) {
+
+
+
             $this->redirect($this->Auth->redirect());
         }
-
         $this->render('admin_login');
 
     }
@@ -154,11 +161,13 @@ class UsersController extends AppController {
 		}
 	}
 	function sincro(){
+
 		if(!isset($_SESSION['tmpdataFB']) || empty($_SESSION['tmpdataFB'])){
 			header("Location:/signup");
 			exit;
 		}
 		if(!empty($this->data) && $this->data['User']['sincronice']==1){
+
 			App::import('model', 'User');
 			$pp=new User();
 			$this->Auth->autoRedirect = false;
@@ -229,8 +238,8 @@ class UsersController extends AppController {
 		$this->render('add');
 	}
     function login() {
-		
-	
+
+
 		/*if(!empty($this->data)) {
 			$this->Auth->autoRedirect = false;
         	$this->Auth->login($this->data);
@@ -253,6 +262,7 @@ class UsersController extends AppController {
 		
         $this->set('error', false);
         if(true) {
+
             if(!empty($this->data) && @$this->data['User']['remember_me']) {
                 $cookie = array();
                 $cookie['email'] = $this->data['User']['email'];
@@ -261,6 +271,7 @@ class UsersController extends AppController {
                 unset($this->data['User']['remember_me']);
             }
         } elseif(!empty($this->data)) {
+
             $this->Auth->login($this->data);
         } elseif(empty($this->data)) {
             $cookie = $this->Cookie->read('Auth.User');
@@ -276,11 +287,13 @@ class UsersController extends AppController {
         }
 
         if(!empty($this->data) && !(bool) $this->Auth->user()) { // si auth user === false
+
             unset($this->data['User']['password']);
             $this->set('error', true);
         }
 
         if(!$this->RequestHandler->isAjax()) {
+
             if($this->Auth->user() && (!isset($_SESSION['VOLVER']) || empty($_SESSION['VOLVER']))) {
                 $this->redirect($this->Auth->redirect());
             }else if(isset($_SESSION['VOLVER']) && !empty($_SESSION['VOLVER'])){
@@ -607,12 +620,34 @@ class UsersController extends AppController {
 			$this->set('validationErrorsArray', $this->User->invalidFields());	
 		}
 		if($tab=='account' || isset($_POST['tab2'])){
-			 $this->render('edit2');	
+			 $this->render('edit2');
 		}
     }
 	
 
     function admin_index($filter=null, $type=null) {
+
+
+        if(isset($_GET['idioma'])){
+
+            $idioma = $_GET['idioma'];
+
+
+
+        switch ($idioma){
+            case "en": $new_idioma = "eng";
+                break;
+            case "es": $new_idioma = "esp";
+                break;
+            case "it": $new_idioma = "ita";
+                break;
+            default:  $new_idioma = "esp";
+        }
+        unset($_SESSION['idioma']);
+        $_SESSION['idioma'] = $new_idioma;
+            Configure::write('Config.language', $new_idioma);
+        $this->redirect('/admin');
+        }
 
         $this->data['User']['filter'] = $this->params['named']['filter'] = $filter . '_' . $type; // custom filter...
 
@@ -698,7 +733,10 @@ class UsersController extends AppController {
         $this->data['User']['password'] = $this->data['User']['password_confirmation'];
 
     }
+    function  mails($notification_id){
 
+        $this->requestAction(Router::url(array('controller' => 'mails', 'action' => 'email', 'admin' => false, $notification_id)));
+    }
 }
 
 ?>

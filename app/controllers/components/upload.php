@@ -178,8 +178,8 @@
 			// -- get some information about the file
 			$uploadSize = getimagesize($file['tmp_name']);
 			$uploadWidth  = $uploadSize[0];
-			$uploadHeight = $uploadSize[1];
-			$uploadType = $uploadSize[2];
+            $uploadHeight = $uploadSize[1];
+            $uploadType = $uploadSize[2];
 			
 			if ($uploadType != 1 && $uploadType != 2 && $uploadType != 3) {
 				$this->error ("File type must be GIF, PNG, or JPG to resize");

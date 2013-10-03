@@ -9,10 +9,12 @@ CKEDITOR.editorConfig = function( config ) {
 	// http://docs.ckeditor.com/#!/api/CKEDITOR.config
 
 	// The toolbar groups arrangement, optimized for two toolbar rows.
+    config.LinkBrowser = false ;
     config.resize_enabled = false;
     config.height = '150px';
     config.width = '845px';
     config.toolbar = 'Full';
+    config.enterMode = CKEDITOR.ENTER_BR;
 	config.toolbarGroups = [
 		{ name: 'clipboard',   groups: [ 'clipboard', 'undo' ] },
 		{ name: 'editing',     groups: [ 'find', 'selection', 'spellchecker' ] },

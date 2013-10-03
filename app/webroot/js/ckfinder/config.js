@@ -13,4 +13,10 @@ CKFinder.customConfig = function( config )
 	// config.uiColor = '#BDE31E';
 	// config.language = 'fr';
 	// config.removePlugins = 'basket';
+    /*FCKConfig.LinkBrowser = true ;
+    FCKConfig.ImageBrowser = true ;
+    FCKConfig.FlashBrowser = true ;
+    FCKConfig.LinkUpload = true ;
+    FCKConfig.ImageUpload = true ;
+    FCKConfig.FlashUpload = true ;*/
 };

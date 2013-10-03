@@ -155,6 +155,7 @@ foreach($this->data as $k=>  $v){
   </tr>
  
 </table>
+
 <img src="/2012/images/<?=$imgficha?>.gif" width="286" height="19">
 <div class="ext">
 <div class="bar" style="left:<?php $p=Project::getFundedValue($v)>100?100:Project::getFundedValue($v);echo -280-((-282/100)*$p) ?>px"></div>

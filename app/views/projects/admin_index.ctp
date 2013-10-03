@@ -1,3 +1,14 @@
+<!--div id="menuCntr">
+    <!--?
+    $authUser = true;
+
+    if (!empty($authUser) && !empty($adminMenu)) {
+        echo $modules->adminMenu($adminMenu);
+
+    }
+    $this->Js->buffer("$('ul#admin_menu').superfish({dropShadows : false});");
+    ?>
+</div-->
 <?
     echo $this->element('paginator/common');
     echo $this->element('paginator/filters');
@@ -24,21 +35,25 @@ if (!empty($this->data['results'])) {
 
 
     <table cellpadding="0" cellspacing="0">
-        <tr>
-            <th>&nbsp;</th>
-            <th><?php echo $this->Paginator->sort('Project.id'); ?></th>
-            <th><?php echo $this->Paginator->sort('Project.user_id'); ?></th>
+        <div class="propiedades_proyectos">
 
-            <th><?php echo $this->Paginator->sort('Project.category_id'); ?></th>
-            <th><?php echo $this->Paginator->sort('Project.title'); ?></th>
-            <th><?php echo $this->Paginator->sort('Project.created'); ?></th>
+            <li><?php echo $this->Paginator->sort('Project.id'); ?></li>
+            <li><?php echo $this->Paginator->sort('Project.title'); ?></li>
+            <li><?php echo $this->Paginator->sort('Project.category_id'); ?></li>
+            <li><?php echo $this->Paginator->sort('Project.user_id'); ?></li>
+            <li><?php echo $this->Paginator->sort('Project.created'); ?></li>
+            <li><?php echo $this->Paginator->sort('Descripción'); ?></li>
+        </div>
 
 
             <!--<th><?php __('Project.flags'); ?></th>-->
-            <th colspan="2" class="actions"><?php __('Actions'); ?></th>
-        </tr>
+            <li id="last" colspan="2" class="actions"><?php __('Actions'); ?></li>
+
         <?php
         $i = 0;
+    /*    echo '<pre>';
+    var_dump($this->data['results']);*/
+
         foreach ($this->data['results'] as $result):
 		    $class = null;
             if ($i++ % 2 == 0) {
@@ -48,11 +63,28 @@ if (!empty($this->data['results'])) {
             <tr<?php echo $class; ?>>
 
                 <td  width="250" class="public-period">
-                     <?= $this->element('projects/admin/project_status', array('result' => $result)); ?>   
+                     <?= $this->element('projects/admin/project_status', array('result' => $result)); ?>
                 </td>
 
-                <td colspan="5" class="info">
-                    <?= $this->element('projects/admin/project_info', array('result' => $result)); ?>
+                <td colspan="5" class="info info_nuevo">
+                    <!--?= $this->element('projects/admin/project_info', array('result' => $result)); ?-->
+                    <!--span><//?= $result['Project']['dirname'];?></span-->
+                    <div class="propiedades_proyectos_admin">
+                    <div class="thumb">
+                        <? $imagen_extension = explode('.',$result['Project']['basename'])?>
+                    <img style="display: block" src="/media/filter/s64/<?= $result['Project']['dirname'].'/'.$imagen_extension[0].'.png';?>" width="64" height="64">
+                    </div>
+                    <span><?= $result['Project']['id'];?></span>
+                    <span><?= $result['Project']['title'];?></span>
+                    <span><?= $result['Category']['name'];?></span>
+                    <span><?= $result['User']['display_name'];?></span>
+                    <span><?= $result['User']['created'];?></span>
+                    <span style="width: 250px"><?= $result['Project']['short_description'];?></span>
+
+                    </div>
+
+
+
 					<? if(!empty($result['Project']['videoid']) && !empty($result['Project']['videotype'])  && !empty($result['Project']['leading'])){
 					if($result['Project']['videotype']=='youtube')
 						echo '<div id="videocaso'.$result['Project']['id'].'"><p><h3 style="clear:both; color:#000; padding-top:10px">Video del caso:</h3><iframe width="400" height="225" src="http://www.youtube.com/embed/'.$result['Project']['videoid'].'" frameborder="0" allowfullscreen></iframe></p></div>';

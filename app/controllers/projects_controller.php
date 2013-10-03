@@ -8,9 +8,10 @@
 /**
  * @property Project $Project
  */
-
-
 class ProjectsController extends AppController {
+    var $helpers = array ('Session');
+
+    var $components = array ('Auth','Session');
 
     var $paginate = array (
         'direction' => 'DESC',
@@ -18,15 +19,12 @@ class ProjectsController extends AppController {
     );
 
     function beforeFilter () {
-
-
-
-
         if(isset($_SESSION['idioma']) && !empty($_SESSION['idioma'])){
             $idioma = $_SESSION['idioma'];
             Configure::write('Config.language', $idioma);
+
         }
-        $this->Auth->allow ('view', 'listing', 'index', 'cron_aboutToFinish', 'cron_Finished','verifyPrivate');
+        $this->Auth->allow ('view', 'listing', 'index', 'cron_aboutToFinish', 'cron_Finished','verifyPrivate','adminuploadimage', 'show_projects','editprojects','testcropadmin','general_search','search_category','delete_sponsor');
 		if (!$this->Auth->user() && $this->params['url']['url']=='projects/add') {
 			$_SESSION['VOLVER']='/projects/add';
 			header("Location:/signup");
@@ -90,23 +88,16 @@ class ProjectsController extends AppController {
         $base_categories = $this->Project->Category->generatetreelist (null, null, null, " - ");
         foreach ($base_categories as $key => $category) {
             $base_categories[$key] = __ ('CATEGORY_' . up ($category), true);
-
         }
-        /*$base_countries = $this->Project->Country->generatetreelist (null, null, null, " - ");
-        foreach ($base_countries as $key => $country) {
-            $base_countries[$key] = __ ('COUNTRY_' . up ($country), true);
-
-        }
-*/
         $this->set (compact ('base_money', 'base_categories', 'base_prizes'));
 
         parent::beforeRender ();
 
     }
 
-
     // PROJECT_APPROVED
     function admin_approve ($projectId=null, $paymentType=EXPRESSCHECKOUT) {
+
 
         $approveLevel = 'Project.status.accepted';
 
@@ -124,8 +115,26 @@ class ProjectsController extends AppController {
 
                 $this->data['Project']['payment_type'] = $paymentType;
 
+                $url_to = "media/filter/";
+
+                /*Todas las img se guardan con .png*/
+
+                $new_image_name = explode(".",$this->data['Project']['basename']);
+
+                foreach(Configure::read ('ImgSize.filter.image') as $key=>$value){
+                    $dir = new Folder($url_to.$value."/project/".$this->data['Project']['id'], true);
+                    if(is_dir($url_to.$value."/project/".$this->data['Project']['id'])){
+                        $img_path = new Folder($url_to.$value."/project/".$this->data['Project']['id']."/img/", true);
+                        $file = new File($url_to.$value."/project/tmp/img/".$new_image_name[0].".png", false, 0644);
+                        if ($file->exists()) {
+                            $file->copy($url_to.$value."/project/".$this->data['Project']['id']."/img" . DS . $file->name);
+                        }
+                    }
+                }
+
                 debug ($this->data);
 
+                $this->data['Project']['dirname'] = "project/".$this->data['Project']['id']."/img";
 
                 if ($this->Project->save ($this->data, false)) {
 
@@ -239,55 +248,27 @@ class ProjectsController extends AppController {
 		
 		$this->render ('admin_index');
     }
-    function createimage_step2(){
-
-
-
-    }
-    function createimage_step3(){
-
-
-    }
-
-    function prueba(){
-
-
-        if (!empty($this->data)) {
-            $uploaded = $this->JqImgcrop->uploadImage($this->data['projects']['image'], '/img/upload/', 'prefix_');
-            $this->set('uploaded',$uploaded);
-
-        }
-        $this->JqImgcrop->cropImage(151, $this->data['projects']['x1'], $this->data['projects']['y1'], $this->data['projects']['x2'], $this->data['projects']['y2'], $this->data['projects']['w'], $this->data['projects']['h'], $this->data['projects']['imagePath'], $this->data['projects']['imagePath']);
-
-
-
-
-    }
-
-
-
-
-
 
     function add ($offerId=false) {
+
         App::import('Vendor','upload');
         $this->loadModel('Country');
 
 
         $base_countries = $this->Country->find('all');
         $this->set (compact ('base_countries'));
-        $predefinido=0;
+		$predefinido=0;
 		if($this->Session->check('predefinido')){
 			$predefinido=1;
 			$pred=$this->Session->read('predefinido');
 			
 		}
-
+				
 		if($predefinido){
 			unset($this->Project->validate['file']);
 			if(!$this->data){
 				$_POST['data']['Project']['title']=$pred['title'];
-                $_POST['data']['Project']['category_id']=$pred['category_id'];
+				$_POST['data']['Project']['category_id']=$pred['category_id'];
 				$_POST['data']['Project']['description']=$pred['description'];
 				$_POST['data']['Project']['motivation']=$pred['motivation'];
 				$_POST['data']['Project']['short_description']=$pred['short_description'];
@@ -301,7 +282,8 @@ class ProjectsController extends AppController {
 			}
 		}
 		
-
+		
+		
 
         if ($offerId) {
             $offer = $this->Project->Offer->getViewData ($offerId);
@@ -314,7 +296,6 @@ class ProjectsController extends AppController {
             }
         }
 
-
         if ($this->data) {
 
             $this->data['Project'] = am ($this->data['Project'], Configure::read ('Project.status.proposal')); // set project status as proposal
@@ -323,7 +304,6 @@ class ProjectsController extends AppController {
             $hasLink = count (array_unique (Set::extract ('/Link/link', $this->data))) > 1; //user has filled any link ?
             //$hasPrize = count (array_unique (Set::extract ('/Prize/value', $this->data))) > 1; //user has filled any prize ?
 			$hasPrize=isset($_POST['data']['Prize']);
-
 			
 			if( ($this->data['Project']['private_pass']!=$this->data['Project']['private_pass2'] || empty($this->data['Project']['private_pass']))  &&  $this->data['Project']['private']=='1'){
 				if(($this->data['Project']['private_pass']!=$this->data['Project']['private_pass2'])){
@@ -344,7 +324,12 @@ class ProjectsController extends AppController {
             $invalid = $invalid || !$hasLink || !$hasPrize || $privatepassko;
 
 
-			
+            $cambio_path_image= str_replace('\\','/',WWW_ROOT);
+            $this->data['Project']['dirname']='project/tmp/img';
+            $this->data['Project']['basename']=$_POST['data']['Project']['country'];
+            $this->data['Project']['file']=$cambio_path_image.'media/transfer/project/tmp/img/'.$_POST['data']['Project']['country'];
+/*echo '<pre>';
+var_dump($this->data);die;*/
             if ($this->Project->saveAll ($this->data, array ('validate' => 'only')) && !$invalid) {
 
                 $this->Project->saveAll ($this->data);
@@ -355,8 +340,9 @@ class ProjectsController extends AppController {
 
 
                 if ($this->Project->id) {
-					if($predefinido && isset($pred['foto']) && strlen($pred['foto'])>4 && (!isset($_FILES['data']['name']['Project']['file']) || $_FILES['data']['name']['Project']['file']=='') )
-                    {
+
+
+					if($predefinido && isset($pred['foto']) && strlen($pred['foto'])>4 && (!isset($_FILES['data']['name']['Project']['file']) || $_FILES['data']['name']['Project']['file']=='') ){
 
 						$picname='____'.md5(time()).rand(0,99999).'.png';
 						$this->data['Project']['dirname']='project/'.$this->Project->id.'/img';
@@ -380,13 +366,9 @@ class ProjectsController extends AppController {
                         $this->request->$_FILES['data']['name']['Project']['file'] = $this->upload($this->request->$_FILES['data']['name']['Project']['file']);
                         $this->Image->copia_optimizada('media/filter/l560/project/'.$this->Project->id.'/img',280,600);
                         $this->Image->borrar_tmp();
-                    }else{
-
-                        $this->request->$_FILES['data']['name']['Project']['file'] = "";
-
 					}
-
-
+					
+					
 
                     if (!$this->Project->User->Notification->add (//PROJECT_PENDING_APPROVE
                                     'PROJECT_PENDING_APPROVE'
@@ -424,29 +406,651 @@ class ProjectsController extends AppController {
         $this->set ('offerId', $offerId);
 		  $mas=array();
 		 if($this->data && $this->data['Project']['user_id']) {
-			 if($privatepassko){
+			 if($privatepassko==1){
 				 $mas=array('private'=>$mjepass);
+
 			 }
-			 
-			$this->set('validationErrorsArray', array_merge($mas,$this->Project->invalidFields()));
-			
-			
+			 if(isset($mas)&& !empty($mas)){
+                 $this->set('validationErrorsArray', array_merge($mas,$this->Project->invalidFields()));
+             }
+
+			/*echo '<pre>';
+			var_dump($mas);die;*/
 		 }
-
-
-        if (!empty($this->data)) {
-            $uploaded = $this->JqImgcrop->uploadImage($this->data['projects']['image'], '/img/upload/', 'prefix_');
-            $this->set('uploaded',$uploaded);
-
-        }
-        $this->JqImgcrop->cropImage(151, $this->data['projects']['x1'], $this->data['projects']['y1'], $this->data['projects']['x2'], $this->data['projects']['y2'], $this->data['projects']['w'], $this->data['projects']['h'], $this->data['projects']['imagePath'], $this->data['projects']['imagePath']);
-
 		 
     }
 
+    function testcrop(){
+
+
+        /*
+        * Copyright (c) 2008 http://www.webmotionuk.com / http://www.webmotionuk.co.uk
+        * "Jquery image upload & crop for php"
+        * Date: 2008-11-21
+        * Ver 1.0
+        * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+        * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+        *
+        * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+        * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+        * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+        * IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+        * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+        * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+        * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+        * STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
+        * THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        *
+        * http://www.opensource.org/licenses/bsd-license.php
+        */
+#########################################################################################################
+# CONSTANTS																								#
+# You can alter the options below																		#
+#########################################################################################################
+        //$_FILES['data']['name']['Project']['file'] = $_FILES;
+
+        //var_dump($_FILES);
+        if (isset($_GET['s'])&& $_GET['s']==1){
+            $upload_dir = "../webroot/upload_sponsors";
+        }
+         				else{
+                $upload_dir = "../webroot/media/transfer/project/tmp/img";
+
+                         }// The directory for the images to be saved in
+        $upload_path = $upload_dir."/";				// The path to where the image will be saved
+//$image_handling_file = "vendors/crop/image_handling.php"; // The location of the file that will handle the upload and resizing (RELATIVE PATH ONLY!)
+        $large_image_prefix = "resize_"; 			// The prefix name to large image
+        $thumb_image_prefix = "thumbnail_";			// The prefix name to the thumb image
+        $large_image_name = $large_image_prefix.$_SESSION['random_key'];     // New name of the large image (append the timestamp to the filename)
+        $thumb_image_name = $thumb_image_prefix.$_SESSION['random_key'];     // New name of the thumbnail image (append the timestamp to the filename)
+        $max_file = "1"; 							// Maximum file size in MB
+        $max_width = "570";							// Max width allowed for the large image
+        $thumb_width = "150";						// Width of thumbnail image
+        $thumb_height = "130";						// Height of thumbnail image
+// Only one of these image types should be allowed for upload
+        $allowed_image_types = array('image/pjpeg'=>"jpg",'image/jpeg'=>"jpg",'image/jpg'=>"jpg",'image/png'=>"png",'image/x-png'=>"png",'image/gif'=>"gif");
+        $allowed_image_ext = array_unique($allowed_image_types); // Do not change this
+        $image_ext = "";
+        foreach ($allowed_image_ext as $mime_type => $ext) {
+            $image_ext.= strtoupper($ext)." ";
+        }
+
+
+##########################################################################################################
+# IMAGE FUNCTIONS																						 #
+# You do not need to alter these functions																 #
+##########################################################################################################
+        function resizeImage($image,$width,$height,$scale) {
+            $image_data = getimagesize($image);
+            $imageType = image_type_to_mime_type($image_data[2]);
+            $newImageWidth = ceil($width * $scale);
+            $newImageHeight = ceil($height * $scale);
+            $newImage = imagecreatetruecolor($newImageWidth,$newImageHeight);
+            switch($imageType) {
+                case "image/gif":
+                    $source=imagecreatefromgif($image);
+                    break;
+                case "image/pjpeg":
+                case "image/jpeg":
+                case "image/jpg":
+                    $source=imagecreatefromjpeg($image);
+                    break;
+                case "image/png":
+                case "image/x-png":
+                    $source=imagecreatefrompng($image);
+                    break;
+            }
+            imagecopyresampled($newImage,$source,0,0,0,0,$newImageWidth,$newImageHeight,$width,$height);
+
+            switch($imageType) {
+                case "image/gif":
+                    imagegif($newImage,$image);
+                    break;
+                case "image/pjpeg":
+                case "image/jpeg":
+                case "image/jpg":
+                    imagejpeg($newImage,$image,90);
+                    break;
+                case "image/png":
+                case "image/x-png":
+                    imagepng($newImage,$image);
+                    break;
+            }
+
+            chmod($image, 0777);
+            return $image;
+        }
+//You do not need to alter these functions
+        function resizeThumbnailImage($thumb_image_name, $image, $width, $height, $start_width, $start_height, $scale){
+            list($imagewidth, $imageheight, $imageType) = getimagesize($image);
+            $imageType = image_type_to_mime_type($imageType);
+
+            $newImageWidth = ceil($width * $scale);
+            $newImageHeight = ceil($height * $scale);
+            $newImage = imagecreatetruecolor($newImageWidth,$newImageHeight);
+            switch($imageType) {
+                case "image/gif":
+                    $source=imagecreatefromgif($image);
+                    break;
+                case "image/pjpeg":
+                case "image/jpeg":
+                case "image/jpg":
+                    $source=imagecreatefromjpeg($image);
+                    break;
+                case "image/png":
+                case "image/x-png":
+                    $source=imagecreatefrompng($image);
+                    break;
+            }
+            imagecopyresampled($newImage,$source,0,0,$start_width,$start_height,$newImageWidth,$newImageHeight,$width,$height);
+            switch($imageType) {
+                case "image/gif":
+                    imagegif($newImage,$thumb_image_name);
+                    break;
+                case "image/pjpeg":
+                case "image/jpeg":
+                case "image/jpg":
+                    imagejpeg($newImage,$thumb_image_name,90);
+                    break;
+                case "image/png":
+                case "image/x-png":
+                    imagepng($newImage,$thumb_image_name);
+                    break;
+            }
+            chmod($thumb_image_name, 0777);
+            return $thumb_image_name;
+        }
+//You do not need to alter these functions
+        function getHeight($image) {
+            $size = getimagesize($image);
+            $height = $size[1];
+            return $height;
+        }
+//You do not need to alter these functions
+        function getWidth($image) {
+            $size = getimagesize($image);
+            $width = $size[0];
+            return $width;
+        }
+
+//Image Locations
+        $large_image_location = $upload_path.$large_image_name;
+        $thumb_image_location = $upload_path.$thumb_image_name;
+
+
+//Create the upload directory with the right permissions if it doesn't exist
+        if(!is_dir($upload_dir)){
+            mkdir($upload_dir, 0777);
+            chmod($upload_dir, 0777);
+        }
+
+
+        error_reporting (E_ALL ^ E_NOTICE);
+        /*
+        * Copyright (c) 2008 http://www.webmotionuk.com / http://www.webmotionuk.co.uk
+        * "Jquery image upload & crop for php"
+        * Date: 2008-11-21
+        * Ver 1.0
+        * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+        * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+        *
+        * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+        * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+        * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+        * IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+        * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+        * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+        * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+        * STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
+        * THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        *
+        * http://www.opensource.org/licenses/bsd-license.php
+        */
+#################################################################################################
+#	IMAGE FUNCTIONS FILE  - Adjust directory as required									   	#
+#	Please also adjust the directory to this file in the "index.php" page						#
+        //include("vendors/crop/image_functions.php"); 									#
+#################################################################################################
+
+########################################################
+#	UPLOAD THE IMAGE								   #
+########################################################
+        if ($_POST["upload"]=="Upload") {
+            //Get the file information
+            $userfile_name = $_FILES['image']['name'];
+            $userfile_tmp = $_FILES['image']['tmp_name'];
+            $userfile_size = $_FILES['image']['size'];
+            $userfile_type = $_FILES['image']['type'];
+            $filename = basename($_FILES['image']['name']);
+            $file_ext = strtolower(substr($filename, strrpos($filename, '.') + 1));
+
+            //Only process if the file is a JPG and below the allowed limit
+            if((!empty($_FILES["image"])) && ($_FILES['image']['error'] == 0)) {
+
+                foreach ($allowed_image_types as $mime_type => $ext) {
+                    //loop through the specified image types and if they match the extension then break out
+                    //everything is ok so go and check file size
+                    if($file_ext==$ext && $userfile_type==$mime_type){
+                        $error = "";
+                        break;
+                    }else{
+                        $error = "Only <strong>".$image_ext."</strong> images accepted for upload<br />";
+                    }
+                }
+                //check if the file size is above the allowed limit
+                if ($userfile_size > ($max_file*3048576)) {
+                    $error.= "Images must be under ".$max_file."MB in size";
+                }
+
+            }else{
+                $error= "Please select an image for upload";
+            }
+            //Everything is ok, so we can upload the image.
+            if (strlen($error)==0){
+
+                if (isset($_FILES['image']['name'])){
+                    //this file could now has an unknown file extension (we hope it's one of the ones set above!)
+                    $large_image_location = $large_image_location.".".$file_ext;
+                    $thumb_image_location = $thumb_image_location.".".$file_ext;
+
+                    //put the file ext in the session so we know what file to look for once its uploaded
+                    if($_SESSION['user_file_ext']!=$file_ext){
+                        $_SESSION['user_file_ext']="";
+                        $_SESSION['user_file_ext']=".".$file_ext;
+                    }
+
+                    move_uploaded_file($userfile_tmp, $large_image_location);
+                    chmod($large_image_location, 0777);
+
+                    $width = getWidth($large_image_location);
+                    $height = getHeight($large_image_location);
+                    //Scale the image if it is greater than the width set above
+                    if ($width > $max_width){
+                        $scale = $max_width/$width;
+                        $uploaded = resizeImage($large_image_location,$width,$height,$scale);
+                    }else{
+                        $scale = 1;
+                        $uploaded = resizeImage($large_image_location,$width,$height,$scale);
+                    }
+                    //Delete the thumbnail file so the user can create a new one
+                    if (file_exists($thumb_image_location)) {
+                        unlink($thumb_image_location);
+                    }
+                    $json = array('regular' => array("ubicacion"=>$large_image_location,"width"=>getWidth($large_image_location), "height"=>getHeight($large_image_location)),'thumbs' => array("ubicacion"=>$thumb_image_location,"width"=>getWidth($thumb_image_location), "height"=>getHeight($thumb_image_location)));
+                    echo json_encode($json);
+
+                    //echo "success|".$large_image_location."|".getWidth($large_image_location)."|".getHeight($large_image_location)."|".$thumb_image_location;
+                }
+            }else{
+                echo "error|".$error;
+            }
+        }
+
+########################################################
+#	CREATE THE THUMBNAIL							   #
+########################################################
+        if ($_POST["save_thumb"]=="Save Thumbnail") {
+
+            //Get the new coordinates to crop the image.
+            $x1 = $_POST["x1"];
+            $y1 = $_POST["y1"];
+            $x2 = $_POST["x2"];
+            $y2 = $_POST["y2"];
+            $w = $_POST["w"];
+            $h = $_POST["h"];
+            //Scale the image to the thumb_width set above
+            $large_image_location = $large_image_location.$_SESSION['user_file_ext'];
+            $thumb_image_location = $thumb_image_location.$_SESSION['user_file_ext'];
+            $scale = $thumb_width/$w;
+            if (isset($_POST['s'])&& $_POST['s']==1){
+
+
+                $cropped1 = resizeThumbnailImage('../webroot/upload_sponsors/'.$thumb_image_prefix.$_SESSION['random_key'].'.png', $large_image_location,280,210,$x1,$y1,1);
+
+            }else{
+            $cropped = resizeThumbnailImage($thumb_image_location, $large_image_location,$w,$h,$x1,$y1,$scale);
+            $cropped1 = resizeThumbnailImage('../webroot/media/filter/l280/project/tmp/img/'.$thumb_image_prefix.$_SESSION['random_key'].'.png', $large_image_location,280,210,$x1,$y1,1);
+            $cropped2 = resizeThumbnailImage('../webroot/media/filter/l560/project/tmp/img/'.$thumb_image_prefix.$_SESSION['random_key'].'.png', $large_image_location,560,420,$x1,$y1,1);
+            $cropped3 = resizeThumbnailImage('../webroot/media/filter/m156/project/tmp/img/'.$thumb_image_prefix.$_SESSION['random_key'].'.png', $large_image_location,156,104,$x1,$y1,1);
+            $cropped4 = resizeThumbnailImage('../webroot/media/filter/m188/project/tmp/img/'.$thumb_image_prefix.$_SESSION['random_key'].'.png', $large_image_location,188,141,$x1,$y1,1);
+            $cropped5 = resizeThumbnailImage('../webroot/media/filter/m200/project/tmp/img/'.$thumb_image_prefix.$_SESSION['random_key'].'.png', $large_image_location,200,200,$x1,$y1,1);
+            $cropped6 = resizeThumbnailImage('../webroot/media/filter/s30/project/tmp/img/'.$thumb_image_prefix.$_SESSION['random_key'].'.png', $large_image_location,30,30,$x1,$y1,1);
+            $cropped7 = resizeThumbnailImage('../webroot/media/filter/s31/project/tmp/img/'.$thumb_image_prefix.$_SESSION['random_key'].'.png', $large_image_location,31,31,$x1,$y1,1);
+            $cropped8 = resizeThumbnailImage('../webroot/media/filter/s50/project/tmp/img/'.$thumb_image_prefix.$_SESSION['random_key'].'.png', $large_image_location,50,50,$x1,$y1,1);
+            $cropped9 = resizeThumbnailImage('../webroot/media/filter/s64/project/tmp/img/'.$thumb_image_prefix.$_SESSION['random_key'].'.png', $large_image_location,64,64,$x1,$y1,1);
+            }
+
+            echo "success|".$large_image_location."|".$thumb_image_location;
+            $_SESSION['random_key']= "";
+            $_SESSION['user_file_ext']= "";
+        }
+
+#####################################################
+#	DELETE BOTH IMAGES								#
+#####################################################
+        if ($_POST['a']=="delete" && strlen($_POST['large_image'])>0 && strlen($_POST['thumbnail_image'])>0){
+//get the file locations
+            $large_image_location = $_POST['large_image'];
+            $thumb_image_location = $_POST['thumbnail_image'];
+            if (file_exists($large_image_location)) {
+                unlink($large_image_location);
+            }
+            if (file_exists($thumb_image_location)) {
+                unlink($thumb_image_location);
+            }
+            echo "success|Files have been deleted";
+        }
+        $this->autoRender=false;
+
+    }
+
+    function testcropadmin(){
+
+
+        /*
+        * Copyright (c) 2008 http://www.webmotionuk.com / http://www.webmotionuk.co.uk
+        * "Jquery image upload & crop for php"
+        * Date: 2008-11-21
+        * Ver 1.0
+        * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+        * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+        *
+        * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+        * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+        * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+        * IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+        * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+        * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+        * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+        * STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
+        * THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        *
+        * http://www.opensource.org/licenses/bsd-license.php
+        */
+#########################################################################################################
+# CONSTANTS																								#
+# You can alter the options below																		#
+#########################################################################################################
+        //$_FILES['data']['name']['Project']['file'] = $_FILES;
+
+        //var_dump($_FILES);
+
+            $upload_dir = "../webroot/upload_sponsors";
+
+        $upload_path = $upload_dir."/";				// The path to where the image will be saved
+//$image_handling_file = "vendors/crop/image_handling.php"; // The location of the file that will handle the upload and resizing (RELATIVE PATH ONLY!)
+        $large_image_prefix = "resize_"; 			// The prefix name to large image
+        $thumb_image_prefix = "thumbnail_";			// The prefix name to the thumb image
+        $large_image_name = $large_image_prefix.$_SESSION['random_key'];     // New name of the large image (append the timestamp to the filename)
+        $thumb_image_name = $thumb_image_prefix.$_SESSION['random_key'];     // New name of the thumbnail image (append the timestamp to the filename)
+        $max_file = "1"; 							// Maximum file size in MB
+        $max_width = "336";							// Max width allowed for the large image
+        $thumb_width = "150";						// Width of thumbnail image
+        $thumb_height = "100";						// Height of thumbnail image
+// Only one of these image types should be allowed for upload
+        $allowed_image_types = array('image/pjpeg'=>"jpg",'image/jpeg'=>"jpg",'image/jpg'=>"jpg",'image/png'=>"png",'image/x-png'=>"png",'image/gif'=>"gif");
+        $allowed_image_ext = array_unique($allowed_image_types); // Do not change this
+        $image_ext = "";
+        foreach ($allowed_image_ext as $mime_type => $ext) {
+            $image_ext.= strtoupper($ext)." ";
+        }
+
+
+##########################################################################################################
+# IMAGE FUNCTIONS																						 #
+# You do not need to alter these functions																 #
+##########################################################################################################
+        function resizeImage($image,$width,$height,$scale) {
+            $image_data = getimagesize($image);
+            $imageType = image_type_to_mime_type($image_data[2]);
+            $newImageWidth = ceil($width * $scale);
+            $newImageHeight = ceil($height * $scale);
+            $newImage = imagecreatetruecolor($newImageWidth,$newImageHeight);
+            switch($imageType) {
+                case "image/gif":
+                    $source=imagecreatefromgif($image);
+                    break;
+                case "image/pjpeg":
+                case "image/jpeg":
+                case "image/jpg":
+                    $source=imagecreatefromjpeg($image);
+                    break;
+                case "image/png":
+                case "image/x-png":
+                    $source=imagecreatefrompng($image);
+                    break;
+            }
+            imagecopyresampled($newImage,$source,0,0,0,0,$newImageWidth,$newImageHeight,$width,$height);
+
+            switch($imageType) {
+                case "image/gif":
+                    imagegif($newImage,$image);
+                    break;
+                case "image/pjpeg":
+                case "image/jpeg":
+                case "image/jpg":
+                    imagejpeg($newImage,$image,90);
+                    break;
+                case "image/png":
+                case "image/x-png":
+                    imagepng($newImage,$image);
+                    break;
+            }
+
+            chmod($image, 0777);
+            return $image;
+        }
+//You do not need to alter these functions
+        function resizeThumbnailImage($thumb_image_name, $image, $width, $height, $start_width, $start_height, $scale){
+            list($imagewidth, $imageheight, $imageType) = getimagesize($image);
+            $imageType = image_type_to_mime_type($imageType);
+
+            $newImageWidth = ceil($width * $scale);
+            $newImageHeight = ceil($height * $scale);
+            $newImage = imagecreatetruecolor($newImageWidth,$newImageHeight);
+            switch($imageType) {
+                case "image/gif":
+                    $source=imagecreatefromgif($image);
+                    break;
+                case "image/pjpeg":
+                case "image/jpeg":
+                case "image/jpg":
+                    $source=imagecreatefromjpeg($image);
+                    break;
+                case "image/png":
+                case "image/x-png":
+                    $source=imagecreatefrompng($image);
+                    break;
+            }
+            imagecopyresampled($newImage,$source,0,0,$start_width,$start_height,$newImageWidth,$newImageHeight,$width,$height);
+            switch($imageType) {
+                case "image/gif":
+                    imagegif($newImage,$thumb_image_name);
+                    break;
+                case "image/pjpeg":
+                case "image/jpeg":
+                case "image/jpg":
+                    imagejpeg($newImage,$thumb_image_name,90);
+                    break;
+                case "image/png":
+                case "image/x-png":
+                    imagepng($newImage,$thumb_image_name);
+                    break;
+            }
+            chmod($thumb_image_name, 0777);
+            return $thumb_image_name;
+        }
+//You do not need to alter these functions
+        function getHeight($image) {
+            $size = getimagesize($image);
+            $height = $size[1];
+            return $height;
+        }
+//You do not need to alter these functions
+        function getWidth($image) {
+            $size = getimagesize($image);
+            $width = $size[0];
+            return $width;
+        }
+
+//Image Locations
+        $large_image_location = $upload_path.$large_image_name;
+        $thumb_image_location = $upload_path.$thumb_image_name;
+
+
+//Create the upload directory with the right permissions if it doesn't exist
+        if(!is_dir($upload_dir)){
+            mkdir($upload_dir, 0777);
+            chmod($upload_dir, 0777);
+        }
+
+
+        error_reporting (E_ALL ^ E_NOTICE);
+        /*
+        * Copyright (c) 2008 http://www.webmotionuk.com / http://www.webmotionuk.co.uk
+        * "Jquery image upload & crop for php"
+        * Date: 2008-11-21
+        * Ver 1.0
+        * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+        * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+        *
+        * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+        * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+        * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+        * IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+        * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+        * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+        * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+        * STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
+        * THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        *
+        * http://www.opensource.org/licenses/bsd-license.php
+        */
+#################################################################################################
+#	IMAGE FUNCTIONS FILE  - Adjust directory as required									   	#
+#	Please also adjust the directory to this file in the "index.php" page						#
+        //include("vendors/crop/image_functions.php"); 									#
+#################################################################################################
+
+########################################################
+#	UPLOAD THE IMAGE								   #
+########################################################
+        if ($_POST["upload"]=="Upload") {
+            //Get the file information
+            $userfile_name = $_FILES['image']['name'];
+            $userfile_tmp = $_FILES['image']['tmp_name'];
+            $userfile_size = $_FILES['image']['size'];
+            $userfile_type = $_FILES['image']['type'];
+            $filename = basename($_FILES['image']['name']);
+            $file_ext = strtolower(substr($filename, strrpos($filename, '.') + 1));
+
+            //Only process if the file is a JPG and below the allowed limit
+            if((!empty($_FILES["image"])) && ($_FILES['image']['error'] == 0)) {
+
+                foreach ($allowed_image_types as $mime_type => $ext) {
+                    //loop through the specified image types and if they match the extension then break out
+                    //everything is ok so go and check file size
+                    if($file_ext==$ext && $userfile_type==$mime_type){
+                        $error = "";
+                        break;
+                    }else{
+                        $error = "Only <strong>".$image_ext."</strong> images accepted for upload<br />";
+                    }
+                }
+                //check if the file size is above the allowed limit
+                if ($userfile_size > ($max_file*3048576)) {
+                    $error.= "Images must be under ".$max_file."MB in size";
+                }
+
+            }else{
+                $error= "Please select an image for upload";
+            }
+            //Everything is ok, so we can upload the image.
+            if (strlen($error)==0){
+
+                if (isset($_FILES['image']['name'])){
+                    //this file could now has an unknown file extension (we hope it's one of the ones set above!)
+                    $large_image_location = $large_image_location.".".$file_ext;
+                    $thumb_image_location = $thumb_image_location.".".$file_ext;
+
+                    //put the file ext in the session so we know what file to look for once its uploaded
+                    if($_SESSION['user_file_ext']!=$file_ext){
+                        $_SESSION['user_file_ext']="";
+                        $_SESSION['user_file_ext']=".".$file_ext;
+                    }
+
+                    move_uploaded_file($userfile_tmp, $large_image_location);
+                    chmod($large_image_location, 0777);
+
+                    $width = getWidth($large_image_location);
+                    $height = getHeight($large_image_location);
+                    //Scale the image if it is greater than the width set above
+                    if ($width > $max_width){
+                        $scale = $max_width/$width;
+                        $uploaded = resizeImage($large_image_location,$width,$height,$scale);
+                    }else{
+                        $scale = 1;
+                        $uploaded = resizeImage($large_image_location,$width,$height,$scale);
+                    }
+                    //Delete the thumbnail file so the user can create a new one
+                    if (file_exists($thumb_image_location)) {
+                        unlink($thumb_image_location);
+                    }
+                    $json = array('regular' => array("ubicacion"=>$large_image_location,"width"=>getWidth($large_image_location), "height"=>getHeight($large_image_location)),'thumbs' => array("ubicacion"=>$thumb_image_location,"width"=>getWidth($thumb_image_location), "height"=>getHeight($thumb_image_location)));
+                    echo json_encode($json);
+
+                    //echo "success|".$large_image_location."|".getWidth($large_image_location)."|".getHeight($large_image_location)."|".$thumb_image_location;
+                }
+            }else{
+                echo "error|".$error;
+            }
+        }
+
+########################################################
+#	CREATE THE THUMBNAIL							   #
+########################################################
+        if ($_POST["save_thumb"]=="Save Thumbnail") {
+
+            //Get the new coordinates to crop the image.
+            $x1 = $_POST["x1"];
+            $y1 = $_POST["y1"];
+            $x2 = $_POST["x2"];
+            $y2 = $_POST["y2"];
+            $w = $_POST["w"];
+            $h = $_POST["h"];
+            //Scale the image to the thumb_width set above
+            $large_image_location = $large_image_location.$_SESSION['user_file_ext'];
+            $thumb_image_location = $thumb_image_location.$_SESSION['user_file_ext'];
+            $scale = $thumb_width/$w;
 
 
 
+                $cropped1 = resizeThumbnailImage('../webroot/upload_sponsors/'.$thumb_image_prefix.$_SESSION['random_key'].'.png', $large_image_location,336,121,$x1,$y1,1);
+
+
+            echo "success|".$large_image_location."|".$thumb_image_location;
+            $_SESSION['random_key']= "";
+            $_SESSION['user_file_ext']= "";
+        }
+
+#####################################################
+#	DELETE BOTH IMAGES								#
+#####################################################
+        if ($_POST['a']=="delete" && strlen($_POST['large_image'])>0 && strlen($_POST['thumbnail_image'])>0){
+//get the file locations
+            $large_image_location = $_POST['large_image'];
+            $thumb_image_location = $_POST['thumbnail_image'];
+            if (file_exists($large_image_location)) {
+                unlink($large_image_location);
+            }
+            if (file_exists($thumb_image_location)) {
+                unlink($thumb_image_location);
+            }
+            echo "success|Files have been deleted";
+        }
+        $this->autoRender=false;
+        //$this->redirect(array('controller' => 'projects', 'action' => 'index', 'admin' => true));
+    }
 
     function associateWithPaypal ($projectId, $operation='set') {
         App::import ('Vendor', 'paypal');
@@ -744,7 +1348,30 @@ class ProjectsController extends AppController {
         $this->data['Projectpayments'] = $this->Projectpayment->find ('all', array ('conditions' => array ('Projectpayment.project_id' => $project_id)));
 
     }
+    function adminuploadimage($id_project){
 
+        $this->loadModel('Sponsor');
+        //App::import('model', 'Sponsor');
+        $this->set('Project', $this->Project->findById($id_project));
+
+        if ($this->data) {
+
+           // $this->Sponsor->saveAll();
+
+            if($this->Sponsor->saveAll($this->data)){
+
+                $this->redirect (Router::url (array ('controller' => 'projects', 'action' => 'adminuploadimage', $this->data['Sponsor']['id_project'])));
+
+            }
+
+        }
+
+        $show_sponsor = $this->Sponsor->find('all',array('conditions' => array('Sponsor.id_project'=> $id_project)));
+        $this->set('show_sponsor', $show_sponsor);
+
+
+
+    }
     function admin_projectBalance ($project_id) {
 
         App::import ('Vendor', 'paypal');
@@ -840,11 +1467,12 @@ class ProjectsController extends AppController {
 
     function edit ($id = null, $publish=false, $getData = false) {
 			
-			echo "aaaaasdasd";
+				
 		    App::import('model', 'Project');
 			$pp=new Project();
 			$datos=$pp->query("select * from projects where id=".$id);
-			if(!empty($datos[0]['projects']['basename'])){
+
+        	if(!empty($datos[0]['projects']['basename'])){
 				unset($this->Project->validate['file']);
 				$this->set ('yaHayImg', 1);
 				$img=str_replace('.jpg','.png','media/filter/l560/'.$datos[0]['projects']['dirname'].'/'.$datos[0]['projects']['basename']);
@@ -890,12 +1518,15 @@ class ProjectsController extends AppController {
 			
             if (empty ($this->data)) {
                 $this->pageError = array ('code' => 404);
-            } elseif ($this->data['Project']['enabled'] == 1 && $this->data['Project']['public'] == 1) { // if project exist and belongs to an auth user, check if it's editable
+            }/*elseif ($this->data['Project']['enabled'] != 1 && $this->data['Project']['public'] != 0) { // if project exist and belongs to an auth user, check if it's editable
+                $this->pageError = array ('code' => 404);
+            }*/
+            elseif ($this->data['Project']['public'] == 0) { // if project exist and belongs to an auth user, check if it's editable
                 $this->pageError = array ('code' => 404);
             } elseif ($this->data['Project']['enabled'] == 0) {
                 $this->pageError = array ('code' => 404);
             }
-			
+
 		
         } else {
 			
@@ -936,7 +1567,7 @@ class ProjectsController extends AppController {
             if ($publish) { // Wich validation set we will use ?
 			
                // $validData = $this->Project->publishValidation ($this->data);
-				
+
 				$data=$this->data;
 				$this->data['Project']['public'] = IS_PUBLIC;
         		$this->data['Project']['status'] = PROJECT_STATUS_PUBLISHED;
@@ -944,21 +1575,56 @@ class ProjectsController extends AppController {
         		$this->data['Project']['end_date'] = date('Y-m-d', strtotime("+{$data['Project']['project_duration']} days"));
 				$validData=$this->data;
             } else {
-                $validData = $this->Project->editValidation ($this->data);
+
+                $validData = $this->Project->editValidation2 ($this->data);
             }
 			if(empty($_POST['data']['Prize']) && !$getData){
 				  $this->Project->invalidate ('prize', __ ('AT_LEAST_ONE_PRIZE', true));
 				   $validData=0;
 				  
 			}
-			
-			
-			
-			
-			
+
+if($this->data['Project']['basename']!= $datos[0]['projects']['basename']){
+
+
+            $cambio_path_image= str_replace('\\','/',WWW_ROOT);
+  //          $this->data['Project']['dirname']='project/tmp/img';
+            $this->data['Project']['basename']=$_POST['data']['Project']['country'];
+            $this->data['Project']['file']=$cambio_path_image.'media/transfer/project/tmp/img/'.$_POST['data']['Project']['country'];
+}
+            //echo '<pre>';
+            //var_dump($this->data);
             if ($validData && !$privatepassko && !$no) {
+
+     //           $this->data['Project']['dirname'] = "project/".$this->data['Project']['id']."/img";
                 if ($this->Project->saveAll ($validData, array ('validate' => false))) {
+                    if($this->data['Project']['basename']!= $datos[0]['projects']['basename']){
+
+                        $url_to = "media/filter/";
+
+                    /*Todas las img se guardan con .png*/
+
+                    $new_image_name = explode(".",$this->data['Project']['basename']);
+
+                    foreach(Configure::read ('ImgSize.filter.image') as $key=>$value){
+                        $dir = new Folder($url_to.$value."/project/".$this->data['Project']['id'], true);
+                        if(is_dir($url_to.$value."/project/".$this->data['Project']['id'])){
+                            $img_path = new Folder($url_to.$value."/project/".$this->data['Project']['id']."/img/", true);
+                            $file = new File($url_to.$value."/project/tmp/img/".$new_image_name[0].".png", false, 0644);
+                            if ($file->exists()) {
+                                $file->copy($url_to.$value."/project/".$this->data['Project']['id']."/img" . DS . $file->name);
+                            }
+                        }
+                    }
+
+                    }
+
+
+
+
+
                     if ($publish) {
+
 						 $this->Session->write('sipublicado', 1);
                         $project = $this->Project->find (array ('Project.id' => $this->Project->id));
                         if (!$this->Project->User->Notification->add (
@@ -1014,28 +1680,357 @@ class ProjectsController extends AppController {
         );
 
         $this->set ('payPalURL', $this->Paypal->getUrl ('SetAuthFlowParam', $paypalResponse));
+
+
+        $mas=array();
+        if($this->data && $this->data['Project']['user_id']) {
+            if($privatepassko==1){
+                $mas=array('private'=>$mjepass);
+
+            }
+            if(isset($mas)&& !empty($mas)){
+                $this->set('validationErrorsArray', array_merge($mas,$this->Project->invalidFields()));
+            }
+
+            /*echo '<pre>';
+            var_dump($mas);die;*/
+        }
 		
-		
-		
-		
-		 if($this->data && $_POST['data']['Project']['user_id']) {
+		 /*if($this->data && $_POST['data']['Project']['user_id']) {
 			if($privatepassko){
 				 $mas=array('private'=>$mjepass);
 			 }
 			 if($no){
 				 $mas['funding_goal']='Debe escoger un valor entre 10 y 200000';
 			 }
-			
+
 			$this->set('validationErrorsArray', array_merge($mas,$this->Project->invalidFields()));
-		 }
+		 }*/
 		
 		
     }
-	
-	
-	
 
-    function index () { //DISCOVER
+
+    function editprojects ($id = null, $id_pro = null,$publish=false, $getData = false) {
+
+ if(isset($id_pro) &&  $id_pro==1){
+
+
+        App::import('model', 'Project');
+        $pp=new Project();
+        $datos=$pp->query("select * from projects where id=".$id);
+
+        if(!empty($datos[0]['projects']['basename'])){
+            unset($this->Project->validate['file']);
+            $this->set ('yaHayImg', 1);
+            $img=str_replace('.jpg','.png','media/filter/l560/'.$datos[0]['projects']['dirname'].'/'.$datos[0]['projects']['basename']);
+            if (file_exists($img) ){
+                $img='/comodo.php?imagen=media/filter/l560/'.$datos[0]['projects']['dirname'].'/'.$datos[0]['projects']['basename'];
+                $img=str_replace('.jpg','.png',$img);
+
+            }else{
+                $img='/comodo.php?imagen=img/assets/img_default_280x210px.png';
+            }
+            $this->set ('laim', $img);
+        }else{
+            $this->set ('yaHayImg', 0);
+            $this->set ('laim', '/comodo.php?imagen=img/assets/img_default_280x210px.png');
+        }
+
+
+
+        if ($getData) { // try to validate and save data directly.
+            $query['contain'] = array ('Prize', 'User', 'User.Link','Link'); //,'Prize'
+            $query['conditions'] = array (
+                'Project.user_id' => $this->Auth->user ('id'),
+                'Project.id' => $id,
+                'Project.enabled' => 1
+            );
+            $this->data = $this->Project->find ('first', $query);
+
+
+        }
+
+
+
+
+
+        if (empty ($this->data)) {
+            if ($id) {
+                $this->data = $this->Project->find ('first', array (
+                        'conditions' => array ('Project.id' => $id),
+                        'contain' => array ('Prize', 'User', 'User.Link','Link')
+                    )
+                );
+            }
+
+            if (empty ($this->data)) {
+                $this->pageError = array ('code' => 404);
+            }/*elseif ($this->data['Project']['enabled'] != 1 && $this->data['Project']['public'] != 0) { // if project exist and belongs to an auth user, check if it's editable
+                $this->pageError = array ('code' => 404);
+            }*/
+            elseif ($this->data['Project']['public'] == 0) { // if project exist and belongs to an auth user, check if it's editable
+                $this->pageError = array ('code' => 404);
+            } elseif ($this->data['Project']['enabled'] == 0) {
+                $this->pageError = array ('code' => 404);
+            }
+
+
+        } else {
+
+            /*if(!empty($this->data['Project']['basename'])){
+               unset($this->Project->validate['file'])	;
+            }*/
+            /*vd($this->Project->validate['file']);
+            exit;
+           */
+
+
+
+            $no=0;
+            if(empty($this->data[Project][funding_goal]) || $this->data[Project][funding_goal]<10 || $this->data[Project][funding_goal]>200000){
+                $no=1;
+            }
+
+
+            if( ($this->data['Project']['private_pass']!=$this->data['Project']['private_pass2'] || empty($this->data['Project']['private_pass']))  &&  $this->data['Project']['private']=='1'){
+                if(($this->data['Project']['private_pass']!=$this->data['Project']['private_pass2'])){
+                    $mjepass='La clave y su repetici&oacute;n no coinciden';
+                }
+                if( empty($this->data['Project']['private_pass'])){
+                    $mjepass='Debe definir una clave para los proyectos privados';
+                }
+                $privatepassko=1;
+            }else{
+                $privatepassko=0;
+            }
+
+            if($privatepassko || $no){$publish=0;}
+
+
+
+
+
+
+            if ($publish) { // Wich validation set we will use ?
+
+                // $validData = $this->Project->publishValidation ($this->data);
+
+                $data=$this->data;
+                $this->data['Project']['public'] = IS_PUBLIC;
+                $this->data['Project']['status'] = PROJECT_STATUS_PUBLISHED;
+                $this->data['Project']['puplish_date'] = date('Y-m-d');
+                $this->data['Project']['end_date'] = date('Y-m-d', strtotime("+{$data['Project']['project_duration']} days"));
+                $validData=$this->data;
+            } else {
+
+                $validData = $this->Project->editValidation2 ($this->data);
+            }
+            if(empty($_POST['data']['Prize']) && !$getData){
+                $this->Project->invalidate ('prize', __ ('AT_LEAST_ONE_PRIZE', true));
+                $validData=0;
+
+            }
+
+            if($this->data['Project']['basename']!= $datos[0]['projects']['basename']){
+
+
+                $cambio_path_image= str_replace('\\','/',WWW_ROOT);
+                //          $this->data['Project']['dirname']='project/tmp/img';
+                $this->data['Project']['basename']=$_POST['data']['Project']['country'];
+                $this->data['Project']['file']=$cambio_path_image.'media/transfer/project/tmp/img/'.$_POST['data']['Project']['country'];
+            }
+            //echo '<pre>';
+            //var_dump($this->data);
+            if ($validData && !$privatepassko && !$no) {
+
+                //           $this->data['Project']['dirname'] = "project/".$this->data['Project']['id']."/img";
+                if ($this->Project->saveAll ($validData, array ('validate' => false))) {
+                    if($this->data['Project']['basename']!= $datos[0]['projects']['basename']){
+
+                        $url_to = "media/filter/";
+
+                        /*Todas las img se guardan con .png*/
+
+                        $new_image_name = explode(".",$this->data['Project']['basename']);
+
+                        foreach(Configure::read ('ImgSize.filter.image') as $key=>$value){
+                            $dir = new Folder($url_to.$value."/project/".$this->data['Project']['id'], true);
+                            if(is_dir($url_to.$value."/project/".$this->data['Project']['id'])){
+                                $img_path = new Folder($url_to.$value."/project/".$this->data['Project']['id']."/img/", true);
+                                $file = new File($url_to.$value."/project/tmp/img/".$new_image_name[0].".png", false, 0644);
+                                if ($file->exists()) {
+                                    $file->copy($url_to.$value."/project/".$this->data['Project']['id']."/img" . DS . $file->name);
+                                }
+                            }
+                        }
+
+                    }
+
+
+
+
+
+                    if ($publish) {
+
+                        $this->Session->write('sipublicado', 1);
+                        $project = $this->Project->find (array ('Project.id' => $this->Project->id));
+                        if (!$this->Project->User->Notification->add (
+                            'PROJECT_CREATED'
+                            , $project
+                            , $this->Auth->user ('id')
+                        )
+                        ) {
+                            $this->log ('Error : notification not saved ', 'NOTIFICATIONS_LOG');
+                        } else {
+                            $this->requestAction (Router::url (array ('controller' => 'mails', 'action' => 'email', 'admin' => false, $this->Project->User->Notification->id)));
+                        }
+
+
+                        if (Project::belongsToOffer ($project)) { // ??
+                            $offer = $this->Project->Offer->getViewData ($project['Project']['offer_id']);
+
+                            if (!$this->Project->User->Notification->add (//OFFER_NEW_PROJECT
+                                'OFFER_NEW_PROJECT'
+                                , $this->Project->find (array ('Project.id' => $this->Project->id))
+                                , $this->Auth->user ('id')
+                                , $offer['Offer']['user_id']
+                            )
+                            ) {
+                                $this->log ('Error : notification not saved ', 'NOTIFICATIONS_LOG');
+                            } else {
+                                $this->requestAction (Router::url (array ('controller' => 'mails', 'action' => 'email', 'admin' => false, $this->Project->User->Notification->id)));
+                            }
+                        }
+                    }
+
+                    // send user to project pre/view
+                    $this->redirect (Router::url (array ('controller' => 'projects', 'action' => 'view', 'project' => Project::getSlug ($validData), 'user' => User::getSlug ($this->Auth->user ()))));
+                }
+            } else {
+                $this->Session->setFlash (__ (( $publish ? 'THIS_PROJECT_IS_NOT_VALID_IT_CAN_NOT_BE_PUBLISHED' : 'THE_PROJECT_COULD_NOT_BE_SAVED_PLEASE_TRY_AGAIN.'), true));
+            }
+        }
+
+
+        $this->set ('leadingProject', $this->Project->getLeading ());
+        App::import ('Vendor', 'paypal');
+        $this->Paypal = new Paypal();
+        $paypalResponse = $this->Paypal->hashCall ('SetAuthFlowParam', array (
+                'RETURNURL' => Router::url (array ('controller' => 'projects', 'action' => 'associateWithPaypal', $id, 'return'), true),
+                'CANCELURL' => Router::url (array ('controller' => 'projects', 'action' => 'associateWithPaypal', $id, 'cancel'), true),
+                'LOGOUTURL' => Router::url (array ('controller' => 'projects', 'action' => 'associateWithPaypal', $id, 'logout'), true),
+                'SERVICENAME0' => 'Name',
+                'SERVICEDEFREQ0' => 'Required',
+                'SERVICENAME1' => 'Email',
+                'SERVICEDEFREQ1' => 'Required',
+            )
+        );
+
+        $this->set ('payPalURL', $this->Paypal->getUrl ('SetAuthFlowParam', $paypalResponse));
+
+
+        $mas=array();
+        if($this->data && $this->data['Project']['user_id']) {
+            if($privatepassko==1){
+                $mas=array('private'=>$mjepass);
+
+            }
+            if(isset($mas)&& !empty($mas)){
+                $this->set('validationErrorsArray', array_merge($mas,$this->Project->invalidFields()));
+            }
+
+            /*echo '<pre>';
+            var_dump($mas);die;*/
+        }
+
+        /*if($this->data && $_POST['data']['Project']['user_id']) {
+           if($privatepassko){
+                $mas=array('private'=>$mjepass);
+            }
+            if($no){
+                $mas['funding_goal']='Debe escoger un valor entre 10 y 200000';
+            }
+
+           $this->set('validationErrorsArray', array_merge($mas,$this->Project->invalidFields()));
+        }*/
+
+
+    }
+    else {echo 'NO AUTORIZADO';
+    }
+        $this->render ('/projects/edit');
+
+
+}
+    function search_category(){/*Busqueda por categorias*/
+
+
+        if (isset ($this->params['pass'][0])) {
+
+            $baseUrl=array($this->params['pass'][0]);
+            //$this->loadModel ('Search');
+
+            //$this->paginate['conditions']['Project.id'] = $this->Search->customSearch ($this->params['search'], 'Project');
+            App::import('model', 'Project');
+
+
+            $category_info = $this->Project->Category->getFromSlug ($this->params['pass'][0]);
+            $this->paginate['conditions']['Project.category_id'] = @array_shift (Set::extract ('/Category/id', $category_info));
+
+
+            /*echo '<pre>';print_r($this->paginate);echo '</pre>';*/
+        }
+
+        $this->paginate['limit'] = 6;
+        $this->data = $this->paginate ('Project');
+
+        $this->set ('baseUrl', $baseUrl);
+
+        $this->paginate['conditions']['Project.idioma ='] = $_SESSION['idioma'];
+        $this->render ('index');
+    }
+
+    function general_search()/*Busqueda general layout*/
+    {
+
+    if (isset ($this->params['pass'][0])) {
+
+        $baseUrl=array($this->params['pass'][0]);
+        //$this->loadModel ('Search');
+
+        //$this->paginate['conditions']['Project.id'] = $this->Search->customSearch ($this->params['search'], 'Project');
+        App::import('model', 'Project');
+        $pp=new Project;
+        $dato=$pp->query("select id from projects where title like '%".$this->params['pass'][0]."%' or short_description like '%".$this->params['pass'][0]."%' or description like '%".$this->params['pass'][0]."%'");
+        //$dato=array(44,2);
+        $ids=array();
+        foreach($dato as $k=>$v)$ids[]=$v['projects']['id'];
+
+        $this->paginate['conditions']['Project.id']=$ids;
+
+
+        /*echo '<pre>';print_r($this->paginate);echo '</pre>';*/
+    }
+    $this->paginate['limit'] = 6;
+    $this->data = $this->paginate ('Project');
+
+    $this->set ('baseUrl', $baseUrl);
+    $this->paginate['conditions']['Project.idioma ='] = $_SESSION['idioma'];
+    $this->render ('index');
+}
+
+    function index ()/*Busqueda filtros especificos*/
+
+    {
+
+    //DISCOVER
+
+        $this->loadModel('Country');
+        $base_countries = $this->Country->getCountries($_SESSION['idioma']);
+        $this->set (compact ('base_countries'));
+
+
         $statuses = array (
             'most-popular' => __ ('MOST_POPULAR', true),
             'most-recent' => __ ('MOST_RECENT', true),
@@ -1047,6 +2042,7 @@ class ProjectsController extends AppController {
       /* if (isset ($this->params['search']) && empty ($this->params['search'])) {
             $this->redirect ('/projects', 403);
         }*/
+
 
 
         $this->set ('statuses', $statuses);
@@ -1063,52 +2059,43 @@ class ProjectsController extends AppController {
         }
 
         $baseUrl = array_filter (array (
-            'city' => isset ($this->params['city']) ? $this->params['city'] : null,
-            'country' => isset ($this->params['country']) ? $this->params['country'] : null,
-            'category' => isset ($this->params['category']) ? $this->params['category'] : null,
-            'status' => isset ($this->params['status']) ? $this->params['status'] : null
+            //'city' => isset ($this->params['city']) ? $this->params['city'] : null,
+            'country' => isset ($this->params['pass'][0]) ? $this->params['pass'][0] : null,
+            'category' => isset ($this->params['pass'][1]) ? $this->params['pass'][1] : null,
+            'status' => isset ($this->params['pass'][2]) ? $this->params['pass'][2] : null
 			          ), function ($element) {
                     return!is_null ($element);
                 });
 
+        $this->set ('cityName', $this->params['pass'][0]);
         extract ($baseUrl);
+
         $this->set (compact (array_keys ($baseUrl)));
 
         /* -------------------------------------------------------------------- */
 
         $this->paginate = $this->Project->queryStandarSet (false);
-        $this->paginate['limit'] = 6;
+        $this->paginate['limit'] = 3;
 
 		
 		if($this->params['pass'][0]=='search' && (isset($this->params['pass'][1]) && !empty($this->params['pass'][1]))){
-			$this->params['search']=$this->params['pass'][1];
+
+			//$this->params['search']=$this->params['pass'][1];
 		}
 		
-        if (isset ($this->params['search'])) {
-			 $baseUrl=array('search',$this->params['search']);
-            //$this->loadModel ('Search');
-			
-            //$this->paginate['conditions']['Project.id'] = $this->Search->customSearch ($this->params['search'], 'Project');
-			  App::import('model', 'Project');
-			 $pp=new Project;
-			 $dato=$pp->query("select id from projects where title like '%".$this->params['search']."%' or short_description like '%".$this->params['search']."%' or description like '%".$this->params['search']."%'");
-			 //$dato=array(44,2);
-			 $ids=array();
-			 foreach($dato as $k=>$v)$ids[]=$v['projects']['id'];
-			 
-			 $this->paginate['conditions']['Project.id']=$ids;
-			 
-			
-			/*echo '<pre>';print_r($this->paginate);echo '</pre>';*/
-        }
 
-        if (isset ($category)) {
-            $category_info = $this->Project->Category->getFromSlug ($category);
+        //if (isset ($category)) {
+
+
+            $category_info = $this->Project->Category->getFromSlug ($this->params['pass'][1]);
             $this->paginate['conditions']['Project.category_id'] = @array_shift (Set::extract ('/Category/id', $category_info));
             $this->set ('categoryName', Category::getName ($category_info));
-        }
 
-        if (isset ($country) && !isset ($city)) {
+
+
+        //}
+
+      /*  if (isset ($country) && !isset ($city)) {
             $cities = $this->Project->City->find ('all', array (
                 'conditions' => array (
                     'City.country_slug' => $country
@@ -1128,10 +2115,16 @@ class ProjectsController extends AppController {
             );
             $city_name = array_shift (Set::extract ('/City/city_name', $cities));
             $this->set ('cityName', array_shift (Set::extract ('/City/city_name', $cities)));
-        }
+        }*/
+        //$this->paginate['order'] = 'Project.publish_date DESC'; // mas recientemente publicados , no filtra
+        $this->paginate['conditions']['Project.paislugar ='] = $this->params['pass'][0];
+        //$this->paginate['conditions']['Project.idioma ='] = $_SESSION['idioma'];
+        //$this->paginate['conditions']['Project.public ='] = 1;
 
-        if (isset ($status)) {
-            switch ($status) {
+
+
+        //if (isset ($status)) {
+            switch ($this->params['pass'][2]) {
                 case 'most-recent' :
                     $this->paginate['order'] = 'Project.publish_date DESC'; // mas recientemente publicados , no filtra
                     $this->paginate['conditions']['Project.end_date >'] = date ('Y-m-d');
@@ -1149,14 +2142,37 @@ class ProjectsController extends AppController {
                     $this->paginate['order'] = 'Project.end_date DESC';
                     break;
             }
-            $this->set ('statusName', $statuses[$status]);
-        }
+            $this->set ('statusName',$this->params['pass'][2]);
+        //}
 
 
 
         $this->data = $this->paginate ('Project');
         $this->set ('baseUrl', $baseUrl);
-		
+
+        $this->paginate['conditions']['Project.idioma ='] = $_SESSION['idioma'];
+        $this->render('search_filtro');
+
+
+    }
+    function show_projects(){
+        $this->loadModel('Country');
+        $base_countries = $this->Country->getCountries($_SESSION['idioma']);
+        $this->set (compact ('base_countries'));
+
+        $this->paginate = $this->Project->queryStandarSet (false);
+        $this->paginate['limit'] = 6;
+        $this->paginate['conditions']['Project.idioma ='] = $_SESSION['idioma'];
+        $baseUrl = array_filter (array (
+            'city' => isset ($this->params['city']) ? $this->params['city'] : null,
+            'country' => isset ($this->params['country']) ? $this->params['country'] : null,
+            'category' => isset ($this->params['category']) ? $this->params['category'] : null,
+            'status' => isset ($this->params['status']) ? $this->params['status'] : null
+        ), function ($element) {
+            return!is_null ($element);
+        });
+        $this->data = $this->paginate ('Project');
+        $this->set ('baseUrl', $baseUrl);
     }
 
     function list_offers ($model, $id) {
@@ -1177,8 +2193,9 @@ class ProjectsController extends AppController {
     }
 
     function listing ($user=true) { //listing
+
         $this->data = $this->Project->User->getUser ($user);
-		
+
 
 
 
@@ -1193,7 +2210,9 @@ class ProjectsController extends AppController {
 
          */
 
+
         if ($this->data) {
+
 
 
             $query = $this->Project->queryStandarSet (true, true);
@@ -1217,10 +2236,14 @@ class ProjectsController extends AppController {
     }
 
     function view ($id = null) {
+
+        $this->loadModel ('Sponsor');
 		if ($id) {
 		    
             $this->data = $this->Project->getViewData ($id);
-			/*vd($this->data['Project']['user_id']); 
+
+            $this->set('sponsors', $this->Sponsor->find('all',array('conditions'=>array('Sponsor.id_project' => $this->data['Project']['id']), 'order'=>'Sponsor.id DESC') ));
+			/*vd($this->data['Project']['user_id']);
 			vd($this->Auth->user ('id')); 
 			exit;*/
         }
@@ -1265,7 +2288,25 @@ class ProjectsController extends AppController {
         $this->render ('/common/ajax');
 
     }
+    function delete_sponsor ($id) {
+        $this->loadModel ('Sponsor');
+        $query['contain'] = false;
+        $query['conditions'] = array (
+            'Sponsor.id' => $id,
+        );
 
+        $this->data = $this->Sponsor->find ('first', $query);
+
+        if (!$this->data) {
+            $this->pageError = array ('code' => 403);
+        } else {
+            $this->Sponsor->delete($id);
+
+            $this->redirect (Router::url (array ('controller' => 'projects', 'action' => 'adminuploadimage', $this->data['Sponsor']['id_project'])));
+        }
+        $this->render ('/common/ajax');
+
+    }
     function cron_aboutToFinish () {
         $query = array ();
         $query['contain'] = array ();
@@ -1403,7 +2444,6 @@ class ProjectsController extends AppController {
 	} 
 	imagedestroy($thumb);
 	}
-
 
 }
 

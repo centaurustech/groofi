@@ -1,8 +1,8 @@
 
 <?php /* @var $this ViewCC */
 
-$this->set('pageTitle' , 'Acerca de Groofi' ) ;
-$this->set('title_for_layout' ,'Acerca de Groofi' ) ;
+$this->set('pageTitle' , __("ABOUT_US_LINK", true)) ;
+$this->set('title_for_layout' ,__("ABOUT_US_LINK", true)) ;
 
 
 ?>

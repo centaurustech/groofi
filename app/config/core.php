@@ -61,7 +61,7 @@ Configure::write('log', true);
  */
 Configure::write('App.encoding', 'UTF-8');
 Configure::write('Config.language', 'esp');
-
+Configure::write('Config.isadmin', 0);
 //date_default_timezone_set('America/Argentina/Buenos_Aires');
 //date_default_timezone_set('Etc/GMT');
 
@@ -256,6 +256,10 @@ Configure::write('Acl.classname', 'DbAcl');
 Configure::write('Acl.database', 'default');
 
 
+Configure::write('ImgSize.filter', array(
+    'generic' => array(),
+    'image' => array('s30','s31','s50', 's64', 'm156', 'm188', 'm200', 'l280' , 'l560'),
+));
 
 
 

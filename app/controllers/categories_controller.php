@@ -6,6 +6,7 @@
     class CategoriesController extends AppController {
 
         function admin_index() {
+
             $categorylist=$this->Category->generatetreelist(null, null, null, "&nbsp;&nbsp;&nbsp;&nbsp;");
             $this->set(compact('categorylist'));
         }

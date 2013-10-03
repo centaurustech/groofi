@@ -95,6 +95,27 @@ msgstr "Casos de éxito"
 msgid "ADMIN_PROJECTS_MENU_WEEK"
 msgstr "Destacados de la semana"
 
+msgid "ADMIN_PROJECTS_MENU_IDIOMA"
+msgstr "Proyectos en Italiano"
+
+msgid "ADMIN_PROJECTS_MENU_IDIOMA2"
+msgstr "Proyectos en Ingles"
+
+msgid "ADMIN_PROJECTS_MENU_IDIOMA3"
+msgstr "Proyectos en Español"
+
+msgid "VIEW_IDIOMA_ITA_ADMIN_INDEX"
+msgstr "Proyectos Italianos"
+
+msgid "VIEW_IDIOMA_ENG_ADMIN_INDEX"
+msgstr "Proyectos Ingles"
+
+msgid "VIEW_IDIOMA_ESP_ADMIN_INDEX"
+msgstr "Proyectos Español"
+
+msgid "VIEW_IDIOMA_ADMIN_INDEX"
+msgstr "Proyectos Italianos"
+
 msgid "ADMIN_PROJECTS_FILTER_FILTER_PROPOSALS"
 msgstr "Propuestas"
 
@@ -1260,13 +1281,16 @@ msgid "PROJECT__VIDEO_URL__HELP_MESSAGE_TEXT"
 msgstr "Ingresa la URL de un video propio sobre tu proyecto que hayas subido a YouTube.com o Vimeo.com (opcional)."
 
 msgid "PROJECT__FUNDING_GOAL__HELP_MESSAGE_TEXT"
-msgstr "Ingresa el monto en dólares que necesitas para realizar tu proyecto. Podrás modificar este importe una vez aprobada tu propuesta."
+msgstr "Ingresa el monto en dólares que necesitas para realizar tu proyecto."
+
+msgid  "PROJECT_GOAL"
+msgstr "Ingresa el monto que necesitas para realizar tu proyecto."
 
 msgid "PROJECT__PROJECT_DURATION__HELP_MESSAGE_TEXT"
 msgstr "Elige la cantidad de días que deseas que dure la recaudación de fondos de tu proyecto. Podrás modificar la duración del proyecto una vez aprobada tu propuesta."
 
 msgid "PROJECT__PRIZE__HELP_MESSAGE_TEXT"
-msgstr "Ingresa los beneficios que recibirán tus patrocinadores de acuerdo al monto que elijan aportar a tu proyecto. Los beneficios son regalos o premios relacionados con el proyecto, que te comprometes a darles a tus patrocinadores. Podrás modificar esto una vez aprobada tu propuesta."
+msgstr "Ingresa los beneficios que recibirán tus patrocinadores de acuerdo al monto que elijan aportar a tu proyecto.<br> Los beneficios son regalos o premios relacionados con el proyecto, que te comprometes a darles a tus patrocinadores. Podrás modificar esto una vez aprobada tu propuesta."
 
 msgid "OFFER_ADD_FIRST_BLOCK_TITLE"
 msgstr "Tu ofrecimiento"
@@ -2065,10 +2089,10 @@ msgid "PROJECT_-PRIZE_EDIT_TIP_MESSAGE_TEXT"
 msgstr "Ten en mente que muchos patrocinadores sólo están interesados en los beneficios. Ofrece recompensas atractivas y acorde al monto del aporte."
 
 msgid "PROJECT__FILE_EDIT_TIP_MESSAGE_TEXT"
-msgstr "La imagen no es todo, pero es muy importante. Sube una imagen de buena calidad, con un aspecto de 4:3 y un máximo de 560 x 430 pixeles aproximadamente."
+msgstr "La imagen no es todo, pero es muy importante. Sube una imagen de buena calidad, con un aspecto de 16:9 y un minimo de 560 x 430  pixeles aproximadamente."
 
 msgid "PROJECT__FILE__TIP_MESSAGE_TEXT"
-msgstr "La imagen no es todo, pero es muy importante. Sube una imagen de buena calidad, con un aspecto de 4:3 y un máximo de 560 x 430 pixeles aproximadamente."
+msgstr "La imagen no es todo, pero es muy importante. Sube una imagen de buena calidad, con un aspecto de 16:9 y un minimo de 560 x 430  pixeles aproximadamente."
 
 msgid "OFFER__SHORT_DESCRIPTION__TIP_MESSAGE_TEXT"
 msgstr "Tienes 140 caracteres para comunicar tu ofrecimiento. Concentrate en lo más relevante. "
@@ -2077,7 +2101,7 @@ msgid "OFFER__DESCRIPTION__TIP_MESSAGE_TEXT"
 msgstr "Cuanta más información pongas y más claro seas en esta descripción, mayores serán las posibilidades de que otros usuarios creen proyectos que cumplan con tus expectativas."
 
 msgid "OFFER__FILE__TIP_MESSAGE_TEXT"
-msgstr "La imagen no es todo, pero es muy importante. Sube una imagen de buena calidad, con un aspecto de 4:3 y un máximo de 560 x 430 pixeles aproximadamente."
+msgstr "La imagen no es todo, pero es muy importante. Sube una imagen de buena calidad, con un aspecto de 16:9 y un minimo de 560 x 430 pixeles aproximadamente."
 
 msgid "OFFER__VIDEO_URL__TIP_MESSAGE_TEXT"
 msgstr "El video es tu carta de presentación. Demuestra la calidad de tu ofrecimiento con un video de calidad. Tu ofrecimiento se volverá mucho más confiable si le cuentas a los usuarios lo que buscas y por qué quieres patrocinarlos."
@@ -4398,8 +4422,149 @@ msgstr "Políticas de Privacidad"
 msgid "USER_PASS"
 msgstr "Usuario o clave incorrectos"
 
-msgid ""
-msgstr ""
+msgid "PUBLISH_PROJECT"
+msgstr "Publicó su proyecto  "
+
+msgid "ADD_UPDATE_PROJECT"
+msgstr "Agregó una actualización a su proyecto  "
+
+msgid "24_HS_LEFT "
+msgstr "Faltan 24 hs. para la finalizaci&oacute;n de su proyecto  "
+
+msgid "YOUR_PROJECT"
+msgstr "Su proyecto. "
+
+msgid "PROJECT_IS_FINISHED"
+msgstr " a finalizado."
+
+msgid "NO_FOUND_PROJECT"
+msgstr "No se encontraron resultados."
+
+msgid "FONDOS_SUGERIDOS"
+msgstr "Fondos sugeridos"
+
+msgid "PEOPLE_WHO_WANT"
+msgstr "Personas que quieren hacer esto"
+
+msgid "DIFUNDIR_IDEA"
+msgstr "DIFUNDIR ESTA IDEA"
+
+msgid "QUIERO_HACER"
+msgstr "QUIERO HACER ESTO!"
+
+msgid "THIS_OFFER"
+msgstr "Crear un proyecto en base a este ofrecimiento"
+
+msgid "SUGGESTED BENEFITS"
+msgstr "BENEFICIOS SUGERIDOS"
+
+msgid "SEND_EMAIL_OWNER"
+msgstr "Para confirmar tu registro en Groofi, por favor haz clic en el siguiente link o copia y pega esta URL en tu navegador:"
+
+msgid "SEND_PROPOSAL"
+msgstr "Tu propuesta de proyecto"
+
+msgid "PROJECT_PUBLISHED"
+msgstr "El proyecto ha sido publicado."
+
+msgid "ADMIN_PROJECTS_MENU_ESP"
+msgstr "Destacados de la semana en Español"
+
+msgid "ADMIN_PROJECTS_MENU_ITA"
+msgstr "Destacados de la semana en Italiano"
+
+msgid "VIEW_WEEK_ESP_ADMIN_INDEX"
+msgstr "Destacados de la semana en Español"
+
+msgid "EDIT_ACCOUNT"
+msgstr "Editar Cuenta"
+
+msgid "ADMIN_PROJECTS_MENU_ENG"
+msgstr "Destacados de la semana en Ingles"
+
+msgid "ADMIN_PROJECTS_MENU_IDIOMA"
+msgstr "Proyectos en Italiano"
+
+msgid "ADMIN_PROJECTS_MENU_IDIOMA2"
+msgstr "Proyectos en Ingles"
+
+msgid "ADMIN_PROJECTS_MENU_IDIOMA3"
+msgstr "Proyectos en Español"
+
+msgid "PROYECTOS_PREDEFINIDOS"
+msgstr "Proyectos Predefinidos"
+
+msgid "INGRESAR"
+msgstr "Ingresar"
+
+msgid "MOD"
+msgstr "Modificar / Borrar"
+
+msgid "VIEW_WEEK_ESP_ADMIN_INDEX"
+msgstr "Destacados de la semana en Español"
+
+msgid "VIEW_WEEK_ENG_ADMIN_INDEX"
+msgstr "Destacados de la semana en Ingles"
+
+msgid "VIEW_IDIOMA_ITA_ADMIN_INDEX"
+msgstr "Proyectos en Italiano"
+
+msgid "VIEW_IDIOMA_ENG_ADMIN_INDEX"
+msgstr "Proyectos en Ingles"
+
+msgid "VIEW_IDIOMA_ESP_ADMIN_INDEX"
+msgstr "Proyectos en Español"
+
+msgid "ADMIN_PROJECTS_MENU_LEADING_ESP"
+msgstr "Casos de éxito en español"
+
+msgid "ADMIN_PROJECTS_MENU_LEADING_ITA"
+msgstr "Casos de exito en Italiano"
+
+msgid "ADMIN_PROJECTS_MENU_LEADING_ENG"
+msgstr "Casos de exito en Ingles"
+
+msgid "IMAGE_VIDEO"
+msgstr "Imagen/Video"
+
+msgid "MODIFI"
+msgstr "Modificar"
+
+msgid "MODIFI_DELETE_PREDEFINES"
+msgstr "Modificar / Borrar proyectos predefinidos:"
+
+msgid "MOTIVATION_ADMIN"
+msgstr "Motivación"
+
+msgid "FONDOS"
+msgstr "Fondos"
+
+msgid "Moneda"
+msgstr "Moneda"
+
+msgid "MONTO"
+msgstr "Monto :"
+
+msgid "ADD_ADMIN_BUTTON"
+msgstr "Añadir"
+
+msgid "SUCCES_UPLOAD"
+msgstr "Éxito"
+
+msgid "IMAGE_UPLOADED"
+msgstr "La imagen fue subida con éxito"
+
+msgid "DELETE_IMAGES"
+msgstr "BORRAR IMAGENES"
+
+msgid "SAVE_THUMBNAIL"
+msgstr "Guardar Recorte"
+
+msgid "MESSAGE_WAIT"
+msgstr "Por favor espere, subiendo archivo..... "
+
+msgid "Browse_sponsor"
+msgstr "Subir  Imagen Sponsor"
 
 msgid ""
 msgstr ""
@@ -4409,78 +4574,6 @@ msgstr ""
 
 msgid ""
 msgstr ""
-
-msgid ""
-msgstr ""
-
-msgid ""
-msgstr ""
-
-msgid ""
-msgstr ""
-
-msgid ""
-msgstr ""
-
-msgid ""
-msgstr ""
-
-msgid ""
-msgstr ""
-
-msgid ""
-msgstr ""
-
-msgid ""
-msgstr ""
-
-msgid ""
-msgstr ""
-
-msgid ""
-msgstr ""
-
-msgid ""
-msgstr ""
-
-msgid ""
-msgstr ""
-
-msgid ""
-msgstr ""
-
-msgid ""
-msgstr ""
-
-msgid ""
-msgstr ""
-
-msgid ""
-msgstr ""
-
-msgid ""
-msgstr ""
-
-msgid ""
-msgstr ""
-
-msgid ""
-msgstr ""
-
-msgid ""
-msgstr ""
-
-msgid ""
-msgstr ""
-
-msgid ""
-msgstr ""
-
-msgid ""
-msgstr ""
-
-
-
 
 
 

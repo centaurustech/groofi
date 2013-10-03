@@ -90,6 +90,9 @@ ul li ul{ max-width:250px;}
                     $this->Js->buffer("$('ul#admin_menu').superfish({dropShadows : false});");
                     ?>
                 </div>
+                <div class="esp"><a href="/admin?idioma=es" style="opacity:0;font-size: 1">español</a></div>
+                <div class="ing"><a href="/admin?idioma=en" style="opacity:0;font-size: 1">ingles</a></div>
+                <div class="ita"><a href="/admin?idioma=it" style="opacity:0;font-size: 1">italiano</a></div>
 
             </div>
             <div id="main">

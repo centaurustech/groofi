@@ -46,16 +46,15 @@ Router::connectNamed(array(
 
 Router::connect('/admin/projects/:filter/*', array('controller' => 'projects', 'action' => 'index', 'admin' => true), array(
     'pass' => array('filter'),
-    'filter' => 'all|proposals|rejected|approved|outstanding|leading|published|disabled|about-to-finish|finished|funded|not-funded|week'
+    'filter' => 'all|proposals|rejected|approved|outstanding|leading|published|disabled|about-to-finish|finished|funded|not-funded|week|week_esp|week_ita|week_eng|idioma_ita|idioma_eng|idioma_esp|leading'
         )
 );
-
-
+Router::connect('/admin/adminuploadimage', array('controller' => 'projects', 'action' => 'adminuploadimage'));
 
 
 Router::connect('/admin/offers/:filter/*', array('controller' => 'offers', 'action' => 'index', 'admin' => true), array(
     'pass' => array('filter'),
-    'filter' => 'all|proposals|rejected|approved|outstanding|leading|published|disabled|about-to-finish|finished|week'
+    'filter' => 'all|proposals|rejected|approved|outstanding|leading|published|disabled|about-to-finish|finished|week|week_esp|week_ita|week_eng|idioma_ita|idioma_eng|idioma_esp|leading'
         )
 );
 
@@ -101,6 +100,8 @@ Router::connect('/como-funciona', array('controller' => 'staticpages', 'action' 
 Router::connect('/faq', array('controller' => 'staticpages', 'action' => 'faq'));
 Router::connect('/contacto', array('controller' => 'staticpages', 'action' => 'contacto'));
 Router::connect('/translate', array('controller' => 'staticpages', 'action' => 'translate'));
+Router::connect('/translate2', array('controller' => 'staticpages', 'action' => 'translate2'));
+
 Router::connect('/country', array('controller' => 'staticpages', 'action' => 'country'));
 Router::connect('/mp_ipn.php', array('controller' => 'sponsorships', 'action' => 'mp_ipn'));
 
@@ -181,10 +182,10 @@ Router::connect(// users/edit
 
 
 
-
-
-Router::connect('/discover', array('controller' => 'projects', 'action' => 'index'));
-$models = array('projects', 'offers');
+Router::connect('/projects/search_category', array('controller' => 'projects', 'action' => 'search_category'));
+Router::connect('/show_projects', array('controller' => 'projects', 'action' => 'show_projects'));
+Router::connect('/projects/index', array('controller' => 'projects', 'action' => 'index'));
+/*$models = array('projects', 'offers');
 foreach ($models as $model) {
     $route_params = array('controller' => $model, 'action' => 'index');
     $urls = array('/discover/:model');
@@ -219,7 +220,7 @@ foreach ($models as $model) {
 }
 
 
-
+*/
 Router::connect('/sponsorships/payment-ipn.php', array('controller' => 'sponsorships', 'action' => 'paymentIpn'));
 
 

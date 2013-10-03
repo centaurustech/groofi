@@ -11,12 +11,18 @@
 class MailsController extends AppController {
 
     function beforeFilter() {
-        $this->Auth->allow('*'); //'index',
+        if(isset($_SESSION['idioma']) && !empty($_SESSION['idioma'])){
+            $idioma = $_SESSION['idioma'];
+            Configure::write('Config.language', $idioma);
+
+        }
+        $this->Auth->allow('email'); //'index',
         parent::beforeFilter();
     }
 
     function email($notification_id, $debug=false) {
-		
+
+
         $this->loadModel('Notification');
         $this->loadModel('Notificationtype');
 
@@ -164,7 +170,7 @@ class MailsController extends AppController {
     }
 
     function _prepareEmail($notification_id, $user, $subject, $template, $emailData) {
-		
+
 		//vd($emailData[$user]['id']);exit;
         $userData = $this->User->read(null, $emailData[$user]['id']);
 		
@@ -179,15 +185,15 @@ class MailsController extends AppController {
 
         if ($sendMail) {
             $this->set('user', $userData); // set the new user info.
-            // vd($userData['User']['email']);
+            //vd($userData['User']['email']);
             $emailConfigs = Configure::read('Email.default');
-            $emailConfigs['to'] = $userData['User']['email']; //'gastonmusante@gmail.com'; // 
-			
+            $emailConfigs['to'] = $userData['User']['email']; //'gastonmusante@gmail.com'; //
+
             $emailConfigs['subject'] = __($subject, true);
             $emailConfigs['template'] = $template;
             $this->Email->reset();
             foreach ($emailConfigs as $property => $value) {
-                $this->Email->{$property} = $value; // 
+                $this->Email->{$property} = $value; //
             }
             $this->set('emailData', $emailData);
             return $this->Mail->checkEmail($notification_id, $userData, $subject, $template, $emailData); // si el mail existe vemos que hacemos....
@@ -197,9 +203,9 @@ class MailsController extends AppController {
 
     function __call($name, $arguments) { // used for generic emails
         $mailSent = false;
-		
+
         list( $type, $name ) = explode('__', $name);
-		
+
         if (low($type) == 'email_user') {
             $notification_id = $arguments[0];
             $emailData = $arguments[1];
@@ -208,7 +214,7 @@ class MailsController extends AppController {
         } elseif (low($type) == 'email_owner') {
             $notification_id = $arguments[0];
             $emailData = $arguments[1];
-			
+
             $mailSent = $this->email_owner($notification_id, $emailData, low($name));
         }
 
@@ -218,20 +224,24 @@ class MailsController extends AppController {
     function email_owner($notification_id, $emailData, $name='') {
 
         $mailSent = false;
-        $mail_id = $this->_prepareEmail($notification_id, 'Owner', up($name . '_SUBJECT_OWNER'), $name . '_owner', $emailData);
-		
+        $mail_id = $this->_prepareEmail($notification_id, 'Owner', strtoupper($name . '_SUBJECT_OWNER'), $name . '_owner', $emailData);
+
         if ($mail_id) {
             $mailSent = $this->Email->send();
+
             $this->Mail->updateEmail($mail_id, $this->Email, $mailSent);
+            /*4echo '<pre>';
+            var_dump($mail_id, $this->Email, $mailSent);exit;
+            echo '</pre>';*/
         }
         return $mailSent;
     }
 
     function email_user($notification_id, $emailData, $follower=False, $name='') {
-		
+
         $mailSent = false;
         $follower = $follower ? '_follower' : '_follower_type2';
-        $mail_id = $this->_prepareEmail($notification_id, 'User', up($name . '_SUBJECT' . $follower), $name . $follower, $emailData);
+        $mail_id = $this->_prepareEmail($notification_id, 'User', strtoupper($name . '_SUBJECT' . $follower), $name . $follower, $emailData);
         if ($mail_id) {
             $mailSent = $this->Email->send();
             $this->Mail->updateEmail($mail_id, $this->Email, $mailSent);

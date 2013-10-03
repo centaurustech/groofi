@@ -1249,13 +1249,13 @@ msgid "PROJECT__VIDEO_URL__HELP_MESSAGE_TEXT"
 msgstr "Enter the URL of a video of the project uploaded to either YouTube.com or Vimeo.com (optional)."
 
 msgid "PROJECT__FUNDING_GOAL__HELP_MESSAGE_TEXT"
-msgstr "Enter the dollar amount of money your need in order to realise your project. You will be able to change this amount once your project is approved."
+msgstr "Enter the dollar amount of money your need in order to realise your project."
 
 msgid "PROJECT__PROJECT_DURATION__HELP_MESSAGE_TEXT"
-msgstr "Chose how many days you want the fundraising period to be open for. You'll be able to change this number once the project has been approved."
+msgstr "Choose how many days you want the fundraising period to be open for."
 
 msgid "PROJECT__PRIZE__HELP_MESSAGE_TEXT"
-msgstr "Enter a description of the reward you will give each backer according to the size of the donation. Remember, many users will be investing purely because of the rewards, so make sure you put a lot of thought into this."
+msgstr "Enter a description of the reward you will give each backer according to the size of the donation.<br> Remember, many users will be investing purely because of the rewards, <br>so make sure you put a lot of thought into this."
 
 msgid "OFFER_ADD_FIRST_BLOCK_TITLE"
 msgstr "Your Offering"
@@ -1372,13 +1372,13 @@ msgid "PROJECT_EDIT_THIRD_BLOCK_SUBTITLE"
 msgstr "Provide the following information"
 
 msgid "PROJECT__TITLE_EDIT_HELP_MESSAGE_TEXT"
-msgstr "This is your project's title. At this point you cannot modify it anymore."
+msgstr "This is your project s title. At this point you cannot modify it anymore."
 
 msgid "PROJECT__CATEGORY_EDIT_HELP_MESSAGE_TEXT"
-msgstr "This is your project's category. At this point you cannot modify it anymore."
+msgstr "This is your project s category. At this point you cannot modify it anymore."
 
 msgid "PROJECT__SHORT_DESCRIPTION_EDIT_HELP_MESSAGE_TEXT"
-msgstr "This is your project's short description. At this point you cannot modify it anymore."
+msgstr "This is your project s short description. At this point you cannot modify it anymore."
 
 msgid "PROJECT__DESCRIPTION_EDIT_HELP_MESSAGE_TEXT"
 msgstr "Describe what your project is about. The more information you provide, the better."
@@ -2080,13 +2080,13 @@ msgid "PROJECT__FUNDING_GOAL__TIP_MESSAGE_TEXT"
 msgstr "Remember that if you fall short of your target, the money goes back to your backers, so try to keep the amount as low as possible, and allow enough time for the money to be raised."
 
 msgid "PROJECT__PROJECT_DURATION__TIP_MESSAGE_TEXT"
-msgstr "The longer the project duration, the more time you'll have to raise funds."
+msgstr "The longer the project duration, the more time you ll have to raise funds."
 
 msgid "PROJECT__FUNDING_GOAL_EDIT_TIP_MESSAGE_TEXT"
 msgstr "Remember that if you fall short of your target, the money goes back to your backers, so try to keep the amount as low as possible, and allow enough time for the money to be raised."
 
 msgid "PROJECT__PROJECT_DURATION_EDIT_TIP_MESSAGE_TEXT"
-msgstr "The longer the project duration, the more time you'll have to raise funds."
+msgstr "The longer the project duration, the more time you ll have to raise funds."
 
 msgid "PAYMENT_TYPE"
 msgstr "Payment type"
@@ -2464,7 +2464,7 @@ msgid "LOGIN_USER__USERNAME"
 msgstr "E-mail"
 
 msgid "ARE_YOU_SURE_THIS_CAN_NO_BE_UNDONE"
-msgstr "Are you sure? This can't be undone"
+msgstr "Are you sure? This can t be undone"
 
 msgid "ADMIN_ADMIN_DEFAULT_HOME"
 msgstr "Main"
@@ -4373,47 +4373,152 @@ msgstr "Privacy Policy"
 msgid "USER_PASS"
 msgstr "Username or password incorrect"
 
-msgid ""
-msgstr ""
+msgid "PUBLISH_PROJECT"
+msgstr "Published the project "
 
-msgid ""
-msgstr ""
+msgid "ADD_UPDATE_PROJECT"
+msgstr "Added a update to the project"
 
-msgid ""
-msgstr ""
+msgid "24_HS_LEFT "
+msgstr "Remain 24 hours. for completion of your project  "
 
-msgid ""
-msgstr ""
+msgid  "PROJECT_GOAL"
+msgstr "Enter the amount you need for your project. You can modify this amount once approved your proposal."
 
-msgid ""
-msgstr ""
+msgid "RECAUDADOS"
+msgstr "Collection"
 
-msgid ""
-msgstr ""
+msgid "NO_FOUND_PROJECT"
+msgstr "No results were found."
 
-msgid ""
-msgstr ""
+msgid "FONDOS_SUGERIDOS"
+msgstr "Suggested Funds"
 
-msgid ""
-msgstr ""
+msgid "PEOPLE_WHO_WANT"
+msgstr "People who want to do this"
 
-msgid ""
-msgstr ""
+msgid "DIFUNDIR_IDEA"
+msgstr "SPREAD THIS IDEA"
 
-msgid ""
-msgstr ""
+msgid "QUIERO_HACER"
+msgstr "I WANT TO DO THIS!"
 
-msgid ""
-msgstr ""
+msgid "THIS_OFFER"
+msgstr "Create a project based on this offer"
 
-msgid ""
-msgstr ""
+msgid "SUGGESTED BENEFITS"
+msgstr "SUGGESTED BENEFITS"
 
-msgid ""
-msgstr ""
+msgid "SEND_EMAIL_OWNER"
+msgstr "To confirm your registration Groofi, please click on the following link or copy and paste this URL into your browser:"
 
-msgid ""
-msgstr ""
+msgid "SEND_PROPOSAL"
+msgstr "Your project proposal"
+
+msgid "PROJECT_PUBLISHED"
+msgstr "The project has been published."
+
+msgid "ADMIN_PROJECTS_MENU_ENG"
+msgstr "Highlights of the week English"
+
+msgid "EDIT_ACCOUNT"
+msgstr "Edit Account"
+
+msgid "VIEW_WEEK_ENG_ADMIN_INDEX"
+msgstr "Highlights of the week English"
+
+msgid "ADMIN_PROJECTS_MENU_ESP"
+msgstr "Highlights of the week Spanish"
+
+msgid "ADMIN_PROJECTS_MENU_ITA"
+msgstr "Highlights of the week in Italian"
+
+msgid "ADMIN_PROJECTS_MENU_IDIOMA"
+msgstr "Projects in Italian"
+
+msgid "ADMIN_PROJECTS_MENU_IDIOMA2"
+msgstr "Projects in English"
+
+msgid "ADMIN_PROJECTS_MENU_IDIOMA3"
+msgstr "Projects in Spanish"
+
+msgid "PROYECTOS_PREDEFINIDOS"
+msgstr "Predefined Projects"
+
+msgid "ADMIN_PAYMENTS_ALL_MP"
+msgstr "Payments Market"
+
+msgid "INGRESAR"
+msgstr "Get Into"
+
+msgid "MOD"
+msgstr "Modify / Delete"
+
+msgid "VIEW_WEEK_ESP_ADMIN_INDEX"
+msgstr "Highlights of the week Spanish"
+
+msgid "VIEW_WEEK_ENG_ADMIN_INDEX"
+msgstr "Highlights of the week English"
+
+msgid "VIEW_IDIOMA_ITA_ADMIN_INDEX"
+msgstr "Projects in Italian"
+
+msgid "VIEW_IDIOMA_ENG_ADMIN_INDEX"
+msgstr "Projects in English"
+
+msgid "VIEW_IDIOMA_ESP_ADMIN_INDEX"
+msgstr "Projects in Spanish"
+
+msgid "ADMIN_PROJECTS_MENU_LEADING_ESP"
+msgstr "Success Stories in Spanish"
+
+msgid "ADMIN_PROJECTS_MENU_LEADING_ITA"
+msgstr "Case of success in Italian"
+
+msgid "ADMIN_PROJECTS_MENU_LEADING_ENG"
+msgstr "Success Stories in English"
+
+msgid "IMAGE_VIDEO"
+msgstr "Image/Video"
+
+msgid "MODIFI"
+msgstr "Modifi"
+
+msgid "MODIFI_DELETE_PREDEFINES"
+msgstr "Modify / Delete predefined projects:"
+
+msgid "MOTIVATION_ADMIN"
+msgstr "Motivation"
+
+msgid "FONDOS"
+msgstr "Funds"
+
+msgid "Moneda"
+msgstr "Currency"
+
+msgid "MONTO"
+msgstr "Amount :"
+
+msgid "ADD_ADMIN_BUTTON"
+msgstr "Add"
+
+msgid "SUCCES_UPLOAD"
+msgstr "Success"
+
+msgid "IMAGE_UPLOADED"
+msgstr "The image has been uploaded"
+
+msgid "DELETE_IMAGES"
+msgstr "DELETE IMAGES"
+
+msgid "SAVE_THUMBNAIL"
+msgstr "Save Cut"
+
+msgid "MESSAGE_WAIT"
+msgstr "Please wait, uploading file..... "
+
+msgid "Browse_sponsor"
+msgstr "Upload Image Sponsor"
 
 msgid ""
 msgstr ""

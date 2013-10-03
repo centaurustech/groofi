@@ -876,7 +876,7 @@ abstract class BaseFacebook
             'admin.getrestrictioninfo' => 1,
             'application.getpublicinfo' => 1,
             'auth.getapppublickey' => 1,
-            'auth.getsession' => 1,
+            'auth.getuser' => 1,
             'auth.getsignedpublicsessiondata' => 1,
             'comments.get' => 1,
             'connect.getunconnectedfriendscount' => 1,

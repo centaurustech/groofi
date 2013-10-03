@@ -1,12 +1,14 @@
 <?php
 /* @var $this ViewCC */
 
+
 $subtitleText = isset($status) ? sprintf(__('%s', true), $statusName) : __('DISCOVER_ALL_PROJECTS', true);
-$subtitleText .= isset($category) ? ' ' . sprintf(__('CATEGORY_FROM %s', true), $categoryName) : '';
+$subtitleText .= isset($categoryName) ? ' ' . sprintf(__('CATEGORY_FROM %s', true), $categoryName) : '';
 $subtitleText .= isset($country) ? ' ' . sprintf(__('CITY_IN %s', true), $cityName) : '';
+
 $this->set('pageSubTitle', $subtitleText);
 $this->Paginator->options(array('url' => $baseUrl));
-//vd($baseUrl);
+
 //vd($this->here.'--'.preg_replace("#(.*?)/[0-9]*?$#",'$1',$this->here));
 ?>
 
@@ -56,78 +58,110 @@ if(isset($baseUrl['category'])){
 }else if(isset($baseUrl['city'])){
 	$prep='en';
 }
+
 ?>
 <span style=" font-style:italic; color:#666"><?php echo __("DISCOVER_ALL_PROJECTS");?> <?=$prep?></span> <a href="<?=preg_replace("#(.*?)/[0-9]*?$#",'$1',$this->here)?>" style="font-weight:bold; color:#39a0c6; text-decoration:underline"><?=str_replace(array('Todos los proyectos de ','Todos los proyectos en '),array(' ',' '),$subtitleText)?></a><br><br>
 <? } ?>
-<div id="filtro">
-<div id="filtro_categorias">
-<h4 class="titulo_footer"><?php echo __("SEARCH_BY_CATEGORY");?></h4>
-<img class="misc_categorias02" src="/2012/images/misc_categorias02.png" width="19" height="16">
-<div class="clear"></div>
-<div style="width:956px" class="misc_separador"></div><br>
-<div class="listado_categorias">
-<?php 
-$categorias=Project::getCategories('categorias');
-for($i=0;$i<count($categorias);$i++){
-$destacado='';
-if(isset($baseUrl['category']) && strpos(Category::getLink($categorias[$i]['categories']),$baseUrl['category'])!==false){
+    <form action="/projects/index" METHOD="GET" class="buscar_proyectos">
+        <div id="filtro">
+            <div id="filtro_categorias">
+                <!--h4  style="cursor:pointer"  class="titulo_footer"><?php echo __("SEARCH_BY_CATEGORY");?></h4-->
+                <!--img  style="cursor:pointer"   class="misc_categorias02" src="/2012/images/misc_categorias02.png" width="19" height="16"-->
+                <div class="clear"></div>
+                <div style="width:956px" class="misc_separador"></div><br>
+                <div class="listado_categorias">
 
-$destacado=' style="text-decoration:underline" ';
-}
+                    <select  class="estilo_select" autocomplete="off" id="categoria_proyecto1" style="color: #597FA9;" name="data[Project][cat]">
+                        <option value="" style="text-decoration-color: #1e90ff"><?php echo __("SEARCH_BY_CATEGORY");?></option>
+                        <?php
+                        $categorias=Project::getCategories('categorias');
 
-?>
-<ul><a<?=$destacado?> href="<? echo Category::getLink($categorias[$i]['categories']);?>"><? echo Category::getName($categorias[$i]['categories']);?></a></ul>
+                        foreach($categorias as $k=>$v){
+
+                            ?>
+                            <ul><option value="<?=$v['categories']['slug']?>"><?=$v['categories']['slug']?></option></ul>
+                            <?php } ?>
+                    </select>
+                </div>
+            </div>
+            <div id="mostrar">
+                <!--h4  style="cursor:pointer"  class="titulo_footer"><?php echo __("FILTER_TITLE_LIMIT");?></h4-->
+                <!--img  style="cursor:pointer"  class="misc_categorias02" src="/2012/images/misc_categorias02.png" width="19" height="16"-->
+                <div class="clear"></div>
+                <div style="width:2px" class="misc_separador"></div><br>
+                <div class="listado_categorias listado_categorias1">
+                    <select class="estilo_select1" autocomplete="off" id="categoria_proyecto2" style="color: #597FA9;" name="data[Project][show]">
+                        <option value="" style="text-decoration-color: #1e90ff"><?php echo __("FILTER_TITLE_LIMIT");?></option>
+                        <?php
+                        $mostrar=Project::getCategories('mostrar');
+                        foreach($mostrar as $k=>$v){
+
+                            ?>
+                            <ul><option value="<?= $v; ?>"><?= $v; ?></option></ul>
+                            <?php } ?>
+                    </select>
+                </div>
+
+            </div>
+
+
+
+            <div id="ubicacion">
+
+
+                <!--h4  style="cursor:pointer"  class="titulo_footer"><?php echo __("LOCATION");?></h4-->
+                <!--img  style="cursor:pointer"  class="misc_categorias02" src="/2012/images/misc_categorias02.png" width="19" height="16"-->
+                <div class="clear"></div>
+                <div style="width:2px" class="misc_separador"></div><br>
+
+
+
+
+                <div class="ubicacion_proyecto" id="categoria_proyecto3" >
+
+                    <select  class="estilo_select2" style="color: #597FA9;" autocomplete="off"  name="data[Project][paislugar]"  id="ProjectCountryId">
+                        <option value="" style="text-decoration-color: #1e90ff"><?php echo __("LOCATION");?></option>
+                        <? foreach($base_countries as $k=>$v){ ?>
+                        <option <?if(isset($_POST['data']['Project']['paislugar']) && $_POST['data']['Project']['paislugar']==$k['c']['PAI_ISO2']){echo ' selected="selected" ';}?> value="<?=$v['c']['PAI_ISO2']?>"><?=$v['c']['PAI_NOMBRE']?></option>
+
+                        <? } ?>
+
+                    </select>
+                    <ul style="margin-top: 30px;float: left;font-family: phoenica_std_demoregular;font-size: 14px;font-weight: 600;overflow: hidden;text-transform: uppercase;">
+                        <a style=" display: block;
+    margin-left: 177px;
+    position: relative;" href="/show_projects" ><?__("ADMIN_PROJECTS_MENU_ALL");?></a></ul>
+
+                </div>
+                <?php
+                echo $this->Form->submit('Buscar',array('class' => 'buscar_proyectos submit_proyectos', 'title' => 'Custom Title'));
+
+                ?>
+
+            </div>
+
+
+
+            <!---div class="listado_ubicaciones">
+<ul><a href="/discover/projects"><?php echo __("ALL_COUNTRIES");?></a></ul>
+<?php
+            $ubicacion=Project::getCategories('ubicacion');
+            $ciudades=array();
+            for($i=0;$i<count($ubicacion);$i++){
+                $ciudades['City']=$ubicacion[$i]['cities'];
+                ?>
+<ul><a href="<? echo City::getLink($ciudades,  array('extra' => 'projects'));?>"><? echo City::getName($ciudades);?></a></ul>
 <?php } ?>
-</div>
-</div>
-<div id="mostrar">
-<h4 class="titulo_footer"><?php echo __("FILTER_TITLE_LIMIT");?></h4>
-<img class="misc_categorias02" src="/2012/images/misc_categorias02.png" width="19" height="16">
-<div class="clear"></div>
-<div style="width:2px" class="misc_separador"></div><br>
-<div class="listado_categorias">
-<?php 
-$mostrar=Project::getCategories('mostrar');
-foreach($mostrar as $k=>$v){
 
-$destacado='';
-if(isset($baseUrl['status']) && strpos($k,$baseUrl['status'])!==false){
+</div-->
+            <!--input style=" background: #597FA9;border-radius: 2px 2px 2px 2px;bottom: 250px;color: #FFFFFF;cursor: pointer;float: left;position: relative;text-align: center;width: 150px;float: right" type="submit" name="Submit" value="Buscar Proyectos"-->
 
-$destacado=' style="text-decoration:underline" ';
-}
-
-?>
-<ul><a<?=$destacado?> href="/discover/<?=$k?>/projects"><?= $v; ?></a></ul>
-<?php } ?>
-</div>
+        </div>
+        <div class="clear"></div>
 
 </div>
 
-<div id="ubicacion">
-<h4 class="titulo_footer"><?php echo __("USER_LOCATION_LABEL");?></h4>
-<img class="misc_categorias02" src="/2012/images/misc_categorias02.png" width="19" height="16">
-<div class="clear"></div>
-<div style="width:2px" class="misc_separador"></div><br>
-<div class="listado_ubicaciones">
-<ul><a<?if(empty($baseUrl)){echo ' style="text-decoration:underline" ';}?> href="/discover/projects"><?php echo __("ALL_CATEGORIES");?></a></ul>
-<?php 
-$ubicacion=Project::getCategories('ubicacion');
-$ciudades=array();
-for($i=0;$i<count($ubicacion);$i++){
-$ciudades['City']=$ubicacion[$i]['cities'];
-$destacado='';
-if(isset($baseUrl['city']) && strpos(City::getLink($ciudades,  array('extra' => 'projects')),$baseUrl['city'])!==false){
-
-$destacado=' style="text-decoration:underline" ';
-}
-?>
-<ul><a<?=$destacado?> href="<? echo City::getLink($ciudades,  array('extra' => 'projects'));?>"><? echo City::getName($ciudades);?></a></ul>
-<?php } ?>
-</div>
-
-</div>
-<div class="clear"></div>
-</div>
+</form>
 <br>
 
 <div id="proyectos_creados">
@@ -172,14 +206,24 @@ foreach($this->data as $k=>  $v){
 <div style="color:#8a8a8a; background:url(/2012/images/dias_para_final.png) no-repeat; padding-left:20px; height:14px; line-height:14px; font-size:12px; margin-top:20px; margin-bottom:14px;"><?if($v['Project']['time_left']>0){echo $v['Project']['time_left']; ?><?php echo __("DAYS_LEFT");?><?}else{?><?php echo __("PROJECT_FINISHED");?><?}?></div>
 </div>
 <div class="misc_separador"></div>
-<table width="286" border="0" align="left" class="tabla_proyectos">
-  <tr>
-    <td width="71" align="center"><?= Project::getFundedValue($v) ?>%</td>
-    <td width="121" align="center"><?= Project::getCollectedValue($v) ?></td>
-    <td width="81" align="center"><?= $v['Project']['sponsorships_count']; ?></td>
-  </tr>
- 
-</table>
+     <table   class="texto_tabla" style="position:relative;display:inline-block"  width="300"  border="0" align="left">
+         <tr style="font-weight: bold; font-family: helvetica">
+             <td width="100" align="left"><?= Project::getFundedValue($v) ?>%</td>
+             <td align="center"><?php echo __("");?></td>
+             <td width="100" align="left"><?= Project::getCollectedValue($v) ?></td>
+             <td align="center"><?php echo __("");?></td>
+             <td width="100" align="left"><?= $v['Project']['sponsorships_count']; ?></td>
+         </tr>
+
+
+         <tr style="text-transform: uppercase; color: gray; font-size: 12px">
+             <td width="100" align="left" class="text_proyectos_ <?echo 'text_proyectos_'.$_SESSION["idioma"];?>"><?php echo __("VIEW_FUNDED_ADMIN_INDEX1");?><!--?php echo ("    |");?--></td>
+             <td align="left" class="text_proyectos_1 <?echo 'text_proyectos_1'.$_SESSION["idioma"];?>"><?php echo __("|");?></td>
+             <td width="100" align="left" class="text_proyectos_ <?echo 'text_proyectos_'.$_SESSION["idioma"];?>"><?php echo __("RECAUDADOS");?><!--?php echo ("     |");?--></td>
+             <td align="left" class="text_proyectos_1 <?echo 'text_proyectos_1'.$_SESSION["idioma"];?>"><?php echo __("|");?></td>
+             <td width="100" align="left" style="padding-right: 20px"><?php echo __("SPONSORSHIPS_INDEX");?></td>
+         </tr>
+     </table>
 <img src="/2012/images/<?=$imgficha?>.gif" width="286" height="19">
 <div class="ext">
 <div class="bar" style="left:<?php $p=Project::getFundedValue($v)>100?100:Project::getFundedValue($v);echo -280-((-282/100)*$p) ?>px"></div>
@@ -212,12 +256,13 @@ foreach($this->data as $k=>  $v){
                                 'modulus' => 9
                             )));
                     echo $this->Paginator->next(__('NEXT_PAGE', true), array('tag' => 'div'), __('NEXT_PAGE', true), array('tag' => 'div'));
+
                     ?>
                 </div>
             </div>
         <? } ?>
 <?} else {
-        echo 'No se encontraron resultados.';
+        echo __("NO_FOUND_PROJECT", true);
     }
 ?> 
 <br><br>

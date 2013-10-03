@@ -1,4 +1,5 @@
-<?php /* @var $this ViewCC */?>
+<?php /* @var $this ViewCC */
+?>
 <?php
 
 if (!isset ($short_description_for_layout)) {
@@ -44,6 +45,8 @@ if (low ($title_for_layout) == low ($this->params['controller'])) {
 echo $this->Html->meta (array ('HTTP-EQUIV' => 'Expires', 'content' => date ('D, j M G:i:s ', strtotime ('+1 day')))) . "\r\n";
 ?>
 <LINK REL='StyleSheet' HREF="/2012/style.css" TYPE="text/css" MEDIA='screen'>
+<link rel="stylesheet" href="/2012/bjqs.css" TYPE="text/css" MEDIA='screen'>
+    <link rel="stylesheet" href="/2012/imgareaselect-default.css" TYPE="text/css" MEDIA='screen'>
 <link href='http://fonts.googleapis.com/css?family=Asap:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="/js/jquery.min.js"></script>
 <script type="text/javascript" src="/js/panino/panino.js"></script>
@@ -52,6 +55,10 @@ echo $this->Html->meta (array ('HTTP-EQUIV' => 'Expires', 'content' => date ('D,
 <script type="text/javascript" src="/js/panino/transicionSimple.js"></script>
 <script type="text/javascript" src="/js/panino/slide1.js"></script>
 <script src="/js/panino/utils.js" type="text/javascript"></script>
+<script type="text/javascript" src="/js/jquery.Jcrop.js"></script>
+    <script type="text/javascript" src="/js/jquery.imgareaselect.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.ocupload-1.1.2.js"></script>
+
 <script type="text/javascript">
 var ingresar='<?php echo __("LOGIN");?>';
 var registrar='<?php echo __("REGISTER_ME");?>';
@@ -61,6 +68,7 @@ var recupera='<?php echo __("RECOVER_PASSWORD_1");?>';
 var conface='<?php echo __("FACEBOOK_LOGIN_TITLE_1");?>';
 var newuser='<?php echo __("REGISTER_ME");?>';
 var config='<?php echo __("USERS_EDIT");?>';
+
 
 <?php
 if ($this->Session->read ('Auth.User.id')) {
@@ -118,24 +126,25 @@ ns.logueado=0;
 <div id="header">
   <a title="Groofi" href="/home" id="logo"></a>
   <div id="buscador">
-<div onclick="$('searchform').action='/search/projects/'+$('keybus').value;$('searchform').submit();" class="bot_search"></div>
-<form onsubmit="this.action='/search/projects/'+$('keybus').value" id="searchform" method="post" action="/search/projects" accept-charset="utf-8"><input id="keybus" autocomplete="off" class="input_buscador"  name="data[Search][q]" type="text"></form></div>
+<div onclick="$('searchform').action='/projects/general_search/'+$('keybus').value;$('searchform').submit();" class="bot_search"></div>
+<form onsubmit="this.action='/projects/general_search/'+$('keybus').value" id="searchform" method="post" action="/projects/general_search/" accept-charset="utf-8"><input id="keybus" autocomplete="off" class="input_buscador"  name="data[Search][q]" type="text"></form></div>
   <div id="menu">
     <div class="grof">
-    <a href="/discover/projects" class="header_letras1" id="descubri">
+    <a href="/show_projects" class="header_letras1 <?echo 'header_letras1'.$_SESSION["idioma"];?>" id="descubri">
     <span class="descubri"></span>
     <?php echo __("DISCOVER_PRINCIPAL");?>
-    </a></div>
-    <div class="grof">
-        <a href="<?= Router::url (array ('controller' => 'projects', 'action' => 'add'))?>" class="header_letras2" id="crea">
+    </a>
+
+        <a href="<?= Router::url (array ('controller' => 'projects', 'action' => 'add'))?>" class="header_letras2 <?echo 'header_letras2'.$_SESSION["idioma"];?>" id="crea">
         <span class="crea"></span>
         <?php echo __("CREATE");?>
-        </a></div>
-    <div class="grof">
+        </a>
+
         <a href="http://blog.groofi.com/" class="header_letras3" id="blog">
         <span class="blog"></span>
         <?php echo __("BLOG");?>
-        </a></div>
+        </a>
+    </div>
     <div class="clear"></div>
   </div>
 </div>
@@ -151,9 +160,10 @@ ns.logueado=0;
     <a href="http://twitter.com/grooficom" rel="no-follow" target="_blank" class="twitter"></a>
     <a href="/contacto" class="mail"></a>
     <div class="line_separador"></div>
+      <!--div class="fb-login-button" data-width="200"></div-->
     <div onclick="window.location='<?= Router::url (array ('controller' => 'staticpages', 'action' => 'translate','?' => array('idioma' => 'es')))?>';" class="esp"></div>
     <div onclick="window.location='<?= Router::url (array ('controller' => 'staticpages', 'action' => 'translate','?' => array('idioma' => 'en')))?>';" class="ing"></div>
-    <!--div onclick="window.location='<?= Router::url (array ('controller' => 'staticpages', 'action' => 'translate','?' => array('idioma' => 'it')))?>';" class="ita"></div-->
+    <div onclick="window.location='<?= Router::url (array ('controller' => 'staticpages', 'action' => 'translate','?' => array('idioma' => 'it')))?>';" class="ita"></div>
     <div class="clear"></div>
     </div>
   <div id="logos"></div>
@@ -170,12 +180,13 @@ ns.logueado=0;
 <div class="clear"></div>
 </div>
 <div id="footer_contenedor">
+   <div class="footer_center">
   <div id="footer_categorias">
 <h4 class="titulo_footer" style="text-transform:uppercase"><? __ ('SEARCH_BY_CATEGORY')?></h4>
 <img class="misc_categorias" src="/2012/images/misc_categorias.png" width="8" height="7">
 <div class="clear"></div>
 <div style="width:225px" class="misc_separador_footer"></div><br>
-<div class="listado_categorias">
+<div class="listado_categorias  listado_categorias_footer">
 <? foreach ($site_categories as $key => $category) {?>
 <ul><?= $this->Html->link (Category::getName ($category), Category::getLink ($category))?></ul>
 <? }?>
@@ -210,6 +221,7 @@ ns.logueado=0;
 
 
 </div>
+   </div>
 <div id="footer_expand"></div>
 <div id="footer" class="block">
 <div class="bottom">
@@ -235,7 +247,7 @@ ns.logueado=0;
 
 
 </div>
-<script>
+<!--script>
 (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -243,7 +255,15 @@ ns.logueado=0;
   js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=161780013885544";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
-</script>
+</script-->
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=312785135481965";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <script type="text/javascript">
 
             var _gaq = _gaq || [];

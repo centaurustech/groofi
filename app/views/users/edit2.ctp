@@ -60,7 +60,7 @@ if(in_array($k,$checkeados)){
 <?php echo __("FACEBOOK_EDIT_PROFILE_SUBTITLE");?><br>
 <div onclick="window.location='/fbConnect.php';" class="ingresar_con_facebook1"><?php echo __("FACEBOOK_LOGIN_TITLE");?></div>
 <div class="misc_separador"></div><br>
-	<div  onclick="window.location='/fbConnect.php';" class="boton_facebook"></div>
+	<div  onclick="window.location='/fbConnect.php';" class="boton_facebook1"><?php echo __("LOGIN_USING_FACEBOOK");?></div>
   <br><br>
 <div class="texto_importante_facebook">
 <div class="icono_importante_facebook"></div>

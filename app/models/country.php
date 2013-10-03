@@ -153,6 +153,15 @@ class country extends AppModel {
         }
         return false;
     }
+    public function  getCountries($idioma){
+
+
+
+        $sql = "SELECT * from countries AS c, projects AS p WHERE c.PAI_ISO2=p.paislugar AND p.idioma ='".$idioma."' group by PAI_ISO2";
+        return $this->query($sql);
+
+
+    }
 
 }
 

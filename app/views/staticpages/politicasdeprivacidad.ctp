@@ -4,6 +4,7 @@
 $this->set('pageTitle' , __("POLITICAS_DE_PRIVACIDAD",$return = true));
 $this->set('title_for_layout' ,__("POLITICAS_DE_PRIVACIDAD",$return = true));
 
+
 ?>
 
 

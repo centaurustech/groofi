@@ -121,7 +121,7 @@
 <input  value="<?php if (isset($_POST['procesoregistro']) && isset($_POST['data']['User']['password_confirmation']))echo $_POST['data']['User']['password_confirmation']; ?>" autocomplete="off" type="password" name="data[User][password_confirmation]" />
 </div>
 
-<div style="font-size:11px; color:red; font-family:Arial, Helvetica, sans-serif;font-style:normal; padding-left:12px;height:17px;"><?php if (isset($_POST['procesoregistro']) && isset($validationErrorsArray['password_confirmation']) && !empty($validationErrorsArray['password_confirmation'])){ ?><?=$validationErrorsArray['password_confirmation']?><?php } ?>&nbsp;</div>
+<div style="font-size:11px; color:red; font-family:Arial, Helvetica, sans-serif;font-style:normal; padding-left:12px;height:17px;"><?php if (isset($_POST['procesoregistro']) && isset($validationErrorsArray['password_confirmation']) && empty($validationErrorsArray['password_confirmation'])){ ?><?=$validationErrorsArray['password_confirmation']?><?php } ?>&nbsp;</div>
 
 <div class="bot_registrar" onclick="$('formregistroint').submit();"><div class="titulo_registrarme"> <?php echo __("REGISTER_ME");?> </div>
   <input class="enter" type="submit" />

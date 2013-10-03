@@ -1,4 +1,34 @@
 <?php
+
+
+//session_start(); //Do not remove this
+//only assign a new timestamp if the session variable is empty
+if (!isset($_SESSION['random_key']) || strlen($_SESSION['random_key'])==0){
+    $_SESSION['random_key'] = strtotime(date('Y-m-d H:i:s')); //assign the timestamp to the session variable
+    $_SESSION['user_file_ext']= "";
+}
+#########################################################################################################
+# CONSTANTS																								#
+# You can alter the options below																		#
+#########################################################################################################
+$upload_dir = "../webroot/media/transfer/project/tmp/img"; 				// The directory for the images to be saved in
+$upload_path = $upload_dir."/";				// The path to where the image will be saved
+//$image_handling_file = "vendors/crop/image_handling.php"; // The location of the file that will handle the upload and resizing (RELATIVE PATH ONLY!)
+$large_image_prefix = "resize_"; 			// The prefix name to large image
+$thumb_image_prefix = "thumbnail_";			// The prefix name to the thumb image
+$large_image_name = $large_image_prefix.$_SESSION['random_key'];     // New name of the large image (append the timestamp to the filename)
+$thumb_image_name = $thumb_image_prefix.$_SESSION['random_key'];     // New name of the thumbnail image (append the timestamp to the filename)
+$max_file = "1"; 							// Maximum file size in MB
+$max_width = "570";							// Max width allowed for the large image
+$thumb_width = "150";						// Width of thumbnail image
+$thumb_height = "100";						// Height of thumbnail image
+// Only one of these image types should be allowed for upload
+$allowed_image_types = array('image/pjpeg'=>"jpg",'image/jpeg'=>"jpg",'image/jpg'=>"jpg",'image/png'=>"png",'image/x-png'=>"png",'image/gif'=>"gif");
+$allowed_image_ext = array_unique($allowed_image_types); // Do not change this
+$image_ext = "";
+foreach ($allowed_image_ext as $mime_type => $ext) {
+    $image_ext.= strtoupper($ext)." ";
+}
 /* @var $this ViewCC */
 //vd($validationErrorsArray);
 //vd($_POST['data']['Prize']);
@@ -8,6 +38,7 @@ function traducirMoneda($m){
 	
 	return $m;
 }
+
 ?>
 
 <div class="crear_proye">
@@ -260,9 +291,10 @@ function noenter(e){
 <p style="font-size:12px"><?php echo __("PROJECT_IMAGE");?></p>
 
 <div id="bajofoto1"><?php echo __("UPLOAD_BROWSE");?></div>
- <div id="extfoto2"><input onchange="if((this.value.toLowerCase().indexOf('.jpg')==-1) && (this.value.toLowerCase().indexOf('.jpeg')==-1) && (this.value.toLowerCase().indexOf('.gif')==-1) && (this.value.toLowerCase().indexOf('.png')==-1)){$('elfile2').innerHTML='<span style=&quot;color:red;font-size:9px&quot;>Formato de archivo no permitido.</span>';this.value='';return;}$('elfile2').innerHTML=this.value" onmouseover="$('bajofoto1').style.background='#237fb5';" onmouseout="$('bajofoto1').style.background='#000';" id="foto1"  name="data[Project][file]" autocomplete="off" type="file" /></div>
+ <!--div id="extfoto2"><input onchange="if((this.value.toLowerCase().indexOf('.jpg')==-1) && (this.value.toLowerCase().indexOf('.jpeg')==-1) && (this.value.toLowerCase().indexOf('.gif')==-1) && (this.value.toLowerCase().indexOf('.png')==-1)){$('elfile2').innerHTML='<span style=&quot;color:red;font-size:9px&quot;>Formato de archivo no permitido.</span>';this.value='';return;}$('elfile2').innerHTML=this.value" onmouseover="$('bajofoto1').style.background='#237fb5';" onmouseout="$('bajofoto1').style.background='#000';" id="foto1"  name="data[Project][file]" autocomplete="off" type="file" /></div-->
 
-
+    <input type="hidden" value="" name="data[Project][country]" id="upload2">
+    <input type="hidden" value="<?=$this->data['Project']['basename'];?>" name="data[Project][basename]" id="upload3">
 
 <br><div id="elfile2"><?php echo __("UPLOAD_NO_FILE_SELECTED");?></div>
 <div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['file']) && !empty($validationErrorsArray['file'])){echo $validationErrorsArray['file'];}?></div>
@@ -278,7 +310,115 @@ function noenter(e){
 
 <div ><img width="280" src="<?=$laim;?>"></div>
 <br>
+
+
+<script type="text/javascript">
+    //<![CDATA[
+
+    //create a preview of the selection
+    function preview(img, selection) {
+        //get width and height of the uploaded image.
+        var current_width = jQuery('#uploaded_image').find('#thumbnail').width();
+        var current_height = jQuery('#uploaded_image').find('#thumbnail').height();
+
+        var scaleX = <?php echo $thumb_width;?> / selection.width;
+        var scaleY = <?php echo $thumb_height;?> / selection.height;
+
+        jQuery('#uploaded_image').find('#thumbnail_preview').css({
+            width: Math.round(scaleX * current_width) + 'px',
+            height: Math.round(scaleY * current_height) + 'px',
+            marginLeft: '-' + Math.round(scaleX * selection.x1) + 'px',
+            marginTop: '-' + Math.round(scaleY * selection.y1) + 'px'
+        });
+        jQuery('#x1').val(selection.x1);
+        jQuery('#y1').val(selection.y1);
+        jQuery('#x2').val(selection.x2);
+        jQuery('#y2').val(selection.y2);
+        jQuery('#w').val(selection.width);
+        jQuery('#h').val(selection.height);
+    }
+
+    //show and hide the loading message
+    function loadingmessage(msg, show_hide){
+        if(show_hide=="show"){
+            jQuery('#loader').show();
+            jQuery('#progress').show().text(msg);
+            jQuery('#uploaded_image').html('');
+        }else if(show_hide=="hide"){
+            jQuery('#loader').hide();
+            jQuery('#progress').text('').hide();
+        }else{
+            jQuery('#loader').hide();
+            jQuery('#progress').text('').hide();
+            jQuery('#uploaded_image').html('');
+        }
+    }
+
+    //delete the image when the delete link is clicked.
+    function deleteimage(large_image, thumbnail_image){
+        loadingmessage('Please wait, deleting images...', 'show');
+        jQuery.ajax({
+            type: 'POST',
+            url: '/projects/testcrop',
+            data: 'a=delete&large_image='+large_image+'&thumbnail_image='+thumbnail_image,
+            cache: false,
+            success: function(response){
+                loadingmessage('', 'hide');
+                response = unescape(response);
+                var response = response.split("|");
+                var responseType = response[0];
+                var responseMsg = response[1];
+                if(responseType=="success"){
+                    jQuery('#upload_status').show().html('<h1>Success</h1><p>'+responseMsg+'</p>');
+                    jQuery('#uploaded_image').html('');
+                }else{
+                    jQuery('#upload_status').show().html('<h1>Unexpected Error</h1><p>Please try again</p>'+response);
+                }
+            }
+        });
+    }
+
+
+
+    //]]>
+</script>
+
+<!--h1>Photo Upload and Crop</h1>
+<noscript>Javascript must be enabled!</noscript>
+<h2>Upload Photo</h2>
+<div id="upload_status" style="font-size:12px; width:80%; margin:10px; padding:5px; display:none; border:1px #999 dotted; background:#eee;"></div>
+<p><a id="upload_link" style="background:#39f; font-size: 24px; color: white;" href="#">Click here to upload a photo</a></p>
+<span id="loader" style="display:none;"><img src="loader.gif" alt="Loading..."/></span> <span id="progress"></span>
+<br />
+<div id="uploaded_image"></div>
+<div id="thumbnail_form" style="display:none;">
+
+
+    <input type="submit" name="save_thumb" value="Save Thumbnail" id="save_thumb" />
+
+</div-->
+
+
+<div class="texto_how_izq upload_image_crop">
+    <!---h2>Upload Photo</h2-->
+    <div style="display: block; width: 100px; height: 100px"></div>
+    <div id="upload_status" style="font-size:12px; width:38%; margin:0 0 20px; padding:5px; display:none; border:1px #999 dotted; background:#eee;"></div>
+
+    <a id="upload_link" style="cursor:pointer;position:relative;display: block;background:#000000; font-size: 18px; color: white;font-weight: normal;height: 30px;width: 120px; text-align: center" href="#"><?__('UPLOAD_BROWSE');?></a>
+    <? echo __("EDIT");?>
+    <span id="loader" style="display:none;"><img src="loader.gif" alt="Loading..."/></span> <span id="progress"></span>
+    <br />
+    <div id="uploaded_image"></div>
+    <div id="thumbnail_form" style="display:none;">
+
+
+        <input style="background-color: #000000; width:140px;color:white;font-weight: bold" type="submit" name="save_thumb" value="<?echo __("SAVE_THUMBNAIL", true);?>" id="save_thumb" />
+
+    </div>
+</div>
+
 <div class="misc_separador" style=" width:367px; height:1px;margin-bottom:30px;"></div>
+
 <div class="texto_how_izq">
 <p style="font-size:12px">Video (URL)</p>
 <div class="rounded_crear">
@@ -291,6 +431,7 @@ function noenter(e){
 <? if($video){?>
 <div style="margin-bottom:30px;"><?=$video?></div>
 <? } ?>
+
 <div style="font-style:italic"><?php echo __("PROJECT_ADD_THIRD_BLOCK_TITLE");?></div> <div class="misc_separador" style="width:100%"></div><br>
 <div id="fondos_requeridos">
 
@@ -321,10 +462,10 @@ function noenter(e){
 
 <div class="input_fondos">
 <div id="quemoneda" style="color:#686b68; width:50px; height:30px; text-align:right; line-height:30px;font-size:15px;font-weight:normal; position:absolute; left:-45px;top:20px;font-family:Arial, Helvetica, sans-serif"><?if(!isset($this->data['Project']['moneda'])){?>USD<? }else{?><?=traducirMoneda($this->data['Project']['moneda'])?><? } ?></div>
-<input value="<?if(isset($this->data['Project']['funding_goal'])){echo $this->data['Project']['funding_goal'];}?>" id="in_fondos" type="text" name="data[Project][funding_goal]" /></div>
+<input readonly="readonly" value="<?if(isset($this->data['Project']['funding_goal'])){echo $this->data['Project']['funding_goal'];}?>" id="in_fondos" type="text" name="data[Project][funding_goal]" /></div>
 <div style="color:red;font-size:9px;position:relative; top:116px; left:80px"><?php if (isset($validationErrorsArray['funding_goal']) && !empty($validationErrorsArray['funding_goal'])){echo $validationErrorsArray['funding_goal'];}?></div>
 
-<div class="bot_info" onmouseout="hideTip()"  onmousemove="showTip(event,'Ingresa el monto en d&oacute;lares que necesitas para realizar tu proyecto. Podr&aacute;s modificar este importe una vez aprobada tu propuesta.<br>Recuerda que si al cabo del tiempo elegido a continuaci&oacute;n tu proyecto no recauda este monto, no ser&aacute; financiado. Piensa en una suma que est&eacute;s en condiciones de recaudar en el tiempo previsto.')"></div>
+<div class="bot_info" onmouseout="hideTip()"  onmousemove="showTip(event,'<?php echo __("PROJECT_GOAL", true);?><br><?php echo __("PROJECT__FUNDING_GOAL__TIP_MESSAGE_TEXT");?>')"></div>
 <div style="position:absolute; width:534px; height:148px; background:url(/2012/images/tipodemoneda.jpg); left:420px; top:0">
 
 <label style="position:absolute; height:15px;width:300px;  left:0; top:98px; text-align:left; margin:0; padding:0" for="usd">
@@ -345,7 +486,7 @@ function noenter(e){
 
 </div>
 </div>
-
+<div class="tapar_duracion"></div>
 <div class="texto_how_izq">
 <p style="font-size:12px"><?php echo __("PROJECT__PROJECT_DURATION");?></p><br>
 <input name="data[Project][project_duration]" type="hidden" autocomplete="off" class="range" value="7" id="ProjectProjectDuration" />
@@ -357,8 +498,9 @@ function noenter(e){
 <div id="cursor" style="width:17px; height:17px; border:1px solid #d3d3d3; background:#e6e6e6;cursor:pointer; position:relative; top:-15px;"></div>
 </div>
 
-<div class="bot_info duracion" onmouseout="hideTip()"  onmousemove="showTip(event,'Elige la cantidad de d&iacute;as que deseas que dure la recaudaci&oacute;n de fondos de tu proyecto. Podr&aacute;s modificar la duraci&oacute;n del proyecto una vez aprobada tu propuesta.<br>Cuanto m&aacute;s dure el proyecto, m&aacute;s posible ser&aacute; que alcances a recaudar los fondos necesarios.')"></div>
+<div class="bot_info duracion" onmouseout="hideTip()"  onmousemove="showTip(event,'<?php echo __("PROJECT__PROJECT_DURATION__HELP_MESSAGE_TEXT");?><br><?php echo __("PROJECT__PROJECT_DURATION__TIP_MESSAGE_TEXT");?>')"></div>
 </div>
+
 <div class="clear"></div>
 <div class="misc_separador" style=" width:367px; height:1px; margin-top:-10px; margin-bottom:15px;"></div>
 <div class="clear"></div>
@@ -376,7 +518,7 @@ function noenter(e){
 <div class="rounded_area_beneficios">
 <textarea onkeypress="return noenter(event)" name="comments" cols="1" rows="1" id="descrazul"></textarea>
 <div id="errP" style="color:red;font-size:9px;position:relative; top:6px; left:10px"></div>
-<div class="bot_info_beneficio" onmouseout="hideTip()"  onmousemove="showTip(event,'Ingresa los beneficios que recibir&aacute;n tus patrocinadores de acuerdo al monto que elijan aportar a tu proyecto.<br>Los beneficios son regalos o premios relacionados con el proyecto, que te comprometes a darles a tus patrocinadores.<br>Podr&aacute;s modificar esto una vez aprobada tu propuesta.<br>Ten en mente que muchos patrocinadores s&oacute;lo est&aacute;n interesados en los beneficios.<br>Ofrece recompensas atractivas y acorde al monto del aporte.')"></div>
+<div class="bot_info_beneficio" onmouseout="hideTip()"  onmousemove="showTip(event,'<?php echo __("PROJECT__PRIZE__HELP_MESSAGE_TEXT");?>')"></div>
 <div class="bot_crear_nuevo" onclick="addBeneficio($('mminazul').value, $('descrazul').value, 'personas');"><?php echo __("CREATE");?></div>
 
 </div>
@@ -401,7 +543,7 @@ function noenter(e){
 <div class="rounded_area_beneficios">
 <textarea onkeypress="return noenter(event)" name="comments" cols="1" rows="1" id="descverde"></textarea>
 <div id="errE" style="color:red;font-size:9px;position:relative; top:6px; left:10px"></div>
-<div class="bot_info_empresas"  onmouseout="hideTip()"  onmousemove="showTip(event,'Ingresa los beneficios que recibir&aacute;n tus patrocinadores de acuerdo al monto que elijan aportar a tu proyecto.<br>Los beneficios son regalos o premios relacionados con el proyecto, que te comprometes a darles a tus patrocinadores.<br>Podr&aacute;s modificar esto una vez aprobada tu propuesta.<br>Ten en mente que muchos patrocinadores s&oacute;lo est&aacute;n interesados en los beneficios.<br>Ofrece recompensas atractivas y acorde al monto del aporte.')"></div>
+<div class="bot_info_empresas"  onmouseout="hideTip()"  onmousemove="showTip(event,'<?php echo __("PROJECT__PRIZE__HELP_MESSAGE_TEXT");?>')"></div>
 <div class="bot_crear_nuevo empresas" onclick="addBeneficio($('mminverde').value, $('descverde').value, 'empresa');"><?php echo __("CREATE");?></div>
 
 </div>
@@ -419,7 +561,15 @@ function noenter(e){
 <div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['prize']) && !empty($validationErrorsArray['prize'])){echo $validationErrorsArray['prize'];}?></div>
 
 </form>
+<form name="form" action="" method="post">
+    <input type="hidden" name="x1" value="" id="x1" />
+    <input type="hidden" name="y1" value="" id="y1" />
+    <input type="hidden" name="x2" value="" id="x2" />
+    <input type="hidden" name="y2" value="" id="y2" />
+    <input type="hidden" name="w" value="" id="w" />
+    <input type="hidden" name="h" value="" id="h" />
 
+</form>
 <a onclick="validIm();return false;" class="bot_envnuevoproy" href="#"><?php echo __("SAVE");?></a>
 <? if ($this->data['Project']['public'] == 0) {?>
 <a onclick="validIm('<?= Project::getLink($this->data, 'publish') ?>');return false;" class="bot_envnuevoproy" href="#" style="position:relative; top:-66px; left:150px;"><?php echo __("PUBLISH_PROJECT");?></a>
@@ -565,13 +715,123 @@ function setBlueLine(r){
 	$('ProjectProjectDuration').value=valor;
 	$('blueLine').style.width=(100*parseInt(r)/343)+'%';
 }
+
 DR(function(){
 	panino.add(DragableRestrict);
 	$('cursor').makeDragableR(0,1,setBlueLine,function(){});
 });
+
 </script>
 <script>
+function crop() {
+    jQuery('#loader').hide();
+    jQuery('#progress').hide();
+
+    var myUpload = jQuery('#upload_link').upload({
+        name: 'image',
+        action: '/projects/testcrop',
+        enctype: 'multipart/form-data',
+        params: {upload:'Upload'},
+        autoSubmit: true,
+        onSubmit: function() {
+            jQuery('#upload_status').html('').hide();
+            loadingmessage('Please wait, uploading file...', 'show');
+        },
+        onComplete: function(response) {
+
+            loadingmessage('', 'hide');
+            //response = unescape(response);
+            var response_new = jQuery.parseJSON(response);
+
+            var regular_url = response_new.regular.ubicacion;
+
+            regular_url = regular_url.split("../webroot/media/transfer/project/tmp/img/");
+            var thumb_url = response_new.thumbs.ubicacion;
+            thumb_url = thumb_url.split("../webroot/media/transfer/project/tmp/img/");
+
+            /*var thumbname = response.split("thumbnail_");
+            var response = response.split("|");
+            var responseType = response[0];
+            var responseMsg = response[1];*/
+            //var new_response = responseMsg.split("../webroot/image/transfer/project/tmp/img/");
+            //var new_response2 = thumbname.split("");
+
+
+            if(regular_url != ''){
+                var current_width = response_new.regular.width;
+                var current_height = response_new.regular.height;
+                //display message that the file has been uploaded
+                jQuery('#upload_status').show().html('<h1>Success</h1><p>The image has been uploaded</p>');
+                //put the image in the appropriate div
+                jQuery('#uploaded_image').html('<img src="/media/transfer/project/tmp/img/'+regular_url[1]+'" style="float: left; margin-right: 10px;" id="thumbnail" alt="Create Thumbnail" /><div style="border:1px #e5e5e5 solid; float:left; position:relative; overflow:hidden; width:<?php echo $thumb_width;?>px; height:<?php echo $thumb_height;?>px;"> <img src="/media/transfer/project/tmp/img/'+regular_url[1]+'" style="position: relative;" id="thumbnail_preview" alt="Thumbnail Preview" /></div>');
+                //find the image inserted above, and allow it to be cropped
+                jQuery('#uploaded_image').find('#thumbnail').imgAreaSelect({ aspectRatio: '1:<?php echo $thumb_height/$thumb_width;?>', onSelectChange: preview });
+                //display the hidden form
+                jQuery('#thumbnail_form').show();
+
+                jQuery('#upload2, #upload3').attr("value",thumb_url[1]);
+                //jQuery('#upload2').attr("value",thumb_url[1]);
+            }else if(responseType=="error"){
+                jQuery('#upload_status').show().html('<h1>Error</h1><p>'+responseMsg+'</p>');
+                jQuery('#uploaded_image').html('');
+                jQuery('#thumbnail_form').hide();
+            }else{
+                jQuery('#upload_status').show().html('<h1>Unexpected Error</h1><p>Please try again</p>'+response);
+                jQuery('#uploaded_image').html('');
+                jQuery('#thumbnail_form').hide();
+            }
+        }
+    });
+
+    //create the thumbnail
+    jQuery('#save_thumb').click(function() {
+        var x1 = jQuery('#x1').val();
+        var y1 = jQuery('#y1').val();
+        var x2 = jQuery('#x2').val();
+        var y2 = jQuery('#y2').val();
+        var w = jQuery('#w').val();
+        var h = jQuery('#h').val();
+        if(x1=="" || y1=="" || x2=="" || y2=="" || w=="" || h==""){
+            alert("You must make a selection first");
+            return false;
+        }else{
+            //hide the selection and disable the imgareaselect plugin
+            jQuery('#uploaded_image').find('#thumbnail').imgAreaSelect({ disable: true, hide: true });
+            loadingmessage('Please wait, saving thumbnail....', 'show');
+            jQuery.ajax({
+                type: 'POST',
+                url: '/projects/testcrop',
+                data: 'save_thumb=Save Thumbnail&x1='+x1+'&y1='+y1+'&x2='+x2+'&y2='+y2+'&w='+w+'&h='+h,
+                cache: false,
+                success: function(response){
+                    loadingmessage('', 'hide');
+                    response = unescape(response);
+                    var response = response.split("|");
+                    var responseType = response[0];
+                    var responseLargeImage = response[1];
+                    var responseThumbImage = response[2];
+                    if(responseType=="success"){
+                        jQuery('#upload_status').show().html('<h1>Success</h1><p>The thumbnail has been saved!</p>');
+                        //load the new images
+                        jQuery('#uploaded_image').html('<img src="'+responseLargeImage+'" alt="Large Image"/>&nbsp;<img src="'+responseThumbImage+'" alt="Thumbnail Image"/><br /><a href="javascript:deleteimage(\''+responseLargeImage+'\', \''+responseThumbImage+'\');">Delete Images</a>');
+                        //hide the thumbnail form
+                        jQuery('#thumbnail_form').hide();
+                    }else{
+                        jQuery('#upload_status').show().html('<h1>Unexpected Error</h1><p>Please try again</p>'+response);
+                        //reactivate the imgareaselect plugin to allow another attempt.
+                        jQuery('#uploaded_image').find('#thumbnail').imgAreaSelect({ aspectRatio: '1:<?php echo $thumb_height/$thumb_width;?>', onSelectChange: preview });
+                        jQuery('#thumbnail_form').show();
+                    }
+                }
+            });
+
+            return false;
+        }
+    });
+}
+    crop();
 DR(function(){
+    crop();
 	for(var i=0;i<10;i++){
 		
 			if($('web'+i).value.length>1){
@@ -600,7 +860,7 @@ DR(function(){
 });
 window.memo={};
 window.memo.index=-1;
-function addBeneficio(monto, descripcion, entidad){
+function addBeneficio(monto, descripcion, entidad, bakes, sponsors){
 	var id='__id'+(+new Date()); 
 	
 	window.memo.index++;
@@ -629,7 +889,13 @@ function addBeneficio(monto, descripcion, entidad){
 	}
 	$(campos[0]).value=$(campos[1]).value='';
 	$('err'+elente).innerHTML='';
-	var html='	<div id="'+id+'"><input type="hidden" name="data[Prize]['+window.memo.index+'][model]" autocomplete="off" value="Project" />	<input type="hidden" name="data[Prize]['+window.memo.index+'][value]" autocomplete="off" value="'+monto+'" />	<input name="data[Prize]['+window.memo.index+'][description]" type="hidden" autocomplete="off" value="'+descripcion+'" />	<input name="data[Prize]['+window.memo.index+'][ente]" type="hidden" autocomplete="off" value="'+elente+'" />	'+sep+'<div class="beneficio_creado'+ente+'"><h3 class="'+colortxt+'"><?php echo __("Providing");?><span class="lamonedaelegida">'+window.lamoneda+'</span> '+monto+' </h3><p class="texto_proyecto" style="color:#383938; height:60px; overflow:auto;">'+descripcion+'</p><div onclick="$(&quot;'+id+'&quot;).parentNode.removeChild($(&quot;'+id+'&quot;));" class="borrar_beneficio'+ente+'"></div><div onclick="$(&quot;'+campos[0]+'&quot;).value=&quot;'+monto+'&quot;;$(&quot;'+campos[1]+'&quot;).value=&quot;'+descripcion+'&quot;;$(&quot;'+id+'&quot;).parentNode.removeChild($(&quot;'+id+'&quot;));location=&quot;#beneficiosyrecompensas&quot;" class="editar_beneficio'+ente+'"></div></div></div>';
+    if (bakes<=0){
+        var habilitado = '<div data="'+bakes+'" onclick="$(&quot;'+campos[0]+'&quot;).value=&quot;'+monto+'&quot;;$(&quot;'+campos[1]+'&quot;).value=&quot;'+descripcion+'&quot;;$(&quot;'+id+'&quot;).parentNode.removeChild($(&quot;'+id+'&quot;));location=&quot;#beneficiosyrecompensas&quot;" class="editar_beneficio'+ente+'"></div>';
+    }
+    else{
+        var habilitado = '';
+    }
+	var html='	<div id="'+id+'"><input type="hidden" name="data[Prize]['+window.memo.index+'][model]" autocomplete="off" value="Project" />	<input type="hidden" name="data[Prize]['+window.memo.index+'][value]" autocomplete="off" value="'+monto+'" />	<input name="data[Prize]['+window.memo.index+'][description]" type="hidden" autocomplete="off" value="'+descripcion+'" />	<input name="data[Prize]['+window.memo.index+'][ente]" type="hidden" autocomplete="off" value="'+elente+'" />	'+sep+'<div class="beneficio_creado'+ente+'"><h3 class="'+colortxt+'"><?php echo __("Providing");?><span class="lamonedaelegida">'+window.lamoneda+'</span> '+monto+' </h3><p class="texto_proyecto" style="color:#383938; height:60px; overflow:auto;">'+descripcion+'</p><div onclick="$(&quot;'+id+'&quot;).parentNode.removeChild($(&quot;'+id+'&quot;));" class="borrar_beneficio'+ente+'"></div>'+habilitado+'</div></div>';
 	if(entidad=='empresa'){
 		$('contverde').innerHTML+=html;
 	}else{
@@ -649,7 +915,7 @@ function xrestantes(campo,label,mx,mi){
 }
 <?if(isset($this->data['Project']['project_duration'])){?>
 DR(function(){
-	
+
 	$('ProjectProjectDuration').value=<?=$this->data['Project']['project_duration']?>;
 	var r=Math.round($('ProjectProjectDuration').value/365*343);
 	$('cursor').style.left=r+'px';
@@ -663,9 +929,9 @@ DR(function(){
 	foreach($this->data['Prize'] as $k=>$v){
 		if($v['ente']=='E'){
 			?>
-			addBeneficio('<?=$v['value']?>', '<?=$v['description']?>', 'empresa');
+			addBeneficio('<?=$v['value']?>', '<?=$v['description']?>', 'empresa','<?=$v['bakes_count']?>','<?=$v['sponsorships_count']?>');
 		<?}else{?>
-			addBeneficio('<?=$v['value']?>', '<?=$v['description']?>', 'personas');
+			addBeneficio('<?=$v['value']?>', '<?=$v['description']?>', 'personas','<?=$v['bakes_count']?>','<?=$v['sponsorships_count']?>');
 		<?
 		}
 	}

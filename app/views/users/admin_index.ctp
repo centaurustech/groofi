@@ -1,4 +1,6 @@
 <?
+//echo 'asdasdasdasdasdasdasdadas'.$_SESSION['idioma'];
+
 echo $this->element('paginator/common');
 echo $this->element('paginator/filters');
 ?>
@@ -15,20 +17,16 @@ if (!empty($this->data['results'])) {
     <table cellpadding="0" cellspacing="0">
         <tr>
 
-
-            <th><?php echo $this->Paginator->sort('User.id'); ?></th>
-            <th><?php echo $this->Paginator->sort('User.display_name'); ?></th>
-            <th><?php echo $this->Paginator->sort('User.email'); ?></th>
-            <th><?php echo $this->Paginator->sort('User.created'); ?></th>
-            <th><?php echo $this->Paginator->sort('User.score'); ?></th>
-            <th><?php echo $this->Paginator->sort('User.report_count'); ?></th>
-
-
-
-
-
-            <th><?php __('User.flags'); ?></th>
-            <th class="actions"><?php __('Actions'); ?></th>
+            <div class="padre_user_subtitulos">
+            <li class="user_subtitulos"><?php echo $this->Paginator->sort('User.id'); ?></li>
+            <li class="user_subtitulos"><?php echo $this->Paginator->sort('User.display_name'); ?></li>
+            <li class="user_subtitulos"><?php echo $this->Paginator->sort('User.email'); ?></li>
+            <li class="user_subtitulos"><?php echo $this->Paginator->sort('User.created'); ?></li>
+            <li class="user_subtitulos"><?php echo $this->Paginator->sort('User.score'); ?></li>
+            <li class="user_subtitulos"><?php echo $this->Paginator->sort('User.report_count'); ?></li>
+            <li class="user_subtitulos" style="margin-left: 275px; color: #555555; font-size: 12px;font-weight: bold;list-style: none outside none;right: 13px;text-transform: uppercase"><?php __('User.flags'); ?></li>
+            <li class="actions user_subtitulos" style="color: #555555; font-size: 12px;font-weight: bold;list-style: none outside none;right: 13px;text-transform: uppercase"><?php __('Actions'); ?></li>
+            </div>
         </tr>
         <?php
         $i = 0;
@@ -43,14 +41,34 @@ if (!empty($this->data['results'])) {
 
 
                 <td colspan="6" class="info">
-                    <?= $this->element('users/admin/user_info', array('result' => $result)); ?>
+                    <!--?= $this->element('users/admin/user_info', array('result' => $result)); ?-->
+                    <!--?= $result['Project']['id'];?-->
+                    <div class="propiedades_users_admin">
+                        <div class="thumb">
+                            <?if ( $result['User']['dirname'] == true) {?>
+                            <? $imagen_extension = explode('.',$result['User']['basename'])?>
+                            <img style="display: block" src="/media/filter/s64/<?= $result['User']['dirname'].'/'.$imagen_extension[0].'.png';?>" width="64" height="64">
+                            <?}else{?>
+
+                            <img style="display: block" src="/img/assets/img_default_64px.png" width="64" height="64">
+                            <?}?>
+                        </div>
+                        <span><?= $result['User']['id'];?></span>
+                        <span><?= $result['User']['display_name'];?></span>
+                        <span><?= $result['User']['email'];?></span>
+                        <span><?= $result['User']['created'];?></span>
+                        <span><?= $result['User']['score'];?></span>
+                        <span><?= $result['User']['report_count'];?></span>
+
+
+                    </div>
                 </td>
 
 
                 <td class="flags">
                     <?
                     echo $this->Form->input("User.{$result['User']['id']}.active", array('label' => 'ENABLED_USER', 'type' => 'checkbox', 'checked' => ( $result['User']['active'] ? true : false )));
-                    ?> 
+                    ?>
                 </td>
 
 
@@ -66,7 +84,8 @@ if (!empty($this->data['results'])) {
 
                         $notification_id = array_shift(Set::extract('/Notification/id', $result));
 
-                        echo $this->Html->link(__('RESEND_ACTIVATION', true), array('controller' => 'mails', 'action' => 'email', $notification_id), array('class' => 'auto-process ajax remove'));
+                        //echo $this->Html->link(__('RESEND_ACTIVATION', true), array('controller' => 'mails', 'action' => 'email', $notification_id), array('class' => 'auto-process ajax remove'));
+                    echo '<a class="auto-process ajax remove ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" href="/mails/email/'.$notification_id.'">Re-enviar mail de activación</a>';
                     }
                     ?>
 

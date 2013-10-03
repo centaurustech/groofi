@@ -60,6 +60,8 @@ class AppController extends Controller {
     function beforeFilter() {
 
 
+
+
         $this->Auth->fields = array(
             'username' => 'email',
             'password' => 'password'
@@ -158,7 +160,7 @@ class AppController extends Controller {
                     'password' => 'password'
                 );
                 $this->Auth->loginRedirect = array('controller' => 'users', 'action' => 'index', 'admin' => true); //
-                $this->set('adminMenu', $this->_getAdminMenu());
+
             }
         }
 		$this->Auth->login($this->Cookie->read('Auth.User'));
@@ -179,6 +181,10 @@ class AppController extends Controller {
     }
 
     function beforeRender() {
+        if(isset($_SESSION['idioma']) && !empty($_SESSION['idioma'])){
+            $idioma = $_SESSION['idioma'];
+            Configure::write('Config.language', $idioma);
+        }
         if (isset($this->pageError) && !empty($this->pageError)) {
             extract($this->pageError, EXTR_OVERWRITE);
             $code = isset($code) ? $code : '404';
@@ -190,9 +196,11 @@ class AppController extends Controller {
         }
 
         parent::beforeRender();
+        $this->set('adminMenu', $this->_getAdminMenu());
     }
 
     function _getAdminMenu() {
+
         $menu = array();
         if ($this->Auth->user()) {
 
@@ -224,7 +232,7 @@ class AppController extends Controller {
               )
               );
              */
-            $menu['projects'] = array(__('PROJECTS', true) => array('url' => '/admin/projects'),
+            $menu['projects'] = array(__('ADMIN_PROJECTS', true) => array('url' => '/admin/projects'),
                 array(
                     __('ADMIN_PROJECTS_MENU_ALL', true) => array('url' => '/admin/projects'),
                     __('ADMIN_PROJECTS_MENU_PROPOSALS', true) => array('url' => '/admin/projects/proposals'),
@@ -236,34 +244,43 @@ class AppController extends Controller {
                     __('ADMIN_PROJECTS_MENU_NOT-FUNDED', true) => array('url' => '/admin/projects/not-funded'),
                     __('ADMIN_PROJECTS_MENU_FINISHED', true) => array('url' => '/admin/projects/finished'),
                     __('ADMIN_PROJECTS_MENU_OUTSTANDING', true) => array('url' => '/admin/projects/outstanding'),
-                    __('ADMIN_PROJECTS_MENU_LEADING', true) => array('url' => '/admin/projects/leading'),
-					__('ADMIN_PROJECTS_MENU_WEEK', true) => array('url' => '/admin/projects/week')
+                    __('ADMIN_PROJECTS_MENU_LEADING_ESP', true) => array('url' => '/admin/projects/leading?l=esp'),
+                    __('ADMIN_PROJECTS_MENU_LEADING_ITA', true) => array('url' => '/admin/projects/leading?l=ita'),
+                    __('ADMIN_PROJECTS_MENU_LEADING_ENG', true) => array('url' => '/admin/projects/leading?l=eng'),
+                    //__('ADMIN_PROJECTS_MENU_WEEK', true) => array('url' => '/admin/projects/week'),
+                    __('ADMIN_PROJECTS_MENU_ESP', true) => array('url' => '/admin/projects/week_esp'),
+                    __('ADMIN_PROJECTS_MENU_ITA', true) => array('url' => '/admin/projects/week_ita'),
+                    __('ADMIN_PROJECTS_MENU_ENG', true) => array('url' => '/admin/projects/week_eng'),
+                    __('ADMIN_PROJECTS_MENU_IDIOMA', true) => array('url' => '/admin/projects/idioma_ita'),
+                    __('ADMIN_PROJECTS_MENU_IDIOMA2', true) => array('url' => '/admin/projects/idioma_eng'),
+                    __('ADMIN_PROJECTS_MENU_IDIOMA3', true) => array('url' => '/admin/projects/idioma_esp')
+                    /*__('UPLOAD IMAGENES FOR SPONSORS',true) => array('url' => '/admin/adminuploadimage')*/
                 )
             );
 
-			$menu['predefineds'] = array('Proyectos Predefinidos' => array('url' => '/admin/predefinidos/list'),
+            $menu['predefineds'] = array(__('PROYECTOS_PREDEFINIDOS', true) => array('url' => '/admin/predefinidos/list'),
                 array(
-                    'Ingresar' => array('url' => '/admin/predefinidos/create'),
-					'Modificar / Borrar' => array('url' => '/admin/predefinidos/list')
-                   
+                    __('INGRESAR',true) => array('url' => '/admin/predefinidos/create'),
+                    __('MOD', true) => array('url' => '/admin/predefinidos/list')
+
                 )
             );
 
-           /* $menu['offers'] = array(__('OFFERS', true) => array('url' => '/admin/offers'),
-                array(
-                    __('ADMIN_OFFERS_ALL', true) => array('url' => '/admin/offers'),
-                    __('ADMIN_OFFERS_MENU_DISABLED', true) => array('url' => '/admin/offers/disabled'),
-                    __('ADMIN_OFFERS_MENU_PROPOSALS', true) => array('url' => '/admin/offers/proposals'),
-                    __('ADMIN_OFFERS_MENU_REJECTED', true) => array('url' => '/admin/offers/rejected'),
-                    __('ADMIN_OFFERS_MENU_APPROVED', true) => array('url' => '/admin/offers/approved'),
-                    __('ADMIN_OFFERS_MENU_PUBLISHED', true) => array('url' => '/admin/offers/published'),
-                    __('ADMIN_OFFERS_MENU_ABOUT_TO_FINISH', true) => array('url' => '/admin/offers/about-to-finish'),
-                    __('ADMIN_OFFERS_MENU_FINISHED', true) => array('url' => '/admin/offers/finished'),
-                    __('ADMIN_OFFERS_MENU_OUTSTANDING', true) => array('url' => '/admin/offers/outstanding'),
-                    __('ADMIN_OFFERS_MENU_LEADING', true) => array('url' => '/admin/offers/leading'),
-					__('ADMIN_OFFERS_MENU_WEEK', true) => array('url' => '/admin/offers/week'),
-                )
-            );*/
+            /* $menu['offers'] = array(__('OFFERS', true) => array('url' => '/admin/offers'),
+                 array(
+                     __('ADMIN_OFFERS_ALL', true) => array('url' => '/admin/offers'),
+                     __('ADMIN_OFFERS_MENU_DISABLED', true) => array('url' => '/admin/offers/disabled'),
+                     __('ADMIN_OFFERS_MENU_PROPOSALS', true) => array('url' => '/admin/offers/proposals'),
+                     __('ADMIN_OFFERS_MENU_REJECTED', true) => array('url' => '/admin/offers/rejected'),
+                     __('ADMIN_OFFERS_MENU_APPROVED', true) => array('url' => '/admin/offers/approved'),
+                     __('ADMIN_OFFERS_MENU_PUBLISHED', true) => array('url' => '/admin/offers/published'),
+                     __('ADMIN_OFFERS_MENU_ABOUT_TO_FINISH', true) => array('url' => '/admin/offers/about-to-finish'),
+                     __('ADMIN_OFFERS_MENU_FINISHED', true) => array('url' => '/admin/offers/finished'),
+                     __('ADMIN_OFFERS_MENU_OUTSTANDING', true) => array('url' => '/admin/offers/outstanding'),
+                     __('ADMIN_OFFERS_MENU_LEADING', true) => array('url' => '/admin/offers/leading'),
+                     __('ADMIN_OFFERS_MENU_WEEK', true) => array('url' => '/admin/offers/week'),
+                 )
+             );*/
 
             $menu['users'] = array(__('USERS', true) => array('url' => '/admin/users'),
                 array(
@@ -280,20 +297,20 @@ class AppController extends Controller {
                     __('ADMIN_CREATE_ADMIN', true) => array('url' => '/admin/admins/add')
                 )
             );
-/*
-            $menu['STATICPAGES'] = array(__('STATICPAGES', true) => array('url' => '/admin/staticpages'),
-                array(
-                    __('ADMIN_STATICPAGES_ALL', true) => array('url' => '/admin/staticpages')
-                )
-            );
-*/
+            /*
+                        $menu['STATICPAGES'] = array(__('STATICPAGES', true) => array('url' => '/admin/staticpages'),
+                            array(
+                                __('ADMIN_STATICPAGES_ALL', true) => array('url' => '/admin/staticpages')
+                            )
+                        );
+            */
             $menu['PAYMENTS'] = array(__('PAYMENTS', true) => array('url' => '/admin/sponsorships'),
                 array(
                     __('ADMIN_PAYMENTS_ALL', true) => array('url' => '/admin/sponsorships/all_paypal'),
                     __('ADMIN_PAYMENTS_COMPLETED', true) => array('url' => '/admin/sponsorships/completed'),
                     __('ADMIN_PAYMENTS_NOT_COMPLETED', true) => array('url' => '/admin/sponsorships/not-completed'),
-					__('ADMIN_PAYMENTS_ALL_MP', true) => array('url' => '/admin/sponsorships/mercadopago/all')
-                   
+                    __('ADMIN_PAYMENTS_ALL_MP', true) => array('url' => '/admin/sponsorships/mercadopago/all')
+
                 )
             );
             // $this->loadModel('Role');
@@ -336,9 +353,10 @@ class AppController extends Controller {
                 );
             }
         }
-        return $menu;
-    }
 
+        return $menu;
+
+    }
     var $uploadFileName = null;
     var $uploadFileType = null;
     var $uploadFile = null;

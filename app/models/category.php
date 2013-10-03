@@ -71,6 +71,22 @@ class Category extends AppModel {
         //return @array_shift(Set::extract('/Category/id',$this->find('first',array('conditions'=>array('Category.slug'=>$slug),'contain'=>array()))));
     }
 
+    static function slugCategory($categoryId=null){
+
+       $entero = (int) $categoryId;
+        $p=new Category;
+        $data = $p->getFromId($entero);
+
+       return $data['Category']['slug'];
+
+    }
+    function getFromId($id=null) {
+
+        return  $this->find('first', array('conditions' => array('Category.id' => $id)));
+
+
+        //return @array_shift(Set::extract('/Category/id',$this->find('first',array('conditions'=>array('Category.slug'=>$slug),'contain'=>array()))));
+    }
 }
 
 ?>

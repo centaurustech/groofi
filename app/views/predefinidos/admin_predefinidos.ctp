@@ -68,7 +68,7 @@ function noenter(e){
 function validaform(){
 	
 	if((_('short_description').value.length<50 || _('short_description').value.length>140)){
-		alert("Ingrese una descripci<?=utf8_encode('ó')?>n que posea entre 50 y 140 caracteres");
+		alert("Ingrese una descripci<?=utf8_encode('ï¿½')?>n que posea entre 50 y 140 caracteres");
 		return false;
 	}
 	return true;
@@ -78,13 +78,13 @@ function validaform(){
 <form onsubmit="return validaform()" target="ifr" action="/proceso.php" method="post" enctype="multipart/form-data" name="f1" id="f1">
    <table width="600" border="0">
     <tr>
-      <td class="tablapredefuno" width="239" align="right" valign="top">T&iacute;tulo&nbsp;</td>
+      <td class="tablapredefuno" width="239" align="right" valign="top"><?__("ADMIN_PROJECTS_FILTER_SORT_PROJECT.TITLE");?></td>
       <td width="351">
         <textarea autocomplete="off" name="title" id="title" cols="45" rows="5"><? if($modificar){?><?=$proyectoPredefinido['title'];?><? } ?></textarea>
       </td>
     </tr>
     <tr>
-      <td  class="tablapredefuno" align="right" valign="top">Categor&iacute;a&nbsp;</td>
+      <td  class="tablapredefuno" align="right" valign="top"><?__("PROJECT__CATEGORY");?></td>
       <td>
         <select autocomplete="off" name="category_id" id="category_id">
         <? foreach($base_categories as $k=>$v){ 
@@ -96,43 +96,43 @@ function validaform(){
       </td>
     </tr>
 	<tr>
-      <td class="tablapredefuno" align="right" valign="top">Descripci&oacute;n corta&nbsp;</td>
+      <td class="tablapredefuno" align="right" valign="top"><?__("PROJECT__SHORT_DESCRIPTION");?></td>
       <td><textarea autocomplete="off" name="short_description" id="short_description" cols="45" rows="5"><? if($modificar){?><?=$proyectoPredefinido['short_description'];?><? } ?></textarea></td>
     </tr>
     <tr>
-      <td class="tablapredefuno" align="right" valign="top">Descripci&oacute;n&nbsp;</td>
+      <td class="tablapredefuno" align="right" valign="top"><?__("PROJECT__DESCRIPTION");?></td>
       <td><textarea autocomplete="off" name="la_description" id="la_description" cols="45" rows="5"><? if($modificar){?><?=$proyectoPredefinido['description'];?><? } ?></textarea></td>
     </tr>
 	<tr>
-      <td class="tablapredefuno" align="right" valign="top">Motivaci&oacute;n&nbsp;</td>
+      <td class="tablapredefuno" align="right" valign="top"><?__("MOTIVATION_ADMIN");?></td>
       <td><textarea autocomplete="off" name="motivation" id="motivation" cols="45" rows="5"><? if($modificar){?><?=$proyectoPredefinido['motivation'];?><? } ?></textarea></td>
     </tr>
     <tr>
-      <td class="tablapredefuno" align="right" valign="top">Razones para patrocinar el proyecto&nbsp;</td>
+      <td class="tablapredefuno" align="right" valign="top"><?__("REASON");?>&nbsp;</td>
       <td><textarea autocomplete="off" name="reason" id="reason" cols="45" rows="5"><? if($modificar){?><?=$proyectoPredefinido['reason'];?><? } ?></textarea></td>
     </tr>
     <tr>
-      <td  class="tablapredefuno" align="right" valign="top">Imagen&nbsp;</td>
+      <td  class="tablapredefuno" align="right" valign="top"><?__("PROJECT_IMAGE");?></td>
       <td>
         <input autocomplete="off" type="file" name="foto" id="foto" />
 		<? if($modificar && !empty($proyectoPredefinido['foto'])){?><?='<br><img style="max-width:560px" src="/'.$proyectoPredefinido['foto'].'">';?><? } ?>
       </td>
     </tr>
     <tr>
-      <td  class="tablapredefuno" align="right" valign="top">Video (URL)&nbsp;</td>
+      <td  class="tablapredefuno" align="right" valign="top"><?__("OFFER__VIDEO_URL");?></td>
       <td>
         <input value="<? if($modificar){?><?=$proyectoPredefinido['video'];?><? } ?>" autocomplete="off" style="width:300px" type="text" name="video" id="video" />
       <? if($modificar && !empty($proyectoPredefinido['video'])){?><?='<br>'.getVideoFromURL($proyectoPredefinido['video']);?><? } ?>
 	  </td>
     </tr>
     <tr>
-      <td  class="tablapredefuno" align="right" valign="top">Fondos&nbsp;</td>
+      <td  class="tablapredefuno" align="right" valign="top"><?__("FONDO");?></td>
       <td>
         <input value="<? if($modificar){?><?=$proyectoPredefinido['funding_goal'];?><? } ?>"   onkeypress="return validar(event)" autocomplete="off" type="text" name="funding_goal" id="funding_goal" />
       </td>
     </tr>
     <tr>
-      <td  class="tablapredefuno" align="right" valign="top">Moneda&nbsp;</td>
+      <td  class="tablapredefuno" align="right" valign="top"><?__("Moneda");?></td>
       <td>
         <select onchange="window.lamoneda=this.value;changeBoxesMoneda();" autocomplete="off" name="moneda" id="moneda">
           <option<?if($modificar && $proyectoPredefinido['moneda']=='ARS'){echo ' selected="selected" ';}?> value="ARS">ARS</option>
@@ -141,13 +141,13 @@ function validaform(){
       </td>
     </tr>
 	<tr>
-      <td  class="tablapredefuno" align="right" valign="top">Duraci&oacute;n del proyecto [d&iacute;as]&nbsp;</td>
+      <td  class="tablapredefuno" align="right" valign="top"><?__("PROJECT__PROJECT_DURATION");?></td>
       <td>
         <input value="<? if($modificar){?><?=$proyectoPredefinido['project_duration'];?><? } ?>"   onkeypress="return validar(event)" autocomplete="off" type="text" name="project_duration" id="project_duration" />
       </td>
     </tr>
     <tr>
-      <td  class="tablapredefuno" align="right" valign="top">Beneficios para personas&nbsp;</td>
+      <td  class="tablapredefuno" align="right" valign="top"><?__("BENEFISTS_FOR_PEOPLE");?></td>
       <td>Monto:<br />
         
           <input autocomplete="off"  onkeypress="return validar(event)" type="text" name="v1" id="v1" />
@@ -155,14 +155,14 @@ function validaform(){
           Concepto:<br />
           <textarea autocomplete="off" onkeypress="return noenter(event)" name="d1" id="d1" cols="45" rows="5"></textarea>
           <br />
-          <input onclick="if(_('v1').value.length && _('d1').value.length)addBeneficio('personas',_('v1').value,_('d1').value)" type="button" name="button2" id="button2" value="A&ntilde;adir" />
+          <input onclick="if(_('v1').value.length && _('d1').value.length)addBeneficio('personas',_('v1').value,_('d1').value)" type="button" name="button2" id="button2" value="<?__("ADD_ADMIN_BUTTON");?>" />
         
         <div id="colectorpersonas">
         
         </div></td>
     </tr>
     <tr>
-      <td  class="tablapredefuno" align="right" valign="top">Beneficio para empresas</td>
+      <td  class="tablapredefuno" align="right" valign="top"><?__("CORPORATE_BENEFIST");?></td>
       <td>Monto:<br />
         
           <input autocomplete="off"  onkeypress="return validar(event)" type="text" name="v2" id="v2" />
@@ -170,7 +170,7 @@ function validaform(){
           Concepto:<br />
           <textarea autocomplete="off" onkeypress="return noenter(event)" name="d2" id="d2" cols="45" rows="5"></textarea>
           <br />
-          <input onclick="if(_('v2').value.length && _('d2').value.length)addBeneficio('empresas',_('v2').value,_('d2').value)" type="button" name="button2" id="button3" value="A&ntilde;adir" />
+          <input onclick="if(_('v2').value.length && _('d2').value.length)addBeneficio('empresas',_('v2').value,_('d2').value)" type="button" name="button2" id="button3" value="<?__("ADD_ADMIN_BUTTON");?>" />
         
         <div id="colectorempresas">
         
@@ -179,7 +179,7 @@ function validaform(){
      <tr>
       <td align="right" valign="top">&nbsp;</td>
       <td>
-        <input type="submit" name="button" id="button" value="Enviar" />
+        <input type="submit" name="button" id="button" value="<?__("SEND");?>" />
 		<? if($modificar){?>
 		<input name="proceso" type="hidden" id="proceso" value="modificarpredefinido" />
 		<input name="id" type="hidden" id="id" value="<?=$proyectoPredefinido['id'];?>" />

@@ -1,8 +1,8 @@
     
 <?php /* @var $this ViewCC */ 
 
-$this->set('pageTitle' , 'Groofi Escuela' ) ;
-$this->set('title_for_layout' ,'Groofi Escuela' ) ;
+$this->set('pageTitle' , __("GROOFI_SCHOOL",true) ) ;
+$this->set('title_for_layout' ,__("GROOFI_SCHOOL",true) ) ;
 
 ?>
 <div style="width:100%; height:auto;overflow:hidden; margin-top:20px">

@@ -16,24 +16,24 @@ function getVideoFromURL($u){
 	return $ret;
 }
 ?>
-<h3 class="breadcrumb title underline full">Modificar / borrar proyectos predefinidos:</h3>
+<h3 class="breadcrumb title underline full"><?__("MODIFI_DELETE_PREDEFINES");?></h3>
 <style>
 th{ color:#FFF; background:#000; text-align:left}
 
 </style>
 <script>
 function deletePredefinido(id){
-	if(confirm('<?=utf8_encode('¿Está');?> seguro de eliminar este item?')){
+	if(confirm('<?=utf8_encode('ï¿½Estï¿½');?> seguro de eliminar este item?')){
 		document.getElementById('ifr').src='/proceso.php?proceso=borrarPredefinido&id='+id;
 	}
 }
 </script>
 <table width="600" border="0">
   <tr>
-    <th >T&iacute;tulo</th>
-    <th >Imagen/Video</th>
-    <th >Modificar</th>
-    <th >Borrar</th>
+    <th ><?__("Title");?></th>
+    <th ><?__("IMAGE_VIDEO");?></th>
+    <th ><?__("MODIFI");?></th>
+    <th ><?__("DELETE");?></th>
   </tr>
   <? foreach($proyectoPredefinido as $v){?>
   <tr>

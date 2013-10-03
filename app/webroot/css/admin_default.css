@@ -5,3 +5,99 @@
 @import 'dropmenu.css'; /* Site styles */
 @import 'cake.generic.css'; /* cake own styles */
 @import 'admin_theme.css'; /* Site styles */
+.esp{ background: url("/app/webroot/2012/images/redes_sociales_admin.png")no-repeat scroll -87px -12px transparent;
+    float: left;
+    height: 18px;
+    margin-right: 3px;
+    margin-top: 9px;
+    width: 22px;}
+.esp:hover{ background-position:-87px -47px; ; cursor:pointer}
+.ing{ background:url(/app/webroot/2012/images/redes_sociales_admin.png) no-repeat; background-position:-110px -12px; width:20px; height:18px; float:left;margin-right:3px;  margin-top:9px;}
+.ing:hover{ background-position:-110px -47px; ; cursor:pointer}
+.ita{ background:url(/app/webroot/2012/images/redes_sociales_admin.png) no-repeat; background-position:-132px -12px; width:22px; height:18px; float:left;margin-right:3px;  margin-top:9px;}
+.ita:hover{ background-position:-132px -47px; ; cursor:pointer}
+.por{ background:url(/app/webroot/2012/images/redes_sociales_admin.png) no-repeat; background-position:-134px -11px; width:20px; height:18px; float:left;margin-right:3px;  margin-top:9px;}
+.por:hover{ background-position:-134px -47px; ; cursor:pointer}
+.fra{ background:url(/app/webroot/2012/images/redes_sociales_admin.png) no-repeat; background-position:-155px -11px; width:20px; height:18px; float:left;margin-right:3px;  margin-top:9px;}
+.fra:hover{ background-position:-155px -47px; ; cursor:pointer}
+
+
+.propiedades_proyectos{
+    display: inline-block;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    left: 405px;
+    position: relative;
+    text-decoration: none !important;
+    width: 900px;
+    text-transform: uppercase;
+}
+.propiedades_proyectos li{
+    float: left;
+    list-style: none outside none;
+    margin-left: 25px;
+    text-decoration: none !important;
+    width: 125px;
+}
+#last{
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
+    list-style: none outside none;
+    right: 13px;
+    width: 309px;
+    color: #555555;
+    text-transform: uppercase;
+}
+.propiedades_proyectos_admin{
+    display: block;
+    margin-left: 75px;
+
+}
+.propiedades_proyectos_admin span{
+    display: block;
+    float: left;
+    width: 125px;
+    text-align: left;
+    margin-left: 25px;
+    overflow: hidden;
+}
+.descripcion_proyecto_admin{
+    display: block;
+    left: 75px;
+    position: relative;
+    top: 55px;
+    width: 500px;
+    height: 100px;
+}
+.padre_user_subtitulos{
+    height: 50px;
+    margin-left: 185px;
+    width: auto;
+}
+.user_subtitulos{
+    float: left;
+    width: 170px;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+}
+.propiedades_users_admin{
+    display: block;
+    margin-left: 75px;
+
+}
+.propiedades_users_admin span{
+    display: block;
+    float: left;
+    width: 147px;
+    text-align: left;
+    margin-left: 25px;
+    overflow: hidden;
+}
+.link_sponsor{
+   list-style: none;
+
+}

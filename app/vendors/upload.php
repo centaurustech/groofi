@@ -148,5 +148,6 @@ class qqFileUploader {
                 'The upload was cancelled, or server error encountered');
         }
         
-    }    
+    }
+
 }

@@ -10,10 +10,10 @@
 class Project extends AppModel {
 
     var $actsAs = array(
-        'Media.Transfer',
+        /*'Media.Transfer',
         'Media.Coupler',
         'Media.Generator',
-        'Media.Meta',
+        'Media.Meta',*/
         'Enableable',
         'Containable',
         'Sluggable' => array(
@@ -27,6 +27,7 @@ class Project extends AppModel {
         'time_left' => " DATEDIFF(Project.end_date, NOW())",
         'elapsed_time' => " DATEDIFF( NOW() , Project.publish_date)",
         'total_time' => " DATEDIFF( Project.end_date , Project.publish_date)",
+        /*'file' => "WWW_ROOT.'/image/transfer/project/tmp/img/'.Project.basename",*/
     );
     var $hasOne = array();
     var $belongsTo = array(
@@ -155,12 +156,12 @@ class Project extends AppModel {
             )
         )
         , 'reason' => array(
-            'default' => array(
-                'rule' => array('notEmpty'),
-                'required' => true,
-                'allowEmpty' => false,
-                'on' => 'update'
-            ),
+                'default' => array(
+                    'rule' => array('notEmpty'),
+                    'required' => true,
+                    'allowEmpty' => false,
+                    'on' => 'update'
+                ),
             'minLength_140' => array(
                 'rule' => array('minLength', 140),
                 'required' => true,
@@ -192,23 +193,27 @@ class Project extends AppModel {
                 'required' => true,
                 'allowEmpty' => false
             )
-        ),
-        'file' => array(
-            'valid_upload' => array(
+        )
+        /*'file' => array(
+            'default' => array(
+                'rule' => array('notEmpty'),
+                'required' => true,
+                'allowEmpty' => false
+            /*'valid_upload' => array(
                 'rule' => array('validateUploadedFile', true),
                 'message' => 'YOU_MUST_UPLOAD_AN_IMAGE',
                 'required' => true,
-                'allowEmpty' => false
-            ),
-            'resource' => array('rule' => 'checkResource'),
+                'allowEmpty' => false*/
+           // ),
+            /*'resource' => array('rule' => 'checkResource'),
             //'access' => array('rule' => 'checkAccess'),
             //'location' => array('rule' => array('checkLocation', array(MEDIA_TRANSFER, '/tmp/'))),
             //'permission' => array('rule' => array('checkPermission', '*')),
             'size' => array('rule' => array('checkSize', '10M')),
             //  'pixels' => array('rule' => array('checkPixels', '1600x1600')),
             'extension' => array('rule' => array('checkExtension', false, array('jpg', 'jpeg', 'png', 'gif', 'tmp'))),
-            'mimeType' => array('rule' => array('checkMimeType', false, array('image/jpeg', 'image/png', 'image/gif', 'image/jpg')))
-        )
+            'mimeType' => array('rule' => array('checkMimeType', false, array('image/jpeg', 'image/png', 'image/gif', 'image/jpg')))*/
+       // )*/
         , 'video_url' => array(
             'VideoUrl' => array(
                 'rule' => array('VideoUrl', false),
@@ -431,12 +436,28 @@ class Project extends AppModel {
     function getViewData($id=false, $cache=true) {
         $query = $this->queryStandarSet();
         if (is_bool($id)) {
+
             return $query;
+
         } else {
+//echo '<pre>';
+//var_dump(ctype_digit($id));
+if (ctype_digit($id)){
             $query['conditions']['or'] = array(
-                $this->alias . '.slug' => $id,
+
                 $this->alias . '.id' => $id,
-            );
+
+
+            );}else{
+
+                $query['conditions']['or'] = array(
+                $this->alias . '.slug' => $id,
+
+
+            );}
+
+
+
             return parent::getViewData($this->alias, $query, $cache);
         }
     }
@@ -509,6 +530,7 @@ class Project extends AppModel {
     function getHighlight($find = true, $limit = 6) {
         $query = $this->queryStandarSet(false);
 		$query['conditions']['Project.outstanding'] = 1;
+        $query['conditions']['Project.idioma'] = $_SESSION['idioma'];
         $query['limit'] = $limit;
         $query['order'] = 'rand()';
         return $find ? $this->find('all', $query) : $query;
@@ -517,6 +539,7 @@ class Project extends AppModel {
     function getLeading($find = true, $limit = 1) {
         $query = $this->queryStandarSet(false);
         $query['conditions']['Project.leading'] = 1;
+        $query['conditions']['Project.idioma'] = $_SESSION['idioma'];
         $query['limit'] = ( $limit == 1 ? 1000 : $limit );
         $query['order'] = 'rand()';
         return $find ? $this->find(($limit == 1 ? 'first' : 'all'), $query) : $query;
@@ -533,11 +556,13 @@ class Project extends AppModel {
 	function getWeek($find = true, $limit = 8) {
       	$query = $this->queryStandarSet(false);
        	$query['conditions']['Project.leading'] = 1;
+        $query['conditions']['Project.idioma'] = $_SESSION['idioma'];
         $query['limit'] = ( $limit == 1 ? 1000 : $limit );
         $query['order'] = 'Project.id';
         $uno= $find ? $this->find(($limit == 1 ? 'first' : 'all'), $query) : $query;
 		$query = $this->queryStandarSet(false);
-       	$query['conditions']['Project.week'] = 1;	
+       	$query['conditions']['Project.week'] = 1;
+        $query['conditions']['Project.idioma'] = $_SESSION['idioma'];
         $query['limit'] = ( $limit == 1 ? 1000 : $limit );
         $query['order'] = 'Project.id';
         $dos= $find ? $this->find(($limit == 1 ? 'first' : 'all'), $query) : $query;
@@ -563,7 +588,7 @@ class Project extends AppModel {
         unset($this->validate['short_description']);
 
         if ($data['Project']['basename'] != '') {
-            unset($this->validate['file']['valid_upload']);
+       /*     unset($this->validate['file']['valid_upload']);*/
         }
     }
 
@@ -583,6 +608,26 @@ class Project extends AppModel {
 
         $data['Project']['public'] = IS_NOT_PUBLIC;
         $data['Project']['status'] = PROJECT_STATUS_APROVED;
+
+        return ( $this->saveAll($data, array('validate' => 'only')) ? $data : false );
+    }
+    function editValidation2($data) {
+
+        $this->commonValidation($data);
+        // all fields are optional.
+        foreach ($this->validate as $field => $rules) {
+
+            foreach ($rules as $ruleName => $rule) {
+                if (( is_array($rule['rule']) && low($rule['rule'][0]) == 'notempty' ) || is_string($rule['rule']) && low($rule['rule']) == 'notempty') {
+                    unset($this->validate[$field][$ruleName]);
+                } else {
+                    $this->validate[$field][$ruleName]['allowEmpty'] = true; // The value can be null
+                }
+            }
+        }
+
+        //$data['Project']['public'] = IS_NOT_PUBLIC;
+        //$data['Project']['status'] = PROJECT_STATUS_APROVED;
 
         return ( $this->saveAll($data, array('validate' => 'only')) ? $data : false );
     }
@@ -642,7 +687,7 @@ class Project extends AppModel {
 			break;
 			case 'ubicacion':
 			$pp=new City;
-			$datos=$pp->query("select * from cities where 1 group by city_slug");
+			$datos=$pp->query("select * from cities where project_count>0 group by city_slug");
 			return $datos;
 			break;
 		}
@@ -683,6 +728,8 @@ class Project extends AppModel {
 		$data = $p->getViewData($projectId);
 		return $data['Project']['private'];
 	}
+
+
 
 }
 

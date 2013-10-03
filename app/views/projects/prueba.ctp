@@ -1,11 +1,11 @@
 <LINK REL='StyleSheet' HREF="/js/imgareaselect/css/imgareaselect-animated.css" TYPE="text/css" MEDIA='screen'>
 
 <?php
+    $ID = $_GET['ID'];
 
-if(isset($javascript)):
-    echo $javascript->link('/js/imgareaselect/jquery.min.js');
+echo $javascript->link('/js/imgareaselect/jquery.min.js');
     echo $javascript->link('/js/imgareaselect/jquery.imgareaselect.pack.js');
-endif;
+
 
 ?>
 <div id="loading">

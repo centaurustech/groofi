@@ -10,7 +10,7 @@ class StaticpagesController extends AppController {
 
         }
 
-        $this->Auth->allow('view', 'home','message','guidelines','comofunciona','faq','contacto','translate', 'country','terminos','politicasdeprivacidad');
+        $this->Auth->allow('view', 'home','message','guidelines','comofunciona','faq','contacto','translate', 'country','terminos','politicasdeprivacidad','translate2');
         parent::beforeFilter();
 
     }
@@ -140,7 +140,8 @@ class StaticpagesController extends AppController {
     }
 
     function home() {
-
+        //echo '<pre>';
+//var_dump($this->Connect);die;
         if(!$_SESSION['idioma']){
             $this->country();
         }
@@ -182,7 +183,11 @@ class StaticpagesController extends AppController {
         $this->loadModel('Country');
 
 
-        $base_countries = $this->Country->find('all');
+        $base_countries = $this->Country->getCountries($_SESSION['idioma']);
+
+        /*->find('all', array('conditions'=>array('Project.idioma' =>$_SESSION['idioma'], 'Project.paislugar=' => 'Country.PAI_ISO2')));*/
+
+
         $this->set (compact ('base_countries'));
         $predefinido=0;
         if($this->Session->check('predefinido')){
@@ -286,6 +291,7 @@ class StaticpagesController extends AppController {
        $this->redirect(array('controller' => 'staticpages', 'action' => 'home'),null,true);
     }
 
+
     function country(){
         App::import('Vendor', 'geoip');
 
@@ -304,6 +310,9 @@ class StaticpagesController extends AppController {
             $this->translate('es');
         }else if($sigla_pais =='BR'){
             $moneda= 'Real';
+            $this->translate('en');
+        }else if($sigla_pais =='US'){
+            $moneda= 'Dolar';
             $this->translate('en');
         }else if($sigla_pais =='GB'){
             $moneda= 'Libra';

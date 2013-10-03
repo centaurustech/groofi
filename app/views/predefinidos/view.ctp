@@ -34,7 +34,7 @@ function getVideoFromURL($u){
 
 <h1 style="font-weight:normal; font-size:28px; line-height:32px;"><?=$project['title']?></h1>
 
-<span style=" font-style:italic; color:#666; line-height:30px">Proyecto de la categor&iacute;a</span> <a href="/discover/projects/in/<?=$keys_categories[$project['category_id']]?>" style="font-weight:bold; color:#39a0c6; text-decoration:underline"><?=$base_categories[$project['category_id']]?></a>
+<span style=" font-style:italic; color:#666; line-height:30px"><?__("CATEGORY_OF PROJECT %s");?></span> <a href="/discover/projects/in/<?=$keys_categories[$project['category_id']]?>" style="font-weight:bold; color:#39a0c6; text-decoration:underline"><?=$base_categories[$project['category_id']]?></a>
 
 <br>
 
@@ -63,7 +63,8 @@ function getVideoFromURL($u){
 <br><br>
 <h3 class="cyan"><?php echo __("ABOUT_THIS_PROJECT");?></h3>
 <div class="misc_separador"></div><br>
-<p class="texto_proyecto" style="margin-bottom:30px"><?=nl2br($project['description'])?></p>
+<p class="texto_proyecto" style="margin-bottom:30px"><?php if($_SESSION["idioma"]== "esp"){echo nl2br($project['description']);} else{echo nl2br($project['description_'.$_SESSION["idioma"]]);}?></p>
+
 <? if (!empty($project['reason'])) {?>
 <h3 class="cyan"><?php echo __("PROJECT_REASON");?></h3>
 <div class="misc_separador"></div>
@@ -88,11 +89,11 @@ $file = $this->Media->getImage('s50', $this->data['User']['avatar_file'], '/img/
 <div  id="columna_der_project" style="background:url(/2012/images/columna_der_predefinidos.png) no-repeat">
 <div class="financiado">
 <h1 style="font-size:42px;"><span style=" font-size:21px; font-weight:400"><?=$moneda.'&nbsp;'?></span><?=$project['funding_goal']?></h1>
-<p style="width:150px;position:relative;left:0px; text-align:center;">Fondos sugeridos</p>
+<p style="width:150px;position:relative;left:0px; text-align:center;"><?php echo __("FONDOS_SUGERIDOS");?></p>
 </div>
 <div class="finaliza2" >
 <h1 style="font-size:42px;"><?=$q;?></h1>
-<p style="width:150px;position:relative;left:0px; text-align:center;top:8px;">Personas que quieren hacer esto</p>
+<p style="width:150px;position:relative;left:0px; text-align:center;top:8px;"><?php echo __("PEOPLE_WHO_WANT");?></p>
 
 </div>
 
@@ -101,11 +102,16 @@ $file = $this->Media->getImage('s50', $this->data['User']['avatar_file'], '/img/
 <div class="clear" style=" height:275px"></div>
 
 
+    <div class="difundir_idea"><?php echo __("DIFUNDIR_IDEA");?><br><p><?php echo __("SHARE_THIS_OFFER_TITLE");?></p></div>
 
+    <div class="quiero_hacer"><?php echo __("QUIERO_HACER");?><br><p><?php echo __("THIS_OFFER");?></p></div>
 
+    <div class="beneficios_sugeridos"><?php echo __("SUGGESTED BENEFITS");?></div>
 
 
 <a href="#share"  rel="nofollow" class="addthis_button boton_difundir_predefinido">
+    <!--p><strong><?php echo __("SHARE_THIS_PROJECT_SUBTITLE");?></strong><br>
+        <span style=" font-size:12.5px; line-height:14px;"><?php echo __("SHARE_THIS_OFFER_TITLE");?></span></p-->
 
 
 
@@ -169,19 +175,19 @@ $file = $this->Media->getImage('s50', $this->data['User']['avatar_file'], '/img/
   } 
   
   if($htmll1!=''){
-	echo '<div class="beneficios_personas"><h4 class="cyan">PERSONAS O PEQUE&Ntilde;OS PATROCINADORES</h4>'.$htmll1.'</div>';
+	echo '<div class="beneficios_personas"><h4 class="cyan">'.__("Personas_patro",true).'</h4>'.$htmll1.'</div>';
   }
   if($htmll2!='' ){
-	echo '<div class="beneficios_personas"><h4 class="cyan">EMPRESAS O GRANDES PATROCINADORES</h4>'.$htmll2.'</div>';
+	echo '<div class="beneficios_personas"><h4 class="cyan">'.__("Personas_patro_gran", true).'</h4>'.$htmll2.'</div>';
   }
   ?>
-  
 
-  
-  
-  
-  
-  
+
+
+
+
+
+
 
 
 

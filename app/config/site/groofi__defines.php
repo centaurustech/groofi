@@ -22,15 +22,15 @@ define('REFOUND_EXTRA_REQUIRED_PERCENTEGE', 10 ); // % // balance must have x% e
 
 // MAIL CONFIGURATION - CONFIGURACION DE EMAIL.
 
-define('SMTP_FAST_SERVER', 'mail.groofi.com');
-define('SMTP_NORMAL_SERVER', 'mail.groofi.com');
-define('SMTP_PORT', '465');
+//define('SMTP_FAST_SERVER', 'mail.groofi.com');
+//define('SMTP_NORMAL_SERVER', 'mail.groofi.com');
+define('SMTP_PORT', '25');
 define('SMTP_TIMEOUT', '30');
-define('SMTP_HOST', 'ssl://ip-50-62-131-213.ip.secureserver.net');
-define('SMTP_USERNAME', 'noreply@groofi.com');
-define('SMTP_PASSWORD', 'bR!SChnP@$1L');
+define('SMTP_HOST', 'localhost');
+//define('SMTP_USERNAME', 'noreply@groofi.com');
+//define('SMTP_PASSWORD', 'bR!SChnP@$1L');
 define('SMTP_REPLYTO', 'noreply@groofi.com');
-define('SMTP_FROM', 'Groofi <noreply@groofi.com>');
+define('SMTP_FROM', 'GROOFI <noreply@groofi.com>');
 
 
 

@@ -1,4 +1,6 @@
-<?php /* @var $this ViewCC */ ?>
+<?php /* @var $this ViewCC */
+
+?>
 <?
 $ver=$this->data;
 $this->data=$project;
@@ -36,7 +38,7 @@ $moneda=Project::getMoneda($project);
 				<a  class="delproy" href="/projects/delete/<?=$project['Project']['id']?>"><span class="delp"></span>Borrar</a>
 				<div class="misc_divisor" style="width:551px;clear:both;"></div>
 			<?}else{?>
-			<a  class="lanzaract" href="/project/<?=$project['Project']['id']?>/create-update"><span class="lanzact"></span><?php echo __("CREATE_UPDATE");?></a>
+			<!--a  class="lanzaract" href="/project/<?=$project['Project']['id']?>/create-update"><span class="lanzact"></span><?php echo __("CREATE_UPDATE");?></a-->
 			<div class="misc_divisor" style="width:551px;clear:both;"></div>
 			<? } ?>
 	<? } ?>
@@ -55,6 +57,7 @@ $moneda=Project::getMoneda($project);
 <ul class="pageElement tabs" style="margin-top:10px">
 
     <li class="tab-projects"><a href="<?= Project::getLink($project); ?>"><? __('THE_PROJECT') ?></a></li>
+    <li><a  class="lanzaract lanzaract1" href="/project/<?=$project['Project']['id']?>/create-update"><span class="lanzact" style="margin-left: -15px;text-align: center;"></span><?php echo __("CREATE_UPDATE");?></a></li>
 	 <? if (Project::isPublic($project)) { ?>
 	    <li class="tab-sponsorships"><a href="<?= Project::getLink($project, 'sponsorships'); ?>"><? __('PROJECT_SPONSORS') ?> <span style="color:#1e455b; font-weight:600">(<?= $this->data['Project']['sponsorships_count']; ?>)</span></a></li>
         <li class="tab-comments active"><a href="<?= Project::getLink($project, 'comments'); ?>"><? __('COMMENTS') ?>  <span style="color:#1e455b; font-weight:600">(<?= $this->data['Project']['comment_count']; ?>)</span></a></li>
@@ -299,7 +302,9 @@ $this->Session->delete('deletedok');
 }?>
 
 <?if($this->Session->check('sipublicado')){?>
-<script>DR(function(){alerta("El proyecto ha sido publicado.");});</script>
+<script>
+    var alert1 = <?php echo __("PROJECT_PUBLISHED");?>
+    DR(function(){alerta(alert1);});</script>
 <?
 $this->Session->delete('sipublicado');
 }?>
