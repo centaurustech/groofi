@@ -18,10 +18,10 @@ $large_image_prefix = "resize_"; 			// The prefix name to large image
 $thumb_image_prefix = "thumbnail_";			// The prefix name to the thumb image
 $large_image_name = $large_image_prefix.$_SESSION['random_key'];     // New name of the large image (append the timestamp to the filename)
 $thumb_image_name = $thumb_image_prefix.$_SESSION['random_key'];     // New name of the thumbnail image (append the timestamp to the filename)
-$max_file = "1"; 							// Maximum file size in MB
+$max_file = "2"; 							// Maximum file size in MB
 $max_width = "570";							// Max width allowed for the large image
-$thumb_width = "150";						// Width of thumbnail image
-$thumb_height = "100";						// Height of thumbnail image
+$thumb_width = "200";						// Width of thumbnail image
+$thumb_height = "150";						// Height of thumbnail image
 // Only one of these image types should be allowed for upload
 $allowed_image_types = array('image/pjpeg'=>"jpg",'image/jpeg'=>"jpg",'image/jpg'=>"jpg",'image/png'=>"png",'image/x-png'=>"png",'image/gif'=>"gif");
 $allowed_image_ext = array_unique($allowed_image_types); // Do not change this
@@ -444,7 +444,7 @@ function noenter(e){
 <div class="tipo_moneda_concept">
 <?php echo __("TYPE_OF_CURRENCY_1");?>
 </div>
-<div class="tipo_moneda_us">
+<!--div class="tipo_moneda_us">
 <?php echo __("TYPE_OF_CURRENCY_US");?>
 </div>
 <div class="tipo_moneda_eu">
@@ -458,7 +458,7 @@ function noenter(e){
 </div>
 <div class="tipo_moneda_br">
 <?php echo __("TYPE_OF_CURRENCY_BRL");?>
-</div>
+</div-->
 
 <div class="input_fondos">
 <div id="quemoneda" style="color:#686b68; width:50px; height:30px; text-align:right; line-height:30px;font-size:15px;font-weight:normal; position:absolute; left:-45px;top:20px;font-family:Arial, Helvetica, sans-serif"><?if(!isset($this->data['Project']['moneda'])){?>USD<? }else{?><?=traducirMoneda($this->data['Project']['moneda'])?><? } ?></div>
@@ -468,7 +468,7 @@ function noenter(e){
 <div class="bot_info" onmouseout="hideTip()"  onmousemove="showTip(event,'<?php echo __("PROJECT_GOAL", true);?><br><?php echo __("PROJECT__FUNDING_GOAL__TIP_MESSAGE_TEXT");?>')"></div>
 <div style="position:absolute; width:534px; height:148px; background:url(/2012/images/tipodemoneda.jpg); left:420px; top:0">
 
-<label style="position:absolute; height:15px;width:300px;  left:0; top:98px; text-align:left; margin:0; padding:0" for="usd">
+<!--label style="position:absolute; height:15px;width:300px;  left:0; top:98px; text-align:left; margin:0; padding:0" for="usd">
     <input onchange="if(this.checked){$('quemoneda').innerHTML=this.value;window.lamoneda=this.value;changeBoxesMoneda();}" value="USD" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="usd" <?if((isset($_POST['data']['Project']['moneda']) && $_POST['data']['Project']['moneda']=='USD') || !isset($_POST['data']['Project']['moneda'])){?>checked="checked"<? } ?>>
 </label>
 <label style="position:absolute; height:15px;width:300px;  left:0; top:125px; text-align:left; margin:0; padding:0" for="eur">
@@ -482,7 +482,7 @@ function noenter(e){
 </label>
 <label style="position:absolute; height:15px;width:300px;  left:0; top:206px; text-align:left; margin:0; padding:0" for="brl">
     <input onchange="if(this.checked){$('quemoneda').innerHTML='BRL';window.lamoneda='ARS';changeBoxesMoneda();}" value="BRL" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="brl" <?if(isset($_POST['data']['Project']['moneda']) && $_POST['data']['Project']['moneda']=='BRL'){?>checked="checked"<? } ?>>
-</label>
+</label-->
 
 </div>
 </div>

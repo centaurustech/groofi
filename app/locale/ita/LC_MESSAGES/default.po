@@ -120,7 +120,7 @@ msgid "DO_U_WANT_TO_PUBLISH_THIS_PROJECT_BODY"
 msgstr "Vuoi lanciare questo progetto?"
 
 msgid "DO_U_WANT_TO_PUBLISH_THIS_PROJECT_YES"
-msgstr "Si�"
+msgstr "Siè"
 
 msgid "DO_U_WANT_TO_PUBLISH_THIS_PROJECT_NO"
 msgstr "No"
@@ -132,7 +132,7 @@ msgid "DO_U_WANT_TO_DELETE_THIS_PROJECT_BODY"
 msgstr "Vuoi eliminare questo progetto?"
 
 msgid "DO_U_WANT_TO_DELETE_THIS_PROJECT_YES"
-msgstr "Si�"
+msgstr "Siè"
 
 msgid "DO_U_WANT_TO_DELETE_THIS_PROJECT_NO"
 msgstr "No"
@@ -192,7 +192,7 @@ msgid "FACEBOOK_MESSAGE_TITLE"
 msgstr "Privacy"
 
 msgid "FACEBOOK_MESSAGE_MESSAGE"
-msgstr "Non conserveremo il suo nome utente, password o altri dati del suo account, n� condivideremo le sue informazioni di Groofi in Facebook."
+msgstr "Non conserveremo il suo nome utente, password o altri dati del suo account, nè condivideremo le sue informazioni di Groofi in Facebook."
 
 msgid "DISCOVER"
 msgstr "SCOPRIRE"
@@ -508,7 +508,7 @@ msgid "OF"
 msgstr "di "
 
 msgid "THE_URL_IS_NOT_VALID"
-msgstr "La URL inserita non � valida"
+msgstr "La URL inserita non è valida"
 
 msgid "THIS_FIELD_CANNOT_BE_LEFT_BLANK"
 msgstr "Devi completare questo campo"
@@ -586,7 +586,7 @@ msgid "PROJECTS_EDIT_TITLE"
 msgstr "Modificare progetto"
 
 msgid "PROJECT__REASON"
-msgstr "Perch� dovreste finanziare questo progetto?"
+msgstr "Perchè dovreste finanziare questo progetto?"
 
 msgid "UPDATED ON %s"
 msgstr "Aggiornato il %s"
@@ -794,7 +794,7 @@ msgid "POSTS_EDIT_TITLE"
 msgstr "Modificare aggiornamento"
 
 msgid "The post has been saved"
-msgstr "L' aggiornamento � stato salvato"
+msgstr "L' aggiornamento è stato salvato"
 
 msgid "POST__PUBLIC"
 msgstr "Pubblicare questo aggiornamento"
@@ -821,7 +821,7 @@ msgid "OFFER_IMPORTANT_ADVICE_TITLE"
 msgstr "Importante"
 
 msgid "OFFER_IMPORTANT_ADVICE %s"
-msgstr "Il creatore di questa offerta valuter� le domande e appogger� fino a %s progetti con l' importo offerto se rispettano i requisiti sperati."
+msgstr "Il creatore di questa offerta valuterè le domande e appoggerè fino a %s progetti con l' importo offerto se rispettano i requisiti sperati."
 
 msgid "I_WANT_TO_DO_IT_HEADLINE"
 msgstr "Se vuoi creare un progetto in base a questa offerta..."
@@ -893,13 +893,13 @@ msgid "DELETE_ACCOUNT_EDIT_PROFILE_TITLE"
 msgstr "Eliminazione conto"
 
 msgid "DELETE_ACCOUNT_EDIT_PROFILE_SUBTITLE"
-msgstr "Si canceller� il tuo conto in Groofi definitivamente"
+msgstr "Si cancellerè il tuo conto in Groofi definitivamente"
 
 msgid "DELETE_ACCOUNT_MESSAGE_TITLE"
 msgstr "Avvertenza"
 
 msgid "DELETE_ACCOUNT_MESSAGE_MESSAGE"
-msgstr "Tutte le informazioni, attivit� e relazioni associate al tuo conto in Groofi saranno eliminate in forma definitiva, senza che tu possa recuperarle o rimetterle. Per favore, pensa se vuoi farlo."
+msgstr "Tutte le informazioni, attivitè e relazioni associate al tuo conto in Groofi saranno eliminate in forma definitiva, senza che tu possa recuperarle o rimetterle. Per favore, pensa se vuoi farlo."
 
 msgid "DELETEACCOUNT__PASSWORD"
 msgstr "Inserire tua password"
@@ -917,7 +917,7 @@ msgid "OFFER_UPDATE"
 msgstr "Un' offerta che mi unisco venga aggiornata."
 
 msgid "PROJECT_NEW_BACKER"
-msgstr "Un progetto creato da me� abbia un nuovo sponsor."
+msgstr "Un progetto creato da meè abbia un nuovo sponsor."
 
 msgid "PROJECT_NEW_UPDATE"
 msgstr "Un progetto che seguo o sponsorizzo sia stato aggiornato."
@@ -941,7 +941,7 @@ msgid "FACEBOOK_DISCONNECT_APP"
 msgstr "(disconnettersi)"
 
 msgid "YOUR_PROFILE_INFO_IS_INCOMPLETE_TITLE"
-msgstr "Il tuo profilo non � completo"
+msgstr "Il tuo profilo non è completo"
 
 msgid "UPDATE_INCOMPLETE_INFO_LINK_TITLE"
 msgstr "o complétalos automáticamente con datos disponibles en Facebook"
@@ -1081,13 +1081,13 @@ msgid "HIGHLIGHT_PROJECTS_TITLE"
 msgstr "Progetti rilevanti"
 
 msgid "HIGHLIGHT_PROJECTS_SUBTITLE"
-msgstr "Sponsorizza i progetti più interessanti della nostra comunit�"
+msgstr "Sponsorizza i progetti più interessanti della nostra comunitè"
 
 msgid "HIGHLIGHT_OFFERS_TITLE"
 msgstr "Offerte rilevanti"
 
 msgid "HIGHLIGHT_OFFERS_SUBTITLE"
-msgstr "Accetta le offerte più interessanti della nostra comunit�"
+msgstr "Accetta le offerte più interessanti della nostra comunitè"
 
 msgid "HIGHLIGHT_USERS_TITLE"
 msgstr "Utenti rilevanti"
@@ -1144,7 +1144,7 @@ msgid "DO_U_WANT_TO_PUBLISH_THIS_OFFER_BODY"
 msgstr "Vuoi lanciare questa offerta?"
 
 msgid "DO_U_WANT_TO_PUBLISH_THIS_OFFER_YES"
-msgstr "Si�"
+msgstr "Siè"
 
 msgid "DO_U_WANT_TO_PUBLISH_THIS_OFFER_NO"
 msgstr "No"
@@ -1183,7 +1183,7 @@ msgid "DO_U_WANT_TO_DELETE_THIS_OFFER_BODY"
 msgstr "Vuoi eliminare questa offerta?"
 
 msgid "DO_U_WANT_TO_DELETE_THIS_OFFER_YES"
-msgstr "Si�"
+msgstr "Siè"
 
 msgid "DO_U_WANT_TO_DELETE_THIS_OFFER_NO"
 msgstr "No"
@@ -1378,7 +1378,7 @@ msgid "PROJECT__VIDEO_URL_EDIT_HELP_MESSAGE_TEXT"
 msgstr "Inserisci la URL di un proprio video circa il tuo progetto che hai messo in YouTube.com o Vimeo.com"
 
 msgid "PROJECT__REASON_EDIT_HELP_MESSAGE_TEXT"
-msgstr "Racconta ai tuoi possibili sponsor perch� dovrebbero mettere fondi per il tuo progetto."
+msgstr "Racconta ai tuoi possibili sponsor perchè dovrebbero mettere fondi per il tuo progetto."
 
 msgid "PROJECT__FUNDING_GOAL_EDIT_HELP_MESSAGE_TEXT"
 msgstr "Inserisci l' importo in dollari di cui hai bisogno per realizzare il tuo progetto."
@@ -1411,7 +1411,7 @@ msgid "THANKS-FOR-BACKING-TITLE"
 msgstr "Grazie per la sponsorizzazione!"
 
 msgid "THANKS-FOR-BACKING-CONTENT"
-msgstr "Adesso sei uno sponsor di questo progetto. Ti terremo informato circa lo stato del tuo contributo e la attivit� del progetto."
+msgstr "Adesso sei uno sponsor di questo progetto. Ti terremo informato circa lo stato del tuo contributo e la attivitè del progetto."
 
 msgid "IT_SUPPORTING %s PROJECTS"
 msgstr "Stai sponsorizzando %s progetto/i."
@@ -1489,16 +1489,16 @@ msgid "PROJECT_COMMENTED"
 msgstr "Un progetto creato da me riceva un nuovo commento."
 
 msgid "PROJECT_ABOUT_TO_FINISH"
-msgstr "Un progetto creato da me�, che seguo o sponsorizzo sta terminando."
+msgstr "Un progetto creato da meè, che seguo o sponsorizzo sta terminando."
 
 msgid "OFFER_NEW_UPDATE"
 msgstr "Un' offerta alla quale mi sia unito o che abbia accettato sia aggiornata."
 
 msgid "OFFER_ABOUT_TO_FINISH"
-msgstr "Un' offerta alla quale mi sia unito� o abbia accettato sta per terminare."
+msgstr "Un' offerta alla quale mi sia unitoè o abbia accettato sta per terminare."
 
 msgid "OFFER_FINISHED"
-msgstr "Un' offerta creata da me�,che mi sia unito� o abbia accettato � terminata"
+msgstr "Un' offerta creata da meè,che mi sia unitoè o abbia accettato è terminata"
 
 msgid "POST_COMMENTED"
 msgstr "Un aggiornamento creato da me ha ricevuto un nuovo commento."
@@ -1510,7 +1510,7 @@ msgid "VIEW_UPDATE"
 msgstr "Vedere aggiornamento"
 
 msgid "HAS_CREATED_THE_PROJECT %s IN RESPONSE OF %s %s"
-msgstr "Cre� il progetto %s in base all' offerta %s - %s"
+msgstr "Creè il progetto %s in base all' offerta %s - %s"
 
 msgid "NOTIFICATIONS_WALL"
 msgstr "Novità"
@@ -1840,7 +1840,7 @@ msgid "RELATED_OFFER"
 msgstr "Basato nell' offerta"
 
 msgid "OFFER %s FROM %s IN THE CATEGORY %s"
-msgstr "Offerta %s di %s, nella categori�a %s"
+msgstr "Offerta %s di %s, nella categorièa %s"
 
 msgid "OFFER_MAIN_POST"
 msgstr "Descrizione"
@@ -1900,13 +1900,13 @@ msgid "USER__URL__HELP_MESSAGE_TEXT"
 msgstr "Inserisci la URL del tuo sito internet."
 
 msgid "USER__BIOGRAPHY__HELP_MESSAGE_TEXT"
-msgstr "Parlaci di te. Questa bio apparir� nel tuo profilo e nel tuo progetto."
+msgstr "Parlaci di te. Questa bio apparirè nel tuo profilo e nel tuo progetto."
 
 msgid "ASSOCIATE_WITH_PAYPAL"
 msgstr "Associare con il mio conto di PayPal"
 
 msgid "YOUR_PAYPAL_ACCOUNT_IS_ASSOCIATED_WITH_THE_ID %s"
-msgstr "Il tuo progetto � associato al seguente ID di PayPal: %s"
+msgstr "Il tuo progetto è associato al seguente ID di PayPal: %s"
 
 msgid "ASSOCIATE_WITH_ANOTHER_PAYPAL"
 msgstr "Associare con un' altro conto di PayPal"
@@ -1942,7 +1942,7 @@ msgid "THIS_PROJECT_IS_NOT_VALID_IT_CAN_NOT_BE_PUBLISHED"
 msgstr "Verifica di aver completato tutti i campi correttamente."
 
 msgid "THIS_PROJECT_IS_NOW_PUBLISHED"
-msgstr "Il progetto � stato lanciato correttamente."
+msgstr "Il progetto è stato lanciato correttamente."
 
 msgid "USERS"
 msgstr "Utenti"
@@ -2011,16 +2011,16 @@ msgid "TU APORTE"
 msgstr "Il mio contributo"
 
 msgid "PROJECT__SHORT_DESCRIPTION__TIP_MESSAGE_TEXT"
-msgstr "Devi scrivere da 50 a 140 caratteri per vendere il tuo progetto. Concentrati su ci� che conta."
+msgstr "Devi scrivere da 50 a 140 caratteri per vendere il tuo progetto. Concentrati su ciè che conta."
 
 msgid "PROJECT_COUNT_LEFT"
 msgstr "Sapzio restante"
 
 msgid "PROJECT__DESCRIPTION__TIP_MESSAGE_TEXT"
-msgstr "Maggiori informazioni metti e più chiaro sarai in questa descrizione, più affidabile risulter� il tuo progetto per gli sponsor."
+msgstr "Maggiori informazioni metti e più chiaro sarai in questa descrizione, più affidabile risulterè il tuo progetto per gli sponsor."
 
 msgid "PROJECT__VIDEO_URL__TIP_MESSAGE_TEXT"
-msgstr "Il video � la tua lettera di presentazione. Dimostra la qualità del tuo progetto con un video di qualità. Il tuo progetto diventer� più affidabile se parli ai tuoi futuri sponsor e gli dimostri le tue capacit� ed il tuo impegno."
+msgstr "Il video è la tua lettera di presentazione. Dimostra la qualità del tuo progetto con un video di qualità. Il tuo progetto diventerè più affidabile se parli ai tuoi futuri sponsor e gli dimostri le tue capacitè ed il tuo impegno."
 
 msgid "PROJECT_-PRIZE__TIP_MESSAGE_TEXT"
 msgstr "Tieni a mente che molti sponsor sono interessati ai benefici. Offri ricompense attrattive e ricorda l importo del contributo."
@@ -2032,34 +2032,34 @@ msgid "PROJECT__DESCRIPTION_EDIT_TIP_MESSAGE_TEXT"
 msgstr "Puoi utilizzare la barra degli strumenti superiore per dare un formato al tuo testo."
 
 msgid "PROJECT__VIDEO_URL_EDIT_TIP_MESSAGE_TEXT"
-msgstr "Il video � la tua lettera di presentazione. Dimostra la qualità del tuo progetto con un video di qualità. Il tuo progetto diventer� più affidabile se parli ai tuoi futuri sponsor e gli dimostri le tue capacit� ed il tuo impegno."
+msgstr "Il video è la tua lettera di presentazione. Dimostra la qualità del tuo progetto con un video di qualità. Il tuo progetto diventerè più affidabile se parli ai tuoi futuri sponsor e gli dimostri le tue capacitè ed il tuo impegno."
 
 msgid "PROJECT_-PRIZE_EDIT_TIP_MESSAGE_TEXT"
 msgstr "Tieni a mente che molti sponsor sono interessati ai benefici. Offri ricompense attrattive e ricorda l' importo del contributo."
 
 msgid "PROJECT__FILE_EDIT_TIP_MESSAGE_TEXT"
-msgstr "La immagine non è tutto, per� � molto importante. Metti una immagine di buona qualità, con un aspetto di 4:3 e un massimo di 560 x 430 pixels aprossimatamente."
+msgstr "La immagine non è tutto, perè è molto importante. Metti una immagine di buona qualità, con un aspetto di 16:9 e un minimo di 560 x 430 pixels aprossimatamente."
 
 msgid "PROJECT__FILE__TIP_MESSAGE_TEXT"
-msgstr "La immagine non è tutto, per� � molto importante. Metti una immagine di buone qualità, con un aspetto di 4:3 e un massimo di 560 x 430 pixels aprossimatamente."
+msgstr "La immagine non è tutto, perè è molto importante. Metti una immagine di buone qualità, con un aspetto di 16:9 e un minimo di 560 x 430 pixels aprossimatamente."
 
 msgid "OFFER__SHORT_DESCRIPTION__TIP_MESSAGE_TEXT"
-msgstr "Hai 140 caratteri per comunicare la tua offerta. Concentrati in ci� che conta. "
+msgstr "Hai 140 caratteri per comunicare la vostra offerta. Concentratevi sul più rilevante."
 
 msgid "OFFER__DESCRIPTION__TIP_MESSAGE_TEXT"
-msgstr "Maggiori informaioni metti e più claro sei nella descrizione, maggiori saranno le possibilit� che altri utenti creino progetti che rispecchino le tue aspettative."
+msgstr "Maggiori informaioni metti e più claro sei nella descrizione, maggiori saranno le possibilitè che altri utenti creino progetti che rispecchino le tue aspettative."
 
 msgid "OFFER__FILE__TIP_MESSAGE_TEXT"
-msgstr "La immagine non è tutto, pero è molto importante. Metti una immagine di buona qualità, con un aspetto di 4:3 e un massimo di 560 x 430 pixels aprossimatamente."
+msgstr "La immagine non è tutto, pero è molto importante. Metti una immagine di buona qualità, con un aspetto di 16:9 e un minimo di 560 x 430 pixels aprossimatamente."
 
 msgid "OFFER__VIDEO_URL__TIP_MESSAGE_TEXT"
-msgstr "Il video � la tua lettera di presentazione. Dimostra la qualità della tua offerta con un video di qualità. La tua offerta diventer� molto più affidabile se racconti agli utenti quello che cerchi e perch� vuoi sponsorizzarli."
+msgstr "Il video è la tua lettera di presentazione. Dimostra la qualità della tua offerta con un video di qualità. La tua offerta diventerè molto più affidabile se racconti agli utenti quello che cerchi e perchè vuoi sponsorizzarli."
 
 msgid "OFFER__DESCRIPTION_EDIT_TIP_MESSAGE_TEXT"
 msgstr "Puoi utilizzare la barra degli strumenti superiore per dare un formato al tuo testo."
 
 msgid "OFFER__VIDEO_URL_EDIT_TIP_MESSAGE_TEXT"
-msgstr "Il video � la tua lettera di presentazione. Dimostra la qualità della tua offerta con un video di qualità. La tua offerta diventer� molto più affidabile se racconti agli utenti quello che cerchi e perch� vuoi sponsorizzarli."
+msgstr "Il video è la tua lettera di presentazione. Dimostra la qualità della tua offerta con un video di qualità. La tua offerta diventerè molto più affidabile se racconti agli utenti quello che cerchi e perchè vuoi sponsorizzarli."
 
 msgid "PROJECT__FUNDING_GOAL__TIP_MESSAGE_TEXT"
 msgstr "Ricorda che se al termine del tempo scelto a continuazione il tuo progetto non raccoglie questo importo, non sarà finanziato. Pensa ad una somma che sei in condizione di raccogliere nel tempo previsto. "
@@ -2104,7 +2104,7 @@ msgid "REFOUND_MONEY_TO_ALL"
 msgstr "Ritornare soldi di tutte le donazioni"
 
 msgid "FOUND_PROJECT_BUT_NOT_PAY"
-msgstr "Finanziare il progetto per� non trasferire le donazioni"
+msgstr "Finanziare il progetto perè non trasferire le donazioni"
 
 msgid "FOUND_PROJECT_AND_PAY_WITH_PAYPAL"
 msgstr "Finanziare progetto e transferire donazioni"
@@ -2119,7 +2119,7 @@ msgid "INSUFICIENT_FOUNDS_TO_PAY_THIS_PROJECT"
 msgstr "I fondi disponibili in Paypal non sono sufficienti per realizzare il pagamento del progetto."
 
 msgid "OFFER__FILE_EDIT_TIP_MESSAGE_TEXT"
-msgstr "La immagine non � tutto, per� � molto importante. Metti una immagine di buona qualità, con un' aspetto di 4:3 e un massimo di 560 x 430 pixels approssimatamente."
+msgstr "La immagine non è tutto, perè è molto importante. Metti una immagine di buona qualità, con un' aspetto di 4:3 e un massimo di 560 x 430 pixels approssimatamente."
 
 msgid "THE_PROJECT_HAS_FINISHED %s"
 msgstr "Progetto concluso il %s"
@@ -2155,7 +2155,7 @@ msgid "RANGE_PRIZEVALUE_2000"
 msgstr "Introduci un importo valido per il benefico selezionato."
 
 msgid "RANGE_10_2000"
-msgstr "Il contributo minimo � di USD 10 e il massimo di USD 2000"
+msgstr "Il contributo minimo è di USD 10 e il massimo di USD 2000"
 
 msgid "YOUR_BENEFIT"
 msgstr "Beneficio scelto"
@@ -2189,7 +2189,7 @@ msgid "AT_LEAST_ONE_LINK"
 msgstr "Inserisci almeno un sito internet"
 
 msgid "THE_OFFER_COULD_NOT_BE_SAVED_PLEASE_TRY_AGAIN"
-msgstr "L' offerta non � stata salvata. Verifica che i campi siano stati completati correttamente."
+msgstr "L' offerta non è stata salvata. Verifica che i campi siano stati completati correttamente."
 
 msgid "YOU_MUST_UPLOAD_AN_IMAGE"
 msgstr "Devi inserire una immagine"
@@ -2204,16 +2204,16 @@ msgid "EDIT_THIS_OFFER"
 msgstr "Modificare offerta"
 
 msgid "BETWEEN_3_50_CHARS"
-msgstr "Scrivi un Titolo inferiore a 50 caracteres"
+msgstr "Scrivi un titolo tra 3 e 50 caratteri"
 
 msgid "THIS_OFFER_IS_NOT_VALID_IT_CAN_NOT_BE_PUBLISHED"
-msgstr "L' offerta non � stata lanciata. Verifica che i campi siano stati completati correttamente."
+msgstr "L' offerta non è stata lanciata. Verifica che i campi siano stati completati correttamente."
 
 msgid "THE_OFFER_IS_NOT_VALID_WE_CAN_NOT_PUPBISH_IT"
-msgstr "L' offerta non � stata lanciata. Verifica che i campi siano stati completati correttamente"
+msgstr "L' offerta non è stata lanciata. Verifica che i campi siano stati completati correttamente"
 
 msgid "THE_OFFER_COULD_NOT_BE_SAVED_PLEASE_TRY_AGAIN."
-msgstr "L' offerta non � stata salvata. Verifica che i campi siano stati completati correttamente."
+msgstr "L' offerta non è stata salvata. Verifica che i campi siano stati completati correttamente."
 
 msgid "greater_than_0"
 msgstr "inserisci un importo valido"
@@ -2225,7 +2225,7 @@ msgid "PAYMENT_COMPLETE_TITLE"
 msgstr "Congratulazioni!"
 
 msgid "PAYMENT_COMPLETE_BODY"
-msgstr "Il tuo contributo � stato realizzato con successo."
+msgstr "Il tuo contributo è stato realizzato con successo."
 
 msgid "THIS_PROJECT_WAS_NOT_SUPPORTED_YET %s"
 msgstr "Questo progetto non ha ancora sponsors %s"
@@ -2291,7 +2291,7 @@ msgid "USERS_ADMIN_ADD"
 msgstr "Creare amministratore"
 
 msgid "USER_HAS_BEEN_CREATED"
-msgstr "L' Utente � stato creato"
+msgstr "L' Utente è stato creato"
 
 msgid "ADMIN_ADMINS"
 msgstr "Amministratori"
@@ -2360,7 +2360,7 @@ msgid "ACTIVE"
 msgstr "Attivo"
 
 msgid "MESSAGE_SENT"
-msgstr "Il tuo messaggio � stato inviato"
+msgstr "Il tuo messaggio è stato inviato"
 
 msgid "ENABLED_OFFER"
 msgstr "Abilitare offerta"
@@ -2369,7 +2369,7 @@ msgid "THE_OFFER_HAS_FINISHED %s"
 msgstr "Offerta terminata il %s"
 
 msgid "THIS_OFFER_IS_NOT_EDITABLE_ANY_MORE"
-msgstr "Questa offerta non � più modificabile ora"
+msgstr "Questa offerta non è più modificabile ora"
 
 msgid "APPROVED_OFFER_STATUS"
 msgstr "Offerta approvata"
@@ -2445,7 +2445,7 @@ msgid "LOGIN_USER__USERNAME"
 msgstr "E-mail"
 
 msgid "ARE_YOU_SURE_THIS_CAN_NO_BE_UNDONE"
-msgstr "Sei sicuro? Questa azione non pu� essere annullata"
+msgstr "Sei sicuro? Questa azione non puè essere annullata"
 
 msgid "ADMIN_ADMIN_DEFAULT_HOME"
 msgstr "Principale"
@@ -2463,7 +2463,7 @@ msgid "USER__ENABLED"
 msgstr "Utente abilitato"
 
 msgid "USER_INFO_HAS_BEEN_UPDATED"
-msgstr "La informazione del conto � stata aggiornata"
+msgstr "La informazione del conto è stata aggiornata"
 
 msgid "REJECTED_OFFER_STATUS"
 msgstr "Offerta rifiutata"
@@ -2472,7 +2472,7 @@ msgid "STATICPAGES_ADMIN_EDIT"
 msgstr "Modificare pagine statiche"
 
 msgid "STATICPAGE__TITLE"
-msgstr "Ti�tolo"
+msgstr "Tiètolo"
 
 msgid "STATICPAGE__SECTION"
 msgstr "Sezione"
@@ -2529,7 +2529,7 @@ msgid "PUBLISHED"
 msgstr "Pubblicata"
 
 msgid "MAIL-MUST-BE-UNIQUE"
-msgstr "Questo indirizzo email � gi� stato utilizzato."
+msgstr "Questo indirizzo email è giè stato utilizzato."
 
 msgid "OFFER_COMMENTED_SUBJECT_OWNER"
 msgstr "Hai ricevuto un nuovo commento"
@@ -2538,10 +2538,10 @@ msgid "OFFER_PENDING_APPROVE_SUBJECT_OWNER"
 msgstr "Abbiamo ricevuto la tua proposta"
 
 msgid "OFFER_APPROVED_SUBJECT_OWNER"
-msgstr "Congratulazioni! La tua proposta � stata approvata"
+msgstr "Congratulazioni! La tua proposta è stata approvata"
 
 msgid "OFFER_REJECTED_SUBJECT_OWNER"
-msgstr "La tua proposta non � stata approvata"
+msgstr "La tua proposta non è stata approvata"
 
 msgid "OFFER_NEW_UPDATE_SUBJECT_FOLLOWER"
 msgstr "Nuovo aggiornamento in un' offerta"
@@ -2553,7 +2553,7 @@ msgid "OFFER_NEW_PROJECT_SUBJECT_OWNER"
 msgstr "E' stato creato un progetto per la tua offerta"
 
 msgid "OFFER_NEW_USER_SUBJECT_OWNER"
-msgstr "Un nuovo utente si � unito alla tua offerta"
+msgstr "Un nuovo utente si è unito alla tua offerta"
 
 msgid "OFFER_ABOUT_TO_FINISH_SUBJECT_OWNER"
 msgstr "La tua offerta sta per terminare"
@@ -2565,13 +2565,13 @@ msgid "OFFER_ABOUT_TO_FINISH_SUBJECT_FOLLOWER_TYPE2"
 msgstr "L' offerta per la quale hai creato il progetto sta per terminare"
 
 msgid "OFFER_FINISHED_SUBJECT_OWNER"
-msgstr "La tua offerta � terminata"
+msgstr "La tua offerta è terminata"
 
 msgid "OFFER_FINISHED_SUBJECT_FOLLOWER"
-msgstr "L' offerta alla quale ti sei unito � terminata"
+msgstr "L' offerta alla quale ti sei unito è terminata"
 
 msgid "OFFER_FINISHED_SUBJECT_FOLLOWER_TYPE2"
-msgstr "L' offerta per la quale hai creato il progetto � terminata"
+msgstr "L' offerta per la quale hai creato il progetto è terminata"
 
 msgid "POST_COMMENTED_SUBJECT_OWNER"
 msgstr "Hai ricevuto un nuovo commento"
@@ -2583,10 +2583,10 @@ msgid "PROJECT_PENDING_APPROVE_SUBJECT_OWNER"
 msgstr "Abbiamo ricevuto la tua proposta"
 
 msgid "PROJECT_APPROVED_SUBJECT_OWNER"
-msgstr "Congratulazioni! La tua proposta � stata accettata"
+msgstr "Congratulazioni! La tua proposta è stata accettata"
 
 msgid "PROJECT_REJECTED_SUBJECT_OWNER"
-msgstr "La tua proposta non � stata accettata"
+msgstr "La tua proposta non è stata accettata"
 
 msgid "PROJECT_NEW_BACKERPROJECT_ABOUT_TO_FINISH    "
 msgstr "Il tuo progetto ha un nuovo sponsor"
@@ -2607,25 +2607,25 @@ msgid "PROJECT_ABOUT_TO_FINISH_SUBJECT_FOLLOWER_TYPE2"
 msgstr "Un progetto che sponsorizzi sta per teminare"
 
 msgid "PROJECT_FINISH_SUBJECT_OWNER"
-msgstr "Il tuo progetto � terminato"
+msgstr "Il tuo progetto è terminato"
 
 msgid "PROJECT_FUNDED_SUBJECT_OWNER"
-msgstr "Congratulazioni! Il tuo progetto � stato finanziato"
+msgstr "Congratulazioni! Il tuo progetto è stato finanziato"
 
 msgid "PROJECT_FUNDED_SUBJECT_FOLLOWER"
-msgstr "Un progetto che segui � stato finanziato"
+msgstr "Un progetto che segui è stato finanziato"
 
 msgid "PROJECT_FUNDED_SUBJECT_FOLLOWER_TYPE2"
-msgstr "Un progetto che sponsorizzi � stato finanziato"
+msgstr "Un progetto che sponsorizzi è stato finanziato"
 
 msgid "PROJECT_DONT_FUNDED_SUBJECT_OWNER"
-msgstr "Il tuo progetto non � stato finanziato"
+msgstr "Il tuo progetto non è stato finanziato"
 
 msgid "PROJECT_DONT_FUNDED_SUBJECT_FOLLOWER"
-msgstr "Un progetto che segui non � stato finanziato"
+msgstr "Un progetto che segui non è stato finanziato"
 
 msgid "PROJECT_DONT_FUNDED_SUBJECT_FOLLOWER_TYPE2"
-msgstr "Un progetto che sponsorizzi non � stato finanziato"
+msgstr "Un progetto che sponsorizzi non è stato finanziato"
 
 msgid "USER_WELCOME_MAIL_SUBJECT_OWNER"
 msgstr "Benvenuto in Groofi! Conferma il tuo conto"
@@ -2673,7 +2673,7 @@ msgid "POSTS_EDIT"
 msgstr "Modificare aggiornamento"
 
 msgid "OFFER_IS_NOT_VISIBLE"
-msgstr "Scusa! La pagina che stai provando ad accedere non � disponibile"
+msgstr "Scusa! La pagina che stai provando ad accedere non è disponibile"
 
 msgid "PROJECT_DOES_NOT_EXIST"
 msgstr "Scusa! La pagina che stai provando ad accedere non esiste"
@@ -2682,19 +2682,19 @@ msgid "GENERIC_PAGE_ERROR_403"
 msgstr "Scusa!"
 
 msgid "GENERIC_PAGE_ERROR_403_BODY"
-msgstr "Impossibile trovare la pagina richiesta. Potresti aver fatto clic su un link obsoleto o l'indirizzo � scritto male. Alcuni indirizzi web distinguono tra maiuscole e minuscole."
+msgstr "Impossibile trovare la pagina richiesta. Potresti aver fatto clic su un link obsoleto o l'indirizzo è scritto male. Alcuni indirizzi web distinguono tra maiuscole e minuscole."
 
 msgid "GENERIC_PAGE_ERROR_404"
 msgstr "Scusa!"
 
 msgid "GENERIC_PAGE_ERROR_404_BODY"
-msgstr "Impossibile trovare la pagina richiesta. Potresti aver fatto clic su un link obsoleto o l'indirizzo � scritto male. Alcuni indirizzi web distinguono tra maiuscole e minuscole."
+msgstr "Impossibile trovare la pagina richiesta. Potresti aver fatto clic su un link obsoleto o l'indirizzo è scritto male. Alcuni indirizzi web distinguono tra maiuscole e minuscole."
 
 msgid "OFFER_DOES_NOT_EXIST"
 msgstr "Scusa! La pagina che stai provando ad accedere non esiste"
 
 msgid "PROJECT_IS_NOT_VISIBLE"
-msgstr "Scusa! La pagina che stai provando ad accedere non � disponibile"
+msgstr "Scusa! La pagina che stai provando ad accedere non è disponibile"
 
 msgid "PROJECT_FUNDED_STATUS"
 msgstr "Terminato"
@@ -2743,10 +2743,10 @@ msgid "PAGE_ERROR_403"
 msgstr "Pagina non disponibile"
 
 msgid "THE_PROJECT_IS ABOUT_TO_FINISH %s %s"
-msgstr "Il progetto %s terminer� il %s"
+msgstr "Il progetto %s terminerè il %s"
 
 msgid "THE_PROJECT_IS ABOUT_TO_FINISH %s %s"
-msgstr "L' offerta %s terminer� il %s"
+msgstr "L' offerta %s terminerè il %s"
 
 msgid "THE_OFFER_HAS_FINISHED %s %s"
 msgstr "L' offerta %s termina il %s"
@@ -2995,7 +2995,7 @@ msgid "HAS_SUPPORTED_YOU_WITH USD %s AND_SELECTED_THE PRIZE \"%s\""
 msgstr "Hai collaborato con USD %s e seleziona il premio \"%s\""
 
 msgid "THIS_MESSAGE_CANT_NOT_BE_SENT"
-msgstr "Non � stato possibile inviare il messaggio"
+msgstr "Non è stato possibile inviare il messaggio"
 
 msgid "OFFER_VIDEO"
 msgstr "Video"
@@ -3959,7 +3959,7 @@ msgid "Res"
 msgstr "caratteri. Sottrarre:"
 
 msgid "Carac"
-msgstr "caratteri"
+msgstr " caratteri"
 
 msgid "Res1"
 msgstr "Sottrarre: "
@@ -4510,11 +4510,32 @@ msgstr "Descrivi il tuo progetto a lungo. È possibile modificare la descrizione
 msgid "Browse_sponsor"
 msgstr "Carica Sponsor Immagine"
 
-msgid ""
-msgstr ""
+msgid "EDIT_IMAGE"
+msgstr "MODIFICA IMMAGINE"
 
-msgid ""
-msgstr ""
+msgid "CAMPO_VACIO"
+msgstr "Questo campo non può essere vuoto"
+
+msgid "MONTO_FONDOS"
+msgstr "Necessario scegliere un valore compreso tra 10 e 200 mila"
+
+msgid "APORTE_CORTO"
+msgstr "La descrizione inserita è troppo corta"
+
+msgid "MONTO_FONDOS1"
+msgstr "Il messaggio è stato inviato con successo"
+
+msgid "CONTACTO_1"
+msgstr "Si prega di compilare correttamente il campo E-mail"
+
+msgid "MUST_BE_IN_RAGE"
+msgstr "Necessario scegliere un valore compreso tra 10 e 200 mila"
+
+msgid "CONTACTO_2"
+msgstr "Si prega di compilare correttamente il campo Nome"
+
+msgid "CONTACTO_3"
+msgstr "Si prega di compilare correttamente il Commento"
 
 msgid ""
 msgstr ""

@@ -1,6 +1,8 @@
 <div style="width:100%; height:auto;position:relative !important;">
 <div class="column col-1  col-profile">
-    <?php /* @var $this ViewCC */ ?>
+    <?php /* @var $this ViewCC */
+
+    ?>
     <?
     $user = isset($user) ? $user : $this->data;
     $this->set('pageTitle', $this->Html->link(User::getName($user, 'User'), User::getLink($this->data, null, false)));

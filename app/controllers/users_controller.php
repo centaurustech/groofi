@@ -105,6 +105,7 @@ class UsersController extends AppController {
 
     function admin_login() {
 
+
         $this->set('error', false);
 
         if(!empty($this->data)) {
@@ -240,6 +241,7 @@ class UsersController extends AppController {
     function login() {
 
 
+        App::import('model', 'User');
 		/*if(!empty($this->data)) {
 			$this->Auth->autoRedirect = false;
         	$this->Auth->login($this->data);
@@ -262,6 +264,7 @@ class UsersController extends AppController {
 		
         $this->set('error', false);
         if(true) {
+
 
             if(!empty($this->data) && @$this->data['User']['remember_me']) {
                 $cookie = array();
@@ -295,7 +298,15 @@ class UsersController extends AppController {
         if(!$this->RequestHandler->isAjax()) {
 
             if($this->Auth->user() && (!isset($_SESSION['VOLVER']) || empty($_SESSION['VOLVER']))) {
-                $this->redirect($this->Auth->redirect());
+               if (isset($this->data['User']['fblogin'])){
+
+                   $fc_user = $this->User->find(array ('conditions'=>array('User.email'=>$this->data['User']['email'])));
+
+                   $this->User->updateAll(array('User.recomendar_face' => $fc_user->data['User']['recomendar_face']+1),array('User.email'=>$this->data['User']['email']));
+
+                   $this->redirect(array('controller'=>'notifications', 'action'=> 'wallfb', 'fb'=>1));
+               }else{
+                $this->redirect($this->Auth->redirect());}
             }else if(isset($_SESSION['VOLVER']) && !empty($_SESSION['VOLVER'])){
 				 $this->redirect( $_SESSION['VOLVER']);
 				 $_SESSION['VOLVER']=0;
@@ -463,14 +474,14 @@ class UsersController extends AppController {
                     $this->data['Notificationtype']['Notificationtype'][] =$key;
 					
                 }
-           
+
 			/*vd($this->data['Notificationtype']);exit;*/
 
             if($this->User->save($this->data)) {
                 $this->User->setFbPhoto($file, $this->Connect, $this->data);
                 $this->Session->write('Message.variables', array('link' => '<a href="/login">Ingresa aqui</a>'));
-				
-				
+
+
                 if($sendEmail) {
                     if(!$this->User->Notification->add(
                                     'USER_WELCOME_MAIL'

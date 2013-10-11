@@ -22,7 +22,29 @@ $this->Paginator->options(array('url'=> $datos_busqueda));
 //vd($this->here.'--'.preg_replace("#(.*?)/[0-9]*?$#",'$1',$this->here));
 
 ?>
+<script>
+    jQuery(document).ready(function(){
+        jQuery('#busqueda_filtro').submit(function(){
 
+            var cat = jQuery('#categoria_proyecto1').val();
+            var show = jQuery('#categoria_proyecto2').val();
+            var pais= jQuery('#ProjectCountryId').val();
+            if (cat == '' || show == '' || pais=='' ){
+                alert('No se selecciono algun campo');
+
+            }else{
+                window.location= '/projects/index/'+pais+'/'+cat+'/'+show;
+
+
+
+
+            }
+            return false;
+        });
+
+
+    })
+</script>
 <div style="width:100%; height:auto; margin-top:20px">
 
 <h1><?php echo __("PROJECTS_INDEX_TITLE");?></h1>
@@ -73,24 +95,24 @@ if(isset($baseUrl['category'])){
 ?>
 <span style=" font-style:italic; color:#666"><?php echo __("DISCOVER_ALL_PROJECTS");?> <?=$prep?></span> <a href="<?=preg_replace("#(.*?)/[0-9]*?$#",'$1',$this->here)?>" style="font-weight:bold; color:#39a0c6; text-decoration:underline"><?=str_replace(array('Todos los proyectos de ','Todos los proyectos en '),array(' ',' '),$subtitleText)?></a><br><br>
 <? } ?>
-    <form action="/projects/index" METHOD="GET" class="buscar_proyectos">
+    <form action="" METHOD="GET" class="buscar_proyectos" id="busqueda_filtro">
         <div id="filtro">
             <div id="filtro_categorias">
                 <!--h4  style="cursor:pointer"  class="titulo_footer"><?php echo __("SEARCH_BY_CATEGORY");?></h4-->
                 <!--img  style="cursor:pointer"   class="misc_categorias02" src="/2012/images/misc_categorias02.png" width="19" height="16"-->
                 <div class="clear"></div>
-                <div style="width:956px" class="misc_separador"></div><br>
+                <!--div style="width:956px" class="misc_separador"></div--><br>
                 <div class="listado_categorias">
 
-                    <select  class="estilo_select" autocomplete="off" id="categoria_proyecto1" style="color: #597FA9;" name="data[Project][cat]">
-                        <option value="" style="text-decoration-color: #1e90ff"><?php echo __("SEARCH_BY_CATEGORY");?></option>
+                    <select  onchange="function1()" class="estilo_select" autocomplete="off" id="categoria_proyecto1" style="color: #393939!important;" name="data[Project][cat]">
+                        <option style="color: #393939!important;" value=""><?php echo __("SEARCH_BY_CATEGORY");?></option>
                         <?php
                         $categorias=Project::getCategories('categorias');
 
                         foreach($categorias as $k=>$v){
 
                             ?>
-                            <ul><option value="<?=$v['categories']['slug']?>"><?=$v['categories']['slug']?></option></ul>
+                            <ul><option style="color:#393939" value="<?=$v['categories']['slug']?>"><?=$v['categories']['slug']?></option></ul>
                             <?php } ?>
                     </select>
                 </div>
@@ -99,16 +121,16 @@ if(isset($baseUrl['category'])){
                 <!--h4  style="cursor:pointer"  class="titulo_footer"><?php echo __("FILTER_TITLE_LIMIT");?></h4-->
                 <!--img  style="cursor:pointer"  class="misc_categorias02" src="/2012/images/misc_categorias02.png" width="19" height="16"-->
                 <div class="clear"></div>
-                <div style="width:2px" class="misc_separador"></div><br>
+
                 <div class="listado_categorias listado_categorias1">
-                    <select class="estilo_select1" autocomplete="off" id="categoria_proyecto2" style="color: #597FA9;" name="data[Project][show]">
-                        <option value="" style="text-decoration-color: #1e90ff"><?php echo __("FILTER_TITLE_LIMIT");?></option>
+                    <select onchange="function2()" class="estilo_select1" autocomplete="off" id="categoria_proyecto2" style="color: #393939!important;" name="data[Project][show]">
+                        <option value="" style="color: #393939!important;"><?php echo __("FILTER_TITLE_LIMIT");?></option>
                         <?php
                         $mostrar=Project::getCategories('mostrar');
                         foreach($mostrar as $k=>$v){
 
                             ?>
-                            <ul><option value="<?= $v; ?>"><?= $v; ?></option></ul>
+                            <ul><option style="color: #393939;" value="<?= $v; ?>"><?= $v; ?></option></ul>
                             <?php } ?>
                     </select>
                 </div>
@@ -123,32 +145,33 @@ if(isset($baseUrl['category'])){
                 <!--h4  style="cursor:pointer"  class="titulo_footer"><?php echo __("LOCATION");?></h4-->
                 <!--img  style="cursor:pointer"  class="misc_categorias02" src="/2012/images/misc_categorias02.png" width="19" height="16"-->
                 <div class="clear"></div>
-                <div style="width:2px" class="misc_separador"></div><br>
+
 
 
 
 
                 <div class="ubicacion_proyecto" id="categoria_proyecto3" >
 
-                    <select  class="estilo_select2" style="color: #597FA9;" autocomplete="off"  name="data[Project][paislugar]"  id="ProjectCountryId">
-                        <option value="" style="text-decoration-color: #1e90ff"><?php echo __("LOCATION");?></option>
+                    <select  onchange="function3()" class="estilo_select2" style="color: #393939!important;" autocomplete="off"  name="data[Project][paislugar]"  id="ProjectCountryId">
+                        <option value="" style="color: #393939!important;"><?php echo __("LOCATION");?></option>
                         <? foreach($base_countries as $k=>$v){ ?>
-                        <option <?if(isset($_POST['data']['Project']['paislugar']) && $_POST['data']['Project']['paislugar']==$k['c']['PAI_ISO2']){echo ' selected="selected" ';}?> value="<?=$v['c']['PAI_ISO2']?>"><?=$v['c']['PAI_NOMBRE']?></option>
+                        <option style="color: #393939" <?if(isset($_POST['data']['Project']['paislugar']) && $_POST['data']['Project']['paislugar']==$k['c']['PAI_ISO2']){echo ' selected="selected" ';}?> value="<?=$v['c']['PAI_ISO2']?>"><?=$v['c']['PAI_NOMBRE']?></option>
 
                         <? } ?>
 
                     </select>
-                    <ul style="margin-top: 30px;float: left;font-family: phoenica_std_demoregular;font-size: 14px;font-weight: 600;overflow: hidden;text-transform: uppercase;">
-                        <a style=" display: block;
-    margin-left: 177px;
-    position: relative;" href="/show_projects" ><?__("ADMIN_PROJECTS_MENU_ALL");?></a></ul>
 
                 </div>
-                <?php
-                echo $this->Form->submit('Buscar',array('class' => 'buscar_proyectos submit_proyectos', 'title' => 'Custom Title'));
+                <div class="filtro_busqueda <?echo 'filtro_busqueda'.$_SESSION["idioma"];?>">
+                    <a style="float: left; font-weight: bold; font-family: arial!important;"  href="/show_projects" ><p><?__("ADMIN_PROJECTS_MENU_ALL");?></p></a>
 
-                ?>
 
+                    <?
+
+                    echo $this->Form->submit(__("SEARCH", true),array('class' => 'submit_proyectos', 'title' => 'Custom Title'));
+
+                    ?>
+                </div>
             </div>
 
 

@@ -2256,7 +2256,7 @@ msgid "EDIT_THIS_OFFER"
 msgstr "Editar ofrecimiento"
 
 msgid "BETWEEN_3_50_CHARS"
-msgstr "Escribe un título de menos de 50 caracteres"
+msgstr "Escribe un título entre 3 y 50 caracteres"
 
 msgid "THIS_OFFER_IS_NOT_VALID_IT_CAN_NOT_BE_PUBLISHED"
 msgstr "El ofrecimiento no pudo ser lanzado. Verifique que los campos hayan sido completados correctamente."
@@ -2310,7 +2310,7 @@ msgid "OUR_OFFICE"
 msgstr "Nuestras Oficinas"
 
 msgid "SITE_COPYRIGHT"
-msgstr "©2011 Todos los derechos reservados"
+msgstr "©2013 Todos los derechos reservados"
 
 msgid "PAYMENTS"
 msgstr "Patrocinadores"
@@ -3359,7 +3359,7 @@ msgid "HOW_DO_I_COLLECT_MY_REWARDS"
 msgstr "Come faccio ad avere il beneficio scelto?"
 
 msgid "HOW_DO_I_COLLECT_MY_REWARDS_CONCEPT"
-msgstr "Se il progetto diventa patrocinaste finanziato, il suo creatore riceverà le informazioni necessarie per contattare l'utente e inviare il beneficio prescelto."
+msgstr "Se il progetto diventa patrocinaste finanziato, il suo creatore riceverà le informazioni necessarie per contattare l`utente e inviare il beneficio prescelto."
 
 msgid "CAN_TRUST_CREATORS"
 msgstr "¿Puedo confiar en los creadores de proyectos?"
@@ -4566,16 +4566,29 @@ msgstr "Por favor espere, subiendo archivo..... "
 msgid "Browse_sponsor"
 msgstr "Subir  Imagen Sponsor"
 
-msgid ""
-msgstr ""
+msgid "EDIT_IMAGE"
+msgstr "EDITAR IMAGEN"
 
-msgid ""
-msgstr ""
+msgid "CAMPO_VACIO"
+msgstr "Este campo no puede estar vacio"
 
-msgid ""
-msgstr ""
+msgid "APORTE_CORTO"
+msgstr "La descripción ingresada es demasiado breve"
 
+msgid "MONTO_FONDOS"
+msgstr "Debe escoger un valor entre 10 y 200000"
 
+msgid "MONTO_FONDOS1"
+msgstr "El mensaje se ha enviado correctamente"
 
+msgid "CONTACTO_1"
+msgstr "Por favor llena correctamente el campo E-mail"
 
+msgid "MUST_BE_IN_RAGE"
+msgstr "Debe escoger un valor entre 10 y 200000"
 
+msgid "CONTACTO_2"
+msgstr "Por favor llena correctamente el campo del Nombre"
+
+msgid "CONTACTO_3"
+msgstr "Por favor complete correctamente el campo Comentario"

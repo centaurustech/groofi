@@ -102,6 +102,7 @@ if(!isset($_SESSION['uid']) || empty($_SESSION['uid']) || $_SESSION['login2012']
 	header("Location:/signup");
 	exit;
 }
+
 	$qry=mysql_query("select * from users where facebook_id='{$_SESSION['uid']}'");
 	if(mysql_num_rows($qry)>0){
 		$row=mysql_fetch_assoc($qry);

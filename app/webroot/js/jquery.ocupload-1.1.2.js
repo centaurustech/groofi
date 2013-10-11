@@ -58,8 +58,9 @@
 		).css({
 			position: 'relative',
 			display: 'block',
-			marginLeft: -175+'px',
-			opacity: 0
+			marginLeft: -250+'px',
+			opacity: 0,
+            cursor: 'pointer'
 		});
 		
 		/** Put everything together */

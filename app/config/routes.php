@@ -384,3 +384,4 @@ Router::connect('/admin/predefinidos/list', array('controller' => 'predefinidos'
 Router::connect('/predefined/:id/:title', array('controller' => 'predefinidos', 'action' => 'view'), array('pass' => array('id', 'title')));
 Router::connect('/createFromPredefined/:id', array('controller' => 'predefinidos', 'action' => 'createProjectFromBase'), array('pass' => array('id')));
 
+Router::connect('/show_fb', array('controller' => 'staticpages', 'action' => 'show_fb'));

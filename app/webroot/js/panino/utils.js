@@ -116,8 +116,14 @@ function openBoxUser2(e){
 DR(
 	function(){
 		if(ns.logueado){
+            var myString = new String(navigator.appVersion);
+
+            if(/MSIE 8/.test(myString)){}else{
+
 			$('login_text').innerHTML='<a onclick="openBoxUser1(event)" id="gear3" href="#">'+perfi+'</a> / <a href="/logout">'+out+'</a>';
+            }
 		}else{
+
 			$('login_text').innerHTML='<a onclick="openBoxUser2(event)" id="gear2" href="#">'+ingresar+'</a> / <a href="/signup">'+registrar+'</a>';
 		}
 		

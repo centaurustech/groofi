@@ -410,9 +410,10 @@ var_dump($this->data);die;*/
 				 $mas=array('private'=>$mjepass);
 
 			 }
-			 if(isset($mas)&& !empty($mas)){
+			 //if(isset($mas)&& !empty($mas)){
+
                  $this->set('validationErrorsArray', array_merge($mas,$this->Project->invalidFields()));
-             }
+             //}
 
 			/*echo '<pre>';
 			var_dump($mas);die;*/
@@ -1964,6 +1965,9 @@ if($this->data['Project']['basename']!= $datos[0]['projects']['basename']){
 
 }
     function search_category(){/*Busqueda por categorias*/
+        $this->loadModel('Country');
+        $base_countries = $this->Country->getCountries($_SESSION['idioma']);
+        $this->set (compact ('base_countries'));
 
 
         if (isset ($this->params['pass'][0])) {
@@ -1993,6 +1997,9 @@ if($this->data['Project']['basename']!= $datos[0]['projects']['basename']){
 
     function general_search()/*Busqueda general layout*/
     {
+        $this->loadModel('Country');
+        $base_countries = $this->Country->getCountries($_SESSION['idioma']);
+        $this->set (compact ('base_countries'));
 
     if (isset ($this->params['pass'][0])) {
 
@@ -2075,7 +2082,7 @@ if($this->data['Project']['basename']!= $datos[0]['projects']['basename']){
         /* -------------------------------------------------------------------- */
 
         $this->paginate = $this->Project->queryStandarSet (false);
-        $this->paginate['limit'] = 3;
+        $this->paginate['limit'] = 6;
 
 		
 		if($this->params['pass'][0]=='search' && (isset($this->params['pass'][1]) && !empty($this->params['pass'][1]))){

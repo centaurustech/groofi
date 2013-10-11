@@ -58,8 +58,25 @@ echo $this->Html->meta (array ('HTTP-EQUIV' => 'Expires', 'content' => date ('D,
 <script type="text/javascript" src="/js/jquery.Jcrop.js"></script>
     <script type="text/javascript" src="/js/jquery.imgareaselect.min.js"></script>
     <script type="text/javascript" src="/js/jquery.ocupload-1.1.2.js"></script>
+    <script type="text/javascript" src="/js/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="/js/ckfinder/ckfinder.js"></script>
+
+
 
 <script type="text/javascript">
+    function openBoxUser3(){
+        if(window.animationOn)return;
+        clearTimeout(ns.timer);
+
+        var pos=getElementPosition.call($('gear'));
+        $('boxUser').style.left=(pos.left-171)+'px';
+        $('boxUser').style.top=(pos.top+4)+'px';
+        $('boxUser').style.width='210px';
+        $('boxUser').style.height='140px';
+        $('boxUser').style.background='url(/2012/images/bgLogOn.png)';
+        $('boxUser').style.display='block';
+
+    }
 var ingresar='<?php echo __("LOGIN");?>';
 var registrar='<?php echo __("REGISTER_ME");?>';
 var perfi='<?php echo __("USER_PROFILE");?>';
@@ -80,17 +97,46 @@ if ($this->Session->read ('Auth.User.id')) {
 	$alias=empty($user['User']['slug'])?$alias[0]:ucfirst($user['User']['slug']);
 ?>
 ns.logueado=1;
-DR(function(){
-<? if($user['User']['message_count'] > 0){?>
-var nummens='<div onclick="location=&quot;/messages&quot;;" title="mensajes no leídos" style="width:28px; height:28px; position:absolute; background:url(/2012/images/bolita.png) 0px 1px no-repeat; top:67px; left:145px; z-index:8000;color:#FFF;font-size:10px;text-align:center; line-height:31px; font-weight:bold;cursor:pointer;font-family: Asap, sans-serif;"><?=($user['User']['message_count']<1000)?$user['User']['message_count']:999;?></div>';
-<? }else{?>
-var nummens='';
-<? } ?>
-$('login_text').innerHTML='<a onclick="location=&quot;<?= User::getLink ($user)?>&quot;" id="gear3" href="<?= User::getLink ($user)?>">'+perfi+'</a> / <a href="<?=Router::url (array ('controller' => 'users', 'action' => 'logout'))?>">'+out+'</a>';
-$('boxUser').innerHTML='<div id="picuserbox"><?=$file?></div><div id="nombreabreviado"><?php echo $alias ;?></div><div id="nombrecompleto"><?=$user['User']['display_name'];?></div><a onclick="window.location=&quot;<? echo User::getLink ($user);?>&quot;;return false;" id="miperfilboxexpand" href="<? echo User::getLink ($user);?>">'+perfi+'</a><a onclick="window.location=&quot;<? echo User::getLink ($user, 'settings');?>&quot;;return false;" id="settingsboxexpand" href="<? echo User::getLink ($user, 'settings');?>">'+config+'</a><img id="ikomse" onclick="location=&quot;/messages&quot;;return false;" style="position:absolute;top:67px;left:77px;cursor:pointer;" src="/2012/images/mensajes.png">'+nummens;
+
+var myString = new String(navigator.appVersion);
+
+    if(/MSIE 8/.test(myString)){
+jQuery(document).ready(function(){
+    <? if($user['User']['message_count'] > 0){?>
+        var nummens='<div onclick="location=&quot;/messages&quot;;" title="mensajes no leídos" style="width:28px; height:28px; position:absolute; background:url(/2012/images/bolita.png) 0px 1px no-repeat; top:67px; left:145px; z-index:8000;color:#FFF;font-size:10px;text-align:center; line-height:31px; font-weight:bold;cursor:pointer;font-family: Asap, sans-serif;"><?=($user['User']['message_count']<1000)?$user['User']['message_count']:999;?></div>';
+        <? }else{?>
+        var nummens='';
+        <? } ?>
+
+
+
+
+
+        $('login_text').innerHTML='<a href="<?= User::getLink ($user)?>" id="gear3">'+perfi+'</a> / <a href="<?=Router::url (array ('controller' => 'users', 'action' => 'logout'))?>">'+out+'</a>';
+        jQuery('#gear').html('<a style="font-size: 0" onclick="javascript:openBoxUser1(event);">L</a>');
+        $('boxUser').innerHTML='<div id="picuserbox"><?=$file?></div><div id="nombreabreviado"><?php echo $alias ;?></div><div id="nombrecompleto"><?=$user['User']['display_name'];?></div><a onclick="window.location=&quot;<? echo User::getLink ($user);?>&quot;;return false;" id="miperfilboxexpand" href="<? echo User::getLink ($user);?>">'+perfi+'</a><a onclick="window.location=&quot;<? echo User::getLink ($user, 'settings');?>&quot;;return false;" id="settingsboxexpand" href="<? echo User::getLink ($user, 'settings');?>">'+config+'</a><img id="ikomse" onclick="location=&quot;/messages&quot;;return false;" style="position:absolute;top:67px;left:77px;cursor:pointer;" src="/2012/images/mensajes.png">'+nummens;
+
 
 
 });
+    }else{
+        DR(function(){
+            <? if($user['User']['message_count'] > 0){?>
+                var nummens='<div onclick="location=&quot;/messages&quot;;" title="mensajes no leídos" style="width:28px; height:28px; position:absolute; background:url(/2012/images/bolita.png) 0px 1px no-repeat; top:67px; left:145px; z-index:8000;color:#FFF;font-size:10px;text-align:center; line-height:31px; font-weight:bold;cursor:pointer;font-family: Asap, sans-serif;"><?=($user['User']['message_count']<1000)?$user['User']['message_count']:999;?></div>';
+                <? }else{?>
+                var nummens='';
+                <? } ?>
+
+
+
+
+            $('login_text').innerHTML='<a onclick="location=&quot;<?= User::getLink ($user)?>&quot;" id="gear3" href="<?= User::getLink ($user)?>">'+perfi+'</a> / <a href="<?=Router::url (array ('controller' => 'users', 'action' => 'logout'))?>">'+out+'</a>';
+            $('boxUser').innerHTML='<div id="picuserbox"><?=$file?></div><div id="nombreabreviado"><?php echo $alias ;?></div><div id="nombrecompleto"><?=$user['User']['display_name'];?></div><a onclick="window.location=&quot;<? echo User::getLink ($user);?>&quot;;return false;" id="miperfilboxexpand" href="<? echo User::getLink ($user);?>">'+perfi+'</a><a onclick="window.location=&quot;<? echo User::getLink ($user, 'settings');?>&quot;;return false;" id="settingsboxexpand" href="<? echo User::getLink ($user, 'settings');?>">'+config+'</a><img id="ikomse" onclick="location=&quot;/messages&quot;;return false;" style="position:absolute;top:67px;left:77px;cursor:pointer;" src="/2012/images/mensajes.png">'+nummens;
+
+
+
+    });
+    }
 
 <?php }else{ ?>
 ns.logueado=0;
@@ -187,12 +233,13 @@ ns.logueado=0;
 <div class="clear"></div>
 <div style="width:225px" class="misc_separador_footer"></div><br>
 <div class="listado_categorias  listado_categorias_footer">
-<? foreach ($site_categories as $key => $category) {?>
-<ul><?= $this->Html->link (Category::getName ($category), Category::getLink ($category))?></ul>
+
+    <? foreach ($site_categories as $key => $category) {?>
+<ul><?= $this->Html->link (Category::getName ($category), '/projects/search_category/'.$category['Category']['slug'])?></ul>
 <? }?>
 
 
-<a href="/discover/projects" class="ver_todas"><?php echo __("SHOW_ALL");?></a>
+<a href="/show_projects" class="ver_todas"><?php echo __("SHOW_ALL");?></a>
 </div>
 
 
@@ -202,7 +249,7 @@ ns.logueado=0;
 <img class="misc_categorias" src="/2012/images/misc_categorias.png" width="8" height="7">
 <div class="clear"></div>
 <div class="misc_separador_footer"></div><br>
-<div class="fb-like" data-href="https://www.facebook.com/Groofi" data-send="false" data-width="340" data-show-faces="false"></div>
+<div class="fb-like" data-href="https://www.facebook.com/Groofi" data-send="false" data-width="340" data-show-faces="true"></div>
 </div>
 
 <div id="footer_contacto">
@@ -222,7 +269,7 @@ ns.logueado=0;
 
 </div>
    </div>
-<div id="footer_expand"></div>
+
 <div id="footer" class="block">
 <div class="bottom">
         <div class="content">
@@ -245,7 +292,7 @@ ns.logueado=0;
 
 </div>
 
-
+    <div id="footer_expand"></div>
 </div>
 <!--script>
 (function(d, s, id) {

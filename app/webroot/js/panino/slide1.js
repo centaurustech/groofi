@@ -41,6 +41,7 @@ function createSlideHome(images,cajaimages,tns){
 	nshome.intervalo=setInterval(function(){visualizar(nshome.arriba,nshome.abajo);},10000);
 }
 function visualizar(arriba,abajo){
+
 		ns.recordar=[arriba,abajo];
 		if(nshome.pause){return;}
 		if(nshome.ocupado){
@@ -63,22 +64,37 @@ function visualizar(arriba,abajo){
 			$('titulovelo').innerHTML=ns.titulos[indiceActualArriba]
 			window.currentDiapo=indiceActualArriba;
 			nshome.arriba=$(nshome.images[indiceActualArriba].id);
-			
-			if(indiceActualArriba+1>nshome.images.length-1){
-				nshome.abajo=$(nshome.images[0].id);
-			}else{
-				nshome.abajo=$(nshome.images[indiceActualArriba+1].id);
-			}
+    var myString = new String(navigator.appVersion);
+
+    if(/MSIE 8/.test(myString))
+    {
+        if(indiceActualArriba+1>nshome.images.length-2){
+
+            nshome.abajo=$(nshome.images[0].id);
+        }else{
+            nshome.abajo=$(nshome.images[indiceActualArriba+1].id);
+        }
+
+    }else{
+        if(indiceActualArriba+1>nshome.images.length-1){
+
+            nshome.abajo=$(nshome.images[0].id);
+        }else{
+            nshome.abajo=$(nshome.images[indiceActualArriba+1].id);
+        }
+
+    }
 			if(!nshome.intervalo)nshome.intervalo=setInterval(function(){visualizar(nshome.arriba,nshome.abajo);},10000);
 			
 		
 		fx(arriba,[{'inicio':1,'fin':0,'u':'','propCSS':'opacity'}],1250,false,senoidal);
 		fx(abajo,[{'inicio':0,'fin':1,'u':'','propCSS':'opacity'}],1250,false,senoidal);
-		
-		
+
+
 }
 
 			function clickTn(i){
+
 						if(!nshome.images[i])return setTimeout(function(){clickTn(i);},100);
 						clearInterval(nshome.intervalo);
 						despausar();
@@ -96,6 +112,7 @@ function visualizar(arriba,abajo){
 							return	nshome.intervalo=setInterval(function(){visualizar(nshome.arriba,nshome.abajo);},10000);
 						}
 						visualizar(nshome.arriba,nshome.abajo);
+
 			}
 function slidePause(e){
 	cancelEvent(e)
@@ -104,6 +121,7 @@ function slidePause(e){
 		$('play').style.display='block';
 	if($('pause'))
 		$('pause').style.display='none';
+
 	
 }
 function slidePlay(e){
@@ -115,6 +133,7 @@ function slidePlay(e){
 		$('play').style.display='none';
 	if($('pause'))
 		$('pause').style.display='block';
+
 	
 }
 DR(
@@ -148,13 +167,16 @@ function despausar(){
 		$('play').style.display='none';
 	if($('pause'))
 		$('pause').style.display='block';
+
 }
 function avanceSlide(e){
+
 	cancelEvent(e)
 	var adonde=window.currentDiapo+1
 	if(adonde>nshome.images.length-1)
 		adonde=0;
 	clickTn(adonde);
+
 	
 }
 function retrocedeSlide(e){
@@ -171,7 +193,9 @@ function overThumb(index,titulo,t2){
 	$('titulovelo2').style.display='block';
 	$('titulovelo2').style.left=$('velo2').style.left=(120*index)+'px';
 	$('titulovelo2').setAttribute('custom',titulo);
-	$('titulovelo2').innerHTML=t2;
+	//$('titulovelo2').innerHTML=t2;
+    jQuery('#titulovelo2').html(t2);
+    //$('titulovelo').style.display='block';
 }
 function outThumb(){
 	$('velo2').style.display='none';

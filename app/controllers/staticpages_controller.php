@@ -10,7 +10,7 @@ class StaticpagesController extends AppController {
 
         }
 
-        $this->Auth->allow('view', 'home','message','guidelines','comofunciona','faq','contacto','translate', 'country','terminos','politicasdeprivacidad','translate2');
+        $this->Auth->allow('view', 'home','message','guidelines','comofunciona','faq','contacto','translate', 'country','terminos','politicasdeprivacidad','translate2','show_fb');
         parent::beforeFilter();
 
     }
@@ -232,18 +232,18 @@ class StaticpagesController extends AppController {
 
     }
 	function contacto(){
-		
+
 		$pat="/^[^@]*@[^@]*\.[^@]*$/";
 	
 		if(isset($_POST['nombre'])){
 			if(empty($_POST['nombre'])){
-				$this->set('error', 'Por favor complete el campo Nombre');
+				$this->set('error', __("CONTACTO_2", true));
 			}elseif(empty($_POST['email'])){
-				$this->set('error', 'Por favor complete el campo E-mail');
+				$this->set('error', __("CONTACTO_1", true));
 			}elseif(!(preg_match($pat,$_POST['email']))){
-				$this->set('error', 'Por favor complete correctamente el campo E-mail');
+				$this->set('error', __("CONTACTO_1", true));
 			}elseif(empty($_POST['comentario'])){
-				$this->set('error', 'Por favor complete correctamente el campo Comentario');
+				$this->set('error',  __("CONTACTO_3", true));
 			}else{
 				$mensaje='';
 				foreach($_POST as $k => $v){
@@ -333,6 +333,15 @@ class StaticpagesController extends AppController {
         echo $moneda;
 
     }
+
+    /*APP view FB*/
+
+    function show_fb(){
+
+        $this->render('show_fb','ajax');
+
+    }
+
 
 
 }

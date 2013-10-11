@@ -24,11 +24,11 @@ define('REFOUND_EXTRA_REQUIRED_PERCENTEGE', 10 ); // % // balance must have x% e
 
 //define('SMTP_FAST_SERVER', 'mail.groofi.com');
 //define('SMTP_NORMAL_SERVER', 'mail.groofi.com');
-define('SMTP_PORT', '25');
+define('SMTP_PORT', '587');
 define('SMTP_TIMEOUT', '30');
-define('SMTP_HOST', 'localhost');
-//define('SMTP_USERNAME', 'noreply@groofi.com');
-//define('SMTP_PASSWORD', 'bR!SChnP@$1L');
+define('SMTP_HOST', 'smtp.mandrillapp.com');
+define('SMTP_USERNAME', 'alejandro.garrido.g@gmail.com');
+define('SMTP_PASSWORD', 'BD4-PoFKpGf4x5NBUh4PEQ');
 define('SMTP_REPLYTO', 'noreply@groofi.com');
 define('SMTP_FROM', 'GROOFI <noreply@groofi.com>');
 

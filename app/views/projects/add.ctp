@@ -1,3 +1,4 @@
+
 <?php
 
 //session_start(); //Do not remove this
@@ -18,10 +19,10 @@ $large_image_prefix = "resize_"; 			// The prefix name to large image
 $thumb_image_prefix = "thumbnail_";			// The prefix name to the thumb image
 $large_image_name = $large_image_prefix.$_SESSION['random_key'];     // New name of the large image (append the timestamp to the filename)
 $thumb_image_name = $thumb_image_prefix.$_SESSION['random_key'];     // New name of the thumbnail image (append the timestamp to the filename)
-$max_file = "1"; 							// Maximum file size in MB
+$max_file = "2"; 							// Maximum file size in MB
 $max_width = "570";							// Max width allowed for the large image
-$thumb_width = "150";						// Width of thumbnail image
-$thumb_height = "100";						// Height of thumbnail image
+$thumb_width = "200";						// Width of thumbnail image
+$thumb_height = "150";						// Height of thumbnail image
 // Only one of these image types should be allowed for upload
 $allowed_image_types = array('image/pjpeg'=>"jpg",'image/jpeg'=>"jpg",'image/jpg'=>"jpg",'image/png'=>"png",'image/x-png'=>"png",'image/gif'=>"gif");
 $allowed_image_ext = array_unique($allowed_image_types); // Do not change this
@@ -56,15 +57,11 @@ function getVideoFromURL($u){
     return $ret;
 }
 ?>
-<?php
+<!--?php
 
-echo $this->Html->script('ckeditor/ckeditor');
-echo $this->Html->script('ckfinder/ckfinder');
-echo $this->Html->script('jquery.imgareaselect.min');
-echo $this->Html->script('jquery.ocupload-1.1.2');
 
-?>
 
+?-->
 
 
 
@@ -99,11 +96,11 @@ echo $this->Html->script('jquery.ocupload-1.1.2');
 <h1><?php echo __("CREATE_YOUR_PROJECT");?></h1>
 <span style=" font-style:italic"><?php echo __("HOW_WORK");?></span><br><br>
 <div id="banner_crea_proyecto"><img src="/2012/images/info_crea_proyecto.png" width="957" height="286">
-    <div id="relleno_crea_proyecto"></div>
+
 
 
 </div>
-
+<div id="relleno_crea_proyecto"></div>
 
 
 <div><img src="/2012/images/sombra_header.png" width="957" height="20">
@@ -131,8 +128,8 @@ echo $this->Html->script('jquery.ocupload-1.1.2');
     <p style="font-size:12px"><?php echo __("Project.title");?></p>
     <div class="rounded_crear">
         <input tabindex=1 onkeyup="xrestantes(this,$('restantes1'),50)" onkeydown="xrestantes(this,$('restantes1'),50)" onchange="xrestantes(this,$('restantes1'),50)" autocomplete="off" type="text" name="data[Project][title]" value="<?if(isset($_POST['data']['Project']['title'])){echo $_POST['data']['Project']['title'];}?>" />
-        <div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['title']) && !empty($validationErrorsArray['title'])){echo $validationErrorsArray['title'];}?></div>
-        <div id="restantes1" style="font-size:9px;position:absolute;left:0; top:28px; text-align:right; width:370px; height:15px;"><?php echo __("Res1");?><?if(isset($_POST['data']['Project']['title'])){echo 50-intval((strlen(utf8_decode($_POST['data']['Project']['title']))));}else{echo '50';}?><?php echo __("Carac");?></div>
+        <div style="color:red;font-size:9px;position:relative; top:-12px"><?php if (isset($validationErrorsArray['title']) && !empty($validationErrorsArray['title'])){echo $validationErrorsArray['title'];}?></div>
+        <div id="restantes1" style="font-size:9px;position:absolute;left:0; top:28px; text-align:right; width:370px; height:15px;"><?php echo __("Res1");?><?if(isset($_POST['data']['Project']['title'])){echo 50-intval((strlen(utf8_decode($_POST['data']['Project']['title']))));}else{echo '50';}?><?php echo __( "Carac");?></div>
         <div class="bot_info"  onmouseout="hideTip()" onmousemove="showTip(event,'<?php echo __("Title1");?>')"></div>
     </div>
 </div>
@@ -144,7 +141,7 @@ echo $this->Html->script('jquery.ocupload-1.1.2');
     <p style="font-size:12px"><?php echo __("COUNTRY");?></p>
     <div class="rounded_crear" style=background:none>
 
-<select tabindex=2 autocomplete="off" style="width:373px; height:27px; position:relative;top:0; left:0;border:1px solid #e1e1e1; background:#f6f7f6" name="data[Project][paislugar]" autocomplete="off" id="ProjectCountryId">
+<select tabindex=2 autocomplete="off" style="width:373px; height:27px; position:relative;top:-4px; left:0;border:1px solid #e1e1e1; background:#f6f7f6" name="data[Project][paislugar]" autocomplete="off" id="ProjectCountryId">
                 <? foreach($base_countries as $k=>$v){ ?>
                 <option <?if(isset($_POST['data']['Project']['paislugar']) && $_POST['data']['Project']['paislugar']==$k['Country']['PAI_ISO2']){echo ' selected="selected" ';}?> value="<?=$v['Country']['PAI_ISO2']?>"><?=$v['Country']['PAI_NOMBRE']?></option>
 
@@ -153,7 +150,7 @@ echo $this->Html->script('jquery.ocupload-1.1.2');
             </select>
 
         <div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['country']) && !empty($validationErrorsArray['country'])){echo $validationErrorsArray['country'];}?></div>
-        <div id="restantes1" style="font-size:9px;position:absolute;left:0; top:28px; text-align:right; width:370px; height:15px;"><?php echo __("Res1");?> <?if(isset($_POST['data']['Project']['country'])){echo 50-intval((strlen(utf8_decode($_POST['data']['Project']['country']))));}else{echo '50';}?> <?php echo __("Carac");?></div>
+        <!--div id="restantes5" style="font-size:9px;position:absolute;left:0; top:28px; text-align:right; width:370px; height:15px;"><?php echo __("Res1");?> <?if(isset($_POST['data']['Project']['country'])){echo 50-intval((strlen(utf8_decode($_POST['data']['Project']['country']))));}else{echo '50';}?> <?php echo __("Carac");?></div-->
         <div class="bot_info"  onmouseout="hideTip()" onmousemove="showTip(event,'<?php echo __("CHOICE_YOUR_COUNTRY");?>')"></div>
     </div>
 </div>
@@ -255,7 +252,7 @@ echo $this->Html->script('jquery.ocupload-1.1.2');
         <div   id="restantes2" style="font-size:9px;position:absolute;left:0; top:118px; text-align:right; width:370px; height:15px;"><?php echo __("INGRE");?> <?if(isset($_POST['data']['Project']['short_description'])){echo intval((strlen(utf8_decode($_POST['data']['Project']['short_description']))));}else{echo '0';}?> <?php echo __("Res");?> <?if(isset($_POST['data']['Project']['short_description'])){echo 140-intval((strlen(utf8_decode($_POST['data']['Project']['short_description']))));}else{echo '140';}?> <?php echo __("Carac");?></div>
         <div class="bot_info_area" onmouseout="hideTip()" onmousemove="showTip(event,'<?echo __("PROJECT__SHORT_DESCRIPTION__HELP_MESSAGE_TEXT");?>')"></div>
     </div>
-    <div style="width:370px; height:253px; background:url(/2012/images/proyectosprivados.png); position:absolute; top:510px">
+    <div  style="z-index: 9999; width:370px; height:253px; background:url(/2012/images/proyectosprivados.png); position:absolute; top:545px;top:530px\0/;top:530px\9">
         <div class="proyectos_privados0">
             <?php echo __("PROYECTOS_PRIVADOS1");?>
         </div>
@@ -280,8 +277,8 @@ echo $this->Html->script('jquery.ocupload-1.1.2');
         <div class="proyectos_privados5">
             <?php echo __("USER__PASSWORD_CONFIRMATION");?>
         </div>
-        <label style="position:absolute;left:2px; top:156px ;width:70px; height:30px;"><input <? if(!isset($_POST['data']['Project']['private']) || $_POST['data']['Project']['private']=='0'){?>checked="checked"<? } ?> style="width:20px; height:20px" type="radio" name="data[Project][private]" id="private0" value="0" /></label>
-        <label style="position:absolute;left:70px; top:156px ;width:70px; height:30px;"><input <? if(isset($_POST['data']['Project']['private']) && $_POST['data']['Project']['private']=='1'){?>checked="checked"<? } ?> style=" width:20px; height:20px" type="radio" name="data[Project][private]" id="private1" value="1" /></label>
+        <label style="position:absolute;left:2px; top:162px ;width:70px; height:30px;"><input <? if(!isset($_POST['data']['Project']['private']) || $_POST['data']['Project']['private']=='0'){?>checked="checked"<? } ?> style="width:20px; height:20px" type="radio" name="data[Project][private]" id="private0" value="0" /></label>
+        <label style="position:absolute;left:70px; top:162px ;width:70px; height:30px;"><input <? if(isset($_POST['data']['Project']['private']) && $_POST['data']['Project']['private']=='1'){?>checked="checked"<? } ?> style=" width:20px; height:20px" type="radio" name="data[Project][private]" id="private1" value="1" /></label>
         <input value="<? if(isset($_POST['data']['Project']['private_pass'])){echo $_POST['data']['Project']['private_pass'];}?>" style="border:none; background:url(/2012/images/Vacio.gif); position:absolute; width:165px;height:23px;left:2px; top:209px" type="password" id="claveprivado" name="data[Project][private_pass]">
         <input value="<? if(isset($_POST['data']['Project']['private_pass2'])){echo $_POST['data']['Project']['private_pass2'];}?>" style="border:none; background:url(/2012/images/Vacio.gif); position:absolute; width:165px;height:23px;left:177px; top:209px;" type="password" id="claveprivado2" name="data[Project][private_pass2]">
         <div style="color:red;font-size:9px;position:relative; top:256px"><?php if (isset($validationErrorsArray['private']) && !empty($validationErrorsArray['private'])){echo $validationErrorsArray['private'];}?></div>
@@ -399,12 +396,12 @@ echo $this->Html->script('jquery.ocupload-1.1.2');
 
     <div class="texto_how_izq upload_image_crop">
         <!---h2>Upload Photo</h2-->
-        <div style="display: block; width: 100px; height: 100px"></div>
+        <div style="font-size:12px;display: block; width: 370px; height: 100px"><? echo __("PROJECT__FILE_EDIT_TIP_MESSAGE_TEXT");?> </div>
         <div id="upload_status" style="font-size:12px; width:38%; margin:0 0 20px; padding:5px; display:none; border:1px #999 dotted; background:#eee;"></div>
 
             <a id="upload_link" style="cursor:pointer;position:relative;display: block;background:#000000; font-size: 18px; color: white;font-weight: normal;height: 30px;width: 120px; text-align: center" href="#"><?__('UPLOAD_BROWSE');?></a>
-        <? echo __("EDIT");?>
-        <span id="loader" style="display:none;"><img src="loader.gif" alt="Loading..."/></span> <span id="progress"></span>
+        <? echo __("EDIT_IMAGE");?>
+        <span id="loader" style="display:none;"><img src="/2012/images/loader.gif" alt="Loading..."/></span> <span id="progress"></span>
         <br />
         <div id="uploaded_image"></div>
         <div id="thumbnail_form" style="display:none;">
@@ -416,7 +413,7 @@ echo $this->Html->script('jquery.ocupload-1.1.2');
     </div>
 
     <!--br><div id="elfile2"><?php echo __("UPLOAD_NO_FILE_SELECTED");?></div-->
-    <div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['file']) && !empty($validationErrorsArray['file'])){echo $validationErrorsArray['file'];}?></div>
+    <!--div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['file']) && !empty($validationErrorsArray['file'])){echo $validationErrorsArray['file'];}?></div-->
     <br>
     <? if($this->Session->check('predefinido') && isset($fotito) && strlen($fotito)>4 && (!isset($_FILES['data']['name']['Project']['file']) || $_FILES['data']['name']['Project']['file']=='')){?>
     <img style="max-width:280px" src="/<?=$_FILES['data']['name']['Project']['file'];?>" id="target1">
@@ -458,67 +455,71 @@ echo $this->Html->script('jquery.ocupload-1.1.2');
 
 
     <?if ($_SESSION['idioma']=='esp'){?>
+    <div class="tipo_moneda_us">
+        <?php echo __("TYPE_OF_CURRENCY_US");?>
+    </div>
     <div class="tipo_moneda_ar">
         <?php echo __("TYPE_OF_CURRENCY_ARS");?>
     </div>
     <div class="tipo_moneda_br">
         <?php echo __("TYPE_OF_CURRENCY_BRL");?>
     </div>
+
+
+    <? }elseif($_SESSION['idioma']=='eng'){?>
     <div class="tipo_moneda_us">
         <?php echo __("TYPE_OF_CURRENCY_US");?>
     </div>
-
-    <? }elseif($_SESSION['idioma']=='eng'){?>
     <div class="tipo_moneda_gb">
         <?php echo __("TYPE_OF_CURRENCY_GBP");?>
     </div>
     <div class="tipo_moneda_eu <?echo 'tipo_moneda_eu_'.$_SESSION['idioma'];?>">
         <?php echo __("TYPE_OF_CURRENCY_EUR");?>
     </div>
-    <div class="tipo_moneda_us">
-        <?php echo __("TYPE_OF_CURRENCY_US");?>
-    </div>
+
 
     <?}elseif($_SESSION['idioma']=='ita'){?>
+
     <div class="tipo_moneda_eu">
         <?php echo __("TYPE_OF_CURRENCY_EUR");?>
     </div>
+
     <?}?>
 
 
 
     <div class="input_fondos">
-        <div id="quemoneda" style="color:#686b68; width:50px; height:30px; text-align:right; line-height:30px;font-size:15px;font-weight:normal; position:absolute; left:-45px;top:20px;font-family:Arial, Helvetica, sans-serif"><?if(!isset($_POST['data']['Project']['moneda'])){?>USD<? }else{?><?=traducirMoneda($_POST['data']['Project']['moneda'])?><? } ?></div>
+        <div id="quemoneda" style="color:#686b68; width:50px; height:30px; text-align:right; line-height:30px;font-size:15px;font-weight:normal; position:absolute; left:-45px;top:20px;font-family:Arial, Helvetica, sans-serif"><?if(!isset($_POST['data']['Project']['moneda'])){?><?if($_SESSION['idioma']=='esp'){?>USD<?}elseif($_SESSION['idioma']=='eng'){?>USD<?}if($_SESSION['idioma']=='ita'){?>EUR<?}?><? }else{?><?=traducirMoneda($_POST['data']['Project']['moneda'])?><? } ?></div>
         <input value="<?if(isset($_POST['data']['Project']['funding_goal'])){echo $_POST['data']['Project']['funding_goal'];}?>" id="in_fondos" type="text" name="data[Project][funding_goal]" /></div>
     <div style="color:red;font-size:9px;position:relative; top:116px; left:80px"><?php if (isset($validationErrorsArray['funding_goal']) && !empty($validationErrorsArray['funding_goal'])){echo $validationErrorsArray['funding_goal'];}?></div>
 
     <div class="bot_info" onmouseout="hideTip()"  onmousemove="showTip(event,'<?echo __("PROJECT__FUNDING_GOAL__HELP_MESSAGE_TEXT");?> <?echo __("PROJECT__FUNDING_GOAL__TIP_MESSAGE_TEXT");?>')"></div>
     <div style="position:absolute; width:534px; height:148px; background:url(/2012/images/tipodemoneda.jpg); left:420px; top:0">
 <?if($_SESSION['idioma']=='esp'){?>
-
+        <label style="position:absolute; height:15px;width:300px;  left:0; top:98px; text-align:left; margin:0; padding:0" for="usd">
+            <input onclick="javascript:if(this.checked){$('quemoneda').innerHTML=this.value;window.lamoneda=this.value;changeBoxesMoneda();}" value="USD" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="usd" <?if((isset($_POST['data']['Project']['moneda']) && $_POST['data']['Project']['moneda']=='USD') || !isset($_POST['data']['Project']['moneda'])){?>checked="checked"<? } ?>>
+        </label>
     <label style="position:absolute; height:15px;width:300px;  left:0; top:152px; text-align:left; margin:0; padding:0" for="ars">
-        <input onchange="if(this.checked){$('quemoneda').innerHTML='ARS';window.lamoneda='ARS';changeBoxesMoneda();}" value="ARS" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="ars" <?if(isset($_POST['data']['Project']['moneda']) && $_POST['data']['Project']['moneda']=='ARS'){?>checked="checked"<? } ?>>
+        <input onclick="javascript:if(this.checked){$('quemoneda').innerHTML='ARS';window.lamoneda='ARS';changeBoxesMoneda();}" value="ARS" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="ars" <?if(isset($_POST['data']['Project']['moneda']) && $_POST['data']['Project']['moneda']=='ARS'){?>checked="checked"<? } ?>>
     </label>
         <label style="position:absolute; height:15px;width:300px;  left:0; top:206px; text-align:left; margin:0; padding:0" for="brl">
-            <input onchange="if(this.checked){$('quemoneda').innerHTML='BRL';window.lamoneda='ARS';changeBoxesMoneda();}" value="BRL" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="brl" <?if(isset($_POST['data']['Project']['moneda']) && $_POST['data']['Project']['moneda']=='BRL'){?>checked="checked"<? } ?>>
+            <input onclick="javascript:if(this.checked){$('quemoneda').innerHTML='BRL';window.lamoneda='ARS';changeBoxesMoneda();}" value="BRL" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="brl" <?if(isset($_POST['data']['Project']['moneda']) && $_POST['data']['Project']['moneda']=='BRL'){?>checked="checked"<? } ?>>
         </label>
-        <label style="position:absolute; height:15px;width:300px;  left:0; top:98px; text-align:left; margin:0; padding:0" for="usd">
-            <input onchange="if(this.checked){$('quemoneda').innerHTML=this.value;window.lamoneda=this.value;changeBoxesMoneda();}" value="USD" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="usd" <?if((isset($_POST['data']['Project']['moneda']) && $_POST['data']['Project']['moneda']=='USD') || !isset($_POST['data']['Project']['moneda'])){?>checked="checked"<? } ?>>
-        </label>
-    <?}elseif($_SESSION['idioma']=='eng'){?>
 
+    <?}elseif($_SESSION['idioma']=='eng'){?>
+        <label style="position:absolute; height:15px;width:300px;  left:0; top:98px; text-align:left; margin:0; padding:0" for="usd">
+            <input onclick="javascript:if(this.checked){$('quemoneda').innerHTML=this.value;window.lamoneda=this.value;changeBoxesMoneda();}" value="USD" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="usd1" <?if((isset($_POST['data']['Project']['moneda']) && $_POST['data']['Project']['moneda']=='USD') || !isset($_POST['data']['Project']['moneda'])){?>checked="checked"<? } ?>>
+        </label>
         <label style="position:absolute; height:15px;width:300px;  left:0; top:179px; text-align:left; margin:0; padding:0" for="gbp">
-            <input onchange="if(this.checked){$('quemoneda').innerHTML='GBP';window.lamoneda='GBP';changeBoxesMoneda();}" value="GBP" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="gbp" <?if(isset($_POST['data']['Project']['moneda']) && $_POST['data']['Project']['moneda']=='GBP'){?>checked="checked"<? } ?>>
+            <input onclick="javascript:if(this.checked){$('quemoneda').innerHTML='GBP';window.lamoneda='GBP';changeBoxesMoneda();}" value="GBP" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="gbp" <?if(isset($_POST['data']['Project']['moneda']) && $_POST['data']['Project']['moneda']=='GBP'){?>checked="checked"<? } ?>>
         </label>
         <label class="<?echo 'boton_moneda'.$_SESSION['idioma'];?>" style="position:absolute; height:15px;width:300px;  left:0; top:125px; text-align:left; margin:0; padding:0" for="eur">
-            <input onchange="if(this.checked){$('quemoneda').innerHTML='EUR';window.lamoneda='EUR';changeBoxesMoneda();}" value="EUR" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="eur" <?if(isset($_POST['data']['Project']['moneda']) && $_POST['data']['Project']['moneda']=='EUR'){?>checked="checked"<? } ?>>
+            <input onclick="javascript:if(this.checked){$('quemoneda').innerHTML='EUR';window.lamoneda='EUR';changeBoxesMoneda();}" value="EUR" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="eur1" <?if(isset($_POST['data']['Project']['moneda']) && $_POST['data']['Project']['moneda']=='EUR'){?>checked="checked"<? } ?>>
         </label>
-        <label style="position:absolute; height:15px;width:300px;  left:0; top:98px; text-align:left; margin:0; padding:0" for="usd">
-            <input onchange="if(this.checked){$('quemoneda').innerHTML=this.value;window.lamoneda=this.value;changeBoxesMoneda();}" value="USD" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="usd" <?if((isset($_POST['data']['Project']['moneda']) && $_POST['data']['Project']['moneda']=='USD') || !isset($_POST['data']['Project']['moneda'])){?>checked="checked"<? } ?>>
-        </label>
+
         <?} elseif($_SESSION['idioma']=='ita'){?>
-        <label style="position:absolute; height:15px;width:300px;  left:0; top:125px; text-align:left; margin:0; padding:0" for="eur">
-            <input onchange="if(this.checked){$('quemoneda').innerHTML='EUR';window.lamoneda='EUR';changeBoxesMoneda();}" value="EUR" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="eur" <?if(isset($_POST['data']['Project']['moneda']) && $_POST['data']['Project']['moneda']=='EUR'){?>checked="checked"<? } ?>>
+        <label style="position:absolute; height:15px;width:300px;  left:0; top:128px; text-align:left; margin:0; padding:0" for="eur">
+            <input onclick="javascript:if(this.checked){$('quemoneda').innerHTML='EUR';window.lamoneda='EUR';changeBoxesMoneda();}" value="EUR" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="eur" <?if(isset($_POST['data']['Project']['moneda']) && $_POST['data']['Project']['moneda']=='EUR'){?>checked="checked"<? } ?>>
         </label>
 
         <?}?>
@@ -526,15 +527,15 @@ echo $this->Html->script('jquery.ocupload-1.1.2');
     </div>
 </div>
 
-<div class="texto_how_izq">
+<div class="texto_how_izq"style="height: 135px">
     <p style="font-size:12px"><?php echo __("PROJECT__PROJECT_DURATION");?></p><br>
     <input name="data[Project][project_duration]" type="hidden" autocomplete="off" class="range" value="7" id="ProjectProjectDuration" />
     <div style="position:relative; height:17px; width:360px">
         <div id="indicadords" style="font-size:10px;"><?php echo __("TIME_OF_PROJECT");?></div>
-        <div  class="back_slider" style=" width:360px; height:10px; border:1px solid #eaeaea; position:relative; top:-40px;">
+        <div  class="back_slider" style=" width:360px; height:10px; border:1px solid #eaeaea; position:relative;top: 15px">
             <div id="blueLine" style="width:0%; height:100%;background:#338abd;"></div>
         </div>
-        <div id="cursor" style="width:17px; height:17px; border:1px solid #d3d3d3; background:#e6e6e6;cursor:pointer; position:relative; top:-15px;"></div>
+        <div id="cursor" style="width:17px; height:17px; border:1px solid #d3d3d3; background:#e6e6e6;cursor:pointer; position:relative;"></div>
     </div>
 
     <div class="bot_info duracion" onmouseout="hideTip()"  onmousemove="showTip(event,'<?echo __("PROJECT__PROJECT_DURATION__HELP_MESSAGE_TEXT");?><?echo __("PROJECT__PROJECT_DURATION__TIP_MESSAGE_TEXT");?>')"></div>
@@ -650,6 +651,7 @@ echo $this->Html->script('jquery.ocupload-1.1.2');
         return {left:offsetLeft, top:offsetTop};
     }
     var DragableRestrict={
+
         makeDragableR:function (restrictx,restricty,callback,callbackEnd){
             this.restricty=restricty;
             this.restrictx=restrictx;
@@ -664,6 +666,7 @@ echo $this->Html->script('jquery.ocupload-1.1.2');
             this.cx0=0;
             this.cy0=0;
             var backslider=getElementsByClassName('back_slider',panino.getO(o.parentNode))[0];//
+
             panino.getO(backslider).addEvent(
                     'mouseout',
                     function(e){
@@ -704,6 +707,7 @@ echo $this->Html->script('jquery.ocupload-1.1.2');
             );
             this.addEvent('mousedown',
                     function(e){
+
                         panino.actR=this;
                         e=e || window.event;
                         cancelEvent(e);
@@ -765,7 +769,7 @@ echo $this->Html->script('jquery.ocupload-1.1.2');
         $('ProjectProjectDuration').value=valor;
         $('blueLine').style.width=(100*parseInt(r)/343)+'%';
     }
-    DR(function(){
+    jQuery(document).ready(function(){
         panino.add(DragableRestrict);
         $('cursor').makeDragableR(0,1,setBlueLine,function(){});
     });
@@ -791,6 +795,19 @@ echo $this->Html->script('jquery.ocupload-1.1.2');
 
 <script>
 
+function openBoxUser3(){
+    if(window.animationOn)return;
+    clearTimeout(ns.timer);
+
+    var pos=getElementPosition.call($('gear'));
+    $('boxUser').style.left=(pos.left-171)+'px';
+    $('boxUser').style.top=(pos.top+4)+'px';
+    $('boxUser').style.width='210px';
+    $('boxUser').style.height='140px';
+    $('boxUser').style.background='url(/2012/images/bgLogOn.png)';
+    $('boxUser').style.display='block';
+
+}
 
 function crop() {
     var message_wait = '<?php __("MESSAGE_WAIT");?>'
@@ -883,7 +900,7 @@ function crop() {
                     if(responseType=="success"){
                         jQuery('#upload_status').show().html('<h1>'+exito+'</h1><p>'+image_uploaded+'</p>');
                         //load the new images
-                        jQuery('#uploaded_image').html('<img src="'+responseLargeImage+'" alt="Large Image"/>&nbsp;<img src="'+responseThumbImage+'" alt="Thumbnail Image"/><br /><a href="javascript:deleteimage(\''+responseLargeImage+'\', \''+responseThumbImage+'\');">'+delete_images+'</a>');
+                        //jQuery('#uploaded_image').html('<img src="'+responseLargeImage+'" alt="Large Image"/>&nbsp;<img src="'+responseThumbImage+'" alt="Thumbnail Image"/><br /><a href="javascript:deleteimage(\''+responseLargeImage+'\', \''+responseThumbImage+'\');">'+delete_images+'</a>');
                         //hide the thumbnail form
                         jQuery('#thumbnail_form').hide();
                     }else{
@@ -901,10 +918,83 @@ function crop() {
 }
 
 crop();
-
+$('gear').hover(
+        function(){
+            this.style.background='url(/2012/images/gear_over.gif)';
+            this.style.backgroundRepeat='no-repeat';
+        },
+        function(){
+            this.style.background='url(/2012/images/gear.gif)';
+            this.style.backgroundRepeat='no-repeat';
+        }
+);
+if(ns.logueado){
+    $('gear').addEvent(
+            'click',
+            openBoxUser1
+    );
+}else{
+    $('gear').addEvent(
+            'click',
+            openBoxUser2
+    );
+}
+panino.getO(document).addEvent(
+        'click',
+        closeBoxUser
+);
+$('boxUser').addEvent(
+        'click',
+        function(e){
+            cancelEvent(e);
+            stopEvent(e);
+        }
+);
+var descrip = '<?php echo __("APORTE_CORTO", true);?>';
     DR(function(){
+        var myString = new String(navigator.appVersion);
+        if(/MSIE 8/.test(myString)){
 
+
+            jQuery('#gear').html('<a style="font-size: 0" onclick="javascript:openBoxUser3();">LLLLLLLL</a>');
+
+
+        }
         crop();
+
+            $('gear').hover(
+                    function(){
+                        this.style.background='url(/2012/images/gear_over.gif)';
+                        this.style.backgroundRepeat='no-repeat';
+                    },
+                    function(){
+                        this.style.background='url(/2012/images/gear.gif)';
+                        this.style.backgroundRepeat='no-repeat';
+                    }
+            );
+            if(ns.logueado){
+                $('gear').addEvent(
+                        'click',
+                        openBoxUser1
+                );
+            }else{
+                $('gear').addEvent(
+                        'click',
+                        openBoxUser2
+                );
+            }
+            panino.getO(document).addEvent(
+                    'click',
+                    closeBoxUser
+            );
+            $('boxUser').addEvent(
+                    'click',
+                    function(e){
+                        cancelEvent(e);
+                        stopEvent(e);
+                    }
+            );
+
 
         for(var i=0;i<10;i++){
 
@@ -958,7 +1048,7 @@ crop();
             return;
         }
         if(descripcion.length<10){
-            $('err'+elente).innerHTML='La descripci&oacute;n ingresada es demasiado breve';
+            $('err'+elente).innerHTML=descrip;
             return;
         }
         $(campos[0]).value=$(campos[1]).value='';

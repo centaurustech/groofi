@@ -156,7 +156,7 @@ msgid "USER__PASSWORD"
 msgstr "Password"
 
 msgid "LOGIN"
-msgstr "Login"
+msgstr "Login/"
 
 msgid "REGISTER_TITLE"
 msgstr "Not registered yet?"
@@ -303,7 +303,7 @@ msgid "OFFER__FUNDING_SPONSORSHIPS_FOUNDS"
 msgstr "Amount offered per project"
 
 msgid "OFFER__OFFER_SPONSORSHIPS"
-msgstr "Maximum amount of projects you're interested in backing"
+msgstr "Maximum amount of projects you`re interested in backing"
 
 msgid "OFFER__OFFER_DURATION"
 msgstr "Offering Duration"
@@ -761,10 +761,10 @@ msgid "SPONSORSHIP_CREATE_TITLE"
 msgstr "Congratulations!"
 
 msgid "SPONSORSHIP_CREATE_SUBTITLE"
-msgstr "You're just a step away from backing this project"
+msgstr "You`re just a step away from backing this project"
 
 msgid "SPONSORSHIP__CONTRIBUTION"
-msgstr "Define with how much you'll contribute"
+msgstr "Define with how much you`ll contribute"
 
 msgid "POSTS_ADD"
 msgstr "Add update"
@@ -833,7 +833,7 @@ msgid "I_WANT_TO_DO_IT"
 msgstr "I WANT TO DO THIS"
 
 msgid "I_WANT_TO_BE_PART_HEADLINE"
-msgstr "If you're also looking for people to do this..."
+msgstr "If you`re also looking for people to do this..."
 
 msgid "I_WANT_TO_BE_PART"
 msgstr "I WANT TO BE A PART"
@@ -869,7 +869,7 @@ msgid "NOTIFICATIONS_EDIT_PROFILE_TITLE"
 msgstr "Notifications"
 
 msgid "NOTIFICATIONS_EDIT_PROFILE_SUBTITLE"
-msgstr "Manage how you'll receive your notifications"
+msgstr "Manage how you`ll receive your notifications"
 
 msgid "NOTIFICATIONTYPE"
 msgstr "Notify me via mail when:"
@@ -902,7 +902,7 @@ msgid "DELETE_ACCOUNT_MESSAGE_TITLE"
 msgstr "Warning"
 
 msgid "DELETE_ACCOUNT_MESSAGE_MESSAGE"
-msgstr "All your information, activities, and interactions associated to your Groofi account will be deleted permanently. There's no turning back. Please, take this into consideration."
+msgstr "All your information, activities, and interactions associated to your Groofi account will be deleted permanently. There`s no turning back. Please, take this into consideration."
 
 msgid "DELETEACCOUNT__PASSWORD"
 msgstr "Enter your password"
@@ -932,7 +932,7 @@ msgid "PROJECT_FUNDED"
 msgstr "A project I follow or back has met its funding goal."
 
 msgid "PROJECT_DONT_FUNDED"
-msgstr "A project I follow or back hasn't met its funding goal."
+msgstr "A project I follow or back hasn`t met its funding goal."
 
 msgid "CHANGE"
 msgstr "CHANGE"
@@ -944,7 +944,7 @@ msgid "FACEBOOK_DISCONNECT_APP"
 msgstr "(disconnect)"
 
 msgid "YOUR_PROFILE_INFO_IS_INCOMPLETE_TITLE"
-msgstr "Your profile isn't complete"
+msgstr "Your profile isn`t complete"
 
 msgid "UPDATE_INCOMPLETE_INFO_LINK_TITLE"
 msgstr "or complete them automatically with info available on Facebook"
@@ -1024,7 +1024,7 @@ msgid "MAX_LENGTH_50_ERROR"
 msgstr "Enter at least 50 characters"
 
 msgid "match"
-msgstr "Passwords don't match"
+msgstr "Passwords don`t match"
 
 msgid "USER_FOLLOWS %s"
 msgstr "Follows (&s)"
@@ -1036,10 +1036,10 @@ msgid "THIS_VIDEO_SITE_URL_IT_IS_NOT_VALID"
 msgstr "Enter the URL from a video uploaded to YouTube or Vimeo"
 
 msgid "I_WANT_NOT_TO_BE_PART_HEADLINE"
-msgstr "If you're not looking for people to do this anymore..."
+msgstr "If you`re not looking for people to do this anymore..."
 
 msgid "I_WANT_NOT_TO_BE_PART"
-msgstr "I DON'T WANT TO BE PART"
+msgstr "I DON`T WANT TO BE PART"
 
 msgid "READ_MORE"
 msgstr "Read more"
@@ -1087,13 +1087,13 @@ msgid "HIGHLIGHT_PROJECTS_TITLE1"
 msgstr "FEATURED PROJECTS"
 
 msgid "HIGHLIGHT_PROJECTS_SUBTITLE"
-msgstr "Back our community's most interesting projects"
+msgstr "Back our community`s most interesting projects"
 
 msgid "HIGHLIGHT_OFFERS_TITLE"
 msgstr "Featured Offerings"
 
 msgid "HIGHLIGHT_OFFERS_SUBTITLE"
-msgstr "Accept our community's most interesting Offerings"
+msgstr "Accept our community`s most interesting Offerings"
 
 msgid "HIGHLIGHT_USERS_TITLE"
 msgstr "Featured Users"
@@ -1123,7 +1123,7 @@ msgid "FACEBOOK_DISCONNECT_APP_CONFIRM"
 msgstr "Are you sure you want to disconnect from Facebook?"
 
 msgid "THIS_USER_HAS_NOT_OFFERS_YET_TITLE"
-msgstr "This user hasn't created any Offerings"
+msgstr "This user hasn`t created any Offerings"
 
 msgid "THIS_USER_HAS_NOT_OFFERS_YET_BODY"
 msgstr "There are no Offerings by this user"
@@ -1171,7 +1171,7 @@ msgid "SPONSORSHIP_CREATE_PRIZES_TITLE"
 msgstr "Rewards available"
 
 msgid "SPONSORSHIP_CREATE_PRIZES_SUBTITLE"
-msgstr "You'll receive the reward that corresponds to your contribution"
+msgstr "You`ll receive the reward that corresponds to your contribution"
 
 msgid "SPONSORSHIP_CREATE_2_TITLE"
 msgstr "Summary"
@@ -1213,19 +1213,19 @@ msgid "PROJECT_ADD_THIRD_BLOCK_SUBTITLE"
 msgstr "Provide the following information"
 
 msgid "PROJECT__TITLE__HELP_MESSAGE_TEXT"
-msgstr "This will be your project's title."
+msgstr "This will be your project`s title."
 
 msgid "PROJECT__CATEGORY__HELP_MESSAGE_TEXT"
-msgstr "Pick the category that best fits your project. Once approved, you won'tbe able to modify it."
+msgstr "Pick the category that best fits your project. Once approved, you won`tbe able to modify it."
 
 msgid "PROJECT__SHORT_DESCRIPTION__HELP_MESSAGE_TEXT"
-msgstr "Describe your project in a few words. Once approved, you won't be able to modify this."
+msgstr "Describe your project in a few words. Once approved, you won`t be able to modify this."
 
 msgid "Projemsn"
-msgstr  "Describe your project in a few words. Once approved, you won't be able to modify this."
+msgstr  "Describe your project in a few words. Once approved, you won`t be able to modify this."
 
 msgid "PROJECT__DESCRIPTION__HELP_MESSAGE_TEXT"
-msgstr "Now give a fuller account of your project. Once your project is approved, you'll still be able to amend this part."
+msgstr "Now give a fuller account of your project. Once your project is approved, you`ll still be able to amend this part."
 
 msgid "PROJECT__MOTIVATION__HELP_MESSAGE_TEXT"
 msgstr "This information will be useful to potential backers."
@@ -1276,16 +1276,16 @@ msgid "OFFER_ADD_THIRD_BLOCK_SUBTITLE"
 msgstr "Provide the following information"
 
 msgid "OFFER__TITLE__HELP_MESSAGE_TEXT"
-msgstr "This will be your Offering's title. Once approved, you won't be able to modify it."
+msgstr "This will be your Offering`s title. Once approved, you won`t be able to modify it."
 
 msgid "OFFER__CATEGORY__HELP_MESSAGE_TEXT"
-msgstr "Select the Category that better describes your Offering. Once approved, you won't be able to modify it."
+msgstr "Select the Category that better describes your Offering. Once approved, you won`t be able to modify it."
 
 msgid "OFFER__SHORT_DESCRIPTION__HELP_MESSAGE_TEXT"
-msgstr "Describe your Offering in a few words. Once approved, you won't be able to modify it."
+msgstr "Describe your Offering in a few words. Once approved, you won`t be able to modify it."
 
 msgid "OFFER__DESCRIPTION__HELP_MESSAGE_TEXT"
-msgstr "Now give a fuller account of your Offering. Once your Offering is approved, you'll still be able to amend this part."
+msgstr "Now give a fuller account of your Offering. Once your Offering is approved, you`ll still be able to amend this part."
 
 msgid "OFFER__URL__HELP_MESSAGE_TEXT"
 msgstr "Provide links to other sites that might help backers understand your project."
@@ -1294,13 +1294,13 @@ msgid "OFFER__VIDEO_URL__HELP_MESSAGE_TEXT"
 msgstr "Enter the URL of a video of the project from YouTube.com or Vimeo.com (optional)."
 
 msgid "OFFER__FUNDING_SPONSORSHIPS_FOUNDS__HELP_MESSAGE_TEXT"
-msgstr "Enter the amount you are willing to contribute to projects that comply with your offer's requests. You can change this once we approve your proposal."
+msgstr "Enter the amount you are willing to contribute to projects that comply with your offer`s requests. You can change this once we approve your proposal."
 
 msgid "OFFER__OFFER_SPONSORSHIPS__HELP_MESSAGE_TEXT"
 msgstr "Enter the maximum number of projects that you are willing to sponsor with the amount entered above. You can change this once we approve your proposal."
 
 msgid "OFFER__OFFER_DURATION__HELP_MESSAGE_TEXT"
-msgstr "Chose how many days you want your Offering's period to be open for. You'll be able to change this number once the project has been approved."
+msgstr "Chose how many days you want your Offering`s period to be open for. You`ll be able to change this number once the project has been approved."
 
 msgid "OFFER__OFFER_PUBLIC_EDIT_HELP_MESSAGE_TEXT"
 msgstr "By checking this option, other users can join and contribute funds to projects that are running on the offer originally created by you."
@@ -1330,13 +1330,13 @@ msgid "BETWEEN_50_140_CHARS"
 msgstr "Enter between 50 and 140 characters"
 
 msgid "OFFER__TITLE_EDIT_HELP_MESSAGE_TEXT"
-msgstr "This is your Offering's title. At this point you cannot modify it anymore."
+msgstr "This is your Offering`s title. At this point you cannot modify it anymore."
 
 msgid "OFFER__CATEGORY_EDIT_HELP_MESSAGE_TEXT"
-msgstr "This is your Offering's category. At this point you cannot modify it anymore."
+msgstr "This is your Offering`s category. At this point you cannot modify it anymore."
 
 msgid "OFFER__SHORT_DESCRIPTION_EDIT_HELP_MESSAGE_TEXT"
-msgstr "This is your Offering's short description. At this point you cannot modify it anymore."
+msgstr "This is your Offering`s short description. At this point you cannot modify it anymore."
 
 msgid "OFFER__DESCRIPTION_EDIT_HELP_MESSAGE_TEXT"
 msgstr "Describe what your Offering is about. The more information you provide, the better."
@@ -1345,13 +1345,13 @@ msgid "OFFER__VIDEO_URL_EDIT_HELP_MESSAGE_TEXT"
 msgstr "Enter the URL of a video of your Offering from either YouTube.com or Vimeo.com"
 
 msgid "OFFER__FUNDING_SPONSORSHIPS_FOUNDS_EDIT_HELP_MESSAGE_TEXT"
-msgstr "Enter the amount you are willing to contribute to projects that comply with your offer's requests."
+msgstr "Enter the amount you are willing to contribute to projects that comply with your offer`s requests."
 
 msgid "OFFER__OFFER_SPONSORSHIPS_EDIT_HELP_MESSAGE_TEXT"
 msgstr "Enter the maximum number of projects that you are willing to sponsor with the amount entered above."
 
 msgid "OFFER__OFFER_DURATION_EDIT_HELP_MESSAGE_TEXT"
-msgstr "Choose how many days your Offering will be active. You'll be able to modify this once approved."
+msgstr "Choose how many days your Offering will be active. You`ll be able to modify this once approved."
 
 msgid "PROJECT_EDIT_FIRST_BLOCK_TITLE"
 msgstr "Your project"
@@ -1402,25 +1402,25 @@ msgid "WELCOME-TITLE"
 msgstr "WELCOME! "
 
 msgid "WELCOME-CONTENT"
-msgstr "Your account has been successfully confirmed and you're now part of Groofi. Login to your account to create your own projects and offers."
+msgstr "Your account has been successfully confirmed and you`re now part of Groofi. Login to your account to create your own projects and offers."
 
 msgid "THANKS-FOR-REGISTERING-TITLE"
 msgstr "Thanks for registering!"
 
 msgid "THANKS-FOR-REGISTERING-CONTENT"
-msgstr "You're already registered in Groofi. You'll receive an e-mail to activate your account. Please check your inbox and follow the instructions."
+msgstr "You`re already registered in Groofi. You`ll receive an e-mail to activate your account. Please check your inbox and follow the instructions."
 
 msgid "minLength_140"
 msgstr "Enter at least 140 characters."
 
 msgid "THE_PROJECT_COULD_NOT_BE_SAVED_PLEASE_TRY_AGAIN."
-msgstr "The project couldn't be saved. Please complete all the required fields and try again."
+msgstr "The project couldn`t be saved. Please complete all the required fields and try again."
 
 msgid "THANKS-FOR-BACKING-TITLE"
 msgstr "Thanks for backing a project!"
 
 msgid "THANKS-FOR-BACKING-CONTENT"
-msgstr "You're already backing this project. You'll receive information on the status of your contribution, and project activity."
+msgstr "You`re already backing this project. You`ll receive information on the status of your contribution, and project activity."
 
 msgid "IT_SUPPORTING %s PROJECTS"
 msgstr "Is backing %s project(s)."
@@ -1441,10 +1441,10 @@ msgid "SEARCHES_INDEX"
 msgstr "Search results"
 
 msgid "WE CAN NOT FOUND ANY PROJECT IN %s PLEASE TRY AGAIN"
-msgstr "We didn't get any results in your search for: %s. Please try different terms."
+msgstr "We didn`t get any results in your search for: %s. Please try different terms."
 
 msgid "WE CAN NOT FOUND ANY OFFER IN %s PLEASE TRY AGAIN"
-msgstr "We didn't get any results in your search for: %s. Please try different terms."
+msgstr "We didn`t get any results in your search for: %s. Please try different terms."
 
 msgid "OFFERS_SEARCH_RESULT_FOR %s"
 msgstr "Search results for: %s"
@@ -1456,10 +1456,10 @@ msgid "Login failed. Invalid username or password."
 msgstr "Login failed. Invalid username or password."
 
 msgid "THERE_ARE_NO_ACTIVITY_FOR_THIS_USER"
-msgstr "There's no activity to show from this user."
+msgstr "There`s no activity to show from this user."
 
 msgid "THIS_USER_HAS_NOT_ANY_ACTIVITY_YET"
-msgstr "This user hasn't had any activity yet."
+msgstr "This user hasn`t had any activity yet."
 
 msgid "SPONSORSHIPS_LISTING"
 msgstr "Backing"
@@ -1912,7 +1912,7 @@ msgid "USER_LOCATION_HELP_MESSAGE_TEXT"
 msgstr "Enter your state or province and select one of the suggested options."
 
 msgid "USER__URL__HELP_MESSAGE_TEXT"
-msgstr "Enter your website's URL."
+msgstr "Enter your website`s URL."
 
 msgid "USER__BIOGRAPHY__HELP_MESSAGE_TEXT"
 msgstr "Tell us about you. This bio will show up on both your profile and projects."
@@ -2053,19 +2053,19 @@ msgid "PROJECT_-PRIZE_EDIT_TIP_MESSAGE_TEXT"
 msgstr "Remember, many users will be investing purely because of the rewards, so make sure you put a lot of thought into this."
 
 msgid "PROJECT__FILE_EDIT_TIP_MESSAGE_TEXT"
-msgstr "Image isn't everything but do believe it's important. Upload a good quality image with a 4:3 aspect ratio, and no more than 560 x 430 pixels."
+msgstr "Image isn`t everything but do believe it`s important. Upload a good quality image with a 16:9 aspect ratio, and more than 560 x 430 pixels."
 
 msgid "PROJECT__FILE__TIP_MESSAGE_TEXT"
-msgstr "Image isn't everything but do believe it's important. Upload a good quality image with a 4:3 aspect ratio, and no more than 560 x 430 pixels."
+msgstr "Image isn`t everything but do believe it`s important. Upload a good quality image with a 16:9 aspect ratio, and  more than 560 x 430 pixels."
 
 msgid "OFFER__SHORT_DESCRIPTION__TIP_MESSAGE_TEXT"
 msgstr "You have 140 characters to sell your Offering, so focus on the key elements."
 
 msgid "OFFER__DESCRIPTION__TIP_MESSAGE_TEXT"
-msgstr "The more information your provide and the clearer you are in your description, the more trust you will earn with potential backers and the more they'll be to back you."
+msgstr "The more information your provide and the clearer you are in your description, the more trust you will earn with potential backers and the more they`ll be to back you."
 
 msgid "OFFER__FILE__TIP_MESSAGE_TEXT"
-msgstr "Image isn't everything but do believe it's important. Upload a good quality image with a 4:3 aspect ratio, and no more than 560 x 430 pixels."
+msgstr "Image isn`t everything but do believe it`s important. Upload a good quality image with a 16:9 aspect ratio, and  more than 560 x 430 pixels."
 
 msgid "OFFER__VIDEO_URL__TIP_MESSAGE_TEXT"
 msgstr "This video is perhaps the most important part of the process. The quality of the video will give potential backers an insight into who your are, what your project is and whether you can pull it off."
@@ -2095,7 +2095,7 @@ msgid "RESUMEN_NET"
 msgstr "Net"
 
 msgid "RESUMEN_COMISION"
-msgstr "Groofi's fee"
+msgstr "Groofi`s fee"
 
 msgid "RESUMEN_PROJECT_PAYMENT"
 msgstr "Payment for the project creator"
@@ -2129,13 +2129,13 @@ msgid "ADMIN_PROJECTBALANCE"
 msgstr "Balance"
 
 msgid "INSUFICIENT_FOUNDS_TO_DO_A_REFOUND"
-msgstr "Your available PayPal funds aren't enough to refund the contributions."
+msgstr "Your available PayPal funds aren`t enough to refund the contributions."
 
 msgid "INSUFICIENT_FOUNDS_TO_PAY_THIS_PROJECT"
-msgstr "Your available PayPal funds aren't enough to fund the complete project."
+msgstr "Your available PayPal funds aren`t enough to fund the complete project."
 
 msgid "OFFER__FILE_EDIT_TIP_MESSAGE_TEXT"
-msgstr "Image isn't everything but do believe it's important. Upload a good quality image with a 4:3 aspect ratio, and no more than 560 x 430 pixels."
+msgstr "Image isn`t everything but do believe it`s important. Upload a good quality image with a 4:3 aspect ratio, and no more than 560 x 430 pixels."
 
 msgid "THE_PROJECT_HAS_FINISHED %s"
 msgstr "Project ended on %s"
@@ -2190,10 +2190,10 @@ msgstr "Important"
 
 
 msgid "PROJECT_PAYPAL_HELP_TEXT"
-msgstr "By clicking on \"LINK TO MY PAYPAL ACCOUNT\", you'll exit Groofi and be directed to the official PayPal site to link to the account where you'll receive the contributios. If you don't have one currently, you'll have to create one."
+msgstr "By clicking on \"LINK TO MY PAYPAL ACCOUNT\", you`ll exit Groofi and be directed to the official PayPal site to link to the account where you`ll receive the contributios. If you don`t have one currently, you`ll have to create one."
 
 msgid "IMPORTANT_PAYPAL_BODY"
-msgstr "By clicking on "Continue", you'll exit Groofi and be directed to the official PayPal site so you can perform your contibution directly from your PayPal account. If you don't have one, you'll have to create one."
+msgstr "By clicking on "Continue", you`ll exit Groofi and be directed to the official PayPal site so you can perform your contibution directly from your PayPal account. If you don`t have one, you`ll have to create one."
 
 msgid "PLEASE_SELECT_ONE_PRIZE"
 msgstr "Please select one of the following options"
@@ -2205,7 +2205,7 @@ msgid "AT_LEAST_ONE_LINK"
 msgstr "Enter at least one link"
 
 msgid "THE_OFFER_COULD_NOT_BE_SAVED_PLEASE_TRY_AGAIN"
-msgstr "Your Offering couldn't be saved. Please verify that all fields has been filled properly."
+msgstr "Your Offering couldn`t be saved. Please verify that all fields has been filled properly."
 
 msgid "YOU_MUST_UPLOAD_AN_IMAGE"
 msgstr "You must upload an image"
@@ -2220,16 +2220,16 @@ msgid "EDIT_THIS_OFFER"
 msgstr "Edit Offering"
 
 msgid "BETWEEN_3_50_CHARS"
-msgstr "Enter a title of less than 50 characters"
+msgstr "Enter a title between 3 and 50 characters"
 
 msgid "THIS_OFFER_IS_NOT_VALID_IT_CAN_NOT_BE_PUBLISHED"
-msgstr "Your Offering couldn't be published. Please verify that all fields has been filled properly."
+msgstr "Your Offering couldn`t be published. Please verify that all fields has been filled properly."
 
 msgid "THE_OFFER_IS_NOT_VALID_WE_CAN_NOT_PUPBISH_IT"
-msgstr "Your Offering couldn't be published. Please verify that all fields has been filled properly."
+msgstr "Your Offering couldn`t be published. Please verify that all fields has been filled properly."
 
 msgid "THE_OFFER_COULD_NOT_BE_SAVED_PLEASE_TRY_AGAIN."
-msgstr "Your Offering couldn't be saved. Please verify that all fields has been filled properly."
+msgstr "Your Offering couldn`t be saved. Please verify that all fields has been filled properly."
 
 msgid "greater_than_0"
 msgstr "Enter a valid amount"
@@ -2397,10 +2397,10 @@ msgid "SPONSORSHIP_VALUE"
 msgstr "Amount contributed:"
 
 msgid "PAYER_ID"
-msgstr "Backer's PayPal ID"
+msgstr "Backer`s PayPal ID"
 
 msgid "PAYER_EMAIL"
-msgstr "Backer's PayPal E-mail"
+msgstr "Backer`s PayPal E-mail"
 
 msgid "EXPRESSCHECKOUT_PROFILEID"
 msgstr "Profile ID:"
@@ -2536,7 +2536,7 @@ msgid "RECOVER-LINK-TITLE"
 msgstr "Recover your password"
 
 msgid "RECOVER-LINK-CONTENT"
-msgstr "We've sent a message to your E-mail account with the instructions on how to recover your password."
+msgstr "We`ve sent a message to your E-mail account with the instructions on how to recover your password."
 
 msgid "PREV_PAGE"
 msgstr "Previous"
@@ -2551,10 +2551,10 @@ msgid "MAIL-MUST-BE-UNIQUE"
 msgstr "This E-mail is already being used by other account."
 
 msgid "OFFER_COMMENTED_SUBJECT_OWNER"
-msgstr "You've received a new comment"
+msgstr "You`ve received a new comment"
 
 msgid "OFFER_PENDING_APPROVE_SUBJECT_OWNER"
-msgstr "We've received your proposal"
+msgstr "We`ve received your proposal"
 
 msgid "OFFER_APPROVED_SUBJECT_OWNER"
 msgstr "Congratulations! Your proposal has been approved"
@@ -2593,13 +2593,13 @@ msgid "OFFER_FINISHED_SUBJECT_FOLLOWER_TYPE2"
 msgstr "The Offering related to your Project is about to end"
 
 msgid "POST_COMMENTED_SUBJECT_OWNER"
-msgstr "You've received a new comment"
+msgstr "You`ve received a new comment"
 
 msgid "PROJECT_COMMENTED_SUBJECT_OWNER"
-msgstr "You've received a new comment"
+msgstr "You`ve received a new comment"
 
 msgid "PROJECT_PENDING_APPROVE_SUBJECT_OWNER"
-msgstr "We've received your proposal"
+msgstr "We`ve received your proposal"
 
 msgid "PROJECT_APPROVED_SUBJECT_OWNER"
 msgstr "Congratulations! Your proposal has been approved"
@@ -2620,10 +2620,10 @@ msgid "PROJECT_ABOUT_TO_FINISH_SUBJECT_OWNER"
 msgstr "Your project is about to end"
 
 msgid "PROJECT_ABOUT_TO_FINISH_SUBJECT_FOLLOWER"
-msgstr "A project you're following is about to end"
+msgstr "A project you`re following is about to end"
 
 msgid "PROJECT_ABOUT_TO_FINISH_SUBJECT_FOLLOWER_TYPE2"
-msgstr "A project you're backing is about to end"
+msgstr "A project you`re backing is about to end"
 
 msgid "PROJECT_FINISH_SUBJECT_OWNER"
 msgstr "Your project has ended"
@@ -2632,19 +2632,19 @@ msgid "PROJECT_FUNDED_SUBJECT_OWNER"
 msgstr "Congratulations! Your project has been successfully funded"
 
 msgid "PROJECT_FUNDED_SUBJECT_FOLLOWER"
-msgstr "A project you're following has been successfully funded"
+msgstr "A project you`re following has been successfully funded"
 
 msgid "PROJECT_FUNDED_SUBJECT_FOLLOWER_TYPE2"
-msgstr "A project you're backing has been successfully funded"
+msgstr "A project you`re backing has been successfully funded"
 
 msgid "PROJECT_DONT_FUNDED_SUBJECT_OWNER"
-msgstr "Your project hasn't been funded"
+msgstr "Your project hasn`t been funded"
 
 msgid "PROJECT_DONT_FUNDED_SUBJECT_FOLLOWER"
 msgstr "A project that still has not been funded"
 
 msgid "PROJECT_DONT_FUNDED_SUBJECT_FOLLOWER_TYPE2"
-msgstr "A project you're following hasn't been funded"
+msgstr "A project you`re following hasn`t been funded"
 
 msgid "USER_WELCOME_MAIL_SUBJECT_OWNER"
 msgstr "Welcome to Groofi! Confirm your account"
@@ -2653,10 +2653,10 @@ msgid "PASSWORD_RECOVERY_SUBJECT_OWNER"
 msgstr "Reset password"
 
 msgid "PROJECT_NEW_BACKER_PRE_APPROVAL_SUBJECT_OWNER"
-msgstr "Thank you! We've received your contribution"
+msgstr "Thank you! We`ve received your contribution"
 
 msgid "PROJECT_NEW_BACKER_EXPRESS_PAYMENT_SUBJECT_OWNER"
-msgstr "Thank you! We've received your contribution"
+msgstr "Thank you! We`ve received your contribution"
 
 msgid "TERMS_OF_USER_BODY %s"
 msgstr "By registering you accent the "
@@ -2692,10 +2692,10 @@ msgid "POSTS_EDIT"
 msgstr "Edit update"
 
 msgid "OFFER_IS_NOT_VISIBLE"
-msgstr "Sorry! The page you're trying to reach is unavailable"
+msgstr "Sorry! The page you`re trying to reach is unavailable"
 
 msgid "PROJECT_DOES_NOT_EXIST"
-msgstr "Sorry! The page you're trying to reach is unavailable"
+msgstr "Sorry! The page you`re trying to reach is unavailable"
 
 msgid "GENERIC_PAGE_ERROR_403"
 msgstr "Sorry!"
@@ -2710,10 +2710,10 @@ msgid "GENERIC_PAGE_ERROR_404_BODY"
 msgstr "Page not found. You may have clicked on a link that has expired, or the URL may be poorly written/copied."
 
 msgid "OFFER_DOES_NOT_EXIST"
-msgstr "Sorry! The page you're trying to reach doesn't exist"
+msgstr "Sorry! The page you`re trying to reach doesn`t exist"
 
 msgid "PROJECT_IS_NOT_VISIBLE"
-msgstr "Sorry! The page you're trying to reach doesn't exist"
+msgstr "Sorry! The page you`re trying to reach doesn`t exist"
 
 msgid "PROJECT_FUNDED_STATUS"
 msgstr "Ended"
@@ -3204,7 +3204,7 @@ msgid "HOW_SPONSOR_MY_PROJECT_USERS"
 msgstr "How achievement so others sponsor my project?"
 
 msgid "HOW_SPONSOR_MY_PROJECT_USERS_CONCEPT"
-msgstr "The most important thing is to have a good idea, namely pass and above all, sell the idea to your circle of friends and family. It all adds up: a good title, a complete description, a video in which you talk to your prospective sponsors, tell them about your project and on others you've made. Remember the picture you take is very important to convey trust and convince sponsors. The other key is to offer attractive benefits, commensurate with the contribution. Many sponsors are only interested in getting something in return."
+msgstr "The most important thing is to have a good idea, namely pass and above all, sell the idea to your circle of friends and family. It all adds up: a good title, a complete description, a video in which you talk to your prospective sponsors, tell them about your project and on others you`ve made. Remember the picture you take is very important to convey trust and convince sponsors. The other key is to offer attractive benefits, commensurate with the contribution. Many sponsors are only interested in getting something in return."
 
 msgid "HOW_SPREAD_MY_PROJECT"
 msgstr "How I can spread my project?"
@@ -3246,7 +3246,7 @@ msgid "REMOVE_MY_PROJECT_ONCE_LAUNCHED"
 msgstr "Can I delete my project once launched?"
 
 msgid  "REMOVE_MY_PROJECT_ONCE_LAUNCHED_CONCEPT"
-msgstr "No, once you've launched your project to others engaged in it and you can not remove it."
+msgstr "No, once you`ve launched your project to others engaged in it and you can not remove it."
 
 msgid "INFORM_USERS_ABOUT_UPDATES_TO_MY_PROJECT"
 msgstr "¿How do I notify users about updates to my project?"
@@ -3258,7 +3258,7 @@ msgid "SEND_DATA_SPONSORS_ONCE_MY_PROJECT_HAS_BEEN_FUNDED"
 msgstr "How do I send the benefits chosen by the sponsors once my project has been funded?"
 
 msgid "SEND_DATA_SPONSORS_ONCE_MY_PROJECT_HAS_BEEN_FUNDED_CONCEPT"
-msgstr "If your project meets the required funds within the allotted time, you must contact sponsors to send your elected benefits. We'll provide your contact details."
+msgstr "If your project meets the required funds within the allotted time, you must contact sponsors to send your elected benefits. We`ll provide your contact details."
 
 msgid "WILL_NOT_STEAL_THE_IDEA_FOR_MY_PROJECT"
 msgstr "How do I ensure that they will not steal the idea for my project?"
@@ -3369,7 +3369,7 @@ msgid "DEFINE_YOUR_PROJECT_CONCEPT_3"
 msgstr "Groofi thrives on these open exchanges and clear explanations of goals. Make sure your project does this!"
 
 msgid "DEFINE_YOUR_PROJECT_CONCEPT_4"
-msgstr "If you're unsure if your project is a good fit for Groofi, we'd encourage you to read our FAQ. "
+msgstr "If you`re unsure if your project is a good fit for Groofi, we`d encourage you to read our FAQ. "
 
 msgid "CREATE_AWARDS"
 msgstr "Creating Rewards"
@@ -3402,10 +3402,10 @@ msgid "CREATE_AWARDS_9"
 msgstr "DECIDING HOW TO PRICE"
 
 msgid "CREATE_AWARDS_10"
-msgstr "Even though we support charitable projects, we champion exchanges that are a mix of commerce and patronage, and the numbers bear this out. It's important to have both small and big rewards – small ones should be oriented to individuals and small sponsors, while big rewards should focused directly to any potential big, corporate sponsor."
+msgstr "Even though we support charitable projects, we champion exchanges that are a mix of commerce and patronage, and the numbers bear this out. It`s important to have both small and big rewards – small ones should be oriented to individuals and small sponsors, while big rewards should focused directly to any potential big, corporate sponsor."
 
 msgid "CREATE_AWARDS_11"
-msgstr "So what works? Offering something of value. Actual value considers more than just sticker price. If it’s a limited edition or a one-of-a-kind experience, there’s a lot of flexibility based on your audience. But if it’s a manufactured good, then it’s a good idea to stay reasonably close to its real-world cost. In the other hand, defining rewards for corporate sponsors is different, as you're basically offering potential forms of promotion. You have to focus on what would be attractive for a company's marketing manager – in other words, how your project can be a potential channel to promote, position, and even sell a brand."
+msgstr "So what works? Offering something of value. Actual value considers more than just sticker price. If it’s a limited edition or a one-of-a-kind experience, there’s a lot of flexibility based on your audience. But if it’s a manufactured good, then it’s a good idea to stay reasonably close to its real-world cost. In the other hand, defining rewards for corporate sponsors is different, as you`re basically offering potential forms of promotion. You have to focus on what would be attractive for a company`s marketing manager – in other words, how your project can be a potential channel to promote, position, and even sell a brand."
 
 msgid "CREATE_AWARDS_12"
 msgstr "There is no magic bullet, and we encourage every project to be as creative and true to itself as possible. Put yourself in your backers’ shoes: would you drop the cash on your rewards? The answer to that question will tell you a lot about your project’s potential."
@@ -3453,40 +3453,40 @@ msgid "MAKING_YOUR_VIDEO_1"
 msgstr "If you’re like us, the first thing you do when visiting a project page is watch the video. A video is by far the best way to get a feel for the emotions, motivations, and character of a project. It’s a demonstration of effort and a good predictor of success. Projects with videos succeed at a much higher rate than those without."
 
 msgid "MAKING_YOUR_VIDEO_2"
-msgstr "We know that making a video can be intimidating. Not many of us like being in front of a camera. We also know that making a video is a challenge worth taking on. It says you care enough about what you’re doing to put yourself out there. It's a small risk with a big reward."
+msgstr "We know that making a video can be intimidating. Not many of us like being in front of a camera. We also know that making a video is a challenge worth taking on. It says you care enough about what you’re doing to put yourself out there. It`s a small risk with a big reward."
 
 msgid "MAKING_YOUR_VIDEO_3"
-msgstr "If you have computer access and a ready supply of enthusiasm, you’ve got all you need. Some videos are big montages and others are epic long takes, but most videos are just someone telling their story straight into the camera. You can spend days shooting and editing, or you can just knock it out with a couple friends on a Saturday. It doesn't have to be perfect, it just has to be you."
+msgstr "If you have computer access and a ready supply of enthusiasm, you’ve got all you need. Some videos are big montages and others are epic long takes, but most videos are just someone telling their story straight into the camera. You can spend days shooting and editing, or you can just knock it out with a couple friends on a Saturday. It doesn`t have to be perfect, it just has to be you."
 
 msgid "MAKING_YOUR_VIDEO_4"
-msgstr "No matter how creative or bare-bones your video, you'll want to: "
+msgstr "No matter how creative or bare-bones your video, you`ll want to: "
 
 msgid "MAKING_YOUR_VIDEO_5"
 msgstr "Tell us who you are"
 
 msgid "MAKING_YOUR_VIDEO_6"
-msgstr "Tell us the story behind your project. Where'd you get the idea? What stage is it at now? How are you feeling about it?"
+msgstr "Tell us the story behind your project. Where`d you get the idea? What stage is it at now? How are you feeling about it?"
 
 msgid "MAKING_YOUR_VIDEO_7"
-msgstr "Come out and ask for people's support, explaining why you need it and what you'll do with their money"
+msgstr "Come out and ask for people`s support, explaining why you need it and what you`ll do with their money"
 
 msgid "MAKING_YOUR_VIDEO_8"
 msgstr "Talk about how awesome your rewards are, using any images you can"
 
 msgid "MAKING_YOUR_VIDEO_9"
-msgstr "Explain that if you don't reach your goal, you'll get nothing, and everyone will be sad"
+msgstr "Explain that if you don`t reach your goal, you`ll get nothing, and everyone will be sad"
 
 msgid "MAKING_YOUR_VIDEO_10"
 msgstr "Thank everyone!"
 
 msgid "MAKING_YOUR_VIDEO_11"
-msgstr "And don't be afraid to put your face in front of the camera and let people see who they’re giving money to. We’ve watched thousands of these things, and you’d be surprised what a difference this makes."
+msgstr "And don`t be afraid to put your face in front of the camera and let people see who they’re giving money to. We’ve watched thousands of these things, and you’d be surprised what a difference this makes."
 
 msgid "MAKING_YOUR_VIDEO_12"
-msgstr "Another thing to remember: don't put any copyrighted music in your video without permission! Expensive lawsuits are never fun."
+msgstr "Another thing to remember: don`t put any copyrighted music in your video without permission! Expensive lawsuits are never fun."
 
 msgid "MAKING_YOUR_VIDEO_13"
-msgstr "Finally on video formats – if you can upload it to either YouTube or Vimeo, that's more than enough!"
+msgstr "Finally on video formats – if you can upload it to either YouTube or Vimeo, that`s more than enough!"
 
 msgid "ARM_YOUR_PROJECT"
 msgstr "Building your Project"
@@ -3498,7 +3498,7 @@ msgid "ARM_YOUR_PROJECT_2"
 msgstr "TITLING YOUR PROJECT"
 
 msgid "ARM_YOUR_PROJECT_3"
-msgstr "Your Groofi project title should be simple, specific, and memorable, and it should include the title of the creative project you're raising funds for. Imagine your title as a distinct identity that will set it apart ("Make my new album” isn’t as helpful or searchable as “The Party-Posse record their debut EP, All Or Nothing")."
+msgstr "Your Groofi project title should be simple, specific, and memorable, and it should include the title of the creative project you`re raising funds for. Imagine your title as a distinct identity that will set it apart ("Make my new album” isn’t as helpful or searchable as “The Party-Posse record their debut EP, All Or Nothing")."
 
 msgid "ARM_YOUR_PROJECT_4"
 msgstr "PICKING YOUR PROJECT IMAGE"
@@ -3585,13 +3585,13 @@ msgid "COMPLY_WITH_REWARDS_2"
 msgstr "GETTING BACKER INFO"
 
 msgid "COMPLY_WITH_REWARDS_3"
-msgstr "Don’t worry about gathering your backers’ info until after your project is successfully funded. At that point the Groofi will facilitate you with all of your backer's data."
+msgstr "Don’t worry about gathering your backers’ info until after your project is successfully funded. At that point the Groofi will facilitate you with all of your backer`s data."
 
 msgid "COMPLY_WITH_REWARDS_4"
 msgstr "PLANNING AHEAD"
 
 msgid "COMPLY_WITH_REWARDS_5"
-msgstr "Remember to take shipping costs into account before you start your project. It may end up being a bigger part of your budget than you thought. Keep in mind how you'll send each reward, how much they weigh, how many require international shipping, and how you will lug all of them to the post office. Don’t forget hidden costs (bubble mailers) or emotional ones (filling out 100 customs forms). Do some research online. It's also important to clarify if shipping costs will be covered by you, or each of your backers."
+msgstr "Remember to take shipping costs into account before you start your project. It may end up being a bigger part of your budget than you thought. Keep in mind how you`ll send each reward, how much they weigh, how many require international shipping, and how you will lug all of them to the post office. Don’t forget hidden costs (bubble mailers) or emotional ones (filling out 100 customs forms). Do some research online. It`s also important to clarify if shipping costs will be covered by you, or each of your backers."
 
 msgid "COMPLY_WITH_REWARDS_6"
 msgstr "COMMUNICATION, COMMUNICATION, COMMUNICATION!"
@@ -3831,7 +3831,7 @@ msgid "CREATE_PROJECT1_4"
 msgstr "benefits for sponsors, that the"
 
 msgid "CREATE_PROJECT1_5"
-msgstr "Recent deliver them once you've collected"
+msgstr "Recent deliver them once you`ve collected"
 
 msgid "CREATE_PROJECT1_6"
 msgstr "money and you can do the same."
@@ -3975,7 +3975,7 @@ msgid "Res"
 msgstr "characters. Left:"
 
 msgid "Carac"
-msgstr "characters."
+msgstr " characters."
 
 msgid "Res1"
 msgstr "Left:"
@@ -4116,7 +4116,7 @@ msgid "TERMINOS_DE_USO_41"
 msgstr "7.1 Up to the website is free. However, we charge a commission of 5% plus VAT on all the money raised by Groofies successfully. We also charge all transaction fees charged by Paypal website. When you use a service that costs you have the opportunity to review and accept the fees that will be charged, and they can be modified. The changes are effective after being published on the website. We may choose to temporarily change the fees for our services for promotional events or new services, and such changes are effective when we post the temporary promotional event or new service on the website."
 
 msgid "TERMINOS_DE_USO_42"
-msgstr "7.2 You are responsible for paying all fees and taxes associated with the use of the Website. In the event that a project is removed from the website for violating the terms of use, all fees paid will not be refunded, unless, at the Company's sole discretion, determines that a refund is appropriate."
+msgstr "7.2 You are responsible for paying all fees and taxes associated with the use of the Website. In the event that a project is removed from the website for violating the terms of use, all fees paid will not be refunded, unless, at the Company`s sole discretion, determines that a refund is appropriate."
 
 msgid "TERMINOS_DE_USO_43"
 msgstr "8. LINKS TO AND FROM OTHER WEBSITES"
@@ -4248,13 +4248,13 @@ msgid "POLITICAS_PRIVACIDAD11"
 msgstr "IP ADDRESSES"
 
 msgid "POLITICAS_PRIVACIDAD12"
-msgstr "We may collect information about your computer, including your IP address, operating system and browser type, for system administration and to report aggregate information to our advertisers. This is statistical data about our users' actions and navigation patterns, and does not identify any individual."
+msgstr "We may collect information about your computer, including your IP address, operating system and browser type, for system administration and to report aggregate information to our advertisers. This is statistical data about our users` actions and navigation patterns, and does not identify any individual."
 
 msgid "POLITICAS_PRIVACIDAD13"
 msgstr "COOKIES"
 
 msgid "POLITICAS_PRIVACIDAD14"
-msgstr "For the same reason, we may obtain information about the general use of the Internet using a cookie file which is stored in the browser or the hard drive of your computer. Cookies contain information that is transferred to your computer's hard disk. They help us to improve our site and to deliver a better and more personalized service. Some of the cookies we use are essential for the site to operate."
+msgstr "For the same reason, we may obtain information about the general use of the Internet using a cookie file which is stored in the browser or the hard drive of your computer. Cookies contain information that is transferred to your computer`s hard disk. They help us to improve our site and to deliver a better and more personalized service. Some of the cookies we use are essential for the site to operate."
 
 msgid "POLITICAS_PRIVACIDAD15"
 msgstr "Please note that our advertisers may also use cookies, over which we have no control."
@@ -4519,6 +4519,34 @@ msgstr "Please wait, uploading file..... "
 
 msgid "Browse_sponsor"
 msgstr "Upload Image Sponsor"
+
+msgid "EDIT_IMAGE"
+msgstr "EDIT IMAGE"
+
+msgid "CAMPO_VACIO"
+msgstr "This field can not be empty"
+
+msgid "APORTE_CORTO"
+msgstr "La descrizione inserita è troppo corta"
+
+msgid "MONTO_FONDOS"
+msgstr "Must choose a value between 10 and 200000"
+
+msgid "MONTO_FONDOS1"
+msgstr "The message has been sent successfully"
+
+
+msgid "CONTACTO_1"
+msgstr "Please fill correctly the field E-mail"
+
+msgid "MUST_BE_IN_RAGE"
+msgstr "Must choose a value between 10 and 200000"
+
+msgid "CONTACTO_2"
+msgstr "Please fill correctly the Name field"
+
+msgid "CONTACTO_3"
+msgstr "Please fill correctly the Comment"
 
 msgid ""
 msgstr ""

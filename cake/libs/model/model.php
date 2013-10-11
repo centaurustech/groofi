@@ -2521,7 +2521,7 @@ class Model extends Overloadable {
                 if (isset($validator['message'])) {
                     $message = $validator['message'];
                 } else {
-                    $message = __('This field cannot be left blank', true);
+                    $message = __('CAMPO_VACIO', true);
                 }
 
                 if (

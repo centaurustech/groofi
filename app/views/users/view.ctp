@@ -1,4 +1,71 @@
-<?php /* @var $this ViewCC */ ?>
+<?php /* @var $this ViewCC */
+if (isset($fb_login)){
+
+echo '<div id="fb-root"></div><div id="mfs"></div>
+<script src="//connect.facebook.net/es_LA/all.js"></script>
+<script>
+    /*Quitar cuando se agregue la app original*/
+    window.fbAsyncInit = function() {
+        FB.init({appId: "312785135481965",
+            status: true,
+            cookie: true,
+            xfbml: true});
+
+
+    };
+</script>
+<script>
+    var usersID = [];
+    function sendRequest() {
+
+        FB.ui({method: "apprequests",
+            //to: sendUIDs,
+            title: "Recomendar Groofi a tus amigos",
+            message: "Visita http://groofi.com!",
+            filters: [{name: "Suggested", user_ids: usersID}]
+        }, callback);
+    }
+
+    function callback(response) {
+        console.log(response);
+    }
+
+    jQuery(document).ready(function(){
+        FB.getLoginStatus(function(response) {
+            if (response.status === "connected") {
+                var uid = response.authResponse.userID;
+                var accessToken = response.authResponse.accessToken;
+                FB.api("/me/friends", function(response) {
+                    for(var i = 0; i < response.data.length; i++) {
+                        usersID.push(response.data[i].id);
+                    }
+                        sendRequest();
+                });
+            } else if (response.status === "not_authorized") {
+
+            } else {
+                FB.login(function(response) {
+                    if (response.authResponse) {
+
+                        FB.api("/me/friends", function(response) {
+
+                        for(var i = 0; i < response.data.length; i++) {
+                            usersID.push(response.data[i].id);
+                        }
+                            sendRequest();
+                        });
+                    } else {
+                        console.log("error");
+                    }
+                });
+            }
+        });
+    });
+</script>
+';
+}
+?>
+
 <!--------------------------->
 <?
 //vd($this->Session->check('deletedok'));

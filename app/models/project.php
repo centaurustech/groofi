@@ -132,10 +132,10 @@ class Project extends AppModel {
             )
         )
         , 'short_description' => array(
-            'default' => array(
+            'CAMPO_VACIO' => array(
                 'rule' => array('notEmpty'),
                 'required' => true,
-                'allowEmpty' => false
+                'allowEmpty' => 'false'
             ),
             'BETWEEN_50_140_CHARS' => array(
                 'rule' => array('between', 50, 140),
@@ -144,10 +144,10 @@ class Project extends AppModel {
             ),
         )
         , 'description' => array(
-            'default' => array(
+            'CAMPO_VACIO' => array(
                 'rule' => array('notEmpty'),
                 'required' => true,
-                'allowEmpty' => false
+                'allowEmpty' => 'false'
             ),
             'minLength_140' => array(
                 'rule' => array('minLength', 140),
@@ -159,7 +159,7 @@ class Project extends AppModel {
                 'default' => array(
                     'rule' => array('notEmpty'),
                     'required' => true,
-                    'allowEmpty' => false,
+                    'allowEmpty' => true,
                     'on' => 'update'
                 ),
             'minLength_140' => array(
@@ -182,8 +182,8 @@ class Project extends AppModel {
 			'MUST_BE_IN_RAGE' => array(
                 'rule' => array('crange', 10, 200000),
                 'required' => true,
-                'allowEmpty' => false,
-				'message' => 'Debe escoger un valor entre 10 y 200000'
+                'allowEmpty' => false
+
             )
 			
         )
@@ -585,7 +585,7 @@ if (ctype_digit($id)){
         // unset un-used validation rules
         unset($this->validate['title']);
         unset($this->validate['category_id']);
-        unset($this->validate['short_description']);
+       // unset($this->validate['short_description']);
 
         if ($data['Project']['basename'] != '') {
        /*     unset($this->validate['file']['valid_upload']);*/
