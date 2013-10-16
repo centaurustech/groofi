@@ -94,8 +94,8 @@ function getVideoFromURL($u){
 </div>
 <div style="width:100%; height:auto; margin-top:20px">
 <h1><?php echo __("CREATE_YOUR_PROJECT");?></h1>
-<span style=" font-style:italic"><?php echo __("HOW_WORK");?></span><br><br>
-<div id="banner_crea_proyecto"><img src="/2012/images/info_crea_proyecto.png" width="957" height="286">
+<span style=" font-style:italic"><?php echo __("HOW_WORK");?></span>
+<div id="banner_crea_proyecto"><?if ($_SESSION['idioma'] == 'esp'){?><img src="/2012/images/info_crea_proyecto.png" width="957" height="286"><?}else{ ?><img src="/2012/images/info_crea_proyectoelse.png" width="957" height="286"><?}?>
 
 
 
@@ -105,31 +105,30 @@ function getVideoFromURL($u){
 
 <div><img src="/2012/images/sombra_header.png" width="957" height="20">
 <div class="casos_exito" onclick="window.location='/#proyecto_destacado';">
-    <h2><?php echo __("SEE_SUCCESFUL_CASES");?></h2><br>
+    <h2><?php echo __("SEE_SUCCESFUL_CASES");?></h2>
 </div>
 <div class="casos_exito1" onclick="window.location='/#proyecto_destacado';">
-    <?php echo __("SEE_SUCCESFUL_CASES1");?><br>
+    <?php echo __("SEE_SUCCESFUL_CASES1");?>
 </div>
-<div class="casos_exito1_1" onclick="window.location='/#proyecto_destacado';">
-    <h2><?php echo __("SEE_SUCCESFUL_CASES1_1");?></h2><br>
+<div class="casos_exito1_1" href="/guidelines">
+    <h2><?php echo __("SEE_SUCCESFUL_CASES1_1");?></h2>
 </div>
-<div class="casos_exito1_2" onclick="window.location='/#proyecto_destacado';">
-    <?php echo __("SEE_SUCCESFUL_CASES1_2");?><br>
+<div class="casos_exito1_2" href="/guidelines">
+    <?php echo __("SEE_SUCCESFUL_CASES1_2");?>
 </div>
 <a href="/#proyecto_destacado" id="casos_de_exito"></a>
 <a href="/guidelines" id="groofi_escuela"></a>
-<br>
-<br>
-<div style="font-style:italic"><?php echo __("PROJECT_ADD_FIRST_BLOCK_SUBTITLE");?></div> <div class="misc_separador" style="width:100%"></div><br>
+
+<div style="font-style:italic"><?php echo __("PROJECT_ADD_FIRST_BLOCK_SUBTITLE");?></div> <div class="misc_separador" style="width:100%"></div>
 <form id="fproy" enctype="multipart/form-data" method="post" action="/projects/add" accept-charset="utf-8">
 <input type="hidden" name="data[Project][user_id]" autocomplete="off" value="<?=$this->Session->read('Auth.User.id')?>" id="ProjectUserId" />
 
 <div class="texto_how_izq" style="position:relative;">
-    <p style="font-size:12px"><?php echo __("Project.title");?></p>
+    <p style="font-size:12px;"><?php echo __("Project.title");?></p>
     <div class="rounded_crear">
         <input tabindex=1 onkeyup="xrestantes(this,$('restantes1'),50)" onkeydown="xrestantes(this,$('restantes1'),50)" onchange="xrestantes(this,$('restantes1'),50)" autocomplete="off" type="text" name="data[Project][title]" value="<?if(isset($_POST['data']['Project']['title'])){echo $_POST['data']['Project']['title'];}?>" />
         <div style="color:red;font-size:9px;position:relative; top:-12px"><?php if (isset($validationErrorsArray['title']) && !empty($validationErrorsArray['title'])){echo $validationErrorsArray['title'];}?></div>
-        <div id="restantes1" style="font-size:9px;position:absolute;left:0; top:28px; text-align:right; width:370px; height:15px;"><?php echo __("Res1");?><?if(isset($_POST['data']['Project']['title'])){echo 50-intval((strlen(utf8_decode($_POST['data']['Project']['title']))));}else{echo '50';}?><?php echo __( "Carac");?></div>
+        <div id="restantes1" style="font-size:9px;position:absolute;left:0; top:28px; text-align:right; width:370px; height:15px;"><?php echo __("Res1");?><?if(isset($_POST['data']['Project']['title'])){echo 50-intval((strlen(utf8_decode($_POST['data']['Project']['title']))));}else{echo '50';}?><?php echo __( "Carac1");?></div>
         <div class="bot_info"  onmouseout="hideTip()" onmousemove="showTip(event,'<?php echo __("Title1");?>')"></div>
     </div>
 </div>
@@ -137,8 +136,8 @@ function getVideoFromURL($u){
 
 
 
-<div class="texto_how_izq">
-    <p style="font-size:12px"><?php echo __("COUNTRY");?></p>
+<div class="texto_how_izq" >
+    <p style="font-size:12px; margin-top: -35px;"><?php echo __("COUNTRY");?></p>
     <div class="rounded_crear" style=background:none>
 
 <select tabindex=2 autocomplete="off" style="width:373px; height:27px; position:relative;top:-4px; left:0;border:1px solid #e1e1e1; background:#f6f7f6" name="data[Project][paislugar]" autocomplete="off" id="ProjectCountryId">
@@ -287,7 +286,7 @@ function getVideoFromURL($u){
 
 
 <div class="texto_how_izq">
-    <p style="font-size:12px"><?php echo __("PROJECT__DESCRIPTION");?></p>
+    <p style="font-size:12px; margin-top: 10px;"><?php echo __("PROJECT__DESCRIPTION");?></p>
     <div class="ckeditor0">
 
         <textarea tabindex=6 class="ckeditor" name="data[Project][description]" autocomplete="off" cols="30" rows="6"><?if(isset($_POST['data']['Project']['description'])){echo $_POST['data']['Project']['description'];}?></textarea>
@@ -398,11 +397,10 @@ function getVideoFromURL($u){
         <!---h2>Upload Photo</h2-->
         <div style="font-size:12px;display: block; width: 370px; height: 100px"><? echo __("PROJECT__FILE_EDIT_TIP_MESSAGE_TEXT");?> </div>
         <div id="upload_status" style="font-size:12px; width:38%; margin:0 0 20px; padding:5px; display:none; border:1px #999 dotted; background:#eee;"></div>
-
-            <a id="upload_link" style="cursor:pointer;position:relative;display: block;background:#000000; font-size: 18px; color: white;font-weight: normal;height: 30px;width: 120px; text-align: center" href="#"><?__('UPLOAD_BROWSE');?></a>
+        <a id="upload_link" style="cursor:pointer;position:relative;display: block;background:#000000; font-size: 18px; color: white;font-weight: normal;height: 30px;width: 120px; text-align: center" href="#"><?__('UPLOAD_BROWSE');?></a>
         <? echo __("EDIT_IMAGE");?>
         <span id="loader" style="display:none;"><img src="/2012/images/loader.gif" alt="Loading..."/></span> <span id="progress"></span>
-        <br />
+
         <div id="uploaded_image"></div>
         <div id="thumbnail_form" style="display:none;">
 
@@ -440,7 +438,7 @@ function getVideoFromURL($u){
     <? } ?>
 </div>
 <div class="clear"></div>
-<div style="font-style:italic"><?php echo __("PROJECT_ADD_THIRD_BLOCK_TITLE");?></div> <div class="misc_separador" style="width:100%"></div><br>
+<div style="font-style:italic; margin-top: 25px"><?php echo __("PROJECT_ADD_THIRD_BLOCK_TITLE");?></div> <div class="misc_separador" style="width:100%"></div><br>
 <div id="fondos_requeridos">
 
     <div class="fond_reque">
@@ -528,11 +526,12 @@ function getVideoFromURL($u){
 </div>
 
 <div class="texto_how_izq"style="height: 135px">
-    <p style="font-size:12px"><?php echo __("PROJECT__PROJECT_DURATION");?></p><br>
+    <p style="font-size:12px"><?php echo __("PROJECT__PROJECT_DURATION");?></p>
     <input name="data[Project][project_duration]" type="hidden" autocomplete="off" class="range" value="7" id="ProjectProjectDuration" />
-    <div style="position:relative; height:17px; width:360px">
-        <div id="indicadords" style="font-size:10px;"><?php echo __("TIME_OF_PROJECT");?></div>
-        <div  class="back_slider" style=" width:360px; height:10px; border:1px solid #eaeaea; position:relative;top: 15px">
+    <div style="position:relative; height:17px; width:360px; margin-left: 15px">
+        <div style="display: block; left: -15px;position: absolute;top: 38px;"><img src="/2012/images/boton_tiempo.png"></div>
+        <div id="indicadords" style="font-size:10px;margin-left: -15px;"><?php echo __("TIME_OF_PROJECT");?></div>
+        <div  class="back_slider" style=" width:360px; height:10px; border-bottom:1px solid #eaeaea;border-top:1px solid #eaeaea;border-right:1px solid #eaeaea; position:relative;top: 15px">
             <div id="blueLine" style="width:0%; height:100%;background:#338abd;"></div>
         </div>
         <div id="cursor" style="width:17px; height:17px; border:1px solid #d3d3d3; background:#e6e6e6;cursor:pointer; position:relative;"></div>
@@ -590,7 +589,7 @@ function getVideoFromURL($u){
         <div class="rounded_area_beneficios">
             <textarea onkeypress="return noenter(event)" name="comments" cols="1" rows="1" id="descverde"></textarea>
             <div id="errE" style="color:red;font-size:9px;position:relative; top:6px; left:10px"></div>
-            <div class="bot_info_empresas"  onmouseout="hideTip()"  onmousemove="showTip(event,'<?echo __("PROJECT__PRIZE__HELP_MESSAGE_TEXT");?> <?echo __("PROJECT_-PRIZE__TIP_MESSAGE_TEXT");?>')"></div>
+            <div class="bot_info_empresas"  onmouseout="hideTip1()"  onmousemove="showTip1(event,'<?echo __("PROJECT__PRIZE__HELP_MESSAGE_TEXT");?> <?echo __("PROJECT_-PRIZE__TIP_MESSAGE_TEXT");?>')"></div>
             <div class="bot_crear_nuevo empresas" onclick="addBeneficio($('mminverde').value, $('descverde').value, 'empresa');"><?php echo __("CREATE");?></div>
 
         </div>
@@ -794,7 +793,10 @@ function getVideoFromURL($u){
 </script>
 
 <script>
-
+var rest1 = '<?php echo __("Res1");?>'
+var carac = '<?php echo __( "Carac");?>'
+var ingre = '<?php echo __("INGRE");?>'
+var benef = '<?echo __("ALERT_BENEFICIO");?>'
 function openBoxUser3(){
     if(window.animationOn)return;
     clearTimeout(ns.timer);
@@ -1025,6 +1027,7 @@ var descrip = '<?php echo __("APORTE_CORTO", true);?>';
     window.memo={};
     window.memo.index=-1;
     function addBeneficio(monto, descripcion, entidad){
+
         var id='__id'+(+new Date());
 
         window.memo.index++;
@@ -1044,7 +1047,7 @@ var descrip = '<?php echo __("APORTE_CORTO", true);?>';
         //errE
         var patron = /\d/;
         if(!patron.test(monto)){
-            $('err'+elente).innerHTML='El monto ingresado es inv&aacute;lido';
+            $('err'+elente).innerHTML=benef;
             return;
         }
         if(descripcion.length<10){
@@ -1065,11 +1068,11 @@ var descrip = '<?php echo __("APORTE_CORTO", true);?>';
             campo.value=campo.value.substr(0,mx);
         }
         if(mi){
-            var ingresados='Ingresados: '+campo.value.length+' caracteres. ';
+            var ingresados=ingre+campo.value.length+carac ;
         }else{
             var ingresados='';
         }
-        label.innerHTML=ingresados+'Restan: '+(mx-campo.value.length)+' caracteres';
+        label.innerHTML=ingresados+rest1+(mx-campo.value.length)+carac;
     }
     <?if(isset($_POST['data']['Project']['project_duration'])){?>
     DR(function(){
@@ -1106,6 +1109,7 @@ var descrip = '<?php echo __("APORTE_CORTO", true);?>';
     }
     function showTip(e,user){
         var pos=getAbsolutePosMouse(e);
+
         $('tip').innerHTML=user;
         $('tip').style.top=pos.y+10+'px';
         if(pos.x<(document.body.offsetWidth/2))
@@ -1117,4 +1121,19 @@ var descrip = '<?php echo __("APORTE_CORTO", true);?>';
         $('tip').innerHTML='';
         $('tip').style.top='-1500px';
     }
+
+function showTip1(e,user){
+    var pos=getAbsolutePosMouse(e);
+    $('tip1').innerHTML=user;
+    $('tip1').style.top=pos.y+10+'px';
+    if(pos.x<(document.body.offsetWidth/2))
+        $('tip1').style.left=pos.x+10+'px';
+    else
+        $('tip1').style.left=pos.x-$('tip1').offsetWidth-10+'px';
+}
+function hideTip1(){
+    $('tip1').innerHTML='';
+    $('tip1').style.top='-1500px';
+}
+
 </script>

@@ -2246,12 +2246,12 @@ if($this->data['Project']['basename']!= $datos[0]['projects']['basename']){
 
         $this->loadModel ('Sponsor');
 		if ($id) {
-		    
+
             $this->data = $this->Project->getViewData ($id);
 
             $this->set('sponsors', $this->Sponsor->find('all',array('conditions'=>array('Sponsor.id_project' => $this->data['Project']['id']), 'order'=>'Sponsor.id DESC') ));
 			/*vd($this->data['Project']['user_id']);
-			vd($this->Auth->user ('id')); 
+			vd($this->Auth->user ('id'));
 			exit;*/
         }
 		

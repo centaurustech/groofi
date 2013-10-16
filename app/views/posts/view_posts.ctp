@@ -56,7 +56,9 @@ $moneda=Project::getMoneda($project);
 <ul class="pageElement tabs" style="margin-top:10px">
 
     <li class="tab-projects"><a href="<?= Project::getLink($project); ?>"><? __('THE_PROJECT') ?></a></li>
+<? if (Project::isOwnProject($project)) { ?>
     <li><a  class="lanzaract lanzaract1" href="/project/<?=$project['Project']['id']?>/create-update"><span class="lanzact" style="margin-left: -15px;text-align: center;"></span><?php echo __("CREATE_UPDATE");?></a></li>
+        <?}?>
 	 <? if (Project::isPublic($project)) { ?>
 	    <li class="tab-sponsorships"><a href="<?= Project::getLink($project, 'sponsorships'); ?>"><? __('PROJECT_SPONSORS') ?> <span style="color:#1e455b; font-weight:600">(<?= $this->data['Project']['sponsorships_count']; ?>)</span></a></li>
         <li class="tab-comments"><a href="<?= Project::getLink($project, 'comments'); ?>"><? __('COMMENTS') ?>  <span style="color:#1e455b; font-weight:600">(<?= $this->data['Project']['comment_count']; ?>)</span></a></li>
@@ -88,9 +90,10 @@ $moneda=Project::getMoneda($project);
 			<?=nl2br($v['Post']['description'])?>
 			<br><br>
 			<!-- comments -->
-			
+            <? if (Project::isOwnProject($project)) { ?>
 			<div class="postComments" id="postComments_4" style="display:block">
-				<div id="PostAddComment_4" class="form">
+
+                <div id="PostAddComment_4" class="form">
 					<form target="ifr" method="post" action="/comments/add/Post/<?=$v['Post']['id']?>" accept-charset="utf-8">
 						
 						<input type="hidden" name="data[Comment][model]" autocomplete="off" value="Post" id="CommentModel">
@@ -123,7 +126,7 @@ $moneda=Project::getMoneda($project);
 					
 					<!--------------------------->
 					<div class="misc_divisor" style="width:551px;clear:both; margin-bottom:30px"></div>
-			</div>
+			</div><?}?>
 		</div>
 	</div>
 	<? } ?>
@@ -148,7 +151,7 @@ $file = $this->Media->getImage('s50', $this->data['User']['avatar_file'], '/img/
 <?}?>
 <div class="iconos_usuario"><img src="/2012/images/iconos_usuario.gif" width="20" height="41"></div>
 
-<div class="info_usuario" style="overflow:hidden;"><?=$this->data['User']['city']?> <br><strong class="cyan"><a onclick="<?if (!$this->Session->read ('Auth.User.id')){$_SESSION['VOLVER']=$this->here;?>alerta('Debes estar registrado para poder enviarle un mensaje a <?=User::getName($this->data)?>');<?}else{?>if($('fromoculto').style.display!='block')$('fromoculto').style.display='block';else $('fromoculto').style.display='none';<?}?>return false;" class="cyan" href="#"><?php echo __("SEND_MESSAGE");?></a></strong></div>
+<div class="info_usuario" style="overflow:hidden;"><?=$this->data['User']['city']?> <br><strong class="cyan"><a onclick="<?if (!$this->Session->read ('Auth.User.id')){$_SESSION['VOLVER']=$this->here;?>alerta('<?echo __("SEND_MESSAGE1");?> <?=User::getName($this->data)?>');<?}else{?>if($('fromoculto').style.display!='block')$('fromoculto').style.display='block';else $('fromoculto').style.display='none';<?}?>return false;" class="cyan" href="#"><?php echo __("SEND_MESSAGE");?></a></strong></div>
 <div class="foto_usuario"><?=$file?></div>
 
 </div>
@@ -167,6 +170,67 @@ $file = $this->Media->getImage('s50', $this->data['User']['avatar_file'], '/img/
 </div>
 
 <div id="columna_der_project">
+
+    <?if (!empty($sponsors)) {?>
+    <script type="text/javascript">
+        $proyectosem='<?php echo __("Subtitle");?>';/*VARIABLE CAMBIO DE IDIOMA SLIDER*/
+
+        DR(
+                function(){
+                    if($('conjurto4'))
+                        createSlideHome(
+                                [
+                                    <?
+                                    foreach ($sponsors as $k => $v){
+                                        $img=explode('.jpg',$v["Sponsor"]["basename"]);
+
+                                        ?>
+                                        '<img src="/upload_sponsors/<?echo $img[0];?>"/>',
+                                        <? } ?>
+
+                                ],$('conjurto4'),$('thumbs_destacados1')
+                        );
+
+                });
+
+    </script>
+
+
+    <div class="slider_sponsor">
+        <div id="conjurto4">
+
+        </div>
+        <div id="thumbs_destacados1" class="thumbs_destacados1" style="display: none">
+            <? $i=0;foreach($this->data['WeekProjects'] as $v){
+            $img=str_replace('.jpg','.png','media/filter/m200/'.$v['Project']['dirname'].'/'.$v['Project']['basename']);
+            if (file_exists($img) ){
+                $img='/crop_120.php?imagen=media/filter/m200/'.$v['Project']['dirname'].'/'.$v['Project']['basename'];
+                $img=str_replace('.jpg','.png',$img);
+            }else{
+                $img='/crop_120.php?imagen=img/assets/img_default_280x210px.png';
+            }
+
+            ?>
+
+
+
+
+            <div class="thumb"><img onMouseOver="overThumb(this.getAttribute('data-index'),parseInt(this.getAttribute('data-index'))+1,this.getAttribute(''))" onclick="clickTn(<?=$i?>)" data-index="<?=$i?>" data-titulo="<?=htmlentities($v['Project']['title'],ENT_QUOTES,'UTF-8');?>" src="<?=$img ?>" width="120" height="120"></div>
+            <? $i++;} ?>
+            <div id="velo"></div>
+            <div id="titulovelo"></div>
+            <div onClick="clickTn(parseInt(this.getAttribute('custom'))-1)" onMouseOut="outThumb()" id="titulovelo2"></div>
+            <div   id="velo2"></div>
+
+            <div class="clear"></div>
+        </div>
+
+    </div>
+    <? }else{ ?>
+    <div class="slider_sponsor">
+        <?echo '<img src="/2012/images/sponsor_groofi.jpg"/>' ;?>
+    </div>
+    <?}?>
 <div class="financiado">
 <h1 style="font-size:42px"><?= Project::getFundedValue($project) ?><span style=" font-size:21px; font-weight:400">%</span></h1>
 <p><?php echo __("FUNDED");?></p>
@@ -252,7 +316,7 @@ Proyecto<br>Finalizado
   if($v['ente']=='P'){
   $htmll1.='<div class="beneficio">
   <div  onclick="location=\''.Project::getLink(array('Project' => $this->data['Project']), array('extra' => 'Back', 'prize' => $v['id'])).'\';" style="cursor:pointer;" class="'.$clases[0].'">
-  <div class="aportar">aportar</div>
+  <div class="aportar">'.__("HELP_WITH", true).'</div>
   <div class="currency">'.$moneda.'</div>
   <div class="amount">'.$v['value'].'+</div>
   <p class="texto_beneficio">'.$v['description'].'</p>
@@ -261,7 +325,7 @@ Proyecto<br>Finalizado
   }else{
   $htmll2.='<div class="beneficio">
   <div  onclick="location=\''.Project::getLink(array('Project' => $this->data['Project']), array('extra' => 'Back', 'prize' => $v['id'])).'\';" style="cursor:pointer;" class="'.$clases[1].'">
-  <div class="aportar">aportar</div>
+  <div class="aportar">'.__("HELP_WITH", true).'</div>
   <div class="currency">'.$moneda.'</div>
   <div class="amount">'.$v['value'].'+</div>
   <p class="texto_beneficio">'.$v['description'].'</p>

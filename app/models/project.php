@@ -178,14 +178,20 @@ class Project extends AppModel {
                 'rule' => array('comparison', 'isgreater', 0),
                 'required' => true,
                 'allowEmpty' => false
-            ),
+            )
+           ,
 			'MUST_BE_IN_RAGE' => array(
                 'rule' => array('crange', 10, 200000),
                 'required' => true,
                 'allowEmpty' => false
 
             )
-			
+        ,
+            'NUMERIC' => array(
+                'rule' => array('numeric'),
+                'required' => true,
+                'allowEmpty' => false
+            )
         )
         , 'project_duration' => array(
             'MUST_BE_IN_RAGE' => array(
@@ -480,6 +486,12 @@ if (ctype_digit($id)){
 	function getMoneda($data){
 		return $data['Project']['moneda'];
 	}
+    function getMoneda1($data){
+        $moneda=$data['Project']['moneda'];
+        if($moneda=='ARS'){$moneda_proyecto ='$';}elseif($moneda=='GBP'){$moneda_proyecto ='£';}else{$moneda_proyecto ='$';}
+
+        return $moneda_proyecto;
+    }
 
 
     function beforeSave($options = array()) {

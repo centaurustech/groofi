@@ -71,8 +71,11 @@ function traducirMoneda($m){
 <h1><?php echo __("CREATE_YOUR_PROJECT");?></h1>
 <span style=" font-style:italic"><?php echo __("HOW_WORK");?></span><br><br>
 <div id="banner_crea_proyecto"><img src="/2012/images/info_crea_proyecto.png" width="957" height="286">
-<div id="relleno_crea_proyecto"></div>
+
+
+
 </div>
+<div id="relleno_crea_proyecto"></div>
 
 <div><img src="/2012/images/sombra_header.png" width="957" height="20">
 <div class="casos_exito" onclick="window.location='/#proyecto_destacado';">
@@ -401,13 +404,11 @@ function noenter(e){
 
 <div class="texto_how_izq upload_image_crop">
     <!---h2>Upload Photo</h2-->
-    <div style="display: block; width: 100px; height: 100px"></div>
+    <div style="font-size:12px;display: block; width: 370px; height: 100px"><? echo __("PROJECT__FILE_EDIT_TIP_MESSAGE_TEXT");?> </div>
     <div id="upload_status" style="font-size:12px; width:38%; margin:0 0 20px; padding:5px; display:none; border:1px #999 dotted; background:#eee;"></div>
-
     <a id="upload_link" style="cursor:pointer;position:relative;display: block;background:#000000; font-size: 18px; color: white;font-weight: normal;height: 30px;width: 120px; text-align: center" href="#"><?__('UPLOAD_BROWSE');?></a>
-    <? echo __("EDIT");?>
+    <? echo __("EDIT_IMAGE");?>
     <span id="loader" style="display:none;"><img src="loader.gif" alt="Loading..."/></span> <span id="progress"></span>
-    <br />
     <div id="uploaded_image"></div>
     <div id="thumbnail_form" style="display:none;">
 

@@ -7,6 +7,7 @@
 </style>
 <?php /* @var $this ViewCC */
 
+
 ?>
 <?
 function friendlyUrl ($str = '') {
@@ -54,7 +55,9 @@ $this->set('pageTitle', false); ?>
                     createSlideHome(
                             [
                                 <?
+
                                 foreach($this->data['WeekProjects'] as $v){
+
                                 $img=str_replace('.jpg','.png','media/filter/l560/'.$v['Project']['dirname'].'/'.$v['Project']['basename']);
 
                                 if (file_exists($img) ){
@@ -73,7 +76,7 @@ $this->set('pageTitle', false); ?>
                                 //$descw=($v['Project']['leading']==1 && strlen($v['Project']['videoid'])>2 && strlen($v['Project']['videotype'])>2)?'CASOS DE &Eacute;XITO': __("RECOVER_PASSWORD_1");/*ACA ESTO*/
                                     $button=($v['Project']['leading']==1 && strlen($v['Project']['videoid'])>2 && strlen($v['Project']['videotype'])>2)?'<div onclick="verVideo(&quot;'.$v['Project']['videoid'].'&quot;,&quot;'.$v['Project']['videotype'].'&quot;,&quot;'.$modules->js_encode($v['Project']['title']).'&quot;,&quot;'.$modules->js_encode($v['User']['display_name']).'&quot;,&quot;'.Project::getLink($v).'&quot;,&quot;'.User::getLink($v).'&quot;)" class="boton_videocaso"><span class="texto_boton texto_boton_'.$_SESSION['idioma'].'">'.__("SHOW_VIDEO",$return=true).'<span></div>':'<div onclick="window.location=&quot;'.Project::getLink($v).'&quot;;" class="boton_explorar">'.__("PROJECT_EXPLORER",$return=true).'</div>';
 
-                                    $informacion_proyecto ='<div class="tabla_proyectos"><div class="muestra2 texto_'.$_SESSION['idioma'].'">'.Project::getFundedValue($v).'%</div><div class="muestra2 texto1_'.$_SESSION['idioma'].'" >'.Project::getCollectedValue($v).'</div><div class="muestra2">'.$v["Project"]["sponsorships_count"].'</div></div>';
+                                    $informacion_proyecto ='<div class="tabla_proyectos"><div class="muestra2 texto_'.$_SESSION['idioma'].'">'.Project::getFundedValue($v).'%</div><div class="muestra2 texto1_'.$_SESSION['idioma'].'" > <span id="moneda_home">'.Project::getMoneda1($v).'</span>'.Project::getCollectedValue($v).'</div><div class="muestra2">'.$v["Project"]["sponsorships_count"].'</div></div>';
                                     ?>
                                     '<div id="foto" style="background:url( <?=$img ?>) center center no-repeat"></div><div id="descripcion"><h2 style="color:#FFF"><?=$descw?></h2><h5 class="titulo_categoria" style="color:#666;"><a href="/projects/search_category/<?=Category::slugCategory($v['Project']['category_id']);?>"><?=$modules->js_encode(Category::getName($v));?></a></h5><br><h3 class=titulo_proyecto><a href="<?=$modules->js_encode(Project::getLink($v));?>"><?=$modules->js_encode($v['Project']['title']);?></h3><span class="autor"><?php echo __("by");?><a href="<?=User::getLink($v)?>"><?=$modules->js_encode($v['User']['display_name']);?></a></span><br><p class="texto_destacado"><?=$modules->js_encode($v['Project']['short_description']);?></p><br>	<?= $informacion_proyecto?><!--img src="/2012/images/<!--?=$imgficha?--><!--.png"--><!-- width="288" height="16"--> <?=$button?></div>',
                                     <? } ?>
@@ -145,7 +148,7 @@ width: 200px;
 <h1><?php echo __("WELCOME-TITLE");?>Groofi.com</h1><br>
 <p class="subtitle_banner"><?php echo __("GROOFI_INTRODUCTION");?></p><br>
 <p style="font-size:13px"><?php echo __("GROOFI_INTRODUCTION_SUB");?></p><br>
-<div class="boton_crear" onclick="window.location='<?= Router::url (array ('controller' => 'projects', 'action' => 'add'))?>';"><?php echo __("PROJECT_ADD_FIRST_BLOCK_TITLE");?>!</div>
+<div class="boton_crear" onclick="window.location='<?= Router::url (array ('controller' => 'projects', 'action' => 'add'))?>';"><?php echo __("CREATE_YOUR_PROJECT_1");?></div>
 <div class="boton_how"  onclick="window.location='/como-funciona'"><?php echo __("HOW_WORK");?></div>
   <div class="clear"></div>
 </div>
@@ -221,7 +224,13 @@ $categorias=Project::getCategories('categorias');
 foreach($categorias as $k=>$v){
 
 ?>
+ <?if ($_SESSION["idioma"] == 'eng'){?>
 <ul><option style="color:#393939" value="<?=$v['categories']['slug']?>"><?=$v['categories']['slug']?></option></ul>
+    <?}elseif($_SESSION["idioma"] == 'esp'){?>
+        <ul><option style="color:#393939" value="<?=$v['categories']['slug_esp']?>"><?=$v['categories']['slug_esp']?></option></ul>
+        <?}elseif($_SESSION["idioma"] == 'ita'){?>
+        <ul><option style="color:#393939" value="<?=$v['categories']['slug_ita']?>"><?=$v['categories']['slug_ita']?></option></ul>
+        <?}?>
 <?php } ?>
     </select>
 </div>

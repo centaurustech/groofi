@@ -1054,10 +1054,10 @@ msgid "ALL_PROJECTS"
 msgstr "Tutti"
 
 msgid "MOST_POPULAR"
-msgstr "Pi popolari"
+msgstr "Più popolari"
 
 msgid "MOST_RECENT"
-msgstr "Pi recenti"
+msgstr "Più recenti"
 
 msgid "BY_END"
 msgstr "In conclusione"
@@ -2249,7 +2249,7 @@ msgid "CONTACT"
 msgstr "Contatto"
 
 msgid "SITE_COPYRIGHT"
-msgstr "©2011 Tutti i diritti riservati"
+msgstr "©2013 Tutti i diritti riservati"
 
 msgid "PAYMENTS"
 msgstr "Sponsors"
@@ -3860,7 +3860,7 @@ msgid "CREATE_PROJECT3_6"
 msgstr "le vostre tasse a carico fare."
 
 msgid "FINANCE_YOUR_THOUGHTS"
-msgstr "Finanziare i Vostri pensieri"
+msgstr "Finanzia le tu idee"
 
 msgid "SEE_SUCCESFUL_CASES"
 msgstr "Vedere le nostre storie di successo!"
@@ -3905,7 +3905,7 @@ msgid "TYPE_OF_CURRENCY"
 msgstr "Cambio valute"
 
 msgid "TYPE_OF_CURRENCY_1"
-msgstr "Scegliere la valuta in cui gestire il vostro progetto ed essere mostrate pubblicamente. Se si seleziona l'opzione di USD (dollari americani), i vostri sponsor può pagare tramite Paypal contributi. Se si sceglie l'ARS (pesos argentini), i contributi possono essere pagati da Market Pay"
+msgstr "Scegliere la valuta in cui gestire il vostro progetto ed essere mostrate pubblicamente."
 
 msgid "TYPE_OF_CURRENCY_US"
 msgstr "USD - Dollari USA"
@@ -3953,16 +3953,19 @@ msgid "CHOICE_YOUR_COUNTRY"
 msgstr "Seleziona il tuo paese di origine"
 
 msgid "INGRE"
-msgstr "Inserito da:"
+msgstr "Inseriti"
 
 msgid "Res"
-msgstr "caratteri. Sottrarre:"
+msgstr "caratteri. Di"
 
 msgid "Carac"
-msgstr " caratteri"
+msgstr " rimanenti"
+
+msgid "Carac1"
+msgstr " "
 
 msgid "Res1"
-msgstr "Sottrarre: "
+msgstr "Caratteri Rimanenti: "
 
 msgid "Personas_patro"
 msgstr "SPONSOR GLI INDIVIDUI O PICCOLI"
@@ -4536,6 +4539,18 @@ msgstr "Si prega di compilare correttamente il campo Nome"
 
 msgid "CONTACTO_3"
 msgstr "Si prega di compilare correttamente il Commento"
+
+msgid "NUMERIC"
+msgstr "È necessario immettere solo numeri"
+
+msgid "ALERT_BENEFICIO"
+msgstr "L´importo inserito non è valido"
+
+msgid "CREATE_YOUR_PROJECT_1"
+msgstr "CREA PROGETTO!"
+
+msgid "SEND_MESSAGE1"
+msgstr "Devi essere loggato per inviare un messaggio a"
 
 msgid ""
 msgstr ""

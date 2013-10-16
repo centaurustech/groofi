@@ -40,6 +40,7 @@
 	<?php echo __("USER__EMAIL");?><br>
 	<div class="rounded_login">
 	<input  value="<?php if (isset($_POST['procesologin']) && isset($_POST['data']['User']['email']))echo $_POST['data']['User']['email']; ?>" autocomplete="off" type="text" name="data[User][email]" />
+    <!--div style="color:#9F0000;font-size:9px;position:relative; margin-top: 8px"><?php if (isset($validationErrorsArray['email']) && !empty($validationErrorsArray['email'])){echo $validationErrorsArray['email'];}?></div-->
     </div>
   <br>
 

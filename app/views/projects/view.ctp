@@ -1,4 +1,6 @@
-<?php /* @var $this ViewCC */ ?>
+<?php /* @var $this ViewCC */
+
+?>
 <?
 echo $this->Html->script('bjqs-1.3');
 echo $this->Html->script('slider');
@@ -54,12 +56,15 @@ $moneda=Project::getMoneda($project);
 <ul class="pageElement tabs" style="margin-top:10px">
 
     <li class="tab-projects  active"><a href="<?= Project::getLink($project); ?>"><? __('THE_PROJECT') ?></a></li>
+<? if (Project::isOwnProject($project)) { ?>
     <li><a  class="lanzaract lanzaract1" href="/project/<?=$project['Project']['id']?>/create-update"><span class="lanzact" style="margin-left: -15px;text-align: center;"></span><?php echo __("CREATE_UPDATE");?></a></li>
+        <?}?>
 	 <? if (Project::isPublic($project)) { ?>
 	    <li class="tab-sponsorships"><a href="<?= Project::getLink($project, 'sponsorships'); ?>"><? __('PROJECT_SPONSORS') ?> <span style="color:#1e455b; font-weight:600">(<?= $this->data['Project']['sponsorships_count']; ?>)</span></a></li>
-        <li class="tab-comments"><a href="<?= Project::getLink($project, 'comments'); ?>"><? __('COMMENTS') ?>  <span style="color:#1e455b; font-weight:600">(<?= $this->data['Project']['comment_count']; ?>)</span></a></li>
+
+    <li class="tab-comments"><a href="<?= Project::getLink($project, 'comments'); ?>"><? __('COMMENTS') ?>  <span style="color:#1e455b; font-weight:600">(<?= $this->data['Project']['comment_count']; ?>)</span></a></li>
         <? if ($project['Project']['post_count'] > 0 ) {?>
-            <li class="tab-posts"><a href="<?= Project::getLink($project, 'updates'); ?>"><? __('UPDATES') ?></a></li>
+            <li class="tab-posts"><a href="<?= Project::getLink($project, 'updates'); ?>"><? __('UPDATES') ?> <span style="color:#1e455b; font-weight:600">(<?= $this->data['Project']['post_count']; ?>)</span></a></li>
         <? } ?>
 	 <? } ?>
 	
@@ -101,7 +106,7 @@ $file = $this->Media->getImage('s50', $this->data['User']['avatar_file'], '/img/
 <?}?>
 <div class="iconos_usuario"><img src="/2012/images/iconos_usuario.gif" width="20" height="41"></div>
 
-<div class="info_usuario" style="overflow:hidden;"><?=$this->data['User']['city']?> <br><strong class="cyan"><a onclick="<?if (!$this->Session->read ('Auth.User.id')){$_SESSION['VOLVER']=$this->here;?>alerta('Debes estar registrado para poder enviarle un mensaje a <?=User::getName($this->data)?>');<?}else{?>if($('fromoculto').style.display!='block')$('fromoculto').style.display='block';else $('fromoculto').style.display='none';<?}?>return false;" class="cyan" href="#"><?php echo __("SEND_MESSAGE");?></a></strong></div>
+<div class="info_usuario" style="overflow:hidden;"><?=$this->data['User']['city']?> <br><strong class="cyan"><a onclick="<?if (!$this->Session->read ('Auth.User.id')){$_SESSION['VOLVER']=$this->here;?>alerta('<?echo __("SEND_MESSAGE1");?> <?=User::getName($this->data)?>');<?}else{?>if($('fromoculto').style.display!='block')$('fromoculto').style.display='block';else $('fromoculto').style.display='none';<?}?>return false;" class="cyan" href="#"><?php echo __("SEND_MESSAGE");?></a></strong></div>
 <div class="foto_usuario"><?=$file?></div>
 
 </div>
@@ -134,7 +139,7 @@ $file = $this->Media->getImage('s50', $this->data['User']['avatar_file'], '/img/
                                     $img=explode('.jpg',$v["Sponsor"]["basename"]);
 
                                     ?>
-                                        '<img src="/upload_sponsors/<?echo $img[0].'.png';?>"/>',
+                                        '<img src="/upload_sponsors/<?echo $img[0];?>"/>',
                                     <? } ?>
 
                                 ],$('corjurto1'),$('thumbs_destacados1')
@@ -291,7 +296,8 @@ function curPageURL() {
   
   
   
-  <? 
+  <?
+
   $prizes=$this->data['Prize'];
   $clases=array('fondo_beneficio_personas','fondo_beneficio_empresas');$i=-1;
   $htmll1='';
@@ -300,7 +306,7 @@ function curPageURL() {
   if($v['ente']=='P'){
   $htmll1.='<div class="beneficio">
   <div  onclick="location=\''.Project::getLink(array('Project' => $this->data['Project']), array('extra' => 'Back', 'prize' => $v['id'])).'\';" style="cursor:pointer;" class="'.$clases[0].'">
-  <div class="aportar">aportar</div>
+  <div class="aportar">'.__("HELP_WITH", true).'</div>
   <div class="currency">'.$moneda.'</div>
   <div class="amount">'.$v['value'].'+</div>
   <p class="texto_beneficio">'.$v['description'].'</p>
@@ -309,7 +315,7 @@ function curPageURL() {
   }else{
   $htmll2.='<div class="beneficio">
   <div  onclick="location=\''.Project::getLink(array('Project' => $this->data['Project']), array('extra' => 'Back', 'prize' => $v['id'])).'\';" style="cursor:pointer;" class="'.$clases[1].'">
-  <div class="aportar">aportar</div>
+  <div class="aportar">'.__("HELP_WITH", true).'</div>
   <div class="currency">'.$moneda.'</div>
   <div class="amount">'.$v['value'].'+</div>
   <p class="texto_beneficio">'.$v['description'].'</p>

@@ -156,7 +156,7 @@ $file = $this->Media->getImage('s50', $this->data['User']['avatar_file'], '/img/
   if($v['ente']=='P'){
   $htmll1.='<div class="beneficio">
   <div   class="'.$clases[0].'">
-  <div class="aportar">aportar</div>
+  <div class="aportar">'.__("HELP_WITH", true).'</div>
   <div class="currency">'.$moneda.'</div>
   <div class="amount">'.$v['value'].'+</div>
   <p class="texto_beneficio">'.$v['description'].'</p>
@@ -165,7 +165,7 @@ $file = $this->Media->getImage('s50', $this->data['User']['avatar_file'], '/img/
   }else{
   $htmll2.='<div class="beneficio">
   <div   class="'.$clases[1].'">
-  <div class="aportar">aportar</div>
+  <div class="aportar">'.__("HELP_WITH", true).'</div>
   <div class="currency">'.$moneda.'</div>
   <div class="amount">'.$v['value'].'+</div>
   <p class="texto_beneficio">'.$v['description'].'</p>

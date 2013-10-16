@@ -2265,7 +2265,7 @@ msgid "CONTACT"
 msgstr "Contact"
 
 msgid "SITE_COPYRIGHT"
-msgstr "©2011 All rights reserved"
+msgstr "©2013 All rights reserved"
 
 msgid "PAYMENTS"
 msgstr "Backers"
@@ -3876,7 +3876,7 @@ msgid "CREATE_PROJECT3_6"
 msgstr "your fees charged to do."
 
 msgid "FINANCE_YOUR_THOUGHTS"
-msgstr "Finance your thoughts"
+msgstr "Finance your ideas"
 
 msgid "SEE_SUCCESFUL_CASES"
 msgstr "See our success stories!"
@@ -3921,7 +3921,7 @@ msgid "TYPE_OF_CURRENCY"
 msgstr "Currency Exchange"
 
 msgid "TYPE_OF_CURRENCY_1"
-msgstr "Choose the currency in which you handle your project and be displayed publicly. If you check the option USD (U.S. Dollars), your sponsors can pay via Paypal contributions. If you choose the ARS (Argentine pesos), the contributions can be paid by Pay Market"
+msgstr "Choose the currency in which you handle your project and be displayed publicly."
 
 msgid "TYPE_OF_CURRENCY_US"
 msgstr "USD - U.S. Dollars"
@@ -3972,13 +3972,13 @@ msgid "INGRE"
 msgstr "Entered:"
 
 msgid "Res"
-msgstr "characters. Left:"
+msgstr "characters.  Remaining:"
 
 msgid "Carac"
 msgstr " characters."
 
 msgid "Res1"
-msgstr "Left:"
+msgstr "Remaining:"
 
 msgid "Personas_patro"
 msgstr "INDIVIDUALS OR SMALL SPONSORS"
@@ -4547,6 +4547,18 @@ msgstr "Please fill correctly the Name field"
 
 msgid "CONTACTO_3"
 msgstr "Please fill correctly the Comment"
+
+msgid "NUMERIC"
+msgstr "You must enter numbers only"
+
+msgid "ALERT_BENEFICIO"
+msgstr "The amount entered is invalid"
+
+msgid "CREATE_YOUR_PROJECT_1"
+msgstr "CREATE PROJECT!"
+
+msgid "SEND_MESSAGE1"
+msgstr "You must be logged in to send a message to"
 
 msgid ""
 msgstr ""

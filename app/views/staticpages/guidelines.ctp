@@ -107,10 +107,10 @@ $this->set('title_for_layout' ,__("GROOFI_SCHOOL",true) ) ;
 </span>
 <br><br>
 <ul class="texto_proyecto" style="list-style-position:inside;">
-<li><?php echo __("CREATE_AWARDS_5");?></li>
-<li><?php echo __("CREATE_AWARDS_6");?></li>
-<li><?php echo __("CREATE_AWARDS_7");?></li>
-<li><?php echo __("CREATE_AWARDS_8");?></li>
+<li><span><?php echo __("CREATE_AWARDS_5");?></span></li>
+<li><span><?php echo __("CREATE_AWARDS_6");?></span></li>
+<li><span><?php echo __("CREATE_AWARDS_7");?></span></li>
+<li><span><?php echo __("CREATE_AWARDS_8");?></span></li>
 </ul>
 <br><br>
 <h3 class="guidelinescyan"><?php echo __("CREATE_AWARDS_9");?></h3>
@@ -195,12 +195,12 @@ $this->set('title_for_layout' ,__("GROOFI_SCHOOL",true) ) ;
 </span>
 <br><br>
 <ul class="texto_proyecto" style="list-style-position:inside;">
-<li><?php echo __(MAKING_YOUR_VIDEO_5);?></li>
-<li><?php echo __(MAKING_YOUR_VIDEO_6);?></li>
-<li><?php echo __(MAKING_YOUR_VIDEO_7);?></li>
-<li><?php echo __(MAKING_YOUR_VIDEO_8);?></li>
-<li><?php echo __(MAKING_YOUR_VIDEO_9);?></li>
-<li><?php echo __(MAKING_YOUR_VIDEO_10);?></li>
+<li><span><?php echo __(MAKING_YOUR_VIDEO_5);?></span></li>
+<li><span><?php echo __(MAKING_YOUR_VIDEO_6);?></span></li>
+<li><span><?php echo __(MAKING_YOUR_VIDEO_7);?></span></li>
+<li><span><?php echo __(MAKING_YOUR_VIDEO_8);?></span></li>
+<li><span><?php echo __(MAKING_YOUR_VIDEO_9);?></span></li>
+<li><span><?php echo __(MAKING_YOUR_VIDEO_10);?></span></li>
 </ul>
 <br><br>
 <span class="texto_proyecto">

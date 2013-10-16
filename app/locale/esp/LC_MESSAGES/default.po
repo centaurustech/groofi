@@ -4592,3 +4592,60 @@ msgstr "Por favor llena correctamente el campo del Nombre"
 
 msgid "CONTACTO_3"
 msgstr "Por favor complete correctamente el campo Comentario"
+
+msgid "NUMERIC"
+msgstr "Debe ingresar solo numeros"
+
+msgid "ALERT_BENEFICIO"
+msgstr "El monto ingresado es inválido"
+
+msgid "CREATE_YOUR_PROJECT_1"
+msgstr "CREA PROYECTO!"
+
+msgid "SEND_MESSAGE1"
+msgstr "Debes estar registrado para poder enviarle un mensaje a"
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+
+

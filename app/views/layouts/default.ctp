@@ -145,6 +145,7 @@ ns.logueado=0;
 </head>
 <body>
 <span id="tip"></span>
+<span id="tip1"></span>
 <div id="bglightbox2"></div>
 <div id="bglightbox_private"></div>
 <div id="videodelcasolb"></div>

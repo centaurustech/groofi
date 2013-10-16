@@ -138,6 +138,14 @@ function admin_index2($filter='complete') {
 			$datos=$pp->query("select * from links where model_id=". $modelData['Project']['id']." and model='Project'");
 			$modelData['LOSLINKS']=$datos;
         $this->set(low($model), $modelData);
+        $this->loadModel ('Sponsor');
+        if ($id) {
+
+
+
+            $this->set('sponsors', $this->Sponsor->find('all',array('conditions'=>array('Sponsor.id_project' => $modelData['Project']['id']), 'order'=>'Sponsor.id DESC') ));
+
+        }
         $this->render(low($model) . '_sponsorships');
 		
 			

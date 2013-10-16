@@ -10,7 +10,7 @@ $this->set('title_for_layout' ,__("ABOUT_US_LINK", true)) ;
 <div style="width:100%; height:auto; margin-top:20px">
 <h1><?php echo __("ABOUT_US_LINK");?></h1>
 <span style=" font-style:italic"><?php echo __("HOW_WORK");?></span><br><br>
-<div id="banner_how"><img id="info_how" src="/2012/images/info_como_funciona.png" width="958" height="540">
+<div id="banner_how"><?if ($_SESSION['idioma'] == 'esp'){?><img id="info_how" src="/2012/images/info_como_funciona.png" width="958" height="540"><?}else{?><img id="info_how" src="/2012/images/info_como_funcionaelse.png" width="958" height="540"><?}?>
 <div id="relleno_como_funciona_izq"></div>
 
 
@@ -74,9 +74,11 @@ $this->set('title_for_layout' ,__("ABOUT_US_LINK", true)) ;
 <?php echo __("COMOFUNCIONA6_4");?><br>
 <?php echo __("COMOFUNCIONA6_5");?><br>
 <?php echo __("COMOFUNCIONA6_6");?><br>
+<?if ($_SESSION['idioma'] == 'esp'){?>
 <?php echo __("COMOFUNCIONA6_7");?><br>
 <?php echo __("COMOFUNCIONA6_8");?><br>
 <?php echo __("COMOFUNCIONA6_9");?></p>
+    <?}?>
 </div>
 <div>
 

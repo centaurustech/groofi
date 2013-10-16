@@ -38,7 +38,7 @@ function createSlideHome(images,cajaimages,tns){
 	$(nshome.images[0].id).css('zIndex',2);
 	$(nshome.images[0].id).css('visibility','visible');
 	ns.recordar=[nshome.arriba,nshome.abajo];
-	nshome.intervalo=setInterval(function(){visualizar(nshome.arriba,nshome.abajo);},10000);
+	nshome.intervalo=setInterval(function(){visualizar(nshome.arriba,nshome.abajo);},6000);
 }
 function visualizar(arriba,abajo){
 
@@ -84,7 +84,7 @@ function visualizar(arriba,abajo){
         }
 
     }
-			if(!nshome.intervalo)nshome.intervalo=setInterval(function(){visualizar(nshome.arriba,nshome.abajo);},10000);
+			if(!nshome.intervalo)nshome.intervalo=setInterval(function(){visualizar(nshome.arriba,nshome.abajo);},6000);
 			
 		
 		fx(arriba,[{'inicio':1,'fin':0,'u':'','propCSS':'opacity'}],1250,false,senoidal);
@@ -109,7 +109,7 @@ function visualizar(arriba,abajo){
 								nshome.abajo=nshome.abajotmp;
 						}else{
 							
-							return	nshome.intervalo=setInterval(function(){visualizar(nshome.arriba,nshome.abajo);},10000);
+							return	nshome.intervalo=setInterval(function(){visualizar(nshome.arriba,nshome.abajo);},6000);
 						}
 						visualizar(nshome.arriba,nshome.abajo);
 

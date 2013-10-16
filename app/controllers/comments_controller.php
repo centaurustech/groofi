@@ -85,22 +85,24 @@ class CommentsController extends AppController {
 	
 
     function index($model, $id) {
+
+
         $model = Inflector::classify($model);
 		unset($_SESSION['VOLVER']);
         // get data
 			App::import('model',  $model);
 			$q=new $model();
-		
+
         $modelData = $q->getViewData($id); // - get view data for a project.
-		
+
         if ($q->isPublic($modelData)) {
             $this->paginate = $this->Comment->queryStandarSet();
             $this->paginate['limit'] = 10;
             $this->paginate['order'] = 'Comment.created DESC';
-            $this->paginate['conditions']['Comment.model'] = $model ; 
-            $this->paginate['conditions']['Comment.model_id'] = $modelData[$model]['id'] ; 
+            $this->paginate['conditions']['Comment.model'] = $model ;
+            $this->paginate['conditions']['Comment.model_id'] = $modelData[$model]['id'] ;
             $this->data = $this->paginate('Comment');
-			
+
             $this->set('model', $model);
             $this->set('id', $modelData[$model]['id']);
         } /*else {
@@ -116,8 +118,16 @@ class CommentsController extends AppController {
 		 Project::verifyPrivacityStatus($modelData['Project']['id'],$this->here);
 		
         $this->set(low($model), $modelData);
+        $this->loadModel ('Sponsor');
+        if ($id) {
 
+
+
+            $this->set('sponsors', $this->Sponsor->find('all',array('conditions'=>array('Sponsor.id_project' => $modelData['Project']['id']), 'order'=>'Sponsor.id DESC') ));
+
+        }
         $this->render(low($model) . '_comments');
+
     }
 
     function view($id) {

@@ -41,6 +41,14 @@ class PostsController extends AppController {
 			$pp=new Project();
 			$datos=$pp->query("select * from links where model_id=". $modelData['Project']['id']." and model='Project'");
 			$modelData['LOSLINKS']=$datos;
+        $this->loadModel ('Sponsor');
+        if ($id) {
+
+
+
+            $this->set('sponsors', $this->Sponsor->find('all',array('conditions'=>array('Sponsor.id_project' => $modelData['Project']['id']), 'order'=>'Sponsor.id DESC') ));
+
+        }
         $this->set(compact('model', 'id', 'modelData'));
 
 

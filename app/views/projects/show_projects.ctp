@@ -19,10 +19,11 @@ $this->Paginator->options(array('url' => $baseUrl));
 <span style=" font-style:italic"><?php echo __("HOW_WORK");?></span><br><br>
 <div id="banner_crea_proyecto">
 <div onclick="location='/projects/add'" class="empezar_proyecto"><?php echo __("I_WANT_START_MY_PROJECT");?></div><img src="/2012/images/info_descubre_proyectos.png" width="958" height="298">
-<div id="relleno_crea_proyecto" style="top: 0px"></div>
+
 
 
 </div>
+    <div id="relleno_crea_proyecto" style="top: 0px"></div>
 <div class="como_funciona1">
 <h2><?php echo __("DISCOVER");?><br>
 <?php echo __("DISCOVER1_1");?></h2><br>
@@ -242,7 +243,7 @@ foreach($this->data as $k=>  $v){
 </div>
     <div class="clear"></div>
 <br><br>
-<div class="misc_divisor"></div>
+<div class="misc_divisor" style="margin-top: 15px"></div>
  <? if ($this->data) { ?> 
  <? if ( $this->Paginator->hasPrev() || $this->Paginator->hasNext()) { ?>
             <div class="paging">
