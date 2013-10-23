@@ -177,7 +177,7 @@ msgid "REGISTER_ME"
 msgstr "Registrami"
 
 msgid "FACEBOOK_LOGIN_TITLE"
-msgstr "Entrare con Facebook"
+msgstr "Entra con Facebook"
 
 msgid "FACEBOOK_LOGIN_TITLE_1"
 msgstr "Accesso con"
@@ -186,13 +186,13 @@ msgid "FACEBOOK_LOGIN_SUBTITLE"
 msgstr "Utilizza il tuo account Facebook per accedere"
 
 msgid "LOGIN_USING_FACEBOOK"
-msgstr "Entrare con Facebook"
+msgstr "Entra con Facebook"
 
 msgid "FACEBOOK_MESSAGE_TITLE"
 msgstr "Privacy"
 
 msgid "FACEBOOK_MESSAGE_MESSAGE"
-msgstr "Non conserveremo il suo nome utente, password o altri dati del suo account, nè condivideremo le sue informazioni di Groofi in Facebook."
+msgstr "Non conserveremo il suo nome utente, password o altri dati del suo account, né condivideremo le sue informazioni di Groofi in Facebook."
 
 msgid "DISCOVER"
 msgstr "SCOPRIRE"
@@ -300,10 +300,10 @@ msgid "OFFER__FUNDING_SPONSORSHIPS_FOUNDS"
 msgstr "Importo offerto per il progetto"
 
 msgid "OFFER__OFFER_SPONSORSHIPS"
-msgstr "quantité massima di progetti che sei disposto a sponsorizzare"
+msgstr "quantità massima di progetti che sei disposto a sponsorizzare"
 
 msgid "OFFER__OFFER_DURATION"
-msgstr "Durata dell' offerta"
+msgstr "Durata dell` offerta"
 
 msgid "OFFER__OFFER_PUBLIC"
 msgstr "Permettere che altri Utenti si uniscano a questa offerta"
@@ -324,7 +324,7 @@ msgid "UPLOAD_BROWSE"
 msgstr "Esaminare..."
 
 msgid "USER_PROFILE"
-msgstr "Mio profilo"
+msgstr "Il mio profilo"
 
 msgid "USER_PROJECTS"
 msgstr "Miei progetti"
@@ -354,7 +354,7 @@ msgid "CREATE_A_PROJECT"
 msgstr "Creare un progetto"
 
 msgid "CREATE_AN_OFFER"
-msgstr "Creare un' offerta"
+msgstr "Creare un` offerta"
 
 msgid "USER_EDIT_PROFILE"
 msgstr "Configurazioni"
@@ -375,7 +375,7 @@ msgid "USER__TIMEZONE"
 msgstr "Zona oraria"
 
 msgid "USER_LOCATION_LABEL"
-msgstr "UBICAZIONE"
+msgstr "Ubicazione"
 
 msgid "GENDER_MALE"
 msgstr "Maschio"
@@ -390,10 +390,10 @@ msgid "USER__BIRTHDAY"
 msgstr "Data di nascita"
 
 msgid "profile"
-msgstr "Mio profilo"
+msgstr "Il mio profilo"
 
 msgid "account"
-msgstr "Mio account"
+msgstr "Il mio account"
 
 msgid "USER_EDIT_ACCOUNT"
 msgstr "Configurazioni"
@@ -408,7 +408,7 @@ msgid "THE_PROJECT"
 msgstr "Il progetto"
 
 msgid "SPONSORS"
-msgstr "Sponsor/s"
+msgstr "Sponsor"
 
 msgid "COMMENTS"
 msgstr "Commenti"
@@ -427,7 +427,7 @@ msgid "DAYS_LEFT"
 msgstr "giorno/i alla fine"
 
 msgid "AVAILABLE_FOUNDS_FROM %s"
-msgstr "raccolta di "
+msgstr "raccolti di "
 
 msgid "PROJECT_IMPORTANT_ADVICE_TITLE"
 msgstr "Importante"
@@ -499,7 +499,7 @@ msgid "PROJECT_BY %s IN CATEGORY %s"
 msgstr "Progetto di %s, nella categoria %s."
 
 msgid "PROJECT_BY %s IN CATEGORY %s IN RESPONSE OF %s"
-msgstr "Progetto di %s, nella categoria %s. Creato in base all' offerta %s."
+msgstr "Progetto di %s, nella categoria %s. Creato in base all` offerta %s."
 
 msgid "PROJECT_REASON"
 msgstr "Perché dovreste finanziare questo progetto?"
@@ -553,7 +553,7 @@ msgid "USER_BIO"
 msgstr "Bio"
 
 msgid "USER_WEBSITES"
-msgstr "Sito/i internet"
+msgstr "Web"
 
 msgid "OFFER_PENDING_APPROVAL"
 msgstr "Proposta di offerta in attesa di approvazione"
@@ -641,10 +641,10 @@ msgid "CATEGORY_ART"
 msgstr "Arte"
 
 msgid "CATEGORY_SOLIDARITY-CAMPAIGNS"
-msgstr "Campagne di solidarietà"
+msgstr "Campagne Sociali"
 
 msgid "CATEGORY_SOLIDARITY_CAMPAIGNS"
-msgstr "Campagne di solidarietà"
+msgstr "Campagne Sociali"
 
 msgid "CATEGORY_THEATER_DANCE"
 msgstr "Teatro & Danza"
@@ -674,34 +674,34 @@ msgid "CATEGORY_ - PHOTOGRAPHY"
 msgstr "Fotografia"
 
 msgid "CATEGORY_FASHIONS"
-msgstr "Moda"
+msgstr "Fashion"
 
 msgid "CATEGORY_ -  - FASHIONS"
-msgstr "Moda"
+msgstr "Fashion"
 
 msgid "CATEGORY_TRAVEL"
 msgstr "Viaggi"
 
 msgid "CATEGORY_VENTURE"
-msgstr "Imprese"
+msgstr "Avventure"
 
 msgid "CATEGORY_ - VENTURE"
-msgstr "Imprese"
+msgstr "Avventure"
 
 msgid "CATEGORY_FILM-VIDEO"
-msgstr "Cinema e video"
+msgstr "Film e Video"
 
 msgid "CATEGORY_FILM_VIDEO"
-msgstr "Cinema e video"
+msgstr "Film e Video"
 
 msgid "CATEGORY_SPORTS"
-msgstr "Sfide & Sport"
+msgstr "Sport"
 
 msgid "CATEGORY_CHALLENGES"
 msgstr "Sfide"
 
 msgid "CATEGORY_DESIGN"
-msgstr "Disegno & Architettura"
+msgstr "Design e Architettura"
 
 msgid "CATEGORY_BOOKS-LITERATURE"
 msgstr "Libri e letteratura"
@@ -716,10 +716,10 @@ msgid "CATEGORY_TECHNOLOGY"
 msgstr "Tecnologia"
 
 msgid "USERS_LOGIN"
-msgstr "Entrare & Registrarsi"
+msgstr "Entra & Registrati"
 
 msgid "USERS_ADD"
-msgstr "Entrare & Registrarsi"
+msgstr "Entra & Registrati"
 
 msgid "PROJECTS_ADD"
 msgstr "Creare Progetto"
@@ -758,10 +758,10 @@ msgid "SPONSORSHIP_CREATE_TITLE"
 msgstr "Congratulazioni!"
 
 msgid "SPONSORSHIP_CREATE_SUBTITLE"
-msgstr "Sei ad un passo dal sponsorizzare questo progetto!"
+msgstr "Sei ad un passo dal sponsorizzare questo "
 
 msgid "SPONSORSHIP__CONTRIBUTION"
-msgstr "Introduci l'importo della tua donazione"
+msgstr "Introduci l`importo della tua donazione"
 
 msgid "POSTS_ADD"
 msgstr "Aggiungere aggiornamento"
@@ -773,7 +773,7 @@ msgid "OFFERS_LISTING"
 msgstr "Offerte"
 
 msgid "USERS_VIEW"
-msgstr "Attività dell' utente"
+msgstr "Attività dell` utente"
 
 msgid "USERS_EDIT"
 msgstr "Configurazioni"
@@ -788,28 +788,28 @@ msgid "OFFERS_EDIT"
 msgstr "Modificare offerta"
 
 msgid "FOLLOW_THIS_PROJECT"
-msgstr "Seguire questo progetto"
+msgstr "SEGUIRE QUESTO PROGETTO"
 
 msgid "POSTS_EDIT_TITLE"
 msgstr "Modificare aggiornamento"
 
 msgid "The post has been saved"
-msgstr "L' aggiornamento è stato salvato"
+msgstr "L` aggiornamento è stato salvato"
 
 msgid "POST__PUBLIC"
 msgstr "Pubblicare questo aggiornamento"
 
 msgid "FUNDED"
-msgstr "finanziato"
+msgstr "Finanziato"
 
 msgid "PLEDGED"
-msgstr "raccolti"
+msgstr "Raccolti"
 
 msgid "SPONSORSHIPS"
 msgstr "Sponsor"
 
 msgid "THE_OFFER"
-msgstr "L' Offerta"
+msgstr "L` Offerta"
 
 msgid "PEOPLE_WHO_ACCEPT_OFFER"
 msgstr "persone vogliono fare questo"
@@ -821,7 +821,7 @@ msgid "OFFER_IMPORTANT_ADVICE_TITLE"
 msgstr "Importante"
 
 msgid "OFFER_IMPORTANT_ADVICE %s"
-msgstr "Il creatore di questa offerta valuterè le domande e appoggerè fino a %s progetti con l' importo offerto se rispettano i requisiti sperati."
+msgstr "Il creatore di questa offerta valuterè le domande e appoggerè fino a %s progetti con l` importo offerto se rispettano i requisiti sperati."
 
 msgid "I_WANT_TO_DO_IT_HEADLINE"
 msgstr "Se vuoi creare un progetto in base a questa offerta..."
@@ -851,13 +851,13 @@ msgid "USER__SLUG"
 msgstr "Scegli un nome per il tuo Utente, per es. <i>Se ti chiami Mario Rossi, puoi scegliere <strong>mrossi</strong></i>"
 
 msgid "MY_PROFILE_EDIT_PROFILE_TITLE"
-msgstr "Mio Profilo"
+msgstr "Il mio profilo"
 
 msgid "MY_PROFILE_EDIT_PROFILE_SUBTITLE"
 msgstr "Completa i seguenti dati"
 
 msgid "MY_PHOTO_EDIT_PROFILE_TITLE"
-msgstr "Mia foto"
+msgstr "La mia foto"
 
 msgid "MY_PHOTO_EDIT_PROFILE_SUBTITLE"
 msgstr "Inserisci foto per il tuo profilo"
@@ -905,7 +905,7 @@ msgid "DELETEACCOUNT__PASSWORD"
 msgstr "Inserire tua password"
 
 msgid "DELETE_ACCOUNT"
-msgstr "ELIMINARE MIO CONTO"
+msgstr "ELIMINARE IL MIO CONTO"
 
 msgid "OFFER_NEW_PROJECT"
 msgstr "Un progetto sia creato in base alla mia offerta."
@@ -914,7 +914,7 @@ msgid "OFFER_NEW_USER"
 msgstr "Un utente si unisca alla mia offerta."
 
 msgid "OFFER_UPDATE"
-msgstr "Un' offerta che mi unisco venga aggiornata."
+msgstr "Un` offerta che mi unisco venga aggiornata."
 
 msgid "PROJECT_NEW_BACKER"
 msgstr "Un progetto creato da meè abbia un nuovo sponsor."
@@ -947,7 +947,7 @@ msgid "UPDATE_INCOMPLETE_INFO_LINK_TITLE"
 msgstr "o complétalos automáticamente con datos disponibles en Facebook"
 
 msgid "YOUR_PROFILE_INFO_IS_INCOMPLETE_MESSAGE %s"
-msgstr "Ingresa más información en los siguientes campos %s"
+msgstr "I seguenti campi sono obbligatori %s"
 
 msgid "OFFER_UPDATES %s"
 msgstr "Aggiornamenti (%s)"
@@ -1009,13 +1009,13 @@ msgid "PROJECTS_PUBLISH_TITLE"
 msgstr "Progetto lanciato"
 
 msgid "IN_RENSPONSE_OF %s FROM %s"
-msgstr "In base all' offerta %s creata da %s"
+msgstr "In base all` offerta %s creata da %s"
 
 msgid "MIN_LENGHT_3_ERROR"
 msgstr "Inserisci almeno 3 caratteri"
 
 msgid "EMAIL_GENERIC_ERROR"
-msgstr "Inserisci una E-mail valido"
+msgstr "Inserisci una mail valida"
 
 msgid "MAX_LENGTH_50_ERROR"
 msgstr "Inserisci meno di 50 caratteri"
@@ -1030,13 +1030,13 @@ msgid "integer_value"
 msgstr "Inserisci un numero intero"
 
 msgid "THIS_VIDEO_SITE_URL_IT_IS_NOT_VALID"
-msgstr "Inserisci la URL di un proprio video messo in YouTube o Vimeo"
+msgstr "Inserisci la URL di un tuo video messo in YouTube o Vimeo"
 
 msgid "I_WANT_NOT_TO_BE_PART_HEADLINE"
 msgstr "Si ora non sto cercando gente che faccia questo..."
 
 msgid "I_WANT_NOT_TO_BE_PART"
-msgstr "NON VOGLIO PIU' UNIRMI"
+msgstr "NON VOGLIO PIU` UNIRMI"
 
 msgid "READ_MORE"
 msgstr "Leggere di più"
@@ -1165,7 +1165,7 @@ msgid "SPONSORSHIP_CREATE_PRIZES_TITLE"
 msgstr "Benefici disponibili"
 
 msgid "SPONSORSHIP_CREATE_PRIZES_SUBTITLE"
-msgstr "Riceverai il beneficio corrispondente all' importo del tuo contributo"
+msgstr "Riceverai il beneficio corrispondente all` importo del tuo contributo"
 
 msgid "SPONSORSHIP_CREATE_2_TITLE"
 msgstr "Riassunto"
@@ -1192,7 +1192,7 @@ msgid "PROJECT_ADD_FIRST_BLOCK_TITLE"
 msgstr "IL TUO PROGETTO"
 
 msgid "PROJECT_ADD_FIRST_BLOCK_SUBTITLE"
-msgstr "Completa la seguente informazione"
+msgstr "Completa le seguenti informazioni"
 
 msgid "PROJECT_ADD_SECOND_BLOCK_TITLE"
 msgstr "Immagini & Video"
@@ -1237,16 +1237,16 @@ msgid "OFFER__FILE_EDIT_HELP_MESSAGE_TEXT"
 msgstr "Scegli una immagine per illustrare la tua offerta"
 
 msgid "PROJECT__VIDEO_URL__HELP_MESSAGE_TEXT"
-msgstr "Inserisci la URL di un proprio video che riguardi il tuo progetto che sia stato messo in YouTube.com o Vimeo.com (Facoltativo)."
+msgstr "Inserisci la URL di un tuo video riguardante il tuo progetto caricato anticipatamente in YouTube.com o Vimeo.com (opzionale)."
 
 msgid "PROJECT__FUNDING_GOAL__HELP_MESSAGE_TEXT"
-msgstr "Inserisci l importo in dollari di cui hai bisogno per realizzare il tuo progetto. "
+msgstr "Inserisci l`importo di cui hai bisogno per realizzare il tuo progetto. "
 
 msgid "PROJECT__PROJECT_DURATION__HELP_MESSAGE_TEXT"
-msgstr "Scegli la quantité di giorni che vuoi che duri la raccolta di fondi del tuo progetto. "
+msgstr "Scegli la quantità di giorni che vuoi che duri la raccolta di fondi del tuo progetto. "
 
 msgid "PROJECT__PRIZE__HELP_MESSAGE_TEXT"
-msgstr "Inserisci i benefici che riceveranno i tuoi sponsor in base all importo che scelgono di apportare al progetto.<br> I benefici sono regali o premi relazionati col progetto, che ti comprometti a dare ai tuoi sponsor.<br> Potrai modificare questo una volta approvata la tua proposta."
+msgstr "Inserisci i premi che riceveranno i tuoi sponsor in base all`importo che scelgono di apportare al progetto.<br> I premi sono regali relazionati col progetto, che ti comprometti a dare ai tuoi sponsor.<br> Potrai modificare questo una volta approvata la tua proposta."
 
 msgid "OFFER_ADD_FIRST_BLOCK_TITLE"
 msgstr "La tua offerta"
@@ -1258,7 +1258,7 @@ msgid "OFFER_ADD_SECOND_BLOCK_TITLE"
 msgstr "Immagini & Video"
 
 msgid "OFFER_ADD_SECOND_BLOCK_SUBTITLE"
-msgstr "Scegli una immagine e un video per l' offerta"
+msgstr "Scegli una immagine e un video per l` offerta"
 
 msgid "OFFER_ADD_THIRD_BLOCK_TITLE"
 msgstr "Fondi offerti"
@@ -1273,7 +1273,7 @@ msgid "OFFER__CATEGORY__HELP_MESSAGE_TEXT"
 msgstr "Scegli la categoria che meglio descriva la tua offerta. Una volta approvato, non potrai modificarla."
 
 msgid "OFFER__SHORT_DESCRIPTION__HELP_MESSAGE_TEXT"
-msgstr "Descrivi in poche parole l' idea della tua offerta. Una volta approvato, non potrai modificarla."
+msgstr "Descrivi in poche parole l` idea della tua offerta. Una volta approvato, non potrai modificarla."
 
 msgid "OFFER__DESCRIPTION__HELP_MESSAGE_TEXT"
 msgstr "Descrivi la tua offerta ampiamente. Potrai modificare questa descrizione una volta approvata la tua proposta."
@@ -1285,19 +1285,19 @@ msgid "OFFER__VIDEO_URL__HELP_MESSAGE_TEXT"
 msgstr "Inserisci la URL di un proprio video circa la tua offerta, che sia stato messo in YouTube.com o Vimeo.com (Facoltativo)."
 
 msgid "OFFER__FUNDING_SPONSORSHIPS_FOUNDS__HELP_MESSAGE_TEXT"
-msgstr "Inserisci l' importo in dollari di cui hai bisogno per realizzare il tuo progetto. Podrai modificare questo importo una volta approvata la tua proposta."
+msgstr "Inserisci l` importo in dollari di cui hai bisogno per realizzare il tuo progetto. Podrai modificare questo importo una volta approvata la tua proposta."
 
 msgid "OFFER__OFFER_SPONSORSHIPS__HELP_MESSAGE_TEXT"
-msgstr "Scrivi il numero massimo di progetti che ti comprometti a sponsorizzare con l' importo inserito in alto. Potrai modificare questo una volta approvata la tua proposta."
+msgstr "Scrivi il numero massimo di progetti che ti comprometti a sponsorizzare con l` importo inserito in alto. Potrai modificare questo una volta approvata la tua proposta."
 
 msgid "OFFER__OFFER_DURATION__HELP_MESSAGE_TEXT"
 msgstr "Scegli la quantité di giorni che durerá la tua offerta. Potrai modificarla una volta approvata la tua proposta."
 
 msgid "OFFER__OFFER_PUBLIC_EDIT_HELP_MESSAGE_TEXT"
-msgstr "Se selezioni questa opzione, altri utenti potranno unirsi e dare fondi ai progetti che si applicano all' offerta creata in origine da te."
+msgstr "Se selezioni questa opzione, altri utenti potranno unirsi e dare fondi ai progetti che si applicano all` offerta creata in origine da te."
 
 msgid "OFFER__OFFER_PUBLIC__HELP_MESSAGE_TEXT"
-msgstr "Se selezioni questa opzione, altri utenti potranno unirsi e dare fondi ai progetti che si applicano all 'offerta creata in origine da te."
+msgstr "Se selezioni questa opzione, altri utenti potranno unirsi e dare fondi ai progetti che si applicano all `offerta creata in origine da te."
 
 msgid "OFFER_EDIT_FIRST_BLOCK_TITLE"
 msgstr "La tua offerta"
@@ -1309,7 +1309,7 @@ msgid "OFFER_EDIT_SECOND_BLOCK_TITLE"
 msgstr "Immagini & Video"
 
 msgid "OFFER_EDIT_SECOND_BLOCK_SUBTITLE"
-msgstr "Scegli una immagine e un video per l' offerta"
+msgstr "Scegli una immagine e un video per l` offerta"
 
 msgid "OFFER_EDIT_THIRD_BLOCK_TITLE"
 msgstr "Fondi offerti"
@@ -1336,10 +1336,10 @@ msgid "OFFER__VIDEO_URL_EDIT_HELP_MESSAGE_TEXT"
 msgstr "Inserisci la URL di un proprio video circa la tua offerta che hai messo in YouTube.com o Vimeo.com"
 
 msgid "OFFER__FUNDING_SPONSORSHIPS_FOUNDS_EDIT_HELP_MESSAGE_TEXT"
-msgstr "Inserisci l' importo in dollari che sei disposto a dare ai progetti conformi alla richiesta della tua offerta."
+msgstr "Inserisci l` importo in dollari che sei disposto a dare ai progetti conformi alla richiesta della tua offerta."
 
 msgid "OFFER__OFFER_SPONSORSHIPS_EDIT_HELP_MESSAGE_TEXT"
-msgstr "Scrivi il numero massimo di progetti che ti comprometti a sposorizzare con l' importo inserito sopra."
+msgstr "Scrivi il numero massimo di progetti che ti comprometti a sposorizzare con l` importo inserito sopra."
 
 msgid "OFFER__OFFER_DURATION_EDIT_HELP_MESSAGE_TEXT"
 msgstr "Scegli la quantité di giorni che durerá la tua offerta. Potrai modificarla una volta approvata la tua proposta."
@@ -1381,16 +1381,16 @@ msgid "PROJECT__REASON_EDIT_HELP_MESSAGE_TEXT"
 msgstr "Racconta ai tuoi possibili sponsor perchè dovrebbero mettere fondi per il tuo progetto."
 
 msgid "PROJECT__FUNDING_GOAL_EDIT_HELP_MESSAGE_TEXT"
-msgstr "Inserisci l' importo in dollari di cui hai bisogno per realizzare il tuo progetto."
+msgstr "Inserisci l` importo in dollari di cui hai bisogno per realizzare il tuo progetto."
 
 msgid "PROJECT__PROJECT_DURATION_EDIT_HELP_MESSAGE_TEXT"
 msgstr "Scegli la quantité di giorni che vuoi che duri la raccolta di fondi del tuo progetto."
 
 msgid "PROJECT__PRIZE_EDIT_HELP_MESSAGE_TEXT"
-msgstr "Inserisci i benefici che riceveranno i tuoi sponsor in base all' importo che scelgono di contribuire al tuo progetto. I benefici sono regali o premi relazionati con il progetto, che ti comprometti a dare ai tuoi sponsor."
+msgstr "Inserisci i benefici che riceveranno i tuoi sponsor in base all` importo che scelgono di contribuire al tuo progetto. I benefici sono regali o premi relazionati con il progetto, che ti comprometti a dare ai tuoi sponsor."
 
 msgid "WELCOME-TITLE"
-msgstr "Benvenuto! "
+msgstr "Benvenuti in "
 
 msgid "WELCOME-CONTENT"
 msgstr "Il tuo conto  stato confermato con successo e ora fai parte di Groofi. Accedi al tuo conto per creare i tuoi progetti ed offerte."
@@ -1432,10 +1432,10 @@ msgid "SEARCHES_INDEX"
 msgstr "Risultati della ricerca"
 
 msgid "WE CAN NOT FOUND ANY PROJECT IN %s PLEASE TRY AGAIN"
-msgstr "Non ci sono risultati per la tua ricerca in: %s. Per favore, prova con un' altra ricerca."
+msgstr "Non ci sono risultati per la tua ricerca in: %s. Per favore, prova con un` altra ricerca."
 
 msgid "WE CAN NOT FOUND ANY OFFER IN %s PLEASE TRY AGAIN"
-msgstr "Non ci sono risultati per la tua ricerca in: %s. Per favore, prova con un' altra ricerca."
+msgstr "Non ci sono risultati per la tua ricerca in: %s. Per favore, prova con un` altra ricerca."
 
 msgid "OFFERS_SEARCH_RESULT_FOR %s"
 msgstr "Risultati della ricerca per: %s"
@@ -1444,7 +1444,7 @@ msgid "You are not authorized to access that location."
 msgstr "Accedi al tuo conto o registrati per creane uno."
 
 msgid "Login failed. Invalid username or password."
-msgstr "E-mail e/o password errata. Riprova un' altra volta."
+msgstr "E-mail e/o password errata. Riprova un` altra volta."
 
 msgid "THERE_ARE_NO_ACTIVITY_FOR_THIS_USER"
 msgstr "Non ci sono attività da mostrare per questo utente."
@@ -1456,7 +1456,7 @@ msgid "SPONSORSHIPS_LISTING"
 msgstr "Sponsorizzando"
 
 msgid "NOTIFICATIONS_LISTING"
-msgstr "Attività dell' utente"
+msgstr "Attività dell` utente"
 
 msgid "IS_SPONSORING_THE_PROJECT %s %s"
 msgstr "Stai sponsorizzando il progetto %s - %s"
@@ -1468,16 +1468,16 @@ msgid "HAS_UPDATED_THE_PROJECT %s %s"
 msgstr "Aggiungi un aggiornamento al tuo progetto %s - %s"
 
 msgid "COMMENT_THE_POST %s %s"
-msgstr "commenta l' aggiornamento %s - %s"
+msgstr "commenta l` aggiornamento %s - %s"
 
 msgid "COMMENT_THE_PROJECT %s %s"
 msgstr "commenta il progetto %s - %s"
 
 msgid "COMMENT_THE_OFFER %s %s"
-msgstr "commenta l' offerta %s - %s"
+msgstr "commenta l` offerta %s - %s"
 
 msgid "HAS_CREATED_THE_OFFER %s %s"
-msgstr "crea l' offerta %s - %s"
+msgstr "crea l` offerta %s - %s"
 
 msgid "HAS_CREATED_THE_PROJECT %s %s"
 msgstr "crea il progetto %s - %s"
@@ -1492,25 +1492,25 @@ msgid "PROJECT_ABOUT_TO_FINISH"
 msgstr "Un progetto creato da meè, che seguo o sponsorizzo sta terminando."
 
 msgid "OFFER_NEW_UPDATE"
-msgstr "Un' offerta alla quale mi sia unito o che abbia accettato sia aggiornata."
+msgstr "Un` offerta alla quale mi sia unito o che abbia accettato sia aggiornata."
 
 msgid "OFFER_ABOUT_TO_FINISH"
-msgstr "Un' offerta alla quale mi sia unitoè o abbia accettato sta per terminare."
+msgstr "Un` offerta alla quale mi sia unitoè o abbia accettato sta per terminare."
 
 msgid "OFFER_FINISHED"
-msgstr "Un' offerta creata da meè,che mi sia unitoè o abbia accettato è terminata"
+msgstr "Un` offerta creata da meè,che mi sia unitoè o abbia accettato è terminata"
 
 msgid "POST_COMMENTED"
 msgstr "Un aggiornamento creato da me ha ricevuto un nuovo commento."
 
 msgid "HAS_JOINED_TO_THE_OFFER %s %s"
-msgstr "si è unito all' offerta %s - %s"
+msgstr "si è unito all` offerta %s - %s"
 
 msgid "VIEW_UPDATE"
 msgstr "Vedere aggiornamento"
 
 msgid "HAS_CREATED_THE_PROJECT %s IN RESPONSE OF %s %s"
-msgstr "Creè il progetto %s in base all' offerta %s - %s"
+msgstr "Creè il progetto %s in base all` offerta %s - %s"
 
 msgid "NOTIFICATIONS_WALL"
 msgstr "Novità"
@@ -1555,7 +1555,7 @@ msgid "ADMIN_PROJECTS_FILTER_FILTER_LEADING"
 msgstr "Casi di successo"
 
 msgid "OFFER_RESPONSE"
-msgstr "In risposta ad un' offerta"
+msgstr "In risposta ad un` offerta"
 
 msgid "IMPORTANT_PROJECT"
 msgstr "Progetto importante"
@@ -1837,7 +1837,7 @@ msgid "PROJECT_BAKES"
 msgstr "Contributi"
 
 msgid "RELATED_OFFER"
-msgstr "Basato nell' offerta"
+msgstr "Basato nell` offerta"
 
 msgid "OFFER %s FROM %s IN THE CATEGORY %s"
 msgstr "Offerta %s di %s, nella categorièa %s"
@@ -1879,7 +1879,7 @@ msgid "OFFER_FOLLOWS"
 msgstr "Utenti che si unirono:"
 
 msgid "OFFER_PROJECTS"
-msgstr "Progetti creati in base all' offerta:"
+msgstr "Progetti creati in base all` offerta:"
 
 msgid "PROJECT_EDIT_FOURTH"
 msgstr "impostazioni di pagamento"
@@ -1909,7 +1909,7 @@ msgid "YOUR_PAYPAL_ACCOUNT_IS_ASSOCIATED_WITH_THE_ID %s"
 msgstr "Il tuo progetto è associato al seguente ID di PayPal: %s"
 
 msgid "ASSOCIATE_WITH_ANOTHER_PAYPAL"
-msgstr "Associare con un' altro conto di PayPal"
+msgstr "Associare con un` altro conto di PayPal"
 
 msgid "LEADING_PROJECT_EXAMPLE"
 msgstr "Hai bisogno di ispirazione?"
@@ -1927,7 +1927,7 @@ msgid "SHARE_THIS_PROJECT_TITLE"
 msgstr "Se vuoi condividere questo en Facebook, Twitter, etc..."
 
 msgid "SHARE_THIS_PROJECT_SUBTITLE"
-msgstr "DIFFONDERE QUESTO PROGETTO"
+msgstr "CONDIVIDI QUESTO PROGETTO"
 
 msgid "THE_PROJECT_IS_NOT_VALID_WE_CAN_NOT_PUPBISH_IT"
 msgstr "Verifica di aver completato tutti i campi correttamente."
@@ -2023,7 +2023,7 @@ msgid "PROJECT__VIDEO_URL__TIP_MESSAGE_TEXT"
 msgstr "Il video è la tua lettera di presentazione. Dimostra la qualità del tuo progetto con un video di qualità. Il tuo progetto diventerè più affidabile se parli ai tuoi futuri sponsor e gli dimostri le tue capacitè ed il tuo impegno."
 
 msgid "PROJECT_-PRIZE__TIP_MESSAGE_TEXT"
-msgstr "Tieni a mente che molti sponsor sono interessati ai benefici. Offri ricompense attrattive e ricorda l importo del contributo."
+msgstr "Tieni a mente che molti sponsor sono interessati solo ai benefici. Offri ricompense attrattive e corrispondenti all`importo del contributo."
 
 msgid "PROJECT_VIDEO"
 msgstr "Video"
@@ -2035,22 +2035,22 @@ msgid "PROJECT__VIDEO_URL_EDIT_TIP_MESSAGE_TEXT"
 msgstr "Il video è la tua lettera di presentazione. Dimostra la qualità del tuo progetto con un video di qualità. Il tuo progetto diventerè più affidabile se parli ai tuoi futuri sponsor e gli dimostri le tue capacitè ed il tuo impegno."
 
 msgid "PROJECT_-PRIZE_EDIT_TIP_MESSAGE_TEXT"
-msgstr "Tieni a mente che molti sponsor sono interessati ai benefici. Offri ricompense attrattive e ricorda l' importo del contributo."
+msgstr "Tieni a mente che molti sponsor sono interessati ai benefici. Offri ricompense attrattive e ricorda l` importo del contributo."
 
 msgid "PROJECT__FILE_EDIT_TIP_MESSAGE_TEXT"
-msgstr "La immagine non è tutto, perè è molto importante. Metti una immagine di buona qualità, con un aspetto di 16:9 e un minimo di 560 x 430 pixels aprossimatamente."
+msgstr "La immagine non è tutto, perè è molto importante. Metti una immagine di buona qualità, con un aspetto di 4:3 e un massimo di 560 x 430 pixels aprossimatamente."
 
 msgid "PROJECT__FILE__TIP_MESSAGE_TEXT"
-msgstr "La immagine non è tutto, perè è molto importante. Metti una immagine di buone qualità, con un aspetto di 16:9 e un minimo di 560 x 430 pixels aprossimatamente."
+msgstr "La immagine non è tutto, perè è molto importante. Metti una immagine di buone qualità, con un aspetto di 4:3 e un massimo di 560 x 430 pixels aprossimatamente."
 
 msgid "OFFER__SHORT_DESCRIPTION__TIP_MESSAGE_TEXT"
-msgstr "Hai 140 caratteri per comunicare la vostra offerta. Concentratevi sul più rilevante."
+msgstr "Hai 140 caratteri per comunicare la tua offerta. Concentrati in ciè che conta. "
 
 msgid "OFFER__DESCRIPTION__TIP_MESSAGE_TEXT"
 msgstr "Maggiori informaioni metti e più claro sei nella descrizione, maggiori saranno le possibilitè che altri utenti creino progetti che rispecchino le tue aspettative."
 
 msgid "OFFER__FILE__TIP_MESSAGE_TEXT"
-msgstr "La immagine non è tutto, pero è molto importante. Metti una immagine di buona qualità, con un aspetto di 16:9 e un minimo di 560 x 430 pixels aprossimatamente."
+msgstr "La immagine non è tutto, pero è molto importante. Metti una immagine di buona qualità, con un aspetto di 4:3 e un massimo di 560 x 430 pixels aprossimatamente."
 
 msgid "OFFER__VIDEO_URL__TIP_MESSAGE_TEXT"
 msgstr "Il video è la tua lettera di presentazione. Dimostra la qualità della tua offerta con un video di qualità. La tua offerta diventerè molto più affidabile se racconti agli utenti quello che cerchi e perchè vuoi sponsorizzarli."
@@ -2119,7 +2119,7 @@ msgid "INSUFICIENT_FOUNDS_TO_PAY_THIS_PROJECT"
 msgstr "I fondi disponibili in Paypal non sono sufficienti per realizzare il pagamento del progetto."
 
 msgid "OFFER__FILE_EDIT_TIP_MESSAGE_TEXT"
-msgstr "La immagine non è tutto, perè è molto importante. Metti una immagine di buona qualità, con un' aspetto di 4:3 e un massimo di 560 x 430 pixels approssimatamente."
+msgstr "La immagine non è tutto, perè è molto importante. Metti una immagine di buona qualità, con un` aspetto di 4:3 e un massimo di 560 x 430 pixels approssimatamente."
 
 msgid "THE_PROJECT_HAS_FINISHED %s"
 msgstr "Progetto concluso il %s"
@@ -2189,7 +2189,7 @@ msgid "AT_LEAST_ONE_LINK"
 msgstr "Inserisci almeno un sito internet"
 
 msgid "THE_OFFER_COULD_NOT_BE_SAVED_PLEASE_TRY_AGAIN"
-msgstr "L' offerta non è stata salvata. Verifica che i campi siano stati completati correttamente."
+msgstr "L` offerta non è stata salvata. Verifica che i campi siano stati completati correttamente."
 
 msgid "YOU_MUST_UPLOAD_AN_IMAGE"
 msgstr "Devi inserire una immagine"
@@ -2204,16 +2204,16 @@ msgid "EDIT_THIS_OFFER"
 msgstr "Modificare offerta"
 
 msgid "BETWEEN_3_50_CHARS"
-msgstr "Scrivi un titolo tra 3 e 50 caratteri"
+msgstr "Scrivi un Titolo inferiore a 50 caracteres"
 
 msgid "THIS_OFFER_IS_NOT_VALID_IT_CAN_NOT_BE_PUBLISHED"
-msgstr "L' offerta non è stata lanciata. Verifica che i campi siano stati completati correttamente."
+msgstr "L` offerta non è stata lanciata. Verifica che i campi siano stati completati correttamente."
 
 msgid "THE_OFFER_IS_NOT_VALID_WE_CAN_NOT_PUPBISH_IT"
-msgstr "L' offerta non è stata lanciata. Verifica che i campi siano stati completati correttamente"
+msgstr "L` offerta non è stata lanciata. Verifica che i campi siano stati completati correttamente"
 
 msgid "THE_OFFER_COULD_NOT_BE_SAVED_PLEASE_TRY_AGAIN."
-msgstr "L' offerta non è stata salvata. Verifica che i campi siano stati completati correttamente."
+msgstr "L` offerta non è stata salvata. Verifica che i campi siano stati completati correttamente."
 
 msgid "greater_than_0"
 msgstr "inserisci un importo valido"
@@ -2234,13 +2234,13 @@ msgid "BE_THE_FIRST"
 msgstr "Sei il primo a sponsorizzare!"
 
 msgid "SEARCH_BY_CATEGORY"
-msgstr "SCOPRIRE PER CATEGORIA"
+msgstr "CATEGORIA"
 
 msgid "CONNECT_WITH_US"
 msgstr "Connettiti con Groofi"
 
 msgid "TERMS"
-msgstr "Termini d' uso"
+msgstr "Termini d` uso"
 
 msgid "PRIVACY"
 msgstr "Politica della privacy"
@@ -2249,7 +2249,7 @@ msgid "CONTACT"
 msgstr "Contatto"
 
 msgid "SITE_COPYRIGHT"
-msgstr "©2013 Tutti i diritti riservati"
+msgstr "©2011 Tutti i diritti riservati"
 
 msgid "PAYMENTS"
 msgstr "Sponsors"
@@ -2291,7 +2291,7 @@ msgid "USERS_ADMIN_ADD"
 msgstr "Creare amministratore"
 
 msgid "USER_HAS_BEEN_CREATED"
-msgstr "L' Utente è stato creato"
+msgstr "L` Utente è stato creato"
 
 msgid "ADMIN_ADMINS"
 msgstr "Amministratori"
@@ -2321,7 +2321,7 @@ msgid "ADMIN_SPONSORSHIPS_FILTER_SORT_SPONSORSHIP.PROJECT_ID"
 msgstr "ID del progetto"
 
 msgid "ADMIN_SPONSORSHIPS_FILTER_SORT_SPONSORSHIP.USER_ID"
-msgstr "ID dell' utente"
+msgstr "ID dell` utente"
 
 msgid "ADMIN_SPONSORSHIPS_FILTER_SORT_SPONSORSHIP.STATUS"
 msgstr "Status"
@@ -2420,16 +2420,16 @@ msgid "INCOMPLETE"
 msgstr "Non completato"
 
 msgid "ADMIN_LOGIN"
-msgstr "Ingresar"
+msgstr "Accedi"
 
 msgid "USERS_ADMIN_LOGIN"
-msgstr "Entrare"
+msgstr "Accedi"
 
 msgid "WHANT_TO_DO_THIS"
 msgstr "Vogliono farlo"
 
 msgid "%s MEMBERS"
-msgstr "MEMBRI"
+msgstr "PERSONE"
 
 msgid "HAVE_JOINED_TO_THIS_OFFER"
 msgstr "Si unirono a questa offerta"
@@ -2544,13 +2544,13 @@ msgid "OFFER_REJECTED_SUBJECT_OWNER"
 msgstr "La tua proposta non è stata approvata"
 
 msgid "OFFER_NEW_UPDATE_SUBJECT_FOLLOWER"
-msgstr "Nuovo aggiornamento in un' offerta"
+msgstr "Nuovo aggiornamento in un` offerta"
 
 msgid "OFFER_NEW_UPDATE_SUBJECT_FOLLOWER_TYPE2"
-msgstr "Nuovo aggiornamento in un' offerta"
+msgstr "Nuovo aggiornamento in un` offerta"
 
 msgid "OFFER_NEW_PROJECT_SUBJECT_OWNER"
-msgstr "E' stato creato un progetto per la tua offerta"
+msgstr "E` stato creato un progetto per la tua offerta"
 
 msgid "OFFER_NEW_USER_SUBJECT_OWNER"
 msgstr "Un nuovo utente si è unito alla tua offerta"
@@ -2562,16 +2562,16 @@ msgid "OFFER_ABOUT_TO_FINISH_SUBJECT_FOLLOWER"
 msgstr "La offerta alla quale ti sei unito sta per terminare"
 
 msgid "OFFER_ABOUT_TO_FINISH_SUBJECT_FOLLOWER_TYPE2"
-msgstr "L' offerta per la quale hai creato il progetto sta per terminare"
+msgstr "L` offerta per la quale hai creato il progetto sta per terminare"
 
 msgid "OFFER_FINISHED_SUBJECT_OWNER"
 msgstr "La tua offerta è terminata"
 
 msgid "OFFER_FINISHED_SUBJECT_FOLLOWER"
-msgstr "L' offerta alla quale ti sei unito è terminata"
+msgstr "L` offerta alla quale ti sei unito è terminata"
 
 msgid "OFFER_FINISHED_SUBJECT_FOLLOWER_TYPE2"
-msgstr "L' offerta per la quale hai creato il progetto è terminata"
+msgstr "L` offerta per la quale hai creato il progetto è terminata"
 
 msgid "POST_COMMENTED_SUBJECT_OWNER"
 msgstr "Hai ricevuto un nuovo commento"
@@ -2643,10 +2643,10 @@ msgid "TERMS_OF_USER_BODY %s"
 msgstr "Registrandoti stai accettando i "
 
 msgid "TERMS_OF_USE_LINK"
-msgstr "Termini d' uso di Groofi"
+msgstr "Termini d` uso di Groofi"
 
 msgid "DISCOVER_MORE"
-msgstr "VEDERE DI PIU'"
+msgstr "VEDERE DI PIU`"
 
 msgid "LOGIN_ERROR"
 msgstr "E-mail e/o password errata."
@@ -2682,13 +2682,13 @@ msgid "GENERIC_PAGE_ERROR_403"
 msgstr "Scusa!"
 
 msgid "GENERIC_PAGE_ERROR_403_BODY"
-msgstr "Impossibile trovare la pagina richiesta. Potresti aver fatto clic su un link obsoleto o l'indirizzo è scritto male. Alcuni indirizzi web distinguono tra maiuscole e minuscole."
+msgstr "Impossibile trovare la pagina richiesta. Potresti aver fatto clic su un link obsoleto o l`indirizzo è scritto male. Alcuni indirizzi web distinguono tra maiuscole e minuscole."
 
 msgid "GENERIC_PAGE_ERROR_404"
 msgstr "Scusa!"
 
 msgid "GENERIC_PAGE_ERROR_404_BODY"
-msgstr "Impossibile trovare la pagina richiesta. Potresti aver fatto clic su un link obsoleto o l'indirizzo è scritto male. Alcuni indirizzi web distinguono tra maiuscole e minuscole."
+msgstr "Impossibile trovare la pagina richiesta. Potresti aver fatto clic su un link obsoleto o l`indirizzo è scritto male. Alcuni indirizzi web distinguono tra maiuscole e minuscole."
 
 msgid "OFFER_DOES_NOT_EXIST"
 msgstr "Scusa! La pagina che stai provando ad accedere non esiste"
@@ -2731,7 +2731,7 @@ msgid "GO_BACK_TO_THE_PREVIOUS_PAGE"
 msgstr "Tornare alla pagina precedente"
 
 msgid "ABOUT_US_LINK"
-msgstr "Circa Groofi"
+msgstr "Chi siamo"
 
 msgid "CONTACT_US_LINK"
 msgstr "Contattaci"
@@ -2746,10 +2746,10 @@ msgid "THE_PROJECT_IS ABOUT_TO_FINISH %s %s"
 msgstr "Il progetto %s terminerè il %s"
 
 msgid "THE_PROJECT_IS ABOUT_TO_FINISH %s %s"
-msgstr "L' offerta %s terminerè il %s"
+msgstr "L` offerta %s terminerè il %s"
 
 msgid "THE_OFFER_HAS_FINISHED %s %s"
-msgstr "L' offerta %s termina il %s"
+msgstr "L` offerta %s termina il %s"
 
 msgid "THE_PROJECT_HAS_FINISHED %s %s"
 msgstr "Il progetto %s termina il %s"
@@ -3004,7 +3004,7 @@ msgid "slug"
 msgstr "Devi inserire solamente lettere e numeri"
 
 msgid "PROJECTS CREATED"
-msgstr "I PROGETTI CREATI"
+msgstr "PROGETTI CREATI"
 
 msgid "CONTACT"
 msgstr "Contatto"
@@ -3013,22 +3013,22 @@ msgid "OUR_OFFICE"
 msgstr "I nostri uffici"
 
 msgid "HOW_WORK"
-msgstr "COME FUNZIONA"
+msgstr "COME FUNZIONA?"
 
 msgid "BUSI_NESS"
 msgstr "AZIENDE"
 
 msgid "GROOFI_INTRODUCTION"
-msgstr "Groofi nato per diventare la prima piattaforma globale di finanziamento collettivo."
+msgstr "Groofi é nato per diventare la prima piattaforma globale di finanziamento collettivo."
 
 msgid "GROOFI_INTRODUCTION_SUB"
-msgstr "Crediamo che la diversità aumenta la quantità di talento e capitale attrae talento. Così groofi è destinato a diventare un ponte tra la creatività e il finanziamento, in modo da liberare il potenziale di tutte le persone in tutto il mondo."
+msgstr "Crediamo che la diversità potenzia il talento e il talento attrae capitale. In questo modo Groofi è destinato a diventare un ponte tra la creatività e il finanziamento, in modo da liberare il potenziale di tutte le persone nel mondo."
 
 msgid "GROOFI_FOOTER"
 msgstr "GROOFI SU FACEBOOK"
 
 msgid "GROOFI_FOOTER_CONTACTATE"
-msgstr "CONTATTO GROOFI"
+msgstr "INFO GROOFI"
 
 msgid "GROUPAL_GIFTS"
 msgstr "Gruppo Regali"
@@ -3049,7 +3049,7 @@ msgid "WRITE_US"
 msgstr "Scrivici"
 
 msgid "WHAT_IS_GROOFI_SUB"
-msgstr "Groofi è un posto per le persone creative con buone idee per trovare finanziatori per i loro progetti. Che tu sia un in tecnologia, affari o la musica, se si ha un'idea e bisogno di soldi per portarlo in vita, il nostro sito è un posto per voi per piantare la vostra idea di progetto, e trovare persone che vogliono finanziare voi. Ha appena incontrato: bisogna dare loro una ricompensa."
+msgstr "Groofi è un posto per le persone creative con buone idee per trovare finanziatori per i loro progetti. Che tu sia un in tecnologia, affari o la musica, se si ha un`idea e bisogno di soldi per portarlo in vita, il nostro sito è un posto per voi per piantare la vostra idea di progetto, e trovare persone che vogliono finanziare voi. Ha appena incontrato: bisogna dare loro una ricompensa."
 
 msgid "WHAT_IS_GROOFI_SUB1"
 msgstr "Groofi è molto più di una piattaforma per la raccolta di fondi collettivi o "crowdfunding" è una comunità di persone con buone idee, voglia di farli diventare realtà e contribuire a rendere questo possibile."
@@ -3058,7 +3058,7 @@ msgid "TITLE_CREATIVITY_FUNDING"
 msgstr "Un ponte traProyectos Creados la creatività e il finanziamento"
 
 msgid "TITLE_CREATIVITY_FUNDING_SUB"
-msgstr "Vuoi fare un film, fare un disco, scalare una montagna o in giro in bicicletta il vostro paese? Sos creativa e imprenditoriale, si ha una idea unica, innovativa e bisogno di fondi per farlo. Guardando supportato da una comunità di migliaia di persone, che attraverso l'individuazione e lavorare con la tua idea, puntare il vostro sviluppo, diventano produttori, e l'accesso ai benefici e premi di design che durante la creazione del progetto. Oppure vuole fare soldi facendo quello che ti piace con altri progetti e sfide proposte."
+msgstr "Vuoi fare un film, fare un disco, scalare una montagna o in giro in bicicletta il vostro paese? Sos creativa e imprenditoriale, si ha una idea unica, innovativa e bisogno di fondi per farlo. Guardando supportato da una comunità di migliaia di persone, che attraverso l`individuazione e lavorare con la tua idea, puntare il vostro sviluppo, diventano produttori, e l`accesso ai benefici e premi di design che durante la creazione del progetto. Oppure vuole fare soldi facendo quello che ti piace con altri progetti e sfide proposte."
 
 msgid "TITLE_CREATIVITY_FUNDING_SUB1"
 msgstr "Creare o visualizzare il progetto in Groofi.com, condividere con i tuoi amici sui social network, trovare le risorse, e realizzare una comunità semplice, sicuro ed."
@@ -3067,13 +3067,13 @@ msgid "ABOUT_US"
 msgstr "CHI SIAMO?"
 
 msgid  "ABOUT_US_SUB"
-msgstr "Groofi è un anglo-Argentina con capitale spagnola. Groofi nato per diventare la prima piattaforma globale di finanziamento collettivo. Crediamo che la diversità aumenta la quantità di talento e capitale attrae talento. Così groofi è destinato a diventare un ponte tra la creatività e il finanziamento, in modo da liberare il potenziale di tutte le persone in tutto il mondo."
+msgstr "Groofi è un anglo-Argentina con capitale spagnola. Groofi é nato per diventare la prima piattaforma globale di finanziamento collettivo. Crediamo che la diversità aumenta la quantità di talento e capitale attrae talento. Così groofi è destinato a diventare un ponte tra la creatività e il finanziamento, in modo da liberare il potenziale di tutte le persone in tutto il mondo."
 
 msgid "ABOUT_US_SUB1"
 msgstr "Un posto per ottenere fondi per la vostra solidarietà creative, artistiche, sportive, o tecnologiche. Un luogo per sponsorizzare progetti che si desidera diventare realtà, e usufruire di vantaggi esclusivi in cambio .."
 
 msgid "MODEL_FUNDING"
-msgstr "Solo i progetti in tempo per raggiungere almeno il 100% del suo obiettivo di finanziamento riceverà il denaro fornito dai loro sponsor. In caso contrario, non gli importi che patroni sono impegnati in vigore, e il progetto non ha ricevuto finanziamenti. Groofi addebita una commissione sulla somma raccolta per i progetti di successo. Noi non facciamo pagare commissioni su progetti che non hanno raggiunto il loro obiettivo. Il costo è di 5,99% (IVA inclusa) in tutti i paesi dell'America Latina e della Spagna."
+msgstr "Solo i progetti in tempo per raggiungere almeno il 100% del suo obiettivo di finanziamento riceverà il denaro fornito dai loro sponsor. In caso contrario, non gli importi che patroni sono impegnati in vigore, e il progetto non ha ricevuto finanziamenti. Groofi addebita una commissione sulla somma raccolta per i progetti di successo. Noi non facciamo pagare commissioni su progetti che non hanno raggiunto il loro obiettivo. Il costo è di 5,99% (IVA inclusa) in tutti i paesi dell`America Latina e della Spagna."
 
 msgid "MODEL_FUNDING_TITLE"
 msgstr "Il modello di finanziamento"
@@ -3082,22 +3082,22 @@ msgid "I_WANT_START_MY_PROJECT"
 msgstr "Voglio iniziare il mio progetto"
 
 msgid "CROWDFUNDING_TITLE"
-msgstr "Che cos'è il "crowdfunding" o di cofinanziamento?"
+msgstr "Che cos`è il "crowdfunding" o di cofinanziamento?"
 
 msgid "CROWDFUNDING_CONCEPT"
-msgstr "Con la pubblicazione di un Groofi progetto, i proprietari di progetto possono in alternativa finanziare i propri progetti e idee attraverso il pre-vendita di prodotti e / o servizi che si intende sviluppare, e in modo da farne una realtà. I finanziamenti si ottiene la somma di mini-borse di denaro (o non tanto :)) da sponsor diversi per ogni progetto, e in cambio di quei contributi di denaro usufruire di vantaggi esclusivi nell'esempio il rientro della stilista vuole raccogliere $ S 5000 U dollari per lanciare la loro collezione di abbigliamento per la prossima stagione di acquistare tessuti, bottoni e paga sfrutta la manodopera. Un buon esempio di prestazioni in cambio di donazioni sarebbe per 20 dollari, una t-shirt esclusiva e personale dedicato 40 usd, in esclusiva per 60 usd cintura, un vestito, ecc, ecc"
+msgstr "Con la pubblicazione di un Groofi progetto, i proprietari di progetto possono in alternativa finanziare i propri progetti e idee attraverso il pre-vendita di prodotti e / o servizi che si intende sviluppare, e in modo da farne una realtà. I finanziamenti si ottiene la somma di mini-borse di denaro (o non tanto :)) da sponsor diversi per ogni progetto, e in cambio di quei contributi di denaro usufruire di vantaggi esclusivi nell`esempio il rientro della stilista vuole raccogliere $ S 5000 U dollari per lanciare la loro collezione di abbigliamento per la prossima stagione di acquistare tessuti, bottoni e paga sfrutta la manodopera. Un buon esempio di prestazioni in cambio di donazioni sarebbe per 20 dollari, una t-shirt esclusiva e personale dedicato 40 usd, in esclusiva per 60 usd cintura, un vestito, ecc, ecc"
 
 msgid "WHAT_IS_A_PROJECT"
-msgstr "Che cos'è un progetto?"
+msgstr "Che cos`è un progetto?"
 
 msgid "WHAT_IS_A_PROJECT_CONCEPT"
-msgstr "Qualsiasi tipo di progetto, sia creativo, divertimento, attività in questione oppure qualsiasi altra cosa, che si vuole veramente far accadere, ma non hanno i fondi con cui farlo. L'unica cosa da tenere a mente è che si deve attingere i punti di forza e le capacità perché si sta bisogno di credibilità per attirare sostegno, e attingere a ciò che la gente vuole a titolo di premi. Questo non è un sito di donazione, questa è una piattaforma di scambio."
+msgstr "Qualsiasi tipo di progetto, sia creativo, divertimento, attività in questione oppure qualsiasi altra cosa, che si vuole veramente far accadere, ma non hanno i fondi con cui farlo. L`unica cosa da tenere a mente è che si deve attingere i punti di forza e le capacità perché si sta bisogno di credibilità per attirare sostegno, e attingere a ciò che la gente vuole a titolo di premi. Questo non è un sito di donazione, questa è una piattaforma di scambio."
 
 msgid "CHARGES_A_COMISSION"
 msgstr "Groofi Trattiene una commissione?"
 
 msgid "CHARGES_A_COMISSION_CONCEPT"
-msgstr "Sì, Groofi trattiene una commissione sull'importo sollevata dai progetti di successo. Noi non facciamo pagare commissioni su progetti che non hanno raggiunto il loro obiettivo. Il costo è di 5,99% (IVA inclusa) in tutti i paesi dell'America Latina e España.En se l'autore desidera ottenere una fattura IVA discriminati, si consiglia di consultare Groofi ay notifica al momento della presentazione del progetto."
+msgstr "Sì, Groofi trattiene una commissione sull`importo sollevata dai progetti di successo. Noi non facciamo pagare commissioni su progetti che non hanno raggiunto il loro obiettivo. Il costo è di 5,99% (IVA inclusa) in tutti i paesi dell`America Latina e España.En se l`autore desidera ottenere una fattura IVA discriminati, si consiglia di consultare Groofi ay notifica al momento della presentazione del progetto."
 
 msgid "PAYPAL_CHARGES_COMISSION_CONCEPT"
 msgstr "Sì, Paypal prende di commissione del 3,9% più 0,30 US $ per transazione, per un totale di 7,8% più 0,60 US $, in quanto i fondi dal conto del finanziatore al conto Groofi sul conto del proprietario del progetto (se il progetto avrà successo ) e va dal conto del finanziatore al conto Groofi e di nuovo al conto del finanziatore, se il progetto non è riuscito."
@@ -3112,7 +3112,7 @@ msgid "GENERAL_QUESTIONS1"
 msgstr "Domande generali"
 
 msgid "CREATING_A_PROJECT"
-msgstr "Creazione di un progetto"
+msgstr "Crea il tuo progetto"
 
 msgid "SUPPORTING_A_PROJECT"
 msgstr "Sostenere un Progetto"
@@ -3139,13 +3139,13 @@ msgid "WHO_CREATE_PROJECTS"
 msgstr "Chi può creare progetti?"
 
 msgid "WHO_CREATE_PROJECTS_CONCEPT"
-msgstr "Tutti gli utenti registrati hanno una buona idea, per farlo e hanno bisogno di fondi. Le categorie previste per i progetti sono: l'arte, l'architettura, le campagne di solidarietà, film e video, cucina, danza, sport, sfide, disegno, giochi, libri e letteratura, moda, musica, teatro e tecnologia."
+msgstr "Tutti gli utenti registrati hanno una buona idea, per farlo e hanno bisogno di fondi. Le categorie previste per i progetti sono: l`arte, l`architettura, le campagne di solidarietà, film e video, cucina, danza, sport, sfide, disegno, giochi, libri e letteratura, moda, musica, teatro e tecnologia."
 
 msgid "PAY_TO_PUBLISH_A_PROJECT"
-msgstr "C'è una tassa per la pubblicazione di un progetto?"
+msgstr "C`è una tassa per la pubblicazione di un progetto?"
 
 msgid "PAY_TO_PUBLISH_A_PROJECT_CONCEPT"
-msgstr "No! Pubblica un progetto è gratuito, ma sarà approvato prima della pubblicazione Groofi. C'è una tassa per la pubblicazione di un progetto?"
+msgstr "No! Pubblica un progetto è gratuito, ma sarà approvato prima della pubblicazione Groofi. C`è una tassa per la pubblicazione di un progetto?"
 
 
 msgid "HAVE_ACCOUNT_IN_PAYPAL_MERCADO"
@@ -3161,37 +3161,37 @@ msgid "BENEFITS_REWARDS"
 msgstr "Vantaggi e Premi"
 
 msgid "BENEFISTS_FOR_PEOPLE"
-msgstr "Benefici per i singoli"
+msgstr "Premi per persone"
 
 msgid "CORPORATE_BENEFIST"
-msgstr "Vantaggi aziendali"
+msgstr "Premi per aziende"
 
 msgid "TIME_OF_PROJECT"
-msgstr "giorni(s)"
+msgstr "giorno(i)"
 
 msgid "PROJECT_IMPORTANT_ADVICE %s %s %s"
-msgstr "Questo progetto sarà finanziato il% s alle 0:00 pm. se sono stati commessi% s% s."
+msgstr "Questo progetto sarà finanziato il % s alle 0:00 pm. se sono stati raccolti % s% s."
 
 msgid "PROCEEDS_I_RECEIVE"
 msgstr "Come faccio a ricevere i fondi raccolti?"
 
 msgid "PROCEEDS_I_RECEIVE_CONCEPT"
-msgstr "I fondi ricevuti attraverso Paypal o MercadoPago: Il denaro si accumula nel conto o MercadoPago conto Paypal del Groofi al creatore, ma che sarà gestito da Groofi di rispettare il termine per la raccolta. Se il progetto avrà successo, e Groofi MercadoPago Paypal o applicare le proprie commissioni. Groofi trattenere i fondi per 10 giorni lavorativi dal momento dell'esecuzione raccolta. Dopo tale periodo, il creatore può disporre dei proventi, al netto delle commissioni. Se il progetto avrà successo, il creatore deve aprire il proprio ordine Paypal o MercadoPago per ricevere i fondi raccolti nei termini e alle condizioni MercadoPago Paypal o determinare per ciascun paese."
+msgstr "I fondi ricevuti attraverso Paypal o MercadoPago: Il denaro si accumula nel conto o MercadoPago conto Paypal del Groofi al creatore, ma che sarà gestito da Groofi di rispettare il termine per la raccolta. Se il progetto avrà successo, e Groofi MercadoPago Paypal o applicare le proprie commissioni. Groofi trattenere i fondi per 10 giorni lavorativi dal momento dell`esecuzione raccolta. Dopo tale periodo, il creatore può disporre dei proventi, al netto delle commissioni. Se il progetto avrà successo, il creatore deve aprire il proprio ordine Paypal o MercadoPago per ricevere i fondi raccolti nei termini e alle condizioni MercadoPago Paypal o determinare per ciascun paese."
 
 msgid "PROJECT_IS_NOT_SUCCESSFUL"
 msgstr "Che cosa succede se il progetto non va a buon fine?"
 
 msgid "PROJECT_IS_NOT_SUCCESSFUL_CONCEPT"
-msgstr "Se il progetto ha successo perché non ha raggiunto l'obiettivo di finanziare il termine stabilito, restituirà i fondi investiti dagli sponsor (al netto dei costi Paypal / MercadoPago). In questo caso groofi non applica commissioni e se l'obiettivo non viene raggiunto, non vi è alcun costo per i creatori."
+msgstr "Se il progetto ha successo perché non ha raggiunto l`obiettivo di finanziare il termine stabilito, restituirà i fondi investiti dagli sponsor (al netto dei costi Paypal / MercadoPago). In questo caso groofi non applica commissioni e se l`obiettivo non viene raggiunto, non vi è alcun costo per i creatori."
 
 msgid "HOW_SPONSOR_MY_PROJECT_USERS"
 msgstr "Come successo in modo che altri sponsorizzare il mio progetto?"
 
 msgid "HOW_SPONSOR_MY_PROJECT_USERS_CONCEPT"
-msgstr "La cosa più importante è avere una buona idea, e cioè passare e, soprattutto, vendere l'idea al vostro circolo di amici e familiari. Tutto questo si aggiunge: un buon titolo, una descrizione completa, un video in cui si parla con i potenziali sponsor, dire loro sul progetto e sugli altri che hai fatto. Ricordate l'immagine scattata è molto importante per trasmettere fiducia e convincere sponsor. L'altra chiave è quello di offrire prestazioni interessanti, commisurate al contributo. Molti sponsor sono interessati solo a ottenere qualcosa in cambio."
+msgstr "La cosa più importante è avere una buona idea, e cioè passare e, soprattutto, vendere l`idea al vostro circolo di amici e familiari. Tutto questo si aggiunge: un buon titolo, una descrizione completa, un video in cui si parla con i potenziali sponsor, dire loro sul progetto e sugli altri che hai fatto. Ricordate l`immagine scattata è molto importante per trasmettere fiducia e convincere sponsor. L`altra chiave è quello di offrire prestazioni interessanti, commisurate al contributo. Molti sponsor sono interessati solo a ottenere qualcosa in cambio."
 
 msgid "HOW_SPREAD_MY_PROJECT"
-msgstr "Come posso diffondere il mio progetto?"
+msgstr "Come posso condividere il mio progetto?"
 
 msgid "HOW_SPREAD_MY_PROJECT_CONCEPT"
 msgstr "Stendere è essenziale che il vostro progetto o di qualsiasi altro sito di social networking come Facebook, Twitter o Google cliccando sul "Voglio diffondere questa" che si trova nella schermata di ogni progetto. Si consiglia inoltre di inviare il progetto per collegare tutti i contatti via e-mail."
@@ -3218,13 +3218,13 @@ msgid "MODIFY_MY_PROJECT_BEFORE_LAUNCHING"
 msgstr "¿Posso modificare il mio progetto prima di lanciarlo?"
 
 msgid "MODIFY_MY_PROJECT_BEFORE_LAUNCHING_CONCEPT"
-msgstr "Sì, è possibile modificarlo in qualsiasi momento prima del lancio. Tuttavia, ci sono alcuni campi (titolo, categoria e breve descrizione) che non possono essere modificate per mantenere l'idea originale nella proposta approvata."
+msgstr "Sì, è possibile modificarlo in qualsiasi momento prima del lancio. Tuttavia, ci sono alcuni campi (titolo, categoria e breve descrizione) che non possono essere modificate per mantenere l`idea originale nella proposta approvata."
 
 msgid "MODIFY_MY_PROJECT_ONCE_LAUNCHED"
 msgstr "Posso modificare il mio progetto una volta rilasciato?"
 
 msgid "MODIFY_MY_PROJECT_ONCE_LAUNCHED_CONCEPT"
-msgstr "No, una volta avviato un progetto diventa pubblico e gli altri utenti possono iniziare a fare i loro contributi, in modo che non può essere cambiato di più."
+msgstr "No, una volta avviato un progetto diventa  e gli altri utenti possono iniziare a fare i loro contributi, in modo che non può essere cambiato di più."
 
 msgid "REMOVE_MY_PROJECT_ONCE_LAUNCHED"
 msgstr "Posso rimuovere il mio progetto una volta lanciato?"
@@ -3245,10 +3245,10 @@ msgid "SEND_DATA_SPONSORS_ONCE_MY_PROJECT_HAS_BEEN_FUNDED_CONCEPT"
 msgstr "Se il progetto soddisfa i fondi necessari entro il tempo assegnato, è necessario contattare sponsor per inviare i vostri benefici eletti. Ti forniremo i vostri dati di contatto."
 
 msgid "WILL_NOT_STEAL_THE_IDEA_FOR_MY_PROJECT"
-msgstr "Come posso garantire che non ruberanno l'idea per il mio progetto?"
+msgstr "Come posso garantire che non ruberanno l`idea per il mio progetto?"
 
 msgid "WILL_NOT_STEAL_THE_IDEA_FOR_MY_PROJECT_CONCEPT"
-msgstr "Noi crediamo che per un progetto di diventare una realtà, tanto importante quanto l'idea, è l'esecuzione di esso e saper vendere a coloro che hanno messo i soldi per finanziare il progetto. Groofi.com Questo serve a rendere le idee e la realtà dei progetti attraverso la diffusione di loro. Il modo migliore per proteggere un'idea sta facendo e farlo bene. In ogni caso, se si vuole essere sicuri, è possibile intervenire, se necessario per proteggere i diritti di proprietà intellettuale. "
+msgstr "Noi crediamo che per un progetto di diventare una realtà, tanto importante quanto l`idea, è l`esecuzione di esso e saper vendere a coloro che hanno messo i soldi per finanziare il progetto. Groofi.com Questo serve a rendere le idee e la realtà dei progetti attraverso la diffusione di loro. Il modo migliore per proteggere un`idea sta facendo e farlo bene. In ogni caso, se si vuole essere sicuri, è possibile intervenire, se necessario per proteggere i diritti di proprietà intellettuale. "
 
 msgid "WHAT_CURRENCIES_I_CAN_MAKE_MY_PROJECTS"
 msgstr "Quali valute posso fare i miei progetti? "
@@ -3260,7 +3260,7 @@ msgid "WHY_SPONSOR_PROJECTS"
 msgstr "Perché i progetti sponsor?"
 
 msgid "WHY_SPONSOR_PROJECTS_CONCEPT"
-msgstr "Oltre a contribuire a progetti interessanti, innovativi, originali e divertenti si avverano, è possibile accedere a qualche beneficio solo in relazione al progetto. Se sponsorizzate un filmato, è possibile ricevere il DVD prima di chiunque altro. Se sponsorizzate un'invenzione, essere il primo ad avere una volta prodotto."
+msgstr "Oltre a contribuire a progetti interessanti, innovativi, originali e divertenti si avverano, è possibile accedere a qualche beneficio solo in relazione al progetto. Se sponsorizzate un filmato, è possibile ricevere il DVD prima di chiunque altro. Se sponsorizzate un`invenzione, essere il primo ad avere una volta prodotto."
 
 msgid "WHO_ARE_SPONSORS_OF_PROJECTS_AND_WHY_SPONSOR_PROJECTS"
 msgstr "Chi sono gli sponsor dei progetti e dai progetti di sponsorizzazione?"
@@ -3272,7 +3272,7 @@ msgid "WHAT_IF_THE_PROJECT_IS_NOT_SUCCESSFUL"
 msgstr "Che cosa succede se il progetto non va a buon fine?"
 
 msgid "WHAT_IF_THE_PROJECT_IS_NOT_SUCCESSFUL_CONCEPT"
-msgstr "Se il progetto ha successo perché non ha raggiunto l'obiettivo di finanziare il termine stabilito, restituirà i fondi investiti dagli sponsor (dedotti i costi di Paypal). In questo caso groofi non applica commissioni e se l'obiettivo non viene raggiunto, non vi è alcun costo per i creatori."
+msgstr "Se il progetto ha successo perché non ha raggiunto l`obiettivo di finanziare il termine stabilito, restituirà i fondi investiti dagli sponsor (dedotti i costi di Paypal). In questo caso groofi non applica commissioni e se l`obiettivo non viene raggiunto, non vi è alcun costo per i creatori."
 
 msgid "HOW_TO_SPONSOR_A_PROJECT"
 msgstr "Come sponsorizzare un progetto?"
@@ -3290,7 +3290,7 @@ msgid "PUBLISH_MY_CONTRIBUTION"
 msgstr "Vuoi pubblicare la quantità del mio contributo?"
 
 msgid "PUBLISH_MY_CONTRIBUTION_CONCEPT"
-msgstr "No, non pubblicare l'importo del vostro contributo. Come appare dagli sponsor del progetto."
+msgstr "No, non pubblicare l`importo del vostro contributo. Come appare dagli sponsor del progetto."
 
 msgid "INFORMATION_FOR_SPONSORS"
 msgstr "Quello che il Creatore riceve informazioni sugli sponsor del progetto?"
@@ -3308,7 +3308,7 @@ msgid "CAN_TRUST_CREATORS"
 msgstr "Posso fidarmi i creatori di progetti?"
 
 msgid "CAN_TRUST_CREATORS_CONCEPT"
-msgstr "Il nostro staff moderatori valuta i progetti per garantirne la qualità. Tuttavia, Groofi è solo un intermediario tra i creatori e gli sponsor. E 'vostra responsabilità di valutare l'affidabilità e la fattibilità dei progetti prima di dare un contributo. Se hai sospetti su un progetto o utente, è possibile segnalarlo e verrà esaminata da un medico."
+msgstr "Il nostro staff moderatori valuta i progetti per garantirne la qualità. Tuttavia, Groofi è solo un intermediario tra i creatori e gli sponsor. E `vostra responsabilità di valutare l`affidabilità e la fattibilità dei progetti prima di dare un contributo. Se hai sospetti su un progetto o utente, è possibile segnalarlo e verrà esaminata da un medico."
 
 msgid "THE_GUIDE_OF_PROJECT"
 msgstr "La guida per costruire il vostro progetto"
@@ -3347,7 +3347,7 @@ mmsgid "DEFINE_YOUR_PROJECT_CONCEPT"
  msgstr "Per cosa la raccolta di fondi? Avere un ben definito, con un chiaro inizio e la fine è di vitale importanza. Ad esempio: registrare un nuovo album è un progetto finito - il progetto termina quando la band pubblicò il loro album - ma di avviare una carriera nel mondo della musica non lo è. No fine, ma uno sforzo costante. Groofi finito accetta solo progetti."
 
  msgid "DEFINE_YOUR_PROJECT_CONCEPT_2"
- msgstr "Con un obiettivo definito in dettaglio, le aspettative sono trasparenti allo sviluppatore per potenziali sponsor. Sponsor può giudicare come gli obiettivi del progetto sono raggiungibili, e la capacità del creatore del progetto alla sua realizzazione. Inoltre, per i creatori, la pratica di definizione degli obiettivi del progetto stabilisce la portata dell'impresa, un passo importante nel processo creativo."
+ msgstr "Con un obiettivo definito in dettaglio, le aspettative sono trasparenti allo sviluppatore per potenziali sponsor. Sponsor può giudicare come gli obiettivi del progetto sono raggiungibili, e la capacità del creatore del progetto alla sua realizzazione. Inoltre, per i creatori, la pratica di definizione degli obiettivi del progetto stabilisce la portata dell`impresa, un passo importante nel processo creativo."
 
  msgid "DEFINE_YOUR_PROJECT_CONCEPT_3"
  msgstr "Groofi vive di questi scambi aperti e spiegazioni chiare degli obiettivi. Assicurati che il tuo progetto è conforme con questo!"
@@ -3359,13 +3359,13 @@ msgid "CREATE_AWARDS"
 msgstr "Crea Rewards"
 
 msgid "CREATE_AWARDS_1"
-msgstr "Le ricompense sono ciò che gli sponsor sono sempre per il compromesso e portare a un progetto. E 'molto importante che le ricompense sono valore creativo, tangibile, e giusto. Progetti Rewards sopravvalutato o banale raramente ottenere supporto."
+msgstr "Le ricompense sono ciò che gli sponsor sono sempre per il compromesso e portare a un progetto. E `molto importante che le ricompense sono valore creativo, tangibile, e giusto. Progetti Rewards sopravvalutato o banale raramente ottenere supporto."
 
 msgid "CREATE_AWARDS_2"
 msgstr "Decidere cosa offrire"
 
 msgid "CREATE_AWARDS_3"
-msgstr "Tutti i premi principali di un progetto deve essere generato dal progetto stesso. Se il progetto è un record, quindi la ricompensa dovrebbe includere una copia del CD quando è fatto. Gli sponsor Rewards assicuro che sarà beneficiato dal progetto stesso modo in cui l'autore (ad esempio le cose interessanti che hanno contribuito a produrre!)."
+msgstr "Tutti i premi principali di un progetto deve essere generato dal progetto stesso. Se il progetto è un record, quindi la ricompensa dovrebbe includere una copia del CD quando è fatto. Gli sponsor Rewards assicuro che sarà beneficiato dal progetto stesso modo in cui l`autore (ad esempio le cose interessanti che hanno contribuito a produrre!)."
 
 msgid "CREATE_AWARDS_4"
 msgstr "Ci sono quattro tipi tipici di ricompense che vediamo in Groofi: "
@@ -3374,10 +3374,10 @@ msgid "CREATE_AWARDS_5"
 msgstr "Copie del prodotto: il disco, un DVD o un poster dello spettacolo. Questi elementi dovrebbero essere valutati allo stesso prezzo o meno di quanto costerebbe al dettaglio."
 
 msgid "CREATE_AWARDS_6"
-msgstr "Collaborazioni creative: uno sponsor appare come un personaggio di un fumetto, tutti sono dipinti come parte di un murale, due sponsor fanno applausi sfondo per certa canzone per l'album, e così via."
+msgstr "Collaborazioni creative: uno sponsor appare come un personaggio di un fumetto, tutti sono dipinti come parte di un murale, due sponsor fanno applausi sfondo per certa canzone per l`album, e così via."
 
 msgid "CREATE_AWARDS_7"
-msgstr "Esperienze creative: una visita per il set, una telefonata da parte dell'autore, una cena con il cast, un concerto privato in giardino, ecc."
+msgstr "Esperienze creative: una visita per il set, una telefonata da parte dell`autore, una cena con il cast, un concerto privato in giardino, ecc."
 
 msgid "CREATE_AWARDS_8"
 msgstr "Momenti creativi: foto Polaroid inviato dal luogo di registrazione, grazie ai crediti, articoli interessanti che parlano della storia del progetto, ecc."
@@ -3386,10 +3386,10 @@ msgid "CREATE_AWARDS_9"
 msgstr "Definire Rewards Scala"
 
 msgid "CREATE_AWARDS_10"
-msgstr "Anche se Groofi anche sostenere progetti di beneficenza, ci concentriamo sullo scambio che sono un mix di commercio e patronato, ed i numeri lo confermano. E 'importante dare enfasi a piccoli premi per gli sponsor individuali o piccoli - e anche i più grandi ricompense tampaño, e di attirare potenziali grandi sponsor."
+msgstr "Anche se Groofi anche sostenere progetti di beneficenza, ci concentriamo sullo scambio che sono un mix di commercio e patronato, ed i numeri lo confermano. E `importante dare enfasi a piccoli premi per gli sponsor individuali o piccoli - e anche i più grandi ricompense tampaño, e di attirare potenziali grandi sponsor."
 
 msgid "CREATE_AWARDS_11"
-msgstr "Quindi, ciò che funziona? Deve essere affrontato da due diverse angolazioni, ma la cosa importante è sempre offrendo qualcosa di valore. Nel caso delle ricompense per sponsor singoli, il valore è definito da molto più del "prezzo al dettaglio" di un prodotto. Se qualcosa è in edizione limitata, ed è un'esperienza unica, vi è una maggiore flessibilità in base al pubblico. Ma se la ricompensa è un manufatto, allora è una buona idea di stare un po 'al di sotto del prezzo che avrebbe avuto sulla strada. D'altra parte, quando si definiscono le ricompense per i grandi sponsor di mercato aziendali pensare a che tipo di promozione che possiamo offrire ad una società, che sarebbe interessante per un marketing manager - in pratica dobbiamo vedere in che modo il nostro progetto può essere un potenziale veicolo per la promozione, posizionamento, e la commercializzazione di un marchio."
+msgstr "Quindi, ciò che funziona? Deve essere affrontato da due diverse angolazioni, ma la cosa importante è sempre offrendo qualcosa di valore. Nel caso delle ricompense per sponsor singoli, il valore è definito da molto più del "prezzo al dettaglio" di un prodotto. Se qualcosa è in edizione limitata, ed è un`esperienza unica, vi è una maggiore flessibilità in base al pubblico. Ma se la ricompensa è un manufatto, allora è una buona idea di stare un po `al di sotto del prezzo che avrebbe avuto sulla strada. D`altra parte, quando si definiscono le ricompense per i grandi sponsor di mercato aziendali pensare a che tipo di promozione che possiamo offrire ad una società, che sarebbe interessante per un marketing manager - in pratica dobbiamo vedere in che modo il nostro progetto può essere un potenziale veicolo per la promozione, posizionamento, e la commercializzazione di un marchio."
 
 msgid "CREATE_AWARDS_12"
 msgstr "Nessuna bacchetta magica, e si consiglia a tutti i progetti che sono il più creativo e fedeli a se stessi. E cuesitón a prendere il posto dello sponsor: sareste disposti a pagare per i premi che offrono? La risposta a questa domanda vi dirà molto sul potenziale del progetto."
@@ -3398,25 +3398,25 @@ msgid "SET_YOUR_GOAL"
 msgstr "Fissa il tuo traguardo"
 
 msgid "SET_YOUR_GOAL_1"
-msgstr "Groofi lavora con un modello di finanziamento "tutto o niente", in cui i progetti devono essere integralmente coperte o non cambia soldi mani. I progetti devono stabilire un obiettivo di finanziamento e un tempo per arrivarci. Non esiste una formula per determinare l'ammontare o la Mágina lunghezza perfetta. Ogni progetto è diverso, ma ci sono alcune cose da considerare."
+msgstr "Groofi lavora con un modello di finanziamento "tutto o niente", in cui i progetti devono essere integralmente coperte o non cambia soldi mani. I progetti devono stabilire un obiettivo di finanziamento e un tempo per arrivarci. Non esiste una formula per determinare l`ammontare o la Mágina lunghezza perfetta. Ogni progetto è diverso, ma ci sono alcune cose da considerare."
 
 msgid "SET_YOUR_GOAL_2"
 msgstr "Ricerca il tuo budget"
 
 msgid "SET_YOUR_GOAL_3"
-msgstr "Quando hai bisogno di soldi? Si stanno alzando l'intero bilancio, o solo alcuni? Si stanno prendendo in considerazione il costo di produzione delle ricompense in bilancio? Salva te stesso mal di testa facendo un buono studio del tuo budget, e il più trasparente possibile. I vostri sponsor vi ringrazieranno."
+msgstr "Quando hai bisogno di soldi? Si stanno alzando l`intero bilancio, o solo alcuni? Si stanno prendendo in considerazione il costo di produzione delle ricompense in bilancio? Salva te stesso mal di testa facendo un buono studio del tuo budget, e il più trasparente possibile. I vostri sponsor vi ringrazieranno."
 
 msgid "SET_YOUR_GOAL_4"
 msgstr "Ten en cuenta tus redes"
 
 msgid "SET_YOUR_GOAL_5"
-msgstr "Groofi non una fonte magica di denaro. I finanziamenti provengono da una varietà di posti - il tuo pubblico, i tuoi amici e la famiglia, le reti sociali più ampi, e se il progetto avrà successo, l'ignoto web. E 'vostra responsabilità di creare una tale unità al progetto. "
+msgstr "Groofi non una fonte magica di denaro. I finanziamenti provengono da una varietà di posti - il tuo pubblico, i tuoi amici e la famiglia, le reti sociali più ampi, e se il progetto avrà successo, l`ignoto web. E `vostra responsabilità di creare una tale unità al progetto. "
 
 msgid "SET_YOUR_GOAL_6"
 msgstr "Scegli il tuo obiettivo"
 
 msgid "SET_YOUR_GOAL_7"
-msgstr "Una volta che il vostro budget studiato e considerato la punta delle dita, si è pronti per impostare il tuo obiettivo di finanziamento. Dal momento che il sistema è "tutto-o-niente", si può sempre alzare oltre l'obiettivo definito, ma mai di meno. Calcolare quanti soldi avete bisogno per completare il vostro progetto (ovviamente tenendo conto di quanti soldi si può generare), e selezionare un importo vicino a quello."
+msgstr "Una volta che il vostro budget studiato e considerato la punta delle dita, si è pronti per impostare il tuo obiettivo di finanziamento. Dal momento che il sistema è "tutto-o-niente", si può sempre alzare oltre l`obiettivo definito, ma mai di meno. Calcolare quanti soldi avete bisogno per completare il vostro progetto (ovviamente tenendo conto di quanti soldi si può generare), e selezionare un importo vicino a quello."
 
 msgid "SET_YOUR_GOAL_8"
 msgstr "Definire la scadenza del progetto"
@@ -3434,13 +3434,13 @@ msgid "MAKING_YOUR_VIDEO"
 msgstr "Rendere il tuo video"
 
 msgid "MAKING_YOUR_VIDEO_1"
-msgstr "Se siete come noi, la prima cosa da fare quando si entra in un progetto è per vedere il video. Un video è di gran lunga il modo migliore per avere un'idea delle emozioni, motivazioni, e il carattere del progetto. Essa mostra sforzo e un buon predittore di successo. I progetti includono un video è molto più probabile per ottenere i finanziamenti che non lo fanno."
+msgstr "Se siete come noi, la prima cosa da fare quando si entra in un progetto è per vedere il video. Un video è di gran lunga il modo migliore per avere un`idea delle emozioni, motivazioni, e il carattere del progetto. Essa mostra sforzo e un buon predittore di successo. I progetti includono un video è molto più probabile per ottenere i finanziamenti che non lo fanno."
 
 msgid "MAKING_YOUR_VIDEO_2"
-msgstr "Sappiamo che per fare un video può essere intimidatorio. A non molti di noi piace essere di fronte a una telecamera. D'altra parte, sappiamo anche che per fare un video è davvero una sfida vale la pena prendere. Questo trasmette che il vostro progetto vi preoccupate abbastanza per esporre. Si tratta di un piccolo rischio con grande ricompensa."
+msgstr "Sappiamo che per fare un video può essere intimidatorio. A non molti di noi piace essere di fronte a una telecamera. D`altra parte, sappiamo anche che per fare un video è davvero una sfida vale la pena prendere. Questo trasmette che il vostro progetto vi preoccupate abbastanza per esporre. Si tratta di un piccolo rischio con grande ricompensa."
 
 msgid "MAKING_YOUR_VIDEO_3"
-msgstr "Con solo un computer e l'entusiasmo è sufficiente. Alcuni sono montaggi video di grandi dimensioni e altri includono prende lungo ed epico, ma la maggior parte dei video sono solo qualcuno raccontare la sua storia sulla macchina fotografica. È possibile trascorrere giornate registrazione e l'editing, o semplicemente liquidare con un paio di amici, in un pomeriggio di Sabato. Esso non deve essere perfetto, è necessario comunicare a voi."
+msgstr "Con solo un computer e l`entusiasmo è sufficiente. Alcuni sono montaggi video di grandi dimensioni e altri includono prende lungo ed epico, ma la maggior parte dei video sono solo qualcuno raccontare la sua storia sulla macchina fotografica. È possibile trascorrere giornate registrazione e l`editing, o semplicemente liquidare con un paio di amici, in un pomeriggio di Sabato. Esso non deve essere perfetto, è necessario comunicare a voi."
 
 msgid "MAKING_YOUR_VIDEO_4"
 msgstr "Non importa quanto creativa o semplice per rendere il vostro video, è importante:"
@@ -3449,7 +3449,7 @@ msgid "MAKING_YOUR_VIDEO_5"
 msgstr "Dillo a chi sei"
 
 msgid "MAKING_YOUR_VIDEO_6"
-msgstr "Narra la storia che sta dietro il progetto. Come è nata l'idea? A che punto? Come ti senti per il progetto?"
+msgstr "Narra la storia che sta dietro il progetto. Come è nata l`idea? A che punto? Come ti senti per il progetto?"
 
 msgid "MAKING_YOUR_VIDEO_7"
 msgstr "Chiedere il sostegno di persone, spiegando perché ne hai bisogno, e quello che stai facendo con i soldi"
@@ -3485,22 +3485,22 @@ msgid "ARM_YOUR_PROJECT_3"
 msgstr "Il titolo del progetto Groofi per essere semplice, specifico e memorabile, e dovrebbe includere il titolo del progetto creativo per il quale i fondi vengono sollevate. Immaginate questo titolo come qualcosa che si differenziano dagli altri - un titolo come "Il mio nuovo album" non è memorabile o interessante come "The Band Deluxor registrato il suo album di debutto tutto o niente"."
 
 msgid "ARM_YOUR_PROJECT_4"
-msgstr "Scegli l'immagine principale del progetto"
+msgstr "Scegli l`immagine principale del progetto"
 
 msgid "ARM_YOUR_PROJECT_5"
-msgstr "L'immagine selezionata rappresenterà il progetto in Groofi e internet in tutto. Scegli qualcosa che il gioco di limitare i vostri obiettivi e di essere sexy!"
+msgstr "L`immagine selezionata rappresenterà il progetto in Groofi e internet in tutto. Scegli qualcosa che il gioco di limitare i vostri obiettivi e di essere sexy!"
 
 msgid "ARM_YOUR_PROJECT_6"
 msgstr "Scrivere una descrizione breve"
 
 msgid "ARM_YOUR_PROJECT_7"
-msgstr "La breve descrizione appare l'elenco dei progetti, ed è il modo migliore per comunicare al pubblico ciò che il vostro progetto è di circa. Devi rimanere concentrato e essere chiari su ciò che il progetto si propone di realizzare. Se dovessi descrivere il tuo progetto in un tweet, come faresti?"
+msgstr "La breve descrizione appare l`elenco dei progetti, ed è il modo migliore per comunicare al pubblico ciò che il vostro progetto è di circa. Devi rimanere concentrato e essere chiari su ciò che il progetto si propone di realizzare. Se dovessi descrivere il tuo progetto in un tweet, come faresti?"
 
 msgid "ARM_YOUR_PROJECT_8"
 msgstr "Scrivi una biografia"
 
 msgid "ARM_YOUR_PROJECT_9"
-msgstr "Il bio è un'ottima occasione per condividere più su di te. Perché la prescelta per realizzare questo progetto? Alcuni lavori precedenti che è possibile condividere con i tuoi potenziali sponsor? Questa è la chiave per vincere la vostra fiducia."
+msgstr "Il bio è un`ottima occasione per condividere più su di te. Perché la prescelta per realizzare questo progetto? Alcuni lavori precedenti che è possibile condividere con i tuoi potenziali sponsor? Questa è la chiave per vincere la vostra fiducia."
 
 msgid "PROMOTING_YOUR_PROJECT"
 msgstr "Promozione del progetto"
@@ -3515,13 +3515,13 @@ msgid "PROMOTING_YOUR_PROJECT_3"
 msgstr "Campo di applicazione intelligente"
 
 msgid "PROMOTING_YOUR_PROJECT_4"
-msgstr "Un bel messaggio, e il personale è il modo più efficace per far sapere a qualcuno del vostro progetto. Inviare una e-mail ai tuoi amici e parenti in modo che possano essere il primo a sostenervi, e quindi utilizzare il blog, Facebook, Twitter, e altri per attirare l'attenzione in tutto il mondo. Nel corso del progetto, torna alle tue cerchie stretto contatto con loro e condividere la vostra iniziativa."
+msgstr "Un bel messaggio, e il personale è il modo più efficace per far sapere a qualcuno del vostro progetto. Inviare una e-mail ai tuoi amici e parenti in modo che possano essere il primo a sostenervi, e quindi utilizzare il blog, Facebook, Twitter, e altri per attirare l`attenzione in tutto il mondo. Nel corso del progetto, torna alle tue cerchie stretto contatto con loro e condividere la vostra iniziativa."
 
 msgid "PROMOTING_YOUR_PROJECT_5"
 msgstr "organizzare incontri"
 
 msgid "PROMOTING_YOUR_PROJECT_6"
-msgstr "Non abbiate paura di prendere il vostro progetto Groofi il mondo reale. Nulla si collega più persone con l'idea di fare che brillano nei tuoi occhi quando parli del tuo progetto. Organizzare feste, manifesti stampati o volantini da distribuire nella vostra comunità, e organizza incontri per educare le persone circa i dettagli del vostro progetto. Siate creativi!"
+msgstr "Non abbiate paura di prendere il vostro progetto Groofi il mondo reale. Nulla si collega più persone con l`idea di fare che brillano nei tuoi occhi quando parli del tuo progetto. Organizzare feste, manifesti stampati o volantini da distribuire nella vostra comunità, e organizza incontri per educare le persone circa i dettagli del vostro progetto. Siate creativi!"
 
 msgid "PROMOTING_YOUR_PROJECT_7"
 msgstr "Arrestare la stampa!"
@@ -3575,13 +3575,13 @@ msgid "COMPLY_WITH_REWARDS_4"
 msgstr "Piano"
 
 msgid "COMPLY_WITH_REWARDS_5"
-msgstr "Non dimenticare tutti i costi connessi con l'invio di piccole ricompense dalle scatole, buste, nastri, etichette, fino al più costi ... "Emotional" ... a dover riempire 100 moduli di posta. E 'anche importante chiarire nel progetto se il costo di invio dei premi andrà per il progetto dallo sviluppatore, o sponsor."
+msgstr "Non dimenticare tutti i costi connessi con l`invio di piccole ricompense dalle scatole, buste, nastri, etichette, fino al più costi ... "Emotional" ... a dover riempire 100 moduli di posta. E `anche importante chiarire nel progetto se il costo di invio dei premi andrà per il progetto dallo sviluppatore, o sponsor."
 
 msgid "COMPLY_WITH_REWARDS_6"
 msgstr "Comunicazione!"
 
 msgid "COMPLY_WITH_REWARDS_7"
-msgstr "L'attuazione del progetto non può essere il più poetico di esso, ma è importante perché significa consegnare il progetto nelle mani dei vostri sponsor. Per scattare le foto del processo di confezionamento dei premi - che noi tutti amiamo le foto! -. Condividere le storie dell'orrore di trattare con la posta. Chiedete ai vostri sponsor vi comunicheremo quando si riceve il pacchetto. Invita i tuoi amici per un paio di drink e vini nastratrici pacchetti. Apprezzate ciò che sono gli ultimi momenti della prima fase della vita del vostro progetto!"
+msgstr "L`attuazione del progetto non può essere il più poetico di esso, ma è importante perché significa consegnare il progetto nelle mani dei vostri sponsor. Per scattare le foto del processo di confezionamento dei premi - che noi tutti amiamo le foto! -. Condividere le storie dell`orrore di trattare con la posta. Chiedete ai vostri sponsor vi comunicheremo quando si riceve il pacchetto. Invita i tuoi amici per un paio di drink e vini nastratrici pacchetti. Apprezzate ciò che sono gli ultimi momenti della prima fase della vita del vostro progetto!"
 
 msgid "DELETE"
 msgstr "Cancellare"
@@ -3596,244 +3596,229 @@ msgid "COMOFUNCIONA1_1"
 msgstr "a prendere forma"
 
 msgid "COMOFUNCIONA1_2"
-msgstr "Con la pubblicazione di un Groofi progetto,"
+msgstr "Con la pubblicazione di un progetto Groofi ,"
 
 msgid "COMOFUNCIONA1_3"
-msgstr "proprietari possono finanziare progetti di"
+msgstr " i proprietari possono finanziare in maniera"
 
 msgid "COMOFUNCIONA1_4"
-msgstr "In alternativa i vostri progetti e idee attraverso"
+msgstr "alternativa i loro progetti e idee attraverso"
 
 msgid "COMOFUNCIONA1_5"
-msgstr "la pre-vendita di prodotti e / o servizi"
+msgstr "la prevendita di prodotti e/o servizi"
 
 msgid "COMOFUNCIONA1_6"
-msgstr "in programma di sviluppare, e quindi farne una realtà."
+msgstr "che vogliono sviluppare, e così farli diventare realtà."
 
 msgid "COMOFUNCIONA2"
 msgstr ""Crowdfunding""
 
 msgid "COMOFUNCIONA2_1"
-msgstr "o finanziamento congiunto"
+msgstr "o finanziamento collettivo"
 
 msgid "COMOFUNCIONA2_2"
-msgstr "I finanziamenti si ottiene la somma di"
+msgstr "Il finanziamento si raggiunge attraverso"
 
 msgid "COMOFUNCIONA2_3"
-msgstr "mini-borse di denaro (o non tanto :))"
+msgstr "mini donazioni di denaro (o non tanto :))"
 
 msgid "COMOFUNCIONA2_4"
-msgstr "da sponsor più"
+msgstr "provenienti da diversi sponsor di"
 
 msgid "COMOFUNCIONA2_5"
 msgstr "ogni progetto, e in cambio di quei contributi"
 
 msgid "COMOFUNCIONA2_6"
-msgstr "ricevere denaro esclusivo benefici."
+msgstr "di denaro ricevono premi esclusivi."
 
 msgid "COMOFUNCIONA3"
 msgstr "Ogni contributo"
 
 msgid "COMOFUNCIONA3_1"
-msgstr "ha beneficio"
+msgstr "ha un premio"
 
 msgid "COMOFUNCIONA3_2"
-msgstr "Le persone generalmente sarà"
+msgstr "Solitamente le persone sono"
 
 msgid "COMOFUNCIONA3_3"
-msgstr "per lo più interessati a ricevere in cambio"
+msgstr "maggiormente interessate a ricevere in cambio"
 
 msgid "COMOFUNCIONA3_4"
 msgstr "cose, servizi o prodotti. Quindi è molto"
 
 msgid "COMOFUNCIONA3_5"
-msgstr "importante cuando se definen los beneficios que"
+msgstr "importante quando si scelgono i premi,"
 
 msgid "COMOFUNCIONA3_6"
-msgstr "ritiene che la persona che è il vostro mercato ben "
-
-msgid "COMOFUNCIONA3_7"
-msgstr "e definire i benefici potenziali"
-
-msgid "COMOFUNCIONA3_8"
-msgstr "offrire in cambio di ogni livello di contributi"
+msgstr "valutare bene quale é il mercato potenziale."
 
 msgid "BE_GROOFI_SPONSOR"
-msgstr "E'Sponsor Groofi"
+msgstr "Diventa Sponsor di Groofi"
 
 msgid "BUSISSNES"
 msgstr "AZIENDE"
 
 msgid "CURADORAS"
-msgstr "CURATORI"
+msgstr "PARTNERS"
 
 msgid "USERS_FORGOT_PASSWORD"
 msgstr "Hai dimenticato la password"
 
 msgid "COMOFUNCIONA4"
-msgstr "Aziende"
+msgstr "Le imprese"
 
 msgid "COMOFUNCIONA4_1"
-msgstr "anche partecipare"
+msgstr "pure partecipano"
 
 msgid "COMOFUNCIONA4_2"
-msgstr "Gli sponsor possono essere soggetti a Groofi"
+msgstr "Gli sponsor possono essere persone"
 
 msgid "COMOFUNCIONA4_3"
-msgstr "o aziende. Aziende in generale sarà"
+msgstr "o imprese. Le imprese solitamente sono"
 
 msgid "COMOFUNCIONA4_4"
-msgstr "essere interessato a pubblicizzare un marchio"
+msgstr "interessate alla pubblicità di un marchio"
 
 msgid "COMOFUNCIONA4_5"
-msgstr "specifica di un prodotto o di un servizio o di branding"
+msgstr "specifico di un prodotto, di un servizio o di branding"
 
 msgid "COMOFUNCIONA4_6"
-msgstr "aziendale. Essi possono anche generare un"
+msgstr "corporativo. Queste possono anche generare"
 
 msgid "COMOFUNCIONA4_7"
-msgstr "offrire e sfidare la comunità a Groofi"
+msgstr "un'offerta e sfidare la comunità di Groofi"
 
 msgid "COMOFUNCIONA4_8"
-msgstr "fare un po 'di progetto in cambio di denaro."
+msgstr "a realizare un  progetto in cambio di denaro."
 
 msgid "COMOFUNCIONA5"
-msgstr "Pubblica un progetto"
+msgstr "Pubblicare un progetto"
 
 msgid "COMOFUNCIONA5_1"
-msgstr "è gratuito"
+msgstr "è gratuito!"
 
 msgid "COMOFUNCIONA5_2"
-msgstr "Groofi trattiene una commissione sull'importo"
+msgstr "Groofi trattiene una commissione sull`importo"
 
 msgid "COMOFUNCIONA5_3"
-msgstr "raccolti solo per i progetti di successo. No"
+msgstr "raccolto solo per i progetti finanziati con"
 
 msgid "COMOFUNCIONA5_4"
-msgstr "pagare la commissione su tali progetti"
+msgstr "successo. Non si paga commissione su quei progetti"
 
 msgid "COMOFUNCIONA5_5"
-msgstr "non raggiungere il loro obiettivo. La commissione è"
+msgstr "che non raggiungono il loro obiettivo. La commissione"
 
 msgid "COMOFUNCIONA5_6"
-msgstr "5,99% (IVA inclusa) in tutti i paesi"
-
-msgid "COMOFUNCIONA5_7"
-msgstr "America Latina e Spagna"
+msgstr "é 5,99% (IVA inclusa)"
 
 msgid "COMOFUNCIONA6"
 msgstr "Groofi è sicuro e affidabile"
 
 msgid "COMOFUNCIONA6_1"
-msgstr "Contributi può essere effettuato in vari"
+msgstr "I contributi si possono effettuare utilizzando"
 
 msgid "COMOFUNCIONA6_2"
-msgstr "monete, a seconda di come è stato creato il progetto."
+msgstr "il sistema di pagamento online PAYPAL."
 
 msgid "COMOFUNCIONA6_3"
-msgstr "Nel caso in cui non si arriva a raccogliere fondi"
+msgstr "Nel caso in cui non si arriva a raccogliere i fondi"
 
 msgid "COMOFUNCIONA6_4"
-msgstr "necessario, Groofi restituisce i soldi al"
+msgstr "necessari, Groofi restituisce i soldi agli"
 
 msgid "COMOFUNCIONA6_5"
-msgstr "sponsor perché non è stato messo insieme il"
+msgstr "sponsor. In entrambi i casi le operazioni "
 
 msgid "COMOFUNCIONA6_6"
-msgstr "soldi per fare lo stesso."
+msgstr "sono garantite da PAYPAL, che trattiene le sue"
 
 msgid "COMOFUNCIONA6_7"
-msgstr "In entrambi i casi le operazioni sono garantite"
-
-msgid "COMOFUNCIONA6_8"
-msgstr "Pagamento con Paypal o di mercato, che impone le sue spese"
-
-msgid "COMOFUNCIONA6_9"
-msgstr "de transazione per rendere"
+msgstr "corrispondenti commissioni.
 
 msgid "DISCOVER"
 msgstr "Trova il progetto"
 
 msgid "DISCOVER1_1"
-msgstr "si identifica"
+msgstr "che ti identifica"
 
 msgid "DISCOVER1_2"
-msgstr "Supporta idee innovative, aiutando i nuovi"
+msgstr "Appoggia idee innovative, aiuta nuovi"
 
 msgid "DISCOVER1_3"
-msgstr "imprenditori, artisti di talento e creatori"
+msgstr "imprenditori, artisti con talento e creatori"
 
 msgid "DISCOVER1_4"
 msgstr "che vanno alla ricerca dei loro sogni."
 
 msgid "DISCOVER2"
-msgstr "Decidere quale importo"
+msgstr "Decidi la quantità"
 
 msgid "DISCOVER2_1"
-msgstr "fornire"
+msgstr "che vuoi investire"
 
 msgid "DISCOVER2_2"
-msgstr "Con lo sviluppo il contributo del suo scommesse"
+msgstr "Con il tuo investimento scommetti su un`idea"
 
 msgid "DISCOVER2_3"
-msgstr "indipendente e diventare il suo produttore,"
+msgstr "indipendente e diventi il suo produttore,"
 
 msgid "DISCOVER2_4"
-msgstr "rendendo il progetto"
+msgstr "aiutando il progetto"
 
 msgid "DISCOVER2_5"
-msgstr "renderlo reale."
+msgstr "a renderlo realtà."
 
 msgid "DISCOVER3"
-msgstr "L'accesso alle prestazioni"
+msgstr "Accedi ai premi del"
 
 msgid "DISCOVER3_1"
 msgstr "progetto"
 
 msgid "DISCOVER3_2"
-msgstr "Esclusivamente. Prendi qualcosa che non ha"
+msgstr "Ricevi qualcosa che non esiste"
 
 msgid "DISCOVER3_3"
-msgstr "sul mercato prima di chiunque altro, o qualcosa del genere"
+msgstr "sul mercato prima di chiunque altro, o altri"
 
 msgid "DISCOVER3_4"
-msgstr "esiste, ma ad un prezzo inferiore"
+msgstr "prodotti esistenti, ad un prezzo inferiore"
 
 msgid "CREATE_PROJECT1"
-msgstr "El'offerta pubblica gratuita"
+msgstr "Proponi e pubblica gratis"
 
 msgid "CREATE_PROJECT1_1"
-msgstr "il progetto"
+msgstr "il tuo progetto"
 
 msgid "CREATE_PROJECT1_2"
-msgstr "Siete voi a decidere certa quantità di denaro raccolto in"
+msgstr "Decidi quanto denaro raccogliere in"
 
 msgid "CREATE_PROJECT1_3"
-msgstr "un dato tempo. In offerta pubblica di scambio"
+msgstr "un determinato periodo. In cambio offri premi"
 
 msgid "CREATE_PROJECT1_4"
-msgstr "vantaggi per gli sponsor, che le"
+msgstr "per gli sponsor, che gli"
 
 msgid "CREATE_PROJECT1_5"
-msgstr "Recenti li libererà una volta che hai raccolto"
+msgstr "darai appena avrai raccolto"
 
 msgid "CREATE_PROJECT1_6"
-msgstr "denaro e si può fare lo stesso."
+msgstr "il denaro e potrai realizzare il tuo progetto."
 
 msgid "CREATE_PROJECT2"
-msgstr "Stendere il progetto e raccoglie"
+msgstr "Condividi il progetto e raccogli"
 
 msgid "CREATE_PROJECT2_1"
-msgstr "necessario Fondi"
+msgstr "i fondi necessari"
 
 msgid "CREATE_PROJECT2_2"
-msgstr "Se si riesce a finire il termine raise all"
+msgstr "Se al termine del periodo hai raccolto tutti"
 
 msgid "CREATE_PROJECT2_3"
-msgstr "fondi (o più) per rendere il"
+msgstr "i fondi (o di più) per fare il"
 
 msgid "CREATE_PROJECT2_4"
-msgstr "progetto Groofi si accende il denaro raccolto,"
+msgstr "progetto, Groofi ti gira il denaro raccolto,"
 
 msgid "CREATE_PROJECT2_5"
 msgstr "meno la nostra commissione."
@@ -3842,31 +3827,31 @@ msgid "CREATE_PROJECT3"
 msgstr "Groofi è sicuro e affidabile"
 
 msgid "CREATE_PROJECT3_1"
-msgstr "Nel caso in cui non si arriva a raccogliere fondi"
+msgstr "Nel caso in cui non si arriva a raccogliere i fondi"
 
 msgid "CREATE_PROJECT3_2"
-msgstr "necessario, Groofi restituisce i soldi al"
+msgstr "necessari, Groofi restituisce i soldi agli"
 
 msgid "CREATE_PROJECT3_3"
-msgstr "sponsor consegnare senza"
+msgstr "sponsor senza dover consegnare"
 
 msgid "CREATE_PROJECT3_4"
-msgstr "promesso benefici. In entrambi i casi l'"
+msgstr "i premi promessi. In entrambi i casi"
 
 msgid "CREATE_PROJECT3_5"
-msgstr "Le operazioni sono garantiti da Paypal, che"
+msgstr "le operazioni sono garantite da Paypal, che"
 
 msgid "CREATE_PROJECT3_6"
-msgstr "le vostre tasse a carico fare."
+msgstr "trattiene le sue commissioni."
 
 msgid "FINANCE_YOUR_THOUGHTS"
-msgstr "Finanzia le tu idee"
+msgstr "Finanzia le tue idee"
 
 msgid "SEE_SUCCESFUL_CASES"
-msgstr "Vedere le nostre storie di successo!"
+msgstr "Guarda le nostre storie di successo!"
 
 msgid "SEE_SUCCESFUL_CASES1"
-msgstr "¿Hai bisogno di ispirazione?"
+msgstr "Hai bisogno di ispirazione?"
 
 msgid "SEE_SUCCESFUL_CASES1_1"
 msgstr "Hai ancora dei dubbi?"
@@ -3878,16 +3863,16 @@ msgid "PROYECTOS_PRIVADOS1"
 msgstr "Progetti Privati"
 
 msgid "PROYECTOS_PRIVADOS2"
-msgstr "Selezionando questa opzione su "Pubblico", il progetto verrà visualizzato"
+msgstr "Selezionando la opzione "Pubblico", il progetto verrà visualizzato"
 
 msgid "PROYECTOS_PRIVADOS3"
-msgstr "l'intera comunità di Groofi. Ma se si seleziona"
+msgstr "dall`intera comunità di Groofi. Selezionando"
 
 msgid "PROYECTOS_PRIVADOS4"
-msgstr ""Privato", avrà una visione ristretta"
+msgstr ""Privato", la sua visualizzazione sarà riservata"
 
 msgid "PROYECTOS_PRIVADOS5"
-msgstr "che proveas una password"
+msgstr "a chi possiede la password di acesso"
 
 msgid "PROYECTOS_PRIVADOS6"
 msgstr "Tipo di progetto"
@@ -3902,10 +3887,10 @@ msgid "DISCOVER_PRINCIPAL"
 msgstr "SCOPRIRE"
 
 msgid "TYPE_OF_CURRENCY"
-msgstr "Cambio valute"
+msgstr "Scegli valuta"
 
 msgid "TYPE_OF_CURRENCY_1"
-msgstr "Scegliere la valuta in cui gestire il vostro progetto ed essere mostrate pubblicamente."
+msgstr "Scegliere la valuta in cui si gestisce il progetto ed essere visualizzati pubblicamente."
 
 msgid "TYPE_OF_CURRENCY_US"
 msgstr "USD - Dollari USA"
@@ -3932,7 +3917,7 @@ msgid "CATEGORY_OF PROJECT %s"
 msgstr "Categoria di progetto"
 
 msgid "IF_YOU_STAY_UP_TO DATE"
-msgstr "Se vuoi essere"
+msgstr "Se vuoi rimaere aggiornato"
 
 msgid "SPACE_FOR"
 msgstr "SPAZIO PER"
@@ -3953,238 +3938,235 @@ msgid "CHOICE_YOUR_COUNTRY"
 msgstr "Seleziona il tuo paese di origine"
 
 msgid "INGRE"
-msgstr "Inseriti"
+msgstr "Inserito da: "
 
 msgid "Res"
-msgstr "caratteri. Di"
+msgstr " caratteri. Rimangono:"
 
 msgid "Carac"
-msgstr " rimanenti"
-
-msgid "Carac1"
-msgstr " "
+msgstr " caratteri"
 
 msgid "Res1"
-msgstr "Caratteri Rimanenti: "
+msgstr "Rimangono: "
 
 msgid "Personas_patro"
-msgstr "SPONSOR GLI INDIVIDUI O PICCOLI"
+msgstr "PERSONE O PICCOLI SPONSOR"
 
 msgid "Personas_patro_gran"
-msgstr "GRANDI IMPRESE O SPONSOR"
+msgstr "IMPRESE O GRANDI SPONSOR"
 
 msgid "PROCESO_MERCADO_PAGO"
 msgstr "Mercato continua a pagare processo"
 
 msgid "TERMINOS_DE_USO_0"
-msgstr "IMPORTANTE:"
+msgstr "IMPORTANT:"
 
 msgid "TERMINOS_DE_USO_1"
-msgstr "Questo è un avviso legale si applica a tutti i contenuti del sito web con il nome di dominio www.groofi.com (sito web) e tutta la posta elettronica la corrispondenza inviata. Si prega di leggere attentamente i termini prima di utilizzare il sito web. Usando il sito si accettano questi termini, indipendentemente dal fatto che o non si sceglie di registrare con noi. Se non si accettano questi termini, non utilizzare il sito web. Il presente avviso è emesso da Groofi Limited (società)."
+msgstr "This is a legal notice applies to the entire contents of the website with the domain name www.groofi.com (website) and all email correspondence sent. Please read these terms carefully before using the Website. By using the website you accept these terms regardless of whether or not you choose to register with us. If you do not accept these terms, do not use the Website. This notice is issued by Groofi Limited (Company)."
 
 msgid "TERMINOS_DE_USO_2"
-msgstr "1. INTRODUZIONE "
+msgstr "1. INTRODUCTION"
 
 msgid "TERMINOS_DE_USO_3"
-msgstr "1.1 È possibile accedere alla maggior parte del sito web, senza registrazione dei dati con noi. Alcune aree del sito sono aperti solo a chiunque registri."
+msgstr "1.1 You can access most of the website without registering your details with us. Certain areas of the Website are only open to anyone who registers."
 
 msgid "TERMINOS_DE_USO_4"
-msgstr "1.2 Con l'accesso a qualsiasi parte del sito sarà considerato aver accettato questa nota legale in pieno. Se non si accetta questa nota legale per intero, è necessario lasciare immediatamente il sito."
+msgstr "1.2 In accessing any part of the Website shall be deemed to have accepted this legal notice in full. If you do not accept this legal notice in full, you must leave the website immediately."
 
 msgid "TERMINOS_DE_USO_5"
-msgstr "1.3 La Società potrà rivedere legali in qualsiasi momento aggiornando questa pubblicazione. Si dovrebbe controllare il sito web ogni volta che si utilizza di rivedere l'avviso legale corrente al momento, perché è vincolante per voi. Alcune disposizioni del presente avviso legale possono essere sostituiti da notifiche legali espressamente designate o da condizioni consultabili in pagine specifiche del sito."
+msgstr "1.3 The Company may revise this legal notice at any time by updating this posting. You should check the website each time you use it to review the current legal notice at that time, as it is mandatory for you. Certain provisions of this legal notice may be superseded by expressly designated legal notices or terms located on particular pages at the website."
 
 msgid "TERMINOS_DE_USO_6"
-msgstr "2. TERMINI DI SERVIZIO"
+msgstr "2. TERMS OF SERVICE"
 
 msgid "TERMINOS_DE_USO_7"
-msgstr "2.1 Questo sito internet è destinato esclusivamente per gli utenti che sono diciotto (18) anni di età o più, e ogni registrazione, l'utilizzo o l'accesso al Sito Web da chiunque sotto i 18 anni non è autorizzato, e la violazione è una violazione di questo accordo. La Società può chiudere l'account, cancellare qualsiasi contenuto o informazione avete pubblicato sul sito web e / o vietare l'uso o l'accesso al Sito (o qualsiasi parte, aspetto o funzione del Sito), per qualsiasi motivo, in qualsiasi momento, a sua esclusiva discrezione, con o senza preavviso, se credete che hai meno di 18 anni. Se hai meno di 18 anni di età, è possibile utilizzare il sito Web se si ha il consenso dei loro genitori o tutori, e sono pienamente in grado ed a stipulare i termini, le condizioni, gli obblighi, affermazioni, dichiarazioni e garanzie di cui al presente accordo e di attenersi e conformarsi alla presente Contratto."
+msgstr "2.1 This website is intended solely for users who are eighteen (18) years of age or older, and any registration, use or access to the Web Site by anyone under 18 is unauthorized, and breaching it is a violation of this agreement . The Company may terminate your account, delete any content or information you have posted on the website and / or prohibit the use or access to the Website (or any portion, aspect or feature of the Site) for any reason, at any time in its sole discretion, with or without notice, if you believe that you are under 18. If you are under 18 years of age, you can use the Web site if you have the consent of their parents or guardians, and are fully able and competent to enter into the terms, conditions, obligations, affirmations, representations and warranties set forth in this Agreement and to abide by and comply with this Agreement."
 
 msgid "TERMINOS_DE_USO_8"
-msgstr "3. LICENZA "
+msgstr "3. LICENSE "
 
 msgid "TERMINOS_DE_USO_9"
-msgstr "3.1 È consentito stampare e scaricare i file dal sito web per uso personale in questo modo, se;"
+msgstr "3.1 allows you to print and download files from the website for your own use as follows, if;"
 
 msgid "TERMINOS_DE_USO_10"
-msgstr "(A) nessun documento o della relativa grafica contenuti nel sito sono modificati in alcun modo;"
+msgstr "(A) no documents or related graphics on the website are modified in any way;"
 
 msgid "TERMINOS_DE_USO_11"
-msgstr "(B) la grafica sul sito web sono utilizzati separatamente dal testo corrispondente, e"
+msgstr "(B) no graphics on the Website are used separately from the corresponding text, and"
 
 msgid "TERMINOS_DE_USO_12"
-msgstr "(C) copyright della Società e comunicazione di marca e questo permesso appaiano in tutte le copie."
+msgstr "(C) copyright of the Company and brand communications and this permission notice appear in all copies."
 
 msgid "TERMINOS_DE_USO_13"
-msgstr "3.2 Se non diversamente indicato, il copyright e altri diritti di proprietà intellettuale in tutto il materiale sul sito (compresi, senza limitazioni, fotografie ed immagini grafiche) sono di proprietà della Società o dei suoi licenziatari. Ai fini del presente avviso legale, qualsiasi utilizzo di file di pagina web non in conformità con la clausola 2.1 per qualsiasi scopo. In caso di violazione dei termini di questa nota legale, il permesso di utilizzare il Sito termina automaticamente e si deve immediatamente distruggere qualsiasi sito web arhcivo scaricato o stampato."
+msgstr "3.2 Unless otherwise stated, the copyright and other intellectual property rights in all material on the Website (including without limitation photographs and graphical images) are owned by the Company or its licensors. For the purposes of this legal notice, any use of the website files other than in accordance with clause 2.1 for any purpose. If you breach any of the terms of this legal notice, your permission to use the Website automatically terminates and you must immediately destroy any downloaded or printed arhcivo website."
 
 msgid "TERMINOS_DE_USO_14"
-msgstr "3.3 Tutti i diritti non espressamente concessi in questi termini sono riservati. "
+msgstr "3.3 The rights not expressly granted in these terms are reserved."
 
 msgid "TERMINOS_DE_USO_15"
-msgstr "4. SERVIZIO DI ACCESSO "
+msgstr "4. ACCESS SERVICE"
 
 msgid "TERMINOS_DE_USO_16"
-msgstr "4.1 Mentre la società si impegna a garantire che il sito web è disponibile 24 ore al giorno, la Società non sarà responsabile se, per qualsiasi motivo, il sito è disponibile in qualsiasi momento o per qualsiasi periodo. "
+msgstr "4.1 While the Company endeavors to ensure that the website is available 24 hours a day, the Company will not be liable if for any reason the website is unavailable at any time or for any period."
 
 msgid "TERMINOS_DE_USO_17"
-msgstr "4.2 L'accesso al sito web può essere sospeso temporaneamente e senza preavviso in caso di guasto del sistema, manutenzione, riparazioni o per ragioni al di fuori del controllo della Società. "
+msgstr "4.2 Access to the Website may be suspended temporarily and without notice in the event of system failure, maintenance or repair or for reasons beyond the control of the Company."
 
 msgid "TERMINOS_DE_USO_18"
-msgstr "5. INFORMAZIONI E DI SVOLGERE"
+msgstr "5. INFORMATION AND CONDUCT"
 
 msgid "TERMINOS_DE_USO_19"
-msgstr "5.1. Oltre a informazioni di identificazione personale, che è coperto sotto la nostra politica sulla privacy, qualsiasi materiale trasmesso o pubblicato sul sito sarà considerato non riservato e non i loro boschetti. La Società non avrà alcun obbligo in relazione a tale materiale. La Società ei suoi designati possono liberamente copiare, divulgare, distribuire, incorporare, modificare, cancellare, riformattare, o tradurre o utilizzare tale materiale e tutti i dati, immagini, video, suoni, testo ed altre cose comprese per qualsiasi commerciale o non commerciale."
+msgstr "5.1. Besides personally identifiable information, which is covered under our Privacy Policy, any material you transmit or post to the web site will be considered non-confidential and not to your cozy property. The Company shall have no obligation with respect to such material. The Company and its designees will be free to copy, disclose, distribute, incorporate, modify, delete, reformat, or translate and otherwise use such material and all data, images, video, audio, text and other things embodied therein for any commercial or noncommercial."
 
 msgid "TERMINOS_DE_USO_20"
-msgstr "5.2 È proibito inviare o trasmettere ao dal Sito qualsiasi materiale:"
+msgstr "5.2 You are prohibited from posting or transmitting to or from the Website any material:"
 
 msgid "TERMINOS_DE_USO_21"
-msgstr "(A) che è minaccioso, diffamatorio, osceno, indecente, sedizioso, offensivo, pornografico, abusivo, atto ad incitare l'odio razziale, discriminatorio, minaccioso, scandaloso, blasfemo, in violazione della fiducia, in violazione della privacy o che possa provocare fastidio o disturbo, o"
+msgstr "(A) that is threatening, defamatory, obscene, indecent, seditious, offensive, pornographic, abusive, liable to incite racial hatred, discriminatory, menacing, scandalous, blasphemous, in breach of confidence, in violation of privacy or which may cause discomfort or inconvenience, or"
 
 msgid "TERMINOS_DE_USO_22"
-msgstr "(B) per coloro che non hanno ottenuto tutte le necessarie licenze e / o approvazioni, l'utente accetta di pagare tutti i canoni e altre somme dovute a qualsiasi persona o entità a causa della presentazione di qualsiasi utente del Servizio, o"
+msgstr "(B) for which they have not obtained all necessary licenses and / or approvals, you agree to pay all royalties and other amounts owed to any person or entity, due to the submission of any User Submissions to the Service, or"
 
 msgid "TERMINOS_DE_USO_23"
-msgstr "(C), che costituisca o incoraggi una condotta che potrebbe essere considerato un reato penale, dare luogo a responsabilità civile, o comunque in contrasto con la legge o violare i diritti di terzi, in qualsiasi paese, o"
+msgstr "(C) which constitutes or encourages conduct that would be considered a criminal offense, give rise to civil liability, or otherwise be contrary to the law or infringe the rights of third parties, in any country, or"
 
 msgid "TERMINOS_DE_USO_24"
-msgstr "(D) che è tecnicamente dannoso (inclusi, senza limitazione, virus, bombe logiche, cavalli di Troia, worm, componenti dannosi, dati corrotti o altri software dannoso o dati dannosi)."
+msgstr "(D) which is technically harmful (including, without limitation, computer viruses, logic bombs, Trojan horses, worms, harmful components, corrupted data or other malicious software or harmful data)."
 
 msgid "TERMINOS_DE_USO_25"
-msgstr "5.3 Non si può abusare del Sito (inclusi, senza limitazione, hacking)."
+msgstr "5.3 No may misuse the Website (including, without limitation, by hacking)."
 
 msgid "TERMINOS_DE_USO_26"
-msgstr "5.4 L'azienda collaborerà pienamente con qualsiasi autorità di applicazione della legge o ordinanza del tribunale richieda o Società di rivelare l'identità o localizzare chiunque pubblichi materiale in violazione della clausola 4.2 o clausola 4.3."
+msgstr "5.4 The Company will fully cooperate with any authority of law enforcement or court order requesting or directing the Company to disclose the identity or locate anyone posting any material in violation of clause 4.2 or clause 4.3."
 
 msgid "TERMINOS_DE_USO_27"
-msgstr "6. PROGETTI "
+msgstr "6. PROJECTS"
 
 msgid "TERMINOS_DE_USO_28"
-msgstr "6.1 Il sito è una piattaforma per il finanziamento collettivo. Consente agli utenti di sviluppatori di progetti ("Groofies") aggiungono un progetto per l'elenco dei progetti e di raccogliere fondi da altri utenti ("groopies"). Tutti i fondi sono raccolti da Groofi a Groofies attraverso il sistema di pagamento PayPal. Il successo di un progetto è definito come un progetto che soddisfa o supera il target di finanziamento stabilito nel progetto in tempo. Pertanto, un progetto non è successo è che non raggiunge il livello di finanziamento in tempo."
+msgstr "6.1 The website is a platform for joint financing. Allows users to project developers ("Groofies") add a project to the list of projects and raise funds from other users ("Groopies"). All funds are collected by Groofi for Groofies through PayPal payment system. The success of a project is defined as a project that meets or exceeds the funding target established in the project on time. Therefore, an unsuccessful project is one that does not reach the level of funding on time."
 
 msgid "TERMINOS_DE_USO_29"
-msgstr "6.2 Fondi impegnati per Groofies possono essere addebitati sul conto dei due modi, a seconda groopies Groofi operativamente ritenuta opportuna; 1) Immediato, oppure 2) differite;"
+msgstr "6.2 The funds committed for Groofies may be debited from the account in two ways according Groopies Groofi operatively deemed appropriate; 1) Immediate, or 2) Deferred;"
 
 msgid "TERMINOS_DE_USO_30"
-msgstr "1) IMMEDIATA essere addebitato al momento groopies sostenere il progetto."
+msgstr "1) IMMEDIATE be debited at the time Groopies support the project."
 
 msgid "TERMINOS_DE_USO_31"
-msgstr "2) Deferred: differito come viene addebitato ai Groofies tempo hanno raggiunto i loro obiettivi di finanziamento previa accettazione delle Groofies."
+msgstr "2) Deferred: Deferred as is debited at the time Groofies have reached their funding goals prior acceptance of Groopies."
 
 msgid "TERMINOS_DE_USO_32"
-msgstr "6.3  In caso di successo del progetto, i pagamenti immediata approvazione saranno eseguiti quando i groopies supporto del progetto e tutti i fondi verranno trasferiti sul conto PayPal Groofi, e solo al termine del progetto, verranno trasferiti sul conto le Groofies. Se il pagamento viene addebitato su una differita, una volta che il progetto appena successo inizierà il Groofi processo per i fondi di debito da groopies, poi trasferirlo al Groofies.En entrambe le modalità (immediata e differita), ha iniziato con Groofi processo addebita a groopies immediatamente dall'inizio della transazione."
+msgstr "6.3 In the event of a successful project, approving payments will be executed immediately upon Groopies support the project and all funds will be transferred to the PayPal account of Groofi, and only when the project ends, be transferred to the the Groofies account. If payment is debited on a deferred, once the newly successful project begins the process Groofi to debit funds from Groopies, then transfer it to the Groofies.En both modes (immediate and delayed), began with Groofi process debits to Groopies immediately from the beginning of the transaction."
 
 msgid "TERMINOS_DE_USO_33"
-msgstr "Per quanto riguarda i pagamenti, una volta che un progetto è stato completato con successo Groofi iniziò subito il processo di trasferimento di fondi per Groofies. Le Groofies diritto a ricevere denaro tramite il vostro conto Paypal o il denaro su un conto bancario in modo affidabile. Un tempo di funzionamento Groofi, tempo di funzionamento deve essere aggiunto pubblicato con il pagamento Paypal applicabile a ciascun paese e / o di compensazione volte bancari delle banche coinvolte."
+msgstr "About the payment, once a project is completed successfully Groofi immediately began the process of transferring funds to Groofies. The Groofies be eligible to receive money via your Paypal account or money to a bank account indicated in a reliable way. A Groofi operating times, operating times must be added published by Paypal payment applicable to each country and / or bank clearing times of the banks involved."
 
 msgid "TERMINOS_DE_USO_34"
-msgstr "Groofi procede trasferita al conto indicato dal Groofies meno Groofi commissioni e costi di transazione di Paypal o costi di bonifico bancario di conseguenza."
+msgstr "Groofi proceeds transferred to the account specified by Groofies less Groofi commission and transaction costs of Paypal or bank transfer costs accordingly."
 
 msgid "TERMINOS_DE_USO_35"
-msgstr "6.4 Se Groofies non raggiungere il loro obiettivo di finanziamento, nel caso di debito come 1) Immediata, i fondi saranno trasferiti di nuovo ai conti groopies fonte, al netto dei costi di funzionamento di PayPal. Nel caso di addebito in forma 2) differite, i fondi rimarranno in conti dei groopies, al netto dei costi operativi PayPal. In caso di successo del progetto, Groofi non carica le commissioni."
+msgstr "6.4 If Groofies fail its purpose of financing, in the case of debit as 1) Immediate, funds will be transferred back to the source account Groopies, less operating costs PayPal. In the case of debit fit 2) Deferred, the funds will remain in the accounts of the Groopies, less operating costs PayPal. In the event of unsuccessful project, Groofi not charge commission."
 
 msgid "TERMINOS_DE_USO_36"
-msgstr "6.5 La Società non è responsabile delle sue interazioni con le altre organizzazioni e / o singoli individui trovati su o attraverso il sito web. Questo include, ma non è limitato a, la consegna di beni e servizi, e di tutti gli altri termini, condizioni, garanzie o dichiarazioni associate con inserzioni sul sito. La Società non sorvegliare le prestazioni o la puntualità dei progetti. La Società non è responsabile di eventuali danni o perdite subite a seguito di questi negoziati. Tutti i rapporti sono esclusivamente tra voi e tali organizzazioni e / o singoli. La Società non ha l'obbligo di essere coinvolti in controversie tra groopies e Groofies, o tra i membri del sito e / o visitatori e dei terzi. In caso di controversia, si rilascia la Società, i suoi funzionari, dipendenti, agenti e successori di reclami, i danni e le esigenze di ogni tipo, conosciuti o sconosciuti, sospetta o meno, divulgato o non dichiarati, derivanti da o in alcun modo connessi a tali controversie e il nostro servizio."
+msgstr "6.5 The Company is not responsible for your interactions with other organizations and / or individuals found on or through the website. This includes, but is not limited to, the delivery of goods and services, and any other terms, conditions, warranties or representations associated with listings on the website. The Company does not oversee the performance or punctuality of projects. The Company is not responsible for any damage or loss suffered as a result of these negotiations. All relationships are solely between you and such organizations and / or individuals. The Company has no obligation to become involved in disputes between Groopies and Groofies, or between site members and / or visitors and others. In the case of a conflict, is released to the Company, its officers, employees, agents and successors from claims, demands and damages of every kind, known or unknown, suspected or unsuspected, disclosed or undisclosed, arising out of or in any way related to such disputes and our service."
 
 msgid "TERMINOS_DE_USO_37"
-msgstr "6.6 Anche se la società non è responsabile per le azioni di un Groofie, Groofies sono comunque pienamente responsabile per il rispetto degli obblighi assunti nei progetti che creano. La Società si riserva il diritto di cancellare i progetti ei pagamenti per il rimborso di tutti i membri associati "" in qualsiasi momento e per qualsiasi ragione. "Groofi si riserva il diritto di rimuovere i progetti da elenchi pubblici per qualsiasi motivo."
+msgstr "6.6 While the company is not responsible for the actions of a Groofie, however Groofies are fully responsible for the fulfillment of obligations undertaken in the projects they create. The Company reserves the right to cancel projects and payments for reimbursement of all associate members "" at any time for any reason. ""Groofi reserves the right to remove projects from public listings for any reason."
 
 msgid "TERMINOS_DE_USO_38"
-msgstr "6.7 Groofi non fornisce alcuna garanzia per le prestazioni o le funzionalità di Paypal. Inoltre, a causa di errori occasionali di alcune carte di credito, la Società non può garantire la completa ricezione di fondi dal bersaglio."
+msgstr "6.7 Groofi no warranties regarding the performance or functionality of Paypal. Moreover, due to occasional failures of some credit cards, the Company can not guarantee the complete reception of the target funds."
 
 msgid "TERMINOS_DE_USO_39"
-msgstr "L'AZIENDA SI RISERVA IL DIRITTO DI RECESSO O SOSPENDERE PROGETTI INTERROMPERE IN QUALSIASI MOMENTO PER QUALSIASI MOTIVO."
+msgstr "THE COMPANY RESERVES THE RIGHT TO CANCEL, INTERRUPT OR SUSPEND PROJECTS AT ANY TIME FOR ANY REASON."
 
 msgid "TERMINOS_DE_USO_40"
-msgstr "7. COMMISSIONI"
+msgstr "7. COMMISSIONS"
 
 msgid "TERMINOS_DE_USO_41"
-msgstr "7.1 Registrati al sito è gratuito. Tuttavia, si paga una commissione del 5% + IVA su tutti i fondi raccolti Groofies con successo. Facciamo pagare anche tutte le spese di transazione praticati da sito Paypal. Quando si utilizza un servizio che costa avete la possibilità di leggere e accettare le tasse che verranno addebitate, e lo stesso può essere modificato. Le modifiche sono efficaci dopo la pubblicazione sul sito web. Si può scegliere di modificare temporaneamente le tasse per i nostri servizi per eventi promozionali o nuovi servizi, e tali modifiche sono efficaci quando inviamo l'evento promozionale temporaneo o il nuovo servizio sul sito web."
+msgstr "7.1 Up to the website is free. However, we charge a commission of 5% plus VAT on all the money raised by Groofies successfully. We also charge all transaction fees charged by Paypal website. When you use a service that costs you have the opportunity to review and accept the fees that will be charged, and they can be modified. The changes are effective after being published on the website. We may choose to temporarily change the fees for our services for promotional events or new services, and such changes are effective when we post the temporary promotional event or new service on the website."
 
 msgid "TERMINOS_DE_USO_42"
-msgstr "7.2 L'utente è responsabile del pagamento di tutte le tasse e le imposte associati all'utilizzo del Sito web. Nel caso in cui un progetto viene rimosso dal sito per aver violato le Condizioni di utilizzo, tutte le tasse versate non saranno rimborsate, a meno che, a sola discrezione della Società, determina che il rimborso è appropriato."
+msgstr "7.2 You are responsible for paying all fees and taxes associated with the use of the Website. In the event that a project is removed from the website for violating the terms of use, all fees paid will not be refunded, unless, at the Company`s sole discretion, determines that a refund is appropriate."
 
 msgid "TERMINOS_DE_USO_43"
-msgstr "8. COLLEGAMENTI DA E VERSO ALTRI SITI WEB "
+msgstr "8. LINKS TO AND FROM OTHER WEBSITES"
 
 msgid "TERMINOS_DE_USO_44"
-msgstr "8.1 Link a siti di terzi sul Sito sono forniti esclusivamente per comodità dell'utente. Se si utilizzano questi collegamenti, si lascia il sito web. La Società non ha esaminato tutti questi siti web di terzi e non controlla e non è responsabile per tali siti web o il loro contenuto o la disponibilità. La Società pertanto non avalla né rilascia alcuna dichiarazione su di loro, o qualsiasi materiale che si trova lì, o eventuali risultati che possono essere ottenuti dal loro utilizzo. Se si decide di accedere a uno qualsiasi dei siti di terze parti linkati sul sito web, lo fa a proprio rischio e pericolo."
+msgstr "8.1 The links to third party websites on the Website are provided solely for your convenience. If you use these links, you leave the website. The Company has not reviewed all of these third party websites and does not control and is not responsible for these websites or their content or availability. The Company therefore does not endorse or make any representations about them, or any material found there, or any results that may be obtained from using them. If you decide to access any of the third party websites linked to the Website, you do so at your own risk."
 
 msgid "TERMINOS_DE_USO_45"
-msgstr "8.2 Se si desidera incorporare un collegamento alla pagina Web, è possibile farlo solo sulla base del fatto che il link porterà alla pagina principale del sito, e fatte salve le seguenti condizioni, che;"
+msgstr "8.2 If you wish to incorporate a link to the web page, you can only do so on the basis that the link will lead to the main page of the website, and subject to the following conditions, which;"
 
 msgid "TERMINOS_DE_USO_46"
-msgstr "(A) non rimuovere, distorcere o alterare le dimensioni o l'aspetto del logo Groofi;"
+msgstr "(A) not remove, distort or alter the size or appearance of the logo Groofi;"
 
 msgid "TERMINOS_DE_USO_47"
-msgstr "(B) non crea una cornice o qualsiasi altro browser o un bordo sviluppato sul Sito Web;"
+msgstr "(B) does not create a frame or any other browser or border developed on the Web Site;"
 
 msgid "TERMINOS_DE_USO_48"
-msgstr "(C) non implica affatto che la società sta promuovendo prodotti o servizi diversi dai propri;"
+msgstr "(C) does not imply in any way that the company is promoting products or services other than its own;"
 
 msgid "TERMINOS_DE_USO_49"
-msgstr "(D) non travisare il vostro rapporto con la Società, né presentare altre informazioni false sulla Società;"
+msgstr "(D) not misrepresent your relationship with the Company nor present any other false information about the Company;"
 
 msgid "TERMINOS_DE_USO_50"
-msgstr "(E) il vostro sito non contiene contenuti che è di cattivo gusto, offensivo o controverso, violi la proprietà intellettuale o altri diritti di qualsiasi altra persona o comunque non conforme a tutte le leggi e regolamenti."
+msgstr "(E) your website does not contain content that is distasteful, offensive or controversial, infringes the intellectual property rights or other rights of any other person or otherwise does not comply with all applicable laws and regulations."
 
 msgid "TERMINOS_DE_USO_51"
-msgstr "8.3 La Società si riserva espressamente il diritto di revocare il diritto concesso alla clausola 5.2 per violazione di questi termini e di intraprendere qualsiasi azione che riterrà opportune."
+msgstr "8.3 The Company expressly reserves the right to revoke the right granted in clause 5.2 for breach of these terms and to take any action it deems appropriate."
 
 msgid "TERMINOS_DE_USO_52"
-msgstr "8.4 L'utente dovrà risarcire pienamente la Società per qualsiasi perdita o danno subito dalla Società o delle società del gruppo per la violazione della clausola 5.2. "
+msgstr "8.4 You shall fully indemnify the Company for any loss or damage suffered by the Company or any of its group companies for breach of clause 5.2."
 
 msgid "TERMINOS_DE_USO_53"
-msgstr "9.REGISTRATI"
+msgstr "9. REGISTER"
 
 msgid "TERMINOS_DE_USO_54"
-msgstr "9.1 Ogni registrazione è per un singolo utente. La Società non consente di condividere il vostro nome utente e la password con qualsiasi altra persona, né con più utenti di una rete."
+msgstr "9.1 Each registration is for a single user. The Company does not permit you to share your user name and password with any other person nor with multiple users on a network."
 
 msgid "TERMINOS_DE_USO_55"
-msgstr "9.2 La responsabilità per la sicurezza di tutte le password rilasciate spetta a voi."
+msgstr "9.2 The responsibility for the security of passwords issued up to you."
 
 msgid "TERMINOS_DE_USO_56"
 msgstr "10. DISCLAIMER"
 
 msgid "TERMINOS_DE_USO_57"
-msgstr "10.1 Mentre l'azienda si impegna a garantire che le informazioni sul sito web siano corrette, la Società non garantisce l'accuratezza e la completezza del materiale sul sito web. La Società può apportare modifiche al materiale sul sito, o ai prodotti e ai prezzi in esso, in qualsiasi momento senza preavviso. Il materiale contenuto nel sito può essere aggiornato, e la Società non assume alcun impegno ad aggiornare i materiali."
+msgstr "10.1 While the Company endeavors to ensure that the information on the website is correct, the Company does not guarantee the accuracy and completeness of the material on the website. The Company may make changes to the material on the website, or to the products and prices described in it, at any time without notice. The material on the Website may be out of date, and the Company makes no commitment to update the materials."
 
 msgid "TERMINOS_DE_USO_58"
-msgstr "10.2 Il materiale contenuto nel sito è fornito "così com'è", senza condizioni, garanzie o altri termini di alcun tipo. Di conseguenza, nella misura massima consentita dalla legge, la Società fornisce il web in base al fatto che la Società esclude tutte le rappresentazioni, garanzie, condizioni e altri termini (inclusi, senza limitazioni), le condizioni previste per legge di qualità soddisfacente, idoneità allo scopo e l uso di ragionevole attenzione e perizia che senza questo avviso legale, potrebbe avere effetto in relazione al Sito."
+msgstr "10.2 The material on the website is provided "as is", without any conditions, warranties or other terms of any kind. Accordingly, to the maximum extent permitted by law, the Company offers the web based on the Company excludes all representations, warranties, conditions and other terms (including, without limitation), the conditions implied by law of satisfactory quality, fitness for purpose and the use of reasonable care and skill, without this legal notice, might have effect in relation to the Website."
 
 msgid "TERMINOS_DE_USO_59"
-msgstr "11. RESPONSABILITA '"
+msgstr "11. RESPONSIBILITY"
 
 msgid "TERMINOS_DE_USO_60"
-msgstr "11.1 La società, (anche coinvolto nella creazione, produzione, manutenzione o fornitura del sito web), e nessuna delle società del gruppo della società e dei funzionari, direttori, dipendenti, azionisti o agenti di una di esse, escludono tutti responsabilità e la responsabilità per qualsiasi quantità o tipo di perdita o danno che possa derivare a voi oa terzi, inclusi, senza limitazione, danni diretti, indiretti, punitivi o consequenziali, o qualsiasi perdita di reddito, profitti, avviamento, dati, contratti, impiego di denaro, o perdite o danni derivanti o collegati in alcun modo per interruzione di attività, e se in torto (inclusi, senza limitazione, la negligenza), contratto o altro, in relazione al Sito, in qualsiasi modo o in relazione all'utilizzo, all'incapacità di utilizzare o ai risultati di utilizzo del sito web, i siti web collegati al Sito o il materiale su tali siti Web, inclusi ma non limitati a perdite o danni dovuti a virus che possono infettare il vostro computer, software, dati o altre proprietà come conseguenza di accesso, l'utilizzo o la navigazione del sito web o del download di qualsiasi materiale presente sul sito o dei siti collegati a questo sito web."
+msgstr "11.1 The Company, (whether or not involved in creating, producing, maintaining or delivering the Website), and any of the group companies of the company and the officers, directors, employees, shareholders or agents of any of them, exclude all liability and responsibility for any amount or kind of loss or damage that may result to you or a third party, including, without limitation, any direct, indirect, punitive or consequential damages, or any loss of income, profits, goodwill, data , contracts, use of money, or loss or damages arising from or related in any way to business interruption, and whether in tort (including, without limitation, negligence), contract or otherwise in connection with the Website, in any way or in connection with the use, inability to use or the results of use of the Website, any websites linked to the website or the material on such websites, including but not limited to loss or damage caused by viruses may infect your computer equipment, software, data or other property on account of your access, use or browsing the website or your downloading of any material from the Website or any websites linked to the website."
 
 msgid "TERMINOS_DE_USO_61"
-msgstr "11.2 La Società non approva e non ha alcun controllo sui materiali utente. La Società non può garantire l'autenticità dei dati che gli utenti possono dare se stessi. L'utente riconosce che tutti i contenuti accessibili da voi di utilizzare il Sito Web è a proprio rischio e sarà l'unico responsabile per qualsiasi danno o perdita di qualsiasi parte che ne deriva."
+msgstr "11.2 The Company does not endorse and has no control over user materials. The Company can not guarantee the authenticity of data that users can give themselves. You acknowledge that all content available for you to use the Web Site is at your own risk and you are solely responsible for any damage or loss to any party resulting."
 
 msgid "TERMINOS_DE_USO_62"
-msgstr "11.3 Nulla nel presente avviso legale esclude o limita la responsabilità della Società di:"
+msgstr "11.3 Nothing in this legal notice shall exclude or limit the liability of the Company to:"
 
 msgid "TERMINOS_DE_USO_63"
-msgstr "(A) morte o lesioni personali causate da negligenza [come tale termine è definito dalle clausole abusive Act 1977], o"
+msgstr "(A) death or personal injury caused by negligence [as such term is defined by the Unfair Contract Terms Act 1977], or"
 
 msgid "TERMINOS_DE_USO_64"
-msgstr "(B) frode, o"
+msgstr "(B) fraud, or"
 
 msgid "TERMINOS_DE_USO_65"
-msgstr "(C)false dichiarazioni su una questione fondamentale, ovvero"
+msgstr "(C) misrepresentation as to a fundamental matter, or"
 
 msgid "TERMINOS_DE_USO_66"
-msgstr "(D) qualsiasi responsabilità che non può essere esclusa o limitata dalla legge applicabile."
+msgstr "(D) any liability which can not be excluded or limited by applicable law."
 
 msgid "TERMINOS_DE_USO_67"
-msgstr "12. LEGGE E GIURISDIZIONE"
+msgstr "12. LAW AND JURISDICTION"
 
 msgid "TERMINOS_DE_USO_68"
-msgstr "Questo avviso legale è disciplinato e interpretato in conformità alla legge applicabile nel Regno Unito. Le controversie derivanti in connessione con il presente Avviso Legale sono soggetti alla giurisdizione esclusiva dei tribunali inglesi."
+msgstr "This legal notice shall be governed by and construed in accordance with the law applicable to the UK. Disputes arising in connection with this legal notice shall be subject to the exclusive jurisdiction of the English courts."
 
 msgid "TERMINOS_DE_USO_69"
-msgstr "Data di emissione: 6 dicembre 2012"
+msgstr "Issue Date: December 6, 2012"
 
 msgid "POLITICAS_PRIVACIDAD0"
 msgstr "Groofi Limited ("Noi") si impegnano a proteggere e rispettare la tua privacy. Questa politica insieme con la nostra"
@@ -4211,7 +4193,7 @@ msgid "POLITICAS_PRIVACIDAD5"
 msgstr "• Le informazioni che fornite attraverso la compilazione di moduli sul nostro sito"
 
 msgid "POLITICAS_PRIVACIDAD5_1"
-msgstr "www.groofi.com"
+msgstr "www."
 
 msgid "POLITICAS_PRIVACIDAD5_2"
 msgstr "(Il nostro sito). Ciò include le informazioni fornite al momento della registrazione per utilizzare il nostro sito, la sottoscrizione al nostro servizio, la pubblicazione di materiale o di richiesta di ulteriori servizi. Potremmo anche chiedere informazioni quando si partecipa ad un concorso o una promozione sponsorizzata da una terza parte, e quando segnalare un problema con il nostro sito."
@@ -4221,13 +4203,13 @@ msgid "POLITICAS_PRIVACIDAD6"
 msgstr "• Se ci contattate, possiamo tenere un registro di tale corrispondenza."
 
 msgid "POLITICAS_PRIVACIDAD7"
-msgstr "• Si può anche chiedere di completare le indagini che usiamo per scopi di ricerca, anche se non ha l'obbligo di rispondere a loro."
+msgstr "• Si può anche chiedere di completare le indagini che usiamo per scopi di ricerca, anche se non ha l`obbligo di rispondere a loro."
 
 msgid "POLITICAS_PRIVACIDAD8"
 msgstr "• I dettagli delle operazioni si svolgono attraverso il nostro sito e la realizzazione dei vostri ordini."
 
 msgid "POLITICAS_PRIVACIDAD9"
-msgstr "• I dettagli delle vostre visite sul nostro sito incluso ma non limitato a, dati di traffico, dei dati relativi all'ubicazione, blog e altri dati di comunicazione, se questo è necessario per i nostri scopi di fatturazione o altro."
+msgstr "• I dettagli delle vostre visite sul nostro sito incluso ma non limitato a, dati di traffico, dei dati relativi all`ubicazione, blog e altri dati di comunicazione, se questo è necessario per i nostri scopi di fatturazione o altro."
 
 msgid "POLITICAS_PRIVACIDAD10"
 msgstr "• Eventuali altri dettagli che si possono richiedere che ci fornite."
@@ -4236,28 +4218,28 @@ msgid "POLITICAS_PRIVACIDAD11"
 msgstr "INDIRIZZI IP"
 
 msgid "POLITICAS_PRIVACIDAD12"
-msgstr "Possiamo raccogliere informazioni sul computer, compreso l'indirizzo IP, il sistema operativo e il tipo di browser, per l'amministrazione del sistema e di riferire le informazioni aggregate ai nostri inserzionisti. Si tratta di dati statistici circa le nostre azioni degli utenti e modelli di navigazione, e non identifica un individuo."
+msgstr "Possiamo raccogliere informazioni sul computer, compreso l`indirizzo IP, il sistema operativo e il tipo di browser, per l`amministrazione del sistema e di riferire le informazioni aggregate ai nostri inserzionisti. Si tratta di dati statistici circa le nostre azioni degli utenti e modelli di navigazione, e non identifica un individuo."
 
 msgid "POLITICAS_PRIVACIDAD13"
 msgstr "COOKIES"
 
 msgid "POLITICAS_PRIVACIDAD14"
-msgstr "Per lo stesso motivo, possiamo ottenere informazioni sul vostro utilizzo generale di internet utilizzando un file cookie che viene memorizzato nel browser o il disco rigido del vostro computer. I cookies contengono informazioni che saranno trasferite sull'hard disk del vostro computer. Essi ci aiutano a migliorare il nostro sito e per fornire un servizio migliore e più personalizzato. Alcuni dei cookies da noi utilizzati sono essenziali per il sito di operare."
+msgstr "Per lo stesso motivo, possiamo ottenere informazioni sul vostro utilizzo generale di internet utilizzando un file cookie che viene memorizzato nel browser o il disco rigido del vostro computer. I cookies contengono informazioni che saranno trasferite sull`hard disk del vostro computer. Essi ci aiutano a migliorare il nostro sito e per fornire un servizio migliore e più personalizzato. Alcuni dei cookies da noi utilizzati sono essenziali per il sito di operare."
 
 msgid "POLITICAS_PRIVACIDAD15"
 msgstr "Si prega di notare che i nostri inserzionisti possono anche utilizzare i cookie, sui quali non abbiamo alcun controllo."
 
 msgid "POLITICAS_PRIVACIDAD16"
-msgstr "È possibile bloccare i cookie attivando l'impostazione sul vostro browser che vi consente di rifiutare l'impostazione di tutti o alcuni biscotti. Tuttavia, se si utilizzano le impostazioni del browser per bloccare tutti i cookie (inclusi i cookie essenziali) non si può avere accesso a tutto o parte del nostro sito. A meno che non abbia predisposto il Tuo browser in modo da rifiutare i cookie, il nostro sistema inserirà dei cookies appena per accedere al nostro sito."
+msgstr "È possibile bloccare i cookie attivando l`impostazione sul vostro browser che vi consente di rifiutare l`impostazione di tutti o alcuni biscotti. Tuttavia, se si utilizzano le impostazioni del browser per bloccare tutti i cookie (inclusi i cookie essenziali) non si può avere accesso a tutto o parte del nostro sito. A meno che non abbia predisposto il Tuo browser in modo da rifiutare i cookie, il nostro sistema inserirà dei cookies appena per accedere al nostro sito."
 
 msgid "POLITICAS_PRIVACIDAD17"
 msgstr "La NUOVA LOCAZIONE TUOI DATI PERSONALI"
 
 msgid "POLITICAS_PRIVACIDAD18"
-msgstr "I dati che raccogliamo da voi possono essere trasferiti e conservati ad una destinazione al di fuori dello Spazio economico europeo ("SEE"). Può anche essere trattati da personale che opera fuori dalla EEA che lavora per noi o per uno dei nostri fornitori. Tale staff viene utilizzato, tra le altre cose, il compimento della vostra richiesta all'interno del nostro sito, il trattamento dei tuoi dati per il pagamento e la fornitura di servizi di supporto. Inviando i propri dati personali, l'utente accetta di questo trasferimento, stoccaggio ed elaborazione dei dati."
+msgstr "I dati che raccogliamo da voi possono essere trasferiti e conservati ad una destinazione al di fuori dello Spazio economico europeo ("SEE"). Può anche essere trattati da personale che opera fuori dalla EEA che lavora per noi o per uno dei nostri fornitori. Tale staff viene utilizzato, tra le altre cose, il compimento della vostra richiesta all`interno del nostro sito, il trattamento dei tuoi dati per il pagamento e la fornitura di servizi di supporto. Inviando i propri dati personali, l`utente accetta di questo trasferimento, stoccaggio ed elaborazione dei dati."
 
 msgid "POLITICAS_PRIVACIDAD19"
-msgstr "Tutte le informazioni che ci fornite sono memorizzati sui nostri server sicuri. Le operazioni di pagamento sono criptate per la vostra sicurezza, e viene data una password che consente di accedere ad alcune parti del nostro sito, l'utente è responsabile di mantenere la password riservata. Vi chiediamo di non condividere la password con nessuno. Se si condivide questa password è l'unico responsabile."
+msgstr "Tutte le informazioni che ci fornite sono memorizzati sui nostri server sicuri. Le operazioni di pagamento sono criptate per la vostra sicurezza, e viene data una password che consente di accedere ad alcune parti del nostro sito, l`utente è responsabile di mantenere la password riservata. Vi chiediamo di non condividere la password con nessuno. Se si condivide questa password è l`unico responsabile."
 
 msgid "POLITICAS_PRIVACIDAD20"
 msgstr "Desafortunadamente, la transmisión de información a través de Internet no es completamente segura. Aunque haremos todo lo posible para proteger sus datos personales, no podemos garantizar la seguridad de sus datos transmitidos a nuestro sitio, cualquier transmisión es bajo su propio riesgo. Una vez que hayamos recibido su información, utilizaremos procedimientos estrictos y características de seguridad para tratar de evitar el acceso no autorizado."
@@ -4311,7 +4293,7 @@ msgid "POLITICAS_PRIVACIDAD34"
 msgstr "I TUOI DIRITTI"
 
 msgid "POLITICAS_PRIVACIDAD35"
-msgstr "Avete il diritto di chiederci di non trattare i vostri dati personali per scopi di marketing. Di solito si informano (prima di raccogliere i dati) se intendiamo utilizzare i vostri dati per tali scopi o se abbiamo intenzione di divulgare le vostre informazioni a terzi per tali scopi. È possibile esercitare il diritto di impedire che alcuni dati sono limitati controllando alcune caselle sui moduli utilizzati per raccogliere i dati. È inoltre possibile esercitare il diritto in qualunque momento contattandoci all'indirizzo"
+msgstr "Avete il diritto di chiederci di non trattare i vostri dati personali per scopi di marketing. Di solito si informano (prima di raccogliere i dati) se intendiamo utilizzare i vostri dati per tali scopi o se abbiamo intenzione di divulgare le vostre informazioni a terzi per tali scopi. È possibile esercitare il diritto di impedire che alcuni dati sono limitati controllando alcune caselle sui moduli utilizzati per raccogliere i dati. È inoltre possibile esercitare il diritto in qualunque momento contattandoci all`indirizzo"
 
 msgid "POLITICAS_PRIVACIDAD35_1"
 msgstr "info@groofi.com. "
@@ -4341,7 +4323,7 @@ msgid "POLITICAS_PRIVACIDAD41_1"
 msgstr "info@groofi.com ."
 
 msgid "HIGHLIGHT_PROJECTS_TITLE1"
-msgstr "SINTESI DEL PROGETTO"
+msgstr "PROGETTI DELLA SETTIMANA"
 
 msgid "by"
 msgstr "da - "
@@ -4365,7 +4347,7 @@ msgid "POLITICAS_DE_PRIVACIDAD"
 msgstr "Informativa Sulla Privacy"
 
 msgid "RECAUDADOS"
-msgstr "Raccolte"
+msgstr "Raccolti"
 
 msgid "NO_FOUND_PROJECT"
 msgstr "Non sono stati trovati risultati."
@@ -4551,6 +4533,21 @@ msgstr "CREA PROGETTO!"
 
 msgid "SEND_MESSAGE1"
 msgstr "Devi essere loggato per inviare un messaggio a"
+
+msgid "PROJECT_MUST_BE_UNIQUE"
+msgstr "Un altro progetto esiste già con quel nome"
+
+msgid "MAIL_MUST_BE_UNIQUE"
+msgstr "L'e-mail appartiene già ad un altro utente"
+
+msgid "maxLength_50"
+msgstr "maximo 50 caracteres"
+
+msgid "ERROR_EMAIL_RECORDAR"
+msgstr "L'e-mail inserito non appartiene ad un utente registrato"
+
+msgid ""
+msgstr ""
 
 msgid ""
 msgstr ""

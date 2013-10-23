@@ -1980,7 +1980,8 @@ height:41px;
 	}
 	
 	.recuperar_pass a{
-		color:#CCC;	
+		color:#CCC;
+        display: block;
 	}
 	.recuperar_pass a:hover{
 		color:#4599c2;	
@@ -1991,13 +1992,55 @@ height:41px;
 			float:right;
 			font-size:16px;
 			font-weight:600;
-			padding-right:28px;
-			padding-bottom:15px;
+
+            width: 70px;
+            display: block;
 	}
-	
-	
-	.boton_login a{
-		color:#CCC;	
+.boton_loginesp{
+    color:#CCC;
+    float:right;
+    font-size:16px;
+    font-weight:600;
+    padding-right: 25px;
+    width: 70px;
+    display: block;
+}
+.boton_login1esp{
+    color:#CCC;
+    float:right;
+    font-size:16px;
+    font-weight:600;
+    padding-right: 52px;
+    width: 70px;
+    display: block;
+}
+.boton_login1eng{
+    color:#CCC;
+    float:right;
+    font-size:16px;
+    font-weight:600;
+    padding-right: 23px;
+    width: 70px;
+    display: block;
+}
+.boton_login1ita{
+    color:#CCC;
+    float:right;
+    font-size:16px;
+    font-weight:600;
+
+    width: 110px;
+    display: block;
+}
+.boton_login1ita a{
+    color:#CCC;
+    width: 107px!important;
+    display: block;
+}
+.boton_login a{
+		color:#CCC;
+        width: 70px;
+        display: block;
 	}
 	.boton_login a:hover{
 		color:#4599c2;	
@@ -2563,6 +2606,18 @@ height:41px;
 	position:relative;
 	top:10px;cursor:pointer;
 	font-size:13px;
+}
+#bajofoto12{
+    display: block;
+    width:145px;
+    height:27px;
+    background:#000;
+    color:#fff;
+    text-align:center;
+    line-height:24px;
+    position:relative;
+    top:10px;cursor:pointer;
+    font-size:13px;
 }
 #bajofoto1_ita{
     width:145px;
@@ -4053,6 +4108,18 @@ color:#FFF
     cursor: pointer;
     display: block;
     font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    top: 275px;
+    width: 90px;
+}
+.perfil_userita
+{
+
+    cursor: pointer;
+    display: block;
+    font-size: 11px;
     font-weight: bold;
     position: absolute;
     text-align: center;

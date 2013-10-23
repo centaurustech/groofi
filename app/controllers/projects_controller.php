@@ -465,8 +465,8 @@ var_dump($this->data);die;*/
         $large_image_name = $large_image_prefix.$_SESSION['random_key'];     // New name of the large image (append the timestamp to the filename)
         $thumb_image_name = $thumb_image_prefix.$_SESSION['random_key'];     // New name of the thumbnail image (append the timestamp to the filename)
         $max_file = "1"; 							// Maximum file size in MB
-        $max_width = "570";							// Max width allowed for the large image
-        $thumb_width = "150";						// Width of thumbnail image
+        $max_width = "650";							// Max width allowed for the large image
+        $thumb_width = "200";						// Width of thumbnail image
         $thumb_height = "130";						// Height of thumbnail image
 // Only one of these image types should be allowed for upload
         $allowed_image_types = array('image/pjpeg'=>"jpg",'image/jpeg'=>"jpg",'image/jpg'=>"jpg",'image/png'=>"png",'image/x-png'=>"png",'image/gif'=>"gif");
@@ -785,8 +785,8 @@ var_dump($this->data);die;*/
         $large_image_name = $large_image_prefix.$_SESSION['random_key'];     // New name of the large image (append the timestamp to the filename)
         $thumb_image_name = $thumb_image_prefix.$_SESSION['random_key'];     // New name of the thumbnail image (append the timestamp to the filename)
         $max_file = "1"; 							// Maximum file size in MB
-        $max_width = "336";							// Max width allowed for the large image
-        $thumb_width = "150";						// Width of thumbnail image
+        $max_width = "500";							// Max width allowed for the large image
+        $thumb_width = "250";						// Width of thumbnail image
         $thumb_height = "100";						// Height of thumbnail image
 // Only one of these image types should be allowed for upload
         $allowed_image_types = array('image/pjpeg'=>"jpg",'image/jpeg'=>"jpg",'image/jpg'=>"jpg",'image/png'=>"png",'image/x-png'=>"png",'image/gif'=>"gif");
@@ -1349,7 +1349,22 @@ var_dump($this->data);die;*/
         $this->data['Projectpayments'] = $this->Projectpayment->find ('all', array ('conditions' => array ('Projectpayment.project_id' => $project_id)));
 
     }
-    function adminuploadimage($id_project){
+    function adminuploadimage($id_project, $admin='0'){
+
+if (isset($admin) && $admin != '0'){
+
+$control = base64_decode($admin);
+    $control1 = $admin;
+}else{
+
+
+    if(isset($this->data['Sponsor']['control'])){
+
+        $control = base64_decode($this->data['Sponsor']['control']);
+        $control1 = $this->data['Sponsor']['control'];
+}
+}
+if ($control == '1'){
 
         $this->loadModel('Sponsor');
         //App::import('model', 'Sponsor');
@@ -1361,15 +1376,17 @@ var_dump($this->data);die;*/
 
             if($this->Sponsor->saveAll($this->data)){
 
-                $this->redirect (Router::url (array ('controller' => 'projects', 'action' => 'adminuploadimage', $this->data['Sponsor']['id_project'])));
+                $this->redirect (Router::url (array ('controller' => 'projects', 'action' => 'adminuploadimage', $this->data['Sponsor']['id_project'], $control1)));
 
             }
 
         }
-
+    $this->set('control', $admin);
         $show_sponsor = $this->Sponsor->find('all',array('conditions' => array('Sponsor.id_project'=> $id_project)));
         $this->set('show_sponsor', $show_sponsor);
-
+}else{
+    $this->cakeError('error404');
+}
 
 
     }
@@ -1593,10 +1610,10 @@ if($this->data['Project']['basename']!= $datos[0]['projects']['basename']){
             $this->data['Project']['basename']=$_POST['data']['Project']['country'];
             $this->data['Project']['file']=$cambio_path_image.'media/transfer/project/tmp/img/'.$_POST['data']['Project']['country'];
 }
-            //echo '<pre>';
-            //var_dump($this->data);
-            if ($validData && !$privatepassko && !$no) {
-
+            /*echo '<pre>';
+            var_dump($no);die;
+            /*if ($validData && !$privatepassko && !$no) {*/
+                if (!$privatepassko && !$no) {
      //           $this->data['Project']['dirname'] = "project/".$this->data['Project']['id']."/img";
                 if ($this->Project->saveAll ($validData, array ('validate' => false))) {
                     if($this->data['Project']['basename']!= $datos[0]['projects']['basename']){
@@ -2013,7 +2030,7 @@ if($this->data['Project']['basename']!= $datos[0]['projects']['basename']){
         //$dato=array(44,2);
         $ids=array();
         foreach($dato as $k=>$v)$ids[]=$v['projects']['id'];
-
+        $this->paginate['conditions']['Project.idioma ='] = $_SESSION['idioma'];/*se agrego para que solo buscara proyectos acorde al idioma de la session*/
         $this->paginate['conditions']['Project.id']=$ids;
 
 

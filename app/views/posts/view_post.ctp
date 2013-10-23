@@ -335,10 +335,10 @@ Proyecto<br>Finalizado
   } 
   
   if($htmll1!='' && $this->data['Project']['time_left']>0){
-	echo '<div class="beneficios_personas"><h4 class="cyan">PERSONasasdasdasdsAS O PEQUE&Ntilde;OS PATROCINADORES</h4>'.$htmll1.'</div>';
+	echo '<div class="beneficios_personas"><h4 class="cyan">'.__("Personas_patro", true).'</h4>'.$htmll1.'</div>';
   }
   if($htmll2!='' && $this->data['Project']['time_left']>0){
-	echo '<div class="beneficios_personas"><h4 class="cyan">EMPRESAS O GRANDES PATROCINADORES</h4>'.$htmll2.'</div>';
+	echo '<div class="beneficios_personas"><h4 class="cyan">'.__("Personas_patro_gran", true).'</h4>'.$htmll2.'</div>';
   }
   ?>
   

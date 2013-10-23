@@ -114,63 +114,65 @@ class User extends AppModel {
     );
     var $validate = array(
         'display_name' => array(
-            'notEmpty' => array(
+            'CAMPO_VACIO' => array(
                 'rule' => array('notEmpty', true),
                 'required' => true,
-                'allowEmpty' => false,
-				'message' => 'Ingresa al menos 3 caracteres',
-				'last' => true,
-                'on' => 'create',
-				'on' => 'update'
+                'allowEmpty' => false
+
             ),
             'maxLength_50' => array(
                 'rule' => array('maxLength', 50),
                 'required' => true,
-				'message' => 'Ingresa un nombre que no supere los 50 catacteres',
-				'last' => true,
-                'on' => 'create',
-				'on' => 'update'
+                'allowEmpty' => false
+
             ),
-            'minLength_3' => array(
+            'MIN_LENGHT_3_ERROR' => array(
                 'rule' => array('minLength', 3),
                 'required' => true,
-				'message' => 'Ingresa al menos 3 caracteres',
-				'last' => true,
-                'on' => 'create',
-				'on' => 'update'
+                'allowEmpty' => false
+
 				
             )
         ),
         'email' => array(
-            'notEmpty' => array(
-                'rule' => array('notEmpty', true),
+            "EMAIL_GENERIC_ERROR" => array(
+                'rule' => array('notEmpty'),
                 'required' => true,
-                'allowEmpty' => false,
-				'message' => 'Ingresa un E-mail v&aacute;lido',
-				'last' => true,
-                'on' => 'create'
+                'allowEmpty' => false
+
             ),
-            'email' => array(
+            "EMAIL_GENERIC_ERROR" => array(
                 'rule' => array('email'),
                 'required' => true,
-				'message' => 'Ingresa un E-mail v&aacute;lido',
-				'last' => true,
-                'on' => 'create'
-            ),
-            'MAIL-MUST-BE-UNIQUE' => array(
+                'allowEmpty' => false
+				),
+            'MAIL_MUST_BE_UNIQUE' => array(
                 'rule' => 'isUnique',
                 'required' => true,
-				'message' => 'El E-mail ingresado pertenece a un usuario registrado',
-                'on' => 'create'
-            )
+                'allowEmpty' => false
+				)
         ),
         'password' => array(
+
+
             //    'password' => array('rule' => array('custom', CUSTOM_ALPHANUM), 'required' => false, 'allowEmpty' => false, 'last' => false),
-            'match' => array('rule' => array('compare_passwords', 'password', 'password_confirmation'), 'required' => true, 'allowEmpty' => false,'message' => 'Las contrase&ntilde;as no coinciden', 'last' => true)
+            'match' => array(
+                'rule' => array('compare_passwords','password', 'password_confirmation'),
+                'required' => true,
+                'allowEmpty' => false,
+                ),
+            'CAMPO_VACIO' => array(
+                'rule' => array('password_empty','password'),
+                'required' => false,
+                'allowEmpty' => false),
+
+
+
+
         ),
         'password_confirmation' => array(
             //  'password' => array('rule' => array('custom', CUSTOM_ALPHANUM), 'required' => false, 'allowEmpty' => false, 'last' => false),
-            'maxlength' => array('rule' => array('maxLength', 25), 'required' => false, 'allowEmpty' => false,'message' => 'Debes completar este campo', 'last' => false)
+            'THIS_FIELD_CANNOT_BE_LEFT_BLANK' => array('rule' => array('maxLength', 25), 'required' => false, 'allowEmpty' => false)
         ),
         'biography' => array(
             'notEmpty' => array(
@@ -460,6 +462,19 @@ class User extends AppModel {
 		//exit;
         return ( $v1 || $v2  ? true : false );
     }
+    function password_empty($password) {
+
+        if($password['password'] == 'dd9ddd57e6c26912f488582606e935596d917831'){
+            return false;
+        }else{
+            return true;
+        }
+
+
+
+
+    }
+
 
     function forbidenWords($data, $field) {
         return!in_array(low($data[$field]), Configure::read('stopwords'));

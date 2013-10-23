@@ -3969,13 +3969,13 @@ msgid "CHOICE_YOUR_COUNTRY"
 msgstr "Select your country of origin"
 
 msgid "INGRE"
-msgstr "Entered:"
+msgstr "Entered: "
 
 msgid "Res"
-msgstr "characters.  Remaining:"
+msgstr " characters.  Remaining:"
 
 msgid "Carac"
-msgstr " characters."
+msgstr "  characters."
 
 msgid "Res1"
 msgstr "Remaining:"
@@ -4560,8 +4560,17 @@ msgstr "CREATE PROJECT!"
 msgid "SEND_MESSAGE1"
 msgstr "You must be logged in to send a message to"
 
-msgid ""
-msgstr ""
+msgid "PROJECT_MUST_BE_UNIQUE"
+msgstr "Another project already exists with that name"
+
+msgid "MAIL_MUST_BE_UNIQUE"
+msgstr "The email already belongs to another user"
+
+msgid "maxLength_50"
+msgstr "max 50 caracteres"
+
+msgid "ERROR_EMAIL_RECORDAR"
+msgstr "The e-mail entered does not belong to a registered user"
 
 msgid ""
 msgstr ""

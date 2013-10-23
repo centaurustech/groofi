@@ -1,4 +1,5 @@
-<?php /* @var $this ViewCC */ ?>
+<?php /* @var $this ViewCC */
+?>
 <? $this->set('pageTitle', false); ?>
 <?  //vd($this->params['url']['url']); ?>
   <?php if(isset($completarLoginFB)){
@@ -50,7 +51,7 @@
     </div>
   <br>
   <div onclick="$('caparecordar').style.display='block';$('capanorecordar').style.display='none';$('errrecordar').innerHTML=$('errlogin0').innerHTML='';" class="recuperar_pass"><a href="javascript:;"><?php echo __("RECOVER-LINK-TITLE");?></a></div>
-  <div class="boton_login">
+  <div class="boton_login <?echo 'boton_login'.$_SESSION["idioma"];?>">
   <a onclick="$('logininterno').submit();return false;" href="#";><?php echo __("LOGIN");?></a>
   <input class="enter" type="submit" />
 
@@ -68,7 +69,7 @@
 <div id="caparecordar" class="login_izq" style="position:relative; height:180px; <? if($ErrorRecordarClave2){?>display:block<?}else{?>display:none<?}?>">
 <form id="recpassform" action="/forgotPassword" method="post">
 <input type="hidden" name="procesorecpass" value="1">
-<h3 style=" color:#FFF; font-size:16px; font-style:normal;width:220px; height:35px; line-height:40px; background:#454545; position:relative; top:-8px; padding-bottom:2px"><?php echo __("FORGOT_PASSWORD_TITLE");?></h3><br>
+<h3 style=" color:#FFF; font-size:13px; font-style:normal;width:220px; height:35px; line-height:40px; background:#454545; position:relative; top:-8px; padding-bottom:2px"><?php echo __("FORGOT_PASSWORD_TITLE");?></h3><br>
 <p style="position:relative; top:-8px;"><?php echo __("FORGOT_PASSWORD_SUBTITLE");?><br>
 
   <br>
@@ -82,11 +83,11 @@
     </div>
   <br>
   <div  onclick="$('errrecordar').innerHTML=$('errlogin0').innerHTML='';$('capanorecordar').style.display='block';$('caparecordar').style.display='none';" class="recuperar_pass"><a href="javascript:;"><?php echo __("CANCEL");?></a></div>
-  <div class="boton_login"><a onclick="$('recpassform').submit();return false;" href="#"><?php echo __("RESTORE");?></a>
+  <div class="boton_login <?echo 'boton_login1'.$_SESSION["idioma"];?>"><a onclick="$('recpassform').submit();return false;" href="#"><?php echo __("RESTORE");?></a>
   
   </div> <div class="clear"></div>
 </form>
-<div id="errrecordar" style="font-size:11px; color:red; font-family:Arial, Helvetica, sans-serif;font-style:normal;height:17px; width:300px;position:relative;top:0px; left:-5px"><? if($ErrorRecordarClave){?>El e-mail ingresado no pertenece a un usuario registrado<? } ?>&nbsp;</div>
+<div id="errrecordar" style="font-size:11px; color:red; font-family:Arial, Helvetica, sans-serif;font-style:normal;height:17px; width:300px;position:relative;top:-50px; left:5px"><? if($ErrorRecordarClave){?><?echo __('ERROR_EMAIL_RECORDAR');?><? } ?>&nbsp;</div>
 </div>
 
 <div class="form_registrarme" style="position:relative;">

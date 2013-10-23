@@ -46,7 +46,7 @@ echo $this->Html->meta (array ('HTTP-EQUIV' => 'Expires', 'content' => date ('D,
 ?>
 <LINK REL='StyleSheet' HREF="/2012/style.css" TYPE="text/css" MEDIA='screen'>
 <link rel="stylesheet" href="/2012/bjqs.css" TYPE="text/css" MEDIA='screen'>
-    <link rel="stylesheet" href="/2012/imgareaselect-default.css" TYPE="text/css" MEDIA='screen'>
+    <link rel="stylesheet" href="/2012/imgareaselect-animated.css" TYPE="text/css" MEDIA='screen'>
 <link href='http://fonts.googleapis.com/css?family=Asap:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="/js/jquery.min.js"></script>
 <script type="text/javascript" src="/js/panino/panino.js"></script>
@@ -56,10 +56,11 @@ echo $this->Html->meta (array ('HTTP-EQUIV' => 'Expires', 'content' => date ('D,
 <script type="text/javascript" src="/js/panino/slide1.js"></script>
 <script src="/js/panino/utils.js" type="text/javascript"></script>
 <script type="text/javascript" src="/js/jquery.Jcrop.js"></script>
-    <script type="text/javascript" src="/js/jquery.imgareaselect.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.imgareaselect.js"></script>
     <script type="text/javascript" src="/js/jquery.ocupload-1.1.2.js"></script>
     <script type="text/javascript" src="/js/ckeditor/ckeditor.js"></script>
     <script type="text/javascript" src="/js/ckfinder/ckfinder.js"></script>
+
 
 
 

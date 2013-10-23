@@ -9,6 +9,237 @@
     $this->Js->buffer("$('ul#admin_menu').superfish({dropShadows : false});");
     ?>
 </div-->
+
+<style>
+
+    @media (max-width: 1920px) and (min-width: 1441px)  {
+
+
+
+        .actions1{
+            float: right;
+            margin-right: 100px;
+            position: relative;
+        }
+
+        .propiedades_proyectos {
+            display: inline-block;
+            float: left;
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 331px;
+            position: relative;
+            text-decoration: none !important;
+            text-transform: uppercase;
+            width: auto;
+            left: 0px;
+        }
+        .propiedades_proyectos_admin {
+            display: block;
+            margin-left: 0px;
+        }
+        .datos_users_id{
+            display: block;
+            float: left;
+            margin-left: 25px;
+            overflow: hidden;
+            text-align: left;
+            width: 30px !important;
+
+        }
+        .datos_users_mail{
+            display: block;
+            float: left;
+            margin-left: 25px;
+            overflow: hidden;
+            text-align: left;
+            width: 155px !important;
+        }
+        .category_1920{
+            float: left;
+            list-style: none outside none;
+            margin-left: 25px;
+            text-decoration: none !important;
+            width: 155px !important;
+        }
+        .descripcion_1920{
+            float: left;
+            list-style: none outside none;
+            margin-left: -10px !important;
+            text-decoration: none !important;
+
+        }
+        .fecha_1920{
+            float: left;
+            list-style: none outside none;
+            margin-left: 0px !important;
+            text-decoration: none !important;
+            width: 155px !important;
+
+        }
+        .datos_users_denunce1{
+            display: block;
+            float: left;
+            margin-left: 0 !important;
+            overflow: hidden;
+            text-align: left;
+            width: 120px !important;
+        }
+        .datos_users_description{
+            display: block;
+            float: left;
+            margin-left: 25px;
+            overflow: hidden;
+            text-align: left;
+            width: 165px !important;
+        }
+        div.input.radio label {
+            float: left;
+            position: relative;
+            top: 0 !important;
+            width: 95px;
+        }
+    }
+
+    @media screen and (max-device-width: 1440px)  {
+        #main {
+            overflow: hidden;
+            padding-bottom: 30px;
+        }
+        .padre_user_subtitulos {
+            height: 50px;
+            margin-left: 55px;
+            width: auto;
+        }
+
+        .user_subtitulos{
+            font-size: 9px;
+            margin-left:50px ;
+            width: auto;
+        }
+        td.actions a.ui-button {
+            display: block;
+            margin: 5px 0;
+            padding: 4px 7px;
+            width: 100px;
+        }
+
+        table {
+            background: none repeat scroll 0 0 #FFFFFF;
+            border-right: 0 none;
+            clear: both;
+            font-size: 9px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        td.actions a.ui-button {
+            display: block;
+            font-size: 9px;
+            margin: 5px 0;
+            padding: 4px 7px;
+            width: auto;
+        }
+
+        .propiedades_users_admin {
+            display: block;
+            margin-left: 0px!important;
+        }
+
+        .propiedades_users_admin span {
+            display: block;
+            float: left;
+            margin-left: 25px;
+            overflow: hidden;
+            text-align: left;
+            width: 75px;
+        }
+        .datos_users_id{
+            width: 30px!important;
+
+        }
+        .datos_users_name{
+            width: 100px!important;
+            overflow: hidden;
+
+        }
+        .datos_users_mail{
+            width: 98px!important;
+            overflow: hidden;
+
+        }
+        .datos_users_registro{
+            width: 100px !important;
+            overflow: hidden;
+        }
+        .datos_users_denunce1{
+            width: 100px !important;
+        }
+        .datos_users_description{
+            width: 160px !important;
+
+        }
+        .actions1{
+            float: right;
+            margin-right: 80px;
+            position: relative;
+        }
+
+        .propiedades_proyectos {
+            display: inline-block;
+            float: left;
+            font-size: 9px;
+            font-weight: bold;
+            position: relative;
+            text-decoration: none !important;
+            text-transform: uppercase;
+            width: 1000px;
+            left: 0px!important;
+            margin-left: 250px;
+        }
+        .propiedades_proyectos li {
+            float: left;
+            list-style: none outside none;
+            margin-left: 10px!important;
+            text-decoration: none !important;
+            width: 100px;
+        }
+
+
+        .date_status.date_1, .funded_status{
+            border-color: rgba(0, 0, 0, 0);
+            color: #999999;
+            width: 150px!important;
+        }
+        .public-period{
+            width: 170px!important;
+        }
+
+        .propiedades_proyectos_admin {
+            display: block;
+         margin-left: 0px;
+        }
+
+        .propiedades_proyectos_admin span {
+            margin-left: 10px;
+        }
+
+        div.input.checkbox label {
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        div.input.radio label {
+            float: left;
+            position: relative;
+            top: 0 !important;
+            width: 95px;
+        }
+
+    }
+
+
+</style>
 <?
     echo $this->element('paginator/common');
     echo $this->element('paginator/filters');
@@ -37,17 +268,18 @@ if (!empty($this->data['results'])) {
     <table cellpadding="0" cellspacing="0">
         <div class="propiedades_proyectos">
 
-            <li><?php echo $this->Paginator->sort('Project.id'); ?></li>
+            <li class="id_ie" style="width: 30px;"><?php echo $this->Paginator->sort('Project.id'); ?></li>
             <li><?php echo $this->Paginator->sort('Project.title'); ?></li>
-            <li><?php echo $this->Paginator->sort('Project.category_id'); ?></li>
+            <li class="category_1920"><?php echo $this->Paginator->sort('Project.category_id'); ?></li>
             <li><?php echo $this->Paginator->sort('Project.user_id'); ?></li>
-            <li><?php echo $this->Paginator->sort('Project.created'); ?></li>
-            <li><?php echo $this->Paginator->sort('Descripción'); ?></li>
-        </div>
+            <li class="fecha_1920"><?php echo $this->Paginator->sort('Project.created'); ?></li>
+            <li class="descripcion_1920"><?php echo $this->Paginator->sort('Descripción'); ?></li>
 
+        </div>
+        <div class="actions actions1 actions12"><?php __('Actions'); ?></div>
 
             <!--<th><?php __('Project.flags'); ?></th>-->
-            <li id="last" colspan="2" class="actions"><?php __('Actions'); ?></li>
+
 
         <?php
         $i = 0;
@@ -74,12 +306,12 @@ if (!empty($this->data['results'])) {
                         <? $imagen_extension = explode('.',$result['Project']['basename'])?>
                     <img style="display: block" src="/media/filter/s64/<?= $result['Project']['dirname'].'/'.$imagen_extension[0].'.png';?>" width="64" height="64">
                     </div>
-                    <span><?= $result['Project']['id'];?></span>
-                    <span><?= $result['Project']['title'];?></span>
-                    <span><?= $result['Category']['name'];?></span>
-                    <span><?= $result['User']['display_name'];?></span>
-                    <span><?= $result['User']['created'];?></span>
-                    <span style="width: 250px"><?= $result['Project']['short_description'];?></span>
+                    <span class="datos_users_id"><?= $result['Project']['id'];?></span>
+                    <span class="datos_users_name"><?= $result['Project']['title'];?></span>
+                    <span class="datos_users_mail"><?= $result['Category']['name'];?></span>
+                    <span class="datos_users_registro"><?= $result['User']['display_name'];?></span>
+                    <span class="datos_users_denunce1"><?= $result['User']['created'];?></span>
+                    <span class="datos_users_description"><?= $result['Project']['short_description'];?></span>
 
                     </div>
 
@@ -203,3 +435,4 @@ if (!empty($this->data['results'])) {
 <input name="json" type="hidden" id="json" value="x" />
 </form>
 <iframe name="ifr" style="width:0; height:o; position:absolute; top:-15000px;"></iframe>
+<script type="text/javascript" src="/js/css3-mediaqueries.js"></script>

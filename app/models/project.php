@@ -123,6 +123,11 @@ class Project extends AppModel {
                 'required' => true,
                 'allowEmpty' => false
             ),
+            'PROJECT_MUST_BE_UNIQUE' => array(
+                'rule' => 'isUnique',
+                'required' => true,
+                'allowEmpty'=>false,
+            )
         )
         , 'category_id' => array(
             'default' => array(
@@ -488,7 +493,7 @@ if (ctype_digit($id)){
 	}
     function getMoneda1($data){
         $moneda=$data['Project']['moneda'];
-        if($moneda=='ARS'){$moneda_proyecto ='$';}elseif($moneda=='GBP'){$moneda_proyecto ='£';}else{$moneda_proyecto ='$';}
+        if($moneda=='ARS'){$moneda_proyecto ='$';}elseif($moneda=='GBP'){$moneda_proyecto ='£';}elseif($moneda=='EUR'){$moneda_proyecto ='€';}else{$moneda_proyecto ='$';}
 
         return $moneda_proyecto;
     }

@@ -414,6 +414,8 @@ class UsersController extends AppController {
     }
 
     function add() {
+
+
 		
 		
         if($this->Auth->user()) {
@@ -421,6 +423,8 @@ class UsersController extends AppController {
         }
 
         if($this->data) {
+            /*echo '<pre>';
+            var_dump($this->data['User']['password']);die;*/
 			
             if(isset($this->data['User']['password']) && $this->data['User']['password'] == $this->data['User']['password_confirmation']) {
                 $this->data['User']['password'] = $this->Auth->password($this->data['User']['password']);
@@ -502,8 +506,8 @@ class UsersController extends AppController {
             $this->data['User']['facebook_id'] = $this->Connect->user('id');
         }
 
-        $this->data['User']['password'] = '';
-        $this->data['User']['password_confirmation'] = '';
+       /* $this->data['User']['password'] = '';
+        $this->data['User']['password_confirmation'] = '';*/
 		 if($this->data) {
 			$this->set('validationErrorsArray', $this->User->invalidFields());
 		 }

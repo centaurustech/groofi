@@ -134,7 +134,7 @@ switch ($project['Project']['status']) {
         <li><b>email</b><?= $project['User']['email'] ?></li>
         <li><b>Idioma del proyecto</b><?= $project['Project']['idioma'] ?></li>
         <li><a  class="editproy" href="/projects/editprojects/<?=$project['Project']['id']?>/1"><span class="editp"></span>Editar</a></li>
-        <div class="link_sponsor"><a href="/projects/adminuploadimage/<?=$project['Project']['id'] ?>" >Agregar Imagen para Sponsor</a></div>
+        <div class="link_sponsor"><a href="/projects/adminuploadimage/<?=$project['Project']['id'].'/'.base64_encode('1') ?>" >Agregar Imagen para Sponsor</a></div>
 
 
 

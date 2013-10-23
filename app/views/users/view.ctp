@@ -179,7 +179,7 @@ if ( !empty($data['Notifications']) && is_array($data['Notifications'])) {
 <span class="ui-icon site-icon auto-icon medium">&nbsp;</span>
 <p class="novedad_titulo">
 <?
-
+/*echo $this->Time->format($notification['Notification']['created'], '%A %d  ');die;*/
 $replace=array(
 'Coment&oacute; una actualizaci&oacute;n -'.$this->Time->format($notification['Notification']['created'], '%A %d  ' . __('OF', true) . ' %B ' . __('OF', true) . ' %Y'),
 'Coment&oacute; un proyecto -'.$this->Time->format($notification['Notification']['created'], '%A %d  ' . __('OF', true) . ' %B ' . __('OF', true) . ' %Y'),

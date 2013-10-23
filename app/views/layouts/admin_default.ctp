@@ -11,6 +11,10 @@ $isNotCache = true; ?>
 ul li ul{ max-width:250px;}
 </style>
     <head>
+        <!--[if IE 8]>
+        <link rel="stylesheet" href="/css/ie.css" TYPE="text/css" MEDIA='screen'>
+
+        <![endif]-->
         <?
         if (low($title_for_layout) == low($this->params['controller'])) {
             $title_for_layout =!isset($tituloadmin)? up($this->params['controller']) . '_' . up($this->params['action']):$tituloadmin;
@@ -56,13 +60,14 @@ ul li ul{ max-width:250px;}
         /* -------------------------------------------------------------- */
 
         /* -------------------------------------------------------------- */
+
         echo $this->Html->css('/css/admin_default');
         //    echo $this->Html->css('/css/dropmenu');
-        if (get_user_browser() == 'ie') {
+        /*if (get_user_browser() == 'ie') {
             echo $this->Html->meta(array('http-equiv' => 'x-ua-compatible', 'content' => "IE=8")) . "\r\n";
             echo $this->Html->css('/css/ie');
             $bodyIeClass = getIeVersion() ? "ie ie" . getIeVersion() : '';
-        }
+        }*/
         /* -------------------------------------------------------------- */
         ?>
     </head>
@@ -90,9 +95,9 @@ ul li ul{ max-width:250px;}
                     $this->Js->buffer("$('ul#admin_menu').superfish({dropShadows : false});");
                     ?>
                 </div>
-                <div class="esp"><a href="/admin?idioma=es" style="opacity:0;font-size: 1">español</a></div>
-                <div class="ing"><a href="/admin?idioma=en" style="opacity:0;font-size: 1">ingles</a></div>
-                <div class="ita"><a href="/admin?idioma=it" style="opacity:0;font-size: 1">italiano</a></div>
+                <div class="esp"><a href="/admin?idioma=es" style="float:left;font-size: 10px; line-height:20px;width: 20px; height: 18px;display: block;position: relative;">español</a></div>
+                <div class="ing"><a href="/admin?idioma=en" style="float:left;font-size: 10px; line-height:20px;width: 22px; height: 18px;display: block;position: relative;">ingles</a></div>
+                <div class="ita"><a href="/admin?idioma=it" style="float:left;font-size: 10px; line-height:20px;width: 20px; height: 18px;display: block;position: relative; ">italiano</a></div>
 
             </div>
             <div id="main">

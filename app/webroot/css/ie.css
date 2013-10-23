@@ -1,0 +1,40 @@
+.id_ie{
+    width: 20px !important;
+}
+.actions12{
+    float: right;
+    margin-right: 100px;
+    position: relative;
+}
+.datos_users_id{
+    width: 20px!important;
+
+}
+#obj1 .user_subtitulos_ie_id{
+    width: 45px;
+}
+#obj1 .datos_users_email{
+    width: 123px;
+
+}
+.datos_users_score{
+    width: 137px!important;
+}
+#obj1 .datos_right{
+    float: right;
+    list-style: none outside none !important;
+    margin-left: 0 !important;
+    position: relative;
+    width: 172px;
+}
+#obj1 .datos_right1{
+    float: right;
+    list-style: none outside none !important;
+    margin-left: 0 !important;
+    width: 195px;
+
+}
+.datos_users_count{
+    width: 90px\0/!important;
+}
+

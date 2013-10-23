@@ -20,7 +20,7 @@ $thumb_image_prefix = "thumbnail_";			// The prefix name to the thumb image
 $large_image_name = $large_image_prefix.$_SESSION['random_key'];     // New name of the large image (append the timestamp to the filename)
 $thumb_image_name = $thumb_image_prefix.$_SESSION['random_key'];     // New name of the thumbnail image (append the timestamp to the filename)
 $max_file = "2"; 							// Maximum file size in MB
-$max_width = "570";							// Max width allowed for the large image
+$max_width = "650";							// Max width allowed for the large image
 $thumb_width = "200";						// Width of thumbnail image
 $thumb_height = "150";						// Height of thumbnail image
 // Only one of these image types should be allowed for upload
@@ -128,7 +128,7 @@ function getVideoFromURL($u){
     <div class="rounded_crear">
         <input tabindex=1 onkeyup="xrestantes(this,$('restantes1'),50)" onkeydown="xrestantes(this,$('restantes1'),50)" onchange="xrestantes(this,$('restantes1'),50)" autocomplete="off" type="text" name="data[Project][title]" value="<?if(isset($_POST['data']['Project']['title'])){echo $_POST['data']['Project']['title'];}?>" />
         <div style="color:red;font-size:9px;position:relative; top:-12px"><?php if (isset($validationErrorsArray['title']) && !empty($validationErrorsArray['title'])){echo $validationErrorsArray['title'];}?></div>
-        <div id="restantes1" style="font-size:9px;position:absolute;left:0; top:28px; text-align:right; width:370px; height:15px;"><?php echo __("Res1");?><?if(isset($_POST['data']['Project']['title'])){echo 50-intval((strlen(utf8_decode($_POST['data']['Project']['title']))));}else{echo '50';}?><?php echo __( "Carac1");?></div>
+        <div id="restantes1" style="font-size:9px;position:absolute;left:0; top:28px; text-align:right; width:370px; height:15px;"><?php echo __("Res1");?><?if(isset($_POST['data']['Project']['title'])){echo 50-intval((strlen(utf8_decode($_POST['data']['Project']['title']))));}else{echo '50';}?> <?php echo __( "Carac");?></div>
         <div class="bot_info"  onmouseout="hideTip()" onmousemove="showTip(event,'<?php echo __("Title1");?>')"></div>
     </div>
 </div>
@@ -251,7 +251,7 @@ function getVideoFromURL($u){
         <div   id="restantes2" style="font-size:9px;position:absolute;left:0; top:118px; text-align:right; width:370px; height:15px;"><?php echo __("INGRE");?> <?if(isset($_POST['data']['Project']['short_description'])){echo intval((strlen(utf8_decode($_POST['data']['Project']['short_description']))));}else{echo '0';}?> <?php echo __("Res");?> <?if(isset($_POST['data']['Project']['short_description'])){echo 140-intval((strlen(utf8_decode($_POST['data']['Project']['short_description']))));}else{echo '140';}?> <?php echo __("Carac");?></div>
         <div class="bot_info_area" onmouseout="hideTip()" onmousemove="showTip(event,'<?echo __("PROJECT__SHORT_DESCRIPTION__HELP_MESSAGE_TEXT");?>')"></div>
     </div>
-    <div  style="z-index: 9999; width:370px; height:253px; background:url(/2012/images/proyectosprivados.png); position:absolute; top:545px;top:530px\0/;top:530px\9">
+    <div  style="z-index: 9999; width:370px; height:253px; background:url(/2012/images/proyectosprivados.png); position:absolute; top:515px;top:530px\0/;top:530px\9">
         <div class="proyectos_privados0">
             <?php echo __("PROYECTOS_PRIVADOS1");?>
         </div>
@@ -398,10 +398,10 @@ function getVideoFromURL($u){
         <div style="font-size:12px;display: block; width: 370px; height: 100px"><? echo __("PROJECT__FILE_EDIT_TIP_MESSAGE_TEXT");?> </div>
         <div id="upload_status" style="font-size:12px; width:38%; margin:0 0 20px; padding:5px; display:none; border:1px #999 dotted; background:#eee;"></div>
         <a id="upload_link" style="cursor:pointer;position:relative;display: block;background:#000000; font-size: 18px; color: white;font-weight: normal;height: 30px;width: 120px; text-align: center" href="#"><?__('UPLOAD_BROWSE');?></a>
-        <? echo __("EDIT_IMAGE");?>
+        <div style="float: left; position: relative; width: 900px; height: 25px"><? echo __("EDIT_IMAGE");?></div>
         <span id="loader" style="display:none;"><img src="/2012/images/loader.gif" alt="Loading..."/></span> <span id="progress"></span>
 
-        <div id="uploaded_image"></div>
+        <div id="uploaded_image" style="float: left; position: relative; width: 900px; height: auto"></div>
         <div id="thumbnail_form" style="display:none;">
 
 
@@ -531,10 +531,10 @@ function getVideoFromURL($u){
     <div style="position:relative; height:17px; width:360px; margin-left: 15px">
         <div style="display: block; left: -15px;position: absolute;top: 38px;"><img src="/2012/images/boton_tiempo.png"></div>
         <div id="indicadords" style="font-size:10px;margin-left: -15px;"><?php echo __("TIME_OF_PROJECT");?></div>
-        <div  class="back_slider" style=" width:360px; height:10px; border-bottom:1px solid #eaeaea;border-top:1px solid #eaeaea;border-right:1px solid #eaeaea; position:relative;top: 15px">
+        <div  class="back_slider" style=" background:#559C48;width:360px; height:10px; border-bottom:1px solid #eaeaea;border-top:1px solid #eaeaea;border-right:1px solid #eaeaea; position:relative;top: 15px">
             <div id="blueLine" style="width:0%; height:100%;background:#338abd;"></div>
         </div>
-        <div id="cursor" style="width:17px; height:17px; border:1px solid #d3d3d3; background:#e6e6e6;cursor:pointer; position:relative;"></div>
+        <div id="cursor" style="width:17px; height:17px; border:1px solid #919191; background:#666666;cursor:pointer; position:relative;"></div>
     </div>
 
     <div class="bot_info duracion" onmouseout="hideTip()"  onmousemove="showTip(event,'<?echo __("PROJECT__PROJECT_DURATION__HELP_MESSAGE_TEXT");?><?echo __("PROJECT__PROJECT_DURATION__TIP_MESSAGE_TEXT");?>')"></div>
@@ -810,6 +810,31 @@ function openBoxUser3(){
     $('boxUser').style.display='block';
 
 }
+jQuery.extend(jQuery.imgAreaSelect.prototype, {
+    animateSelection: function (x1, y1, x2, y2, duration) {
+        var fx = jQuery.extend(jQuery('<div/>')[0], {
+            ias: this,
+            start: this.getSelection(),
+            end: { x1: x1, y1: y1, x2: x2, y2: y2 }
+        });
+
+        jQuery(fx).animate({
+                    cur: 1
+                },
+                {
+                    duration: duration,
+                    step: function (now, fx) {
+                        var start = fx.elem.start, end = fx.elem.end,
+                                curX1 = Math.round(start.x1 + (end.x1 - start.x1) * now),
+                                curY1 = Math.round(start.y1 + (end.y1 - start.y1) * now),
+                                curX2 = Math.round(start.x2 + (end.x2 - start.x2) * now),
+                                curY2 = Math.round(start.y2 + (end.y2 - start.y2) * now);
+                        fx.elem.ias.setSelection(curX1, curY1, curX2, curY2);
+                        fx.elem.ias.update();
+                    }
+                });
+    }
+});
 
 function crop() {
     var message_wait = '<?php __("MESSAGE_WAIT");?>'
@@ -854,7 +879,7 @@ function crop() {
                 //put the image in the appropriate div
                 jQuery('#uploaded_image').html('<img src="/media/transfer/project/tmp/img/'+regular_url[1]+'" style="float: left; margin-right: 10px;" id="thumbnail" alt="Create Thumbnail" /><div style="border:1px #e5e5e5 solid; float:left; position:relative; overflow:hidden; width:<?php echo $thumb_width;?>px; height:<?php echo $thumb_height;?>px;"> <img src="/media/transfer/project/tmp/img/'+regular_url[1]+'" style="position: relative;" id="thumbnail_preview" alt="Thumbnail Preview" /></div>');
                 //find the image inserted above, and allow it to be cropped
-                jQuery('#uploaded_image').find('#thumbnail').imgAreaSelect({ aspectRatio: '1:<?php echo $thumb_height/$thumb_width;?>', onSelectChange: preview });
+                jQuery('#uploaded_image').find('#thumbnail').imgAreaSelect({minHeight: '420',minWidth:'560',instance: true,handles: true,parent:'#uploaded_image', aspectRatio: '1:<?php echo $thumb_height/$thumb_width;?>', onSelectChange: preview });
                 //display the hidden form
                 jQuery('#thumbnail_form').show();
 
@@ -885,7 +910,7 @@ function crop() {
             return false;
         }else{
             //hide the selection and disable the imgareaselect plugin
-            jQuery('#uploaded_image').find('#thumbnail').imgAreaSelect({ disable: true, hide: true });
+            jQuery('#uploaded_image').find('#thumbnail').imgAreaSelect({minHeight: '420',minWidth:'560',instance: true,handles: true,parent:'#uploaded_image', disable: true, hide: true });
             loadingmessage('Please wait, saving thumbnail....', 'show');
             jQuery.ajax({
                 type: 'POST',
@@ -908,7 +933,7 @@ function crop() {
                     }else{
                         jQuery('#upload_status').show().html('<h1>Unexpected Error</h1><p>Please try again</p>'+response);
                         //reactivate the imgareaselect plugin to allow another attempt.
-                        jQuery('#uploaded_image').find('#thumbnail').imgAreaSelect({ aspectRatio: '1:<?php echo $thumb_height/$thumb_width;?>', onSelectChange: preview });
+                        jQuery('#uploaded_image').find('#thumbnail').imgAreaSelect({minHeight: '420',minWidth:'560', instance: true,handles: true,parent:'#uploaded_image',aspectRatio: '1:<?php echo $thumb_height/$thumb_width;?>', onSelectChange: preview });
                         jQuery('#thumbnail_form').show();
                     }
                 }

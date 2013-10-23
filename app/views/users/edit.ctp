@@ -21,8 +21,8 @@ echo '<div style="width:100%; line-height:20px; border:1px solid #eaeaea; backgr
 unset($_SESSION['Message']['flash']['message']);
 }
 ?>
-<div onclick="location='<?=Router::url (array ('controller' => 'users', 'action' => 'edit', 'tab' => 'profile'))?>';" class="perfil_user"><?php echo __("USER_PROFILE");?></div>
-<div onclick="location='<?=Router::url (array ('controller' => 'users', 'action' => 'edit', 'tab' => 'account'))?>';" class="cuenta_user"><?php echo __("account");?></div>
+<div style="font-size: 10px" onclick="location='<?=Router::url (array ('controller' => 'users', 'action' => 'edit', 'tab' => 'profile'))?>';" class="perfil_user <?echo 'perfil_user'.$_SESSION["idioma"];?>"><?php echo __("USER_PROFILE");?></div>
+<div style="font-size: 10px" onclick="location='<?=Router::url (array ('controller' => 'users', 'action' => 'edit', 'tab' => 'account'))?>';" class="cuenta_user <?echo 'cuenta_user'.$_SESSION["idioma"];?>"><?php echo __("account");?></div>
 <h2 style="cyan"><?php echo __("USER_PROFILE");?></h2>
 <p><?php echo __("PROJECT_ADD_FIRST_BLOCK_SUBTITLE");?></p>
 <div class="misc_separador"></div>
@@ -39,8 +39,8 @@ $file=( empty($file) ? $this->Html->image('/img/assets/img_default_200px.png') :
 echo $file;
 ?>
 
- <div id="bajofoto1"><?php echo __("UPLOAD_BROWSE");?></div>
- <div id="extfoto1"><input onchange="if((this.value.toLowerCase().indexOf('.jpg')==-1) && (this.value.toLowerCase().indexOf('.jpeg')==-1) && (this.value.toLowerCase().indexOf('.gif')==-1) && (this.value.toLowerCase().indexOf('.png')==-1)){$('elfile').innerHTML='<span style=&quot;color:red;font-size:9px&quot;>Formato de archivo no permitido.</span>';return;}$('elfile').innerHTML=this.value" onmouseover="$('bajofoto1').style.background='#237fb5';" onmouseout="$('bajofoto1').style.background='#000';" id="foto1"  name="data[User][file]" autocomplete="off" type="file" /></div>
+ <div id="bajofoto12"><?php echo __("UPLOAD_BROWSE");?></div>
+ <div id="extfoto1"><input onchange="if((this.value.toLowerCase().indexOf('.jpg')==-1) && (this.value.toLowerCase().indexOf('.jpeg')==-1) && (this.value.toLowerCase().indexOf('.gif')==-1) && (this.value.toLowerCase().indexOf('.png')==-1)){$('elfile').innerHTML='<span style=&quot;color:red;font-size:9px&quot;>Formato de archivo no permitido.</span>';return;}$('elfile').innerHTML=this.value" onmouseover="$('bajofoto12').style.background='#237fb5';" onmouseout="$('bajofoto12').style.background='#000';" id="foto1"  name="data[User][file]" autocomplete="off" type="file" /></div>
 
 
 

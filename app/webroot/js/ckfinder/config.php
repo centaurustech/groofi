@@ -63,7 +63,7 @@ Examples:
 
 ATTENTION: The trailing slash is required.
 */
-$baseUrl = 'http://groofi.bo/app/webroot/upload/';
+$baseUrl = 'http://dev.groofi.com/app/webroot/upload/';
 
 
 /*
