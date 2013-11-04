@@ -22,7 +22,10 @@ $this->set('title_for_layout' ,__("FAQ", true)) ;
 <p class="texto_titulo_faq" onclick="location='#grales03';" style="cursor:pointer;"><?php echo __("WHAT_IS_A_PROJECT");?></p>
 <p class="texto_titulo_faq" onclick="location='#grales04';" style="cursor:pointer;"><?php echo __("CHARGES_A_COMISSION");?></p>
 <p class="texto_titulo_faq" onclick="location='#grales05';" style="cursor:pointer;"><?php echo __("PAYPAL_CHARGES_COMISSION");?></p>
+    <?if ($_SESSION['idioma'] == 'esp'){?>
 <p class="texto_titulo_faq" onclick="location='#grales05b';" style="cursor:pointer;"><?php echo __("MERCADOPAGO_CHARGES_COMISSION");?></p>
+    <?}?>
+
 <p class="texto_titulo_faq" onclick="location='#grales06';" style="cursor:pointer;"><?php echo __("IMPLICATE_FOLLOW_PROJECT");?></p>
 
 <br>
@@ -58,7 +61,7 @@ $this->set('title_for_layout' ,__("FAQ", true)) ;
 <p class="texto_titulo_faq" onclick="location='#apoyar01';" style="cursor:pointer;"><?php echo __("WHY_SPONSOR_PROJECTS");?></p>
 <p class="texto_titulo_faq" onclick="location='#apoyar02';" style="cursor:pointer;"><?php echo __("WHO_ARE_SPONSORS_OF_PROJECTS_AND_WHY_SPONSOR_PROJECTS");?></p>
 <p class="texto_titulo_faq" onclick="location='#apoyar03';" style="cursor:pointer;"><?php echo __("WHAT_IF_THE_PROJECT_IS_NOT_SUCCESSFUL");?></p>
-<p class="texto_titulo_faq" onclick="location='#apoyar04';" style="cursor:pointer;" ><?php echo __(HOW_TO_SPONSOR_A_PROJECT);?></p>
+<p class="texto_titulo_faq" onclick="location='#apoyar04';" style="cursor:pointer;" ><?php echo __("HOW_TO_SPONSOR_A_PROJECT");?></p>
 <p class="texto_titulo_faq" onclick="location='#apoyar05';" style="cursor:pointer;"><?php echo __("WHAT_ARE_THE_BENEFITS");?></p>
 <p class="texto_titulo_faq" onclick="location='#apoyar06';" style="cursor:pointer;"><?php echo __("PUBLISH_MY_CONTRIBUTION");?></p>
 <p class="texto_titulo_faq" onclick="location='#apoyar07';" style="cursor:pointer;"><?php echo __("INFORMATION_FOR_SPONSORS");?></p>
@@ -103,10 +106,12 @@ $this->set('title_for_layout' ,__("FAQ", true)) ;
     <h3 class="cyan"><?php echo __("PAYPAL_CHARGES_COMISSION");?></h3>
   <p class="texto_proyecto"><?php echo __("PAYPAL_CHARGES_COMISSION_CONCEPT");?></p><br>
 </div>
+    <?if ($_SESSION['idioma'] == 'esp'){?>
 <div class="respuesta" id="grales05b">
     <h3 class="cyan"><?php echo __("MERCADOPAGO_CHARGES_COMISSION");?></h3>
   <p class="texto_proyecto"><?php echo __("MERCADOPAGO_CHARGES_COMISSION_CONCEPT");?></p><br>
 </div>
+    <?}?>
 <div class="respuesta" id="grales06">
     <h3 class="cyan"><?php echo __("IMPLICATE_FOLLOW_PROJECT");?></h3>
   <p class="texto_proyecto"><?php echo __("IMPLICATE_FOLLOW_PROJECT_CONCEPT");?></p>

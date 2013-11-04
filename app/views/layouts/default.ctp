@@ -60,7 +60,7 @@ echo $this->Html->meta (array ('HTTP-EQUIV' => 'Expires', 'content' => date ('D,
     <script type="text/javascript" src="/js/jquery.ocupload-1.1.2.js"></script>
     <script type="text/javascript" src="/js/ckeditor/ckeditor.js"></script>
     <script type="text/javascript" src="/js/ckfinder/ckfinder.js"></script>
-
+    <!--script type="text/javascript" src="/js/jquery.validate.js"></script-->
 
 
 
@@ -115,7 +115,7 @@ jQuery(document).ready(function(){
 
         $('login_text').innerHTML='<a href="<?= User::getLink ($user)?>" id="gear3">'+perfi+'</a> / <a href="<?=Router::url (array ('controller' => 'users', 'action' => 'logout'))?>">'+out+'</a>';
         jQuery('#gear').html('<a style="font-size: 0" onclick="javascript:openBoxUser1(event);">L</a>');
-        $('boxUser').innerHTML='<div id="picuserbox"><?=$file?></div><div id="nombreabreviado"><?php echo $alias ;?></div><div id="nombrecompleto"><?=$user['User']['display_name'];?></div><a onclick="window.location=&quot;<? echo User::getLink ($user);?>&quot;;return false;" id="miperfilboxexpand" href="<? echo User::getLink ($user);?>">'+perfi+'</a><a onclick="window.location=&quot;<? echo User::getLink ($user, 'settings');?>&quot;;return false;" id="settingsboxexpand" href="<? echo User::getLink ($user, 'settings');?>">'+config+'</a><img id="ikomse" onclick="location=&quot;/messages&quot;;return false;" style="position:absolute;top:67px;left:77px;cursor:pointer;" src="/2012/images/mensajes.png">'+nummens;
+        $('boxUser').innerHTML='<div id="picuserbox"><?=$file?></div><div id="nombrecompleto"><?=$user['User']['display_name'];?></div><a onclick="window.location=&quot;<? echo User::getLink ($user);?>&quot;;return false;" id="miperfilboxexpand" href="<? echo User::getLink ($user);?>">'+perfi+'</a><a onclick="window.location=&quot;<? echo User::getLink ($user, 'settings');?>&quot;;return false;" id="settingsboxexpand" href="<? echo User::getLink ($user, 'settings');?>">'+config+'</a><img id="ikomse" onclick="location=&quot;/messages&quot;;return false;" style="position:absolute;top:57px;left:77px;cursor:pointer;" src="/2012/images/mensajes.png">'+nummens;
 
 
 
@@ -132,7 +132,7 @@ jQuery(document).ready(function(){
 
 
             $('login_text').innerHTML='<a onclick="location=&quot;<?= User::getLink ($user)?>&quot;" id="gear3" href="<?= User::getLink ($user)?>">'+perfi+'</a> / <a href="<?=Router::url (array ('controller' => 'users', 'action' => 'logout'))?>">'+out+'</a>';
-            $('boxUser').innerHTML='<div id="picuserbox"><?=$file?></div><div id="nombreabreviado"><?php echo $alias ;?></div><div id="nombrecompleto"><?=$user['User']['display_name'];?></div><a onclick="window.location=&quot;<? echo User::getLink ($user);?>&quot;;return false;" id="miperfilboxexpand" href="<? echo User::getLink ($user);?>">'+perfi+'</a><a onclick="window.location=&quot;<? echo User::getLink ($user, 'settings');?>&quot;;return false;" id="settingsboxexpand" href="<? echo User::getLink ($user, 'settings');?>">'+config+'</a><img id="ikomse" onclick="location=&quot;/messages&quot;;return false;" style="position:absolute;top:67px;left:77px;cursor:pointer;" src="/2012/images/mensajes.png">'+nummens;
+            $('boxUser').innerHTML='<div id="picuserbox"><?=$file?></div><div id="nombrecompleto"><?=$user['User']['display_name'];?></div><a onclick="window.location=&quot;<? echo User::getLink ($user);?>&quot;;return false;" id="miperfilboxexpand" href="<? echo User::getLink ($user);?>">'+perfi+'</a><a onclick="window.location=&quot;<? echo User::getLink ($user, 'settings');?>&quot;;return false;" id="settingsboxexpand" href="<? echo User::getLink ($user, 'settings');?>">'+config+'</a><img id="ikomse" onclick="location=&quot;/messages&quot;;return false;" style="position:absolute;top:57px;left:77px;cursor:pointer;" src="/2012/images/mensajes.png">'+nummens;
 
 
 
@@ -153,15 +153,21 @@ ns.logueado=0;
 <div id="sincro" >
 <a onclick="$('bglightbox2').style.display='none';$('bglightbox2').alfa(0);  $('sincro').style.display='none'" id="closesincro" href="#"></a>
 <form id="formulariosincronizacion" action="/sincro" method="post">
+<div id="titulo_login_facebook"><?echo __("LOGIN_USING_FACEBOOK");?></div>
+<div id="titulo_login_facebook_texto"><?echo __("TEXTO_SINCRO_FACEBOOK");?></div>
+    <div id="titulo_login_facebook_email"><?echo __("USER__EMAIL");?></div>
 <input id="sincro_email" value="" autocomplete="off" type="text" name="data[User][email]" />
 <div id="err_sincro_email"></div>
+    <div id="titulo_login_facebook_password"><?echo __("USER__PASSWORD");?></div>
 <input id="sincro_pass" value="" autocomplete="off" type="password" name="data[User][password]" />
 <div id="err_sincro_pass"></div>
+    <div id="titulo_login_facebook_passsword_repetir"><?echo __("USER__PASSWORD_CONFIRMATION");?></div>
 <input id="sincro_repitepass" value="" autocomplete="off" type="password" name="data[User][password_confirmation]" />
 <div id="err_sincro_repitepass"></div>
+    <div id="titulo_login_facebook_matenerme"><?echo __("MANTENER_CONECTADO");?></div>
 <label id="checkrecordarloginsincro"><input type="checkbox" name="data[User][remember_me]" id="recordarloginsincro" /></label>
 <input type="hidden" name="data[User][sincronice]" value="1" />
-<a onclick="$('formulariosincronizacion').submit();return false;" href="#" id="submitsincro"></a>
+<a onclick="$('formulariosincronizacion').submit();return false;" href="#" id="submitsincro"><span><?echo __("ADMIN_LOGIN");?></span></a>
 </form>
 </div>
 
@@ -231,7 +237,7 @@ ns.logueado=0;
    <div class="footer_center">
   <div id="footer_categorias">
 <h4 class="titulo_footer" style="text-transform:uppercase"><? __ ('SEARCH_BY_CATEGORY')?></h4>
-<img class="misc_categorias" src="/2012/images/misc_categorias.png" width="8" height="7">
+<!--img class="misc_categorias" src="/2012/images/misc_categorias.png" width="8" height="7"-->
 <div class="clear"></div>
 <div style="width:225px" class="misc_separador_footer"></div><br>
 <div class="listado_categorias  listado_categorias_footer">
@@ -248,7 +254,7 @@ ns.logueado=0;
 </div>
 <div id="footer_facebook">
 <h4 class="titulo_footer"><?php echo __("GROOFI_FOOTER");?></h4>
-<img class="misc_categorias" src="/2012/images/misc_categorias.png" width="8" height="7">
+<!--img class="misc_categorias" src="/2012/images/misc_categorias.png" width="8" height="7"-->
 <div class="clear"></div>
 <div class="misc_separador_footer"></div><br>
 <div class="fb-like" data-href="https://www.facebook.com/Groofi" data-send="false" data-width="340" data-show-faces="true"></div>
@@ -256,7 +262,7 @@ ns.logueado=0;
 
 <div id="footer_contacto">
 <h4 class="titulo_footer"><?php echo __("GROOFI_FOOTER_CONTACTATE");?></h4>
-<img class="misc_categorias" src="/2012/images/misc_categorias.png" width="8" height="7">
+<!--img class="misc_categorias" src="/2012/images/misc_categorias.png" width="8" height="7"-->
 <div class="clear"></div>
 <div style="width:245px" class="misc_separador_footer"></div><br>
 <div class="listado_contacto"> 

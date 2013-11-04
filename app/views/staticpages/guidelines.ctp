@@ -118,9 +118,9 @@ $this->set('title_for_layout' ,__("GROOFI_SCHOOL",true) ) ;
 <span class="texto_proyecto">
 <?php echo __("CREATE_AWARDS_10");?>
 <br><br>
-<?php echo __("CREATE_AWARDS_11");?>
-<br><br>
-<?php echo __("CREATE_AWARDS_12");?>
+<!--?php echo __("CREATE_AWARDS_11");?-->
+
+<!--?php echo __("CREATE_AWARDS_12");?-->
 </span>
   </p><br>
 </div>

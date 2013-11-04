@@ -5,9 +5,9 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 
 (function()
 {
-	var imageDialog = function( editor, dialogType )
+    var imageDialog = function( editor, dialogType )
 	{
-		// Load image preview.
+        // Load image preview.
 		var IMAGE = 1,
 			LINK = 2,
 			PREVIEW = 4,

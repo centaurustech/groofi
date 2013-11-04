@@ -4423,7 +4423,7 @@ msgid "USER_PASS"
 msgstr "Usuario o clave incorrectos"
 
 msgid "PUBLISH_PROJECT"
-msgstr "Publicó su proyecto  "
+msgstr "Publicar Proyecto  "
 
 msgid "ADD_UPDATE_PROJECT"
 msgstr "Agregó una actualización a su proyecto  "
@@ -4585,7 +4585,7 @@ msgid "CONTACTO_1"
 msgstr "Por favor llena correctamente el campo E-mail"
 
 msgid "MUST_BE_IN_RAGE"
-msgstr "Debe escoger un valor entre 10 y 200000"
+msgstr "Debe escoger un valor entre 10 y 99000000"
 
 msgid "CONTACTO_2"
 msgstr "Por favor llena correctamente el campo del Nombre"
@@ -4617,26 +4617,29 @@ msgstr "maximo 50 caracteres"
 msgid "ERROR_EMAIL_RECORDAR"
 msgstr "El e-mail ingresado no pertenece a un usuario registrado"
 
-msgid ""
-msgstr ""
+msgid "minLength_5"
+msgstr "Ingresa al menos 5 caracteres"
 
-msgid ""
-msgstr ""
+msgid "actualizacion_alert1"
+msgstr "Por favor ingresa un título más extenso"
 
-msgid ""
-msgstr ""
+msgid "actualizacion_alert2"
+msgstr "El texto de la actualización es demasiado breve"
 
-msgid ""
-msgstr ""
+msgid "alert_imagen upload_add"
+msgstr "El tamaño de imagen es muy reducido.Por favor elija otra."
 
-msgid ""
-msgstr ""
+msgid "IMAGEN_SPONSOR_INFO"
+msgstr "☼ Paso1: Ingrese el nombre del Sponsor .<br>☼ Paso2: Suba una imagen mayor a 380px * 150px.<br> ☼ Paso3: Guarde la seleccion realizada.<br> ☼ Paso4: Envie la seleccion guardada"
 
-msgid ""
-msgstr ""
+msgid "TEXTO_SINCRO_FACEBOOK"
+msgstr "Completa estos datos para crear tu cuenta o, si ya tienes una, para puedas loguearte con Facebook de manera alternativa."
 
-msgid ""
-msgstr ""
+msgid "MANTENER_CONECTADO"
+msgstr "Mantenerme Conectado"
+
+msgid "NOMBRE_LETRAS"
+msgstr "Solo letras. Por favor ingrese un nombre valido"
 
 msgid ""
 msgstr ""

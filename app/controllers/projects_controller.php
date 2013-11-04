@@ -24,7 +24,7 @@ class ProjectsController extends AppController {
             Configure::write('Config.language', $idioma);
 
         }
-        $this->Auth->allow ('view', 'listing', 'index', 'cron_aboutToFinish', 'cron_Finished','verifyPrivate','adminuploadimage', 'show_projects','editprojects','testcropadmin','general_search','search_category','delete_sponsor');
+        $this->Auth->allow ('view', 'listing', 'index', 'cron_aboutToFinish', 'cron_Finished','verifyPrivate','adminuploadimage', 'show_projects','testcrop','editprojects','testcropadmin','general_search','search_category','delete_sponsor');
 		if (!$this->Auth->user() && $this->params['url']['url']=='projects/add') {
 			$_SESSION['VOLVER']='/projects/add';
 			header("Location:/signup");
@@ -423,6 +423,10 @@ var_dump($this->data);die;*/
 
     function testcrop(){
 
+        if (!isset($_SESSION['random_key']) || strlen($_SESSION['random_key'])==0){
+            $_SESSION['random_key'] = strtotime(date('Y-m-d H:i:s')); //assign the timestamp to the session variable
+            $_SESSION['user_file_ext']= "";
+        }
 
         /*
         * Copyright (c) 2008 http://www.webmotionuk.com / http://www.webmotionuk.co.uk
@@ -843,7 +847,9 @@ var_dump($this->data);die;*/
         }
 //You do not need to alter these functions
         function resizeThumbnailImage($thumb_image_name, $image, $width, $height, $start_width, $start_height, $scale){
+
             list($imagewidth, $imageheight, $imageType) = getimagesize($image);
+
             $imageType = image_type_to_mime_type($imageType);
 
             $newImageWidth = ceil($width * $scale);
@@ -936,6 +942,7 @@ var_dump($this->data);die;*/
 ########################################################
 #	UPLOAD THE IMAGE								   #
 ########################################################
+
         if ($_POST["upload"]=="Upload") {
             //Get the file information
             $userfile_name = $_FILES['image']['name'];
@@ -1484,8 +1491,8 @@ if ($control == '1'){
     }
 
     function edit ($id = null, $publish=false, $getData = false) {
-			
-				
+
+
 		    App::import('model', 'Project');
 			$pp=new Project();
 			$datos=$pp->query("select * from projects where id=".$id);
@@ -1506,9 +1513,10 @@ if ($control == '1'){
 				$this->set ('yaHayImg', 0);
 				$this->set ('laim', '/comodo.php?imagen=img/assets/img_default_280x210px.png');
 			}
-			
-		
-		
+
+
+
+
         if ($getData) { // try to validate and save data directly.
             $query['contain'] = array ('Prize', 'User', 'User.Link','Link'); //,'Prize'
             $query['conditions'] = array (
@@ -1520,11 +1528,7 @@ if ($control == '1'){
 			
 			
         }
-		
-		
-		
-		
-		
+
         if (empty ($this->data)) {
             if ($id) {
                 $this->data = $this->Project->find ('first', array (
@@ -1539,9 +1543,8 @@ if ($control == '1'){
             }/*elseif ($this->data['Project']['enabled'] != 1 && $this->data['Project']['public'] != 0) { // if project exist and belongs to an auth user, check if it's editable
                 $this->pageError = array ('code' => 404);
             }*/
-            elseif ($this->data['Project']['public'] == 0) { // if project exist and belongs to an auth user, check if it's editable
-                $this->pageError = array ('code' => 404);
-            } elseif ($this->data['Project']['enabled'] == 0) {
+
+             elseif ($this->data['Project']['enabled'] == 0) {
                 $this->pageError = array ('code' => 404);
             }
 
@@ -1554,13 +1557,13 @@ if ($control == '1'){
 			 /*vd($this->Project->validate['file']);
 			 exit;
 		    */
-			
-			
+
+
 			
 			$no=0;
-			if(empty($this->data[Project][funding_goal]) || $this->data[Project][funding_goal]<10 || $this->data[Project][funding_goal]>200000){
+			/*if(empty($this->data[Project][funding_goal]) || $this->data[Project][funding_goal]<10 || $this->data[Project][funding_goal]>200000){
 				$no=1;
-			}
+			}*/
 			
 			
 			if( ($this->data['Project']['private_pass']!=$this->data['Project']['private_pass2'] || empty($this->data['Project']['private_pass']))  &&  $this->data['Project']['private']=='1'){
@@ -1576,12 +1579,7 @@ if ($control == '1'){
 			}
 			
 			if($privatepassko || $no){$publish=0;}
-			
-			
-			
-			
-			
-			
+
             if ($publish) { // Wich validation set we will use ?
 			
                // $validData = $this->Project->publishValidation ($this->data);
@@ -1593,8 +1591,17 @@ if ($control == '1'){
         		$this->data['Project']['end_date'] = date('Y-m-d', strtotime("+{$data['Project']['project_duration']} days"));
 				$validData=$this->data;
             } else {
+                if($this->data['Project']['basename'] != $datos[0]['projects']['country']){
 
+                    $cambio_path_image= str_replace('\\','/',WWW_ROOT);
+                    //        $this->data['Project']['dirname']='project/tmp/img';
+                    $this->data['Project']['basename']=$_POST['data']['Project']['country'];
+
+                    $this->data['Project']['file']=$cambio_path_image.'media/transfer/project/tmp/img/'.$_POST['data']['Project']['country'];
+                }
                 $validData = $this->Project->editValidation2 ($this->data);
+
+
             }
 			if(empty($_POST['data']['Prize']) && !$getData){
 				  $this->Project->invalidate ('prize', __ ('AT_LEAST_ONE_PRIZE', true));
@@ -1602,39 +1609,43 @@ if ($control == '1'){
 				  
 			}
 
-if($this->data['Project']['basename']!= $datos[0]['projects']['basename']){
-
+            /*if($this->data['Project']['basename'] != $datos[0]['projects']['country']){
 
             $cambio_path_image= str_replace('\\','/',WWW_ROOT);
-  //          $this->data['Project']['dirname']='project/tmp/img';
+  //        $this->data['Project']['dirname']='project/tmp/img';
             $this->data['Project']['basename']=$_POST['data']['Project']['country'];
+
             $this->data['Project']['file']=$cambio_path_image.'media/transfer/project/tmp/img/'.$_POST['data']['Project']['country'];
-}
+            }*/
+
             /*echo '<pre>';
-            var_dump($no);die;
+            var_dump($this->data);die;*/
             /*if ($validData && !$privatepassko && !$no) {*/
-                if (!$privatepassko && !$no) {
+                if (!$privatepassko) {
+
      //           $this->data['Project']['dirname'] = "project/".$this->data['Project']['id']."/img";
-                if ($this->Project->saveAll ($validData, array ('validate' => false))) {
-                    if($this->data['Project']['basename']!= $datos[0]['projects']['basename']){
+                if ($this->Project->saveAll($validData, array ('validate' => false))) {
+
+                    if(!empty($this->data['Project']['country']) && $this->data['Project']['country'] != $datos[0]['projects']['basename']){
 
                         $url_to = "media/filter/";
 
-                    /*Todas las img se guardan con .png*/
+                        $this->data['Project']['basename'] = $this->data['Project']['country'];
 
-                    $new_image_name = explode(".",$this->data['Project']['basename']);
+                        /*Todas las img se guardan con .png*/
 
-                    foreach(Configure::read ('ImgSize.filter.image') as $key=>$value){
-                        $dir = new Folder($url_to.$value."/project/".$this->data['Project']['id'], true);
-                        if(is_dir($url_to.$value."/project/".$this->data['Project']['id'])){
-                            $img_path = new Folder($url_to.$value."/project/".$this->data['Project']['id']."/img/", true);
-                            $file = new File($url_to.$value."/project/tmp/img/".$new_image_name[0].".png", false, 0644);
-                            if ($file->exists()) {
-                                $file->copy($url_to.$value."/project/".$this->data['Project']['id']."/img" . DS . $file->name);
+                        $new_image_name = explode(".",$this->data['Project']['basename']);
+
+                        foreach(Configure::read ('ImgSize.filter.image') as $key=>$value){
+                            $dir = new Folder($url_to.$value."/project/".$this->data['Project']['id'], true);
+                            if(is_dir($url_to.$value."/project/".$this->data['Project']['id'])){
+                                $img_path = new Folder($url_to.$value."/project/".$this->data['Project']['id']."/img/", true);
+                                $file = new File($url_to.$value."/project/tmp/img/".$new_image_name[0].".png", false, 0644);
+                                if ($file->exists()) {
+                                    $file->copy($url_to.$value."/project/".$this->data['Project']['id']."/img" . DS . $file->name);
+                                }
                             }
                         }
-                    }
-
                     }
 
 
@@ -1675,7 +1686,8 @@ if($this->data['Project']['basename']!= $datos[0]['projects']['basename']){
                     }
 
                     // send user to project pre/view
-                    $this->redirect (Router::url (array ('controller' => 'projects', 'action' => 'view', 'project' => Project::getSlug ($validData), 'user' => User::getSlug ($this->Auth->user ()))));
+
+                   $this->redirect (Router::url (array ('controller' => 'projects', 'action' => 'view', 'project' => Project::getSlug ($validData), 'user' => User::getSlug ($this->Auth->user ()))));
                 }
             } else {
                 $this->Session->setFlash (__ (( $publish ? 'THIS_PROJECT_IS_NOT_VALID_IT_CAN_NOT_BE_PUBLISHED' : 'THE_PROJECT_COULD_NOT_BE_SAVED_PLEASE_TRY_AGAIN.'), true));
@@ -1923,6 +1935,7 @@ if($this->data['Project']['basename']!= $datos[0]['projects']['basename']){
                     }
 
                     // send user to project pre/view
+
                     $this->redirect (Router::url (array ('controller' => 'projects', 'action' => 'view', 'project' => Project::getSlug ($validData), 'user' => User::getSlug ($this->Auth->user ()))));
                 }
             } else {
@@ -2004,11 +2017,13 @@ if($this->data['Project']['basename']!= $datos[0]['projects']['basename']){
         }
 
         $this->paginate['limit'] = 6;
+
+        $this->paginate['conditions']['Project.idioma ='] = $_SESSION['idioma'];
+
         $this->data = $this->paginate ('Project');
 
         $this->set ('baseUrl', $baseUrl);
 
-        $this->paginate['conditions']['Project.idioma ='] = $_SESSION['idioma'];
         $this->render ('index');
     }
 
@@ -2043,13 +2058,12 @@ if($this->data['Project']['basename']!= $datos[0]['projects']['basename']){
     $this->paginate['conditions']['Project.idioma ='] = $_SESSION['idioma'];
     $this->render ('index');
 }
+    /*Busqueda filtros especificos*/
 
-    function index ()/*Busqueda filtros especificos*/
+    function index (){
 
-    {
-
-    //DISCOVER
-
+        //DISCOVER
+        //vd($this->params);die;
         $this->loadModel('Country');
         $base_countries = $this->Country->getCountries($_SESSION['idioma']);
         $this->set (compact ('base_countries'));
@@ -2084,14 +2098,13 @@ if($this->data['Project']['basename']!= $datos[0]['projects']['basename']){
 
         $baseUrl = array_filter (array (
             //'city' => isset ($this->params['city']) ? $this->params['city'] : null,
-            'country' => isset ($this->params['pass'][0]) ? $this->params['pass'][0] : null,
-            'category' => isset ($this->params['pass'][1]) ? $this->params['pass'][1] : null,
-            'status' => isset ($this->params['pass'][2]) ? $this->params['pass'][2] : null
+            'country' => isset ($this->params['url']['pais']) ? $this->params['url']['pais'] : null,
+            'category' => isset ($this->params['url']['category']) ? $this->params['url']['category'] : null,
+            'status' => isset ($this->params['url']['status']) ? $this->params['url']['status'] : null
 			          ), function ($element) {
-                    return!is_null ($element);
+                    return !is_null ($element);
                 });
 
-        $this->set ('cityName', $this->params['pass'][0]);
         extract ($baseUrl);
 
         $this->set (compact (array_keys ($baseUrl)));
@@ -2101,54 +2114,24 @@ if($this->data['Project']['basename']!= $datos[0]['projects']['basename']){
         $this->paginate = $this->Project->queryStandarSet (false);
         $this->paginate['limit'] = 6;
 
-		
-		if($this->params['pass'][0]=='search' && (isset($this->params['pass'][1]) && !empty($this->params['pass'][1]))){
-
-			//$this->params['search']=$this->params['pass'][1];
-		}
-		
-
-        //if (isset ($category)) {
+         if(isset($this->params['url']['category']) && $this->params['url']['category'] !=''){
+             $category_info = $this->Project->Category->getFromSlug ($this->params['url']['category']);
+             $this->paginate['conditions']['Project.category_id'] = (int) @array_shift (Set::extract ('/Category/id', $category_info));
+             $this->set ('categoryName', Category::getName ($category_info));
+         }
 
 
-            $category_info = $this->Project->Category->getFromSlug ($this->params['pass'][1]);
-            $this->paginate['conditions']['Project.category_id'] = @array_shift (Set::extract ('/Category/id', $category_info));
-            $this->set ('categoryName', Category::getName ($category_info));
-
-
-
-        //}
-
-      /*  if (isset ($country) && !isset ($city)) {
-            $cities = $this->Project->City->find ('all', array (
-                'conditions' => array (
-                    'City.country_slug' => $country
-                ),
-                'contain' => array ()
-                    )
-            );
-            $this->set ('cityName', array_shift (Set::extract ('/City/country', $cities)));
-        } elseif (isset ($city)) {
-            $cities = $this->Project->City->find ('all', array (
-                'conditions' => array (
-                    'City.country_slug' => $country,
-                    'City.city_slug' => $city
-                ),
-                'contain' => array ()
-                    )
-            );
-            $city_name = array_shift (Set::extract ('/City/city_name', $cities));
-            $this->set ('cityName', array_shift (Set::extract ('/City/city_name', $cities)));
-        }*/
         //$this->paginate['order'] = 'Project.publish_date DESC'; // mas recientemente publicados , no filtra
-        $this->paginate['conditions']['Project.paislugar ='] = $this->params['pass'][0];
-        //$this->paginate['conditions']['Project.idioma ='] = $_SESSION['idioma'];
-        //$this->paginate['conditions']['Project.public ='] = 1;
+
+        if(isset($this->params['url']['pais']) && $this->params['url']['pais'] !=''){
+            $this->paginate['conditions']['Project.paislugar'] = $this->params['url']['pais'];
+        }
 
 
+        if(isset($this->params['url']['status']) && $this->params['url']['status'] !=''){
 
-        //if (isset ($status)) {
-            switch ($this->params['pass'][2]) {
+            //vd($this->params['url']['show']);
+            switch ($this->params['url']['status']) {
                 case 'most-recent' :
                     $this->paginate['order'] = 'Project.publish_date DESC'; // mas recientemente publicados , no filtra
                     $this->paginate['conditions']['Project.end_date >'] = date ('Y-m-d');
@@ -2157,27 +2140,32 @@ if($this->data['Project']['basename']!= $datos[0]['projects']['basename']){
                     $this->paginate['order'] = 'Project.sponsorships_count DESC , User.score , Project.follow_count DESC'; // mas recientemente publicados , no filtra
                     break;
                 case 'by-end' :  // muestra los proyectos que terminan dentro de los proximos 10 dias ordenados por fecha de finalizacion.
+
                     $this->paginate['conditions']['Project.end_date >'] = date ('Y-m-d');
                     $this->paginate['conditions']['Project.end_date <'] = date ('Y-m-d', strtotime ('+10 days'));
                     $this->paginate['order'] = 'Project.end_date ASC';
+
                     break;
                 case 'finished' :
                     $this->paginate['conditions']['Project.end_date <'] = date ('Y-m-d');
                     $this->paginate['order'] = 'Project.end_date DESC';
                     break;
             }
-            $this->set ('statusName',$this->params['pass'][2]);
-        //}
+
+            $this->set ('statusName',$this->params['url']['status']);
+        }
 
 
+        $this->paginate['conditions']['Project.idioma'] = $_SESSION['idioma'];
 
-        $this->data = $this->paginate ('Project');
+        $data = $this->paginate('Project');
+
+        //vd(count($data));die;
+
+        $this->set(compact('data'));
         $this->set ('baseUrl', $baseUrl);
 
-        $this->paginate['conditions']['Project.idioma ='] = $_SESSION['idioma'];
         $this->render('search_filtro');
-
-
     }
     function show_projects(){
         $this->loadModel('Country');
@@ -2312,7 +2300,8 @@ if($this->data['Project']['basename']!= $datos[0]['projects']['basename']){
         $this->render ('/common/ajax');
 
     }
-    function delete_sponsor ($id) {
+    function delete_sponsor ($id, $control) {
+
         $this->loadModel ('Sponsor');
         $query['contain'] = false;
         $query['conditions'] = array (
@@ -2322,11 +2311,12 @@ if($this->data['Project']['basename']!= $datos[0]['projects']['basename']){
         $this->data = $this->Sponsor->find ('first', $query);
 
         if (!$this->data) {
+
             $this->pageError = array ('code' => 403);
         } else {
             $this->Sponsor->delete($id);
 
-            $this->redirect (Router::url (array ('controller' => 'projects', 'action' => 'adminuploadimage', $this->data['Sponsor']['id_project'])));
+            $this->redirect (Router::url (array ('controller' => 'projects', 'action' => 'adminuploadimage', $this->data['Sponsor']['id_project'],$control)));
         }
         $this->render ('/common/ajax');
 

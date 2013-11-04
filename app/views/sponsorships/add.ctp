@@ -93,7 +93,7 @@ function sendToPaypal(){
 <br>
 </div>
 <div class="paypal_der">
-<? if($moneda=='USD'){ ?>
+<? if($_SESSION['idioma'] == 'esp'){ ?>
 <h3 style="font-size:18px; font-weight:400; color:#333"><?php echo __("SPONSORSHIP_LAST_STEP_SUBTITLE");?></h3><br>
 <div class="texto_importante_paypal">
 <div class="icono_importante_paypal"></div>
@@ -105,11 +105,41 @@ function sendToPaypal(){
 <p>&nbsp; </p>
 <div onclick="sendToPaypal();" class="boton_paypal"><?php echo __("SPONSORSHIP_CREATE_SUBMIT");?></div>
 <div style="height:25px; overflow:hidden; width:100%; background:#fff; border-bottom:2px solid #e1e1e1;margin-bottom:15px; visibility:hidden"></div>
-<? }else{ ?>
-<h3 style="font-size:18px; font-weight:400; color:#333;"><?php echo __("PROCESO_MERCADO_PAGO");?></h3><br>
-<img src="/2012/images/mercadopago.png">
-<div onclick="sendToMP();" class="boton_paypal"><?php echo __("SPONSORSHIP_CREATE_SUBMIT");?></div>
-<? } ?>
+
+    <h3 style="font-size:18px; font-weight:400; color:#333;"><?php echo __("PROCESO_MERCADO_PAGO");?></h3><br>
+    <img src="/2012/images/mercadopago.png">
+    <div onclick="sendToMP();" class="boton_paypal"><?php echo __("SPONSORSHIP_CREATE_SUBMIT");?></div>
+
+<? }elseif($_SESSION['idioma'] == 'eng'){ ?>
+    <h3 style="font-size:18px; font-weight:400; color:#333"><?php echo __("SPONSORSHIP_LAST_STEP_SUBTITLE");?></h3><br>
+    <div class="texto_importante_paypal">
+        <div class="icono_importante_paypal"></div>
+        <p><strong><?php echo __("IMPORTANT_PAYPAL_TITLE");?></strong><br>
+            <?php echo __("IMPORTANT_PAYPAL_BODY");?></p>
+        <p>&nbsp;</p>
+    </div>
+    <p><img src="/2012/images/paypal_cards.png" width="262" height="62"></p>
+    <p>&nbsp; </p>
+    <div onclick="sendToPaypal();" class="boton_paypal"><?php echo __("SPONSORSHIP_CREATE_SUBMIT");?></div>
+    <div style="height:25px; overflow:hidden; width:100%; background:#fff; border-bottom:2px solid #e1e1e1;margin-bottom:15px; visibility:hidden"></div>
+
+
+
+<? }elseif($_SESSION['idioma'] == 'ita'){?>
+    <h3 style="font-size:18px; font-weight:400; color:#333"><?php echo __("SPONSORSHIP_LAST_STEP_SUBTITLE");?></h3><br>
+    <div class="texto_importante_paypal">
+        <div class="icono_importante_paypal"></div>
+        <p><strong><?php echo __("IMPORTANT_PAYPAL_TITLE");?></strong><br>
+            <?php echo __("IMPORTANT_PAYPAL_BODY");?></p>
+        <p>&nbsp;</p>
+    </div>
+    <p><img src="/2012/images/paypal_cards.png" width="262" height="62"></p>
+    <p>&nbsp; </p>
+    <div onclick="sendToPaypal();" class="boton_paypal"><?php echo __("SPONSORSHIP_CREATE_SUBMIT");?></div>
+    <div style="height:25px; overflow:hidden; width:100%; background:#fff; border-bottom:2px solid #e1e1e1;margin-bottom:15px; visibility:hidden"></div>
+
+
+<?}?>
 <script type="text/javascript">
 function pseudomodal(cual){
 	if(!$('custom_ext2')){

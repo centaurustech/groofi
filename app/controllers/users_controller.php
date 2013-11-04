@@ -531,8 +531,9 @@ class UsersController extends AppController {
     }
 
     function edit($tab=false, $update=false) {
-		//vd($_POST);
+		//vd($_POST['tab2']);
 		//exit;
+
 		if(isset($_POST['tab2'])){
 			$tab = 'account';
 			if(!isset($_POST['que']) && (empty($this->data['User']['password']) && empty($this->data['User']['password_confirmation']))){
@@ -560,6 +561,7 @@ class UsersController extends AppController {
                 unset($this->User->validate['password']);
 				unset($this->User->validate['email']);
 				unset($this->User->validate['slug']);
+
 				
             } else {
                 unset($this->User->validate['slug']);
@@ -570,6 +572,7 @@ class UsersController extends AppController {
                 if(isset($this->data['User']['password']) && $this->data['User']['password'] == $this->data['User']['password_confirmation']) {
                     $this->data['User']['password'] = $this->Auth->password($this->data['User']['password']);
                 }
+
 				//vd( $this->data['User']);
             }
 			  

@@ -3149,10 +3149,10 @@ msgstr "No! Pubblica un progetto è gratuito, ma sarà approvato prima della pub
 
 
 msgid "HAVE_ACCOUNT_IN_PAYPAL_MERCADO"
-msgstr "Ho bisogno di un conto PayPal / MercadoPago procede a pagare per il mio progetto?"
+msgstr "Ho bisogno di un conto PayPal procede a pagare per il mio progetto?"
 
 msgid "HAVE_ACCOUNT_IN_PAYPAL_MERCADO_CONCEPT"
-msgstr "Sì, è necessario avere un conto PayPal o MercadoPago. Prima di creare il progetto, è necessario creare anche un account su questi servizi."
+msgstr "Sì, è necessario avere un conto PayPal. Prima di creare il progetto, è necessario creare anche un account su questi servizi."
 
 msgid "CREATE_YOUR_PROJECT"
 msgstr "Creazione di un progetto"
@@ -3176,13 +3176,13 @@ msgid "PROCEEDS_I_RECEIVE"
 msgstr "Come faccio a ricevere i fondi raccolti?"
 
 msgid "PROCEEDS_I_RECEIVE_CONCEPT"
-msgstr "I fondi ricevuti attraverso Paypal o MercadoPago: Il denaro si accumula nel conto o MercadoPago conto Paypal del Groofi al creatore, ma che sarà gestito da Groofi di rispettare il termine per la raccolta. Se il progetto avrà successo, e Groofi MercadoPago Paypal o applicare le proprie commissioni. Groofi trattenere i fondi per 10 giorni lavorativi dal momento dell`esecuzione raccolta. Dopo tale periodo, il creatore può disporre dei proventi, al netto delle commissioni. Se il progetto avrà successo, il creatore deve aprire il proprio ordine Paypal o MercadoPago per ricevere i fondi raccolti nei termini e alle condizioni MercadoPago Paypal o determinare per ciascun paese."
+msgstr "I fondi ricevuti attraverso Paypal: Il denaro si accumula nel conto Paypal del Groofi al creatore, ma che sarà gestito da Groofi di rispettare il termine per la raccolta. Se il progetto avrà successo, e Groofi Paypal o applicare le proprie commissioni. Groofi trattenere i fondi per 10 giorni lavorativi dal momento dell`esecuzione raccolta. Dopo tale periodo, il creatore può disporre dei proventi, al netto delle commissioni. Se il progetto avrà successo, il creatore deve aprire il proprio ordine Paypal per ricevere i fondi raccolti nei termini e alle condizioni Paypal o determinare per ciascun paese."
 
 msgid "PROJECT_IS_NOT_SUCCESSFUL"
 msgstr "Che cosa succede se il progetto non va a buon fine?"
 
 msgid "PROJECT_IS_NOT_SUCCESSFUL_CONCEPT"
-msgstr "Se il progetto ha successo perché non ha raggiunto l`obiettivo di finanziare il termine stabilito, restituirà i fondi investiti dagli sponsor (al netto dei costi Paypal / MercadoPago). In questo caso groofi non applica commissioni e se l`obiettivo non viene raggiunto, non vi è alcun costo per i creatori."
+msgstr "Se il progetto ha successo perché non ha raggiunto l`obiettivo di finanziare il termine stabilito, restituirà i fondi investiti dagli sponsor (al netto dei costi Paypal). In questo caso groofi non applica commissioni e se l`obiettivo non viene raggiunto, non vi è alcun costo per i creatori."
 
 msgid "HOW_SPONSOR_MY_PROJECT_USERS"
 msgstr "Come successo in modo che altri sponsorizzare il mio progetto?"
@@ -3338,55 +3338,55 @@ msgid "STEP_8"
 msgstr "Passo 8"
 
 msgid "DEFINE_YOUR_PROJECT"
-msgstr "Definite il vostro progetto"
+msgstr "Definisci il tuo progetto"
 
 mmsgid "DEFINE_YOUR_PROJECT_CONCEPT"
- msgstr "Se un libro, un film, o una invenzione, la particolare caratteristica comune a tutte le campagne Groofi è che sono un progetto. Definire ciò che il vostro progetto è il primo passo per qualsiasi creatore."
+ msgstr "Sia un libro, un film, o un’invenzione, la particolare caratteristica comune a tutte le campagne di Groofi è che sono un progetto. Definire in cosa consiste il vostro progetto è il primo passo per qualsiasi creatore."
 
  msgid "DEFINE_YOUR_PROJECT_CONCEPT_1"
- msgstr "Per cosa la raccolta di fondi? Avere un ben definito, con un chiaro inizio e la fine è di vitale importanza. Ad esempio: registrare un nuovo album è un progetto finito - il progetto termina quando la band pubblicò il loro album - ma di avviare una carriera nel mondo della musica non lo è. No fine, ma uno sforzo costante. Groofi finito accetta solo progetti."
+ msgstr "Per cosa stai raccogliendo fondi? Avere un progetto ben definito, con un inizio e una fine chiari è di vitale importanza. Ad esempio: registrare un nuovo album è un progetto finito - il progetto termina quando la band pubblica  il loro album – invece avviare una carriera nel mondo della musica non lo è. Non c’è fine, ma uno sforzo costante. Groofi accetta solamente progetti che hanno una fine."
 
  msgid "DEFINE_YOUR_PROJECT_CONCEPT_2"
- msgstr "Con un obiettivo definito in dettaglio, le aspettative sono trasparenti allo sviluppatore per potenziali sponsor. Sponsor può giudicare come gli obiettivi del progetto sono raggiungibili, e la capacità del creatore del progetto alla sua realizzazione. Inoltre, per i creatori, la pratica di definizione degli obiettivi del progetto stabilisce la portata dell`impresa, un passo importante nel processo creativo."
+ msgstr "Con un obiettivo definito in dettaglio, le aspettative sono trasparenti tanto al creatore come ai potenziali sponsor. Lo sponsor può giudicare come gli obiettivi del progetto siano raggiungibili, e la capacità del creatore del progetto alla sua realizzazione. Inoltre, per i creatori, la pratica di definizione degli obiettivi del progetto stabilisce la portata dell'impresa, un passo importante nel processo creativo."
 
  msgid "DEFINE_YOUR_PROJECT_CONCEPT_3"
- msgstr "Groofi vive di questi scambi aperti e spiegazioni chiare degli obiettivi. Assicurati che il tuo progetto è conforme con questo!"
+ msgstr "Groofi si nutre di questi scambi aperti e spiegazioni chiare degli obiettivi. Assicurati che il tuo progetto sia conforme a questo!"
 
  msgid "DEFINE_YOUR_PROJECT_CONCEPT_4"
- msgstr "Se non siete sicuri se il vostro progetto è in linea con il quadro Groofi, assicurati di controllare le nostre FAQ in dettaglio. "
+ msgstr "Se non sei sicuro che il tuo progetto sia in linea con il quadro di Groofi, ti raccomandiamo di leggere la nostra FAQ in dettaglio. "
 
 msgid "CREATE_AWARDS"
-msgstr "Crea Rewards"
+msgstr "Crea Ricompense"
 
 msgid "CREATE_AWARDS_1"
-msgstr "Le ricompense sono ciò che gli sponsor sono sempre per il compromesso e portare a un progetto. E `molto importante che le ricompense sono valore creativo, tangibile, e giusto. Progetti Rewards sopravvalutato o banale raramente ottenere supporto."
+msgstr "Le ricompense sono ciò che gli sponsor ricevono in cambio di essersi compromessi e aver contribuito al progetto. E’ molto importante che le ricompense siano creative, tangibili e di un giusto valore. I progetti con ricompense sopravvalutate o senza ispirazione raramente riceveranno un appoggio."
 
 msgid "CREATE_AWARDS_2"
 msgstr "Decidere cosa offrire"
 
 msgid "CREATE_AWARDS_3"
-msgstr "Tutti i premi principali di un progetto deve essere generato dal progetto stesso. Se il progetto è un record, quindi la ricompensa dovrebbe includere una copia del CD quando è fatto. Gli sponsor Rewards assicuro che sarà beneficiato dal progetto stesso modo in cui l`autore (ad esempio le cose interessanti che hanno contribuito a produrre!)."
+msgstr "Tutti i premi principali di un progetto devono essere generati per il progetto stesso. Se il progetto consiste nell’incidere un disco, allora i premi dovranno includere una copia del cd quando questo si realizzi. I premi assicurano gli sponsor che saranno beneficiati dal progetto nello stesso modo che il creatore (per esempio, ottengono cose interessanti che loro stessi hanno aiutato a produrre! )"
 
 msgid "CREATE_AWARDS_4"
-msgstr "Ci sono quattro tipi tipici di ricompense che vediamo in Groofi: "
+msgstr "Ci sono quattro tipi di ricompense tipiche che possiamo vedere in Groofi:"
 
 msgid "CREATE_AWARDS_5"
-msgstr "Copie del prodotto: il disco, un DVD o un poster dello spettacolo. Questi elementi dovrebbero essere valutati allo stesso prezzo o meno di quanto costerebbe al dettaglio."
+msgstr "Copie del prodotto: il disco, DVD, o un poster dello show. Questi articoli dovranno essere valutati allo stesso prezzo o minore. "
 
 msgid "CREATE_AWARDS_6"
-msgstr "Collaborazioni creative: uno sponsor appare come un personaggio di un fumetto, tutti sono dipinti come parte di un murale, due sponsor fanno applausi sfondo per certa canzone per l`album, e così via."
+msgstr "Collaborazioni creative: uno sponsor appare come un personaggio di un fumetto, tutti sono disegnati come parte di un murales, due sponsor fanno gli applausi di sfondo per una canzone del disco, etc. etc."
 
 msgid "CREATE_AWARDS_7"
-msgstr "Esperienze creative: una visita per il set, una telefonata da parte dell`autore, una cena con il cast, un concerto privato in giardino, ecc."
+msgstr "Esperienze creative: una visita per conoscere il set, una chiamata dell’autore, un concerto privato nel tuo giardino, etc. etc. "
 
 msgid "CREATE_AWARDS_8"
-msgstr "Momenti creativi: foto Polaroid inviato dal luogo di registrazione, grazie ai crediti, articoli interessanti che parlano della storia del progetto, ecc."
+msgstr "Ricordi creativi: foto Polaroid inviate dal luogo dove sono state scattate, ringraziamenti nei crediti, articoli interessanti che parlano della storia del progetto, etc. etc."
 
 msgid "CREATE_AWARDS_9"
-msgstr "Definire Rewards Scala"
+msgstr "Definire la scala dei Premi"
 
 msgid "CREATE_AWARDS_10"
-msgstr "Anche se Groofi anche sostenere progetti di beneficenza, ci concentriamo sullo scambio che sono un mix di commercio e patronato, ed i numeri lo confermano. E `importante dare enfasi a piccoli premi per gli sponsor individuali o piccoli - e anche i più grandi ricompense tampaño, e di attirare potenziali grandi sponsor."
+msgstr "Nonostante che in Groofi appoggiamo pure progetti caritativi, ci focalizziamo in scambi che siano una miscela tra patrocinio e commercio, e i numeri lo confermano. E’ importante dare enfasi alle piccole ricompense, per gli sponsor individuali o piccoli – e pure alle ricompense più grandi, per attrarre cosi potenziali sponsor più grandi. "
 
 msgid "CREATE_AWARDS_11"
 msgstr "Quindi, ciò che funziona? Deve essere affrontato da due diverse angolazioni, ma la cosa importante è sempre offrendo qualcosa di valore. Nel caso delle ricompense per sponsor singoli, il valore è definito da molto più del "prezzo al dettaglio" di un prodotto. Se qualcosa è in edizione limitata, ed è un`esperienza unica, vi è una maggiore flessibilità in base al pubblico. Ma se la ricompensa è un manufatto, allora è una buona idea di stare un po `al di sotto del prezzo che avrebbe avuto sulla strada. D`altra parte, quando si definiscono le ricompense per i grandi sponsor di mercato aziendali pensare a che tipo di promozione che possiamo offrire ad una società, che sarebbe interessante per un marketing manager - in pratica dobbiamo vedere in che modo il nostro progetto può essere un potenziale veicolo per la promozione, posizionamento, e la commercializzazione di un marchio."
@@ -3398,31 +3398,31 @@ msgid "SET_YOUR_GOAL"
 msgstr "Fissa il tuo traguardo"
 
 msgid "SET_YOUR_GOAL_1"
-msgstr "Groofi lavora con un modello di finanziamento "tutto o niente", in cui i progetti devono essere integralmente coperte o non cambia soldi mani. I progetti devono stabilire un obiettivo di finanziamento e un tempo per arrivarci. Non esiste una formula per determinare l`ammontare o la Mágina lunghezza perfetta. Ogni progetto è diverso, ma ci sono alcune cose da considerare."
+msgstr "Groofi lavora con un modello di finanziamento “tutto o niente”, dove i progetti devono essere finanziati nella loro totalità, altrimenti i soldi non cambiano di mano. I progetti devono stabilire un obiettivo di finanziamento e un periodo di tempo per raggiungerlo. Non esiste nessuna formula magica per determinare l’importo o la durata perfetta. Ogni progetto è diverso, però ci sono alcune cose da tenere a mente. "
 
 msgid "SET_YOUR_GOAL_2"
-msgstr "Ricerca il tuo budget"
+msgstr "Studia il Budget"
 
 msgid "SET_YOUR_GOAL_3"
-msgstr "Quando hai bisogno di soldi? Si stanno alzando l`intero bilancio, o solo alcuni? Si stanno prendendo in considerazione il costo di produzione delle ricompense in bilancio? Salva te stesso mal di testa facendo un buono studio del tuo budget, e il più trasparente possibile. I vostri sponsor vi ringrazieranno."
+msgstr "Qual’ è l’importo di cui hai bisogno? Stai finanziando completamente il budget oppure solo in parte? Stai considerando i costi di produzione dei premi che offri nel budget? Risparmiati il mal di testa facendo un buono studio del budget e cerca di essere il più trasparente possibile. I tuoi sponsor lo apprezzeranno. "
 
 msgid "SET_YOUR_GOAL_4"
-msgstr "Ten en cuenta tus redes"
+msgstr "Considera la tua rete sociale"
 
 msgid "SET_YOUR_GOAL_5"
-msgstr "Groofi non una fonte magica di denaro. I finanziamenti provengono da una varietà di posti - il tuo pubblico, i tuoi amici e la famiglia, le reti sociali più ampi, e se il progetto avrà successo, l`ignoto web. E `vostra responsabilità di creare una tale unità al progetto. "
+msgstr "Groofi non è una fonte magica di soldi. I fondi provengono da posti diversi come i tuoi amici, i tuoi famigliari, le tue reti sociali più ampie e, se il tuo progetto ha successo, persone sconosciute del web. E’ tua responsabilità generare questi stimoli per il tuo progetto. "
 
 msgid "SET_YOUR_GOAL_6"
 msgstr "Scegli il tuo obiettivo"
 
 msgid "SET_YOUR_GOAL_7"
-msgstr "Una volta che il vostro budget studiato e considerato la punta delle dita, si è pronti per impostare il tuo obiettivo di finanziamento. Dal momento che il sistema è "tutto-o-niente", si può sempre alzare oltre l`obiettivo definito, ma mai di meno. Calcolare quanti soldi avete bisogno per completare il vostro progetto (ovviamente tenendo conto di quanti soldi si può generare), e selezionare un importo vicino a quello."
+msgstr "Una volta definito il tuo Budget e considerato la tua rete di contatti, sei già pronto per definire il tuo obiettivo di finanziamento. Dato che il sistema è “ tutto o niente”, si può sempre raccogliere più fondi di quanto si è richiesto, ma mai meno. Calcola quanti soldi hai bisogno per finanziare il tuo progetto, e seleziona un importo vicino ad esso. "
 
 msgid "SET_YOUR_GOAL_8"
-msgstr "Definire la scadenza del progetto"
+msgstr "Definisci la durata del progetto"
 
 msgid "SET_YOUR_GOAL_9"
-msgstr "I progetti possono durare tra i 7 e 365 giorni, tuttavia, che la sua durata è superiore non è necessariamente migliore. Eseguire un progetto in Groofi implica un impegno, e un termine più tangibile trasmette fiducia e aiuta a motivare i potenziali donatori. Progetti con più trasmettere meno urgente, ha perso la spinta, e tendono a svanire."
+msgstr "I progetti possono durare da un minimo di 7 fino ad un massimo di 365 giorni, tuttavia, non è detto che una durata maggiore sia meglio. Portare avanti un progetto in Groofi implica impegno e un termine limite più tangibile comunica fiducia e aiuta a motivare i possibili sponsor. I progetti con una durata maggiore comunicano meno urgenza e tendono a sfumare. "
 
 msgid "GO_UP"
 msgstr "Salire"
@@ -3431,157 +3431,157 @@ msgid "TERMS_CONDITIONS"
 msgstr "Termini e Condizioni"
 
 msgid "MAKING_YOUR_VIDEO"
-msgstr "Rendere il tuo video"
+msgstr "Come fare il tuo video"
 
 msgid "MAKING_YOUR_VIDEO_1"
-msgstr "Se siete come noi, la prima cosa da fare quando si entra in un progetto è per vedere il video. Un video è di gran lunga il modo migliore per avere un`idea delle emozioni, motivazioni, e il carattere del progetto. Essa mostra sforzo e un buon predittore di successo. I progetti includono un video è molto più probabile per ottenere i finanziamenti che non lo fanno."
+msgstr "Se sei come noi, la prima cosa che fai quando entri in un progetto è vedere il video.  Un video è di gran lunga il miglior modo per avere una idea delle emozioni, delle motivazioni e del carattere del progetto. I progetti che includono un video hanno maggiori possibilità di conseguire i fondi richiesti per finanziare il progetto rispetto a quelli che non l’hanno. "
 
 msgid "MAKING_YOUR_VIDEO_2"
-msgstr "Sappiamo che per fare un video può essere intimidatorio. A non molti di noi piace essere di fronte a una telecamera. D`altra parte, sappiamo anche che per fare un video è davvero una sfida vale la pena prendere. Questo trasmette che il vostro progetto vi preoccupate abbastanza per esporre. Si tratta di un piccolo rischio con grande ricompensa."
+msgstr "Sappiamo che fare un video possa creare dei timori. Alla maggior parte di noi non piace stare davanti ad una telecamera. Dall’altra parte, sappiamo che fare un video è una sfida che vale davvero la pena assumere. Realizzare un video trasmette a chi lo vede che a te importa realmente il progetto tanto da esponerti in prima persona. E’ un piccolo rischio con una grande ricompensa. "
 
 msgid "MAKING_YOUR_VIDEO_3"
-msgstr "Con solo un computer e l`entusiasmo è sufficiente. Alcuni sono montaggi video di grandi dimensioni e altri includono prende lungo ed epico, ma la maggior parte dei video sono solo qualcuno raccontare la sua storia sulla macchina fotografica. È possibile trascorrere giornate registrazione e l`editing, o semplicemente liquidare con un paio di amici, in un pomeriggio di Sabato. Esso non deve essere perfetto, è necessario comunicare a voi."
+msgstr "Sono sufficienti un pc e molto entusiasmo. Alcuni video sono montaggi e altri includono pellicole lunghe ed epiche, però la maggior parte dei video sono solamente qualcuno che racconta la sua storia davanti alla telecamera. Puoi stare giorni filmando e modificando, o semplicemente farlo con un paio di amici un sabato pomeriggio. Non deve essere perfetto, deve comunicare a te stesso. "
 
 msgid "MAKING_YOUR_VIDEO_4"
-msgstr "Non importa quanto creativa o semplice per rendere il vostro video, è importante:"
+msgstr "Senza importare quanto sia creativo o semplice il tuo video, è importante: "
 
 msgid "MAKING_YOUR_VIDEO_5"
-msgstr "Dillo a chi sei"
+msgstr "Raccontare chi sei"
 
 msgid "MAKING_YOUR_VIDEO_6"
-msgstr "Narra la storia che sta dietro il progetto. Come è nata l`idea? A che punto? Come ti senti per il progetto?"
+msgstr "Raccontare la storia che sta dietro al tuo progetto. Da dove è venuta l’idea? A che tappa sei? Come ti senti riguardo al progetto?"
 
 msgid "MAKING_YOUR_VIDEO_7"
-msgstr "Chiedere il sostegno di persone, spiegando perché ne hai bisogno, e quello che stai facendo con i soldi"
+msgstr "Chiedere l’appoggio della gente, spiegando perché ne hai bisogno, e cosa farai con i soldi."
 
 msgid "MAKING_YOUR_VIDEO_8"
-msgstr "Spiega che cosa i vostri premi sono spettacolari, utilizzando le immagini che potete"
+msgstr "Spiega quanto sono belli i premi che offri, meglio se utilizzi anche immagini per illustrarli."
 
 msgid "MAKING_YOUR_VIDEO_9"
-msgstr "Spiega che se non raggiungere il tuo obiettivo, si otterrà nulla, e tutti saranno tristi"
+msgstr "Spiega che se non raggiungerai il tuo obiettivo, non otterrai nulla e tutto il mondo sarà triste."
 
 msgid "MAKING_YOUR_VIDEO_10"
-msgstr "Ciao e grazie tutti!"
+msgstr "Saluta e ringrazia tutti."
 
 msgid "MAKING_YOUR_VIDEO_11"
-msgstr "E non abbiate paura di mettere la vostra faccia sulla macchina fotografica e mostra ai tuoi sponsor che darà il denaro. Introdurre ed esporre è molto importante per trasmettere fiducia."
+msgstr "E non aver paura a mettere la tua faccia davanti alla telecamera e mostrare ai tuoi sponsor a chi daranno i loro soldi. Presentarsi ed esporsi in prima persona è molto importante per trasmettere fiducia. "
 
 msgid "MAKING_YOUR_VIDEO_12"
-msgstr "Un dettaglio importante da tenere a mente: non utilizzare musica protetta da copyright nei loro video se non sono ammessi! Le prove non sono mai divertenti."
+msgstr "Un dettaglio importante da considerare:  non utilizzare musica registrata nei tuoi video se non hai il permesso. "
 
 msgid "MAKING_YOUR_VIDEO_13"
-msgstr "Per quanto riguarda il formato - personalmente consigliamo la salita su Vimeo, ma hanno a disposizione su Vimeo o YouTube, sarà sufficiente."
+msgstr "Riguardo al formato: se lo potete mettere in Youtube o Vimeo è sufficiente."
 
 msgid "ARM_YOUR_PROJECT"
-msgstr "Armatevi vostro progetto"
+msgstr "Imposta il tuo progetto"
 
 msgid "ARM_YOUR_PROJECT_1"
-msgstr "Prendetevi il tempo per costruire il vostro progetto! Progetti generalmente prendono una o due settimane per essere pronti per la pubblicazione. Approfondita e metodico approccio può essere molto utile."
+msgstr "Prenditi il tuo tempo per impostare il tuo progetto! Solitamente i progetti impiegano da 1 a 2 settimane prima di essere pronti alla loro pubblicazione. Un approccio dettagliato e metodico può risultare molto producente. "
 
 msgid "ARM_YOUR_PROJECT_2"
-msgstr "Definire il titolo del progetto"
+msgstr "Definisci il titolo del tuo progetto"
 
 msgid "ARM_YOUR_PROJECT_3"
-msgstr "Il titolo del progetto Groofi per essere semplice, specifico e memorabile, e dovrebbe includere il titolo del progetto creativo per il quale i fondi vengono sollevate. Immaginate questo titolo come qualcosa che si differenziano dagli altri - un titolo come "Il mio nuovo album" non è memorabile o interessante come "The Band Deluxor registrato il suo album di debutto tutto o niente"."
+msgstr "Il titolo del tuo progetto in Groofi deve essere semplice, specifico e memorabile. Immagina il tuo titolo come qualcosa di diverso dagli altri – un titolo come “Il mio nuovo disco” non è originale e interessante come ad esempio: La Banda Deluxor incide il suo primo disco “ TUTTO O NIENTE!”."
 
 msgid "ARM_YOUR_PROJECT_4"
-msgstr "Scegli l`immagine principale del progetto"
+msgstr "Scegli l’immagine principale del tuo progetto"
 
 msgid "ARM_YOUR_PROJECT_5"
-msgstr "L`immagine selezionata rappresenterà il progetto in Groofi e internet in tutto. Scegli qualcosa che il gioco di limitare i vostri obiettivi e di essere sexy!"
+msgstr "La immagine che selezioni rappresenterà il tuo progetto in Groofi e in tutto il web. Scegli una immagine che rifletta i tuoi obiettivi e che sia attraente."
 
 msgid "ARM_YOUR_PROJECT_6"
-msgstr "Scrivere una descrizione breve"
+msgstr "Scrivi una descrizione breve"
 
 msgid "ARM_YOUR_PROJECT_7"
-msgstr "La breve descrizione appare l`elenco dei progetti, ed è il modo migliore per comunicare al pubblico ciò che il vostro progetto è di circa. Devi rimanere concentrato e essere chiari su ciò che il progetto si propone di realizzare. Se dovessi descrivere il tuo progetto in un tweet, come faresti?"
+msgstr "La descrizione breve appare nella lista dei progetti ed è il miglior modo per comunicare al tuo pubblico di cosa tratta il tuo progetto. Devi rimanere focalizzato e chiaro circa ciò che il tuo progetto vuole raggiungere. Se dovessi descrivere il tuo progetto con un tweet, come lo faresti?"
 
 msgid "ARM_YOUR_PROJECT_8"
-msgstr "Scrivi una biografia"
+msgstr "Scrivi la tua biografia"
 
 msgid "ARM_YOUR_PROJECT_9"
-msgstr "Il bio è un`ottima occasione per condividere più su di te. Perché la prescelta per realizzare questo progetto? Alcuni lavori precedenti che è possibile condividere con i tuoi potenziali sponsor? Questa è la chiave per vincere la vostra fiducia."
+msgstr "La tua Biografia è una eccellente opportunità per parlare di te. Perché sei stato scelto per portare avanti questo progetto? Qualche progetto già realizzato in precedenza che puoi condividere con i tuoi sponsor? Questa è la chiave per guadagnare fiducia. "
 
 msgid "PROMOTING_YOUR_PROJECT"
-msgstr "Promozione del progetto"
+msgstr "Promuovi il tuo progetto"
 
 msgid "PROMOTING_YOUR_PROJECT_1"
-msgstr "Un progetto eccezionale in grado di generare enormi quantità di sostegno da tutto il web, ma per la maggior parte dei progetti, il progetto nasce da proprie reti sociali, e le reti delle loro reti. Se la gente vuole sostenere il vostro progetto, si devono condividere con loro. Più di una volta! E in una varietà di modi!"
+msgstr "Un progetto eccezionale può generare una quantità enorme di appoggio da tutto il web, però per la maggior parte dei progetti, sono molto importanti le proprie reti sociali, e le reti delle reti. Se vuoi che la gente veda il tuo progetto, devi condividerlo con loro. Più di una volta! E in diversi modi! "
 
 msgid "PROMOTING_YOUR_PROJECT_2"
-msgstr "Come segue:"
+msgstr "Fai così:"
 
 msgid "PROMOTING_YOUR_PROJECT_3"
-msgstr "Campo di applicazione intelligente"
+msgstr "Ambito Intelligente"
 
 msgid "PROMOTING_YOUR_PROJECT_4"
-msgstr "Un bel messaggio, e il personale è il modo più efficace per far sapere a qualcuno del vostro progetto. Inviare una e-mail ai tuoi amici e parenti in modo che possano essere il primo a sostenervi, e quindi utilizzare il blog, Facebook, Twitter, e altri per attirare l`attenzione in tutto il mondo. Nel corso del progetto, torna alle tue cerchie stretto contatto con loro e condividere la vostra iniziativa."
+msgstr "Un bel messaggio personale è la forma più efficace di far conoscere agli altri il tuo progetto. Manda una mail ai tuoi amici e famigliari, così che siano i primi a ad appoggiarti e dopo utilizza il tuo blog, Facebbok, Twitter e altri per attirare l’ attenzione di tutto il mondo. Durante il periodo del progetto mettiti più volte in contatto con loro e condividi nuovamente con loro la tua iniziativa."
 
 msgid "PROMOTING_YOUR_PROJECT_5"
-msgstr "organizzare incontri"
+msgstr "Organizza riunioni"
 
 msgid "PROMOTING_YOUR_PROJECT_6"
-msgstr "Non abbiate paura di prendere il vostro progetto Groofi il mondo reale. Nulla si collega più persone con l`idea di fare che brillano nei tuoi occhi quando parli del tuo progetto. Organizzare feste, manifesti stampati o volantini da distribuire nella vostra comunità, e organizza incontri per educare le persone circa i dettagli del vostro progetto. Siate creativi!"
+msgstr "Non aver paura di portare il tuo progetto nel mondo reale. Niente unisce di più la gente con un’idea che vedere i tuoi occhi che brillano nel raccontarla. Organizza feste, fai poster o flyers da distribuire, e organizza riunioni per informare la gente circa i dettagli del tuo progetto. Sii creativo!"
 
 msgid "PROMOTING_YOUR_PROJECT_7"
-msgstr "Arrestare la stampa!"
+msgstr "Raggiungi i media!"
 
 msgid "PROMOTING_YOUR_PROJECT_8"
-msgstr "Contattate il vostro giornale, televisioni e delle radio locali per raccontare loro il progetto. Blog di ricerca e dei media che sono allineati con gli obiettivi da applicare per la copertura. Gli scrittori e gli editori sono sempre alla ricerca di storie da scrivere e riferire, ei media hanno un particolare apprezzamento per le storie di individui che svolgono progetti di successo."
+msgstr "Contatta i giornali, le radio e le televisioni per raccontare il tuo progetto. Cerca blog e mezzi di comunicazione che siano allineati con i tuoi obiettivi. Gli scrittori e gli editori sono sempre alla ricerca di storie da scrivere e riportare."
 
 msgid "PROMOTING_YOUR_PROJECT_9"
-msgstr "Non spammare"
+msgstr "Non fare spam"
 
 msgid "PROMOTING_YOUR_PROJECT_10"
-msgstr "Qualunque sia la scelta uso promozionale del canale, non lo spam. Di solito il risultato di spamming le estremità opposte ricercato, trasformando il progetto in non più di un fastidio per tutti. Non farlo!"
+msgstr "Qualunque sia il canale di comunicazione che intendi utilizzare non fare spam. Solitamente il risultato dello spam è l’opposto di quello che si stava cercando di ottenere, trasformando il tuo progetto in un disturbo per tutti. Non lo fare!"
 
 msgid "UPDATING_YOUR_PROJECT"
-msgstr "Aggiornamento del progetto"
+msgstr "Aggiorna il tuo progetto"
 
 msgid "UPDATING_YOUR_PROJECT_1"
-msgstr "Gli aggiornamenti al progetto servire come "blog" di esso. Si tratta di un ottimo modo per condividere i tuoi progressi, la pubblicazione di nuovi contenuti, e ringrazio i vostri sponsor. Invia un aggiornamento al progetto invia automaticamente una e-mail a tutti i vostri sponsor con notizie."
+msgstr "Gli aggiornamenti del tuo progetto servono come un “blog” dello stesso. Sono un eccellente forma per condividere il tuo progresso, per pubblicare nuovi contenuti e ringraziare gli sponsor. Quando pubblichi un aggiornamento del progetto automaticamente invierai una mail a tutti i tuoi sponsor con le novità."
 
 msgid "UPDATING_YOUR_PROJECT_2"
 msgstr "Trazione"
 
 msgid "UPDATING_YOUR_PROJECT_3"
-msgstr "Mentre il progetto è alto e il passare del tempo, mantenere i vostri sponsor informato e ispirato per aiutarti a diffondere il tuo progetto. Invece di postare un link al progetto e chiedere a tutti di fornire ogni giorno trattare il vostro progetto come storia si sviluppa e tenere il passo con tutti, del suo progresso. "Alcune foto dello spettacolo ieri sera!" o "trovare un editore per il nostro libro!" seguito da un link al progetto sono modi molto più attraenti per generare interesse."
+msgstr "Mentre il tuo progetto è attivo e passa il tempo, mantieni informati ed ispirati i tuoi sponsor così che ti aiutino a diffondere il progetto. Invece che pubblicare un link del tuo progetto e chiedere a tutti che contribuiscano tutti i giorni, tratta il tuo progetto come una storia che si sta sviluppando e mantieni tutti aggiornati circa i progressi fatti. “Alcune foto della festa di ieri sera!” o “Abbiamo trovato un editore per il nostro libro!” seguiti da un link al progetto, sono modi  molto attraenti per generare interesse."
 
 msgid "UPDATING_YOUR_PROJECT_4"
 msgstr "Condividere il processo"
 
 msgid "UPDATING_YOUR_PROJECT_5"
-msgstr "Una volta che il progetto è finanziato con successo, non dobbiamo dimenticare tutte le persone che hanno reso possibile. Lasciate che gli sponsor e il pubblico vedere come il progetto prende vita condividere le decisioni che prendete con loro, discutendo come ci si sente che i vostri obiettivi si avvera, e anche per chiedere il loro parere. Mantenere sponsor informati e impegnati è una parte essenziale di Groofi."
+msgstr "Una volta che il progetto è stato finanziato con successo, non devi dimenticarti di tutte le persone che l’hanno reso possibile. Lascia che gli sponsor e il pubblico vedano come il tuo progetto prende vita condividendo le tue decisioni con loro, commentando come ti senti che i tuoi obiettivi stiano diventando realtà e pure chiedendo la loro opinione. Mantenere gli sponsor informati e ringraziarli è una parte essenziale di Groofi. "
 
 msgid "UPDATING_YOUR_PROJECT_6"
-msgstr "Celebrare il successo"
+msgstr "Festeggia il successo"
 
-msgid "UPDATING_YOUR_PROJECT_7"
-msgstr "Condividere opinioni, notizie e foto del progetto con il mondo - sia la notte del lancio del tuo lavoro, il tuo libro o allo sportello di un business - è fantastico per tutti gli interessati. La storia del progetto non si esaurisce al momento della presentazione. Ho ancora un pubblico prigioniero che è dalla vostra parte. Comunicare con loro può essere uno dei più gratificanti intero processo."
+msgid "UPDATING_YOUR_PROJECT_7""CREATE_AWARDS_11"
+msgstr "Condividere opinioni, articoli e foto con tutto il mondo – il tuo libro nella vetrina di una libreria o la sera del lancio della tua opera – è geniale per tutte le persone coinvolte. La storia del tuo progetto non finisce quando lo presenti. Tuttavia hai un pubblico affascinato che sta al tuo fianco. Comunicare con loro può essere la parte più gratificante di tutto il processo. "
 
 msgid "COMPLY_WITH_REWARDS"
-msgstr "Rispettare Rewards"
+msgstr "Realizzare i premi"
 
 msgid "COMPLY_WITH_REWARDS_1"
-msgstr "Al termine del progetto, il punto finale critico è mantenere le promesse e le ricompense per i vostri sponsor. Invia tutti questi premi può sembrare eccessivo, ma rimanere organizzato e divertirsi con il processo sarà rendere il tutto molto più interessante."
+msgstr "Una volta realizzato il tuo progetto, il passo cruciale e finale è quello di mantenere le tue promesse e ricompensare i tuoi sponsor. Inviare i premi potrebbe risultarti opprimente, però se ti mantieni organizzato e ti diverti nel farlo sarà tutto più interessante. "
 
 msgid "COMPLY_WITH_REWARDS_2"
-msgstr "Chiedi ai tuoi dati Sponsor"
+msgstr "Ottenere i dati dei tuoi sponsor"
 
 msgid "COMPLY_WITH_REWARDS_3"
-msgstr "Non preoccupatevi di ottenere queste informazioni fino a quando il iproyecto è stata finanziata. Al momento questo accade, si Groofi fornire tutte le informazioni necessarie."
+msgstr "Non preoccuparti di ottenere questa informazione fino a quando il tuo progetto sia stato finanziato con successo. Nel momento che questo succede, Groofi t’invierà tutta l’informazione necessaria."
 
 msgid "COMPLY_WITH_REWARDS_4"
-msgstr "Piano"
+msgstr "Pianificare"
 
 msgid "COMPLY_WITH_REWARDS_5"
-msgstr "Non dimenticare tutti i costi connessi con l`invio di piccole ricompense dalle scatole, buste, nastri, etichette, fino al più costi ... "Emotional" ... a dover riempire 100 moduli di posta. E `anche importante chiarire nel progetto se il costo di invio dei premi andrà per il progetto dallo sviluppatore, o sponsor."
+msgstr "Non dimenticarti di tutte le piccole spese incluse nell’invio dei premi, dagli scatoloni, involucri, nastro adesivo, etichette fino alle spese più …“emotive”… come riempiere 100 moduli di spedizione. E’ importante chiarire nel progetto se le spese di spedizione dei premi sono a carico del creatore del progetto oppure dello sponsor. "
 
 msgid "COMPLY_WITH_REWARDS_6"
 msgstr "Comunicazione!"
 
 msgid "COMPLY_WITH_REWARDS_7"
-msgstr "L`attuazione del progetto non può essere il più poetico di esso, ma è importante perché significa consegnare il progetto nelle mani dei vostri sponsor. Per scattare le foto del processo di confezionamento dei premi - che noi tutti amiamo le foto! -. Condividere le storie dell`orrore di trattare con la posta. Chiedete ai vostri sponsor vi comunicheremo quando si riceve il pacchetto. Invita i tuoi amici per un paio di drink e vini nastratrici pacchetti. Apprezzate ciò che sono gli ultimi momenti della prima fase della vita del vostro progetto!"
+msgstr "La conclusione del tuo progetto potrebbe non essere il momento più poetico dello stesso, però è importante, poiché significa consegnare il tuo progetto nelle mani di tuoi sponsor. Scatta foto mentre imballi i premi, a tutti piacciono le foto! Condividi le storie di orrore capitate con le Poste! Chiedi ai tuoi sponsor che ti notifichino quando hanno ricevuto i premi. Invita i tuoi amici a bere un bicchiere di vino e a chiudere i pacchi. Apprezza quelli che sono gli ultimi momenti della prima tappa del tuo progetto!"
 
 msgid "DELETE"
 msgstr "Cancellare"
@@ -3938,10 +3938,10 @@ msgid "CHOICE_YOUR_COUNTRY"
 msgstr "Seleziona il tuo paese di origine"
 
 msgid "INGRE"
-msgstr "Inserito da: "
+msgstr "Inserito : "
 
 msgid "Res"
-msgstr " caratteri. Rimangono:"
+msgstr " caratteri da :"
 
 msgid "Carac"
 msgstr " caratteri"
@@ -4329,7 +4329,7 @@ msgid "by"
 msgstr "da - "
 
 msgid "PUBLISH_PROJECT"
-msgstr "Ha pubblicato il suo progetto "
+msgstr "Posta Progetto"
 
 msgid "ADD_UPDATE_PROJECT"
 msgstr "Aggiunto un aggiornamento del progetto "
@@ -4514,7 +4514,7 @@ msgid "CONTACTO_1"
 msgstr "Si prega di compilare correttamente il campo E-mail"
 
 msgid "MUST_BE_IN_RAGE"
-msgstr "Necessario scegliere un valore compreso tra 10 e 200 mila"
+msgstr "Necessario scegliere un valore compreso tra 10 e 99000000"
 
 msgid "CONTACTO_2"
 msgstr "Si prega di compilare correttamente il campo Nome"
@@ -4546,11 +4546,29 @@ msgstr "maximo 50 caracteres"
 msgid "ERROR_EMAIL_RECORDAR"
 msgstr "L'e-mail inserito non appartiene ad un utente registrato"
 
-msgid ""
-msgstr ""
+msgid "minLength_5"
+msgstr "Inserire almeno 5 caratteri."
 
-msgid ""
-msgstr ""
+msgid "actualizacion_alert1"
+msgstr "Inserisci un titolo più lungo"
+
+msgid "actualizacion_alert2"
+msgstr "Il testo aggiornato è troppo corto"
+
+msgid "alert_imagen upload_add"
+msgstr "La dimensione dell`immagine è molto piccolo.Scegli un altro."
+
+msgid "IMAGEN_SPONSOR_INFO"
+msgstr "☼ Fase 1: Inserire il nome dello Sponsor <br> ☼ Step2:. Carica un'immagine più grande di 380px * 150px <br> ☼ Fase 3:. Salvare la selezione fatta <br> ☼ Fase 4: Posta la selezione salvata."
+
+msgid "TEXTO_SINCRO_FACEBOOK"
+msgstr "Completa queste informazioni per creare il tuo account o, se ne avete già uno, puoi effettuare il login con Facebook per alternativa."
+
+msgid "MANTENER_CONECTADO"
+msgstr "Lasciami collegato"
+
+msgid "NOMBRE_LETRAS"
+msgstr "Solo lettere. Inserisci un nome valido"
 
 msgid ""
 msgstr ""

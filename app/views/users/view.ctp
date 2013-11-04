@@ -138,11 +138,11 @@ echo '<div id="fb-root"></div><div id="mfs"></div>
 </div>
 
 <? if ($this->data['User']["sponsorships_count"] > 0) { ?>
-<div class="tit_patrocinando"><a href="<?=User::getLink($this->data, 'bakes')?>" class="tit_patrocinando<? if($section=='sponsorships'){?> selected<? } ?>">Patrocinando <span style="color:#1e455b; font-weight:500">(<?=$this->data['User']["sponsorships_count"]?>)</span></a></div>
+<div class="tit_patrocinando"><a href="<?=User::getLink($this->data, 'bakes')?>" class="tit_patrocinando<? if($section=='sponsorships'){?> selected<? } ?>"><?php echo __("USER_SPONSORSHIPS %s");?> <span style="color:#1e455b; font-weight:500">(<?=$this->data['User']["sponsorships_count"]?>)</span></a></div>
 <? } ?>
 
 <? if ($this->data['User']["follow_count"]  > 0) { ?>
-<div class="tit_siguiendo"><a href="<?=User::getLink($this->data, 'follows')?>" class="tit_siguiendo<? if($section=='follows'){?> selected<? } ?>">Siguiendo <span style="color:#1e455b; font-weight:500">(<?=$this->data['User']["follow_count"]?>)</span></a></div>
+<div class="tit_siguiendo"><a href="<?=User::getLink($this->data, 'follows')?>" class="tit_siguiendo<? if($section=='follows'){?> selected<? } ?>"><?php echo __("USER_FOLLOWS %s");?><span style="color:#1e455b; font-weight:500">(<?=$this->data['User']["follow_count"]?>)</span></a></div>
 <? } ?>
 	</div>
 	

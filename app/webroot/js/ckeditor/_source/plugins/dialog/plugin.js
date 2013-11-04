@@ -11,6 +11,7 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
  * No resize for this dialog.
  * @constant
  */
+
 CKEDITOR.DIALOG_RESIZE_NONE = 0;
 
 /**
@@ -33,7 +34,7 @@ CKEDITOR.DIALOG_RESIZE_BOTH = 3;
 
 (function()
 {
-	var cssLength = CKEDITOR.tools.cssLength;
+    var cssLength = CKEDITOR.tools.cssLength;
 	function isTabVisible( tabId )
 	{
 		return !!this._.tabs[ tabId ][ 0 ].$.offsetHeight;

@@ -1,4 +1,25 @@
+<style>
 
+    div.submit input, div.submit button {
+        background-color: #111111;
+        border: 0 none;
+        color: #FFFFFF;
+        font-family: 'Asap',Tahoma;
+        font-size: 12px;
+        font-weight: 500;
+        margin-left: 0;
+        margin-right: 10px;
+        padding: 7px 10px;
+        text-transform: uppercase;
+        width: 100px;
+    }
+    label, input[type="button"], input[type="submit"], button {
+        cursor: pointer;
+    }
+    label, input[type="button"], input[type="submit"], button {
+        cursor: pointer;
+    }
+</style>
 <?php
 echo $this->Html->script('ckeditor/ckeditor');
 echo $this->Html->script('ckfinder/ckfinder');
@@ -7,10 +28,10 @@ echo $this->Html->script('ckfinder/ckfinder');
 <script>
     function validPosteo(){
         if($('titulo').value.length<3){
-            alerta('Por favor ingresa un t&iacute;tulo m&aacute;s extenso');return false;
+            alerta("<?echo __("actualizacion_alert1");?>");return false;
         }
         if($('texto').value.length<10){
-            alerta('El texto de la actualizaci&oacute;n es demasiado breve');return false;
+            alerta("<?echo __("actualizacion_alert2");?>");return false;
         }
 
     }
@@ -27,7 +48,7 @@ echo $this->Html->script('ckfinder/ckfinder');
     font-size: 13px;
     padding-bottom: 5px;"><? echo __("CREATE_UPDATE");?></p>
         <!--?echo $this->Form->input('Post.description', array('type' => 'textarea', 'class' => 'custom-html','id'=>'texto'));?-->
-        <textarea tabindex=2 class="ckeditor" name="data[Post][description]" autocomplete="off" cols="30" rows="6"></textarea>
+        <textarea id="texto" tabindex=2 class="ckeditor" name="data[Post][description]" autocomplete="off" cols="30" rows="6"></textarea>
     </div>
 
     <?echo '<div style="visibility:hidden; height:10px; overflow:hidden">'.$this->Form->input('Post.public' , array('type'=>'checkbox','checked'=>'checked')).'</div>';

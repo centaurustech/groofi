@@ -1,16 +1,15 @@
 <?php
 
 
+
 //session_start(); //Do not remove this
 //only assign a new timestamp if the session variable is empty
-if (!isset($_SESSION['random_key']) || strlen($_SESSION['random_key'])==0){
-    $_SESSION['random_key'] = strtotime(date('Y-m-d H:i:s')); //assign the timestamp to the session variable
-    $_SESSION['user_file_ext']= "";
-}
+
 #########################################################################################################
 # CONSTANTS																								#
 # You can alter the options below																		#
 #########################################################################################################
+
 $upload_dir = "../webroot/media/transfer/project/tmp/img"; 				// The directory for the images to be saved in
 $upload_path = $upload_dir."/";				// The path to where the image will be saved
 //$image_handling_file = "vendors/crop/image_handling.php"; // The location of the file that will handle the upload and resizing (RELATIVE PATH ONLY!)
@@ -18,7 +17,7 @@ $large_image_prefix = "resize_"; 			// The prefix name to large image
 $thumb_image_prefix = "thumbnail_";			// The prefix name to the thumb image
 $large_image_name = $large_image_prefix.$_SESSION['random_key'];     // New name of the large image (append the timestamp to the filename)
 $thumb_image_name = $thumb_image_prefix.$_SESSION['random_key'];     // New name of the thumbnail image (append the timestamp to the filename)
-$max_file = "2"; 							// Maximum file size in MB
+$max_file = "6"; 							// Maximum file size in MB
 $max_width = "650";							// Max width allowed for the large image
 $thumb_width = "200";						// Width of thumbnail image
 $thumb_height = "150";						// Height of thumbnail image
@@ -29,8 +28,9 @@ $image_ext = "";
 foreach ($allowed_image_ext as $mime_type => $ext) {
     $image_ext.= strtoupper($ext)." ";
 }
+
 /* @var $this ViewCC */
-//vd($validationErrorsArray);
+//vd($validationErrorsArray);die;
 //vd($_POST['data']['Prize']);
 asort($base_categories);
 //vd($this->data['Link']);
@@ -108,8 +108,9 @@ echo $this->Html->script('ckfinder/ckfinder');
 <div style="font-style:italic"><?php echo __("PROJECT_ADD_FIRST_BLOCK_SUBTITLE");?></div> <div class="misc_separador" style="width:100%"></div><br>
 <script>
 function validIm(action){
-	var yaHayImg=<?=$yaHayImg;?>;
-	if(!yaHayImg && $('foto1').value.length<1){
+	var yaHayImg= '<?=$this->data['Project']['basename'];?>';
+
+	if(yaHayImg == '' && $('upload2').value.length<1 && $('upload3').value.length<1){
 		$('elfile2').innerHTML='<span style="color:red;font-size:9px">Debe subir una imagen.</span>';
 		scrollTo(0,0);
 		return false;
@@ -127,8 +128,8 @@ function validIm(action){
 <input type="hidden" name="data[Project][offer_id]" autocomplete="off" value="<?=$this->data['Project']['offer_id']?>" id="ProjectOfferId" />
 <input type="hidden" name="data[Project][user_id]" autocomplete="off" value="<?=$this->Session->read('Auth.User.id')?>" id="ProjectUserId" />
 <input type="hidden" name="data[Project][public]" autocomplete="off" value="<?=$this->data['Project']['public']?>" id="ProjectPublic" />
-
-
+<input type="hidden" name="data[Project][status]" autocomplete="off" value="<?=$this->data['Project']['status']?>" id="ProjectStatus" />
+<input type="hidden" name="data[Project][enabled]" autocomplete="off" value="<?=$this->data['Project']['enabled']?>" id="ProjectEnabled" />
 
 
 
@@ -411,8 +412,9 @@ function noenter(e){
     <a id="upload_link" style="cursor:pointer;position:relative;display: block;background:#000000; font-size: 18px; color: white;font-weight: normal;height: 30px;width: 120px; text-align: center" href="#"><?__('UPLOAD_BROWSE');?></a>
     <div style="float: left; position: relative; width: 900px; height: 25px"><? echo __("EDIT_IMAGE");?></div>
 
-    <span id="loader" style="display:none;"><img src="loader.gif" alt="Loading..."/></span> <span id="progress"></span>
-    <div id="uploaded_image" style="float: left; position: relative; width: 900px; height: auto"></div>
+    <span id="loader" style="display:none;float: left;position: relative;width: 900px;"><img src="/2012/images/loader.gif" alt="Loading..."/></span>
+    <span style="display:none;float: left;position: relative;width: 900px;" id="progress"></span>
+    <div id="uploaded_image" style="display:block;float: left; position: relative; width: 900px; height: auto"></div>
     <div id="thumbnail_form" style="display:none;">
 
 
@@ -547,7 +549,7 @@ function noenter(e){
 <div class="rounded_area_beneficios">
 <textarea onkeypress="return noenter(event)" name="comments" cols="1" rows="1" id="descverde"></textarea>
 <div id="errE" style="color:red;font-size:9px;position:relative; top:6px; left:10px"></div>
-<div class="bot_info_empresas"  onmouseout="hideTip()"  onmousemove="showTip(event,'<?php echo __("PROJECT__PRIZE__HELP_MESSAGE_TEXT");?>')"></div>
+    <div class="bot_info_empresas"  onmouseout="hideTip1()"  onmousemove="showTip1(event,'<?echo __("PROJECT__PRIZE__HELP_MESSAGE_TEXT");?><br><?echo __("PROJECT_-PRIZE__TIP_MESSAGE_TEXT");?>')"></div>
 <div class="bot_crear_nuevo empresas" onclick="addBeneficio($('mminverde').value, $('descverde').value, 'empresa');"><?php echo __("CREATE");?></div>
 
 </div>
@@ -572,6 +574,7 @@ function noenter(e){
     <input type="hidden" name="y2" value="" id="y2" />
     <input type="hidden" name="w" value="" id="w" />
     <input type="hidden" name="h" value="" id="h" />
+    <input type="hidden" name="idproject" value="<?=$this->data['Project']['id']?>" id="idproject" />
 
 </form>
 <a onclick="validIm();return false;" class="bot_envnuevoproy" href="#"><?php echo __("SAVE");?></a>
@@ -787,9 +790,12 @@ function crop() {
         },
         onComplete: function(response) {
 
+            var img_time = '?'+Math.round(Math.random()*1000);
+
             loadingmessage('', 'hide');
             //response = unescape(response);
             var response_new = jQuery.parseJSON(response);
+if(response_new.regular != ''){
 
             var regular_url = response_new.regular.ubicacion;
 
@@ -806,27 +812,45 @@ function crop() {
 
 
             if(regular_url != ''){
+
+                jQuery('#uploaded_image, #thumbnail_preview').empty();
+
                 var current_width = response_new.regular.width;
                 var current_height = response_new.regular.height;
+                if (current_width < 600){
+                    alerta('<?php echo __("alert_imagen upload_add", true);?>');
+                }else{
                 //display message that the file has been uploaded
                 jQuery('#upload_status').show().html('<h1>'+exito+'</h1><p>'+image_uploaded+'</p>');
                 //put the image in the appropriate div
-                jQuery('#uploaded_image').html('<img src="/media/transfer/project/tmp/img/'+regular_url[1]+'" style="float: left; margin-right: 10px;" id="thumbnail" alt="Create Thumbnail" /><div style="border:1px #e5e5e5 solid; float:left; position:relative; overflow:hidden; width:<?php echo $thumb_width;?>px; height:<?php echo $thumb_height;?>px;"> <img src="/media/transfer/project/tmp/img/'+regular_url[1]+'" style="position: relative;" id="thumbnail_preview" alt="Thumbnail Preview" /></div>');
+                jQuery('#uploaded_image').html('<img src="/media/transfer/project/tmp/img/'+regular_url[1]+img_time+'" style="float: left; margin-right: 10px;" id="thumbnail" alt="Create Thumbnail" /><div style="border:1px #e5e5e5 solid; float:left; position:relative; overflow:hidden; width:<?php echo $thumb_width;?>px; height:<?php echo $thumb_height;?>px;"> <img src="/media/transfer/project/tmp/img/'+regular_url[1]+img_time+'" style="position: relative;" id="thumbnail_preview" alt="Thumbnail Preview" /></div>');
                 //find the image inserted above, and allow it to be cropped
                 jQuery('#uploaded_image').find('#thumbnail').imgAreaSelect({minHeight: '420',minWidth:'560',instance: true,handles: true,parent:'#uploaded_image', aspectRatio: '1:<?php echo $thumb_height/$thumb_width;?>', onSelectChange: preview });
                 //display the hidden form
                 jQuery('#thumbnail_form').show();
 
                 jQuery('#upload2').attr("value",thumb_url[1]);
-                //jQuery('#upload2').attr("value",thumb_url[1]);
-            }else if(responseType=="error"){
+                jQuery('#upload3').attr("value",thumb_url[1]);
+
+
+                }
+            }
+}
+           /*else if(responseType=="error"){
+
                 jQuery('#upload_status').show().html('<h1>Error</h1><p>'+responseMsg+'</p>');
                 jQuery('#uploaded_image').html('');
                 jQuery('#thumbnail_form').hide();
-            }else{
+            }*/else{
+
+
+               jQuery('#upload_status').show().html('<h1>Error</h1><p>'+response_new.error.error+'</p>');
+               jQuery('#uploaded_image').html('');
+               jQuery('#thumbnail_form').hide();
+                /*console.log('else');
                 jQuery('#upload_status').show().html('<h1>Unexpected Error</h1><p>Please try again</p>'+response);
                 jQuery('#uploaded_image').html('');
-                jQuery('#thumbnail_form').hide();
+                jQuery('#thumbnail_form').hide();*/
             }
         }
     });
@@ -839,6 +863,7 @@ function crop() {
         var y2 = jQuery('#y2').val();
         var w = jQuery('#w').val();
         var h = jQuery('#h').val();
+        var idproject = jQuery('#idproject').val();
         if(x1=="" || y1=="" || x2=="" || y2=="" || w=="" || h==""){
             alert("You must make a selection first");
             return false;
@@ -849,7 +874,7 @@ function crop() {
             jQuery.ajax({
                 type: 'POST',
                 url: '/projects/testcrop',
-                data: 'save_thumb=Save Thumbnail&x1='+x1+'&y1='+y1+'&x2='+x2+'&y2='+y2+'&w='+w+'&h='+h,
+                data: 'save_thumb=Save Thumbnail&x1='+x1+'&y1='+y1+'&x2='+x2+'&y2='+y2+'&w='+w+'&h='+h+'&idproject='+idproject,
                 cache: false,
                 success: function(response){
                     loadingmessage('', 'hide');
@@ -857,13 +882,20 @@ function crop() {
                     var response = response.split("|");
                     var responseType = response[0];
                     var responseLargeImage = response[1];
+
+                    //regular_url = response[1].split("../webroot/media/transfer/project/tmp/img/thumbnail_");
+                    thumb_url = response[2].split("../webroot/media/transfer/project/tmp/img/thumbnail_");
+
                     var responseThumbImage = response[2];
+
                     if(responseType=="success"){
                         jQuery('#upload_status').show().html('<h1>'+exito+'</h1><p>'+image_uploaded+'</p>');
                         //load the new images
-                        jQuery('#uploaded_image').html('<img src="'+responseLargeImage+'" alt="Large Image"/>&nbsp;<img src="'+responseThumbImage+'" alt="Thumbnail Image"/><br /><a href="javascript:deleteimage(\''+responseLargeImage+'\', \''+responseThumbImage+'\');">Delete Images</a>');
+                        //jQuery('#uploaded_image').html('<img src="/media/transfer/project/tmp/img/thumbnail_'+ regular_url[1]+'" alt="Large Image"/>&nbsp;<img src="'+thumb_url[1]+'" alt="Thumbnail Image"/><br /><a href="javascript:deleteimage(\''+ regular_url[1]+'\', \''+thumb_url[1]+'\');">Delete Images</a>');
+                        jQuery('#uploaded_image').html('<img src="/media/transfer/project/tmp/img/thumbnail_'+ thumb_url[1]+'" alt="Large Image"/>');
                         //hide the thumbnail form
                         jQuery('#thumbnail_form').hide();
+
                     }else{
                         jQuery('#upload_status').show().html('<h1>Unexpected Error</h1><p>Please try again</p>'+response);
                         //reactivate the imgareaselect plugin to allow another attempt.
@@ -877,7 +909,7 @@ function crop() {
         }
     });
 }
-    crop();
+
 DR(function(){
     crop();
 	for(var i=0;i<10;i++){
@@ -1007,18 +1039,31 @@ function hideTip(){
 	$('tip').innerHTML='';
 	$('tip').style.top='-1500px';
 }
+function showTip1(e,user){
+    var pos=getAbsolutePosMouse(e);
+    $('tip1').innerHTML=user;
+    $('tip1').style.top=pos.y+10+'px';
+    if(pos.x<(document.body.offsetWidth/2))
+        $('tip1').style.left=pos.x+10+'px';
+    else
+        $('tip1').style.left=pos.x-$('tip1').offsetWidth-10+'px';
+}
+function hideTip1(){
+    $('tip1').innerHTML='';
+    $('tip1').style.top='-1500px';
+}
 </script>
 <script type="text/javascript">
 
     //var ck_newsContent = CKEDITOR.replace( 'data[Project][description]' );
     CKEDITOR.replace( 'data[Project][description]',
             {
-                filebrowserBrowseUrl : '/js/ckfinder/ckfinder.html',
-                filebrowserImageBrowseUrl : '/js/ckfinder/ckfinder.html?type=Images',
-                filebrowserFlashBrowseUrl : '/js/ckfinder/ckfinder.html?type=Flash',
+                //filebrowserBrowseUrl : '/js/ckfinder/ckfinder.html',
+                //filebrowserImageBrowseUrl : '/js/ckfinder/ckfinder.html?type=Images',
+                //filebrowserFlashBrowseUrl : '/js/ckfinder/ckfinder.html?type=Flash',
                 filebrowserUploadUrl : '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
                 filebrowserImageUploadUrl : '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
-                filebrowserFlashUploadUrl : '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
+                //filebrowserFlashUploadUrl : '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
             });
 
     //ck_newsContent.setData( '<p>Just click the <b>Image</b> or <b>Link</b> button, and then <b>&quot;Browse Server&quot;</b>.</p>' );
@@ -1029,12 +1074,12 @@ function hideTip(){
     //var ck_newsContent = CKEDITOR.replace( 'data[Project][description]' );
     CKEDITOR.replace( 'data[Project][reason]',
             {
-                filebrowserBrowseUrl : '/js/ckfinder/ckfinder.html',
-                filebrowserImageBrowseUrl : '/js/ckfinder/ckfinder.html?type=Images',
-                filebrowserFlashBrowseUrl : '/js/ckfinder/ckfinder.html?type=Flash',
+                //filebrowserBrowseUrl : '/js/ckfinder/ckfinder.html',
+                //filebrowserImageBrowseUrl : '/js/ckfinder/ckfinder.html?type=Images',
+                //filebrowserFlashBrowseUrl : '/js/ckfinder/ckfinder.html?type=Flash',
                 filebrowserUploadUrl : '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
                 filebrowserImageUploadUrl : '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
-                filebrowserFlashUploadUrl : '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
+                //filebrowserFlashUploadUrl : '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
             });
 
     //ck_newsContent.setData( '<p>Just click the <b>Image</b> or <b>Link</b> button, and then <b>&quot;Browse Server&quot;</b>.</p>' );

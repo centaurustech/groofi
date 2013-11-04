@@ -3165,10 +3165,10 @@ msgid "PAY_TO_PUBLISH_A_PROJECT_CONCEPT"
 msgstr "No! Post a project is free, but it will be approved before publication Groofi. Is there a fee for posting a project?"
 
 msgid "HAVE_ACCOUNT_IN_PAYPAL_MERCADO"
-msgstr "Do I need a PayPal account / MercadoPago proceeds to charge for my project?"
+msgstr "Do I need a PayPal account proceeds to charge for my project?"
 
 msgid "HAVE_ACCOUNT_IN_PAYPAL_MERCADO_CONCEPT"
-msgstr "Yes, it is necessary to have a PayPal account or MercadoPago. Before you create your project, you must also create an account on these services."
+msgstr "Yes, it is necessary to have a PayPal account. Before you create your project, you must also create an account on these services."
 
 msgid "CREATE_YOUR_PROJECT"
 msgstr "Create your Project"
@@ -3192,13 +3192,13 @@ msgid "PROCEEDS_I_RECEIVE"
 msgstr "How do I receive the funds raised?"
 
 msgid "PROCEEDS_I_RECEIVE_CONCEPT"
-msgstr "Funds received through Paypal or MercadoPago: The money accumulates in the account or Paypal account MercadoPago of Groofi to the creator, but that will be managed by Groofi to meet the deadline for collection. If the project is successful, and Groofi MercadoPago Paypal or charge their commission. Groofi withhold funds for 10 business days from the time of collection enforcement. After that period, the creator may dispose of proceeds, net of commissions. If the project is successful, the creator must open their own Paypal or MercadoPago order to receive the funds raised in the terms and conditions MercadoPago Paypal or determine for each particular country."
+msgstr "Funds received through Paypal: The money accumulates in the account or Paypal of Groofi to the creator, but that will be managed by Groofi to meet the deadline for collection. If the project is successful, and Groofi Paypal or charge their commission. Groofi withhold funds for 10 business days from the time of collection enforcement. After that period, the creator may dispose of proceeds, net of commissions. If the project is successful, the creator must open their own Paypal order to receive the funds raised in the terms and conditions Paypal or determine for each particular country."
 
 msgid "PROJECT_IS_NOT_SUCCESSFUL"
 msgstr "What if the project is not successful?"
 
 msgid "PROJECT_IS_NOT_SUCCESSFUL_CONCEPT"
-msgstr "If the project is successful because not reached the goal of financing that deadline, you will return the funds invested by the sponsors (less costs Paypal / MercadoPago). In this case groofi does not charge commission and if the target is not reached, there is no cost to the creators."
+msgstr "If the project is successful because not reached the goal of financing that deadline, you will return the funds invested by the sponsors (less costs Paypal). In this case groofi does not charge commission and if the target is not reached, there is no cost to the creators."
 
 msgid "HOW_SPONSOR_MY_PROJECT_USERS"
 msgstr "How achievement so others sponsor my project?"
@@ -4374,7 +4374,7 @@ msgid "USER_PASS"
 msgstr "Username or password incorrect"
 
 msgid "PUBLISH_PROJECT"
-msgstr "Published the project "
+msgstr "Publish Project"
 
 msgid "ADD_UPDATE_PROJECT"
 msgstr "Added a update to the project"
@@ -4540,7 +4540,7 @@ msgid "CONTACTO_1"
 msgstr "Please fill correctly the field E-mail"
 
 msgid "MUST_BE_IN_RAGE"
-msgstr "Must choose a value between 10 and 200000"
+msgstr "Must choose a value between 10 and 99000000"
 
 msgid "CONTACTO_2"
 msgstr "Please fill correctly the Name field"
@@ -4572,11 +4572,29 @@ msgstr "max 50 caracteres"
 msgid "ERROR_EMAIL_RECORDAR"
 msgstr "The e-mail entered does not belong to a registered user"
 
-msgid ""
-msgstr ""
+msgid "minLength_5"
+msgstr "Enter at least 5 characters."
 
-msgid ""
-msgstr ""
+msgid "actualizacion_alert1"
+msgstr "Please enter a title longer"
+
+msgid "actualizacion_alert2"
+msgstr "The updated text is too short"
+
+msgid "alert_imagen upload_add"
+msgstr "The image size is very small.Please choose another."
+
+msgid "IMAGEN_SPONSOR_INFO"
+msgstr "☼ Step 1: Enter the name of the Sponsor. <br> ☼ Step2: Upload an image greater than 380px * 150px. <br> ☼ Step 3: Save the selection made​​. <br> ☼ Step 4: Mail the saved selection"
+
+msgid "TEXTO_SINCRO_FACEBOOK"
+msgstr "Complete this information to create your account or, if you already have one, you can login with Facebook to alternatively."
+
+msgid "MANTENER_CONECTADO"
+msgstr "Keep Connected"
+
+msgid "NOMBRE_LETRAS"
+msgstr "Only letters. Please enter a valid name"
 
 msgid ""
 msgstr ""

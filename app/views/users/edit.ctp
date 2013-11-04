@@ -1,4 +1,5 @@
-<?php /* @var $this ViewCC */ ?>
+<?php /* @var $this ViewCC */
+;?>
 <?
     $this->set('titleClass', 'tabs');
     $this->set('pageTitle', __(up(sprintf('USER_EDIT_%s', $this->params['tab'])), true));

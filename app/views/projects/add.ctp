@@ -119,7 +119,7 @@ function getVideoFromURL($u){
 <a href="/#proyecto_destacado" id="casos_de_exito"></a>
 <a href="/guidelines" id="groofi_escuela"></a>
 
-<div style="font-style:italic"><?php echo __("PROJECT_ADD_FIRST_BLOCK_SUBTITLE");?></div> <div class="misc_separador" style="width:100%"></div>
+<div style="font-style:italic;margin-top: 65px;"><?php echo __("PROJECT_ADD_FIRST_BLOCK_SUBTITLE");?></div> <div class="misc_separador" style="width:100%"></div>
 <form id="fproy" enctype="multipart/form-data" method="post" action="/projects/add" accept-charset="utf-8">
 <input type="hidden" name="data[Project][user_id]" autocomplete="off" value="<?=$this->Session->read('Auth.User.id')?>" id="ProjectUserId" />
 
@@ -137,7 +137,7 @@ function getVideoFromURL($u){
 
 
 <div class="texto_how_izq" >
-    <p style="font-size:12px; margin-top: -35px;"><?php echo __("COUNTRY");?></p>
+    <p style="font-size:12px;"><?php echo __("COUNTRY");?></p>
     <div class="rounded_crear" style=background:none>
 
 <select tabindex=2 autocomplete="off" style="width:373px; height:27px; position:relative;top:-4px; left:0;border:1px solid #e1e1e1; background:#f6f7f6" name="data[Project][paislugar]" autocomplete="off" id="ProjectCountryId">
@@ -148,7 +148,7 @@ function getVideoFromURL($u){
 
             </select>
 
-        <div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['country']) && !empty($validationErrorsArray['country'])){echo $validationErrorsArray['country'];}?></div>
+        <div style="color:red;font-size:9px;position:relative; top:-12px"><?php if (isset($validationErrorsArray['country']) && !empty($validationErrorsArray['country'])){echo $validationErrorsArray['country'];}?></div>
         <!--div id="restantes5" style="font-size:9px;position:absolute;left:0; top:28px; text-align:right; width:370px; height:15px;"><?php echo __("Res1");?> <?if(isset($_POST['data']['Project']['country'])){echo 50-intval((strlen(utf8_decode($_POST['data']['Project']['country']))));}else{echo '50';}?> <?php echo __("Carac");?></div-->
         <div class="bot_info"  onmouseout="hideTip()" onmousemove="showTip(event,'<?php echo __("CHOICE_YOUR_COUNTRY");?>')"></div>
     </div>
@@ -246,12 +246,12 @@ function getVideoFromURL($u){
 <div class="texto_how_izq">
     <p style="font-size:12px"><?php echo __("PROJECT__SHORT_DESCRIPTION");?></p>
     <div class="rounded_area_crear">
-        <textarea tabindex=5 onkeyup="xrestantes(this,$('restantes2'),140,50)" onkeydown="xrestantes(this,$('restantes2'),140,50)" onchange="xrestantes(this,$('restantes2'),140,50)" name="data[Project][short_description]" autocomplete="off" cols="30" rows="6"><?if(isset($_POST['data']['Project']['short_description'])){echo $_POST['data']['Project']['short_description'];}?></textarea>
+        <textarea tabindex=5 onkeyup="xrestantes1(this,$('restantes2'),140,50)" onkeydown="xrestantes1(this,$('restantes2'),140,50)" onchange="xrestantes1(this,$('restantes2'),140,50)" name="data[Project][short_description]" autocomplete="off" cols="30" rows="6"><?if(isset($_POST['data']['Project']['short_description'])){echo $_POST['data']['Project']['short_description'];}?></textarea>
         <div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['short_description']) && !empty($validationErrorsArray['short_description'])){echo $validationErrorsArray['short_description'];}?></div>
-        <div   id="restantes2" style="font-size:9px;position:absolute;left:0; top:118px; text-align:right; width:370px; height:15px;"><?php echo __("INGRE");?> <?if(isset($_POST['data']['Project']['short_description'])){echo intval((strlen(utf8_decode($_POST['data']['Project']['short_description']))));}else{echo '0';}?> <?php echo __("Res");?> <?if(isset($_POST['data']['Project']['short_description'])){echo 140-intval((strlen(utf8_decode($_POST['data']['Project']['short_description']))));}else{echo '140';}?> <?php echo __("Carac");?></div>
+        <div   id="restantes2" style="font-size:9px;position:absolute;left:0; top:118px; text-align:right; width:370px; height:15px;"><?php echo __("INGRE");?> <?if(isset($_POST['data']['Project']['short_description'])){echo intval((strlen(utf8_decode($_POST['data']['Project']['short_description']))));}else{echo '0';}?> <?php echo __("Res");?> <?if(isset($_POST['data']['Project']['short_description'])){echo 140-intval((strlen(utf8_decode($_POST['data']['Project']['short_description']))));}else{echo '140';}?> </div>
         <div class="bot_info_area" onmouseout="hideTip()" onmousemove="showTip(event,'<?echo __("PROJECT__SHORT_DESCRIPTION__HELP_MESSAGE_TEXT");?>')"></div>
     </div>
-    <div  style="z-index: 9999; width:370px; height:253px; background:url(/2012/images/proyectosprivados.png); position:absolute; top:515px;top:530px\0/;top:530px\9">
+    <div  style="z-index: 9999; width:370px; height:253px; background:url(/2012/images/proyectosprivados.png); position:absolute; top:875px;top:900px\0/;top:900px\9">
         <div class="proyectos_privados0">
             <?php echo __("PROYECTOS_PRIVADOS1");?>
         </div>
@@ -295,6 +295,16 @@ function getVideoFromURL($u){
         <div class="bot_info_ckeditor" onmouseout="hideTip()" onmousemove="showTip(event,'<?php echo __("ckeditor");?>')"></div>
     </div>
 
+    <div class="ckeditor2">
+        <p style="font-size:12px"><?php echo __("PROJECT_REASON");?></p>
+        <div class="ckeditor2">
+            <textarea class="ckeditor" name="data[Project][reason]" autocomplete="off" cols="30" rows="6"><?if(isset($this->data['Project']['reason'])){echo $this->data['Project']['reason'];}?></textarea>
+            <div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['reason']) && !empty($validationErrorsArray['reason'])){echo $validationErrorsArray['reason'];}?></div>
+            <div  style="top: 385px;" class="info_ckeditor1" onmouseout="hideTip()" onmousemove="showTip(event,'<?php echo __("PROJECT__REASON_EDIT_HELP_MESSAGE_TEXT");?>')"></div>
+        </div>
+
+    </div>
+    <div class="clear"></div>
 </div>
 
 
@@ -305,9 +315,11 @@ function getVideoFromURL($u){
     var delete_images = '<?php echo __('DELETE_IMAGES');?>'
     //create a preview of the selection
     function preview(img, selection) {
+
         //get width and height of the uploaded image.
         var current_width = jQuery('#uploaded_image').find('#thumbnail').width();
         var current_height = jQuery('#uploaded_image').find('#thumbnail').height();
+
 
         var scaleX = <?php echo $thumb_width;?> / selection.width;
         var scaleY = <?php echo $thumb_height;?> / selection.height;
@@ -399,7 +411,8 @@ function getVideoFromURL($u){
         <div id="upload_status" style="font-size:12px; width:38%; margin:0 0 20px; padding:5px; display:none; border:1px #999 dotted; background:#eee;"></div>
         <a id="upload_link" style="cursor:pointer;position:relative;display: block;background:#000000; font-size: 18px; color: white;font-weight: normal;height: 30px;width: 120px; text-align: center" href="#"><?__('UPLOAD_BROWSE');?></a>
         <div style="float: left; position: relative; width: 900px; height: 25px"><? echo __("EDIT_IMAGE");?></div>
-        <span id="loader" style="display:none;"><img src="/2012/images/loader.gif" alt="Loading..."/></span> <span id="progress"></span>
+        <span id="loader" style="display:none;float: left;position: relative;width: 900px;"><img src="/2012/images/loader.gif" alt="Loading..."/></span>
+        <span style="display:none;float: left;position: relative;width: 900px;" id="progress"></span>
 
         <div id="uploaded_image" style="float: left; position: relative; width: 900px; height: auto"></div>
         <div id="thumbnail_form" style="display:none;">
@@ -411,7 +424,7 @@ function getVideoFromURL($u){
     </div>
 
     <!--br><div id="elfile2"><?php echo __("UPLOAD_NO_FILE_SELECTED");?></div-->
-    <!--div style="color:red;font-size:9px;position:relative; top:6px"><?php if (isset($validationErrorsArray['file']) && !empty($validationErrorsArray['file'])){echo $validationErrorsArray['file'];}?></div-->
+    <div style="color: #FF0000;float: left;font-size: 9px;height: 20px;position: relative;top: 6px;"><?php if (isset($validationErrorsArray['country']) && !empty($validationErrorsArray['country'])){echo $validationErrorsArray['country'];}?></div>
     <br>
     <? if($this->Session->check('predefinido') && isset($fotito) && strlen($fotito)>4 && (!isset($_FILES['data']['name']['Project']['file']) || $_FILES['data']['name']['Project']['file']=='')){?>
     <img style="max-width:280px" src="/<?=$_FILES['data']['name']['Project']['file'];?>" id="target1">
@@ -517,7 +530,7 @@ function getVideoFromURL($u){
 
         <?} elseif($_SESSION['idioma']=='ita'){?>
         <label style="position:absolute; height:15px;width:300px;  left:0; top:128px; text-align:left; margin:0; padding:0" for="eur">
-            <input onclick="javascript:if(this.checked){$('quemoneda').innerHTML='EUR';window.lamoneda='EUR';changeBoxesMoneda();}" value="EUR" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="eur" <?if(isset($_POST['data']['Project']['moneda']) && $_POST['data']['Project']['moneda']=='EUR'){?>checked="checked"<? } ?>>
+            <input onclick="javascript:if(this.checked){$('quemoneda').innerHTML='EUR';window.lamoneda='EUR';changeBoxesMoneda();}" value="EUR" style="margin:0; padding:0;width:15px;position:relative;top:-2px" type="radio" name="data[Project][moneda]" id="eur" checked="checked">
         </label>
 
         <?}?>
@@ -530,7 +543,7 @@ function getVideoFromURL($u){
     <input name="data[Project][project_duration]" type="hidden" autocomplete="off" class="range" value="7" id="ProjectProjectDuration" />
     <div style="position:relative; height:17px; width:360px; margin-left: 15px">
         <div style="display: block; left: -15px;position: absolute;top: 38px;"><img src="/2012/images/boton_tiempo.png"></div>
-        <div id="indicadords" style="font-size:10px;margin-left: -15px;"><?php echo __("TIME_OF_PROJECT");?></div>
+        <div id="indicadords" style="font-size:12px;margin-left: -15px;"><?php echo __("TIME_OF_PROJECT");?></div>
         <div  class="back_slider" style=" background:#559C48;width:360px; height:10px; border-bottom:1px solid #eaeaea;border-top:1px solid #eaeaea;border-right:1px solid #eaeaea; position:relative;top: 15px">
             <div id="blueLine" style="width:0%; height:100%;background:#338abd;"></div>
         </div>
@@ -589,7 +602,7 @@ function getVideoFromURL($u){
         <div class="rounded_area_beneficios">
             <textarea onkeypress="return noenter(event)" name="comments" cols="1" rows="1" id="descverde"></textarea>
             <div id="errE" style="color:red;font-size:9px;position:relative; top:6px; left:10px"></div>
-            <div class="bot_info_empresas"  onmouseout="hideTip1()"  onmousemove="showTip1(event,'<?echo __("PROJECT__PRIZE__HELP_MESSAGE_TEXT");?> <?echo __("PROJECT_-PRIZE__TIP_MESSAGE_TEXT");?>')"></div>
+            <div class="bot_info_empresas"  onmouseout="hideTip1()"  onmousemove="showTip1(event,'<?echo __("PROJECT__PRIZE__HELP_MESSAGE_TEXT");?><br><?echo __("PROJECT_-PRIZE__TIP_MESSAGE_TEXT");?>')"></div>
             <div class="bot_crear_nuevo empresas" onclick="addBeneficio($('mminverde').value, $('descverde').value, 'empresa');"><?php echo __("CREATE");?></div>
 
         </div>
@@ -791,12 +804,29 @@ function getVideoFromURL($u){
     //ck_newsContent.setData( '<p>Just click the <b>Image</b> or <b>Link</b> button, and then <b>&quot;Browse Server&quot;</b>.</p>' );
 
 </script>
+<script type="text/javascript">
+
+    //var ck_newsContent = CKEDITOR.replace( 'data[Project][description]' );
+    CKEDITOR.replace( 'data[Project][reason]',
+        {
+            /*filebrowserBrowseUrl : '/js/ckfinder/ckfinder.html',
+            filebrowserImageBrowseUrl : '/js/ckfinder/ckfinder.html?type=Images',
+            filebrowserFlashBrowseUrl : '/js/ckfinder/ckfinder.html?type=Flash',*/
+            filebrowserUploadUrl : '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+            filebrowserImageUploadUrl : '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images'
+            /*filebrowserFlashUploadUrl : '/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'*/
+        });
+
+    //ck_newsContent.setData( '<p>Just click the <b>Image</b> or <b>Link</b> button, and then <b>&quot;Browse Server&quot;</b>.</p>' );
+
+</script>
 
 <script>
 var rest1 = '<?php echo __("Res1");?>'
 var carac = '<?php echo __( "Carac");?>'
 var ingre = '<?php echo __("INGRE");?>'
 var benef = '<?echo __("ALERT_BENEFICIO");?>'
+var rest2 = '<?echo __("Res");?>'
 function openBoxUser3(){
     if(window.animationOn)return;
     clearTimeout(ns.timer);
@@ -853,9 +883,12 @@ function crop() {
         },
         onComplete: function(response) {
 
+            var img_time = '?'+Math.round(Math.random()*1000);
+
             loadingmessage('', 'hide');
             //response = unescape(response);
             var response_new = jQuery.parseJSON(response);
+            if(response_new.regular != ''){
 
             var regular_url = response_new.regular.ubicacion;
 
@@ -872,12 +905,18 @@ function crop() {
 
 
             if(regular_url != ''){
+
+                jQuery('#uploaded_image, #thumbnail_preview').empty();
+
                 var current_width = response_new.regular.width;
                 var current_height = response_new.regular.height;
+                if (current_width < 600){
+                    alerta('<?php echo __("alert_imagen upload_add");?>')
+                }else{
                 //display message that the file has been uploaded
                 jQuery('#upload_status').show().html('<h1>'+exito+'</h1><p>'+image_uploaded+'</p>');
                 //put the image in the appropriate div
-                jQuery('#uploaded_image').html('<img src="/media/transfer/project/tmp/img/'+regular_url[1]+'" style="float: left; margin-right: 10px;" id="thumbnail" alt="Create Thumbnail" /><div style="border:1px #e5e5e5 solid; float:left; position:relative; overflow:hidden; width:<?php echo $thumb_width;?>px; height:<?php echo $thumb_height;?>px;"> <img src="/media/transfer/project/tmp/img/'+regular_url[1]+'" style="position: relative;" id="thumbnail_preview" alt="Thumbnail Preview" /></div>');
+                jQuery('#uploaded_image').html('<img src="/media/transfer/project/tmp/img/'+regular_url[1]+img_time+'" style="float: left; margin-right: 10px;" id="thumbnail" alt="Create Thumbnail" /><div style="border:1px #e5e5e5 solid; float:left; position:relative; overflow:hidden; width:<?php echo $thumb_width;?>px; height:<?php echo $thumb_height;?>px;"> <img src="/media/transfer/project/tmp/img/'+regular_url[1]+img_time+'" style="position: relative;" id="thumbnail_preview" alt="Thumbnail Preview" /></div>');
                 //find the image inserted above, and allow it to be cropped
                 jQuery('#uploaded_image').find('#thumbnail').imgAreaSelect({minHeight: '420',minWidth:'560',instance: true,handles: true,parent:'#uploaded_image', aspectRatio: '1:<?php echo $thumb_height/$thumb_width;?>', onSelectChange: preview });
                 //display the hidden form
@@ -885,14 +924,24 @@ function crop() {
 
                 jQuery('#upload2').attr("value",thumb_url[1]);
                 //jQuery('#upload2').attr("value",thumb_url[1]);
-            }else if(responseType=="error"){
+                }
+            }
+}
+           /*else if(responseType=="error"){
+
                 jQuery('#upload_status').show().html('<h1>Error</h1><p>'+responseMsg+'</p>');
                 jQuery('#uploaded_image').html('');
                 jQuery('#thumbnail_form').hide();
-            }else{
+            }*/else{
+
+
+               jQuery('#upload_status').show().html('<h1>Error</h1><p>'+response_new.error.error+'</p>');
+               jQuery('#uploaded_image').html('');
+               jQuery('#thumbnail_form').hide();
+                /*console.log('else');
                 jQuery('#upload_status').show().html('<h1>Unexpected Error</h1><p>Please try again</p>'+response);
                 jQuery('#uploaded_image').html('');
-                jQuery('#thumbnail_form').hide();
+                jQuery('#thumbnail_form').hide();*/
             }
         }
     });
@@ -924,16 +973,18 @@ function crop() {
                     var responseType = response[0];
                     var responseLargeImage = response[1];
                     var responseThumbImage = response[2];
+                    thumb_url = response[2].split("../webroot/media/transfer/project/tmp/img/thumbnail_");
                     if(responseType=="success"){
                         jQuery('#upload_status').show().html('<h1>'+exito+'</h1><p>'+image_uploaded+'</p>');
                         //load the new images
-                        //jQuery('#uploaded_image').html('<img src="'+responseLargeImage+'" alt="Large Image"/>&nbsp;<img src="'+responseThumbImage+'" alt="Thumbnail Image"/><br /><a href="javascript:deleteimage(\''+responseLargeImage+'\', \''+responseThumbImage+'\');">'+delete_images+'</a>');
+                        //jQuery('#uploaded_image').html('<img src="'+responseLargeImage+'" alt="Large Image"/>&nbsp;<img src="'+responseThumbImage+'" alt="Thumbnail Image"/><br /><a href="javascript:deleteimage(\''+responseLargeImage+'\', \''+responseThumbImage+'\');">Delete Images</a>');
+                        jQuery('#uploaded_image').html('<img src="/media/transfer/project/tmp/img/thumbnail_'+ thumb_url[1]+'" alt="Large Image"/>');
                         //hide the thumbnail form
                         jQuery('#thumbnail_form').hide();
                     }else{
                         jQuery('#upload_status').show().html('<h1>Unexpected Error</h1><p>Please try again</p>'+response);
                         //reactivate the imgareaselect plugin to allow another attempt.
-                        jQuery('#uploaded_image').find('#thumbnail').imgAreaSelect({minHeight: '420',minWidth:'560', instance: true,handles: true,parent:'#uploaded_image',aspectRatio: '1:<?php echo $thumb_height/$thumb_width;?>', onSelectChange: preview });
+                        jQuery('#uploaded_image').find('#thumbnail').imgAreaSelect({minHeight: '420',minWidth:'560',instance: true,handles: true,parent:'#uploaded_image',  aspectRatio: '1:<?php echo $thumb_height/$thumb_width;?>', onSelectChange: preview });
                         jQuery('#thumbnail_form').show();
                     }
                 }
@@ -944,7 +995,7 @@ function crop() {
     });
 }
 
-crop();
+
 $('gear').hover(
         function(){
             this.style.background='url(/2012/images/gear_over.gif)';
@@ -979,6 +1030,10 @@ $('boxUser').addEvent(
 );
 var descrip = '<?php echo __("APORTE_CORTO", true);?>';
     DR(function(){
+        <?php if(isset($_SESSION['idioma']) && $_SESSION['idioma'] == 'ita'){?>
+            window.lamoneda = "EUR";
+            changeBoxesMoneda();
+        <?php }?>
         var myString = new String(navigator.appVersion);
         if(/MSIE 8/.test(myString)){
 
@@ -1081,7 +1136,7 @@ var descrip = '<?php echo __("APORTE_CORTO", true);?>';
         }
         $(campos[0]).value=$(campos[1]).value='';
         $('err'+elente).innerHTML='';
-        var html='	<div id="'+id+'"><input type="hidden" name="data[Prize]['+window.memo.index+'][model]" autocomplete="off" value="Project" />	<input type="hidden" name="data[Prize]['+window.memo.index+'][value]" autocomplete="off" value="'+monto+'" />	<input name="data[Prize]['+window.memo.index+'][description]" type="hidden" autocomplete="off" value="'+descripcion+'" />	<input name="data[Prize]['+window.memo.index+'][ente]" type="hidden" autocomplete="off" value="'+elente+'" />	'+sep+'<div class="beneficio_creado'+ente+'"><h3 class="'+colortxt+'">Aportando <span class="lamonedaelegida">'+window.lamoneda+'</span> '+monto+'</h3><p class="texto_proyecto" style="color:#383938; height:60px; overflow:auto;">'+descripcion+'</p><div onclick="$(&quot;'+id+'&quot;).parentNode.removeChild($(&quot;'+id+'&quot;));" class="borrar_beneficio'+ente+'"></div><div onclick="$(&quot;'+campos[0]+'&quot;).value=&quot;'+monto+'&quot;;$(&quot;'+campos[1]+'&quot;).value=&quot;'+descripcion+'&quot;;$(&quot;'+id+'&quot;).parentNode.removeChild($(&quot;'+id+'&quot;));location=&quot;#beneficiosyrecompensas&quot;" class="editar_beneficio'+ente+'"></div></div></div>';
+        var html='	<div id="'+id+'"><input type="hidden" name="data[Prize]['+window.memo.index+'][model]" autocomplete="off" value="Project" />	<input type="hidden" name="data[Prize]['+window.memo.index+'][value]" autocomplete="off" value="'+monto+'" />	<input name="data[Prize]['+window.memo.index+'][description]" type="hidden" autocomplete="off" value="'+descripcion+'" />	<input name="data[Prize]['+window.memo.index+'][ente]" type="hidden" autocomplete="off" value="'+elente+'" />	'+sep+'<div class="beneficio_creado'+ente+'"><h3 class="'+colortxt+'"><?echo __("Providing");?><span class="lamonedaelegida">'+window.lamoneda+'</span> '+monto+'</h3><p class="texto_proyecto" style="color:#383938; height:60px; overflow:auto;">'+descripcion+'</p><div onclick="$(&quot;'+id+'&quot;).parentNode.removeChild($(&quot;'+id+'&quot;));" class="borrar_beneficio'+ente+'"></div><div onclick="$(&quot;'+campos[0]+'&quot;).value=&quot;'+monto+'&quot;;$(&quot;'+campos[1]+'&quot;).value=&quot;'+descripcion+'&quot;;$(&quot;'+id+'&quot;).parentNode.removeChild($(&quot;'+id+'&quot;));location=&quot;#beneficiosyrecompensas&quot;" class="editar_beneficio'+ente+'"></div></div></div>';
         if(entidad=='empresa'){
             $('contverde').innerHTML+=html;
         }else{
@@ -1099,6 +1154,17 @@ var descrip = '<?php echo __("APORTE_CORTO", true);?>';
         }
         label.innerHTML=ingresados+rest1+(mx-campo.value.length)+carac;
     }
+function xrestantes1(campo,label,mx,mi){
+    if(campo.value.length>mx){
+        campo.value=campo.value.substr(0,mx);
+    }
+    if(mi){
+        var ingresados=ingre+campo.value.length+rest2;
+    }else{
+        var ingresados='';
+    }
+    label.innerHTML=ingresados+(mx-campo.value.length);
+}
     <?if(isset($_POST['data']['Project']['project_duration'])){?>
     DR(function(){
 
@@ -1162,3 +1228,6 @@ function hideTip1(){
 }
 
 </script>
+<!--[if IE 8]>
+<script>crop();</script>
+<![endif]-->

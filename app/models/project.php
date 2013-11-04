@@ -183,14 +183,15 @@ class Project extends AppModel {
                 'rule' => array('comparison', 'isgreater', 0),
                 'required' => true,
                 'allowEmpty' => false
-            )
-           ,
-			'MUST_BE_IN_RAGE' => array(
-                'rule' => array('crange', 10, 200000),
+            ),
+            'MUST_BE_IN_RAGE' => array(
+                'rule' => array('crange', 10, 99000000),
                 'required' => true,
                 'allowEmpty' => false
-
+                /*'message' => 'Debe escoger un valor entre 10 y 99000000'*/
             )
+
+
         ,
             'NUMERIC' => array(
                 'rule' => array('numeric'),
@@ -204,7 +205,15 @@ class Project extends AppModel {
                 'required' => true,
                 'allowEmpty' => false
             )
+        ),
+        'country' => array(
+            'CAMPO_VACIO' => array(
+                'rule' => array('notEmpty'),
+                'required' => true,
+                'allowEmpty' => 'false'
+            )
         )
+
         /*'file' => array(
             'default' => array(
                 'rule' => array('notEmpty'),

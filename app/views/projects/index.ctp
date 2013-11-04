@@ -1,7 +1,6 @@
 <?php
 /* @var $this ViewCC */
 
-
 $subtitleText = isset($status) ? sprintf(__('%s', true), $statusName) : __('DISCOVER_ALL_PROJECTS', true);
 $subtitleText .= isset($categoryName) ? ' ' . sprintf(__('CATEGORY_FROM %s', true), $categoryName) : '';
 $subtitleText .= isset($country) ? ' ' . sprintf(__('CITY_IN %s', true), $cityName) : '';
@@ -11,6 +10,24 @@ $this->Paginator->options(array('url' => $baseUrl));
 
 //vd($this->here.'--'.preg_replace("#(.*?)/[0-9]*?$#",'$1',$this->here));
 ?>
+<script>
+
+    var function1 = function() {jQuery('#categoria_proyecto1').css('color','#38882d');}
+    var function2 = function() {jQuery('#categoria_proyecto2').css('color','#38882d');}
+    var function3 = function() {jQuery('#ProjectCountryId').css('color','#38882d');}
+
+    jQuery(document).ready(function(){
+        jQuery('#busqueda_filtro').submit(function(){
+
+            var cat = jQuery('#categoria_proyecto1').val();
+            var show = jQuery('#categoria_proyecto2').val();
+            var pais= jQuery('#ProjectCountryId').val();
+            window.location= '/projects/index?category='+cat+'&status='+show+'&pais='+pais;
+            return false;
+        });
+
+    });
+</script>
 
 <div style="width:100%; height:auto; margin-top:20px">
 
@@ -71,7 +88,7 @@ if(isset($baseUrl['category'])){
                 <!--div style="width:956px" class="misc_separador"></div--><br>
                 <div class="listado_categorias">
 
-                    <select  onchange="function1()" class="estilo_select" autocomplete="off" id="categoria_proyecto1" style="color: #393939!important;" name="data[Project][cat]">
+                    <select  onchange="function1()" class="estilo_select" autocomplete="off" id="categoria_proyecto1" style="color: #393939!important;" name="category">
                         <option style="color: #393939!important;" value=""><?php echo __("SEARCH_BY_CATEGORY");?></option>
                         <?php
                         $categorias=Project::getCategories('categorias');
@@ -79,8 +96,14 @@ if(isset($baseUrl['category'])){
                         foreach($categorias as $k=>$v){
 
                             ?>
-                            <ul><option style="color:#393939" value="<?=$v['categories']['slug']?>"><?=$v['categories']['slug']?></option></ul>
-                            <?php } ?>
+                            <?if ($_SESSION["idioma"] == 'eng'){?>
+                                <ul><option style="color:#393939" value="<?=$v['categories']['slug']?>"><?=$v['categories']['slug']?></option></ul>
+                            <?}elseif($_SESSION["idioma"] == 'esp'){?>
+                                <ul><option style="color:#393939" value="<?=$v['categories']['slug']?>"><?=$v['categories']['slug_esp']?></option></ul>
+                            <?}elseif($_SESSION["idioma"] == 'ita'){?>
+                                <ul><option style="color:#393939" value="<?=$v['categories']['slug']?>"><?=$v['categories']['slug_ita']?></option></ul>
+                            <?}?>
+                        <?php } ?>
                     </select>
                 </div>
             </div>
@@ -90,14 +113,14 @@ if(isset($baseUrl['category'])){
                 <div class="clear"></div>
 
                 <div class="listado_categorias listado_categorias1">
-                    <select onchange="function2()" class="estilo_select1" autocomplete="off" id="categoria_proyecto2" style="color: #393939!important;" name="data[Project][show]">
+                    <select onchange="function2()" class="estilo_select1" autocomplete="off" id="categoria_proyecto2" style="color: #393939!important;" name="status">
                         <option value="" style="color: #393939!important;"><?php echo __("FILTER_TITLE_LIMIT");?></option>
                         <?php
                         $mostrar=Project::getCategories('mostrar');
                         foreach($mostrar as $k=>$v){
 
                             ?>
-                            <ul><option style="color: #393939;" value="<?= $v; ?>"><?= $v; ?></option></ul>
+                            <ul><option style="color: #393939;" <?=(isset($_GET['status']) && $_GET['status'] == $k)?"selected":"";?> value="<?= $k; ?>"><?= $v; ?></option></ul>
                             <?php } ?>
                     </select>
                 </div>
@@ -119,7 +142,7 @@ if(isset($baseUrl['category'])){
 
                 <div class="ubicacion_proyecto" id="categoria_proyecto3" >
 
-                    <select  onchange="function3()" class="estilo_select2" style="color: #393939!important;" autocomplete="off"  name="data[Project][paislugar]"  id="ProjectCountryId">
+                    <select  onchange="function3()" class="estilo_select2" style="color: #393939!important;" autocomplete="off"  name="pais"  id="ProjectCountryId">
                         <option value="" style="color: #393939!important;"><?php echo __("LOCATION");?></option>
                         <? foreach($base_countries as $k=>$v){ ?>
                         <option style="color: #393939" <?if(isset($_POST['data']['Project']['paislugar']) && $_POST['data']['Project']['paislugar']==$k['c']['PAI_ISO2']){echo ' selected="selected" ';}?> value="<?=$v['c']['PAI_ISO2']?>"><?=$v['c']['PAI_NOMBRE']?></option>
@@ -171,7 +194,7 @@ if(isset($baseUrl['category'])){
 $clases=array('proyecto_izq','proyecto_centro','proyecto_der');
 $i=0;
 //vd($this->data);
-foreach($this->data as $k=>  $v){ 
+foreach($this->data as $k=>  $v){
 					$img=str_replace('.jpg','.png','media/filter/l560/'.$v['Project']['dirname'].'/'.$v['Project']['basename']);
 					if (file_exists($img)){
 						$img='/comodo_284_179.php?imagen=media/filter/l560/'.$v['Project']['dirname'].'/'.$v['Project']['basename'];
@@ -195,8 +218,8 @@ foreach($this->data as $k=>  $v){
  
   <? } ?>
 	
-	<div style="height:210px;">
-	<h5 class="titulo_categoria"><a href="<?=Category::getLink($v)?>"><?=Category::getName($v)?></a></h5>
+	<div style="height:225px;">
+	<h5 class="titulo_categoria"><a href="/projects/search_category/<?=Category::slugCategory($v['Project']['category_id']);?>"><?=Category::getName($v)?></a></h5>
 	<div class="misc_categoria"></div>
 <h3 class=titulo_proyecto><a href="<?= Project::getLink($v)?>"><?=$v['Project']['title']?></a></h3>
 <span class="autor"><?php echo __("by");?><a href="<?=User::getLink($v)?>"><?=$v['User']['display_name']?></a></span>
@@ -244,7 +267,7 @@ foreach($this->data as $k=>  $v){
     <div class="clear"></div>
 <br><br>
 <div class="misc_divisor"></div>
- <? if ($this->data) { ?> 
+ <? if ($this->data) { ?>
  <? if ( $this->Paginator->hasPrev() || $this->Paginator->hasNext()) { ?>
             <div class="paging">
                 <div class="content">

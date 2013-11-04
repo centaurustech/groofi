@@ -42,8 +42,10 @@ $this->set('title_for_layout' ,__("ABOUT_US_LINK", true)) ;
 <?php echo __("COMOFUNCIONA3_4");?><br>
 <?php echo __("COMOFUNCIONA3_5");?><br>
 <?php echo __("COMOFUNCIONA3_6");?><br>
+    <?if ($_SESSION['idioma'] == 'ita'){?><?}else{?>
 <?php echo __("COMOFUNCIONA3_7");?><br>
 <?php echo __("COMOFUNCIONA3_8");?></p>
+    <?}?>
 </div>
 <div class="acercade3">
 <h2><?php echo __("COMOFUNCIONA4");?><br>
@@ -64,7 +66,9 @@ $this->set('title_for_layout' ,__("ABOUT_US_LINK", true)) ;
 <?php echo __("COMOFUNCIONA5_4");?><br>
 <?php echo __("COMOFUNCIONA5_5");?><br>
 <?php echo __("COMOFUNCIONA5_6");?><br>
+    <?if ($_SESSION['idioma'] == 'ita'){?><?}else{?>
  <?php echo __("COMOFUNCIONA5_7");?></p>
+    <?}?>
 </div>
 <div class="acercade5">
 <h2><?php echo __("COMOFUNCIONA6");?></h2><br>

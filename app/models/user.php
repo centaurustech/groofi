@@ -132,7 +132,8 @@ class User extends AppModel {
                 'allowEmpty' => false
 
 				
-            )
+            ),
+
         ),
         'email' => array(
             "EMAIL_GENERIC_ERROR" => array(
@@ -164,7 +165,8 @@ class User extends AppModel {
             'CAMPO_VACIO' => array(
                 'rule' => array('password_empty','password'),
                 'required' => false,
-                'allowEmpty' => false),
+                'allowEmpty' => false
+            ),
 
 
 

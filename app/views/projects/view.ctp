@@ -79,8 +79,10 @@ $moneda=Project::getMoneda($project);
         if ($video) {
             echo $this->Html->div('project-video', $video);
         } else {
+
             $file = $this->Media->file('l560/' . $this->data['Project']['image_file']);
             $image = $this->Media->embed($file);
+
             echo ($image ? $this->Html->div('project-image', $image ): ''  );
         }
         ?>
@@ -111,7 +113,7 @@ $file = $this->Media->getImage('s50', $this->data['User']['avatar_file'], '/img/
 
 </div>
 <div id="fromoculto" style="height:auto;overflow:hidden;display:none; width:100%;">
-<form id="messageForm"  method="post" target="ifr" action="/messages/add2" accept-charset="utf-8">
+<form style="display: block; margin-left: -10px;" id="messageForm"  method="post" target="ifr" action="/messages/add2" accept-charset="utf-8">
 
 
 <input type="hidden" name="data[Message][user_id]" autocomplete="off" value="<?=$this->data['User']['id']?>" id="MessageUserId" />
@@ -125,7 +127,7 @@ $file = $this->Media->getImage('s50', $this->data['User']['avatar_file'], '/img/
 </div>
 
 <div id="columna_der_project">
-<?if (!empty($sponsors)) {?>
+<?if (!empty($sponsors) && count($sponsors)> 1) {?>
     <script type="text/javascript">
         $proyectosem='<?php echo __("Subtitle");?>';/*VARIABLE CAMBIO DE IDIOMA SLIDER*/
 
@@ -139,7 +141,7 @@ $file = $this->Media->getImage('s50', $this->data['User']['avatar_file'], '/img/
                                     $img=explode('.jpg',$v["Sponsor"]["basename"]);
 
                                     ?>
-                                        '<img src="/upload_sponsors/<?echo $img[0];?>"/>',
+                                        '<img src="/upload_sponsors/<?echo $img[0];?>.png"/>',
                                     <? } ?>
 
                                 ],$('corjurto1'),$('thumbs_destacados1')
@@ -180,7 +182,18 @@ $file = $this->Media->getImage('s50', $this->data['User']['avatar_file'], '/img/
 </div>
 
 </div>
-    <? }else{ ?>
+    <? }elseif(count($sponsors) == 1){?>
+<div class="slider_sponsor">
+    <?
+    foreach ($sponsors as $k => $v){
+        $img=explode('.jpg',$v["Sponsor"]["basename"]);
+
+        ?>
+        <img src="/upload_sponsors/<?echo $img[0];?>.png"/>
+
+    <? } ?>
+</div>
+<?}else{ ?>
     <div class="slider_sponsor">
     <?echo '<img src="/2012/images/sponsor_groofi.jpg"/>' ;?>
     </div>
@@ -383,7 +396,7 @@ $this->Session->delete('deletedok');
 }?>
 
 <?if($this->Session->check('sipublicado')){?>
-<script>DR(function(){alerta("El proyecto ha sido publicado.");});</script>
+<script>DR(function(){alerta("<?echo __("PROJECT_PUBLISHED");?>");});</script>
 <?
 $this->Session->delete('sipublicado');
 }?>

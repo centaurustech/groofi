@@ -390,7 +390,7 @@ $this->Session->delete('deletedok');
 }?>
 
 <?if($this->Session->check('sipublicado')){?>
-<script>DR(function(){alerta("El proyecto ha sido publicado.");});</script>
+<script>DR(function(){alerta("<?echo __("PROJECT_PUBLISHED");?>");});</script>
 <?
 $this->Session->delete('sipublicado');
 }?>
